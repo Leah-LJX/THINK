@@ -63,39 +63,36 @@ The `src` directory contains the core source code for the project, broken down a
     - **Code Extraction Scripts**: Scripts to extract API-relevant knowledge from the raw Java documentation.
     - **Vector Embedding Scripts**: Code to embed API knowledge into a vectorized knowledge base.
     - **Vector Knowledge Base Files**: Finalized vector files forming the API knowledge base.
-- **`think/`**: This directory contains code and resources for the two-phase strategy discussed in the research:
+- **`think/`**: This directory contains code and resources for the two-phase strategy discussed in the paper:
     - `pre_module/`: Scripts and resources aimed at implementing the pre-execution phase.
-      #### Files
     - **`rag.py`**
       - **Description**: The main script for executing the retrieval strategy.
       - **Functionality**: 
-        - Manages **task decomposition**, breaking down complex tasks into simpler, manageable sub-tasks.
-        - Constructs **code examples** to support the retrieval process, helping to ensure the relevance and context of the retrieved data.
+        - Manages **task decomposition**, breaking down complex tasks into simpler sub-tasks.
+        - Constructs **code examples** to support the generation of retrieval enhancement.
         - Acts as the central file for orchestrating the retrieval strategy, which is essential for collecting accurate and contextually appropriate information.
     
     - **`label_rag.py`**
-      - **Description**: A script dedicated to filtering the results retrieved by `rag.py`.
+      - **Description**: A script dedicated to filtering the results retrieved.
       - **Functionality**: 
-        - Applies **filtering operations** to the retrieval outputs, aiming to enhance the precision of the results.
-        - Ensures that the retrieval strategy returns results that are **accurate** and **relevant** to the task requirements, reducing noise and improving data quality for subsequent processes.
+        - Applies **labeling** to the retrieval outputs, aiming to enhance the precision of the results.
+        - Ensures that the retrieval strategy returns results that are **relevant** to the task requirements, reducing noise and improving data quality for subsequent processes.
 
 
     - `post_module/`: Scripts and resources aimed at implementing the post-execution phase.
-       #### Files
         - **`error_template.py`**
           - **Description**: The main file responsible for executing the error correction workflow.
           - **Functionality**:
             - Implements a comprehensive error correction process that includes:
-              - **Inference and Behavior-Based Corrections**: Adapts and corrects errors based on inferred behavior and program logic.
+              - **Reasoning and Acting Corrections**: Adapts and corrects errors based on inferred cause of these errors.
               - **Rule-Based Corrections**: Applies predefined rules to handle common or predictable errors systematically.
-              - **LLM-Based Corrections**: Utilizes large language models (LLMs) to suggest and apply corrections based on contextual understanding and semantic analysis.
+              - **LLM-Based Corrections**: Utilizes large language models (LLMs) to suggest and apply corrections for simpler errors without API knowledge.
         
         - **`base.py`**
-          - **Description**: Manages the detailed logic for inference and behavior-based strategies.
+          - **Description**: Manages the detailed logic for react-based strategies.
           - **Functionality**:
-            - Defines core methods and strategies for error correction based on behavior patterns.
-            - Serves as the foundation for the error correction process by leveraging inference techniques.
-            - Integrates with **`methodcall_prompt.py`** and **`parafill_prompt.py`**, which provide templated prompt ideas to guide the inference and behavior-based corrections:
-              - **`methodcall_prompt.py`**: Supplies prompts focused on method calls and their behavior, assisting the error correction by contextualizing function usage.
-              - **`parafill_prompt.py`**: Offers template prompts for parameter filling, aiding in the accurate correction of parameter-related issues.
+            - Serves as the foundation for the error correction process by leveraging Thought-Action-Observation model.
+            - Integrates with **`methodcall_prompt.py`** and **`parafill_prompt.py`**, which provide templated prompt ideas to guide the reasoning and acting corrections:
+              - **`methodcall_prompt.py`**: Supplies template prompts focused on method calls.
+              - **`parafill_prompt.py`**: Offers template prompts for parameter filling.
  
