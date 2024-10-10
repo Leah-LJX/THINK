@@ -1,0 +1,26 @@
+[Class] org.jfree.data.xy.DefaultOHLCDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, PublicCloneable, Dataset, SeriesChangeListener, SeriesDataset, OHLCDataset, XYDataset
+[Constructor Summary]
+DefaultOHLCDataset(Comparable key, OHLCDataItem[] data)	Creates a new dataset.
+[Method Summary]
+Object clone()	Returns an independent copy of this dataset.
+boolean equals(Object obj)	Tests this instance for equality with an arbitrary object.
+Number getClose(int series, int item)	Returns the close value.
+double getCloseValue(int series, int item)	Returns the close-value (as a double primitive) for an item within a series.
+Number getHigh(int series, int item)	Returns the high value.
+double getHighValue(int series, int item)	Returns the high-value (as a double primitive) for an item within a series.
+int getItemCount(int series)	Returns the item count for the specified series.
+Number getLow(int series, int item)	Returns the low value.
+double getLowValue(int series, int item)	Returns the low-value (as a double primitive) for an item within a series.
+Number getOpen(int series, int item)	Returns the open value.
+double getOpenValue(int series, int item)	Returns the open-value (as a double primitive) for an item within a series.
+int getSeriesCount()	Returns the series count.
+Comparable getSeriesKey(int series)	Returns the series key.
+Number getVolume(int series, int item)	Returns the trading volume.
+double getVolumeValue(int series, int item)	Returns the volume-value (as a double primitive) for an item within a series.
+Number getX(int series, int item)	Returns the x-value for a data item.
+Date getXDate(int series, int item)	Returns the x-value for a data item as a date.
+Number getY(int series, int item)	Returns the y-value.
+void sortDataByDate()	Sorts the data into ascending order by date.

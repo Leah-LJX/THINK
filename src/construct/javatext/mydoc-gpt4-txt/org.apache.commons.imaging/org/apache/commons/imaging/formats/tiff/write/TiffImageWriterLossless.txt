@@ -1,0 +1,16 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.write.TiffImageWriterLossless
+[Type] Class
+[Info]
+public class TiffImageWriterLossless extends TiffImageWriterBase
+[Constructor Summary]
+TiffImageWriterLossless​(byte[] exifBytes)	
+TiffImageWriterLossless​(ByteOrder byteOrder, byte[] exifBytes)	
+[Field Summary]
+TiffImageWriterLossless​(byte[] exifBytes)	
+TiffImageWriterLossless​(ByteOrder byteOrder, byte[] exifBytes)	
+[Method Summary]
+void write​(OutputStream os, TiffOutputSet outputSet)	
+[Methods inherited from class org.apache.commons.imaging.formats.tiff.write.TiffImageWriterBase]
+imageDataPaddingLength, validateDirectories, writeImage, writeImageFileHeader, writeImageFileHeader
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

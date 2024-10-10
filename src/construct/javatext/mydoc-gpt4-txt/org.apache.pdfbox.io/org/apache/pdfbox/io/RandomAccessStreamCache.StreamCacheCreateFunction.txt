@@ -1,0 +1,8 @@
+[API Name] org.apache.pdfbox.io.RandomAccessStreamCache.StreamCacheCreateFunction
+[Type] Interface
+[Info]
+Enclosing interface: RandomAccessStreamCache
+Functional Interface: This is a functional interface and can therefore be used as the assignment target for a lambda expression or method reference.
+@FunctionalInterface public static interface RandomAccessStreamCache.StreamCacheCreateFunction
+[Method Summary]
+RandomAccessStreamCache create()	Creates an instance of a RandomAccessStreamCache.

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.SegmentedTimeline.BaseTimelineSegmentRange
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Comparable
+Enclosing class: SegmentedTimeline
+[Constructor Summary]
+BaseTimelineSegmentRange(long fromDomainValue, long toDomainValue) Constructor.
+[Method Summary]

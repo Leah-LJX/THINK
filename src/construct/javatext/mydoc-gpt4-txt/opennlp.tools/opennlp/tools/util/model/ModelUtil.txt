@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.util.model.ModelUtil
+[Type] Class
+[Info]
+public final class ModelUtil extends Object Utility class for handling of models.
+[Method Summary]
+static void addCutoffAndIterations(Map<String,String> manifestInfoEntries, int cutoff, int iterations)	Adds cutoff and iterations to manifestInfoEntries.
+static TrainingParameters createDefaultTrainingParameters()	Creates the default TrainingParameters in case they are not provided.
+static byte[] read(InputStream in)	Reads from the provided InputStream into a byte array.
+static boolean validateOutcomes(MaxentModel model, String... expectedOutcomes)	Checks if the expectedOutcomes are all contained as outcomes in the given model.
+static void writeModel(MaxentModel model, OutputStream out)	Writes the given MaxentModel to the specified OutputStream.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

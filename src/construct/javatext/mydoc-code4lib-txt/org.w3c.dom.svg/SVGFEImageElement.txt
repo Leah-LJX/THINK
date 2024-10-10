@@ -1,0 +1,8 @@
+[Class] org.w3c.dom.svg.SVGFEImageElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGExternalResourcesRequired, SVGFilterPrimitiveStandardAttributes, SVGLangSpace, SVGStylable, SVGURIReference
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedPreserveAspectRatio getPreserveAspectRatio()

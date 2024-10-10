@@ -1,0 +1,9 @@
+[Class] org.w3c.dom.svg.SVGTransformable
+[Flag] Interface
+[Info]
+All Superinterfaces: SVGLocatable
+All Known Subinterfaces: SVGAElement, SVGCircleElement, SVGClipPathElement, SVGDefsElement, SVGEllipseElement, SVGForeignObjectElement, SVGGElement, SVGImageElement, SVGLineElement, SVGPathElement, SVGPolygonElement, SVGPolylineElement, SVGRectElement, SVGSwitchElement, SVGTextElement, SVGUseElement
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedTransformList getTransform()

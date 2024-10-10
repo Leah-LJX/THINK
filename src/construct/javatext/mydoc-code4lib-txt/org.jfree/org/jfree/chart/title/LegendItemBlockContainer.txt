@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.title.LegendItemBlockContainer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Block, org.jfree.ui.Drawable, org.jfree.util.PublicCloneable
+[Constructor Summary]
+LegendItemBlockContainer(Arrangement arrangement, Dataset dataset, Comparable seriesKey) Creates a new legend item block.
+[Method Summary]
+Object draw(Graphics2D g2, Rectangle2D area, Object params) Draws the block within the specified area.

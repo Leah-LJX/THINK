@@ -1,0 +1,12 @@
+[Class] org.jfree.data.general.Dataset
+[Flag] Interface
+[Info]
+All Known Subinterfaces: BoxAndWhiskerCategoryDataset, BoxAndWhiskerXYDataset, CategoryDataset, FlowDataset<K>, GanttCategoryDataset, IntervalCategoryDataset, IntervalXYDataset, IntervalXYZDataset, KeyedValueDataset, KeyedValues2DDataset, KeyedValuesDataset, MultiValueCategoryDataset, OHLCDataset, PieDataset<K>, SeriesDataset, StatisticalCategoryDataset, TableXYDataset, ValueDataset, VectorXYDataset, WindDataset, XYDataset, XYZDataset
+All Known Implementing Classes: AbstractDataset, AbstractIntervalXYDataset, AbstractSeriesDataset, AbstractXYDataset, AbstractXYZDataset, CategoryTableXYDataset, CategoryToPieDataset, CyclicXYItemRenderer.OverwriteDataSet, DefaultBoxAndWhiskerCategoryDataset, DefaultBoxAndWhiskerXYDataset, DefaultCategoryDataset, DefaultFlowDataset, DefaultHeatMapDataset, DefaultHighLowDataset, DefaultIntervalCategoryDataset, DefaultIntervalXYDataset, DefaultKeyedValueDataset, DefaultKeyedValues2DDataset, DefaultKeyedValuesDataset, DefaultMultiValueCategoryDataset, DefaultOHLCDataset, DefaultPieDataset, DefaultStatisticalCategoryDataset, DefaultTableXYDataset, DefaultValueDataset, DefaultWindDataset, DefaultXYDataset, DefaultXYZDataset, DynamicTimeSeriesCollection, HistogramDataset, JDBCCategoryDataset, JDBCPieDataset, JDBCXYDataset, MatrixSeriesCollection, OHLCSeriesCollection, SimpleHistogramDataset, SlidingCategoryDataset, SlidingGanttCategoryDataset, TaskSeriesCollection, TimePeriodValuesCollection, TimeSeriesCollection, TimeTableXYDataset, VectorSeriesCollection, WaferMapDataset, XIntervalSeriesCollection, XYBarDataset, XYIntervalSeriesCollection, XYSeriesCollection, XYTaskDataset, YIntervalSeriesCollection
+[Constructor Summary]
+
+[Method Summary]
+void addChangeListener(DatasetChangeListener listener)	Registers an object for notification of changes to the dataset.
+DatasetGroup getGroup()	Returns the dataset group.
+void removeChangeListener(DatasetChangeListener listener)	Deregisters an object for notification of changes to the dataset.
+void setGroup(DatasetGroup group)	Sets the dataset group.

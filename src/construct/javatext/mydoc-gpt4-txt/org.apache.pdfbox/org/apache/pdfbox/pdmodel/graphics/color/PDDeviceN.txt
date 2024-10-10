@@ -1,0 +1,34 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.color.PDDeviceN
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDDeviceN extends PDSpecialColorSpace DeviceN colour spaces may contain an arbitrary number of colour components.  DeviceN represents a colour space containing multiple components that correspond to colorants  of some target device. As with Separation colour spaces, readers are able to approximate the  colorants if they are not available on the current output device, such as a display
+Author: John Hewson, Ben Litchfield
+[Constructor Summary]
+PDDeviceN()	Creates a new DeviceN color space.
+PDDeviceN(COSArray deviceN)	Creates a new DeviceN color space from the given COS array.
+[Field Summary]
+PDDeviceN()	Creates a new DeviceN color space.
+PDDeviceN(COSArray deviceN)	Creates a new DeviceN color space from the given COS array.
+[Method Summary]
+PDColorSpace getAlternateColorSpace()	This will get the alternate color space for this separation.
+PDDeviceNAttributes getAttributes()	Returns the attributes associated with the DeviceN color space.
+List<String> getColorantNames()	Returns the list of colorants.
+float[] getDefaultDecode(int bitsPerComponent)	Returns the default decode array for this color space.
+PDColor getInitialColor()	Returns the initial color value for this color space.
+String getName()	Returns the name of the color space.
+int getNumberOfComponents()	Returns the number of components in this color space
+PDFunction getTintTransform()	This will get the tint transform function.
+boolean isNChannel()	Returns true if this color space has the NChannel subtype.
+void setAlternateColorSpace(PDColorSpace cs)	This will set the alternate color space.
+void setAttributes(PDDeviceNAttributes attributes)	Sets the color space attributes.
+void setColorantNames(List<String> names)	Sets the list of colorants
+void setTintTransform(PDFunction tint)	This will set the tint transform function.
+BufferedImage toRawImage(WritableRaster raster)	Returns the image in this colorspace or null.
+float[] toRGB(float[] value)	Returns the RGB equivalent of the given color value.
+BufferedImage toRGBImage(WritableRaster raster)	Returns the (A)RGB equivalent of the given raster.
+String toString()	
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace]
+create, create, create, getCOSObject, toRawImage, toRGBImageAWT
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

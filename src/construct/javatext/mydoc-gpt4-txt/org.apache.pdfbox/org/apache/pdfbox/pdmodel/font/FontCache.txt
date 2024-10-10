@@ -1,0 +1,12 @@
+[API Name] org.apache.pdfbox.pdmodel.font.FontCache
+[Type] Class
+[Info]
+public final class FontCache extends Object An in-memory cache for system fonts. This allows PDFBox to manage caching for a FontProvider.  PDFBox is free to purge this cache at will.
+Author: John Hewson
+[Constructor Summary]
+FontCache()	
+[Method Summary]
+void addFont(FontInfo info, org.apache.fontbox.FontBoxFont font)	Adds the given FontBox font to the cache.
+org.apache.fontbox.FontBoxFont getFont(FontInfo info)	Returns the FontBox font associated with the given FontInfo.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.plot.PiePlot
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, AnnotationChangeListener, AxisChangeListener, MarkerChangeListener, LegendItemSource, DatasetChangeListener, org.jfree.util.PublicCloneable
+Direct Known Subclasses: PiePlot3D, RingPlot
+[Constructor Summary]
+PiePlot() Creates a new plot.
+[Method Summary]
+void clearSectionOutlinePaints(boolean notify) Clears the section outline paint settings for this plot and, if requested, sends a PlotChangeEvent to all registered listeners.

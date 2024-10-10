@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.formats.brat.EventAnnotation
+[Type] Class
+[Info]
+public class EventAnnotation extends BratAnnotation
+[Method Summary]
+Map<String,String> getArguments()	
+String getEventTrigger()	
+[Methods inherited from class opennlp.tools.formats.brat.BratAnnotation]
+getId, getNote, getType, setNote, toString
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, wait, wait, wait

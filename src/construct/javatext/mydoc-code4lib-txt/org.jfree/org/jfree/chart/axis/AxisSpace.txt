@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.AxisSpace
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, org.jfree.util.PublicCloneable
+[Constructor Summary]
+AxisSpace() Creates a new axis space record.
+[Method Summary]
+void add(double space, org.jfree.ui.RectangleEdge edge) Adds space to the top, bottom, left or right edge of the plot area.

@@ -1,0 +1,39 @@
+[API Name] org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.PDTableAttributeObject
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDTableAttributeObject extends PDStandardAttributeObject A Table attribute object.
+Author: Johannes Koch
+[Constructor Summary]
+PDTableAttributeObject()	Default constructor.
+PDTableAttributeObject(COSDictionary dictionary)	Creates a new Table attribute object with a given dictionary.
+[Field Summary]
+protected static String COL_SPAN	
+protected static String HEADERS	
+static String OWNER_TABLE	standard attribute owner: Table
+protected static String ROW_SPAN	
+protected static String SCOPE	
+static String SCOPE_BOTH	Scope: Both
+static String SCOPE_COLUMN	Scope: Column
+static String SCOPE_ROW	Scope: Row
+protected static String SUMMARY	
+[Method Summary]
+int getColSpan()	Gets the number of columns in the enclosing table that shall be spanned by the cell (ColSpan).
+String[] getHeaders()	Gets the headers (Headers).
+int getRowSpan()	Gets the number of rows in the enclosing table that shall be spanned by the cell (RowSpan).
+String getScope()	Gets the scope (Scope).
+String getSummary()	Gets the summary of the table’s purpose and structure.
+void setColSpan(int colSpan)	Sets the number of columns in the enclosing table that shall be spanned by the cell (ColSpan).
+void setHeaders(String[] headers)	Sets the headers (Headers).
+void setRowSpan(int rowSpan)	Sets the number of rows in the enclosing table that shall be spanned by the cell (RowSpan).
+void setScope(String scope)	Sets the scope (Scope).
+void setSummary(String summary)	Sets the summary of the table’s purpose and structure.
+String toString()	
+[Methods inherited from class org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.PDStandardAttributeObject]
+getArrayOfString, getColor, getColorOrFourColors, getInteger, getName, getName, getNameOrArrayOfName, getNumber, getNumber, getNumberOrArrayOfNumber, getNumberOrName, getString, isSpecified, setArrayOfName, setArrayOfNumber, setArrayOfString, setColor, setFourColors, setInteger, setName, setNumber, setNumber, setString
+[Methods inherited from class org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDAttributeObject]
+arrayToString, arrayToString, create, getOwner, isEmpty, notifyChanged, potentiallyNotifyChanged, setOwner, setStructureElement
+[Methods inherited from class org.apache.pdfbox.pdmodel.common.PDDictionaryWrapper]
+equals, getCOSObject, hashCode
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

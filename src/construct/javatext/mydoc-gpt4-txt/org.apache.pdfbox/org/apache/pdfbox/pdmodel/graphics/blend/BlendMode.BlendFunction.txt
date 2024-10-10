@@ -1,0 +1,8 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.blend.BlendMode.BlendFunction
+[Type] Interface
+[Info]
+Enclosing class: BlendMode
+Functional Interface: This is a functional interface and can therefore be used as the assignment target for a lambda expression or method reference.
+@FunctionalInterface public static interface BlendMode.BlendFunction
+[Method Summary]
+void blend(float[] src, float[] dest, float[] result)	Blend function for non separable blend modes.

@@ -1,0 +1,8 @@
+[API Name] opennlp.tools.parser.Parser
+[Type] Interface
+[Info]
+All Known Implementing Classes: AbstractBottomUpParser, Parser, Parser
+public interface Parser Defines common methods for full-syntactic parsers.
+[Method Summary]
+Parse parse(Parse tokens)	Returns a Parse for the specified Parse of tokens.
+Parse[] parse(Parse tokens, int numParses)	Returns the specified number of parses or fewer for the specified tokens.

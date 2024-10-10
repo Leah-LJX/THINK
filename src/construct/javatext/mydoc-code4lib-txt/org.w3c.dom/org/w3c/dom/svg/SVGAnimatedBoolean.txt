@@ -1,0 +1,10 @@
+[Class] org.w3c.dom.svg.SVGAnimatedBoolean
+[Flag] Interface
+[Info]
+public interface SVGAnimatedBoolean
+[Constructor Summary]
+
+[Method Summary]
+boolean getAnimVal()	 
+ boolean getBaseVal()	 
+ void setBaseVal(boolean baseVal)

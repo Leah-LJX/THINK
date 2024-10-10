@@ -1,0 +1,55 @@
+[API Name] Package org.apache.commons.imaging.Imaging
+[Type] Class
+[Info]
+public final class Imaging extends Object The primary application programming interface (API) to the Imaging library.
+ Application Notes Using this class Almost all of the Apache Commons Imaging library's core functionality can  be accessed through the methods provided by this class.  The use of the Imaging class is similar to the Java API's ImageIO class,  though Imaging supports formats not included in the standard Java API. All of methods provided by the Imaging class are declared static. The Apache Commons Imaging package is a pure Java implementation. Format support While the Apache Commons Imaging package handles a number of different  graphics formats, support for some formats is not yet complete.  For the most recent information on support for specific formats, refer to  Format Support  at the main project development web site. Optional parameters for image reading and writing Many of the operations provided in this class as static calls can be accessed directly  using format-specific ImageParser instances. These static methods are provided  for convenience in simple use cases. Example code See the source of the SampleUsage class and other classes in the  org.apache.commons.imaging.examples package for examples.
+See Also: org.apache.commons.imaging.examples.SampleUsage,  Format Support
+[Method Summary]
+static String Imaging.dumpImageFile (byte[] bytes)	Write the ImageInfo and format-specific information for the image content of the specified byte array to a string.
+static String Imaging.dumpImageFile (File file)	Write the ImageInfo and format-specific information for the image content of the specified file to a string.
+static List<BufferedImage> Imaging.getAllBufferedImages (byte[] bytes)	Gets all images specified by the byte array (some formats may include multiple images within a single data source).
+static List<BufferedImage> Imaging.getAllBufferedImages (File file)	Gets all images specified by the file (some formats may include multiple images within a single data source).
+static List<BufferedImage> Imaging.getAllBufferedImages (InputStream is, String fileName)	Gets all images specified by the InputStream (some formats may include multiple images within a single data source).
+static BufferedImage Imaging.getBufferedImage (byte[] bytes)	Reads the first image from a byte array.
+static BufferedImage Imaging.getBufferedImage (File file)	Reads the first image from a file.
+static BufferedImage Imaging.getBufferedImage (InputStream is)	Reads the first image from an InputStream.
+static BufferedImage Imaging.getBufferedImage (InputStream is, String fileName)	Reads the first image from an InputStream.
+static FormatCompliance Imaging.getFormatCompliance (byte[] bytes)	Attempts to determine the image format of the specified data and evaluates its format compliance.
+static FormatCompliance Imaging.getFormatCompliance (File file)	Attempts to determine the image format of the specified data and evaluates its format compliance.
+static ICC_Profile Imaging.getICCProfile (byte[] bytes)	Extracts an ICC Profile (if present) from JPEG, PNG, PSD (Photoshop) and TIFF images.
+static ICC_Profile Imaging.getICCProfile (File file)	Extracts an ICC Profile (if present) from JPEG, PNG, PSD (Photoshop) and TIFF images.
+static ICC_Profile Imaging.getICCProfile (InputStream is, String fileName)	Extracts an ICC Profile (if present) from JPEG, PNG, PSD (Photoshop) and TIFF images.
+protected static ICC_Profile Imaging.getICCProfile (ByteSource byteSource)
+static byte[] Imaging.getICCProfileBytes (byte[] bytes)	Extracts the raw bytes of an ICC Profile (if present) from JPEG, PNG, PSD (Photoshop) and TIFF images.
+static byte[] Imaging.getICCProfileBytes (File file)	Extracts the raw bytes of an ICC Profile (if present) from JPEG, PNG, PSD (Photoshop) and TIFF images.
+static ImageInfo Imaging.getImageInfo (byte[] bytes)	Parses the "image info" of an image.
+static ImageInfo Imaging.getImageInfo (File file)	Parses the "image info" of an image file.
+static ImageInfo Imaging.getImageInfo (InputStream is, String fileName)	Parses the "image info" of an image.
+static ImageInfo Imaging.getImageInfo (String fileName, byte[] bytes)	Parses the "image info" of an image.
+static Dimension Imaging.getImageSize (byte[] bytes)	Determines the width and height of an image.
+static Dimension Imaging.getImageSize (File file)	Determines the width and height of an image file.
+static Dimension Imaging.getImageSize (InputStream is, String fileName)	Determines the width and height of an image.
+static Dimension Imaging.getImageSize (ByteSource byteSource)	Determines the width and height of an image byte source.
+static ImageMetadata Imaging.getMetadata (byte[] bytes)	Parses the metadata of an image.
+static ImageMetadata Imaging.getMetadata (File file)	Parses the metadata of an image file.
+static ImageMetadata Imaging.getMetadata (InputStream is, String fileName)	Parses the metadata of an image file.
+static String Imaging.getXmpXml (byte[] bytes)	Extracts the embedded XML metadata as an XML string.
+static String Imaging.getXmpXml (File file)	Extracts the embedded XML metadata as an XML string.
+static String Imaging.getXmpXml (InputStream is, String fileName)	Extracts the embedded XML metadata as an XML string.
+static String Imaging.getXmpXml (ByteSource byteSource)	Extracts the embedded XML metadata as an XML string.
+static ImageFormat Imaging.guessFormat (byte[] bytes)	Attempts to determine the image format of a file based on its "magic numbers," the first bytes of the data.
+static ImageFormat Imaging.guessFormat (File file)	Attempts to determine the image format of a file based on its "magic numbers," the first bytes of the data.
+static ImageFormat Imaging.guessFormat (ByteSource byteSource)	Attempts to determine the image format of a file based on its "magic numbers," the first bytes of the data.
+static boolean Imaging.hasImageFileExtension (File file)	Attempts to determine if a file contains an image recorded in a supported graphics format based on its file-name extension (for example ".jpg", ".gif", ".png", etc.).
+static boolean Imaging.hasImageFileExtension (String fileName)	Attempts to determine if a file contains an image recorded in a supported graphics format based on its file-name extension (for example ".jpg", ".gif", ".png", etc.).
+static void Imaging.writeImage (BufferedImage src, File file, ImageFormats format)	Writes the content of a BufferedImage to a file using the specified image format.
+static void Imaging.writeImage (BufferedImage src, OutputStream os, ImageFormats format)	Writes the content of a BufferedImage to an OutputStream using the specified image format.
+static byte[] Imaging.writeImageToBytes (BufferedImage src, ImageFormats format)	Writes the content of a BufferedImage to a byte array using the specified image format.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+
+
+
+
+
+# ljx add Imaging static call, and convert the ImageFormat to ImageFormats, as there are inherit relationship

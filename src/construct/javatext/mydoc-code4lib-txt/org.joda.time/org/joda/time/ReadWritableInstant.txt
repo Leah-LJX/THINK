@@ -1,0 +1,21 @@
+[Class] org.joda.time.ReadWritableInstant
+[Flag] Interface
+[Info]
+All Superinterfaces: Comparable<ReadableInstant>, ReadableInstant
+All Known Subinterfaces: ReadWritableDateTime
+All Known Implementing Classes: MutableDateTime
+[Constructor Summary]
+
+[Method Summary]
+void add(DurationFieldType type, int amount) Adds to the instant specifying the duration and multiple to add.
+void add(long duration) Adds a millisecond duration to this instant.
+void add(ReadableDuration duration) Adds a duration to this instant.
+void add(ReadableDuration duration, int scalar) Adds a duration to this instant specifying how many times to add.
+void add(ReadablePeriod period) Adds a period to this instant.
+void add(ReadablePeriod period, int scalar) Adds a period to this instant specifying how many times to add.
+void set(DateTimeFieldType type, int value) Sets the value of one of the fields of the instant, such as hourOfDay.
+void setChronology(Chronology chronology) Sets the chronology of the datetime, which has no effect if not applicable.
+void setMillis(long instant) Sets the value as the number of milliseconds since the epoch, 1970-01-01T00:00:00Z.
+void setMillis(ReadableInstant instant) Sets the millisecond instant of this instant from another.
+void setZone(DateTimeZone zone) Sets the time zone of the datetime, changing the chronology and field values.
+void setZoneRetainFields(DateTimeZone zone) Sets the time zone of the datetime, changing the chronology and millisecond.

@@ -1,0 +1,13 @@
+[API Name] Package org.apache.commons.imaging.ImageDump
+[Type] Class
+[Info]
+public class ImageDump extends Object Used to store metadata and descriptive information extracted from  image files.
+[Constructor Summary]
+ImageDump()	
+[Method Summary]
+void dump​(BufferedImage src)	
+void dump​(String prefix, BufferedImage src)	
+void dumpBIProps​(String prefix, BufferedImage src)	
+void dumpColorSpace​(String prefix, ColorSpace cs)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

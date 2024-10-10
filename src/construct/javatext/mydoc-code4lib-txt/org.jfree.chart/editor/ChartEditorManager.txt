@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.editor.ChartEditorManager
+[Flag] Class
+[Info]
+Returns: The current factory (never null).
+[Constructor Summary]
+
+[Method Summary]
+static ChartEditor getChartEditor(JFreeChart chart) Returns a component that can be used to edit the given chart.

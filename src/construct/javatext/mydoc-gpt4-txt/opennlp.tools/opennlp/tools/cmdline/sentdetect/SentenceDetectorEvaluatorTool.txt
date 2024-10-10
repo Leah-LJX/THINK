@@ -1,0 +1,19 @@
+[API Name] opennlp.tools.cmdline.sentdetect.SentenceDetectorEvaluatorTool
+[Type] Class
+[Info]
+public final class SentenceDetectorEvaluatorTool extends opennlp.tools.cmdline.AbstractEvaluatorTool<SentenceSample,opennlp.tools.cmdline.sentdetect.SentenceDetectorEvaluatorTool.EvalToolParams> A default SentenceSample-centric implementation of AbstractEvaluatorTool  that prints to an output stream.
+See Also:
+AbstractEvaluatorTool SentenceDetectorEvaluatorTool.EvalToolParams
+[Constructor Summary]
+SentenceDetectorEvaluatorTool()	
+[Method Summary]
+String getShortDescription()	
+void run(String format, String[] args)	Executes the tool with the given parameters.
+[Methods inherited from class opennlp.tools.cmdline.AbstractTypedParamTool]
+getHelp
+[Methods inherited from class opennlp.tools.cmdline.TypedCmdLineTool]
+getHelp
+[Methods inherited from class opennlp.tools.cmdline.CmdLineTool]
+getName, hasParams
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

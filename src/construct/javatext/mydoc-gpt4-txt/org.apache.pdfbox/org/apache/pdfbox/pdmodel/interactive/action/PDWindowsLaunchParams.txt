@@ -1,0 +1,25 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.action.PDWindowsLaunchParams
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDWindowsLaunchParams extends Object implements COSObjectable Launch parameters for the windows OS.
+Author: Ben Litchfield
+[Constructor Summary]
+PDWindowsLaunchParams()	Default constructor.
+PDWindowsLaunchParams(COSDictionary p)	Constructor.
+[Field Summary]
+static String OPERATION_OPEN	The open operation for the launch.
+static String OPERATION_PRINT	The print operation for the launch.
+protected COSDictionary params	The params dictionary.
+[Method Summary]
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+String getDirectory()	The dir to launch from.
+String getExecuteParam()	A parameter to pass the executable.
+String getFilename()	The file to launch.
+String getOperation()	Get the operation to perform on the file.
+void setDirectory(String dir)	Set the dir to launch from.
+void setExecuteParam(String param)	Set the parameter to pass the executable.
+void setFilename(String file)	Set the file to launch.
+void setOperation(String op)	Set the operation to perform..
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

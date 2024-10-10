@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.RendererState
+[Flag] Class
+[Info]
+Direct Known Subclasses: CategoryItemRendererState, PiePlotState, XYItemRendererState
+[Constructor Summary]
+RendererState(PlotRenderingInfo info) Creates a new state object.
+[Method Summary]
+EntityCollection getEntityCollection() A convenience method that returns a reference to the entity collection (may be null) being used to record chart entities.

@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.tokenize.DetokenizerEvaluator
+[Type] Class
+[Info]
+public class DetokenizerEvaluator extends Evaluator<TokenSample> The DetokenizerEvaluator measures the performance of  the given Detokenizer with the provided reference  samples.
+See Also:
+Detokenizer TokenSample
+[Constructor Summary]
+DetokenizerEvaluator(Detokenizer detokenizer, DetokenEvaluationErrorListener... listeners)	Initializes the current instance with the given Detokenizer.
+[Method Summary]
+FMeasure getFMeasure()	
+[Methods inherited from class opennlp.tools.util.eval.Evaluator]
+evaluate, evaluateSample
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

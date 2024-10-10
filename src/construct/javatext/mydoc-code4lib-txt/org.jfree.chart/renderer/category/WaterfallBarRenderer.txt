@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.category.WaterfallBarRenderer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, LegendItemSource, CategoryItemRenderer, org.jfree.util.PublicCloneable
+[Constructor Summary]
+WaterfallBarRenderer() Constructs a new renderer with default values for the bar colors.
+[Method Summary]
+void drawItem(Graphics2D g2, CategoryItemRendererState state, Rectangle2D dataArea, CategoryPlot plot, CategoryAxis domainAxis, ValueAxis rangeAxis, CategoryDataset dataset, int row, int column, int pass) Draws the bar for a single (series, category) data item.

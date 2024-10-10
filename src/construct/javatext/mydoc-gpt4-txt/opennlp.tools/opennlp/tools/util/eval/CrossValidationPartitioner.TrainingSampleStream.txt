@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.util.eval.CrossValidationPartitioner.TrainingSampleStream<E>
+[Type] Class
+[Info]
+Type Parameters: E - The generic type of samples.
+All Implemented Interfaces: AutoCloseable, ObjectStream<E>
+Enclosing class: CrossValidationPartitioner<E>
+public static class CrossValidationPartitioner.TrainingSampleStream<E> extends Object implements ObjectStream<E> The CrossValidationPartitioner.TrainingSampleStream which iterates over  all training elements.    Note:  After the CrossValidationPartitioner.TestSampleStream was obtained  the CrossValidationPartitioner.TrainingSampleStream must not be used  anymore, otherwise a IllegalStateException  is thrown.    The streams must not be used anymore after the  CrossValidationPartitioner was moved to one of next partitions.  If they are called anyway an IllegalStateException is thrown.
+[Method Summary]
+void close()	Closes the ObjectStream and releases all allocated resources.
+ObjectStream<E> getTestSampleStream()	Retrieves the ObjectStream over the test/evaluations elements and poisons this CrossValidationPartitioner.TrainingSampleStream.
+E read()	Returns the next ObjectStream object.
+void reset()	Resets the training sample.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

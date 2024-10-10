@@ -1,0 +1,24 @@
+[API Name] opennlp.tools.ml.AbstractTrainer
+[Type] Class
+[Info]
+All Implemented Interfaces: Trainer
+Direct Known Subclasses: AbstractEventModelSequenceTrainer, AbstractEventTrainer
+public abstract class AbstractTrainer extends Object implements Trainer
+[Constructor Summary]
+AbstractTrainer()	
+AbstractTrainer(TrainingParameters trainParams)	Initializes a AbstractTrainer via TrainingParameters.
+[Field Summary]
+static final String ALGORITHM_PARAM	
+static final int CUTOFF_DEFAULT	
+static final String CUTOFF_PARAM	
+static final int ITERATIONS_DEFAULT	
+static final String ITERATIONS_PARAM	
+static final String TRAINER_TYPE_PARAM	
+[Method Summary]
+String getAlgorithm()	
+int getCutoff()	
+int getIterations()	
+void init(TrainingParameters trainParams, Map<String,String> reportMap)	Initializes a AbstractTrainer via TrainingParameters and a report map.
+void validate()	Checks the configured parameters.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

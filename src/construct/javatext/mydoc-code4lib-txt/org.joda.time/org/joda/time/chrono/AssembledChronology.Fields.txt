@@ -1,0 +1,8 @@
+[Class] org.joda.time.chrono.AssembledChronology.Fields
+[Flag] Class
+[Info]
+Enclosing class: AssembledChronology
+[Constructor Summary]
+
+[Method Summary]
+void copyFieldsFrom(Chronology chrono) Copy the supported fields from a chronology into this container.

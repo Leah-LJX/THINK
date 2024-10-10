@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.DrawableLegendItem
+[Flag] Class
+[Info]
+Parameters: item - the legend item for display.
+[Constructor Summary]
+DrawableLegendItem(LegendItem item) Deprecated. Create a legend item.
+[Method Summary]
+double getHeight() Deprecated. Get the height of this item.

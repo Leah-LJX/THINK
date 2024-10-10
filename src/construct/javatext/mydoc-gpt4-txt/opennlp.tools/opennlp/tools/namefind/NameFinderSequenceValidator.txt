@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.namefind.NameFinderSequenceValidator
+[Type] Class
+[Info]
+All Implemented Interfaces: SequenceValidator<String>
+public class NameFinderSequenceValidator extends Object implements SequenceValidator<String> The default name finder SequenceValidator implementation.  Created by the BioCodec.
+See Also:
+TokenNameFinder BioCodec
+[Constructor Summary]
+NameFinderSequenceValidator()	
+[Method Summary]
+boolean validSequence(int i, String[] inputSequence, String[] outcomesSequence, String outcome)	Determines whether a particular continuation of a sequence is valid.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

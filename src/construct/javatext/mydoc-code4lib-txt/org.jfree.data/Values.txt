@@ -1,0 +1,10 @@
+[Class] org.jfree.data.Values
+[Flag] Interface
+[Info]
+All Known Subinterfaces: KeyedValues<K>, KeyedValuesDataset, PieDataset<K>
+All Known Implementing Classes: CategoryToPieDataset, DefaultKeyedValues, DefaultKeyedValuesDataset, DefaultPieDataset, JDBCPieDataset
+[Constructor Summary]
+
+[Method Summary]
+int getItemCount()	Returns the number of items (values) in the collection.
+Number getValue(int index)	Returns the value with the specified index.

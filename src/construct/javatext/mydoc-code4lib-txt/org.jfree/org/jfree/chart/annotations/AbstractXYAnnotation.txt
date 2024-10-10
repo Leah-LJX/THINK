@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.annotations.AbstractXYAnnotation
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Annotation, XYAnnotation
+Direct Known Subclasses: XYBoxAnnotation, XYDataImageAnnotation, XYDrawableAnnotation, XYImageAnnotation, XYLineAnnotation, XYPolygonAnnotation, XYShapeAnnotation, XYTextAnnotation, XYTitleAnnotation
+[Constructor Summary]
+protected AbstractXYAnnotation() Creates a new instance that has no tool tip or URL specified.
+[Method Summary]
+protected void addEntity(PlotRenderingInfo info, Shape hotspot, int rendererIndex, String toolTipText, String urlText) A utility method for adding an XYAnnotationEntity to a PlotRenderingInfo instance.

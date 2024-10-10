@@ -1,0 +1,9 @@
+[Class] org.w3c.dom.svg.SVGAnimatedNumberList
+[Flag] Interface
+[Info]
+public interface SVGAnimatedNumberList
+[Constructor Summary]
+
+[Method Summary]
+SVGNumberList getAnimVal()	 
+ SVGNumberList getBaseVal()

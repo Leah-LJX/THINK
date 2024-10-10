@@ -1,0 +1,27 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.form.PDVariableText
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDChoice, PDTextField
+public abstract class PDVariableText extends PDTerminalField Base class for fields which use "Variable Text".  These fields construct an appearance stream dynamically at viewing time.
+Author: Ben Litchfield
+[Field Summary]
+static int QUADDING_CENTERED	
+static int QUADDING_LEFT	
+static int QUADDING_RIGHT	
+[Method Summary]
+String getDefaultAppearance()	Get the default appearance.
+String getDefaultStyleString()	Get the default style string.
+int getQ()	This will get the 'quadding' or justification of the text to be displayed.
+String getRichTextValue()	Get the fields rich text value.
+protected String getStringOrStream(COSBase base)	Get a text as text stream.
+void setDefaultAppearance(String daValue)	Set the default appearance.
+void setDefaultStyleString(String defaultStyleString)	Set the default style string.
+void setQ(int q)	This will set the quadding/justification of the text.
+void setRichTextValue(String richTextValue)	Set the fields rich text value.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDTerminalField]
+applyChange, getFieldFlags, getFieldType, getWidgets, importFDF, setActions, setWidgets
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDField]
+getAcroForm, getActions, getAlternateFieldName, getCOSObject, getFullyQualifiedName, getInheritableAttribute, getMappingName, getParent, getPartialName, getValueAsString, isNoExport, isReadOnly, isRequired, setAlternateFieldName, setFieldFlags, setMappingName, setNoExport, setPartialName, setReadOnly, setRequired, setValue, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

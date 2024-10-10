@@ -1,0 +1,16 @@
+[Class] org.jfree.data.KeyedValues2D
+[Flag] Interface
+[Info]
+All Superinterfaces: Values2D
+All Known Subinterfaces: BoxAndWhiskerCategoryDataset, CategoryDataset, GanttCategoryDataset, IntervalCategoryDataset, KeyedValues2DDataset, MultiValueCategoryDataset, StatisticalCategoryDataset
+All Known Implementing Classes: DefaultBoxAndWhiskerCategoryDataset, DefaultCategoryDataset, DefaultIntervalCategoryDataset, DefaultKeyedValues2D, DefaultKeyedValues2DDataset, DefaultMultiValueCategoryDataset, DefaultStatisticalCategoryDataset, JDBCCategoryDataset, SlidingCategoryDataset, SlidingGanttCategoryDataset, TaskSeriesCollection
+[Constructor Summary]
+
+[Method Summary]
+int getColumnIndex(Comparable key)	Returns the column index for a given key.
+Comparable getColumnKey(int column)	Returns the column key for a given index.
+List getColumnKeys()	Returns the column keys.
+int getRowIndex(Comparable key)	Returns the row index for a given key.
+Comparable getRowKey(int row)	Returns the row key for a given index.
+List getRowKeys()	Returns the row keys.
+Number getValue(Comparable rowKey, Comparable columnKey)	Returns the value associated with the specified keys.

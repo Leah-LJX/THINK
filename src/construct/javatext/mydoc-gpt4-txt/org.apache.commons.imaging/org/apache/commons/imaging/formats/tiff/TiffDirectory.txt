@@ -1,0 +1,64 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.TiffDirectory
+[Type] Class
+[Info]
+public class TiffDirectory extends TiffElement Provides methods and elements for accessing an Image File Directory (IFD)  from a TIFF file. In the TIFF specification, the IFD is the main container  for individual images or sets of metadata. While not all Directories contain  images, images are always stored in a Directory.
+[Constructor Summary]
+TiffDirectory​(int type, List<TiffField> entries, long offset, long nextDirectoryOffset, ByteOrder byteOrder)	
+[Field Summary]
+List<TiffField> entries	
+long nextDirectoryOffset	
+int type	
+[Method Summary]
+String description()	
+static String description​(int type)	
+void dump()	
+TiffField findField​(TagInfo tag)	
+TiffField findField​(TagInfo tag, boolean failIfMissing)	
+ByteOrder getByteOrder()	Gets the byte order used by the source file for storing this directory and its content.
+List<TiffField> getDirectoryEntries()	
+String getElementDescription()	
+Object getFieldValue​(TagInfo tag)	
+String[] getFieldValue​(TagInfoAscii tag, boolean mustExist)	
+byte getFieldValue​(TagInfoByte tag)	
+byte[] getFieldValue​(TagInfoBytes tag, boolean mustExist)	
+double getFieldValue​(TagInfoDouble tag)	
+double[] getFieldValue​(TagInfoDoubles tag, boolean mustExist)	
+float getFieldValue​(TagInfoFloat tag)	
+float[] getFieldValue​(TagInfoFloats tag, boolean mustExist)	
+String getFieldValue​(TagInfoGpsText tag, boolean mustExist)	
+int getFieldValue​(TagInfoLong tag)	
+int[] getFieldValue​(TagInfoLongs tag, boolean mustExist)	
+RationalNumber getFieldValue​(TagInfoRational tag)	
+RationalNumber[] getFieldValue​(TagInfoRationals tag, boolean mustExist)	
+byte getFieldValue​(TagInfoSByte tag)	
+byte[] getFieldValue​(TagInfoSBytes tag, boolean mustExist)	
+short getFieldValue​(TagInfoShort tag)	
+int[] getFieldValue​(TagInfoShortOrLong tag, boolean mustExist)	
+short[] getFieldValue​(TagInfoShorts tag, boolean mustExist)	
+int getFieldValue​(TagInfoSLong tag)	
+int[] getFieldValue​(TagInfoSLongs tag, boolean mustExist)	
+RationalNumber getFieldValue​(TagInfoSRational tag)	
+RationalNumber[] getFieldValue​(TagInfoSRationals tag, boolean mustExist)	
+short getFieldValue​(TagInfoSShort tag)	
+short[] getFieldValue​(TagInfoSShorts tag, boolean mustExist)	
+String getFieldValue​(TagInfoXpString tag, boolean mustExist)	
+JpegImageData getJpegImageData()	
+TiffDirectory.ImageDataElement getJpegRawImageDataElement()	
+TiffRasterData getRasterData​(TiffImagingParameters params)	Reads the numerical data stored in this TIFF directory, if available.
+String getSingleFieldValue​(TagInfoAscii tag)	
+int getSingleFieldValue​(TagInfoShortOrLong tag)	
+BufferedImage getTiffImage()	Gets the image associated with the directory, if any.
+BufferedImage getTiffImage​(ByteOrder byteOrder)	Gets the image associated with the directory, if any.
+BufferedImage getTiffImage​(ByteOrder byteOrder, TiffImagingParameters params)	Gets the image associated with the directory, if any.
+BufferedImage getTiffImage​(TiffImagingParameters params)	Gets the image associated with the directory, if any.
+TiffImageData getTiffImageData()	
+List<TiffDirectory.ImageDataElement> getTiffRawImageDataElements()	
+boolean hasJpegImageData()	
+boolean hasTiffFloatingPointRasterData()	Indicates whether the directory definition specifies a float-point data format.
+boolean hasTiffImageData()	
+boolean hasTiffRasterData()	Indicates whether the content associated with the directory is given in a supported numerical-data format.
+boolean imageDataInStrips()	
+void setJpegImageData​(JpegImageData value)	
+void setTiffImageData​(TiffImageData rawImageData)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

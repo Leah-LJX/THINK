@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.ml.model.EvalParameters
+[Type] Class
+[Info]
+Direct Known Subclasses: NaiveBayesEvalParameters
+public class EvalParameters extends Object This class encapsulates the variables used in producing probabilities from a model  and facilitates passing these variables to the eval method.
+[Constructor Summary]
+EvalParameters(Context[] params, int numOutcomes)	
+[Method Summary]
+boolean equals(Object obj)	
+int getNumOutcomes()	
+Context[] getParams()	
+int hashCode()	
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, toString, wait, wait, wait

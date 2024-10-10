@@ -1,0 +1,34 @@
+[API Name] org.apache.pdfbox.pdmodel.common.filespecification.PDComplexFileSpecification
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDComplexFileSpecification extends PDFileSpecification This represents a file specification.
+Author: Ben Litchfield
+[Constructor Summary]
+PDComplexFileSpecification()	Default Constructor.
+PDComplexFileSpecification(COSDictionary dict)	Constructor.
+[Method Summary]
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+PDEmbeddedFile getEmbeddedFile()	Get the embedded file.
+PDEmbeddedFile getEmbeddedFileDos()	Get the embedded dos file.
+PDEmbeddedFile getEmbeddedFileMac()	Get the embedded Mac file.
+PDEmbeddedFile getEmbeddedFileUnicode()	Get the embedded unicode file.
+PDEmbeddedFile getEmbeddedFileUnix()	Get the embedded Unix file.
+String getFile()	This will get the file name.
+String getFileDescription()	This will get the description.
+String getFileDos()	This will get the name representing a Dos file.
+String getFileMac()	This will get the name representing a Mac file.
+String getFilename()	Preferred method for getting the filename.
+String getFileUnicode()	This will get the unicode file name.
+String getFileUnix()	This will get the name representing a Unix file.
+boolean isVolatile()	Get if the file is volatile.
+void setEmbeddedFile(PDEmbeddedFile file)	Set the embedded file for this spec.
+void setEmbeddedFileUnicode(PDEmbeddedFile file)	Set the embedded Unicode file for this spec.
+void setFile(String file)	This will set the file name.
+void setFileDescription(String description)	Set the file description.
+void setFileUnicode(String file)	This will set the unicode file name.
+void setVolatile(boolean fileIsVolatile)	Tell if the underlying file is volatile and should not be cached by the reader application.
+[Methods inherited from class org.apache.pdfbox.pdmodel.common.filespecification.PDFileSpecification]
+createFS
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

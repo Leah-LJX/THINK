@@ -1,0 +1,11 @@
+[API Name] org.apache.pdfbox.pdmodel.common.function.type4.Parser.SyntaxHandler
+[Type] Interface
+[Info]
+All Known Implementing Classes: InstructionSequenceBuilder, Parser.AbstractSyntaxHandler
+Enclosing class: Parser
+public static interface Parser.SyntaxHandler This interface defines all possible syntactic elements of a Type 4 function.  It is called by the parser as the function is interpreted.
+[Method Summary]
+void comment(CharSequence text)	Called for a comment.
+void newLine(CharSequence text)	Indicates that a new line starts.
+void token(CharSequence text)	Called when a token is encountered.
+void whitespace(CharSequence text)	Called when whitespace characters are encountered.

@@ -1,0 +1,8 @@
+[API Name] Package org.apache.commons.imaging.common.mylzw.MyLzwDecompressor.Listener
+[Type] Interface
+[Info]
+Enclosing class: MyLzwDecompressor
+public static interface MyLzwDecompressor.Listener
+[Method Summary]
+void code​(int code)	
+void init​(int clearCode, int eoiCode)	

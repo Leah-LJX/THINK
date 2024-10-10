@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.plot.dial.DialLayerChangeListener
+[Flag] Interface
+[Info]
+All Superinterfaces: EventListener
+All Known Implementing Classes: DialPlot
+[Constructor Summary]
+
+[Method Summary]
+void dialLayerChanged(DialLayerChangeEvent event) A call-back method for receiving notification of a change to a DialLayer.

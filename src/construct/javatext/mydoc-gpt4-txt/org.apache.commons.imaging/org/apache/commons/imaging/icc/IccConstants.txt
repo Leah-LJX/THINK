@@ -1,0 +1,9 @@
+[API Name] Package org.apache.commons.imaging.icc.IccConstants
+[Type] Class
+[Info]
+public final class IccConstants extends Object
+[Field Summary]
+static int IEC	
+static int sRGB	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

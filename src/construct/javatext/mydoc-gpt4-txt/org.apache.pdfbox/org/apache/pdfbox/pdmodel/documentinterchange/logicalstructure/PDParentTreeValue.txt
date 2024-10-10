@@ -1,0 +1,14 @@
+[API Name] org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDParentTreeValue
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDParentTreeValue extends Object implements COSObjectable Described in the PDF specification in the ParentTree segment of the table "Entries in the  structure tree root". This is either a dictionary or an array.
+Author: Tilman Hausherr
+[Constructor Summary]
+PDParentTreeValue(COSArray obj)	
+PDParentTreeValue(COSDictionary obj)	
+[Method Summary]
+COSBase getCOSObject()	Convert this standard java object to a COS object.
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

@@ -1,0 +1,26 @@
+[API Name] opennlp.tools.ml.naivebayes.Probabilities<T>
+[Type] Class
+[Info]
+Type Parameters: T - The label (category) class.
+Direct Known Subclasses: LogProbabilities
+public abstract class Probabilities<T> extends Object Class implementing the probability distribution over labels returned by a classifier.
+[Constructor Summary]
+Probabilities()	
+[Method Summary]
+void addIn(T t, double probability, int count)	Compounds the existing probability mass on the label t with the new probability passed in to the method.
+void discardCountsBelow(double i)	
+Double get(T t)	
+Map<T,Double> getAll()	
+double getConfidence()	
+Set<T> getKeys()	
+Double getLog(T t)	
+T getMax()	
+double getMaxValue()	
+void set(T t, double probability)	Assigns a probability to a label t, discarding any previously assigned probability.
+void set(T t, Probability<T> probability)	Assigns a probability to a label t, discarding any previously assigned probability.
+void setConfidence(double confidence)	Sets the best confidence with which this set of probabilities has been calculated.
+void setIfLarger(T t, double probability)	Assigns a probability to a label t, discarding any previously assigned probability, if the new probability is greater than the old one.
+void setLog(T t, double probability)	Assigns a log probability to a label t, discarding any previously assigned probability.
+String toString()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, wait, wait, wait

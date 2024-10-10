@@ -1,0 +1,16 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.TiffContents
+[Type] Class
+[Info]
+public class TiffContents extends Object
+[Constructor Summary]
+TiffContents​(TiffHeader tiffHeader, List<TiffDirectory> directories, List<TiffField> tiffFields)	
+[Field Summary]
+List<TiffDirectory> directories	
+TiffHeader header	
+List<TiffField> tiffFields	
+[Method Summary]
+void dissect()	
+TiffField findField​(TagInfo tag)	
+List<TiffElement> getElements()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

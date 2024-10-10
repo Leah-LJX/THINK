@@ -1,0 +1,14 @@
+[API Name] org.apache.pdfbox.util.Vector
+[Type] Class
+[Info]
+public final class Vector extends Object A 2D vector.
+Author: John Hewson
+[Constructor Summary]
+Vector(float x, float y)	
+[Method Summary]
+float getX()	Returns the x magnitude.
+float getY()	Returns the y magnitude.
+Vector scale(float sxy)	Returns a new vector scaled by both x and y.
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

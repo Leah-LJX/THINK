@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.title.Title
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Block, org.jfree.ui.Drawable
+Direct Known Subclasses: CompositeTitle, ImageTitle, LegendTitle, PaintScaleLegend, TextTitle
+[Constructor Summary]
+protected Title() Creates a new title, using default attributes where necessary.
+[Method Summary]
+void addChangeListener(TitleChangeListener listener) Registers an object for notification of changes to the title.

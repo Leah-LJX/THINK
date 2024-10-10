@@ -1,0 +1,7 @@
+[API Name] opennlp.tools.stemmer.Stemmer
+[Type] Interface
+[Info]
+All Known Implementing Classes: PorterStemmer, SnowballStemmer
+public interface Stemmer The stemmer is reducing a word to its stem.
+[Method Summary]
+CharSequence stem(CharSequence word)	

@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.cmdline.namefind.CensusDictionaryCreatorTool
+[Type] Class
+[Info]
+public class CensusDictionaryCreatorTool extends opennlp.tools.cmdline.BasicCmdLineTool This tool helps create a loadable dictionary for the NameFinder,  from data collected from US Census data.    Data for the US Census and names can be found here for the 1990 Census:   www.census.gov
+[Constructor Summary]
+CensusDictionaryCreatorTool()	
+[Method Summary]
+static Dictionary createDictionary(ObjectStream<StringList> sampleStream)	Creates a dictionary.
+String getHelp()	
+String getShortDescription()	
+void run(String[] args)	Executes the tool with the given parameters.
+[Methods inherited from class opennlp.tools.cmdline.CmdLineTool]
+getName, hasParams
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

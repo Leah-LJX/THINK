@@ -1,0 +1,69 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.constants.GpsTagConstants
+[Type] Class
+[Info]
+public final class GpsTagConstants extends Object
+[Field Summary]
+static List<TagInfo> ALL_GPS_TAGS	
+static TagInfoRational GPS_TAG_GPS_ALTITUDE	
+static TagInfoByte GPS_TAG_GPS_ALTITUDE_REF	
+static int GPS_TAG_GPS_ALTITUDE_REF_VALUE_ABOVE_SEA_LEVEL	
+static int GPS_TAG_GPS_ALTITUDE_REF_VALUE_BELOW_SEA_LEVEL	
+static TagInfoGpsText GPS_TAG_GPS_AREA_INFORMATION	
+static TagInfoAscii GPS_TAG_GPS_DATE_STAMP	
+static TagInfoRational GPS_TAG_GPS_DEST_BEARING	
+static TagInfoAscii GPS_TAG_GPS_DEST_BEARING_REF	
+static String GPS_TAG_GPS_DEST_BEARING_REF_VALUE_MAGNETIC_NORTH	
+static String GPS_TAG_GPS_DEST_BEARING_REF_VALUE_TRUE_NORTH	
+static TagInfoRational GPS_TAG_GPS_DEST_DISTANCE	
+static TagInfoAscii GPS_TAG_GPS_DEST_DISTANCE_REF	
+static String GPS_TAG_GPS_DEST_DISTANCE_REF_VALUE_KILOMETERS	
+static String GPS_TAG_GPS_DEST_DISTANCE_REF_VALUE_MILES	
+static String GPS_TAG_GPS_DEST_DISTANCE_REF_VALUE_NAUTICAL_MILES	
+static TagInfoRationals GPS_TAG_GPS_DEST_LATITUDE	
+static TagInfoAscii GPS_TAG_GPS_DEST_LATITUDE_REF	
+static String GPS_TAG_GPS_DEST_LATITUDE_REF_VALUE_NORTH	
+static String GPS_TAG_GPS_DEST_LATITUDE_REF_VALUE_SOUTH	
+static TagInfoRationals GPS_TAG_GPS_DEST_LONGITUDE	
+static TagInfoAscii GPS_TAG_GPS_DEST_LONGITUDE_REF	
+static String GPS_TAG_GPS_DEST_LONGITUDE_REF_VALUE_EAST	
+static String GPS_TAG_GPS_DEST_LONGITUDE_REF_VALUE_WEST	
+static TagInfoShort GPS_TAG_GPS_DIFFERENTIAL	
+static int GPS_TAG_GPS_DIFFERENTIAL_VALUE_DIFFERENTIAL_CORRECTED	
+static int GPS_TAG_GPS_DIFFERENTIAL_VALUE_NO_CORRECTION	
+static TagInfoRational GPS_TAG_GPS_DOP	
+static TagInfoRational GPS_TAG_GPS_IMG_DIRECTION	
+static TagInfoAscii GPS_TAG_GPS_IMG_DIRECTION_REF	
+static String GPS_TAG_GPS_IMG_DIRECTION_REF_VALUE_MAGNETIC_NORTH	
+static String GPS_TAG_GPS_IMG_DIRECTION_REF_VALUE_TRUE_NORTH	
+static TagInfoRationals GPS_TAG_GPS_LATITUDE	
+static TagInfoAscii GPS_TAG_GPS_LATITUDE_REF	
+static String GPS_TAG_GPS_LATITUDE_REF_VALUE_NORTH	
+static String GPS_TAG_GPS_LATITUDE_REF_VALUE_SOUTH	
+static TagInfoRationals GPS_TAG_GPS_LONGITUDE	
+static TagInfoAscii GPS_TAG_GPS_LONGITUDE_REF	
+static String GPS_TAG_GPS_LONGITUDE_REF_VALUE_EAST	
+static String GPS_TAG_GPS_LONGITUDE_REF_VALUE_WEST	
+static TagInfoAscii GPS_TAG_GPS_MAP_DATUM	
+static TagInfoAscii GPS_TAG_GPS_MEASURE_MODE	
+static int GPS_TAG_GPS_MEASURE_MODE_VALUE_2_DIMENSIONAL_MEASUREMENT	
+static int GPS_TAG_GPS_MEASURE_MODE_VALUE_3_DIMENSIONAL_MEASUREMENT	
+static TagInfoGpsText GPS_TAG_GPS_PROCESSING_METHOD	
+static TagInfoAscii GPS_TAG_GPS_SATELLITES	
+static TagInfoRational GPS_TAG_GPS_SPEED	
+static TagInfoAscii GPS_TAG_GPS_SPEED_REF	
+static String GPS_TAG_GPS_SPEED_REF_VALUE_KMPH	
+static String GPS_TAG_GPS_SPEED_REF_VALUE_KNOTS	
+static String GPS_TAG_GPS_SPEED_REF_VALUE_MPH	
+static TagInfoAscii GPS_TAG_GPS_STATUS	
+static String GPS_TAG_GPS_STATUS_VALUE_MEASUREMENT_IN_PROGRESS	
+static String GPS_TAG_GPS_STATUS_VALUE_MEASUREMENT_INTEROPERABILITY	
+static TagInfoRationals GPS_TAG_GPS_TIME_STAMP	
+static TagInfoRational GPS_TAG_GPS_TRACK	
+static TagInfoAscii GPS_TAG_GPS_TRACK_REF	
+static String GPS_TAG_GPS_TRACK_REF_VALUE_MAGNETIC_NORTH	
+static String GPS_TAG_GPS_TRACK_REF_VALUE_TRUE_NORTH	
+static TagInfoBytes GPS_TAG_GPS_VERSION_ID	
+[Method Summary]
+static byte[] gpsVersion()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

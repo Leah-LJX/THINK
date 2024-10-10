@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.dial.StandardDialFrame
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, DialFrame, DialLayer, org.jfree.util.PublicCloneable
+[Constructor Summary]
+StandardDialFrame() Creates a new instance of StandardDialFrame.
+[Method Summary]
+Object clone() Returns a clone of this instance.

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.ContourPlot
+[Flag] Class
+[Info]
+All Implemented Interfaces: PropertyChangeListener, Serializable, Cloneable, EventListener, AnnotationChangeListener, AxisChangeListener, MarkerChangeListener, LegendItemSource, ContourValuePlot, ValueAxisPlot, DatasetChangeListener, org.jfree.util.PublicCloneable
+[Constructor Summary]
+ContourPlot() Deprecated. Creates a new plot with no dataset or axes.
+[Method Summary]
+void addAnnotation(XYAnnotation annotation) Deprecated. Adds an annotation to the plot.

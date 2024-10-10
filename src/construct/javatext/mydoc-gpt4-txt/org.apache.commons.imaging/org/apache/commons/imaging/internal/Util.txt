@@ -1,0 +1,11 @@
+[API Name] Package org.apache.commons.imaging.internal.Util
+[Type] Class
+[Info]
+public class Util extends Object Internal utilities.
+Since: 1.0-alpha3
+[Method Summary]
+static ImageParser<?> getImageParser​(String fileExtension)	
+static ImageParser<?> getImageParser​(ByteSource byteSource)	
+static ImageParser<?> getImageParser​(ImageFormat format)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

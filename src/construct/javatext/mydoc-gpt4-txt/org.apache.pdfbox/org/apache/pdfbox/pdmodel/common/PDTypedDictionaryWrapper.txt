@@ -1,0 +1,15 @@
+[API Name] org.apache.pdfbox.pdmodel.common.PDTypedDictionaryWrapper
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDTypedDictionaryWrapper extends PDDictionaryWrapper A wrapper for a COS dictionary including Type information.
+Author: Johannes Koch
+[Constructor Summary]
+PDTypedDictionaryWrapper(COSDictionary dictionary)	Creates a new instance with a given COS dictionary.
+PDTypedDictionaryWrapper(String type)	Creates a new instance with a given type.
+[Method Summary]
+String getType()	Gets the type.
+[Methods inherited from class org.apache.pdfbox.pdmodel.common.PDDictionaryWrapper]
+equals, getCOSObject, hashCode
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, toString, wait, wait, wait

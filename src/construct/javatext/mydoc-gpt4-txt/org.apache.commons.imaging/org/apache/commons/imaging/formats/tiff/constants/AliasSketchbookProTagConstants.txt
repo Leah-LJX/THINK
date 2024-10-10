@@ -1,0 +1,9 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.constants.AliasSketchbookProTagConstants
+[Type] Class
+[Info]
+public final class AliasSketchbookProTagConstants extends Object Alias Sketchbook Pro multi-layer TIFF    http://www.awaresystems.be/imaging/tiff/tifftags/docs/alias.html
+[Field Summary]
+static List<TagInfo> ALL_ALIAS_SKETCHBOOK_PRO_TAGS	
+static TagInfoAscii EXIF_TAG_ALIAS_LAYER_METADATA	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.util.ExportUtils
+[Flag] Class
+[Info]
+Since: 1.0.18
+[Constructor Summary]
+ExportUtils()
+[Method Summary]
+static boolean isJFreeSVGAvailable() Returns true if JFreeSVG is on the classpath, and false otherwise.

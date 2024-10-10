@@ -1,0 +1,77 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.iptc.IptcTypes
+[Type] Enum
+[Info]
+All Implemented Interfaces: Serializable, Comparable<IptcTypes>, IptcType
+public enum IptcTypes extends Enum<IptcTypes> implements IptcType
+[Enum Constant Summary]
+ACTION_ADVISED	
+AUDIO_DURATION	
+AUDIO_OUTCUE	
+AUDIO_SAMPLING_RATE	
+AUDIO_SAMPLING_RESOLUTION	
+AUDIO_TYPE	
+BYLINE	
+BYLINE_TITLE	
+CAPTION_ABSTRACT	
+CATEGORY	
+CITY	
+CONTACT	
+CONTENT_LOCATION_CODE	
+CONTENT_LOCATION_NAME	
+COPYRIGHT_NOTICE	
+COUNTRY_PRIMARY_LOCATION_CODE	
+COUNTRY_PRIMARY_LOCATION_NAME	
+CREDIT	
+DATE_CREATED	
+DIGITAL_CREATION_DATE	
+DIGITAL_CREATION_TIME	
+EDIT_STATUS	
+EDITORIAL_UPDATE	
+EXPIRATION_DATE	
+EXPIRATION_TIME	
+FIXTURE_IDENTIFIER	
+HEADLINE	
+IMAGE_ORIENTATION	
+IMAGE_TYPE	
+KEYWORDS	
+LANGUAGE_IDENTIFIER	
+OBJECT_ATTRIBUTE_REFERENCE	
+OBJECT_CYCLE	
+OBJECT_DATA_PREVIEW_DATA	
+OBJECT_DATA_PREVIEW_FILE_FORMAT	
+OBJECT_DATA_PREVIEW_FILE_FORMAT_VERSION	
+OBJECT_NAME	
+OBJECT_TYPE_REFERENCE	
+ORIGINAL_TRANSMISSION_REFERENCE	
+ORIGINATING_PROGRAM	
+PROGRAM_VERSION	
+PROVINCE_STATE	
+RASTERIZED_CAPTION	
+RECORD_VERSION	
+REFERENCE_DATE	
+REFERENCE_NUMBER	
+REFERENCE_SERVICE	
+RELEASE_DATE	
+RELEASE_TIME	
+SOURCE	
+SPECIAL_INSTRUCTIONS	
+SUBJECT_REFERENCE	
+SUBLOCATION	
+SUPPLEMENTAL_CATEGORY	
+TIME_CREATED	
+URGENCY	
+WRITER_EDITOR	
+[Field Summary]
+String name	
+int type	
+[Method Summary]
+String getName()	
+int getType()	
+static IptcType getUnknown​(int type)	
+String toString()	
+static IptcTypes valueOf​(String name)	Returns the enum constant of this type with the specified name.
+static IptcTypes[] values()	Returns an array containing the constants of this enum type, in the order they are declared.
+[Methods inherited from class java.lang.Enum]
+clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, valueOf
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

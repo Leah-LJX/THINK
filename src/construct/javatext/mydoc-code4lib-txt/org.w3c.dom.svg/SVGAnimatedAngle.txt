@@ -1,0 +1,9 @@
+[Class] org.w3c.dom.svg.SVGAnimatedAngle
+[Flag] Interface
+[Info]
+public interface SVGAnimatedAngle
+[Constructor Summary]
+
+[Method Summary]
+SVGAngle getAnimVal()	 
+ SVGAngle getBaseVal()

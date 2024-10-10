@@ -1,0 +1,14 @@
+[Class] org.w3c.dom.svg.SVGFECompositeElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGFilterPrimitiveStandardAttributes, SVGStylable
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedString getIn1()	 
+ SVGAnimatedString getIn2()	 
+ SVGAnimatedNumber getK1()	 
+ SVGAnimatedNumber getK2()	 
+ SVGAnimatedNumber getK3()	 
+ SVGAnimatedNumber getK4()	 
+ SVGAnimatedEnumeration getOperator()

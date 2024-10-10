@@ -1,0 +1,13 @@
+[API Name] org.apache.pdfbox.pdmodel.PDDocumentNameDestinationDictionary
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDDocumentNameDestinationDictionary extends Object implements COSObjectable This encapsulates the "dictionary of names and corresponding destinations" for the /Dests entry  in the document catalog.
+Author: Tilman Hausherr
+[Constructor Summary]
+PDDocumentNameDestinationDictionary(COSDictionary dict)	Constructor.
+[Method Summary]
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+PDDestination getDestination(String name)	Returns the destination corresponding to the parameter.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

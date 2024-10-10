@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.annotations.XYAnnotationBoundsInfo
+[Flag] Interface
+[Info]
+All Known Implementing Classes: XYDataImageAnnotation
+[Constructor Summary]
+
+[Method Summary]
+boolean getIncludeInDataBounds() Returns a flag that determines whether or not the annotation's bounds should be taken into account for auto-range calculations on the axes that the annotation is plotted against.

@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.ml.naivebayes.BinaryNaiveBayesModelWriter
+[Type] Class
+[Info]
+public class BinaryNaiveBayesModelWriter extends NaiveBayesModelWriter A NaiveBayesModelWriter that writes models in a binary format.
+[Constructor Summary]
+BinaryNaiveBayesModelWriter(AbstractModel model, DataOutputStream dos)	Instantiates BinaryNaiveBayesModelWriter via an naive bayes model and a DataOutputStream.
+BinaryNaiveBayesModelWriter(AbstractModel model, File f)	Instantiates BinaryNaiveBayesModelWriter via an naive bayes model and a File.
+[Method Summary]
+void close()	Closes the underlying DataOutputStream.
+void writeDouble(double d)	Writes a single double to the underlying DataOutputStream.
+void writeInt(int i)	Writes a single int to the underlying DataOutputStream.
+void writeUTF(String s)	Writes a String to the underlying DataOutputStream.
+[Methods inherited from class opennlp.tools.ml.naivebayes.NaiveBayesModelWriter]
+persist
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

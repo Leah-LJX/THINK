@@ -1,0 +1,17 @@
+[API Name] opennlp.tools.cmdline.langdetect.LanguageDetectorTrainerTool
+[Type] Class
+[Info]
+public class LanguageDetectorTrainerTool extends opennlp.tools.cmdline.AbstractTrainerTool<LanguageSample,opennlp.tools.cmdline.langdetect.LanguageDetectorTrainerTool.TrainerToolParams>
+[Constructor Summary]
+LanguageDetectorTrainerTool()	
+[Method Summary]
+String getShortDescription()	
+void run(String format, String[] args)	Executes the tool with the given parameters.
+[Methods inherited from class opennlp.tools.cmdline.AbstractTypedParamTool]
+getHelp
+[Methods inherited from class opennlp.tools.cmdline.TypedCmdLineTool]
+getHelp
+[Methods inherited from class opennlp.tools.cmdline.CmdLineTool]
+getName, hasParams
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

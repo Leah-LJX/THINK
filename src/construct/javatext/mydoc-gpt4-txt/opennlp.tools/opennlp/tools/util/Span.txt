@@ -1,0 +1,36 @@
+[API Name] opennlp.tools.util.Span
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<Span>
+Direct Known Subclasses: LinkedSpan, MascSentence, MascToken, MascWord
+public class Span extends Object implements Comparable<Span>, Serializable Class for storing start and end integer offsets.
+See Also:
+Serialized Form
+[Constructor Summary]
+Span(int s, int e)	Initializes a new Span.
+Span(int s, int e, double prob)	Initializes a new Span.
+Span(int s, int e, String type)	Initializes a new Span.
+Span(int s, int e, String type, double prob)	Initializes a new Span.
+Span(Span span, double prob)	Creates a new immutable Span based on an existing Span, where the existing Span did not include the probability.
+Span(Span span, int offset)	Initializes a new Span with an existing Span which is shifted by an offset.
+[Method Summary]
+int compareTo(Span s)	Compares the specified Span to the current span.
+boolean contains(int index)	An index with the value of end is considered outside the Span.
+boolean contains(Span s)	Identical spans are considered to contain each other.
+boolean crosses(Span s)	Checks if the specified Span crosses this span.
+boolean equals(Object o)	
+CharSequence getCoveredText(CharSequence text)	
+int getEnd()	Note: that the returned index is one past the actual end of the span in the text, or the first element past the end of the span.
+double getProb()	
+int getStart()	
+String getType()	
+int hashCode()	
+boolean intersects(Span s)	Checks if the specified Span intersects with this span.
+int length()	
+static String[] spansToStrings(Span[] spans, CharSequence s)	Converts an array of spans to an array of String.
+static String[] spansToStrings(Span[] spans, String[] tokens)	
+boolean startsWith(Span s)	
+String toString()	
+Span trim(CharSequence text)	
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

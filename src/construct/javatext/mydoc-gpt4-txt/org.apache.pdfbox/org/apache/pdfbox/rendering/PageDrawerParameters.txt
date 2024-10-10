@@ -1,0 +1,13 @@
+[API Name] org.apache.pdfbox.rendering.PageDrawerParameters
+[Type] Class
+[Info]
+public final class PageDrawerParameters extends Object Parameters for a PageDrawer. This class ensures allows PDFRenderer and PageDrawer to share  private implementation data in a future-proof manner, while still allowing end-users to create  their own subclasses of PageDrawer.
+Author: John Hewson
+[Method Summary]
+RenderDestination getDestination()	
+float getImageDownscalingOptimizationThreshold()	
+PDPage getPage()	Returns the page.
+RenderingHints getRenderingHints()	
+boolean isSubsamplingAllowed()	Returns whether to allow subsampling of images.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

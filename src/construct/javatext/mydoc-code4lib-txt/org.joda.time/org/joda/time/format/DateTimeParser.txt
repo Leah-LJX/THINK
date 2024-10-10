@@ -1,0 +1,12 @@
+[Class] org.joda.time.format.DateTimeParser
+[Flag] Interface
+[Info]
+Since: 1.0
+See Also: DateTimeFormatter, 
+DateTimeFormatterBuilder, 
+DateTimeFormat
+[Constructor Summary]
+
+[Method Summary]
+int estimateParsedLength() Returns the expected maximum number of characters consumed.
+int parseInto(DateTimeParserBucket bucket, String text, int position) Parse an element from the given text, saving any fields into the given DateTimeParserBucket.

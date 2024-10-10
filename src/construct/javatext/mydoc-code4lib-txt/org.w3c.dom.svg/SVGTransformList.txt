@@ -1,0 +1,17 @@
+[Class] org.w3c.dom.svg.SVGTransformList
+[Flag] Interface
+[Info]
+public interface SVGTransformList
+[Constructor Summary]
+
+[Method Summary]
+SVGTransform appendItem(SVGTransform newItem)	 
+void clear()
+SVGTransform consolidate()
+SVGTransform createSVGTransformFromMatrix(SVGMatrix matrix)
+SVGTransform getItem(int index)
+int getNumberOfItems()
+SVGTransform initialize(SVGTransform newItem)
+SVGTransform insertItemBefore(SVGTransform newItem, int index)
+SVGTransform removeItem(int index)
+SVGTransform replaceItem(SVGTransform newItem, int index)

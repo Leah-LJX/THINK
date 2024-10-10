@@ -1,0 +1,40 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.constants.TiffEpTagConstants
+[Type] Class
+[Info]
+public final class TiffEpTagConstants extends Object
+[Field Summary]
+static List<TagInfo> ALL_TIFF_EP_TAGS	
+static TagInfoAsciiOrRational EXIF_TAG_BATTERY_LEVEL	
+static TagInfoBytes EXIF_TAG_CFAPATTERN_2	
+static TagInfoShorts EXIF_TAG_CFAREPEAT_PATTERN_DIM	
+static TagInfoRationals EXIF_TAG_EXPOSURE_INDEX	
+static TagInfoRationals EXIF_TAG_FLASH_ENERGY	
+static TagInfoShort EXIF_TAG_FOCAL_PLANE_RESOLUTION_UNIT	
+static TagInfoRational EXIF_TAG_FOCAL_PLANE_XRESOLUTION	
+static TagInfoRational EXIF_TAG_FOCAL_PLANE_YRESOLUTION	
+static TagInfoAscii EXIF_TAG_IMAGE_HISTORY_EXIF_IFD	
+static TagInfoLong EXIF_TAG_IMAGE_NUMBER_EXIF_IFD	
+static TagInfoUndefineds EXIF_TAG_INTER_COLOR_PROFILE	
+static TagInfoShort EXIF_TAG_INTERLACE	
+static TagInfoUndefineds EXIF_TAG_NOISE_1	
+static TagInfoAscii EXIF_TAG_SECURITY_CLASSIFICATION_EXIF_IFD	
+static TagInfoShort EXIF_TAG_SELF_TIMER_MODE	
+static TagInfoShort EXIF_TAG_SENSING_METHOD	
+static TagInfoUndefineds EXIF_TAG_SPATIAL_FREQUENCY_RESPONSE_1	
+static TagInfoBytes EXIF_TAG_TIFF_EPSTANDARD_ID_1	
+static TagInfoSShorts EXIF_TAG_TIME_ZONE_OFFSET	
+static int FOCAL_PLANE_RESOLUTION_UNIT_VALUE_CM	
+static int FOCAL_PLANE_RESOLUTION_UNIT_VALUE_INCHES	
+static int FOCAL_PLANE_RESOLUTION_UNIT_VALUE_MM	
+static int FOCAL_PLANE_RESOLUTION_UNIT_VALUE_NONE	
+static int FOCAL_PLANE_RESOLUTION_UNIT_VALUE_UM	
+static int SENSING_METHOD_VALUE_COLOR_SEQUENTIAL_AREA	
+static int SENSING_METHOD_VALUE_COLOR_SEQUENTIAL_LINEAR	
+static int SENSING_METHOD_VALUE_MONOCHROME_AREA	
+static int SENSING_METHOD_VALUE_MONOCHROME_LINEAR	
+static int SENSING_METHOD_VALUE_ONE_CHIP_COLOR_AREA	
+static int SENSING_METHOD_VALUE_THREE_CHIP_COLOR_AREA	
+static int SENSING_METHOD_VALUE_TRILINEAR	
+static int SENSING_METHOD_VALUE_TWO_CHIP_COLOR_AREA	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

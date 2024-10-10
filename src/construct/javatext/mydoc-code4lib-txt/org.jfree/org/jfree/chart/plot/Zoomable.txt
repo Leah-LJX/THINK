@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.Zoomable
+[Flag] Interface
+[Info]
+All Known Implementing Classes: CategoryPlot, CombinedDomainCategoryPlot, CombinedDomainXYPlot, CombinedRangeCategoryPlot, CombinedRangeXYPlot, FastScatterPlot, PolarPlot, ThermometerPlot, XYPlot
+[Constructor Summary]
+
+[Method Summary]
+PlotOrientation getOrientation() Returns the orientation of the plot.

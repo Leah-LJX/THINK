@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.event.ChartChangeEvent
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+Direct Known Subclasses: AnnotationChangeEvent, AxisChangeEvent, DialLayerChangeEvent, MarkerChangeEvent, PlotChangeEvent, RendererChangeEvent, TitleChangeEvent
+[Constructor Summary]
+ChartChangeEvent(Object source) Creates a new chart change event.
+[Method Summary]
+JFreeChart getChart() Returns the chart that generated the change event.

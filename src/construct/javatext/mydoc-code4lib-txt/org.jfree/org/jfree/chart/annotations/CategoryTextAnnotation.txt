@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.annotations.CategoryTextAnnotation
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Annotation, CategoryAnnotation, org.jfree.util.PublicCloneable
+Direct Known Subclasses: CategoryPointerAnnotation
+[Constructor Summary]
+CategoryTextAnnotation(String text, Comparable category, double value) Creates a new annotation to be displayed at the given location.
+[Method Summary]
+Object clone() Returns a clone of the annotation.

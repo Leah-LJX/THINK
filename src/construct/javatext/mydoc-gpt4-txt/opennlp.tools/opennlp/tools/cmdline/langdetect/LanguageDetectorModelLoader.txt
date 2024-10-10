@@ -1,0 +1,10 @@
+[API Name] opennlp.tools.cmdline.langdetect.LanguageDetectorModelLoader
+[Type] Class
+[Info]
+@Internal public class LanguageDetectorModelLoader extends opennlp.tools.cmdline.ModelLoader<LanguageDetectorModel> Loads a LanguageDetectorModel for the command line tools.   Note: Do not use this class, internal use only!
+[Constructor Summary]
+LanguageDetectorModelLoader()	
+[Methods inherited from class opennlp.tools.cmdline.ModelLoader]
+load
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

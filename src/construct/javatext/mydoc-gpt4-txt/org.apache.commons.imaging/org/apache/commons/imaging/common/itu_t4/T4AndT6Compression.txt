@@ -1,0 +1,18 @@
+[API Name] Package org.apache.commons.imaging.common.itu_t4.T4AndT6Compression
+[Type] Class
+[Info]
+public final class T4AndT6Compression extends Object
+[Field Summary]
+static int BLACK	
+static int WHITE	
+[Method Summary]
+static byte[] compressModifiedHuffman​(byte[] uncompressed, int width, int height)	Compressed with the "Modified Huffman" encoding of section 10 in the TIFF6 specification.
+static byte[] compressT4_1D​(byte[] uncompressed, int width, int height, boolean hasFill)	
+static byte[] compressT4_2D​(byte[] uncompressed, int width, int height, boolean hasFill, int parameterK)	
+static byte[] compressT6​(byte[] uncompressed, int width, int height)	
+static byte[] decompressModifiedHuffman​(byte[] compressed, int width, int height)	Decompresses the "Modified Huffman" encoding of section 10 in the TIFF6 specification.
+static byte[] decompressT4_1D​(byte[] compressed, int width, int height, boolean hasFill)	Decompresses T.4 1D encoded data.
+static byte[] decompressT4_2D​(byte[] compressed, int width, int height, boolean hasFill)	Decompressed T.4 2D encoded data.
+static byte[] decompressT6​(byte[] compressed, int width, int height)	Decompress T.6 encoded data.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

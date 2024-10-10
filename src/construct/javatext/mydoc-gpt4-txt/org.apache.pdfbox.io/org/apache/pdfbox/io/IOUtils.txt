@@ -1,0 +1,15 @@
+[API Name] org.apache.pdfbox.io.IOUtils
+[Type] Class
+[Info]
+public final class IOUtils extends Object This class contains various I/O-related methods.
+[Method Summary]
+static IOException closeAndLogException(Closeable closeable, org.apache.commons.logging.Log logger, String resourceName, IOException initialException)	Try to close an IO resource and log and return if there was an exception.
+static void closeQuietly(Closeable closeable)	Null safe close of the given Closeable suppressing any exception.
+static long copy(InputStream input, OutputStream output)	Copies all the contents from the given input stream to the given output stream.
+static RandomAccessStreamCache.StreamCacheCreateFunction createMemoryOnlyStreamCache()	Provides a function to create an instance of a memory only StreamCache using unrestricted main memory.
+static RandomAccessStreamCache.StreamCacheCreateFunction createTempFileOnlyStreamCache()	Provides a function to create an instance of a temp file only StreamCache using unrestricted size.
+static long populateBuffer(InputStream in, byte[] buffer)	Populates the given buffer with data read from the input stream.
+static byte[] toByteArray(InputStream in)	Reads the input stream and returns its contents as a byte array.
+static void unmap(ByteBuffer buf)	Unmap memory mapped byte buffers.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

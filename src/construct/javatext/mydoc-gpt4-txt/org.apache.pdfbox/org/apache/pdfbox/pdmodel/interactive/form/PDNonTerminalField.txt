@@ -1,0 +1,23 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.form.PDNonTerminalField
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDNonTerminalField extends PDField A non terminal field in an interactive form.    A non terminal field is a node in the fields tree node whose descendants  are fields.     The attributes such as FT (field type) or V (field value) do not logically  belong to the non terminal field but are inheritable attributes  for descendant terminal fields.
+[Constructor Summary]
+PDNonTerminalField(PDAcroForm acroForm)	Constructor.
+[Method Summary]
+List<PDField> getChildren()	Returns this field's children.
+COSBase getDefaultValue()	Returns the default value of this field.
+int getFieldFlags()	This will get the flags for this field.
+String getFieldType()	Get the FT entry of the field.
+COSBase getValue()	Returns the COSBase value of the "V" entry.
+String getValueAsString()	Returns a string representation of the "V" entry, or an empty string.
+List<PDAnnotationWidget> getWidgets()	Returns the widget annotations associated with this field.
+void setChildren(List<PDField> children)	Sets the child fields.
+void setDefaultValue(COSBase value)	Sets the default of this field.
+void setValue(COSBase object)	Sets the value of this field.
+void setValue(String value)	Sets the plain text value of this field.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDField]
+getAcroForm, getActions, getAlternateFieldName, getCOSObject, getFullyQualifiedName, getInheritableAttribute, getMappingName, getParent, getPartialName, isNoExport, isReadOnly, isRequired, setAlternateFieldName, setFieldFlags, setMappingName, setNoExport, setPartialName, setReadOnly, setRequired, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

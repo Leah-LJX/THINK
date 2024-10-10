@@ -1,0 +1,54 @@
+[API Name] org.apache.pdfbox.pdmodel.PDDocumentCatalog
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDDocumentCatalog extends Object implements COSObjectable The Document Catalog of a PDF.
+Author: Ben Litchfield
+[Constructor Summary]
+protected PDDocumentCatalog(PDDocument doc)	Constructor.
+protected PDDocumentCatalog(PDDocument doc, COSDictionary rootDictionary)	Constructor.
+[Method Summary]
+void addOutputIntent(PDOutputIntent outputIntent)	Add an OutputIntent to the list.
+PDPageDestination findNamedDestinationPage(PDNamedDestination namedDest)	Find the page destination from a named destination.
+PDAcroForm getAcroForm()	Get the documents AcroForm.
+PDAcroForm getAcroForm(PDDocumentFixup acroFormFixup)	Get the documents AcroForm.
+PDDocumentCatalogAdditionalActions getActions()	
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+PDDocumentNameDestinationDictionary getDests()	
+PDDocumentOutline getDocumentOutline()	Get the outline associated with this document or null if it does not exist.
+String getLanguage()	Returns the language for the document, or null.
+PDMarkInfo getMarkInfo()	Get info about doc's usage of tagged features.
+PDMetadata getMetadata()	Get the metadata that is part of the document catalog.
+PDDocumentNameDictionary getNames()	
+PDOptionalContentProperties getOCProperties()	Get the optional content properties dictionary associated with this document.
+PDDestinationOrAction getOpenAction()	Get the Document Open Action for this object.
+List<PDOutputIntent> getOutputIntents()	Get the list of OutputIntents defined in the document.
+PDPageLabels getPageLabels()	Returns the page labels descriptor of the document.
+PageLayout getPageLayout()	Returns the page layout.
+PageMode getPageMode()	Returns the page display mode.
+PDPageTree getPages()	Returns all pages in the document, as a page tree.
+PDStructureTreeRoot getStructureTreeRoot()	Get the document's structure tree root, or null if none exists.
+List<PDThread> getThreads()	Returns the document's article threads.
+PDURIDictionary getURI()	Returns the document-level URI.
+String getVersion()	Returns the PDF specification version this document conforms to.
+PDViewerPreferences getViewerPreferences()	Get the viewer preferences associated with this document or null if they do not exist.
+void setAcroForm(PDAcroForm acroForm)	Sets the AcroForm for this catalog.
+void setActions(PDDocumentCatalogAdditionalActions actions)	Sets the additional actions for the document.
+void setDocumentOutline(PDDocumentOutline outlines)	Sets the document outlines.
+void setLanguage(String language)	Sets the Language for the document.
+void setMarkInfo(PDMarkInfo markInfo)	Set information about the doc's usage of tagged features.
+void setMetadata(PDMetadata meta)	Sets the metadata for this object.
+void setNames(PDDocumentNameDictionary names)	Sets the names dictionary for the document.
+void setOCProperties(PDOptionalContentProperties ocProperties)	Sets the optional content properties dictionary.
+void setOpenAction(PDDestinationOrAction action)	Sets the Document Open Action for this object.
+void setOutputIntents(List<PDOutputIntent> outputIntents)	Replace the list of OutputIntents of the document.
+void setPageLabels(PDPageLabels labels)	Sets the page label descriptor for the document.
+void setPageLayout(PageLayout layout)	Sets the page layout.
+void setPageMode(PageMode mode)	Sets the page mode.
+void setStructureTreeRoot(PDStructureTreeRoot treeRoot)	Sets the document's structure tree root.
+void setThreads(List<PDThread> threads)	Sets the list of threads for this pdf document.
+void setURI(PDURIDictionary uri)	Sets the document level URI.
+void setVersion(String version)	Sets the PDF specification version this document conforms to.
+void setViewerPreferences(PDViewerPreferences prefs)	Sets the viewer preferences.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

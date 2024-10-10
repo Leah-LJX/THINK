@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.formats.masc.MascDocument
+[Type] Class
+[Info]
+public class MascDocument extends Object
+[Constructor Summary]
+MascDocument(String path, List<MascSentence> sentences)	
+[Method Summary]
+boolean hasNamedEntities()	Checks whether there is NER by GATE-5.0 ANNIE.
+boolean hasPennTags()	Checks whether there is Penn tagging produced by GATE-5.0 ANNIE.
+static MascDocument parseDocument(String path, InputStream f_primary, InputStream f_seg, InputStream f_penn, InputStream f_s, InputStream f_ne)	Initializes a MascDocument with all the stand-off annotations translated into the internal structure.
+MascSentence read()	
+void reset()	Resets the reading of sentences to the beginning of the document.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

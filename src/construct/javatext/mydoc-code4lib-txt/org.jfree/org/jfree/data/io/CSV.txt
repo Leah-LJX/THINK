@@ -1,0 +1,12 @@
+[Class] org.jfree.data.io.CSV
+[Flag] Class
+[Info]
+Parameters: fieldDelimiter - the field delimiter (usually a comma, semi-colon,
+                        colon, tab or space).
+textDelimiter - the text delimiter (usually a single or double
+                       quote).
+[Constructor Summary]
+CSV()	Creates a new CSV reader where the field delimiter is a comma, and the text delimiter is a double-quote.
+CSV(char fieldDelimiter, char textDelimiter)	Creates a new reader with the specified field and text delimiters.
+[Method Summary]
+CategoryDataset readCategoryDataset(Reader in)	Reads a CategoryDataset from a CSV file or input source.

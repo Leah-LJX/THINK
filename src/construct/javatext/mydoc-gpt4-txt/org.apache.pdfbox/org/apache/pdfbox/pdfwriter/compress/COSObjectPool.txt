@@ -1,0 +1,16 @@
+[API Name] org.apache.pdfbox.pdfwriter.compress.COSObjectPool
+[Type] Class
+[Info]
+public class COSObjectPool extends Object An instance of this class maps COSBase instances to COSObjectKeys and allows for a bidirectional  lookup.
+Author: Christian Appl
+[Constructor Summary]
+COSObjectPool(long highestXRefObjectNumber)	Creates a map of COSBase instances to COSObjectKeys, allowing bidirectional lookups.
+[Method Summary]
+boolean contains(COSBase object)	Returns true, if the given COSBase is a registered object of this pool.
+boolean contains(COSObjectKey key)	Returns true, if a COSBase is registered for the given COSObjectKey.
+long getHighestXRefObjectNumber()	Returns the highest known object number (see: COSObjectKey for further information), that is currently registered in this pool.
+COSObjectKey getKey(COSBase object)	Returns the COSObjectKey for a given registered COSBase.
+COSBase getObject(COSObjectKey key)	Returns the COSBase, that is registered for the given COSObjectKey, or null if no object is registered for that key.
+COSObjectKey put(COSObjectKey key, COSBase object)	Update the key and object maps.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

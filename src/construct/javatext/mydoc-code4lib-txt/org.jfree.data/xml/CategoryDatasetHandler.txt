@@ -1,0 +1,11 @@
+[Class] org.jfree.data.xml.CategoryDatasetHandler
+[Flag] Class
+[Info]
+All Implemented Interfaces: DatasetTags, ContentHandler, DTDHandler, EntityResolver, ErrorHandler
+[Constructor Summary]
+CategoryDatasetHandler()	Creates a new handler.
+[Method Summary]
+void addItem(Comparable rowKey, Comparable columnKey, Number value)	Adds an item to the dataset.
+void endElement(String namespaceURI, String localName, String qName)	The end of an element.
+CategoryDataset getDataset()	Returns the dataset.
+void startElement(String namespaceURI, String localName, String qName, Attributes atts)	The start of an element.

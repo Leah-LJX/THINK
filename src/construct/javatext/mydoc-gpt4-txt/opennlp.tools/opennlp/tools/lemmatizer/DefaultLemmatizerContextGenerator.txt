@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.lemmatizer.DefaultLemmatizerContextGenerator
+[Type] Class
+[Info]
+All Implemented Interfaces: LemmatizerContextGenerator, BeamSearchContextGenerator<String>
+public class DefaultLemmatizerContextGenerator extends Object implements LemmatizerContextGenerator Simple feature generator for learning statistical lemmatizers.    Features based on Grzegorz Chrupała. 2008.    Towards a Machine-Learning Architecture for Lexical Functional Grammar Parsing.   PhD dissertation, Dublin City University
+[Constructor Summary]
+DefaultLemmatizerContextGenerator()	
+[Method Summary]
+String[] getContext(int index, String[] sequence, String[] priorDecisions, Object[] additionalContext)	Returns the context for the specified position in the specified sequence (list).
+String[] getContext(int index, String[] toks, String[] tags, String[] preds)	Returns the contexts for lemmatizing of the specified index.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

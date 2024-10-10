@@ -1,0 +1,12 @@
+[Class] org.jfree.data.xy.VectorDataItem
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Comparable
+[Constructor Summary]
+VectorDataItem(double x, double y, double deltaX, double deltaY)	Creates a new VectorDataItem instance.
+[Method Summary]
+Vector getVector()	Returns the vector.
+double getVectorX()	Returns the x-component for the vector.
+double getVectorY()	Returns the y-component for the vector.
+double getXValue()	Returns the x-value.
+double getYValue()	Returns the y-value.

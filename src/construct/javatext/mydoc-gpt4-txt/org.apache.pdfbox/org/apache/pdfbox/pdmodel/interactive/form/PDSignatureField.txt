@@ -1,0 +1,24 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.form.PDSignatureField
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDSignatureField extends PDTerminalField A signature field is a form field that contains a digital signature.
+Author: Ben Litchfield, Thomas Chojecki
+[Constructor Summary]
+PDSignatureField(PDAcroForm acroForm)	
+[Method Summary]
+PDSignature getDefaultValue()	Returns the default value, if any.
+PDSeedValue getSeedValue()	(Optional; PDF 1.5) A seed value dictionary containing information that constrains the properties of a signature that is applied to the field.
+PDSignature getSignature()	Get the signature dictionary.
+PDSignature getValue()	Returns the signature contained in this field.
+String getValueAsString()	Returns a string representation of the "V" entry, or an empty string.
+void setDefaultValue(PDSignature value)	Sets the default value of this field to be the given signature.
+void setSeedValue(PDSeedValue sv)	(Optional; PDF 1.) A seed value dictionary containing information that constrains the properties of a signature that is applied to the field.
+void setValue(PDSignature value)	Sets the value of this field to be the given signature.
+void setValue(String value)	This will throw an UnsupportedOperationException if used as the signature fields value can't be set using a String
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDTerminalField]
+applyChange, getFieldFlags, getFieldType, getWidgets, importFDF, setActions, setWidgets
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDField]
+getAcroForm, getActions, getAlternateFieldName, getCOSObject, getFullyQualifiedName, getInheritableAttribute, getMappingName, getParent, getPartialName, isNoExport, isReadOnly, isRequired, setAlternateFieldName, setFieldFlags, setMappingName, setNoExport, setPartialName, setReadOnly, setRequired, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

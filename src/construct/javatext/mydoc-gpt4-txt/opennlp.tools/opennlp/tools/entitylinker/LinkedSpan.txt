@@ -1,0 +1,27 @@
+[API Name] opennlp.tools.entitylinker.LinkedSpan<T
+[Type] Class
+[Info]
+Type Parameters: T - The generic type that specializes a BaseLink.
+All Implemented Interfaces: Serializable, Comparable<Span>
+public class LinkedSpan<T extends BaseLink> extends Span A default, extended Span that holds additional information about a Span.
+See Also:
+Serialized Form
+[Constructor Summary]
+LinkedSpan(ArrayList<T> linkedEntries, int s, int e)	Initializes a new LinkedSpan.
+LinkedSpan(ArrayList<T> linkedEntries, int s, int e, String type)	Initializes a new LinkedSpan.
+LinkedSpan(ArrayList<T> linkedEntries, int s, int e, String type, double prob)	Initializes a new LinkedSpan.
+LinkedSpan(ArrayList<T> linkedEntries, Span span, int offset)	Initializes a new LinkedSpan via an existing Span which is shifted by the specified offset.
+[Method Summary]
+boolean equals(Object obj)	
+ArrayList<T> getLinkedEntries()	
+String getSearchTerm()	
+int getSentenceid()	
+int hashCode()	
+void setLinkedEntries(ArrayList<T> linkedEntries)	
+void setSearchTerm(String searchTerm)	
+void setSentenceid(int sentenceid)	
+String toString()	
+[Methods inherited from class opennlp.tools.util.Span]
+compareTo, contains, contains, crosses, getCoveredText, getEnd, getProb, getStart, getType, intersects, length, spansToStrings, spansToStrings, startsWith, trim
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

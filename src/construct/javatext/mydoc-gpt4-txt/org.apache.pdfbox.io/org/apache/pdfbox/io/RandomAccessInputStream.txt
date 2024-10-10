@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.io.RandomAccessInputStream
+[Type] Class
+[Info]
+All Implemented Interfaces: Closeable, AutoCloseable
+public class RandomAccessInputStream extends InputStream An InputStream which reads from a RandomAccessRead.
+Author: Ben Litchfield, John Hewson
+[Constructor Summary]
+RandomAccessInputStream(RandomAccessRead randomAccessRead)	Creates a new RandomAccessInputStream, with a position of zero.
+[Method Summary]
+int available()	
+int read()	
+int read(byte[] b, int off, int len)	
+long skip(long n)	
+[Methods inherited from class java.io.InputStream]
+close, mark, markSupported, read, reset
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

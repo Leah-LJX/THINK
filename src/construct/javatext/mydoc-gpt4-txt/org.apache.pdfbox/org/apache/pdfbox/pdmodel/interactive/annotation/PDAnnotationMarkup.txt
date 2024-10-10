@@ -1,0 +1,40 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationMarkup
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDAnnotationCaret, PDAnnotationFileAttachment, PDAnnotationFreeText, PDAnnotationInk, PDAnnotationLine, PDAnnotationPolygon, PDAnnotationPolyline, PDAnnotationRubberStamp, PDAnnotationSound, PDAnnotationSquareCircle, PDAnnotationText, PDAnnotationTextMarkup
+public class PDAnnotationMarkup extends PDAnnotation This class represents the additional fields of a Markup type Annotation. See section 12.5.6 of ISO32000-1:2008  (starting with page 390) for details on annotation types.
+Author: Paul King
+[Constructor Summary]
+PDAnnotationMarkup()	Constructor.
+PDAnnotationMarkup(COSDictionary dict)	Constructor.
+[Field Summary]
+static String RT_GROUP	Constant for an annotation reply type.
+static String RT_REPLY	Constant for an annotation reply type.
+[Method Summary]
+PDBorderStyleDictionary getBorderStyle()	This will retrieve the border style dictionary, specifying the width and dash pattern used in drawing the line.
+float getConstantOpacity()	This will retrieve the constant opacity value used when rendering the annotation (excluing any popup).
+Calendar getCreationDate()	This will retrieve the date and time the annotation was created.
+PDExternalDataDictionary getExternalData()	This will return the external data dictionary.
+PDAnnotation getInReplyTo()	This will retrieve the annotation to which this one is "In Reply To" the actual relationship is specified by the RT entry.
+String getIntent()	This will retrieve the intent of the annotation The values and meanings are specific to the actual annotation See the IT_* constants for the annotation classes.
+PDAnnotationPopup getPopup()	This will retrieve the popup annotation used for entering/editing the text for this annotation.
+String getReplyType()	This will retrieve the Reply Type (relationship) with the annotation in the IRT entry See the RT_* constants for the available values.
+String getRichContents()	This will retrieve the rich text stream which is displayed in the popup window.
+String getSubject()	This will retrieve the short description of the subject of the annotation.
+String getTitlePopup()	Retrieve the string used as the title of the popup window shown when open and active (by convention this identifies who added the annotation).
+void setBorderStyle(PDBorderStyleDictionary bs)	This will set the border style dictionary, specifying the width and dash pattern used in drawing the line.
+void setConstantOpacity(float ca)	This will set the constant opacity value used when rendering the annotation (excluing any popup).
+void setCreationDate(Calendar creationDate)	This will set the date and time the annotation was created.
+void setExternalData(PDExternalDataDictionary externalData)	This will set the external data dictionary.
+void setInReplyTo(PDAnnotation irt)	This will set the annotation to which this one is "In Reply To" the actual relationship is specified by the RT entry.
+void setIntent(String it)	This will set the intent of the annotation The values and meanings are specific to the actual annotation See the IT_* constants for the annotation classes.
+void setPopup(PDAnnotationPopup popup)	This will set the popup annotation used for entering/editing the text for this annotation.
+void setReplyType(String rt)	This will set the Reply Type (relationship) with the annotation in the IRT entry See the RT_* constants for the available values.
+void setRichContents(String rc)	This will set the rich text stream which is displayed in the popup window.
+void setSubject(String subj)	This will set the short description of the subject of the annotation.
+void setTitlePopup(String t)	Set the string used as the title of the popup window shown when open and active (by convention this identifies who added the annotation).
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation]
+constructAppearances, constructAppearances, createAnnotation, equals, getAnnotationFlags, getAnnotationName, getAppearance, getAppearanceState, getBorder, getColor, getColor, getContents, getCOSObject, getModifiedDate, getNormalAppearanceStream, getOptionalContent, getPage, getRectangle, getStructParent, getSubtype, hashCode, isHidden, isInvisible, isLocked, isLockedContents, isNoRotate, isNoView, isNoZoom, isPrinted, isReadOnly, isToggleNoView, setAnnotationFlags, setAnnotationName, setAppearance, setAppearanceState, setBorder, setColor, setContents, setHidden, setInvisible, setLocked, setLockedContents, setModifiedDate, setModifiedDate, setNoRotate, setNoView, setNoZoom, setOptionalContent, setPage, setPrinted, setReadOnly, setRectangle, setStructParent, setSubtype, setToggleNoView
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, toString, wait, wait, wait

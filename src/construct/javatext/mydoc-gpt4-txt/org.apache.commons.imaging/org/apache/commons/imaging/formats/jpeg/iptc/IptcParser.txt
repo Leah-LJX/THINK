@@ -1,0 +1,18 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.iptc.IptcParser
+[Type] Class
+[Info]
+public class IptcParser extends BinaryFileParser
+[Constructor Summary]
+IptcParser()	
+[Method Summary]
+boolean isPhotoshopJpegSegment​(byte[] segmentData)	
+protected List<IptcBlock> parseAllBlocks​(byte[] bytes, boolean strict)	
+protected List<IptcRecord> parseIPTCBlock​(byte[] bytes)	
+PhotoshopApp13Data parsePhotoshopSegment​(byte[] bytes, boolean strict)	
+PhotoshopApp13Data parsePhotoshopSegment​(byte[] bytes, ImagingParameters params)	
+byte[] writeIPTCBlock​(List<IptcRecord> elements)	
+byte[] writePhotoshopApp13Segment​(PhotoshopApp13Data data)	
+[Methods inherited from class org.apache.commons.imaging.common.BinaryFileParser]
+debugNumber, debugNumber, getByteOrder, setByteOrder
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

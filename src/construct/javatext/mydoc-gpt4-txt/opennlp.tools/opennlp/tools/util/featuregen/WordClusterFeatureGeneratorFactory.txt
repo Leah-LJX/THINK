@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.util.featuregen.WordClusterFeatureGeneratorFactory
+[Type] Class
+[Info]
+public class WordClusterFeatureGeneratorFactory extends GeneratorFactory.AbstractXmlFeatureGeneratorFactory Defines a word cluster generator factory; it reads an element containing  'w2vwordcluster' as a tag name; these clusters are typically produced by  word2vec or clark pos induction systems.
+[Constructor Summary]
+WordClusterFeatureGeneratorFactory()	
+[Method Summary]
+AdaptiveFeatureGenerator create()	
+Map<String,ArtifactSerializer<?>> getArtifactSerializerMapping()	
+[Methods inherited from class opennlp.tools.util.featuregen.GeneratorFactory.AbstractXmlFeatureGeneratorFactory]
+getBool, getBool, getDouble, getDouble, getFloat, getFloat, getInt, getInt, getLong, getLong, getStr, getStr
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

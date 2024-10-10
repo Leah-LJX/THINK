@@ -1,0 +1,11 @@
+[Class] org.w3c.dom.svg.SVGAltGlyphElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, EventTarget, Node, SVGElement, SVGExternalResourcesRequired, SVGLangSpace, SVGStylable, SVGTests, SVGTextContentElement, SVGTextPositioningElement, SVGURIReference
+[Constructor Summary]
+
+[Method Summary]
+java.lang.String getFormat()	 
+ java.lang.String getGlyphRef()	 
+ void setFormat(java.lang.String format)	 
+ void setGlyphRef(java.lang.String glyphRef)

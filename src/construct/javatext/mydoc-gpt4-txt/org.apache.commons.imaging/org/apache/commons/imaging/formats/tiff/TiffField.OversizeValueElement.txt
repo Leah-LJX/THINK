@@ -1,0 +1,13 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.TiffField.OversizeValueElement
+[Type] Class
+[Info]
+Enclosing class: TiffField
+public final class TiffField.OversizeValueElement extends TiffElement
+[Constructor Summary]
+OversizeValueElement​(int offset, int length)	
+[Field Summary]
+OversizeValueElement​(int offset, int length)	
+[Method Summary]
+String getElementDescription()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

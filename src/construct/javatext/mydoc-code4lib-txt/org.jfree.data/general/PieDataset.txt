@@ -1,0 +1,10 @@
+[Class] org.jfree.data.general.PieDataset
+[Flag] Interface
+[Info]
+Type Parameters: K - Key type for KeyedValues
+All Superinterfaces: Dataset, KeyedValues<K>, Values
+All Known Subinterfaces: KeyedValuesDataset
+All Known Implementing Classes: CategoryToPieDataset, DefaultKeyedValuesDataset, DefaultPieDataset, JDBCPieDataset
+[Constructor Summary]
+
+[Method Summary]

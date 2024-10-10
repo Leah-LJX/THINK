@@ -1,0 +1,7 @@
+[Class] org.w3c.dom.svg.SVGTSpanElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, EventTarget, Node, SVGElement, SVGExternalResourcesRequired, SVGLangSpace, SVGStylable, SVGTests, SVGTextContentElement, SVGTextPositioningElement
+[Constructor Summary]
+
+[Method Summary]

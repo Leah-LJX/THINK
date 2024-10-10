@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.pdmodel.font.PDType3CharProc
+[Type] Class
+[Info]
+All Implemented Interfaces: PDContentStream, COSObjectable
+public final class PDType3CharProc extends Object implements COSObjectable, PDContentStream A Type 3 character procedure. This is a standalone PDF content stream.
+Author: John Hewson
+[Constructor Summary]
+PDType3CharProc(PDType3Font font, COSStream charStream)	
+[Method Summary]
+PDRectangle getBBox()	Returns the bounding box of the contents.
+InputStream getContents()	Returns this stream's content, if any.
+org.apache.pdfbox.io.RandomAccessRead getContentsForRandomAccess()	Returns this stream's content, if any.
+PDStream getContentStream()	
+COSStream getCOSObject()	Convert this standard java object to a COS object.
+PDType3Font getFont()	
+PDRectangle getGlyphBBox()	Calculate the bounding box of this glyph.
+Matrix getMatrix()	Returns the matrix which transforms from the stream's space to user space.
+PDResources getResources()	Returns this stream's resources, if any.
+float getWidth()	Get the width from a type3 charproc stream.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

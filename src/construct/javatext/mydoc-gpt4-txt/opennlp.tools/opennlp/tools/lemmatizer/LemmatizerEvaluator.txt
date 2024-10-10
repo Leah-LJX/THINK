@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.lemmatizer.LemmatizerEvaluator
+[Type] Class
+[Info]
+public class LemmatizerEvaluator extends Evaluator<LemmaSample> The LemmatizerEvaluator measures the performance of  the given Lemmatizer with the provided reference  samples.
+[Constructor Summary]
+LemmatizerEvaluator(Lemmatizer aLemmatizer, LemmatizerEvaluationMonitor... listeners)	Initializes a LemmatizerEvaluator instance with the given Lemmatizer.
+[Method Summary]
+double getWordAccuracy()	Accuracy is defined as: word accuracy = correctly detected tags / total words
+long getWordCount()	
+String toString()	Returns this object's human-readable String representation.
+[Methods inherited from class opennlp.tools.util.eval.Evaluator]
+evaluate, evaluateSample
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, wait, wait, wait

@@ -1,0 +1,15 @@
+[Class] org.jfree.data.xy.XYDataset
+[Flag] Interface
+[Info]
+All Superinterfaces: Dataset, SeriesDataset
+All Known Subinterfaces: BoxAndWhiskerXYDataset, IntervalXYDataset, IntervalXYZDataset, OHLCDataset, TableXYDataset, VectorXYDataset, WindDataset, XYZDataset
+All Known Implementing Classes: AbstractIntervalXYDataset, AbstractXYDataset, AbstractXYZDataset, CategoryTableXYDataset, CyclicXYItemRenderer.OverwriteDataSet, DefaultBoxAndWhiskerXYDataset, DefaultHighLowDataset, DefaultIntervalXYDataset, DefaultOHLCDataset, DefaultTableXYDataset, DefaultWindDataset, DefaultXYDataset, DefaultXYZDataset, DynamicTimeSeriesCollection, HistogramDataset, JDBCXYDataset, MatrixSeriesCollection, OHLCSeriesCollection, SimpleHistogramDataset, TimePeriodValuesCollection, TimeSeriesCollection, TimeTableXYDataset, VectorSeriesCollection, XIntervalSeriesCollection, XYBarDataset, XYIntervalSeriesCollection, XYSeriesCollection, XYTaskDataset, YIntervalSeriesCollection
+[Constructor Summary]
+
+[Method Summary]
+DomainOrder getDomainOrder()	Returns the order of the domain (or X) values returned by the dataset.
+int getItemCount(int series)	Returns the number of items in a series.
+Number getX(int series, int item)	Returns the x-value for an item within a series.
+double getXValue(int series, int item)	Returns the x-value for an item within a series.
+Number getY(int series, int item)	Returns the y-value for an item within a series.
+double getYValue(int series, int item)	Returns the y-value (as a double primitive) for an item within a series.

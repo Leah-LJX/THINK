@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.ml.model.MaxentModel
+[Type] Interface
+[Info]
+All Known Implementing Classes: AbstractModel, GISModel, NaiveBayesModel, PerceptronModel, QNModel
+public interface MaxentModel Interface for maximum entropy models.
+[Method Summary]
+double[] eval(String[] context)	Evaluates a context.
+double[] eval(String[] context, double[] probs)	Evaluates a context.
+double[] eval(String[] context, float[] values)	Evaluates a context with the specified context values.
+String getAllOutcomes(double[] outcomes)	Retrieves a string matching all the outcome names with all the probabilities produced by the eval(String[]) method.
+String getBestOutcome(double[] outcomes)	Retrieves the outcome associated with the index containing the highest probability in the double[].
+int getIndex(String outcome)	Retrieves the index associated with the String name of the given outcome.
+int getNumOutcomes()	
+String getOutcome(int i)	Retrieves the String name of the outcome associated with the index i.

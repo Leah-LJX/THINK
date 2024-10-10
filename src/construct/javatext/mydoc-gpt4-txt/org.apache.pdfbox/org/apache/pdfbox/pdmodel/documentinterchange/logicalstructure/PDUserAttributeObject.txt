@@ -1,0 +1,24 @@
+[API Name] org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDUserAttributeObject
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDUserAttributeObject extends PDAttributeObject A User attribute object.
+Author: Johannes Koch
+[Constructor Summary]
+PDUserAttributeObject()	Default constructor
+PDUserAttributeObject(COSDictionary dictionary)	Constructor
+[Field Summary]
+static String OWNER_USER_PROPERTIES	Attribute owner for user properties
+[Method Summary]
+void addUserProperty(PDUserProperty userProperty)	Adds a user property.
+List<PDUserProperty> getOwnerUserProperties()	Returns the user properties.
+void removeUserProperty(PDUserProperty userProperty)	Removes a user property.
+void setUserProperties(List<PDUserProperty> userProperties)	Sets the user properties.
+String toString()	
+void userPropertyChanged(PDUserProperty userProperty)	Notify a possible change of user properties.
+[Methods inherited from class org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDAttributeObject]
+arrayToString, arrayToString, create, getOwner, isEmpty, notifyChanged, potentiallyNotifyChanged, setOwner, setStructureElement
+[Methods inherited from class org.apache.pdfbox.pdmodel.common.PDDictionaryWrapper]
+equals, getCOSObject, hashCode
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

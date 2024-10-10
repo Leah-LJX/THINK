@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.util.BaseToolFactory
+[Type] Class
+[Info]
+Direct Known Subclasses: ChunkerFactory, DoccatFactory, LanguageDetectorFactory, LemmatizerFactory, POSTaggerFactory, SentenceDetectorFactory, TokenizerFactory, TokenNameFinderFactory
+public abstract class BaseToolFactory extends Object Base class for all tool factories.    Extensions of this class should:   implement an empty constructor, implement a constructor that takes the ArtifactProvider}, override createArtifactMap() and       createArtifactSerializersMap() methods if necessary.
+[Constructor Summary]
+BaseToolFactory()	All subclasses should have an empty constructor
+[Method Summary]
+static BaseToolFactory create(Class<? extends BaseToolFactory> factoryClass, ArtifactProvider artifactProvider)	Instantiates a BaseToolFactory via a given subclassName.
+static BaseToolFactory create(String subclassName, ArtifactProvider artifactProvider)	Instantiates a BaseToolFactory via a given subclassName.
+Map<String,Object> createArtifactMap()	A model's implementation should call this constructor that creates a model programmatically.
+Map<String,ArtifactSerializer> createArtifactSerializersMap()	Creates a Map with pairs of keys and ArtifactSerializer.
+Map<String,String> createManifestEntries()	
+abstract void validateArtifactMap()	Validates the parsed artifacts.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

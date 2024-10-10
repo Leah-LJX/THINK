@@ -1,0 +1,15 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.constants.GeoTiffTagConstants
+[Type] Class
+[Info]
+public final class GeoTiffTagConstants extends Object Geo Tiff.    http://www.remotesensing.org/geotiff/spec/contents.html
+[Field Summary]
+static List<TagInfo> ALL_GEO_TIFF_TAGS	
+static TagInfoAscii EXIF_TAG_GEO_ASCII_PARAMS_TAG	
+static TagInfoDoubles EXIF_TAG_GEO_DOUBLE_PARAMS_TAG	
+static TagInfoShorts EXIF_TAG_GEO_KEY_DIRECTORY_TAG	
+static TagInfoDoubles EXIF_TAG_INTERGRAPH_MATRIX_TAG	
+static TagInfoDoubles EXIF_TAG_MODEL_PIXEL_SCALE_TAG	
+static TagInfoDoubles EXIF_TAG_MODEL_TIEPOINT_TAG	
+static TagInfoDoubles EXIF_TAG_MODEL_TRANSFORMATION_TAG	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

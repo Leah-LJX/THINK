@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.DefaultDrawingSupplier
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, DrawingSupplier, org.jfree.util.PublicCloneable
+[Constructor Summary]
+DefaultDrawingSupplier() Creates a new supplier, with default sequences for fill paint, outline paint, stroke and shapes.
+[Method Summary]
+Object clone() Returns a clone.

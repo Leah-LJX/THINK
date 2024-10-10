@@ -1,0 +1,15 @@
+[Class] org.w3c.dom.svg.SVGFESpotLightElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedNumber getLimitingConeAngle()	 
+ SVGAnimatedNumber getPointsAtX()	 
+ SVGAnimatedNumber getPointsAtY()	 
+ SVGAnimatedNumber getPointsAtZ()	 
+ SVGAnimatedNumber getSpecularExponent()	 
+ SVGAnimatedNumber getX()	 
+ SVGAnimatedNumber getY()	 
+ SVGAnimatedNumber getZ()

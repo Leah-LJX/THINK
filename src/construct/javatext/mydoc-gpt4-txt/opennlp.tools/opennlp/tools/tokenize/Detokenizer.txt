@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.tokenize.Detokenizer
+[Type] Interface
+[Info]
+All Known Implementing Classes: DictionaryDetokenizer
+public interface Detokenizer A Detokenizer merges tokens back to their detokenized representation.
+[Nested Class Summary]
+Nested Class Summary
+static enum 
+[Method Summary]
+Detokenizer.DetokenizationOperation[] detokenize(String[] tokens)	Detokenizes the collection of tokens.
+String detokenize(String[] tokens, String splitMarker)	Detokenizes the input tokens into a String.

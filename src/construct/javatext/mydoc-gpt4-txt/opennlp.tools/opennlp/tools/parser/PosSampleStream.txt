@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.parser.PosSampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<POSSample>
+public class PosSampleStream extends FilterObjectStream<Parse,POSSample>
+[Constructor Summary]
+PosSampleStream(ObjectStream<Parse> in)	Initializes a instance.
+[Method Summary]
+POSSample read()	Returns the next ObjectStream object.
+[Methods inherited from class opennlp.tools.util.FilterObjectStream]
+close, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.formats.ad.ADSentenceStream.SentenceParser.Node
+[Type] Class
+[Info]
+Enclosing class: ADSentenceStream.SentenceParser
+public static class ADSentenceStream.SentenceParser.Node extends ADSentenceStream.SentenceParser.TreeElement Represents the AD node
+[Constructor Summary]
+Node()	
+[Method Summary]
+void addElement(ADSentenceStream.SentenceParser.TreeElement element)	
+ADSentenceStream.SentenceParser.TreeElement[] getElements()	
+String toString()	
+[Methods inherited from class opennlp.tools.formats.ad.ADSentenceStream.SentenceParser.TreeElement]
+getLevel, getMorphologicalTag, getSyntacticTag, isLeaf, setLevel, setMorphologicalTag, setSyntacticTag
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, wait, wait, wait

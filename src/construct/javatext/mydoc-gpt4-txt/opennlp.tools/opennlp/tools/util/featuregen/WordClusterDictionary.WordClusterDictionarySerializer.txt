@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.util.featuregen.WordClusterDictionary.WordClusterDictionarySerializer
+[Type] Class
+[Info]
+All Implemented Interfaces: ArtifactSerializer<WordClusterDictionary>
+Enclosing class: WordClusterDictionary
+public static class WordClusterDictionary.WordClusterDictionarySerializer extends Object implements ArtifactSerializer<WordClusterDictionary>
+[Constructor Summary]
+WordClusterDictionarySerializer()	
+[Method Summary]
+WordClusterDictionary create(InputStream in)	Creates an artifact from the provided InputStream.
+void serialize(WordClusterDictionary artifact, OutputStream out)	Serializes an artifact to the provided OutputStream.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

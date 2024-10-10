@@ -1,0 +1,23 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.segments.App13Segment
+[Type] Class
+[Info]
+public class App13Segment extends AppnSegment
+[Constructor Summary]
+App13Segment​(int marker, byte[] segmentData)	
+App13Segment​(int marker, int markerLength, InputStream is)	
+[Field Summary]
+App13Segment​(int marker, byte[] segmentData)	
+App13Segment​(int marker, int markerLength, InputStream is)	
+[Method Summary]
+boolean isPhotoshopJpegSegment()	
+PhotoshopApp13Data parsePhotoshopSegment​(ImagingParameters params)	
+[Methods inherited from class org.apache.commons.imaging.formats.jpeg.segments.AppnSegment]
+getDescription
+[Methods inherited from class org.apache.commons.imaging.formats.jpeg.segments.GenericSegment]
+dump, dump, getSegmentData, getSegmentData, getSegmentDataAsString
+[Methods inherited from class org.apache.commons.imaging.formats.jpeg.segments.Segment]
+getSegmentType, toString
+[Methods inherited from class org.apache.commons.imaging.common.BinaryFileParser]
+debugNumber, debugNumber, getByteOrder, setByteOrder
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

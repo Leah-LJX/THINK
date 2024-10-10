@@ -1,0 +1,27 @@
+[API Name] opennlp.tools.ngram.NGramCharModel
+[Type] Class
+[Info]
+All Implemented Interfaces: Iterable<CharSequence>
+public class NGramCharModel extends Object implements Iterable<CharSequence> The NGramCharModel can be used to create character ngrams.
+See Also:
+NGramModel
+[Constructor Summary]
+NGramCharModel()	Initializes an empty instance.
+[Method Summary]
+void add(CharSequence ngram)	Adds an ngram.
+void add(CharSequence chars, int minLength, int maxLength)	Adds a CharSequence that will be ngrammed into chars.
+boolean contains(CharSequence ngram)	Checks if the given ngram is contained in a NGramCharModel.
+void cutoff(int cutoffUnder, int cutoffOver)	Deletes all ngram which do appear less than the cutoffUnder value and more often than the cutoffOver value.
+boolean equals(Object obj)	
+int getCount(CharSequence ngram)	Retrieves the count of the given ngram.
+int hashCode()	
+Iterator<CharSequence> iterator()	Retrieves an Iterator over all entries.
+int numberOfGrams()	Retrieves the total count of all Ngrams.
+void remove(CharSequence ngram)	Removes the specified ngram is from a NGramCharModel.
+void setCount(CharSequence ngram, int count)	Sets the count of an existing ngram.
+int size()	Retrieves the number of entries in a NGramCharModel.
+String toString()	
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait
+[Methods inherited from interface java.lang.Iterable]
+forEach, spliterator

@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.tokenize.TokSpanEventStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<Event>
+public class TokSpanEventStream extends AbstractEventStream<TokenSample> This class reads the samples via an Iterator  and converts the samples into events which  can be used by the maxent library for training.
+[Constructor Summary]
+TokSpanEventStream(ObjectStream<TokenSample> tokenSamples, boolean skipAlphaNumerics)	Initializes a new event stream based on the data stream using a TokenContextGenerator that relies on a DefaultTokenContextGenerator.
+TokSpanEventStream(ObjectStream<TokenSample> tokenSamples, boolean skipAlphaNumerics, Pattern alphaNumeric, TokenContextGenerator cg)	Initializes a new event stream based on the data stream using a TokenContextGenerator.
+TokSpanEventStream(ObjectStream<TokenSample> tokenSamples, boolean skipAlphaNumerics, TokenContextGenerator cg)	Initializes a new event stream based on the data stream using a TokenContextGenerator.
+[Methods inherited from class opennlp.tools.util.AbstractEventStream]
+close, read, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

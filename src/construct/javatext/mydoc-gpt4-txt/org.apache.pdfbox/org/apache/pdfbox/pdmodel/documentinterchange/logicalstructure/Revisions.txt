@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.Revisions<T>
+[Type] Class
+[Info]
+Type Parameters: T - the type of object to store the revision numbers with
+public class Revisions<T> extends Object
+Author: Johannes Koch
+[Constructor Summary]
+Revisions()	Constructor.
+[Method Summary]
+void addObject(T object, int revisionNumber)	Adds an object with a specified revision number.
+T getObject(int index)	Returns the object at the specified position.
+int getRevisionNumber(int index)	Returns the revision number at the specified position.
+protected void setRevisionNumber(T object, int revisionNumber)	Sets the revision number of a specified object.
+int size()	Returns the size.
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

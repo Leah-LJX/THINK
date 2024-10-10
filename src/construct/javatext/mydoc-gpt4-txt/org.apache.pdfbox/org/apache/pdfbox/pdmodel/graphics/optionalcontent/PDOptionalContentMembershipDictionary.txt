@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.optionalcontent.PDOptionalContentMembershipDictionary
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDOptionalContentMembershipDictionary extends PDPropertyList An optional content membership dictionary (OCMD).
+Author: Tilman Hausherr
+[Constructor Summary]
+PDOptionalContentMembershipDictionary()	Creates a new optional content membership dictionary (OCMD).
+PDOptionalContentMembershipDictionary(COSDictionary dict)	Creates a new instance based on a given COSDictionary.
+[Field Summary]
+PDOptionalContentMembershipDictionary()	Creates a new optional content membership dictionary (OCMD).
+PDOptionalContentMembershipDictionary(COSDictionary dict)	Creates a new instance based on a given COSDictionary.
+[Method Summary]
+List<PDPropertyList> getOCGs()	Get a list of optional content groups.
+COSName getVisibilityPolicy()	Get the visibility policy name.
+void setOCGs(List<PDPropertyList> ocgs)	Set optional content groups as a list.
+void setVisibilityPolicy(COSName visibilityPolicy)	Sets the visibility policy name.
+[Methods inherited from class org.apache.pdfbox.pdmodel.documentinterchange.markedcontent.PDPropertyList]
+create, getCOSObject
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

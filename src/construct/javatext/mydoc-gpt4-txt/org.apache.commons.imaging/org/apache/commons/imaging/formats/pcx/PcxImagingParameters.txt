@@ -1,0 +1,18 @@
+[API Name] Package org.apache.commons.imaging.formats.pcx.PcxImagingParameters
+[Type] Class
+[Info]
+public class PcxImagingParameters extends ImagingParameters Parameters used by the Pcx format.
+Since: 1.0-alpha3
+[Constructor Summary]
+PcxImagingParameters()	
+[Method Summary]
+int getBitDepth()	
+int getCompression()	
+int getPlanes()	
+void setBitDepth​(int bitDepth)	
+void setCompression​(int compression)	
+void setPlanes​(int planes)	
+[Methods inherited from class org.apache.commons.imaging.ImagingParameters]
+getBufferedImageFactory, getFileName, getPixelDensity, isStrict, setBufferedImageFactory, setFileName, setPixelDensity, setStrict
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

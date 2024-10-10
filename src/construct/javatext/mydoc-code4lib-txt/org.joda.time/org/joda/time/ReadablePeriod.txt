@@ -1,0 +1,19 @@
+[Class] org.joda.time.ReadablePeriod
+[Flag] Interface
+[Info]
+All Known Subinterfaces: ReadWritablePeriod
+All Known Implementing Classes: AbstractPeriod, BasePeriod, BaseSingleFieldPeriod, Days, Hours, Minutes, Months, MutablePeriod, Period, Seconds, Weeks, Years
+[Constructor Summary]
+
+[Method Summary]
+boolean equals(Object readablePeriod) Compares this object with the specified object for equality based on the value and type of each supported field.
+int get(DurationFieldType field) Gets the value of one of the fields.
+DurationFieldType getFieldType(int index) Gets the field type at the specified index.
+PeriodType getPeriodType() Gets the period type that defines which fields are included in the period.
+int getValue(int index) Gets the value at the specified index.
+int hashCode() Gets a hash code for the period that is compatible with the equals method.
+boolean isSupported(DurationFieldType field) Checks whether the field type specified is supported by this period.
+int size() Gets the number of fields that this period supports.
+MutablePeriod toMutablePeriod() Get this object as a MutablePeriod.
+Period toPeriod() Get this period as an immutable Period object.
+String toString() Gets the value as a String in the style of the ISO8601 duration format.

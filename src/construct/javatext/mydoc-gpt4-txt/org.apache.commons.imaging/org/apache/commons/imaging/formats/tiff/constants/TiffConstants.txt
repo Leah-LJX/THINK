@@ -1,0 +1,30 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.constants.TiffConstants
+[Type] Class
+[Info]
+public final class TiffConstants extends Object Defines constants for internal elements from TIFF files and for allowing  applications to define parameters for reading and writing TIFF files.
+[Field Summary]
+static ByteOrder DEFAULT_TIFF_BYTE_ORDER	
+static int TIFF_COMPRESSION_CCITT_1D	
+static int TIFF_COMPRESSION_CCITT_GROUP_3	
+static int TIFF_COMPRESSION_CCITT_GROUP_4	
+static int TIFF_COMPRESSION_DEFLATE_ADOBE	
+static int TIFF_COMPRESSION_DEFLATE_PKZIP	
+static int TIFF_COMPRESSION_JPEG	
+static int TIFF_COMPRESSION_LZW	
+static int TIFF_COMPRESSION_PACKBITS	
+static int TIFF_COMPRESSION_UNCOMPRESSED	
+static int TIFF_COMPRESSION_UNCOMPRESSED_1	
+static int TIFF_COMPRESSION_UNCOMPRESSED_2	
+static int TIFF_DIRECTORY_FOOTER_LENGTH	
+static int TIFF_DIRECTORY_HEADER_LENGTH	
+static int TIFF_ENTRY_LENGTH	
+static int TIFF_ENTRY_MAX_VALUE_LENGTH	
+static int TIFF_FLAG_T4_OPTIONS_2D	
+static int TIFF_FLAG_T4_OPTIONS_FILL	
+static int TIFF_FLAG_T4_OPTIONS_UNCOMPRESSED_MODE	
+static int TIFF_FLAG_T6_OPTIONS_UNCOMPRESSED_MODE	
+static int TIFF_HEADER_SIZE	
+static int TIFF_LZW_COMPRESSION_BLOCK_SIZE_LARGE	Specifies a larger strip-size to be used for compression.
+static int TIFF_LZW_COMPRESSION_BLOCK_SIZE_MEDIUM	Specifies a larger strip-size to be used for compression.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

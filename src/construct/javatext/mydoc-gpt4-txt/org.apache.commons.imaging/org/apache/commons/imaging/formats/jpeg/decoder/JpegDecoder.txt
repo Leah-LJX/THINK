@@ -1,0 +1,16 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.decoder.JpegDecoder
+[Type] Class
+[Info]
+All Implemented Interfaces: JpegUtils.Visitor
+public class JpegDecoder extends BinaryFileParser implements JpegUtils.Visitor
+[Constructor Summary]
+JpegDecoder()	
+[Method Summary]
+boolean beginSOS()	
+BufferedImage decode​(ByteSource byteSource)	
+boolean visitSegment​(int marker, byte[] markerBytes, int segmentLength, byte[] segmentLengthBytes, byte[] segmentData)	
+void visitSOS​(int marker, byte[] markerBytes, byte[] imageData)	
+[Methods inherited from class org.apache.commons.imaging.common.BinaryFileParser]
+debugNumber, debugNumber, getByteOrder, setByteOrder
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

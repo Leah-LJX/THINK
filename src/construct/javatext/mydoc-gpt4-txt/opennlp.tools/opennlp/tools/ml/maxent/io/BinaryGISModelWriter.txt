@@ -1,0 +1,18 @@
+[API Name] opennlp.tools.ml.maxent.io.BinaryGISModelWriter
+[Type] Class
+[Info]
+public class BinaryGISModelWriter extends GISModelWriter A GISModelWriter that writes models in a binary format.
+See Also:
+GISModel
+[Constructor Summary]
+BinaryGISModelWriter(AbstractModel model, DataOutputStream dos)	Instantiates BinaryGISModelWriter via an GIS model and a DataOutputStream.
+BinaryGISModelWriter(AbstractModel model, File f)	Instantiates BinaryGISModelWriter via an GIS model and a File.
+[Method Summary]
+void close()	Closes the underlying DataOutputStream.
+void writeDouble(double d)	Writes a single double to the underlying DataOutputStream.
+void writeInt(int i)	Writes a single int to the underlying DataOutputStream.
+void writeUTF(String s)	Writes a String to the underlying DataOutputStream.
+[Methods inherited from class opennlp.tools.ml.maxent.io.GISModelWriter]
+persist
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

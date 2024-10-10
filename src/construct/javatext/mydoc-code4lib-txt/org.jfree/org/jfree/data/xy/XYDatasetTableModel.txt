@@ -1,0 +1,16 @@
+[Class] org.jfree.data.xy.XYDatasetTableModel
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, EventListener, TableModel, DatasetChangeListener
+[Constructor Summary]
+XYDatasetTableModel()	Default constructor.
+XYDatasetTableModel(TableXYDataset dataset)	Creates a new table model based on the specified dataset.
+[Method Summary]
+void datasetChanged(DatasetChangeEvent event)	Receives notification that the underlying dataset has changed.
+int getColumnCount()	Gets the number of columns in the model.
+String getColumnName(int column)	Returns the column name.
+int getRowCount()	Returns the number of rows.
+Object getValueAt(int row, int column)	Returns a value of the specified cell.
+boolean isCellEditable(int row, int column)	Returns a flag indicating whether or not the specified cell is editable.
+void setModel(TableXYDataset dataset)	Sets the model (dataset).
+void setValueAt(Object value, int row, int column)	Updates the XYDataset if allowed.

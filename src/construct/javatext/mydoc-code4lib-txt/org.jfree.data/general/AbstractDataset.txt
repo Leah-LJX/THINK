@@ -1,0 +1,19 @@
+[Class] org.jfree.data.general.AbstractDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, Dataset
+Direct Known Subclasses: AbstractSeriesDataset, CategoryToPieDataset, DefaultBoxAndWhiskerCategoryDataset, DefaultCategoryDataset, DefaultFlowDataset, DefaultHeatMapDataset, DefaultKeyedValueDataset, DefaultMultiValueCategoryDataset, DefaultPieDataset, DefaultStatisticalCategoryDataset, DefaultValueDataset, SlidingCategoryDataset, SlidingGanttCategoryDataset, WaferMapDataset
+[Constructor Summary]
+protected AbstractDataset()	Constructs a dataset.
+[Method Summary]
+void addChangeListener(DatasetChangeListener listener)	Registers an object to receive notification of changes to the dataset.
+Object clone()	Returns a clone of the dataset.
+protected void fireDatasetChanged()	Notifies all registered listeners that the dataset has changed, provided that the notify flag has not been set to false.
+DatasetGroup getGroup()	Returns the dataset group for the dataset.
+boolean getNotify()	Returns the value of the notify flag.
+boolean hasListener(EventListener listener)	Returns true if the specified object is registered with the dataset as a listener.
+protected void notifyListeners(DatasetChangeEvent event)	Notifies all registered listeners that the dataset has changed.
+void removeChangeListener(DatasetChangeListener listener)	Deregisters an object so that it no longer receives notification of changes to the dataset.
+void setGroup(DatasetGroup group)	Sets the dataset group for the dataset.
+void setNotify(boolean notify)	Sets the notify flag, which controls whether or not the fireDatasetChanged() method notifies listeners.
+void validateObject()	Validates the object.

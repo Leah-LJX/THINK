@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.urls.StandardPieURLGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, PieURLGenerator
+[Constructor Summary]
+StandardPieURLGenerator() Default constructor.
+[Method Summary]
+boolean equals(Object obj) Tests if this object is equal to another.

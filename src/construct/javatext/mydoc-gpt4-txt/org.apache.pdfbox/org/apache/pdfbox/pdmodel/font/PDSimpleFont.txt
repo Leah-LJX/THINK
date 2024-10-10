@@ -1,0 +1,37 @@
+[API Name] org.apache.pdfbox.pdmodel.font.PDSimpleFont
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable, PDFontLike
+Direct Known Subclasses: PDTrueTypeFont, PDType1CFont, PDType1Font, PDType3Font
+public abstract class PDSimpleFont extends PDFont A simple font. Simple fonts use a PostScript encoding vector.
+Author: John Hewson
+[Field Summary]
+protected Encoding encoding	
+protected GlyphList glyphList	
+[Method Summary]
+void addToSubset(int codePoint)	Adds the given Unicode point to the subset.
+Encoding getEncoding()	Returns the Encoding.
+abstract org.apache.fontbox.FontBoxFont getFontBoxFont()	Returns the embedded or system font used for rendering.
+GlyphList getGlyphList()	Returns the glyphlist.
+abstract GeneralPath getPath(String name)	Returns the path for the character with the given name.
+protected float getStandard14Width(int code)	Returns the glyph width from the AFM if this is a Standard 14 font.
+protected Boolean getSymbolicFlag()	Returns the value of the symbolic flag, allowing for the fact that the result may be indeterminate.
+boolean hasExplicitWidth(int code)	Returns true if the Font dictionary specifies an explicit width for the given glyph.
+abstract boolean hasGlyph(String name)	Returns true if the font contains the character with the given name.
+protected Boolean isFontSymbolic()	Internal implementation of isSymbolic, allowing for the fact that the result may be indeterminate.
+protected boolean isNonZeroBoundingBox(PDRectangle bbox)	
+boolean isStandard14()	Returns true if this font is one of the "Standard 14" fonts and receives special handling.
+boolean isSymbolic()	Returns true if the font is a symbolic (that is, it does not use the Adobe Standard Roman character set).
+boolean isVertical()	Returns true if the font uses vertical writing mode.
+protected void readEncoding()	Reads the Encoding from the Font dictionary or the embedded or substituted font file.
+protected abstract Encoding readEncodingFromFont()	Called by readEncoding() if the encoding needs to be extracted from the font file.
+void subset()	Replaces this font with a subset containing only the given Unicode characters.
+String toUnicode(int code)	Returns the Unicode character sequence which corresponds to the given character code.
+String toUnicode(int code, GlyphList customGlyphList)	Returns the Unicode character sequence which corresponds to the given character code.
+boolean willBeSubset()	Returns true if this font will be subset when embedded.
+[Methods inherited from class org.apache.pdfbox.pdmodel.font.PDFont]
+encode, encode, equals, getAverageFontWidth, getCOSObject, getDisplacement, getFontDescriptor, getFontMatrix, getPositionVector, getSpaceWidth, getStandard14AFM, getStringWidth, getSubType, getToUnicodeCMap, getType, getWidth, getWidths, hashCode, readCMap, readCode, setFontDescriptor, toString
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait
+[Methods inherited from interface org.apache.pdfbox.pdmodel.font.PDFontLike]
+getBoundingBox, getHeight, getName, getWidthFromFont, isDamaged, isEmbedded

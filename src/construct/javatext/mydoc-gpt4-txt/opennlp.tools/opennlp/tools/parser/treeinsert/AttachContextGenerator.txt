@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.parser.treeinsert.AttachContextGenerator
+[Type] Class
+[Info]
+public class AttachContextGenerator extends AbstractContextGenerator Generates predictive contexts for deciding how constituents should be attached.
+See Also:
+AbstractContextGenerator
+[Constructor Summary]
+AttachContextGenerator(Set<String> punctSet)	Instantiates an AttachContextGenerator for making decisions about attachments.
+[Method Summary]
+String[] getContext(Object o)	
+String[] getContext(Parse[] constituents, int index, List<Parse> rightFrontier, int rfi)	Finds the predictive contextual features about an attachment.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,11 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.blend.BlendComposite
+[Type] Class
+[Info]
+All Implemented Interfaces: Composite
+public final class BlendComposite extends Object implements Composite AWT composite for blend modes.
+Author: Kühn & Weyh Software GmbH
+[Method Summary]
+CompositeContext createContext(ColorModel srcColorModel, ColorModel dstColorModel, RenderingHints hints)	
+static Composite getInstance(BlendMode blendMode, float constantAlpha)	Creates a blend composite
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

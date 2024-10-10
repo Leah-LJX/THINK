@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.entity.ContourEntity
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, org.jfree.util.PublicCloneable
+[Constructor Summary]
+ContourEntity(Shape area, String toolTipText) Deprecated. Constructor for ContourEntity.
+[Method Summary]
+Object clone() Deprecated. Returns a clone of the entity.

@@ -1,0 +1,23 @@
+[Class] org.jfree.data.jdbc.JDBCXYDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, Dataset, SeriesChangeListener, SeriesDataset, RangeInfo, TableXYDataset, XYDataset
+[Constructor Summary]
+JDBCXYDataset(String url, String driverName, String user, String password)	Creates a new dataset (initially empty) and establishes a new database connection.
+JDBCXYDataset(Connection con)	Creates a new dataset (initially empty) using the specified database connection.
+JDBCXYDataset(Connection con, String query)	Creates a new dataset using the specified database connection, and populates it using data obtained with the supplied query.
+[Method Summary]
+void close()	Close the database connection
+void executeQuery(String query)	ExecuteQuery will attempt execute the query passed to it against the existing database connection.
+void executeQuery(Connection con, String query)	ExecuteQuery will attempt execute the query passed to it against the provided database connection.
+int getItemCount()	Returns the number of items in all series.
+int getItemCount(int seriesIndex)	Returns the number of items in the specified series.
+Range getRangeBounds(boolean includeInterval)	Returns the range of the values in this dataset's range.
+double getRangeLowerBound(boolean includeInterval)	Returns the minimum y-value in the dataset.
+double getRangeUpperBound(boolean includeInterval)	Returns the maximum y-value in the dataset.
+int getSeriesCount()	Returns the number of series in the dataset.
+Comparable getSeriesKey(int seriesIndex)	Returns the key for the specified series.
+Number getX(int seriesIndex, int itemIndex)	Returns the x-value for the specified series and item.
+Number getY(int seriesIndex, int itemIndex)	Returns the y-value for the specified series and item.
+boolean isTimeSeries()	Returns true if the dataset represents time series data, and false otherwise.
+void setTimeSeries(boolean timeSeries)	Sets a flag that indicates whether or not the data represents a time series.

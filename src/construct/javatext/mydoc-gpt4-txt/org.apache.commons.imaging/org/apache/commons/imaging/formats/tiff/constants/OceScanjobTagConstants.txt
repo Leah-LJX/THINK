@@ -1,0 +1,12 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.constants.OceScanjobTagConstants
+[Type] Class
+[Info]
+public final class OceScanjobTagConstants extends Object Oce Scanjob.    http://www.awaresystems.be/imaging/tiff/tifftags/docs/oce.html
+[Field Summary]
+static List<TagInfo> ALL_OCE_SCANJOB_TAGS	
+static TagInfoAscii EXIF_TAG_OCE_APPLICATION_SELECTOR	
+static TagInfoAscii EXIF_TAG_OCE_IDENTIFICATION_NUMBER	
+static TagInfoAscii EXIF_TAG_OCE_IMAGE_LOGIC_CHARACTERISTICS	
+static TagInfoAscii EXIF_TAG_OCE_SCANJOB_DESCRIPTION	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

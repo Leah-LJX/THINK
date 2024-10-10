@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.block.CenterArrangement
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Arrangement
+[Constructor Summary]
+CenterArrangement() Creates a new instance.
+[Method Summary]
+void add(Block block, Object key) Adds a block to be managed by this instance.

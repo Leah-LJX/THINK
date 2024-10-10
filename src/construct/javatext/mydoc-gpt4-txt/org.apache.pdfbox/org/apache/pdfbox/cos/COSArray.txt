@@ -1,0 +1,66 @@
+[API Name] org.apache.pdfbox.cos.COSArray
+[Type] Class
+[Info]
+All Implemented Interfaces: Iterable<COSBase>, COSUpdateInfo, COSObjectable
+public class COSArray extends COSBase implements Iterable<COSBase>, COSUpdateInfo An array of PDFBase objects as part of the PDF document.
+Author: Ben Litchfield
+[Constructor Summary]
+COSArray()	Constructor.
+COSArray(List<? extends COSObjectable> cosObjectables)	Use the given list to initialize the COSArray.
+[Method Summary]
+void accept(ICOSVisitor visitor)	Visitor pattern double dispatch method.
+void add(COSBase object)	This will add an object to the array.
+void add(COSObjectable object)	This will add an object to the array.
+void add(int i, COSBase object)	Add the specified object at the ith location and push the rest to the right.
+void addAll(Collection<COSBase> objectsList)	This will add an object to the array.
+void addAll(COSArray objectList)	This will add all objects to this array.
+void addAll(int i, Collection<COSBase> objectList)	Add the specified object at the ith location and push the rest to the right.
+void clear()	This will remove all of the objects in the collection.
+COSBase get(int index)	This will get an object from the array.
+void getIndirectObjectKeys(List<COSObjectKey> indirectObjects)	Collects all indirect objects numbers within this COSArray and all included dictionaries.
+int getInt(int index)	Get the value of the array as an integer.
+int getInt(int index, int defaultValue)	Get the value of the array as an integer, return the default if it does not exist.
+String getName(int index)	Get the value of the array as a string.
+String getName(int index, String defaultValue)	Get an entry in the array that is expected to be a COSName.
+COSBase getObject(int index)	This will get an object from the array.
+String getString(int index)	Get the value of the array as a string.
+String getString(int index, String defaultValue)	Get an entry in the array that is expected to be a COSName.
+COSUpdateState getUpdateState()	Returns the current COSUpdateState of this COSArray.
+void growToSize(int size)	This will add null values until the size of the array is at least as large as the parameter.
+void growToSize(int size, COSBase object)	This will add the object until the size of the array is at least as large as the parameter.
+int indexOf(COSBase object)	This will return the index of the entry or -1 if it is not found.
+int indexOfObject(COSBase object)	This will return the index of the entry or -1 if it is not found.
+Iterator<COSBase> iterator()	Get access to the list.
+static COSArray ofCOSIntegers(List<Integer> integer)	This will take a list of integer objects and return a COSArray of COSInteger objects.
+static COSArray ofCOSNames(List<String> strings)	This will take a list of string objects and return a COSArray of COSName objects.
+static COSArray ofCOSStrings(List<String> strings)	This will take a list of string objects and return a COSArray of COSName objects.
+boolean remove(COSBase o)	This will remove an element from the array.
+COSBase remove(int i)	This will remove an element from the array.
+void removeAll(Collection<COSBase> objectsList)	This will remove all of the objects in the collection.
+boolean removeObject(COSBase o)	This will remove an element from the array.
+void retainAll(Collection<COSBase> objectsList)	This will retain all of the objects in the collection.
+void set(int index, COSBase object)	This will set an object at a specific index.
+void set(int index, COSObjectable object)	This will set an object at a specific index.
+void set(int index, int intVal)	This will set an object at a specific index.
+void setFloatArray(float[] value)	Clear the current contents of the COSArray and set it with the float[].
+void setInt(int index, int value)	Set the value in the array as an integer.
+void setName(int index, String name)	Set the value in the array as a name.
+void setString(int index, String string)	Set the value in the array as a string.
+int size()	This will get the size of this array.
+List<String> toCOSNameStringList()	This will return a list of names if the COSArray consists of COSNames only.
+List<Float> toCOSNumberFloatList()	This will return a list of float values if the COSArray consists of COSNumbers only.
+List<Integer> toCOSNumberIntegerList()	This will return a list of int values if the COSArray consists of COSNumbers only.
+List<String> toCOSStringStringList()	This will return a list of names if the COSArray consists of COSStrings only.
+float[] toFloatArray()	This will take an COSArray of numbers and convert it to a float[].
+List<? extends COSBase> toList()	Return contents of COSArray as a Java List.
+String toString()	
+[Methods inherited from class org.apache.pdfbox.cos.COSBase]
+getCOSObject, getKey, isDirect, setDirect, setKey
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait
+[Methods inherited from interface java.lang.Iterable]
+forEach, spliterator
+[Methods inherited from interface org.apache.pdfbox.cos.COSUpdateInfo]
+isNeedToBeUpdated, setNeedToBeUpdated, toIncrement
+[Methods inherited from interface org.apache.pdfbox.pdmodel.common.COSObjectable]
+getCOSObject

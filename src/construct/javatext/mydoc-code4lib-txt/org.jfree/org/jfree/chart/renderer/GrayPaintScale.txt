@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.GrayPaintScale
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, PaintScale, org.jfree.util.PublicCloneable
+[Constructor Summary]
+GrayPaintScale() Creates a new GrayPaintScale instance with default values.
+[Method Summary]
+Object clone() Returns a clone of this GrayPaintScale instance.

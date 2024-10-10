@@ -1,0 +1,26 @@
+[API Name] opennlp.tools.postag.POSTaggerME
+[Type] Class
+[Info]
+All Implemented Interfaces: POSTagger
+public class POSTaggerME extends Object implements POSTagger A part-of-speech tagger that uses maximum entropy.    Tries to predict whether words are nouns, verbs, or any of 70 other POS tags  depending on their surrounding context.
+[Constructor Summary]
+POSTaggerME(String language)	Initializes a POSTaggerME by downloading a default model for a given language.
+POSTaggerME(POSModel model)	Initializes a POSTaggerME with the provided model.
+[Field Summary]
+static final int DEFAULT_BEAM_SIZE	
+[Method Summary]
+static Dictionary buildNGramDictionary(ObjectStream<POSSample> samples, int cutoff)	Constructs a nGram dictionary from an ObjectStream of samples.
+String[] getAllPosTags()	
+String[] getOrderedTags(List<String> words, List<String> tags, int index)	
+String[] getOrderedTags(List<String> words, List<String> tags, int index, double[] tprobs)	
+static void populatePOSDictionary(ObjectStream<POSSample> samples, MutableTagDictionary dict, int cutoff)	Populates a POSDictionary from an ObjectStream of samples.
+double[] probs()	
+void probs(double[] probs)	Populates the specified array with the probabilities for each tag of the last tagged sentence.
+String[][] tag(int numTaggings, String[] sentence)	Returns at most the specified numTaggings for the specified sentence.
+String[] tag(String[] sentence)	Assigns the sentence of tokens pos tags.
+String[] tag(String[] sentence, Object[] additionalContext)	Assigns the sentence of tokens pos tags.
+Sequence[] topKSequences(String[] sentence)	Assigns the sentence the top-k sequences.
+Sequence[] topKSequences(String[] sentence, Object[] additionalContext)	Assigns the sentence the top-k sequences.
+static POSModel train(String languageCode, ObjectStream<POSSample> samples, TrainingParameters trainParams, POSTaggerFactory posFactory)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

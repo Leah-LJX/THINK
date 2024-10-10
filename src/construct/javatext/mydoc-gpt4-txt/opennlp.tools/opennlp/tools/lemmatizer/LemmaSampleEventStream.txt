@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.lemmatizer.LemmaSampleEventStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<Event>
+public class LemmaSampleEventStream extends AbstractEventStream<LemmaSample> Class for creating an event stream out of data files for training a probabilistic Lemmatizer.
+[Constructor Summary]
+LemmaSampleEventStream(ObjectStream<LemmaSample> d, LemmatizerContextGenerator cg)	Creates a new event stream based on the specified data stream using a LemmatizerContextGenerator.
+[Methods inherited from class opennlp.tools.util.AbstractEventStream]
+close, read, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

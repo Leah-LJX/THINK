@@ -1,0 +1,14 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.taginfos.TagInfoUnknowns
+[Type] Class
+[Info]
+public class TagInfoUnknowns extends TagInfoBytes
+[Constructor Summary]
+TagInfoUnknowns​(String name, int tag, int length, TiffDirectoryType exifDirectory)	
+[Field Summary]
+TagInfoUnknowns​(String name, int tag, int length, TiffDirectoryType exifDirectory)	
+[Methods inherited from class org.apache.commons.imaging.formats.tiff.taginfos.TagInfoBytes]
+encodeValue
+[Methods inherited from class org.apache.commons.imaging.formats.tiff.taginfos.TagInfo]
+encodeValue, getDescription, getValue, isOffset, isText, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

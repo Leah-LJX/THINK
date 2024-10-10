@@ -1,0 +1,8 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.annotation.AnnotationFilter
+[Type] Interface
+[Info]
+Functional Interface: This is a functional interface and can therefore be used as the assignment target for a lambda expression or method reference.
+@FunctionalInterface public interface AnnotationFilter Simple interface allowing the use of an annotation filter visitor.
+Author: Maxime Veron
+[Method Summary]
+boolean accept(PDAnnotation annotation)	

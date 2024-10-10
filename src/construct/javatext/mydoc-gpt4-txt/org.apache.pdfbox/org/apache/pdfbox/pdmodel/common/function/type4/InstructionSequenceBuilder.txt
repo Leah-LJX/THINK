@@ -1,0 +1,15 @@
+[API Name] org.apache.pdfbox.pdmodel.common.function.type4.InstructionSequenceBuilder
+[Type] Class
+[Info]
+All Implemented Interfaces: Parser.SyntaxHandler
+public final class InstructionSequenceBuilder extends Parser.AbstractSyntaxHandler Basic parser for Type 4 functions which is used to build up instruction sequences.
+[Method Summary]
+InstructionSequence getInstructionSequence()	Returns the instruction sequence that has been build from the syntactic elements.
+static InstructionSequence parse(CharSequence text)	Parses the given text into an instruction sequence representing a Type 4 function that can be executed.
+static int parseInt(String token)	Parses a value of type "int".
+static float parseReal(String token)	Parses a value of type "real".
+void token(CharSequence text)	Called when a token is encountered.
+[Methods inherited from class org.apache.pdfbox.pdmodel.common.function.type4.Parser.AbstractSyntaxHandler]
+comment, newLine, whitespace
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

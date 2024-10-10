@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.util.MutableInt
+[Type] Class
+[Info]
+public class MutableInt extends Object This is a non-thread safe mutable int.
+[Constructor Summary]
+MutableInt(int i)	
+[Method Summary]
+int getValue()	
+void increment()	Adds 1 to the curren value.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

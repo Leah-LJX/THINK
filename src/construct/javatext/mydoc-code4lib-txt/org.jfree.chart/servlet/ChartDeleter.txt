@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.servlet.ChartDeleter
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, EventListener, javax.servlet.http.HttpSessionBindingListener
+[Constructor Summary]
+ChartDeleter() Blank constructor.
+[Method Summary]
+void addChart(String filename) Add a chart to be deleted when the session expires

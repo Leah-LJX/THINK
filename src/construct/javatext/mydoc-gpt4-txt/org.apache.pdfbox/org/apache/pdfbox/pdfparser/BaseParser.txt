@@ -1,0 +1,59 @@
+[API Name] org.apache.pdfbox.pdfparser.BaseParser
+[Type] Class
+[Info]
+Direct Known Subclasses: COSParser, PDFObjectStreamParser, PDFStreamParser, PDFXrefStreamParser
+public abstract class BaseParser extends Object This class is used to contain parsing logic that will be used by all parsers.
+Author: Ben Litchfield
+[Field Summary]
+protected static int A	
+protected static byte ASCII_CR	ASCII code for carriage return.
+protected static byte ASCII_LF	ASCII code for line feed.
+protected static int B	
+protected static int D	
+static String DEF	This is a string constant that will be used for comparisons.
+protected COSDocument document	This is the document that will be parsed.
+protected static int E	
+protected static String ENDOBJ_STRING	This is a string constant that will be used for comparisons.
+protected static String ENDSTREAM_STRING	This is a string constant that will be used for comparisons.
+protected static int J	
+protected static int M	
+protected static int N	
+protected static int O	
+protected static int R	
+protected static int S	
+protected org.apache.pdfbox.io.RandomAccessRead source	This is the stream that will be read from.
+protected static String STREAM_STRING	This is a string constant that will be used for comparisons.
+protected static int T	
+[Method Summary]
+protected COSObjectKey getObjectKey(long num, int gen)	Returns the object key for the given combination of object and generation number.
+protected boolean isClosing()	This will tell if the next character is a closing brace( close of PDF array ).
+protected boolean isClosing(int c)	This will tell if the next character is a closing brace( close of PDF array ).
+protected boolean isDigit()	This will tell if the next byte is a digit or not.
+protected static boolean isDigit(int c)	This will tell if the given value is a digit or not.
+protected boolean isEndOfName(int ch)	Determine if a character terminates a PDF name.
+protected boolean isEOF()	This will tell if the end of the data is reached.
+protected boolean isEOL()	This will tell if the next byte to be read is an end of line byte.
+protected boolean isEOL(int c)	This will tell if the next byte to be read is an end of line byte.
+protected boolean isSpace()	This will tell if the next byte is a space or not.
+protected boolean isSpace(int c)	This will tell if the given value is a space or not.
+protected boolean isWhitespace()	This will tell if the next byte is whitespace or not.
+protected static boolean isWhitespace(int c)	This will tell if a character is whitespace or not.
+protected COSArray parseCOSArray()	This will parse a PDF array object.
+protected COSDictionary parseCOSDictionary(boolean isDirect)	This will parse a PDF dictionary.
+protected COSName parseCOSName()	This will parse a PDF name from the stream.
+protected COSString parseCOSString()	This will parse a PDF string.
+protected COSBase parseDirObject()	This will parse a directory object from the stream.
+protected void readExpectedChar(char ec)	Read one char and throw an exception if it is not the expected value.
+protected void readExpectedString(char[] expectedString, boolean skipSpaces)	Reads given pattern from source.
+protected int readGenerationNumber()	This will read a integer from the Stream and throw an IllegalArgumentException if the integer value has more than the maximum object revision (i.e.
+protected int readInt()	This will read an integer from the stream.
+protected String readLine()	This will read bytes until the first end of line marker occurs.
+protected long readLong()	This will read an long from the stream.
+protected long readObjectNumber()	This will read a long from the Stream and throw an IOException if the long value is negative or has more than 10 digits (i.e.
+protected String readString()	This will read the next string from the stream.
+protected String readString(int length)	This will read the next string from the stream up to a certain length.
+protected StringBuilder readStringNumber()	This method is used to read a token by the readInt() and the readLong() method.
+protected void skipSpaces()	This will skip all spaces and comments that are present.
+protected void skipWhiteSpaces()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

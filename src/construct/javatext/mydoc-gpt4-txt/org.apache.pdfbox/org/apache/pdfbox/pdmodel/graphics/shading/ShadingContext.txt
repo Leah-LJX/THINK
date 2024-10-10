@@ -1,0 +1,16 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.shading.ShadingContext
+[Type] Class
+[Info]
+All Implemented Interfaces: PaintContext
+Direct Known Subclasses: AxialShadingContext, RadialShadingContext
+public abstract class ShadingContext extends Object implements PaintContext A base class to handle what is common to all shading types.
+Author: Shaola Ren, Tilman Hausherr
+[Constructor Summary]
+ShadingContext(PDShading shading, ColorModel cm, AffineTransform xform, Matrix matrix)	Constructor.
+[Method Summary]
+void dispose()	
+ColorModel getColorModel()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface java.awt.PaintContext]
+getRaster

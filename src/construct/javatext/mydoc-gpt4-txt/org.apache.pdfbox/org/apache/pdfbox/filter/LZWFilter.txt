@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.filter.LZWFilter
+[Type] Class
+[Info]
+public class LZWFilter extends Filter This is the filter used for the LZWDecode filter.
+Author: Ben Litchfield, Tilman Hausherr
+[Constructor Summary]
+LZWFilter()	
+[Field Summary]
+static long CLEAR_TABLE	The LZW clear table code.
+static long EOD	The LZW end of data code.
+[Method Summary]
+DecodeResult decode(InputStream encoded, OutputStream decoded, COSDictionary parameters, int index)	Decodes data, producing the original non-encoded data.
+protected void encode(InputStream rawData, OutputStream encoded, COSDictionary parameters)	
+[Methods inherited from class org.apache.pdfbox.filter.Filter]
+decode, decode, encode, findImageReader, getCompressionLevel, getDecodeParams
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

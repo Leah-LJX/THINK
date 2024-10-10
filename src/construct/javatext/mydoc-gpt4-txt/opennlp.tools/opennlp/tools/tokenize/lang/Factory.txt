@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.tokenize.lang.Factory
+[Type] Class
+[Info]
+public class Factory extends Object
+[Constructor Summary]
+Factory()	
+[Field Summary]
+static final Pattern DEFAULT_ALPHANUMERIC	
+[Method Summary]
+TokenContextGenerator createTokenContextGenerator(String languageCode, Set<String> abbreviations)	Initializes a customized TokenContextGenerator via a set of abbreviations.
+Pattern getAlphanumeric(String languageCode)	Gets the alphanumeric pattern for a language.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

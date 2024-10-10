@@ -1,0 +1,8 @@
+[API Name] Package org.apache.commons.imaging.common.ImageMetadata
+[Type] Interface
+[Info]
+All Known Implementing Classes: GenericImageMetadata, GifImageMetadata, JpegImageMetadata, JpegPhotoshopMetadata, TiffImageMetadata, TiffImageMetadata.Directory
+public interface ImageMetadata
+[Method Summary]
+List<? extends ImageMetadata.ImageMetadataItem> getItems()	
+String toString​(String prefix)	

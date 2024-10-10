@@ -1,0 +1,19 @@
+[Class] org.w3c.dom.svg.SVGTextContentElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, EventTarget, Node, SVGElement, SVGExternalResourcesRequired, SVGLangSpace, SVGStylable, SVGTests
+All Known Subinterfaces: SVGAltGlyphElement, SVGTextElement, SVGTextPathElement, SVGTextPositioningElement, SVGTRefElement, SVGTSpanElement
+[Constructor Summary]
+
+[Method Summary]
+int getCharNumAtPosition(SVGPoint point)	 
+ float getComputedTextLength()	 
+ SVGPoint getEndPositionOfChar(int charnum)	 
+ SVGRect getExtentOfChar(int charnum)	 
+ SVGAnimatedEnumeration getLengthAdjust()	 
+ int getNumberOfChars()	 
+ float getRotationOfChar(int charnum)	 
+ SVGPoint getStartPositionOfChar(int charnum)	 
+ float getSubStringLength(int charnum, int nchars)	 
+ SVGAnimatedLength getTextLength()	 
+ void selectSubString(int charnum, int nchars)

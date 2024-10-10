@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.util.featuregen.GeneratorFactory
+[Type] Class
+[Info]
+public class GeneratorFactory extends Object Creates a set of feature generators based on a provided XML descriptor.    Example of an XML descriptor:    <featureGenerators name="namefind">      <generator class="opennlp.tools.util.featuregen.CachedFeatureGeneratorFactory">          <generator class="opennlp.tools.util.featuregen.WindowFeatureGeneratorFactory">            <int name="prevLength">2</int>            <int name="nextLength">2</int>            <generator class="opennlp.tools.util.featuregen.TokenClassFeatureGeneratorFactory"/>          </generator>          <generator class="opennlp.tools.util.featuregen.WindowFeatureGeneratorFactory">            <int name="prevLength">2</int>            <int name="nextLength">2</int>            <generator class="opennlp.tools.util.featuregen.TokenFeatureGeneratorFactory"/>          </generator>          <generator class="opennlp.tools.util.featuregen.DefinitionFeatureGeneratorFactory"/>          <generator class="opennlp.tools.util.featuregen.PreviousMapFeatureGeneratorFactory"/>          <generator class="opennlp.tools.util.featuregen.BigramNameFeatureGeneratorFactory"/>          <generator class="opennlp.tools.util.featuregen.SentenceFeatureGeneratorFactory">            <bool name="begin">true</bool>            <bool name="end">false</bool>          </generator>      </generator>  </featureGenerators>    Each XML element is mapped to a GeneratorFactory.AbstractXmlFeatureGeneratorFactory which  is responsible to process the element and create the specified  AdaptiveFeatureGenerator. Elements can contain other  elements in this case it is the responsibility of the mapped factory to process  the child elements correctly.    In the example above the generators element is mapped to the  AggregatedFeatureGeneratorFactory which then  creates all the aggregated AdaptiveFeatureGenerators to  accomplish this it evaluates the mapping with the same mechanism  and gives the child element to the corresponding factories. All  created generators are added to a new instance of the  AggregatedFeatureGenerator which is then returned.
+[Constructor Summary]
+GeneratorFactory()	
+[Nested Class Summary]
+Nested Class Summary
+static class 
+[Method Summary]
+static AdaptiveFeatureGenerator create(InputStream xmlDescriptorIn, FeatureGeneratorResourceProvider resourceManager)	Creates an AdaptiveFeatureGenerator from an provided XML descriptor.
+static Map<String,ArtifactSerializer<?>> extractArtifactSerializerMappings(InputStream xmlDescriptorIn)	
+static List<Element> getDescriptorElements(InputStream xmlDescriptorIn)	Provides a list with all the elements in the xml feature descriptor.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

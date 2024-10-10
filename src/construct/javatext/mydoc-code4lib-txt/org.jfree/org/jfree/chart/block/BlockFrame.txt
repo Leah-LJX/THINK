@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.block.BlockFrame
+[Flag] Interface
+[Info]
+All Known Implementing Classes: BlockBorder, LineBorder
+[Constructor Summary]
+
+[Method Summary]
+void draw(Graphics2D g2, Rectangle2D area) Draws the border by filling in the reserved space (in black).

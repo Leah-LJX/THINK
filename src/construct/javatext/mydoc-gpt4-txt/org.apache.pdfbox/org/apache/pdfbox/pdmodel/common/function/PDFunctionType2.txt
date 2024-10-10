@@ -1,0 +1,19 @@
+[API Name] org.apache.pdfbox.pdmodel.common.function.PDFunctionType2
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDFunctionType2 extends PDFunction This class represents a Type 2 (exponential interpolation) function in a PDF  document.
+Author: Ben Litchfield
+[Constructor Summary]
+PDFunctionType2(COSBase function)	Constructor.
+[Method Summary]
+float[] eval(float[] input)	Performs exponential interpolation Evaluates the function at the given input.
+COSArray getC0()	Returns the C0 values of the function, 0 if empty.
+COSArray getC1()	Returns the C1 values of the function, 1 if empty.
+int getFunctionType()	Returns the function type.
+float getN()	Returns the exponent of the function.
+String toString()	
+[Methods inherited from class org.apache.pdfbox.pdmodel.common.function.PDFunction]
+clipToRange, clipToRange, create, getCOSObject, getDomainForInput, getNumberOfInputParameters, getNumberOfOutputParameters, getPDStream, getRangeForOutput, getRangeValues, interpolate, setDomainValues, setRangeValues
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

@@ -1,0 +1,9 @@
+[Class] org.w3c.dom.svg.SVGAnimatedPreserveAspectRatio
+[Flag] Interface
+[Info]
+public interface SVGAnimatedPreserveAspectRatio
+[Constructor Summary]
+
+[Method Summary]
+SVGPreserveAspectRatio getAnimVal()	 
+ SVGPreserveAspectRatio getBaseVal()

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.Outlier
+[Flag] Class
+[Info]
+All Implemented Interfaces: Comparable
+[Constructor Summary]
+Outlier(double xCoord, double yCoord, double radius) Constructs an outlier item consisting of a point and the radius of the outlier ellipse
+[Method Summary]
+int compareTo(Object o) Compares this object with the specified object for order, based on the outlier's point.

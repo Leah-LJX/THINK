@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.entity.JFreeChartEntity
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, org.jfree.util.PublicCloneable
+[Constructor Summary]
+JFreeChartEntity(Shape area, JFreeChart chart) Creates a new chart entity.
+[Method Summary]
+Object clone() Returns a clone of the entity.

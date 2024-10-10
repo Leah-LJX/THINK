@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.xy.CandlestickRenderer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, AnnotationChangeListener, LegendItemSource, XYItemRenderer, org.jfree.util.PublicCloneable
+[Constructor Summary]
+CandlestickRenderer() Creates a new renderer for candlestick charts.
+[Method Summary]
+Object clone() Returns a clone of the renderer.

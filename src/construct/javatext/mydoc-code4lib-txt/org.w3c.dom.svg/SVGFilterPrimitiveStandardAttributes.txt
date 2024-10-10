@@ -1,0 +1,13 @@
+[Class] org.w3c.dom.svg.SVGFilterPrimitiveStandardAttributes
+[Flag] Interface
+[Info]
+All Superinterfaces: SVGStylable
+All Known Subinterfaces: SVGFEBlendElement, SVGFEColorMatrixElement, SVGFEComponentTransferElement, SVGFECompositeElement, SVGFEConvolveMatrixElement, SVGFEDiffuseLightingElement, SVGFEDisplacementMapElement, SVGFEFloodElement, SVGFEGaussianBlurElement, SVGFEImageElement, SVGFEMergeElement, SVGFEMorphologyElement, SVGFEOffsetElement, SVGFESpecularLightingElement, SVGFETileElement, SVGFETurbulenceElement
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedLength getHeight()	 
+ SVGAnimatedString getResult()	 
+ SVGAnimatedLength getWidth()	 
+ SVGAnimatedLength getX()	 
+ SVGAnimatedLength getY()

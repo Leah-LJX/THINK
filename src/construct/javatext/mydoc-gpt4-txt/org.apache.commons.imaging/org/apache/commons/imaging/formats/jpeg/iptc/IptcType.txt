@@ -1,0 +1,9 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.iptc.IptcType
+[Type] Interface
+[Info]
+All Known Implementing Classes: IptcTypes
+public interface IptcType
+[Method Summary]
+String getName()	
+int getType()	
+String toString()	

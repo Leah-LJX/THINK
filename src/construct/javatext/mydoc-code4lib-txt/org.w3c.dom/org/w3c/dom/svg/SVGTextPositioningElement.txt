@@ -1,0 +1,13 @@
+[Class] org.w3c.dom.svg.SVGTextPositioningElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, EventTarget, Node, SVGElement, SVGExternalResourcesRequired, SVGLangSpace, SVGStylable, SVGTests, SVGTextContentElement
+All Known Subinterfaces: SVGAltGlyphElement, SVGTextElement, SVGTRefElement, SVGTSpanElement
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedLengthList getDx()	 
+ SVGAnimatedLengthList getDy()	 
+ SVGAnimatedNumberList getRotate()	 
+ SVGAnimatedLengthList getX()	 
+ SVGAnimatedLengthList getY()

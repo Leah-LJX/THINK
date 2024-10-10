@@ -1,0 +1,16 @@
+[Class] org.jfree.data.gantt.TaskSeries
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+TaskSeries(String name)	Constructs a new series with the specified name.
+[Method Summary]
+void add(Task task)	Adds a task to the series and sends a SeriesChangeEvent to all registered listeners.
+Object clone()	Returns an independent copy of this series.
+boolean equals(Object obj)	Tests this object for equality with an arbitrary object.
+Task get(int index)	Returns a task from the series.
+Task get(String description)	Returns the task in the series that has the specified description.
+int getItemCount()	Returns the number of items in the series.
+List getTasks()	Returns an unmodifialble list of the tasks in the series.
+void remove(Task task)	Removes a task from the series and sends a SeriesChangeEvent to all registered listeners.
+void removeAll()	Removes all tasks from the series and sends a SeriesChangeEvent to all registered listeners.

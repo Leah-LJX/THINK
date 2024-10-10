@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.block.RectangleConstraint
+[Flag] Class
+[Info]
+Parameters: w - the fixed width.
+h - the fixed height.
+[Constructor Summary]
+RectangleConstraint(double w, double h) Creates a new "fixed width and height" instance.
+[Method Summary]
+org.jfree.ui.Size2D calculateConstrainedSize(org.jfree.ui.Size2D base) Returns the new size that reflects the constraints defined by this instance.

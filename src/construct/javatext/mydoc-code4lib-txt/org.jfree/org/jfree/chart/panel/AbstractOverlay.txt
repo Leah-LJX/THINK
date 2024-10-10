@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.panel.AbstractOverlay
+[Flag] Class
+[Info]
+Direct Known Subclasses: CrosshairOverlay
+[Constructor Summary]
+AbstractOverlay() Default constructor.
+[Method Summary]
+void addChangeListener(OverlayChangeListener listener) Registers an object for notification of changes to the overlay.

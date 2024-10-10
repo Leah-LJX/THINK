@@ -1,0 +1,30 @@
+[Class] org.w3c.dom.svg.SVGMatrix
+[Flag] Interface
+[Info]
+public interface SVGMatrix
+[Constructor Summary]
+
+[Method Summary]
+SVGMatrix flipX()	 
+ SVGMatrix flipY()	 
+ float getA()	 
+ float getB()	 
+ float getC()	 
+ float getD()	 
+ float getE()	 
+ float getF()	 
+ SVGMatrix inverse()	 
+ SVGMatrix multiply(SVGMatrix secondMatrix)	 
+ SVGMatrix rotate(float angle)	 
+ SVGMatrix rotateFromVector(float x, float y)	 
+ SVGMatrix scale(float scaleFactor)	 
+ SVGMatrix scaleNonUniform(float scaleFactorX, float scaleFactorY)	 
+ void setA(float a)	 
+ void setB(float b)	 
+ void setC(float c)	 
+ void setD(float d)	 
+ void setE(float e)	 
+ void setF(float f)	 
+ SVGMatrix skewX(float angle)	 
+ SVGMatrix skewY(float angle)	 
+ SVGMatrix translate(float x, float y)

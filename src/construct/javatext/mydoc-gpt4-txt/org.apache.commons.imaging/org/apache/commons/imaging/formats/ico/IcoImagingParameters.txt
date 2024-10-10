@@ -1,0 +1,11 @@
+[API Name] Package org.apache.commons.imaging.formats.ico.IcoImagingParameters
+[Type] Class
+[Info]
+public class IcoImagingParameters extends ImagingParameters Ico format parameters.
+Since: 1.0-alpha3
+[Constructor Summary]
+IcoImagingParameters()	
+[Methods inherited from class org.apache.commons.imaging.ImagingParameters]
+getBufferedImageFactory, getFileName, getPixelDensity, isStrict, setBufferedImageFactory, setFileName, setPixelDensity, setStrict
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,26 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.action.PDActionSound
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable, PDDestinationOrAction
+public class PDActionSound extends PDAction This represents a Sound action that can be executed in a PDF document.
+Author: Timur Kamalov, Tilman Hausherr
+[Constructor Summary]
+PDActionSound()	Default constructor.
+PDActionSound(COSDictionary a)	Constructor.
+[Field Summary]
+static String SUB_TYPE	This type of action this object represents.
+[Method Summary]
+boolean getMix()	Gets the flag specifying whether to mix this sound with any other sound already playing.
+boolean getRepeat()	Gets whether to repeat the sound indefinitely.
+COSStream getSound()	Gets the sound object.
+boolean getSynchronous()	Gets the synchronous flag.
+float getVolume()	Sets the volume.
+void setMix(boolean mix)	The flag specifying whether to mix this sound with any other sound already playing.
+void setRepeat(boolean repeat)	A flag specifying whether to repeat the sound indefinitely.
+void setSound(COSStream sound)	Sets the sound object.
+void setSynchronous(boolean synchronous)	A flag specifying whether to play the sound synchronously or asynchronously.
+void setVolume(float volume)	Gets the volume at which to play the sound, in the range −1.0 to 1.0.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.action.PDAction]
+getCOSObject, getNext, getSubType, getType, setNext, setSubType, setType
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

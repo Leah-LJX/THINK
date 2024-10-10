@@ -1,0 +1,19 @@
+[API Name] opennlp.tools.cmdline.tokenizer.TokenizerMEEvaluatorTool
+[Type] Class
+[Info]
+public final class TokenizerMEEvaluatorTool extends opennlp.tools.cmdline.AbstractEvaluatorTool<TokenSample,opennlp.tools.cmdline.tokenizer.TokenizerMEEvaluatorTool.EvalToolParams> A default TokenSample-centric implementation of AbstractEvaluatorTool  that prints to an output stream.
+See Also:
+AbstractEvaluatorTool TokenizerMEEvaluatorTool.EvalToolParams
+[Constructor Summary]
+TokenizerMEEvaluatorTool()	
+[Method Summary]
+String getShortDescription()	
+void run(String format, String[] args)	Executes the tool with the given parameters.
+[Methods inherited from class opennlp.tools.cmdline.AbstractTypedParamTool]
+getHelp
+[Methods inherited from class opennlp.tools.cmdline.TypedCmdLineTool]
+getHelp
+[Methods inherited from class opennlp.tools.cmdline.CmdLineTool]
+getName, hasParams
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

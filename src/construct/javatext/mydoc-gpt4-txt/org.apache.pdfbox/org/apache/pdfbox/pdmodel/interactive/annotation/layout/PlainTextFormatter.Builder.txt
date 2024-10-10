@@ -1,0 +1,18 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.annotation.layout.PlainTextFormatter.Builder
+[Type] Class
+[Info]
+Enclosing class: PlainTextFormatter
+public static class PlainTextFormatter.Builder extends Object
+[Constructor Summary]
+Builder(PDAppearanceContentStream contents)	
+[Method Summary]
+PlainTextFormatter build()	
+PlainTextFormatter.Builder initialOffset(float horizontalOffset, float verticalOffset)	
+PlainTextFormatter.Builder style(AppearanceStyle appearanceStyle)	
+PlainTextFormatter.Builder text(PlainText textContent)	
+PlainTextFormatter.Builder textAlign(int alignment)	
+PlainTextFormatter.Builder textAlign(org.apache.pdfbox.pdmodel.interactive.annotation.layout.PlainTextFormatter.TextAlign alignment)	
+PlainTextFormatter.Builder width(float width)	
+PlainTextFormatter.Builder wrapLines(boolean wrapLines)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

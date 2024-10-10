@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.pdmodel.common.PDObjectStream
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDObjectStream extends PDStream A PDStream represents a stream in a PDF document.  Streams are tied to a single  PDF document.
+Author: Ben Litchfield
+[Constructor Summary]
+PDObjectStream(COSStream str)	Constructor.
+[Method Summary]
+static PDObjectStream createStream(PDDocument document)	This will create a new PDObjectStream object.
+PDObjectStream getExtends()	A reference to an object stream, of which the current object stream is considered an extension.
+int getFirstByteOffset()	The byte offset (in the decoded stream) of the first compressed object.
+int getNumberOfObjects()	Get the number of compressed object.
+String getType()	Get the type of this object, should always return "ObjStm".
+void setExtends(PDObjectStream stream)	A reference to an object stream, of which the current object stream is considered an extension.
+void setFirstByteOffset(int n)	The byte offset (in the decoded stream) of the first compressed object.
+void setNumberOfObjects(int n)	Set the number of objects.
+[Methods inherited from class org.apache.pdfbox.pdmodel.common.PDStream]
+createInputStream, createInputStream, createInputStream, createOutputStream, createOutputStream, getCOSObject, getDecodedStreamLength, getDecodeParms, getFile, getFileDecodeParams, getFileFilters, getFilters, getLength, getMetadata, setDecodedStreamLength, setDecodeParms, setFile, setFileDecodeParams, setFileFilters, setFilters, setMetadata, toByteArray
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

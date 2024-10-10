@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.formats.brat.BratNameSampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<NameSample>
+public class BratNameSampleStream extends SegmenterObjectStream<BratDocument,NameSample> Generates Name Sample objects for a Brat Document object.
+[Constructor Summary]
+BratNameSampleStream(SentenceDetector sentDetector, Tokenizer tokenizer, ObjectStream<BratDocument> samples)	Creates a new BratNameSampleStream.
+BratNameSampleStream(SentenceDetector sentDetector, Tokenizer tokenizer, ObjectStream<BratDocument> samples, Set<String> nameTypes)	Creates a new BratNameSampleStream.
+BratNameSampleStream(SentenceModel sentModel, TokenizerModel tokenModel, ObjectStream<BratDocument> samples)	Creates a new BratNameSampleStream.
+BratNameSampleStream(SentenceModel sentModel, TokenizerModel tokenModel, ObjectStream<BratDocument> samples, Set<String> nameTypes)	Creates a new BratNameSampleStream.
+[Methods inherited from class opennlp.tools.formats.brat.SegmenterObjectStream]
+read
+[Methods inherited from class opennlp.tools.util.FilterObjectStream]
+close, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,15 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.TiffReader
+[Type] Class
+[Info]
+public class TiffReader extends BinaryFileParser
+[Constructor Summary]
+TiffReader​(boolean strict)	
+[Method Summary]
+void read​(ByteSource byteSource, FormatCompliance formatCompliance, TiffReader.Listener listener)	
+TiffContents readContents​(ByteSource byteSource, TiffImagingParameters params, FormatCompliance formatCompliance)	
+TiffContents readDirectories​(ByteSource byteSource, boolean readImageData, FormatCompliance formatCompliance)	
+TiffContents readFirstDirectory​(ByteSource byteSource, boolean readImageData, FormatCompliance formatCompliance)	
+[Methods inherited from class org.apache.commons.imaging.common.BinaryFileParser]
+debugNumber, debugNumber, getByteOrder, setByteOrder
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

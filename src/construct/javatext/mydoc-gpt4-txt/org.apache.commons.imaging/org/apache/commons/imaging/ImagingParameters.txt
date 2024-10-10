@@ -1,0 +1,20 @@
+[API Name] Package org.apache.commons.imaging.ImagingParameters
+[Type] Class
+[Info]
+Direct Known Subclasses: BmpImagingParameters, IcnsImagingParameters, IcoImagingParameters, PcxImagingParameters, PnmImagingParameters, PsdImagingParameters, RgbeImagingParameters, WbmpImagingParameters, XbmImagingParameters, XmpImagingParameters, XpmImagingParameters
+public class ImagingParameters extends Object Imaging parameters.
+ Contains parameters that are common to all formats. Implementations must include  the specific parameters for each image format.
+Since: 1.0-alpha3
+[Constructor Summary]
+ImagingParameters()	
+[Method Summary]
+BufferedImageFactory getBufferedImageFactory()	
+String getFileName()	
+PixelDensity getPixelDensity()	
+boolean isStrict()	
+void setBufferedImageFactory​(BufferedImageFactory bufferedImageFactory)	
+void setFileName​(String fileName)	
+void setPixelDensity​(PixelDensity pixelDensity)	
+void setStrict​(boolean strict)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

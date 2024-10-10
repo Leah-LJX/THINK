@@ -1,0 +1,18 @@
+[API Name] opennlp.tools.formats.conllu.ConlluSentence
+[Type] Class
+[Info]
+public class ConlluSentence extends Object
+[Constructor Summary]
+ConlluSentence(List<ConlluWordLine> wordLines, String sentenceIdComment, String textComment, boolean newDocument, String documentId, boolean newParagraph, String paragraphId, Map<Locale,String> textLang, String translit)	
+[Method Summary]
+Optional<String> getDocumentId()	
+Optional<String> getParagraphId()	
+String getSentenceIdComment()	
+String getTextComment()	
+Optional<Map<Locale,String>> getTextLang()	
+Optional<String> getTranslit()	
+List<ConlluWordLine> getWordLines()	
+boolean isNewDocument()	
+boolean isNewParagraph()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

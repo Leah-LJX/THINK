@@ -1,0 +1,28 @@
+[Class] org.jfree.data.DefaultKeyedValues
+[Flag] Class
+[Info]
+Type Parameters: K - the key type (String is a good default).
+All Implemented Interfaces: Serializable, Cloneable, PublicCloneable, KeyedValues<K>, Values
+[Constructor Summary]
+DefaultKeyedValues()	Creates a new collection (initially empty).
+[Method Summary]
+void addValue(K key, double value)	Updates an existing value, or adds a new value to the collection.
+void addValue(K key, Number value)	Adds a new value to the collection, or updates an existing value.
+void clear()	Clears all values from the collection.
+Object clone()	Returns a clone.
+boolean equals(Object obj)	Tests if this object is equal to another.
+int getIndex(K key)	Returns the index for a given key.
+int getItemCount()	Returns the number of items (values) in the collection.
+K getKey(int index)	Returns a key.
+List<K> getKeys()	Returns the keys for the values in the collection.
+Number getValue(int item)	Returns a value.
+Number getValue(K key)	Returns the value for a given key.
+int hashCode()	Returns a hash code.
+void insertValue(int position, K key, double value)	Inserts a new value at the specified position in the dataset or, if there is an existing item with the specified key, updates the value for that item and moves it to the specified position.
+void insertValue(int position, K key, Number value)	Inserts a new value at the specified position in the dataset or, if there is an existing item with the specified key, updates the value for that item and moves it to the specified position.
+void removeValue(int index)	Removes a value from the collection.
+void removeValue(K key)	Removes a value from the collection.
+void setValue(K key, double value)	Updates an existing value, or adds a new value to the collection.
+void setValue(K key, Number value)	Updates an existing value, or adds a new value to the collection.
+void sortByKeys(SortOrder order)	Sorts the items in the list by key.
+void sortByValues(SortOrder order)	Sorts the items in the list by value.

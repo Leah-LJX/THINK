@@ -1,0 +1,12 @@
+[Class] org.w3c.dom.svg.SVGPoint
+[Flag] Interface
+[Info]
+public interface SVGPoint
+[Constructor Summary]
+
+[Method Summary]
+float getX()	 
+ float getY()	 
+ SVGPoint matrixTransform(SVGMatrix matrix)	 
+ void setX(float x)	 
+ void setY(float y)

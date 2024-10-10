@@ -1,0 +1,25 @@
+[API Name] opennlp.tools.ml.model.AbstractModel
+[Type] Class
+[Info]
+All Implemented Interfaces: MaxentModel
+Direct Known Subclasses: GISModel, NaiveBayesModel, PerceptronModel, QNModel
+public abstract class AbstractModel extends Object implements MaxentModel A basic MaxentModel implementation.
+[Constructor Summary]
+AbstractModel(Context[] params, String[] predLabels, String[] outcomeNames)	Initializes an AbstractModel.
+[Nested Class Summary]
+Nested Class Summary
+static enum 
+[Method Summary]
+boolean equals(Object obj)	
+final String getAllOutcomes(double[] ocs)	Retrieves a string matching all the outcome names with all the probabilities produced by the MaxentModel.eval(String[]) method.
+final String getBestOutcome(double[] ocs)	Return the name of the outcome corresponding to the highest likelihood in the parameter ocs.
+final Object[] getDataStructures()	Provides the fundamental data structures which encode the maxent model information.
+int getIndex(String outcome)	Retrieves the index associated with the String name of the given outcome.
+AbstractModel.ModelType getModelType()	
+int getNumOutcomes()	
+final String getOutcome(int i)	Retrieves the String name of the outcome associated with the index i.
+int hashCode()	
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface opennlp.tools.ml.model.MaxentModel]
+eval, eval, eval

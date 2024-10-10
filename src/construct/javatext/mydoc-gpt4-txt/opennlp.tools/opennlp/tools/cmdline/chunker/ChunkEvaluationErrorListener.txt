@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.cmdline.chunker.ChunkEvaluationErrorListener
+[Type] Class
+[Info]
+All Implemented Interfaces: ChunkerEvaluationMonitor, EvaluationMonitor<ChunkSample>
+public class ChunkEvaluationErrorListener extends opennlp.tools.cmdline.EvaluationErrorPrinter<ChunkSample> implements ChunkerEvaluationMonitor A default implementation of EvaluationMonitor that prints  to an output stream.
+[Constructor Summary]
+ChunkEvaluationErrorListener()	Creates a listener that will print to the configured logger.
+ChunkEvaluationErrorListener(OutputStream outputStream)	Creates a listener that will print to a given OutputStream
+[Method Summary]
+void misclassified(ChunkSample reference, ChunkSample prediction)	
+[Methods inherited from class opennlp.tools.cmdline.EvaluationErrorPrinter]
+correctlyClassified
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface opennlp.tools.util.eval.EvaluationMonitor]
+correctlyClassified

@@ -1,0 +1,11 @@
+[API Name] Package org.apache.commons.imaging.formats.wbmp.WbmpImagingParameters
+[Type] Class
+[Info]
+public class WbmpImagingParameters extends ImagingParameters Wbmp format parameters.
+Since: 1.0-alpha3
+[Constructor Summary]
+WbmpImagingParameters()	
+[Methods inherited from class org.apache.commons.imaging.ImagingParameters]
+getBufferedImageFactory, getFileName, getPixelDensity, isStrict, setBufferedImageFactory, setFileName, setPixelDensity, setStrict
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

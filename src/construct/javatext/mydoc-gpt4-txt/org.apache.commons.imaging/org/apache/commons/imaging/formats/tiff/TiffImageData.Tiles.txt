@@ -1,0 +1,17 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.TiffImageData.Tiles
+[Type] Class
+[Info]
+Enclosing class: TiffImageData
+public static class TiffImageData.Tiles extends TiffImageData
+[Constructor Summary]
+Tiles​(TiffElement.DataElement[] tiles, int tileWidth, int tileLength)	
+[Field Summary]
+TiffElement.DataElement[] tiles	
+[Method Summary]
+ImageDataReader getDataReader​(TiffDirectory directory, PhotometricInterpreter photometricInterpreter, int bitsPerPixel, int[] bitsPerSample, int predictor, int samplesPerPixel, int width, int height, int compression, TiffPlanarConfiguration planarConfiguration, ByteOrder byteOrder)	
+TiffElement.DataElement[] getImageData()	
+int getTileHeight()	Get the height of individual tiles.
+int getTileWidth()	Get the width of individual tiles.
+boolean stripsNotTiles()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

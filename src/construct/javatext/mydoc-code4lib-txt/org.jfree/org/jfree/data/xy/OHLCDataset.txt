@@ -1,0 +1,18 @@
+[Class] org.jfree.data.xy.OHLCDataset
+[Flag] Interface
+[Info]
+All Superinterfaces: Dataset, SeriesDataset, XYDataset
+All Known Implementing Classes: DefaultHighLowDataset, DefaultOHLCDataset, OHLCSeriesCollection
+[Constructor Summary]
+
+[Method Summary]
+Number getClose(int series, int item)	Returns the y-value for the specified series and item.
+double getCloseValue(int series, int item)	Returns the close-value (as a double primitive) for an item within a series.
+Number getHigh(int series, int item)	Returns the high-value for the specified series and item.
+double getHighValue(int series, int item)	Returns the high-value (as a double primitive) for an item within a series.
+Number getLow(int series, int item)	Returns the low-value for the specified series and item.
+double getLowValue(int series, int item)	Returns the low-value (as a double primitive) for an item within a series.
+Number getOpen(int series, int item)	Returns the open-value for the specified series and item.
+double getOpenValue(int series, int item)	Returns the open-value (as a double primitive) for an item within a series.
+Number getVolume(int series, int item)	Returns the volume for the specified series and item.
+double getVolumeValue(int series, int item)	Returns the volume-value (as a double primitive) for an item within a series.

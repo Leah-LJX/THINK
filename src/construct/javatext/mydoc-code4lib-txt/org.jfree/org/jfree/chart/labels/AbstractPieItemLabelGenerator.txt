@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.labels.AbstractPieItemLabelGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+Direct Known Subclasses: StandardPieSectionLabelGenerator, StandardPieToolTipGenerator
+[Constructor Summary]
+protected AbstractPieItemLabelGenerator(String labelFormat, NumberFormat numberFormat, NumberFormat percentFormat) Creates an item label generator using the specified number formatters.
+[Method Summary]
+Object clone() Returns an independent copy of the generator.

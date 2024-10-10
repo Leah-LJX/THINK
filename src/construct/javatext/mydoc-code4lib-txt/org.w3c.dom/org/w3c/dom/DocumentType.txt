@@ -1,0 +1,14 @@
+[Class] org.w3c.dom.DocumentType
+[Flag] Interface
+[Info]
+All Superinterfaces:
+Node
+[Constructor Summary]
+
+[Method Summary]
+NamedNodeMap getEntities() A NamedNodeMap containing the general entities, both external and internal, declared in the DTD.
+String getInternalSubset() The internal subset as a string, or null if there is none.
+String getName() The name of DTD; i.e., the name immediately following the DOCTYPE keyword.
+NamedNodeMap getNotations() A NamedNodeMap containing the notations declared in the DTD.
+String getPublicId() The public identifier of the external subset.
+String getSystemId() The system identifier of the external subset.

@@ -1,0 +1,14 @@
+[API Name] org.apache.pdfbox.pdmodel.fixup.processor.AbstractProcessor
+[Type] Class
+[Info]
+All Implemented Interfaces: PDDocumentProcessor
+Direct Known Subclasses: AcroFormDefaultsProcessor, AcroFormGenerateAppearancesProcessor, AcroFormOrphanWidgetsProcessor
+public abstract class AbstractProcessor extends Object implements PDDocumentProcessor
+[Constructor Summary]
+protected AbstractProcessor(PDDocument document)	
+[Field Summary]
+protected PDDocument document	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface org.apache.pdfbox.pdmodel.fixup.processor.PDDocumentProcessor]
+process

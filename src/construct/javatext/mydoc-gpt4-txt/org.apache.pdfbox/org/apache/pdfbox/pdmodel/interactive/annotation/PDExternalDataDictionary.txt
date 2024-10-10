@@ -1,0 +1,15 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.annotation.PDExternalDataDictionary
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDExternalDataDictionary extends Object implements COSObjectable This class represents an external data dictionary.
+[Constructor Summary]
+PDExternalDataDictionary()	Constructor.
+PDExternalDataDictionary(COSDictionary dictionary)	Constructor.
+[Method Summary]
+COSDictionary getCOSObject()	returns the dictionary.
+String getSubtype()	returns the subtype of the external data dictionary.
+String getType()	returns the type of the external data dictionary.
+void setSubtype(String subtype)	This will set the subtype of the external data dictionary.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

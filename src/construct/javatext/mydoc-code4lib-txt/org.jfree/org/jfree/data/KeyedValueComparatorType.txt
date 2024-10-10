@@ -1,0 +1,10 @@
+[Class] org.jfree.data.KeyedValueComparatorType
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+
+[Method Summary]
+boolean equals(Object o)	Returns true if this object is equal to the specified object, and false otherwise.
+int hashCode()	Returns a hash code.
+String toString()	Returns a string representing the object.

@@ -1,0 +1,23 @@
+[API Name] Package org.apache.commons.imaging.PixelDensity
+[Type] Class
+[Info]
+public final class PixelDensity extends Object Used to specify pixel density and physical dimensions when reading or  storing image information.
+[Method Summary]
+static PixelDensity createFromPixelsPerCentimetre​(double x, double y)	
+static PixelDensity createFromPixelsPerInch​(double x, double y)	
+static PixelDensity createFromPixelsPerMetre​(double x, double y)	
+static PixelDensity createUnitless​(double x, double y)	
+double getRawHorizontalDensity()	
+double getRawVerticalDensity()	
+double horizontalDensityCentimetres()	
+double horizontalDensityInches()	
+double horizontalDensityMetres()	
+boolean isInCentimetres()	
+boolean isInInches()	
+boolean isInMetres()	
+boolean isUnitless()	
+double verticalDensityCentimetres()	
+double verticalDensityInches()	
+double verticalDensityMetres()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

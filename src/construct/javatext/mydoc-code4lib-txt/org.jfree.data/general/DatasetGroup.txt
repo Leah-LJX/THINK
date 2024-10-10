@@ -1,0 +1,11 @@
+[Class] org.jfree.data.general.DatasetGroup
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+DatasetGroup()	Constructs a new group.
+DatasetGroup(String id)	Creates a new group with the specified id.
+[Method Summary]
+Object clone()	Clones the group.
+boolean equals(Object obj)	Tests this instance for equality with an arbitrary object.
+String getID()	Returns the identification string for this group.

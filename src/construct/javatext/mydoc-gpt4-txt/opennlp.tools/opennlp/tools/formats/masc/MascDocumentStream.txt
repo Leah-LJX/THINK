@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.formats.masc.MascDocumentStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<MascDocument>
+public class MascDocumentStream extends Object implements ObjectStream<MascDocument>
+[Constructor Summary]
+MascDocumentStream(File mascCorpusDirectory)	
+MascDocumentStream(File mascCorpusDirectory, boolean searchRecursive, FileFilter fileFilter)	Creates a MascDocumentStream to read the documents from a given directory.
+[Method Summary]
+void close()	Remove the corpus from the memory.
+MascDocument read()	Return the next document.
+void reset()	Reset the reading of all documents to the first sentence.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

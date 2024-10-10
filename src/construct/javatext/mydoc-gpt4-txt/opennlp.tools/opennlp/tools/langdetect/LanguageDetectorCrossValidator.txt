@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.langdetect.LanguageDetectorCrossValidator
+[Type] Class
+[Info]
+public class LanguageDetectorCrossValidator extends Object Cross validator for LanguageDetector.
+[Constructor Summary]
+LanguageDetectorCrossValidator(TrainingParameters mlParams, LanguageDetectorFactory factory, LanguageDetectorEvaluationMonitor... listeners)	Initializes a LanguageDetectorCrossValidator with the given parameters.
+[Method Summary]
+void evaluate(ObjectStream<LanguageSample> samples, int nFolds)	Starts the evaluation.
+double getDocumentAccuracy()	
+long getDocumentCount()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

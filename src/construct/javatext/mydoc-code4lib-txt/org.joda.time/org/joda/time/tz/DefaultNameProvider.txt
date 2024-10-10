@@ -1,0 +1,10 @@
+[Class] org.joda.time.tz.DefaultNameProvider
+[Flag] Class
+[Info]
+All Implemented Interfaces: NameProvider
+[Constructor Summary]
+DefaultNameProvider()
+[Method Summary]
+String getName(Locale locale, String id, String nameKey) Returns a localized name, or null if not found.
+String getName(Locale locale, String id, String nameKey, boolean standardTime) String getShortName(Locale locale, String id, String nameKey) Returns a localized short name, or null if not found.
+String getShortName(Locale locale, String id, String nameKey, boolean standardTime)

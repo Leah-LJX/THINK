@@ -1,0 +1,9 @@
+[Class] org.w3c.dom.svg.SVGCursorElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGExternalResourcesRequired, SVGTests, SVGURIReference
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedLength getX()	 
+ SVGAnimatedLength getY()

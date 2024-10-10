@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.ChartMouseEvent
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+ChartMouseEvent(JFreeChart chart, MouseEvent trigger, ChartEntity entity) Constructs a new event.
+[Method Summary]
+JFreeChart getChart() Returns the chart that the mouse event relates to.

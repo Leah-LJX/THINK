@@ -1,0 +1,56 @@
+[API Name] org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureElement
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDStructureElement extends PDStructureNode A structure element.
+Author: Ben Litchfield, Johannes Koch
+[Constructor Summary]
+PDStructureElement(COSDictionary dic)	Constructor for an existing structure element.
+PDStructureElement(String structureType, PDStructureNode parent)	Constructor with required values.
+[Field Summary]
+static String TYPE	
+[Method Summary]
+void addAttribute(PDAttributeObject attributeObject)	Adds an attribute object.
+void addClassName(String className)	Adds a class name.
+void appendKid(PDMarkedContent markedContent)	Appends a marked-content sequence kid.
+void appendKid(PDMarkedContentReference markedContentReference)	Appends a marked-content reference kid.
+void appendKid(PDObjectReference objectReference)	Appends an object reference kid.
+void attributeChanged(PDAttributeObject attributeObject)	Updates the revision number for the given attribute object.
+String getActualText()	Returns the actual text (ActualText).
+String getAlternateDescription()	Returns the alternate description (Alt).
+Revisions<PDAttributeObject> getAttributes()	Returns the attributes together with their revision numbers (A).
+Revisions<String> getClassNames()	Returns the class names together with their revision numbers (C).
+String getElementIdentifier()	Returns the element identifier (ID).
+String getExpandedForm()	Returns the expanded form (E).
+String getLanguage()	Returns the language (Lang).
+PDPage getPage()	Returns the page on which some or all of the content items designated by the K entry shall be rendered (Pg).
+PDStructureNode getParent()	Returns the parent in the structure hierarchy (P).
+int getRevisionNumber()	Returns the revision number (R).
+String getStandardStructureType()	Returns the standard structure type, the actual structure type is mapped to in the role map.
+String getStructureType()	Returns the structure type (S).
+String getTitle()	Returns the title (T).
+void incrementRevisionNumber()	Increments th revision number.
+void insertBefore(COSInteger markedContentIdentifier, Object refKid)	Inserts a marked-content identifier kid before a reference kid.
+void insertBefore(PDMarkedContentReference markedContentReference, Object refKid)	Inserts a marked-content reference kid before a reference kid.
+void insertBefore(PDObjectReference objectReference, Object refKid)	Inserts an object reference kid before a reference kid.
+void removeAttribute(PDAttributeObject attributeObject)	Removes an attribute object.
+void removeClassName(String className)	Removes a class name.
+void removeKid(COSInteger markedContentIdentifier)	Removes a marked-content identifier kid.
+void removeKid(PDMarkedContentReference markedContentReference)	Removes a marked-content reference kid.
+void removeKid(PDObjectReference objectReference)	Removes an object reference kid.
+void setActualText(String actualText)	Sets the actual text (ActualText).
+void setAlternateDescription(String alternateDescription)	Sets the alternate description (Alt).
+void setAttributes(Revisions<PDAttributeObject> attributes)	Sets the attributes together with their revision numbers (A).
+void setClassNames(Revisions<String> classNames)	Sets the class names together with their revision numbers (C).
+void setElementIdentifier(String id)	Sets the element identifier (ID).
+void setExpandedForm(String expandedForm)	Sets the expanded form (E).
+void setLanguage(String language)	Sets the language (Lang).
+void setPage(PDPage page)	Sets the page on which some or all of the content items designated by the K entry shall be rendered (Pg).
+void setParent(PDStructureNode structureNode)	Sets the parent in the structure hierarchy (P).
+void setRevisionNumber(int revisionNumber)	Sets the revision number (R).
+void setStructureType(String structureType)	Sets the structure type (S).
+void setTitle(String title)	Sets the title (T).
+[Methods inherited from class org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureNode]
+appendKid, appendKid, appendObjectableKid, create, createObject, getCOSObject, getKids, getType, insertBefore, insertBefore, insertObjectableBefore, removeKid, removeKid, removeObjectableKid, setKids
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

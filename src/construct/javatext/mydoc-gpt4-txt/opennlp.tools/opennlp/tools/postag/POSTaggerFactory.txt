@@ -1,0 +1,28 @@
+[API Name] opennlp.tools.postag.POSTaggerFactory
+[Type] Class
+[Info]
+public class POSTaggerFactory extends BaseToolFactory The factory that provides POSTagger default implementations and resources.
+[Constructor Summary]
+POSTaggerFactory()	Initializes a POSTaggerFactory that provides the default implementation of the resources.
+POSTaggerFactory(byte[] featureGeneratorBytes, Map<String,Object> resources, TagDictionary posDictionary)	Initializes a POSTaggerFactory from a given set of the resources.
+[Nested Class Summary]
+Nested Class Summary
+static class 
+[Method Summary]
+static POSTaggerFactory create(String subclassName, byte[] featureGeneratorBytes, Map<String,Object> resources, TagDictionary posDictionary)	Instantiates a POSTaggerFactory via a given subclassName.
+Map<String,Object> createArtifactMap()	A model's implementation should call this constructor that creates a model programmatically.
+Map<String,ArtifactSerializer> createArtifactSerializersMap()	Creates a Map with pairs of keys and ArtifactSerializer.
+TagDictionary createEmptyTagDictionary()	
+AdaptiveFeatureGenerator createFeatureGenerators()	Creates the AdaptiveFeatureGenerator.
+TagDictionary createTagDictionary(File dictionary)	Initializes a TagDictionary from a dictionary file.
+TagDictionary createTagDictionary(InputStream in)	Initializes a TagDictionary from a dictionary stream.
+POSContextGenerator getPOSContextGenerator()	
+POSContextGenerator getPOSContextGenerator(int cacheSize)	
+SequenceValidator<String> getSequenceValidator()	
+TagDictionary getTagDictionary()	
+void setTagDictionary(TagDictionary dictionary)	
+void validateArtifactMap()	Validates the parsed artifacts.
+[Methods inherited from class opennlp.tools.util.BaseToolFactory]
+create, create, createManifestEntries
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

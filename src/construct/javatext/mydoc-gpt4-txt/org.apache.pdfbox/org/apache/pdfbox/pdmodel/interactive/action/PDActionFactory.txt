@@ -1,0 +1,9 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.action.PDActionFactory
+[Type] Class
+[Info]
+public final class PDActionFactory extends Object This class will take a dictionary and determine which type of action to create.
+Author: Ben Litchfield
+[Method Summary]
+static PDAction createAction(COSDictionary action)	This will create the correct type of action based on the type specified in the dictionary.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

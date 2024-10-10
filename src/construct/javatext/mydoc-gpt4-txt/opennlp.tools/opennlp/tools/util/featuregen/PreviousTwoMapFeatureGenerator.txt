@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.util.featuregen.PreviousTwoMapFeatureGenerator
+[Type] Class
+[Info]
+All Implemented Interfaces: AdaptiveFeatureGenerator
+public class PreviousTwoMapFeatureGenerator extends Object implements AdaptiveFeatureGenerator This AdaptiveFeatureGenerator generates features indicating the  outcome associated with two previously occurring words.
+[Constructor Summary]
+PreviousTwoMapFeatureGenerator()	
+[Method Summary]
+void clearAdaptiveData()	Informs a feature generator that the context of the adaptive data (typically a document) is no longer valid.
+void createFeatures(List<String> features, String[] tokens, int index, String[] preds)	Generates previous decision features for the token based on contents of the previous map.
+void updateAdaptiveData(String[] tokens, String[] outcomes)	Informs a feature generator that the specified tokens have been classified with the corresponding set of specified outcomes.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

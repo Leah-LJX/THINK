@@ -1,0 +1,9 @@
+[Class] org.w3c.dom.svg.SVGZoomAndPan
+[Flag] Interface
+[Info]
+All Known Subinterfaces: SVGSVGElement, SVGViewElement, SVGViewSpec
+[Constructor Summary]
+
+[Method Summary]
+short getZoomAndPan()	 
+ void setZoomAndPan(short zoomAndPan)

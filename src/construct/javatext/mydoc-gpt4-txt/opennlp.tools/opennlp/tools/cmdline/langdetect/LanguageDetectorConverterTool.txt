@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.cmdline.langdetect.LanguageDetectorConverterTool
+[Type] Class
+[Info]
+public class LanguageDetectorConverterTool extends opennlp.tools.cmdline.AbstractConverterTool<LanguageSample,BasicFormatParams> Tool to convert multiple data formats into native OpenNLP language detection  training format.
+See Also:
+AbstractConverterTool LanguageSample
+[Constructor Summary]
+LanguageDetectorConverterTool()	
+[Methods inherited from class opennlp.tools.cmdline.AbstractConverterTool]
+getHelp, getHelp, getShortDescription, run
+[Methods inherited from class opennlp.tools.cmdline.CmdLineTool]
+getName, hasParams
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

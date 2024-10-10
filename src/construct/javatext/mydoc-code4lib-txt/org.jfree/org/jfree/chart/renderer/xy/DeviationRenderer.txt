@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.xy.DeviationRenderer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, AnnotationChangeListener, LegendItemSource, XYItemRenderer, org.jfree.util.PublicCloneable
+[Constructor Summary]
+DeviationRenderer() Creates a new renderer that displays lines and shapes for the data items, as well as the shaded area for the y-interval.
+[Method Summary]
+void drawItem(Graphics2D g2, XYItemRendererState state, Rectangle2D dataArea, PlotRenderingInfo info, XYPlot plot, ValueAxis domainAxis, ValueAxis rangeAxis, XYDataset dataset, int series, int item, CrosshairState crosshairState, int pass) Draws the visual representation of a single data item.

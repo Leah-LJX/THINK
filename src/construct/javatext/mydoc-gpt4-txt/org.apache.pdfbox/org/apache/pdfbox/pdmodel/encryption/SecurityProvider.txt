@@ -1,0 +1,9 @@
+[API Name] org.apache.pdfbox.pdmodel.encryption.SecurityProvider
+[Type] Class
+[Info]
+public class SecurityProvider extends Object Singleton which provides a security provider.
+[Method Summary]
+static Provider getProvider()	Returns the provider to be used for advanced encrypting/decrypting.
+static void setProvider(Provider provider)	Set the provider to be used for advanced encrypting/decrypting.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

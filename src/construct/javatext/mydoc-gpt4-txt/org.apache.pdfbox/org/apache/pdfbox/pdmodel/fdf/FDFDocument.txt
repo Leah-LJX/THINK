@@ -1,0 +1,24 @@
+[API Name] org.apache.pdfbox.pdmodel.fdf.FDFDocument
+[Type] Class
+[Info]
+All Implemented Interfaces: Closeable, AutoCloseable
+public class FDFDocument extends Object implements Closeable This is the in-memory representation of the FDF document. You need to call close() on this object when you are done  using it!!
+Author: Ben Litchfield
+[Constructor Summary]
+FDFDocument()	Constructor, creates a new FDF document.
+FDFDocument(COSDocument doc)	Constructor that uses an existing document.
+FDFDocument(Document doc)	This will create an FDF document from an XFDF XML document.
+[Method Summary]
+void close()	This will close the underlying COSDocument object.
+FDFCatalog getCatalog()	This will get the FDF Catalog.
+COSDocument getDocument()	This will get the low level document.
+void save(File fileName)	This will save this document to the filesystem.
+void save(OutputStream output)	This will save the document to an output stream.
+void save(String fileName)	This will save this document to the filesystem.
+void saveXFDF(File fileName)	This will save this document to the filesystem.
+void saveXFDF(String fileName)	This will save this document to the filesystem.
+void saveXFDF(Writer output)	This will save the document to an output stream and close the stream.
+void setCatalog(FDFCatalog cat)	This will set the FDF catalog for this FDF document.
+void writeXML(Writer output)	This will write this element as an XML document.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

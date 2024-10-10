@@ -1,0 +1,15 @@
+[API Name] org.apache.pdfbox.pdmodel.PageLayout
+[Type] Enum
+[Info]
+All Implemented Interfaces: Serializable, Comparable<PageLayout>
+public enum PageLayout extends Enum<PageLayout> A name object specifying the page layout shall be used when the document is opened.
+Author: John Hewson
+[Method Summary]
+static PageLayout fromString(String value)	
+String stringValue()	Returns the string value, as used in a PDF file.
+static PageLayout valueOf(String name)	Returns the enum constant of this type with the specified name.
+static PageLayout[] values()	Returns an array containing the constants of this enum type, in the order they are declared.
+[Methods inherited from class java.lang.Enum]
+clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, toString, valueOf
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

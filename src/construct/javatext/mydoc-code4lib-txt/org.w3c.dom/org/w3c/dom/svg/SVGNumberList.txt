@@ -1,0 +1,15 @@
+[Class] org.w3c.dom.svg.SVGNumberList
+[Flag] Interface
+[Info]
+public interface SVGNumberList
+[Constructor Summary]
+
+[Method Summary]
+SVGNumber appendItem(SVGNumber newItem)	 
+ void clear()	 
+ SVGNumber getItem(int index)	 
+ int getNumberOfItems()	 
+ SVGNumber initialize(SVGNumber newItem)	 
+ SVGNumber insertItemBefore(SVGNumber newItem, int index)	 
+ SVGNumber removeItem(int index)	 
+ SVGNumber replaceItem(SVGNumber newItem, int index)

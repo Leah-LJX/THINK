@@ -1,0 +1,28 @@
+[API Name] org.apache.pdfbox.pdfparser.PDFParser
+[Type] Class
+[Info]
+All Implemented Interfaces: ICOSParser
+public class PDFParser extends COSParser
+[Constructor Summary]
+PDFParser(org.apache.pdfbox.io.RandomAccessRead source)	Constructor.
+PDFParser(org.apache.pdfbox.io.RandomAccessRead source, String decryptionPassword)	Constructor.
+PDFParser(org.apache.pdfbox.io.RandomAccessRead source, String decryptionPassword, InputStream keyStore, String alias)	Constructor.
+PDFParser(org.apache.pdfbox.io.RandomAccessRead source, String decryptionPassword, InputStream keyStore, String alias, org.apache.pdfbox.io.RandomAccessStreamCache.StreamCacheCreateFunction streamCacheCreateFunction)	Constructor.
+[Field Summary]
+PDFParser(org.apache.pdfbox.io.RandomAccessRead source)	Constructor.
+PDFParser(org.apache.pdfbox.io.RandomAccessRead source, String decryptionPassword)	Constructor.
+PDFParser(org.apache.pdfbox.io.RandomAccessRead source, String decryptionPassword, InputStream keyStore, String alias)	Constructor.
+PDFParser(org.apache.pdfbox.io.RandomAccessRead source, String decryptionPassword, InputStream keyStore, String alias, org.apache.pdfbox.io.RandomAccessStreamCache.StreamCacheCreateFunction streamCacheCreateFunction)	Constructor.
+[Method Summary]
+protected PDDocument createDocument()	Create the resulting document.
+protected void initialParse()	The initial parse will first parse only the trailer, the xrefstart and all xref tables to have a pointer (offset) to all the pdf's objects.
+static PDDocument load(File file)	Deprecated. use Loader.loadPDF(File) instead
+static PDDocument load(File file, String password)	Deprecated. use Loader.loadPDF(File, String) instead
+PDDocument parse()	This will parse the stream and populate the PDDocument object.
+PDDocument parse(boolean lenient)	This will parse the stream and populate the PDDocument object.
+[Methods inherited from class org.apache.pdfbox.pdfparser.COSParser]
+checkPages, createRandomAccessReadView, dereferenceCOSObject, getAccessPermission, getEncryption, isLenient, isString, lastIndexOf, parseCOSStream, parseFDFHeader, parseObjectDynamically, parseObjectStreamObject, parsePDFHeader, parseXrefTable, prepareDecryption, resetTrailerResolver, retrieveTrailer, setEOFLookupRange, setLenient
+[Methods inherited from class org.apache.pdfbox.pdfparser.BaseParser]
+getObjectKey, isClosing, isClosing, isDigit, isDigit, isEndOfName, isEOF, isEOL, isEOL, isSpace, isSpace, isWhitespace, isWhitespace, parseCOSArray, parseCOSDictionary, parseCOSName, parseCOSString, parseDirObject, readExpectedChar, readExpectedString, readGenerationNumber, readInt, readLine, readLong, readObjectNumber, readString, readString, readStringNumber, skipSpaces, skipWhiteSpaces
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

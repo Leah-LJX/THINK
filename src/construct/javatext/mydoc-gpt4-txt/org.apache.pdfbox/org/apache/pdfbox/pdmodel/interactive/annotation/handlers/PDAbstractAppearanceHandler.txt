@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDAbstractAppearanceHandler
+[Type] Class
+[Info]
+All Implemented Interfaces: PDAppearanceHandler
+Direct Known Subclasses: PDCaretAppearanceHandler, PDCircleAppearanceHandler, PDFileAttachmentAppearanceHandler, PDFreeTextAppearanceHandler, PDHighlightAppearanceHandler, PDInkAppearanceHandler, PDLineAppearanceHandler, PDLinkAppearanceHandler, PDPolygonAppearanceHandler, PDPolylineAppearanceHandler, PDSoundAppearanceHandler, PDSquareAppearanceHandler, PDSquigglyAppearanceHandler, PDStrikeoutAppearanceHandler, PDTextAppearanceHandler, PDUnderlineAppearanceHandler
+public abstract class PDAbstractAppearanceHandler extends Object implements PDAppearanceHandler Generic handler to generate the fields appearance.    Individual handler will provide specific implementations for different field  types.
+[Constructor Summary]
+PDAbstractAppearanceHandler(PDAnnotation annotation)	
+PDAbstractAppearanceHandler(PDAnnotation annotation, PDDocument document)	
+[Field Summary]
+protected static Set<String> ANGLED_STYLES	Line ending styles where the shape changes its angle, e.g.
+protected PDDocument document	
+protected static Set<String> INTERIOR_COLOR_STYLES	Line ending styles where there is an interior color.
+protected static Set<String> SHORT_STYLES	Line ending styles where the line has to be drawn shorter (minus line width).
+[Method Summary]
+protected COSStream createCOSStream()	
+protected PDFont getDefaultFont()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDAppearanceHandler]
+generateAppearanceStreams, generateDownAppearance, generateNormalAppearance, generateRolloverAppearance

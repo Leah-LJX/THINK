@@ -1,0 +1,29 @@
+[API Name] org.apache.pdfbox.cos.COSObject
+[Type] Class
+[Info]
+All Implemented Interfaces: COSUpdateInfo, COSObjectable
+public class COSObject extends COSBase implements COSUpdateInfo This class represents a PDF object.
+Author: Ben Litchfield
+[Constructor Summary]
+COSObject(COSBase object)	Constructor.
+COSObject(COSBase object, COSObjectKey objectKey)	Constructor.
+COSObject(COSBase object, ICOSParser parser)	Constructor.
+COSObject(COSObjectKey key, ICOSParser parser)	Constructor.
+[Method Summary]
+void accept(ICOSVisitor visitor)	visitor pattern double dispatch method.
+int getGenerationNumber()	Getter for property generationNumber.
+COSBase getObject()	This will get the object that this object encapsulates.
+long getObjectNumber()	Getter for property objectNumber.
+COSUpdateState getUpdateState()	Returns the current COSUpdateState of this COSObject.
+boolean isDereferenced()	Returns true, if the hereby referenced COSBase has already been parsed and loaded.
+boolean isObjectNull()	Indicates if the referenced object is present or not.
+void setToNull()	Sets the referenced object to COSNull and removes the initially assigned parser.
+String toString()	
+[Methods inherited from class org.apache.pdfbox.cos.COSBase]
+getCOSObject, getKey, isDirect, setDirect, setKey
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait
+[Methods inherited from interface org.apache.pdfbox.cos.COSUpdateInfo]
+isNeedToBeUpdated, setNeedToBeUpdated, toIncrement
+[Methods inherited from interface org.apache.pdfbox.pdmodel.common.COSObjectable]
+getCOSObject

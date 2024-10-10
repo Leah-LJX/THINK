@@ -1,0 +1,40 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.shading.PDShading
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDShadingType1, PDShadingType2, PDShadingType4, PDShadingType5
+public abstract class PDShading extends Object implements COSObjectable A Shading Resource.
+[Constructor Summary]
+PDShading()	Default constructor.
+PDShading(COSDictionary shadingDictionary)	Constructor using the given shading dictionary.
+[Field Summary]
+static int SHADING_TYPE1	shading type 1 = function based shading.
+static int SHADING_TYPE2	shading type 2 = axial shading.
+static int SHADING_TYPE3	shading type 3 = radial shading.
+static int SHADING_TYPE4	shading type 4 = Free-Form Gouraud-Shaded Triangle Meshes.
+static int SHADING_TYPE5	shading type 5 = Lattice-Form Gouraud-Shaded Triangle Meshes.
+static int SHADING_TYPE6	shading type 6 = Coons Patch Meshes.
+static int SHADING_TYPE7	shading type 7 = Tensor-Product Patch Meshes.
+[Method Summary]
+static PDShading create(COSDictionary shadingDictionary)	Create the correct PD Model shading based on the COS base shading.
+float[] evalFunction(float inputValue)	Convert the input value using the functions of the shading dictionary.
+float[] evalFunction(float[] input)	Convert the input values using the functions of the shading dictionary.
+boolean getAntiAlias()	This will return the AntiAlias value.
+COSArray getBackground()	This will return the background.
+PDRectangle getBBox()	An array of four numbers in the form coordinate system (see below), giving the coordinates of the left, bottom, right, and top edges, respectively, of the shading's bounding box.
+Rectangle2D getBounds(AffineTransform xform, Matrix matrix)	Calculate a bounding rectangle around the areas of this shading context.
+PDColorSpace getColorSpace()	This will get the color space or null if none exists.
+COSDictionary getCOSObject()	This will get the underlying dictionary.
+PDFunction getFunction()	This will return the function used to convert the color values.
+abstract int getShadingType()	This will return the shading type.
+String getType()	This will return the type.
+void setAntiAlias(boolean antiAlias)	This will set the AntiAlias value.
+void setBackground(COSArray newBackground)	This will set the background.
+void setBBox(PDRectangle newBBox)	This will set the BBox (bounding box) for this Shading.
+void setColorSpace(PDColorSpace colorSpace)	This will set the color space for the shading.
+void setFunction(COSArray newFunctions)	This will set the functions COSArray for the color conversion.
+void setFunction(PDFunction newFunction)	This will set the function for the color conversion.
+void setShadingType(int shadingType)	This will set the shading type.
+abstract Paint toPaint(Matrix matrix)	Returns an AWT paint which corresponds to this shading
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

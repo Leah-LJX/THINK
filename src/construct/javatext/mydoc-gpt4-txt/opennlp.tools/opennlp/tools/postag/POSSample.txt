@@ -1,0 +1,22 @@
+[API Name] opennlp.tools.postag.POSSample
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, Sample
+public class POSSample extends Object implements Sample Represents an pos-tagged sentence.
+See Also:
+Serialized Form
+[Constructor Summary]
+POSSample(String[] sentence, String[] tags)	Initializes a POSSample instance.
+POSSample(String[] sentence, String[] tags, String[][] additionalContext)	Initializes a POSSample instance.
+POSSample(List<String> sentence, List<String> tags)	Initializes a POSSample instance.
+POSSample(List<String> sentence, List<String> tags, String[][] additionalContext)	Initializes a POSSample instance.
+[Method Summary]
+boolean equals(Object obj)	
+String[][] getAdditionalContext()	
+String[] getSentence()	
+String[] getTags()	
+int hashCode()	
+static POSSample parse(String sentenceString)	Parses a sentenceString.
+String toString()	
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

@@ -1,0 +1,8 @@
+[API Name] opennlp.tools.tokenize.TokenizerEvaluationMonitor
+[Type] Interface
+[Info]
+All Superinterfaces: EvaluationMonitor<TokenSample>
+All Known Implementing Classes: DetokenEvaluationErrorListener, TokenEvaluationErrorListener
+public interface TokenizerEvaluationMonitor extends EvaluationMonitor<TokenSample> A marker interface for evaluating tokenizers.
+[Methods inherited from interface opennlp.tools.util.eval.EvaluationMonitor]
+correctlyClassified, misclassified

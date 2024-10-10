@@ -1,0 +1,7 @@
+[Class] org.jfree.chart.encoders.ImageFormat
+[Flag] Interface
+[Info]
+See Also: Constant Field Values
+[Constructor Summary]
+
+[Method Summary]

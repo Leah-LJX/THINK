@@ -1,0 +1,27 @@
+[Class] org.jfree.data.general.DefaultPieDataset
+[Flag] Class
+[Info]
+Type Parameters: K - Key type for PieDataset
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, PublicCloneable, Dataset, PieDataset<K>, KeyedValues<K>, Values
+Direct Known Subclasses: DefaultKeyedValuesDataset, JDBCPieDataset
+[Constructor Summary]
+DefaultPieDataset()	Constructs a new dataset, initially empty.
+DefaultPieDataset(KeyedValues<K> source)	Creates a new dataset by copying data from a KeyedValues instance.
+[Method Summary]
+void clear()	Clears all data from this dataset and sends a DatasetChangeEvent to all registered listeners (unless the dataset was already empty).
+Object clone()	Returns a clone of the dataset.
+boolean equals(Object obj)	Tests if this object is equal to another.
+int getIndex(K key)	Returns the index for a key, or -1 if the key is not recognised.
+int getItemCount()	Returns the number of items in the dataset.
+K getKey(int item)	Returns the key for the specified item, or null.
+List<K> getKeys()	Returns the categories in the dataset.
+Number getValue(int item)	Returns a value.
+Number getValue(K key)	Returns the data value associated with a key.
+int hashCode()	Returns a hash code.
+void insertValue(int position, K key, double value)	Inserts a new value at the specified position in the dataset or, if there is an existing item with the specified key, updates the value for that item and moves it to the specified position.
+void insertValue(int position, K key, Number value)	Inserts a new value at the specified position in the dataset or, if there is an existing item with the specified key, updates the value for that item and moves it to the specified position.
+void remove(K key)	Removes an item from the dataset and sends a DatasetChangeEvent to all registered listeners.
+void setValue(K key, double value)	Sets the data value for a key and sends a DatasetChangeEvent to all registered listeners.
+void setValue(K key, Number value)	Sets the data value for a key and sends a DatasetChangeEvent to all registered listeners.
+void sortByKeys(SortOrder order)	Sorts the dataset's items by key and sends a DatasetChangeEvent to all registered listeners.
+void sortByValues(SortOrder order)	Sorts the dataset's items by value and sends a DatasetChangeEvent to all registered listeners.

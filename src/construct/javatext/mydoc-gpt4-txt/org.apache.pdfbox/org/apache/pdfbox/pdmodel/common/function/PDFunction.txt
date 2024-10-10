@@ -1,0 +1,28 @@
+[API Name] org.apache.pdfbox.pdmodel.common.function.PDFunction
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDFunctionType0, PDFunctionType2, PDFunctionType3, PDFunctionType4, PDFunctionTypeIdentity
+public abstract class PDFunction extends Object implements COSObjectable This class represents a function in a PDF document.
+Author: Ben Litchfield
+[Constructor Summary]
+PDFunction(COSBase function)	Constructor.
+[Method Summary]
+protected float[] clipToRange(float[] inputValues)	Clip the given input values to the ranges.
+protected float clipToRange(float x, float rangeMin, float rangeMax)	Clip the given input value to the given range.
+static PDFunction create(COSBase function)	Create the correct PD Model function based on the COS base function.
+abstract float[] eval(float[] input)	Evaluates the function at the given input.
+COSDictionary getCOSObject()	Returns the stream.
+PDRange getDomainForInput(int n)	This will get the range for a certain input parameter.
+abstract int getFunctionType()	Returns the function type.
+int getNumberOfInputParameters()	This will get the number of input parameters that have a domain specified.
+int getNumberOfOutputParameters()	This will get the number of output parameters that have a range specified.
+protected PDStream getPDStream()	Returns the underlying PDStream.
+PDRange getRangeForOutput(int n)	This will get the range for a certain output parameters.
+protected COSArray getRangeValues()	Returns all ranges for the output values as COSArray .
+protected float interpolate(float x, float xRangeMin, float xRangeMax, float yRangeMin, float yRangeMax)	For a given value of x, interpolate calculates the y value on the line defined by the two points (xRangeMin , xRangeMax ) and (yRangeMin , yRangeMax ).
+void setDomainValues(COSArray domainValues)	This will set the domain values.
+void setRangeValues(COSArray rangeValues)	This will set the range values.
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

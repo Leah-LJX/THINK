@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.axis.Tick
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+Direct Known Subclasses: CategoryTick, ValueTick
+[Constructor Summary]
+Tick(String text, org.jfree.ui.TextAnchor textAnchor, org.jfree.ui.TextAnchor rotationAnchor, double angle) Creates a new tick.
+[Method Summary]
+Object clone() Returns a clone of the tick.

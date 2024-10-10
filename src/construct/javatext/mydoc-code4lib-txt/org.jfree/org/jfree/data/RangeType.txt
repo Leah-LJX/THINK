@@ -1,0 +1,10 @@
+[Class] org.jfree.data.RangeType
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+
+[Method Summary]
+boolean equals(Object obj)	Returns true if this object is equal to the specified object, and false otherwise.
+int hashCode()	Returns a hash code value for the object.
+String toString()	Returns a string representing the object.

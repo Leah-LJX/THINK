@@ -1,0 +1,20 @@
+[Class] org.joda.time.ReadWritableInterval
+[Flag] Interface
+[Info]
+All Superinterfaces: ReadableInterval
+All Known Implementing Classes: MutableInterval
+[Constructor Summary]
+
+[Method Summary]
+void setChronology(Chronology chrono) Sets the chronology of this time interval.
+void setDurationAfterStart(ReadableDuration duration) Sets the duration of this time interval, preserving the start instant.
+void setDurationBeforeEnd(ReadableDuration duration) Sets the duration of this time interval, preserving the end instant.
+void setEnd(ReadableInstant instant) Sets the end of this time interval as an Instant.
+void setEndMillis(long millisInstant) Sets the end of this time interval.
+void setInterval(long startInstant, long endInstant) Sets this interval from two millisecond instants.
+void setInterval(ReadableInstant startInstant, ReadableInstant endInstant) Sets this interval from two instants.
+void setInterval(ReadableInterval interval) Sets this interval to be the same as another.
+void setPeriodAfterStart(ReadablePeriod period) Sets the period of this time interval, preserving the start instant.
+void setPeriodBeforeEnd(ReadablePeriod period) Sets the period of this time interval, preserving the end instant.
+void setStart(ReadableInstant instant) Sets the start of this time interval as an Instant.
+void setStartMillis(long millisInstant) Sets the start of this time interval.

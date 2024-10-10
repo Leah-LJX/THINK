@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.formats.NameFinderCensus90NameStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<StringList>
+@Internal public class NameFinderCensus90NameStream extends Object implements ObjectStream<StringList> This class helps to read the US Census data from the files to build a  StringList for each dictionary entry in the name-finder dictionary.  The entries in the source file are as follows:         SMITH          1.006  1.006      1   The first field is the name (in ALL CAPS).  The next field is a frequency in percent.  The next is a cumulative frequency in percent.  The last is a ranking.  
+Note:  Do not use this class, internal use only!
+[Constructor Summary]
+NameFinderCensus90NameStream(InputStreamFactory in, Charset encoding)	Initializes a NameFinderCensus90NameStream via an InputStreamFactory and a Charset.
+NameFinderCensus90NameStream(ObjectStream<String> lineStream)	Initializes a NameFinderCensus90NameStream via ObjectStream<String>.
+[Method Summary]
+void close()	Closes the ObjectStream and releases all allocated resources.
+StringList read()	Returns the next ObjectStream object.
+void reset()	Repositions the stream at the beginning and the previously seen object sequence will be repeated exactly.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

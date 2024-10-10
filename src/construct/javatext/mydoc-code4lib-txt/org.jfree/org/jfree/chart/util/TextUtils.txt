@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.util.TextUtils
+[Flag] Class
+[Info]
+Since: 1.0.18
+[Constructor Summary]
+TextUtils()
+[Method Summary]
+static Rectangle2D calcAlignedStringBounds(String text, Graphics2D g2, float x, float y, org.jfree.ui.TextAnchor anchor) Returns the bounds of an aligned string.

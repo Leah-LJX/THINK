@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.ml.model.SequenceClassificationModel<T>
+[Type] Interface
+[Info]
+Type Parameters: T - The type of the object which is the source.
+All Known Implementing Classes: BeamSearch
+public interface SequenceClassificationModel<T> A classification model that can label an input Sequence.
+[Method Summary]
+Sequence bestSequence(T[] sequence, Object[] additionalContext, BeamSearchContextGenerator<T> cg, SequenceValidator<T> validator)	Finds the Sequence with the highest probability.
+Sequence[] bestSequences(int numSequences, T[] sequence, Object[] additionalContext, double minSequenceScore, BeamSearchContextGenerator<T> cg, SequenceValidator<T> validator)	Finds the n most probable sequences with the highest probability.
+Sequence[] bestSequences(int numSequences, T[] sequence, Object[] additionalContext, BeamSearchContextGenerator<T> cg, SequenceValidator<T> validator)	Finds the n most probable sequences with the highest probability.
+String[] getOutcomes()	

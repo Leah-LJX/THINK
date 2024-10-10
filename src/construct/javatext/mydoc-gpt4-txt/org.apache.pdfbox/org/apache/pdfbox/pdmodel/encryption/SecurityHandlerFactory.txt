@@ -1,0 +1,13 @@
+[API Name] org.apache.pdfbox.pdmodel.encryption.SecurityHandlerFactory
+[Type] Class
+[Info]
+public final class SecurityHandlerFactory extends Object Manages security handlers for the application.  It follows the singleton pattern.  To be usable, security managers must be registered in it.  Security managers are retrieved by the application when necessary.
+Author: Benoit Guillon, John Hewson
+[Field Summary]
+static SecurityHandlerFactory INSTANCE	Singleton instance
+[Method Summary]
+SecurityHandler<ProtectionPolicy> newSecurityHandlerForFilter(String name)	Returns a new security handler for the given Filter name, or null none is available.
+SecurityHandler<ProtectionPolicy> newSecurityHandlerForPolicy(ProtectionPolicy policy)	Returns a new security handler for the given protection policy, or null none is available.
+void registerHandler(String name, Class<? extends SecurityHandler> securityHandler, Class<? extends ProtectionPolicy> protectionPolicy)	Registers a security handler.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

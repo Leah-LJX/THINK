@@ -1,0 +1,10 @@
+[Class] org.jfree.data.time.DynamicTimeSeriesCollection.ValueSequence
+[Flag] Class
+[Info]
+Enclosing class: DynamicTimeSeriesCollection
+[Constructor Summary]
+ValueSequence()	Default constructor:
+ValueSequence(int length)	Creates a sequence with the specified length.
+[Method Summary]
+void enterData(int index, float value)	Enters data into the storage array.
+float getData(int index)	Returns a value from the storage array.

@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.plot.XYPlot
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, AnnotationChangeListener, AxisChangeListener, MarkerChangeListener, RendererChangeListener, LegendItemSource, Pannable, ValueAxisPlot, Zoomable, DatasetChangeListener, org.jfree.util.PublicCloneable
+Direct Known Subclasses: CombinedDomainXYPlot, CombinedRangeXYPlot
+[Constructor Summary]
+XYPlot() Creates a new XYPlot instance with no dataset, no axes and no renderer.
+[Method Summary]
+void addAnnotation(XYAnnotation annotation) Adds an annotation to the plot and sends a PlotChangeEvent to all registered listeners.

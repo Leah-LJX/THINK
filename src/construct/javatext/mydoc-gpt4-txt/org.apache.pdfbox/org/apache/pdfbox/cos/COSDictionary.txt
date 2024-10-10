@@ -1,0 +1,110 @@
+[API Name] org.apache.pdfbox.cos.COSDictionary
+[Type] Class
+[Info]
+All Implemented Interfaces: COSUpdateInfo, COSObjectable
+Direct Known Subclasses: COSStream
+public class COSDictionary extends COSBase implements COSUpdateInfo This class represents a dictionary where name/value pairs reside.
+Author: Ben Litchfield
+[Constructor Summary]
+COSDictionary()	Constructor.
+COSDictionary(COSDictionary dict)	Copy Constructor.
+[Field Summary]
+protected Map<COSName,COSBase> items	The name-value pairs of this dictionary.
+[Method Summary]
+void accept(ICOSVisitor visitor)	visitor pattern double dispatch method.
+void addAll(COSDictionary dict)	This will add all of the dictionaries keys/values to this dictionary.
+COSDictionary asUnmodifiableDictionary()	Returns an unmodifiable view of this dictionary.
+void clear()	This will clear all items in the map.
+boolean containsKey(COSName name)	
+boolean containsKey(String name)	
+boolean containsValue(Object value)	
+Set<Map.Entry<COSName,COSBase>> entrySet()	Returns the name-value entries in this dictionary.
+void forEach(BiConsumer<? super COSName,? super COSBase> action)	Convenience method that calls Map.forEach(BiConsumer).
+boolean getBoolean(COSName key, boolean defaultValue)	This is a convenience method that will get the dictionary object that is expected to be a COSBoolean and convert it to a primitive boolean.
+boolean getBoolean(COSName firstKey, COSName secondKey, boolean defaultValue)	This is a convenience method that will get the dictionary object that is expected to be a COSBoolean and convert it to a primitive boolean.
+boolean getBoolean(String key, boolean defaultValue)	This is a convenience method that will get the dictionary object that is expected to be a cos boolean and convert it to a primitive boolean.
+COSArray getCOSArray(COSName key)	This is a convenience method that will get the dictionary object that is expected to be a COSArray.
+COSDictionary getCOSDictionary(COSName key)	This is a convenience method that will get the dictionary object that is expected to be a COSDictionary.
+COSDictionary getCOSDictionary(COSName firstKey, COSName secondKey)	This is a convenience method that will get the dictionary object that is expected to be a COSDictionary.
+COSName getCOSName(COSName key)	This is a convenience method that will get the dictionary object that is expected to be a name.
+COSName getCOSName(COSName key, COSName defaultValue)	This is a convenience method that will get the dictionary object that is expected to be a name.
+COSObject getCOSObject(COSName key)	This is a convenience method that will get the dictionary object that is expected to be a COSObject.
+COSStream getCOSStream(COSName key)	This is a convenience method that will get the dictionary object that is expected to be a COSStream.
+Calendar getDate(COSName key)	This is a convenience method that will get the dictionary object that is expected to be a name and convert it to a string.
+Calendar getDate(COSName key, Calendar defaultValue)	This is a convenience method that will get the dictionary object that is expected to be a date.
+Calendar getDate(String key)	This is a convenience method that will get the dictionary object that is expected to be a name and convert it to a string.
+Calendar getDate(String key, Calendar defaultValue)	This is a convenience method that will get the dictionary object that is expected to be a date.
+COSBase getDictionaryObject(COSName key)	This will get an object from this dictionary.
+COSBase getDictionaryObject(COSName firstKey, COSName secondKey)	This is a special case of getDictionaryObject that takes multiple keys, it will handle the situation where multiple keys could get the same value, ie if either CS or ColorSpace is used to get the colorspace.
+COSBase getDictionaryObject(String key)	This will get an object from this dictionary.
+Calendar getEmbeddedDate(COSName embedded, COSName key)	This is a convenience method that will get the dictionary object that is expected to be a name and convert it to a string.
+Calendar getEmbeddedDate(COSName embedded, COSName key, Calendar defaultValue)	This is a convenience method that will get the dictionary object that is expected to be a date.
+int getEmbeddedInt(COSName embeddedDictionary, COSName key)	Get an integer from an embedded dictionary.
+int getEmbeddedInt(COSName embeddedDictionary, COSName key, int defaultValue)	Get an integer from an embedded dictionary.
+String getEmbeddedString(COSName embedded, COSName key)	This is a convenience method that will get the dictionary object that is expected to be a name and convert it to a string.
+String getEmbeddedString(COSName embedded, COSName key, String defaultValue)	This is a convenience method that will get the dictionary object that is expected to be a name and convert it to a string.
+boolean getFlag(COSName field, int bitFlag)	Gets the boolean value from the flags at the given bit position.
+float getFloat(COSName key)	This is a convenience method that will get the dictionary object that is expected to be an float.
+float getFloat(COSName key, float defaultValue)	This is a convenience method that will get the dictionary object that is expected to be an float.
+float getFloat(String key)	This is a convenience method that will get the dictionary object that is expected to be an float.
+float getFloat(String key, float defaultValue)	This is a convenience method that will get the dictionary object that is expected to be a float.
+void getIndirectObjectKeys(List<COSObjectKey> indirectObjects)	Collects all indirect objects numbers within this dictionary and all included dictionaries.
+int getInt(COSName key)	This is a convenience method that will get the dictionary object that is expected to be an int.
+int getInt(COSName firstKey, COSName secondKey)	This is a convenience method that will get the dictionary object that is expected to be an integer.
+int getInt(COSName firstKey, COSName secondKey, int defaultValue)	This is a convenience method that will get the dictionary object that is expected to be an integer.
+int getInt(COSName key, int defaultValue)	This is a convenience method that will get the dictionary object that is expected to be an integer.
+int getInt(String key)	This is a convenience method that will get the dictionary object that is expected to be an int.
+int getInt(String key, int defaultValue)	This is a convenience method that will get the dictionary object that is expected to be an integer.
+COSBase getItem(COSName key)	This will do a lookup into the dictionary.
+COSBase getItem(COSName firstKey, COSName secondKey)	This is a special case of getItem that takes multiple keys, it will handle the situation where multiple keys could get the same value, ie if either CS or ColorSpace is used to get the colorspace.
+COSBase getItem(String key)	This will do a lookup into the dictionary.
+COSName getKeyForValue(Object value)	Search in the map for the value that matches the parameter and return the first key that maps to that value.
+long getLong(COSName key)	This is a convenience method that will get the dictionary object that is expected to be an long.
+long getLong(COSName key, long defaultValue)	This is a convenience method that will get the dictionary object that is expected to be an integer.
+long getLong(String key)	This is a convenience method that will get the dictionary object that is expected to be an long.
+long getLong(String key, long defaultValue)	This is a convenience method that will get the dictionary object that is expected to be an integer.
+String getNameAsString(COSName key)	This is a convenience method that will get the dictionary object that is expected to be a name and convert it to a string.
+String getNameAsString(COSName key, String defaultValue)	This is a convenience method that will get the dictionary object that is expected to be a name and convert it to a string.
+String getNameAsString(String key)	This is a convenience method that will get the dictionary object that is expected to be a name and convert it to a string.
+String getNameAsString(String key, String defaultValue)	This is a convenience method that will get the dictionary object that is expected to be a name and convert it to a string.
+COSBase getObjectFromPath(String objPath)	Nice method, gives you every object you want Arrays works properly too.
+String getString(COSName key)	This is a convenience method that will get the dictionary object that is expected to be a string.
+String getString(COSName key, String defaultValue)	This is a convenience method that will get the dictionary object that is expected to be a string.
+String getString(String key)	This is a convenience method that will get the dictionary object that is expected to be a string.
+String getString(String key, String defaultValue)	This is a convenience method that will get the dictionary object that is expected to be a string.
+COSUpdateState getUpdateState()	Returns the current COSUpdateState of this COSDictionary.
+Collection<COSBase> getValues()	This will get all of the values for the dictionary.
+Set<COSName> keySet()	Returns the names of the entries in this dictionary.
+void removeItem(COSName key)	This will remove an item for the dictionary.
+void setBoolean(COSName key, boolean value)	This will set an item in the dictionary.
+void setBoolean(String key, boolean value)	This will set an item in the dictionary.
+void setDate(COSName key, Calendar date)	Set the date object.
+void setDate(String key, Calendar date)	Set the value of a date entry in the dictionary.
+void setEmbeddedDate(COSName embedded, COSName key, Calendar date)	Set the date object.
+void setEmbeddedInt(COSName embeddedDictionary, COSName key, int value)	This is a convenience method that will convert the value to a COSInteger object.
+void setEmbeddedString(COSName embedded, COSName key, String value)	This is a convenience method that will convert the value to a COSString object.
+void setFlag(COSName field, int bitFlag, boolean value)	Sets the given boolean value at bitPos in the flags.
+void setFloat(COSName key, float value)	This is a convenience method that will convert the value to a COSFloat object.
+void setFloat(String key, float value)	This is a convenience method that will convert the value to a COSFloat object.
+void setInt(COSName key, int value)	This is a convenience method that will convert the value to a COSInteger object.
+void setInt(String key, int value)	This is a convenience method that will convert the value to a COSInteger object.
+void setItem(COSName key, COSBase value)	This will set an item in the dictionary.
+void setItem(COSName key, COSObjectable value)	This will set an item in the dictionary.
+void setItem(String key, COSBase value)	This will set an item in the dictionary.
+void setItem(String key, COSObjectable value)	This will set an item in the dictionary.
+void setLong(COSName key, long value)	This is a convenience method that will convert the value to a COSInteger object.
+void setLong(String key, long value)	This is a convenience method that will convert the value to a COSInteger object.
+void setName(COSName key, String value)	This is a convenience method that will convert the value to a COSName object.
+void setName(String key, String value)	This is a convenience method that will convert the value to a COSName object.
+void setString(COSName key, String value)	This is a convenience method that will convert the value to a COSString object.
+void setString(String key, String value)	This is a convenience method that will convert the value to a COSString object.
+int size()	This will return the number of elements in this dictionary.
+String toString()	
+[Methods inherited from class org.apache.pdfbox.cos.COSBase]
+getCOSObject, getKey, isDirect, setDirect, setKey
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait
+[Methods inherited from interface org.apache.pdfbox.cos.COSUpdateInfo]
+isNeedToBeUpdated, setNeedToBeUpdated, toIncrement
+[Methods inherited from interface org.apache.pdfbox.pdmodel.common.COSObjectable]
+getCOSObject

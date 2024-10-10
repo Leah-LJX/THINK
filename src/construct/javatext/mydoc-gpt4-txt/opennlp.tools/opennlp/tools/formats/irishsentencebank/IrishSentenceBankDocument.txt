@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.formats.irishsentencebank.IrishSentenceBankDocument
+[Type] Class
+[Info]
+public class IrishSentenceBankDocument extends Object A structure to hold an Irish Sentence Bank document, which is a collection  of tokenized sentences.    The sentence bank can be downloaded from this  website.    It was originally published and described      http://www.lexiconista.com/datasets/sentencebank-ga/, yet this  page was gone when last checked in December 2022.
+[Constructor Summary]
+IrishSentenceBankDocument()	Initializes an empty IrishSentenceBankDocument.
+[Nested Class Summary]
+Nested Class Summary
+static class 
+[Method Summary]
+void add(IrishSentenceBankDocument.IrishSentenceBankSentence sent)	
+List<IrishSentenceBankDocument.IrishSentenceBankSentence> getSentences()	
+static IrishSentenceBankDocument parse(InputStream is)	Parses the data provided via an InputStream into a IrishSentenceBankDocument.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

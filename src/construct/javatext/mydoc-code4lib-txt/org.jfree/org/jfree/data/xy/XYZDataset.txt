@@ -1,0 +1,11 @@
+[Class] org.jfree.data.xy.XYZDataset
+[Flag] Interface
+[Info]
+All Superinterfaces: Dataset, SeriesDataset, XYDataset
+All Known Subinterfaces: IntervalXYZDataset
+All Known Implementing Classes: AbstractXYZDataset, DefaultXYZDataset, MatrixSeriesCollection
+[Constructor Summary]
+
+[Method Summary]
+Number getZ(int series, int item)	Returns the z-value for the specified series and item.
+double getZValue(int series, int item)	Returns the z-value (as a double primitive) for an item within a series.

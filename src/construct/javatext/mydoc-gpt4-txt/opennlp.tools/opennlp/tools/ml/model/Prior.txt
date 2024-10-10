@@ -1,0 +1,10 @@
+[API Name] opennlp.tools.ml.model.Prior
+[Type] Interface
+[Info]
+All Known Implementing Classes: UniformPrior
+public interface Prior This interface allows one to implement a prior distribution for use in  maximum entropy model training.
+[Method Summary]
+void logPrior(double[] dist, int[] context)	Populates the specified array with the log of the distribution for the specified context.
+void logPrior(double[] dist, int[] context, float[] values)	Populates the specified array with the log of the distribution for the specified context.
+void logPrior(double[] dist, Context[] context, float[] values)	Populates the specified array with the log of the distribution for the specified context.
+void setLabels(String[] outcomeLabels, String[] contextLabels)	Method to specify the label for the outcomes and contexts.

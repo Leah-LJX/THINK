@@ -1,0 +1,20 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.xmp.JpegRewriter.JFIFPieceSegment
+[Type] Class
+[Info]
+Enclosing class: JpegRewriter
+protected static class JpegRewriter.JFIFPieceSegment extends JpegRewriter.JFIFPiece
+[Constructor Summary]
+JFIFPieceSegment​(int marker, byte[] segmentData)	
+[Field Summary]
+int marker	
+[Method Summary]
+byte[] getSegmentData()	
+boolean isApp1Segment()	
+boolean isAppSegment()	
+boolean isExifSegment()	
+boolean isPhotoshopApp13Segment()	
+boolean isXmpSegment()	
+String toString()	
+protected void write​(OutputStream os)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

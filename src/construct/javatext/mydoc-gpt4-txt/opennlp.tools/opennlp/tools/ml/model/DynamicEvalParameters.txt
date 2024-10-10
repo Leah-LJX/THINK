@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.ml.model.DynamicEvalParameters
+[Type] Class
+[Info]
+public class DynamicEvalParameters extends Object
+[Constructor Summary]
+DynamicEvalParameters(List<? extends Context> params, int numOutcomes)	Creates a set of parameters which can be evaluated with the eval method.
+[Method Summary]
+int getNumOutcomes()	
+Context[] getParams()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

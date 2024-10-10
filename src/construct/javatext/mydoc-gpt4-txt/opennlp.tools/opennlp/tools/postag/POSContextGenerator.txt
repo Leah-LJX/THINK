@@ -1,0 +1,8 @@
+[API Name] opennlp.tools.postag.POSContextGenerator
+[Type] Interface
+[Info]
+All Superinterfaces: BeamSearchContextGenerator<String>
+All Known Implementing Classes: ConfigurablePOSContextGenerator, DefaultPOSContextGenerator
+public interface POSContextGenerator extends BeamSearchContextGenerator<String> Interface for a BeamSearchContextGenerator used in POS tagging.
+[Method Summary]
+String[] getContext(int index, String[] tokens, String[] prevTags, Object[] additionalContext)	Returns the context for making a postag decision at the specified token index given the specified tokens and previous tags.

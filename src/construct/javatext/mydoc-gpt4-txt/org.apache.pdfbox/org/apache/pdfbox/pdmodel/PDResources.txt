@@ -1,0 +1,49 @@
+[API Name] org.apache.pdfbox.pdmodel.PDResources
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class PDResources extends Object implements COSObjectable A set of resources available at the page/pages/stream level.
+Author: Ben Litchfield, John Hewson
+[Constructor Summary]
+PDResources()	Constructor for embedding.
+PDResources(COSDictionary resourceDictionary)	Constructor for reading.
+PDResources(COSDictionary resourceDictionary, ResourceCache resourceCache)	Constructor for reading.
+PDResources(COSDictionary resourceDictionary, ResourceCache resourceCache, Map<COSName,SoftReference<PDFont>> directFontCache)	Constructor for reading.
+[Method Summary]
+COSName add(PDAbstractPattern pattern)	Adds the given pattern to the resources of the current page and returns the name for the new resources.
+COSName add(PDColorSpace colorSpace)	Adds the given color space to the resources of the current page and returns the name for the new resources.
+COSName add(PDExtendedGraphicsState extGState)	Adds the given extended graphics state to the resources of the current page and returns the name for the new resources.
+COSName add(PDFont font)	Adds the given font to the resources of the current page and returns the name for the new resources.
+COSName add(PDFormXObject form)	Adds the given form to the resources of the current page and returns the name for the new resources.
+COSName add(PDImageXObject image)	Adds the given image to the resources of the current page and returns the name for the new resources.
+COSName add(PDPropertyList properties)	Adds the given property list to the resources of the current page and returns the name for the new resources.
+COSName add(PDShading shading)	Adds the given shading to the resources of the current page and returns the name for the new resources.
+COSName add(PDXObject xobject, String prefix)	Adds the given XObject to the resources of the current page and returns the name for the new resources.
+PDColorSpace getColorSpace(COSName name)	Returns the color space resource with the given name, or null if none exists.
+PDColorSpace getColorSpace(COSName name, boolean wasDefault)	Returns the color space resource with the given name, or null if none exists.
+Iterable<COSName> getColorSpaceNames()	Returns the names of the color space resources, if any.
+COSDictionary getCOSObject()	Returns the underlying dictionary.
+PDExtendedGraphicsState getExtGState(COSName name)	Returns the extended graphics state resource with the given name, or null if none exists.
+Iterable<COSName> getExtGStateNames()	Returns the names of the extended graphics state resources, if any.
+PDFont getFont(COSName name)	Returns the font resource with the given name, or null if none exists.
+Iterable<COSName> getFontNames()	Returns the names of the font resources, if any.
+PDAbstractPattern getPattern(COSName name)	Returns the pattern resource with the given name, or null if none exists.
+Iterable<COSName> getPatternNames()	Returns the names of the pattern resources, if any.
+PDPropertyList getProperties(COSName name)	Returns the property list resource with the given name, or null if none exists.
+Iterable<COSName> getPropertiesNames()	Returns the names of the property list resources, if any.
+ResourceCache getResourceCache()	Returns the resource cache associated with the Resources, or null if there is none.
+PDShading getShading(COSName name)	Returns the shading resource with the given name, or null if none exists.
+Iterable<COSName> getShadingNames()	Returns the names of the shading resources, if any.
+PDXObject getXObject(COSName name)	Returns the XObject resource with the given name, or null if none exists.
+Iterable<COSName> getXObjectNames()	Returns the names of the XObject resources, if any.
+boolean hasColorSpace(COSName name)	Returns true if the given color space name exists in these resources.
+boolean isImageXObject(COSName name)	Tells whether the XObject resource with the given name is an image.
+void put(COSName name, PDAbstractPattern pattern)	Sets the pattern resource with the given name.
+void put(COSName name, PDColorSpace colorSpace)	Sets the color space resource with the given name.
+void put(COSName name, PDExtendedGraphicsState extGState)	Sets the extended graphics state resource with the given name.
+void put(COSName name, PDFont font)	Sets the font resource with the given name.
+void put(COSName name, PDPropertyList properties)	Sets the property list resource with the given name.
+void put(COSName name, PDShading shading)	Sets the shading resource with the given name.
+void put(COSName name, PDXObject xobject)	Sets the XObject resource with the given name.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

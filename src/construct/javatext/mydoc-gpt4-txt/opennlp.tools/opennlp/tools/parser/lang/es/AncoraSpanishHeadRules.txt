@@ -1,0 +1,20 @@
+[API Name] opennlp.tools.parser.lang.es.AncoraSpanishHeadRules
+[Type] Class
+[Info]
+All Implemented Interfaces: GapLabeler, HeadRules, SerializableArtifact
+public class AncoraSpanishHeadRules extends Object implements HeadRules, GapLabeler, SerializableArtifact Class for storing the Ancora Spanish head rules associated with parsing. In this class  headrules for noun phrases are specified. The rest of the rules are  in opennlp-tools/lang/es/parser/es-head-rules    NOTE: This class has been adapted from opennlp.tools.parser.lang.en.HeadRules    The main change is the constituents search direction in the first for loop.    Note also the change in the return of the getHead() method:  In the lang.en.HeadRules class: return constituents[ci].getHead();  Now: return constituents[ci];    Other changes include removal of deprecated methods.
+[Constructor Summary]
+AncoraSpanishHeadRules(Reader rulesReader)	Creates a new set of head rules based on the specified reader.
+[Nested Class Summary]
+Nested Class Summary
+static class 
+[Method Summary]
+boolean equals(Object obj)	
+Class<?> getArtifactSerializerClass()	Retrieves the class which can serialize and recreate this artifact.
+Parse getHead(Parse[] constituents, String type)	Retrieves the head constituent for the specified constituents of given type.
+Set<String> getPunctuationTags()	
+int hashCode()	
+void labelGaps(Stack<Constituent> stack)	Labels constituents found in the stack with gap labels if appropriate.
+void serialize(Writer writer)	Serializes the head rules via a Writer in a format suitable for loading the head rules again.
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, toString, wait, wait, wait

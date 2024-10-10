@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.CategoryTick
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+CategoryTick(Comparable category, org.jfree.text.TextBlock label, org.jfree.text.TextBlockAnchor labelAnchor, org.jfree.ui.TextAnchor rotationAnchor, double angle) Creates a new tick.
+[Method Summary]
+boolean equals(Object obj) Tests this category tick for equality with an arbitrary object.

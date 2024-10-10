@@ -1,0 +1,73 @@
+[Class] org.joda.time.LocalTime
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<ReadablePartial>, ReadablePartial
+[Constructor Summary]
+LocalTime()	Constructs an instance set to the current local time evaluated using	 ISO chronology in the default zone.
+LocalTime(Chronology chronology)	Constructs an instance set to the current local time evaluated using	 specified chronology and zone.
+LocalTime(DateTimeZone zone)	Constructs an instance set to the current local time evaluated using	 ISO chronology in the specified zone.
+LocalTime(int hourOfDay,	int minuteOfHour)	Constructs an instance set to the specified time	 using ISOChronology.
+LocalTime(int hourOfDay,	int minuteOfHour,	int secondOfMinute)	Constructs an instance set to the specified time	 using ISOChronology.
+LocalTime(int hourOfDay,	int minuteOfHour,	int secondOfMinute,	int millisOfSecond)	Constructs an instance set to the specified time	 using ISOChronology.
+LocalTime(int hourOfDay,	int minuteOfHour,	int secondOfMinute,	int millisOfSecond,	Chronology chronology)	Constructs an instance set to the specified time	 using the specified chronology, whose zone is ignored.
+LocalTime(long instant)	Constructs an instance set to the local time defined by the specified	 instant evaluated using ISO chronology in the default zone.
+LocalTime(long instant,	Chronology chronology)	Constructs an instance set to the local time defined by the specified	 instant evaluated using the specified chronology.
+LocalTime(long instant,	DateTimeZone zone)	Constructs an instance set to the local time defined by the specified	 instant evaluated using ISO chronology in the specified zone.
+LocalTime(Object instant)	Constructs an instance from an Object that represents a datetime.
+LocalTime(Object instant,	Chronology chronology)	Constructs an instance from an Object that represents a datetime,	 using the specified chronology.
+LocalTime(Object instant,	DateTimeZone zone)	Constructs an instance from an Object that represents a datetime,	 forcing the time zone to that specified.
+[Method Summary]
+int compareTo(ReadablePartial partial) Compares this partial with another returning an integer indicating the order.
+boolean equals(Object partial) Compares this ReadablePartial with another returning true if the chronology, field types and values are equal.
+static LocalTime fromCalendarFields(Calendar calendar) Constructs a LocalTime from a java.util.Calendar using exactly the same field values.
+static LocalTime fromDateFields(Date date) Constructs a LocalTime from a java.util.Date using exactly the same field values.
+static LocalTime fromMillisOfDay(long millisOfDay) Constructs a LocalTime from the specified millis of day using the ISO chronology.
+static LocalTime fromMillisOfDay(long millisOfDay, Chronology chrono) Constructs a LocalTime from the specified millis of day using the specified chronology.
+int get(DateTimeFieldType fieldType) Get the value of one of the fields of time.
+Chronology getChronology() Gets the chronology of the time.
+protected DateTimeField getField(int index, Chronology chrono) Gets the field for a specific index in the chronology specified.
+int getHourOfDay() Get the hour of day field value.
+protected long getLocalMillis() Gets the local milliseconds from the Java epoch of 1970-01-01T00:00:00 (not fixed to any specific time zone).
+int getMillisOfDay() Get the millis of day field value.
+int getMillisOfSecond() Get the millis of second field value.
+int getMinuteOfHour() Get the minute of hour field value.
+int getSecondOfMinute() Get the second of minute field value.
+int getValue(int index) Gets the value of the field at the specified index.
+LocalTime.Property hourOfDay() Get the hour of day field property which provides access to advanced functionality.
+boolean isSupported(DateTimeFieldType type) Checks if the field type specified is supported by this local time and chronology.
+boolean isSupported(DurationFieldType type) Checks if the duration type specified is supported by this local time and chronology.
+LocalTime.Property millisOfDay() Get the millis of day property which provides access to advanced functionality.
+LocalTime.Property millisOfSecond() Get the millis of second property which provides access to advanced functionality.
+LocalTime minus(ReadablePeriod period) Returns a copy of this time with the specified period taken away.
+LocalTime minusHours(int hours) Returns a copy of this time minus the specified number of hours.
+LocalTime minusMillis(int millis) Returns a copy of this time minus the specified number of millis.
+LocalTime minusMinutes(int minutes) Returns a copy of this time minus the specified number of minutes.
+LocalTime minusSeconds(int seconds) Returns a copy of this time minus the specified number of seconds.
+LocalTime.Property minuteOfHour() Get the minute of hour field property which provides access to advanced functionality.
+static LocalTime now() Obtains a LocalTime set to the current system millisecond time using ISOChronology in the default time zone.
+static LocalTime now(Chronology chronology) Obtains a LocalTime set to the current system millisecond time using the specified chronology.
+static LocalTime now(DateTimeZone zone) Obtains a LocalTime set to the current system millisecond time using ISOChronology in the specified time zone.
+static LocalTime parse(String str) Parses a LocalTime from the specified string.
+static LocalTime parse(String str, DateTimeFormatter formatter) Parses a LocalTime from the specified string using a formatter.
+LocalTime plus(ReadablePeriod period) Returns a copy of this time with the specified period added.
+LocalTime plusHours(int hours) Returns a copy of this time plus the specified number of hours.
+LocalTime plusMillis(int millis) Returns a copy of this time plus the specified number of millis.
+LocalTime plusMinutes(int minutes) Returns a copy of this time plus the specified number of minutes.
+LocalTime plusSeconds(int seconds) Returns a copy of this time plus the specified number of seconds.
+LocalTime.Property property(DateTimeFieldType fieldType) Gets the property object for the specified type, which contains many useful methods.
+LocalTime.Property secondOfMinute() Get the second of minute field property which provides access to advanced functionality.
+int size() Gets the number of fields in this partial, which is four.
+DateTime toDateTimeToday() Converts this LocalTime to a full datetime using the default time zone setting the time fields from this instance and the date fields from the current date.
+DateTime toDateTimeToday(DateTimeZone zone) Converts this LocalTime to a full datetime using the specified time zone setting the time fields from this instance and the date fields from the current time.
+String toString() Output the time in ISO8601 format (HH:mm:ss.SSS).
+String toString(String pattern) Output the time using the specified format pattern.
+String toString(String pattern, Locale locale) Output the time using the specified format pattern.
+LocalTime withField(DateTimeFieldType fieldType, int value) Returns a copy of this time with the specified field set to a new value.
+LocalTime withFieldAdded(DurationFieldType fieldType, int amount) Returns a copy of this time with the value of the specified field increased.
+LocalTime withFields(ReadablePartial partial) Returns a copy of this time with the partial set of fields replacing those from this instance.
+LocalTime withHourOfDay(int hour) Returns a copy of this time with the hour of day field updated.
+LocalTime withMillisOfDay(int millis) Returns a copy of this time with the millis of day field updated.
+LocalTime withMillisOfSecond(int millis) Returns a copy of this time with the millis of second field updated.
+LocalTime withMinuteOfHour(int minute) Returns a copy of this time with the minute of hour field updated.
+LocalTime withPeriodAdded(ReadablePeriod period, int scalar) Returns a copy of this time with the specified period added.
+LocalTime withSecondOfMinute(int second) Returns a copy of this time with the second of minute field updated.

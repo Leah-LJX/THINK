@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.util.model.UncloseableInputStream
+[Type] Class
+[Info]
+All Implemented Interfaces: Closeable, AutoCloseable
+public class UncloseableInputStream extends FilterInputStream An InputStream which cannot be closed.
+[Constructor Summary]
+UncloseableInputStream(InputStream in)	
+[Method Summary]
+void close()	This method does not have any effect, as the InputStream cannot be closed.
+[Methods inherited from class java.io.FilterInputStream]
+available, mark, markSupported, read, read, read, reset, skip
+[Methods inherited from class java.io.InputStream]
+nullInputStream, readAllBytes, readNBytes, readNBytes, skipNBytes, transferTo
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

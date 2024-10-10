@@ -1,0 +1,16 @@
+[API Name] org.apache.pdfbox.pdmodel.common.PDDictionaryWrapper
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDAttributeObject, PDOutlineNode, PDTransition, PDTypedDictionaryWrapper, PDUserProperty
+public class PDDictionaryWrapper extends Object implements COSObjectable A wrapper for a COS dictionary.
+Author: Johannes Koch
+[Constructor Summary]
+PDDictionaryWrapper()	Default constructor
+PDDictionaryWrapper(COSDictionary dictionary)	Creates a new instance with a given COS dictionary.
+[Method Summary]
+boolean equals(Object obj)	
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+int hashCode()	
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, toString, wait, wait, wait

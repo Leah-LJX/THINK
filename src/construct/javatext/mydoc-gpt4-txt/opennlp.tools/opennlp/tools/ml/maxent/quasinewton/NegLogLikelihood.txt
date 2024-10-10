@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.ml.maxent.quasinewton.NegLogLikelihood
+[Type] Class
+[Info]
+All Implemented Interfaces: Function
+Direct Known Subclasses: ParallelNegLogLikelihood
+public class NegLogLikelihood extends Object implements Function Evaluate negative log-likelihood and its gradient from DataIndexer.
+[Constructor Summary]
+NegLogLikelihood(DataIndexer indexer)	
+[Method Summary]
+int getDimension()	
+double[] getInitialPoint()	
+double[] gradientAt(double[] x)	Computes the gradient.
+double valueAt(double[] x)	Computes the negative log-likelihood.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

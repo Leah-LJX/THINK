@@ -1,0 +1,8 @@
+[Class] org.w3c.dom.svg.SVGViewElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGExternalResourcesRequired, SVGFitToViewBox, SVGZoomAndPan
+[Constructor Summary]
+
+[Method Summary]
+SVGStringList getViewTarget()

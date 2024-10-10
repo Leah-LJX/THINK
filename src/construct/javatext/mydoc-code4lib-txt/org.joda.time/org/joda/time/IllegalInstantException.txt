@@ -1,0 +1,9 @@
+[Class] org.joda.time.IllegalInstantException
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+IllegalInstantException(long instantLocal,	String zoneId)	Constructor.
+IllegalInstantException(String message)	Constructor.
+[Method Summary]
+static boolean isIllegalInstant(Throwable ex) Checks if the exception is, or has a cause, of IllegalInstantException.

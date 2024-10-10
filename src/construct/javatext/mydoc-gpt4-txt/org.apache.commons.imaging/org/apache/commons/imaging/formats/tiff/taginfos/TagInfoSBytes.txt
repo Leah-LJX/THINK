@@ -1,0 +1,14 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.taginfos.TagInfoSBytes
+[Type] Class
+[Info]
+public class TagInfoSBytes extends TagInfo
+[Constructor Summary]
+TagInfoSBytes​(String name, int tag, int length, TiffDirectoryType directoryType)	
+[Field Summary]
+TagInfoSBytes​(String name, int tag, int length, TiffDirectoryType directoryType)	
+[Method Summary]
+byte[] encodeValue​(ByteOrder byteOrder, byte... values)	
+[Methods inherited from class org.apache.commons.imaging.formats.tiff.taginfos.TagInfo]
+encodeValue, getDescription, getValue, isOffset, isText, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.util.EventTraceStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<Event>
+public class EventTraceStream extends FilterObjectStream<Event,Event>
+[Constructor Summary]
+EventTraceStream(ObjectStream<Event> stream, Writer writer)	Initializes an EventTraceStream.
+[Method Summary]
+Event read()	Returns the next ObjectStream object.
+[Methods inherited from class opennlp.tools.util.FilterObjectStream]
+close, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

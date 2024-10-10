@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.cmdline.postag.POSEvaluationErrorListener
+[Type] Class
+[Info]
+All Implemented Interfaces: POSTaggerEvaluationMonitor, EvaluationMonitor<POSSample>
+public class POSEvaluationErrorListener extends opennlp.tools.cmdline.EvaluationErrorPrinter<POSSample> implements POSTaggerEvaluationMonitor A default implementation of EvaluationMonitor that prints  to an output stream.
+[Constructor Summary]
+POSEvaluationErrorListener()	Creates a listener that will print to the configured logger.
+POSEvaluationErrorListener(OutputStream outputStream)	Creates a listener that will print to a given OutputStream.
+[Method Summary]
+void misclassified(POSSample reference, POSSample prediction)	
+[Methods inherited from class opennlp.tools.cmdline.EvaluationErrorPrinter]
+correctlyClassified
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface opennlp.tools.util.eval.EvaluationMonitor]
+correctlyClassified

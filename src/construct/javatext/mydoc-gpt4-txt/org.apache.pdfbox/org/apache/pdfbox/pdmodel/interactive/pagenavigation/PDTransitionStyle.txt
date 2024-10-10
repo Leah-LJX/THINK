@@ -1,0 +1,13 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDTransitionStyle
+[Type] Enum
+[Info]
+All Implemented Interfaces: Serializable, Comparable<PDTransitionStyle>
+public enum PDTransitionStyle extends Enum<PDTransitionStyle> The transition style that shall be used when moving to the page from another during a presentation. Ref. table 162  PDF32000-1:2008
+Author: Andrea Vacondio
+[Method Summary]
+static PDTransitionStyle valueOf(String name)	Returns the enum constant of this type with the specified name.
+static PDTransitionStyle[] values()	Returns an array containing the constants of this enum type, in the order they are declared.
+[Methods inherited from class java.lang.Enum]
+clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, toString, valueOf
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

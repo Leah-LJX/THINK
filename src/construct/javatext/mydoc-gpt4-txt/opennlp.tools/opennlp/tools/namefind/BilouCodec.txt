@@ -1,0 +1,23 @@
+[API Name] opennlp.tools.namefind.BilouCodec
+[Type] Class
+[Info]
+All Implemented Interfaces: SequenceCodec<String>
+public class BilouCodec extends Object implements SequenceCodec<String> The default SequenceCodec implementation according to the BILOU scheme.   B: 'beginning' of a NE I: 'inside', the word is inside a NE L: 'last', the last (I) word inside a NE O: 'outside', the word is a regular word outside a NE U: 'unit', any standalone token following words outside of NE
+ See paper by Roth D. and Ratinov L. (2009):     Design Challenges and Misconceptions in Named Entity Recognition.
+See Also:
+SequenceCodec BioCodec
+[Constructor Summary]
+BilouCodec()	
+[Field Summary]
+static final String CONTINUE	
+static final String LAST	
+static final String OTHER	
+static final String START	
+static final String UNIT	
+[Method Summary]
+boolean areOutcomesCompatible(String[] outcomes)	B requires CL or L, C requires BL, L requires B, O requires any valid combo/unit, U requires none.
+SequenceValidator<String> createSequenceValidator()	
+Span[] decode(List<String> c)	Decodes a sequence of objects into Span objects.
+String[] encode(Span[] names, int length)	Encodes Span objects into a sequence of objects.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

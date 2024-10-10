@@ -1,0 +1,7 @@
+[Class] org.w3c.dom.svg.SVGAnimateElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, ElementTimeControl, EventTarget, Node, SVGAnimationElement, SVGElement, SVGExternalResourcesRequired, SVGTests
+[Constructor Summary]
+
+[Method Summary]

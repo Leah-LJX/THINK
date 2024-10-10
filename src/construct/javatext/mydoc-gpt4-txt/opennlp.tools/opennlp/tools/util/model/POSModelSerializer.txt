@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.util.model.POSModelSerializer
+[Type] Class
+[Info]
+All Implemented Interfaces: ArtifactSerializer<POSModel>
+public class POSModelSerializer extends Object implements ArtifactSerializer<POSModel> An ArtifactSerializer implementation for models.
+[Constructor Summary]
+POSModelSerializer()	
+[Method Summary]
+POSModel create(InputStream in)	Creates an artifact from the provided InputStream.
+void serialize(POSModel artifact, OutputStream out)	Serializes an artifact to the provided OutputStream.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

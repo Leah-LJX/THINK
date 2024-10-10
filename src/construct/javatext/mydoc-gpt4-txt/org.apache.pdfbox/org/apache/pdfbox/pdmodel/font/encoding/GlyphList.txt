@@ -1,0 +1,15 @@
+[API Name] org.apache.pdfbox.pdmodel.font.encoding.GlyphList
+[Type] Class
+[Info]
+public final class GlyphList extends Object PostScript glyph list, maps glyph names to sequences of Unicode characters.  Instances of GlyphList are immutable.
+[Constructor Summary]
+GlyphList(GlyphList glyphList, InputStream input)	Creates a new GlyphList from multiple glyph list files.
+GlyphList(InputStream input, int numberOfEntries)	Creates a new GlyphList from a glyph list file.
+[Method Summary]
+String codePointToName(int codePoint)	Returns the name for the given Unicode code point.
+static GlyphList getAdobeGlyphList()	Returns the Adobe Glyph List (AGL).
+static GlyphList getZapfDingbats()	Returns the Zapf Dingbats glyph list.
+String sequenceToName(String unicodeSequence)	Returns the name for a given sequence of Unicode characters.
+String toUnicode(String name)	Returns the Unicode character sequence for the given glyph name, or null if there isn't any.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

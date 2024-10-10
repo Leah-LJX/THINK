@@ -1,0 +1,27 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.action.PDTargetDirectory
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDTargetDirectory extends Object implements COSObjectable A target dictionary specifying path information to the target document. Each target dictionary  specifies one element in the full path to the target and may have nested target dictionaries  specifying additional elements.
+Author: Tilman Hausherr
+[Constructor Summary]
+PDTargetDirectory()	Default constructor, creates target directory.
+PDTargetDirectory(COSDictionary dictionary)	Create a target directory from an existing dictionary.
+[Method Summary]
+int getAnnotationIndex()	If the value in the /A entry is an integer, this will get the index (zero-based) of the annotation in the /Annots array of the page specified by the /P entry.
+String getAnnotationName()	If the value in the /A entry is a string, this will get the value of the /NM entry in the annotation dictionary.
+COSDictionary getCOSObject()	This will get the underlying dictionary that this class acts on.
+String getFilename()	Get the name of the file as found in the EmbeddedFiles name tree.
+PDNamedDestination getNamedDestination()	If the value in the /P entry is a string, this will get a named destination in the current document that provides the page number of the file attachment annotation.
+int getPageNumber()	If the value in the /P entry is an integer, this will get the page number (zero-based) in the current document containing the file attachment annotation.
+COSName getRelationship()	Get the relationship between the current document and the target (which may be an intermediate target).
+PDTargetDirectory getTargetDirectory()	Get the target directory.
+void setAnnotationIndex(int index)	This will set the index (zero-based) of the annotation in the /Annots array of the page specified by the /P entry.
+void setAnnotationName(String name)	This will get the value of the /NM entry in the annotation dictionary.
+void setFilename(String filename)	Sets the name of the file as found in the EmbeddedFiles name tree.
+void setNamedDestination(PDNamedDestination dest)	This will set a named destination in the current document that provides the page number of the file attachment annotation.
+void setPageNumber(int pageNumber)	Set the page number (zero-based) in the current document containing the file attachment annotation.
+void setRelationship(COSName relationship)	Set the relationship between the current document and the target (which may be an intermediate target).
+void setTargetDirectory(PDTargetDirectory targetDirectory)	Sets the target directory.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

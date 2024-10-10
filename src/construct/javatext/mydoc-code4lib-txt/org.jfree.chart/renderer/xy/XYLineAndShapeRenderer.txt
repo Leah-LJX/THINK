@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.renderer.xy.XYLineAndShapeRenderer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, AnnotationChangeListener, LegendItemSource, XYItemRenderer, org.jfree.util.PublicCloneable
+Direct Known Subclasses: DefaultXYItemRenderer, DeviationRenderer, XYErrorRenderer, XYLine3DRenderer, XYSplineRenderer, XYStepRenderer
+[Constructor Summary]
+XYLineAndShapeRenderer() Creates a new renderer with both lines and shapes visible.
+[Method Summary]
+Object clone() Returns a clone of the renderer.

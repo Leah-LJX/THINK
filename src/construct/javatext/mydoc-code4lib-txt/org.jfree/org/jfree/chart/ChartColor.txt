@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.ChartColor
+[Flag] Class
+[Info]
+All Implemented Interfaces: Paint, Transparency, Serializable
+[Constructor Summary]
+ChartColor(int r, int g, int b) Creates a Color with an opaque sRGB with red, green and blue values in range 0-255.
+[Method Summary]
+static Paint[] createDefaultPaintArray() Convenience method to return an array of Paint objects that represent the pre-defined colors in the Color and ChartColor objects.

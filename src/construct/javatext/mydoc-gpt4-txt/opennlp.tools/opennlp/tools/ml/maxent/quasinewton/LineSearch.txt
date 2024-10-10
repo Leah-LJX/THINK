@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.ml.maxent.quasinewton.LineSearch
+[Type] Class
+[Info]
+public class LineSearch extends Object Class that performs line search to find minimum.
+[Constructor Summary]
+LineSearch()	
+[Nested Class Summary]
+Nested Class Summary
+static class 
+[Method Summary]
+static void doConstrainedLineSearch(Function function, double[] direction, LineSearch.LineSearchResult lsr, double l1Cost, double initialStepSize)	Conducts a constrained line search (see section 3.2 in the paper "Scalable Training of L1-Regularized Log-Linear Models", Andrew et al. 2007)
+static void doLineSearch(Function function, double[] direction, LineSearch.LineSearchResult lsr, double initialStepSize)	Conducts a backtracking line search (see Nocedal & Wright 2006, Numerical Optimization, p. 37).
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

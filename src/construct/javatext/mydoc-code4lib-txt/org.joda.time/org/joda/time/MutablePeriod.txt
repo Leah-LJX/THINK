@@ -1,0 +1,78 @@
+[Class] org.joda.time.MutablePeriod
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, ReadablePeriod, ReadWritablePeriod
+[Constructor Summary]
+MutablePeriod()	Creates a zero-length period using the standard period type.
+MutablePeriod(int hours,	int minutes,	int seconds,	int millis)	Create a period from a set of field values using the standard set of fields.
+MutablePeriod(int years,	int months,	int weeks,	int days,	int hours,	int minutes,	int seconds,	int millis)	Create a period from a set of field values using the standard set of fields.
+MutablePeriod(int years,	int months,	int weeks,	int days,	int hours,	int minutes,	int seconds,	int millis,	PeriodType type)	Create a period from a set of field values.
+MutablePeriod(long duration)	Creates a period from the given millisecond duration using the standard	 set of fields.
+MutablePeriod(long duration,	Chronology chronology)	Creates a period from the given millisecond duration using the standard	 set of fields.
+MutablePeriod(long startInstant,	long endInstant)	Creates a period from the given interval endpoints using the standard	 set of fields.
+MutablePeriod(long startInstant,	long endInstant,	Chronology chrono)	Creates a period from the given interval endpoints using the standard	 set of fields.
+MutablePeriod(long startInstant,	long endInstant,	PeriodType type)	Creates a period from the given interval endpoints.
+MutablePeriod(long startInstant,	long endInstant,	PeriodType type,	Chronology chrono)	Creates a period from the given interval endpoints.
+MutablePeriod(long duration,	PeriodType type)	Creates a period from the given millisecond duration.
+MutablePeriod(long duration,	PeriodType type,	Chronology chronology)	Creates a period from the given millisecond duration.
+MutablePeriod(Object period)	Creates a period by converting or copying from another object.
+MutablePeriod(Object period,	Chronology chrono)	Creates a period by converting or copying from another object.
+MutablePeriod(Object period,	PeriodType type)	Creates a period by converting or copying from another object.
+MutablePeriod(Object period,	PeriodType type,	Chronology chrono)	Creates a period by converting or copying from another object.
+MutablePeriod(PeriodType type)	Creates a zero-length period using the specified period type.
+MutablePeriod(ReadableDuration duration,	ReadableInstant endInstant)	Creates a period from the given duration and end point.
+MutablePeriod(ReadableDuration duration,	ReadableInstant endInstant,	PeriodType type)	Creates a period from the given duration and end point.
+MutablePeriod(ReadableInstant startInstant,	ReadableDuration duration)	Creates a period from the given start point and the duration.
+MutablePeriod(ReadableInstant startInstant,	ReadableDuration duration,	PeriodType type)	Creates a period from the given start point and the duration.
+MutablePeriod(ReadableInstant startInstant,	ReadableInstant endInstant)	Creates a period from the given interval endpoints using the standard	 set of fields.
+MutablePeriod(ReadableInstant startInstant,	ReadableInstant endInstant,	PeriodType type)	Creates a period from the given interval endpoints.
+[Method Summary]
+void add(DurationFieldType field, int value) Adds to the value of one of the fields.
+void add(int years, int months, int weeks, int days, int hours, int minutes, int seconds, int millis) Adds to each field of this period.
+void add(long duration) Adds a millisecond duration to this one by dividing the duration into fields and calling add(ReadablePeriod).
+void add(long duration, Chronology chrono) Adds a millisecond duration to this one by dividing the duration into fields and calling add(ReadablePeriod).
+void add(ReadableDuration duration) Adds a duration to this one by dividing the duration into fields and calling add(ReadablePeriod).
+void add(ReadableInterval interval) Adds an interval to this one by dividing the interval into fields and calling add(ReadablePeriod).
+void add(ReadablePeriod period) Adds a period to this one by adding each field in turn.
+void addDays(int days) Adds the specified days to the number of days in the period.
+void addHours(int hours) Adds the specified hours to the number of hours in the period.
+void addMillis(int millis) Adds the specified millis to the number of millis in the period.
+void addMinutes(int minutes) Adds the specified minutes to the number of minutes in the period.
+void addMonths(int months) Adds the specified months to the number of months in the period.
+void addSeconds(int seconds) Adds the specified seconds to the number of seconds in the period.
+void addWeeks(int weeks) Adds the specified weeks to the number of weeks in the period.
+void addYears(int years) Adds the specified years to the number of years in the period.
+void clear() Clears the period, setting all values back to zero.
+Object clone() Clone this object.
+MutablePeriod copy() Clone this object without having to cast the returned object.
+int getDays() Gets the days field part of the period.
+int getHours() Gets the hours field part of the period.
+int getMillis() Gets the millis field part of the period.
+int getMinutes() Gets the minutes field part of the period.
+int getMonths() Gets the months field part of the period.
+int getSeconds() Gets the seconds field part of the period.
+int getWeeks() Gets the weeks field part of the period.
+int getYears() Gets the years field part of the period.
+void mergePeriod(ReadablePeriod period) Merges all the fields from the specified period into this one.
+static MutablePeriod parse(String str) Parses a MutablePeriod from the specified string.
+static MutablePeriod parse(String str, PeriodFormatter formatter) Parses a MutablePeriod from the specified string using a formatter.
+void set(DurationFieldType field, int value) Sets the value of one of the fields.
+void setDays(int days) Sets the number of days of the period.
+void setHours(int hours) Sets the number of hours of the period.
+void setMillis(int millis) Sets the number of millis of the period.
+void setMinutes(int minutes) Sets the number of minutes of the period.
+void setMonths(int months) Sets the number of months of the period.
+void setPeriod(int years, int months, int weeks, int days, int hours, int minutes, int seconds, int millis) Sets all the fields in one go.
+void setPeriod(long duration) Sets all the fields in one go from a millisecond duration dividing the fields using the period type.
+void setPeriod(long duration, Chronology chrono) Sets all the fields in one go from a millisecond duration.
+void setPeriod(long startInstant, long endInstant) Sets all the fields in one go from a millisecond interval using ISOChronology and dividing the fields using the period type.
+void setPeriod(long startInstant, long endInstant, Chronology chrono) Sets all the fields in one go from a millisecond interval.
+void setPeriod(ReadableDuration duration) Sets all the fields in one go from a duration dividing the fields using the period type.
+void setPeriod(ReadableDuration duration, Chronology chrono) Sets all the fields in one go from a duration dividing the fields using the period type.
+void setPeriod(ReadableInstant start, ReadableInstant end) Sets all the fields in one go from two instants representing an interval.
+void setPeriod(ReadableInterval interval) Sets all the fields in one go from an interval using the ISO chronology and dividing the fields using the period type.
+void setPeriod(ReadablePeriod period) Sets all the fields in one go from another ReadablePeriod.
+void setSeconds(int seconds) Sets the number of seconds of the period.
+void setValue(int index, int value) Sets the value of one of the fields by index.
+void setWeeks(int weeks) Sets the number of weeks of the period.
+void setYears(int years) Sets the number of years of the period.

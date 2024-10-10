@@ -1,0 +1,30 @@
+[Class] org.joda.time.format.DateTimeParserBucket
+[Flag] Class
+[Info]
+Since: 1.0
+[Constructor Summary]
+DateTimeParserBucket(long instantLocal,	Chronology chrono,	Locale locale)	Deprecated. 	Use longer constructor
+	DateTimeParserBucket(long instantLocal,	Chronology chrono,	Locale locale,	Integer pivotYear)	Deprecated. 	Use longer constructor
+	DateTimeParserBucket(long instantLocal,	Chronology chrono,	Locale locale,	Integer pivotYear,	int defaultYear)	Constructs a bucket, with the option of specifying the pivot year for	 two-digit year parsing.
+[Method Summary]
+long computeMillis() Computes the parsed datetime by setting the saved fields.
+long computeMillis(boolean resetFields) Computes the parsed datetime by setting the saved fields.
+long computeMillis(boolean resetFields, CharSequence text) Computes the parsed datetime by setting the saved fields.
+long computeMillis(boolean resetFields, String text) Computes the parsed datetime by setting the saved fields.
+Chronology getChronology() Gets the chronology of the bucket, which will be a local (UTC) chronology.
+Locale getLocale() Returns the locale to be used during parsing.
+int getOffset() Deprecated. use Integer version
+ Integer getOffsetInteger() Returns the time zone offset in milliseconds used by computeMillis.
+Integer getPivotYear() Returns the default year used when information is incomplete.
+DateTimeZone getZone() Returns the time zone used by computeMillis.
+long parseMillis(DateTimeParser parser, CharSequence text) Parses a datetime from the given text, returning the number of milliseconds since the epoch, 1970-01-01T00:00:00Z.
+void reset() Resets the state back to that when the object was constructed.
+boolean restoreState(Object savedState) Restores the state of this bucket from a previously saved state.
+void saveField(DateTimeField field, int value) Saves a datetime field value.
+void saveField(DateTimeFieldType fieldType, int value) Saves a datetime field value.
+void saveField(DateTimeFieldType fieldType, String text, Locale locale) Saves a datetime field text value.
+Object saveState() Saves the state of this bucket, returning it in an opaque object.
+void setOffset(int offset) Deprecated. use Integer version
+ void setOffset(Integer offset) Set a time zone offset to be used when computeMillis is called.
+void setPivotYear(Integer pivotYear) Deprecated. this method should never have been public
+ void setZone(DateTimeZone zone) Set a time zone to be used when computeMillis is called.

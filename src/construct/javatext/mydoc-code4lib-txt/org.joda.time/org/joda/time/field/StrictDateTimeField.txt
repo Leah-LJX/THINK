@@ -1,0 +1,10 @@
+[Class] org.joda.time.field.StrictDateTimeField
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+protected 	StrictDateTimeField(DateTimeField field)
+[Method Summary]
+static DateTimeField getInstance(DateTimeField field) Returns a strict version of the given field.
+boolean isLenient() Returns true if the set method is lenient.
+long set(long instant, int value) Does a bounds check before setting the value.

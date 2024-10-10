@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.panel.Overlay
+[Flag] Interface
+[Info]
+All Known Implementing Classes: CrosshairOverlay
+[Constructor Summary]
+
+[Method Summary]
+void addChangeListener(OverlayChangeListener listener) Registers a change listener with the overlay.

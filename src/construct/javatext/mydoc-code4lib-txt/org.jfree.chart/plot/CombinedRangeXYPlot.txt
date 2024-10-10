@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.CombinedRangeXYPlot
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, AnnotationChangeListener, AxisChangeListener, MarkerChangeListener, PlotChangeListener, RendererChangeListener, LegendItemSource, Pannable, ValueAxisPlot, Zoomable, DatasetChangeListener, org.jfree.util.PublicCloneable
+[Constructor Summary]
+CombinedRangeXYPlot() Default constructor.
+[Method Summary]
+void add(XYPlot subplot) Adds a subplot, with a default 'weight' of 1.

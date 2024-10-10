@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.formats.masc.MascNamedEntitySampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<NameSample>
+public class MascNamedEntitySampleStream extends FilterObjectStream<MascDocument,NameSample>
+[Constructor Summary]
+MascNamedEntitySampleStream(ObjectStream<MascDocument> samples)	Initializes MascNamedEntitySampleStream from a stream of documents.
+[Method Summary]
+void close()	Closes the ObjectStream and releases all allocated resources.
+NameSample read()	Reads the next sample of named entities.
+void reset()	Repositions the stream at the beginning and the previously seen object sequence will be repeated exactly.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

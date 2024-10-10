@@ -1,0 +1,49 @@
+[Class] org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, PublicCloneable, CategoryDataset, Dataset, KeyedValues2D, RangeInfo, BoxAndWhiskerCategoryDataset, Values2D
+[Constructor Summary]
+DefaultBoxAndWhiskerCategoryDataset()	Creates a new dataset.
+[Method Summary]
+void add(List list, Comparable rowKey, Comparable columnKey)	Adds a list of values relating to one box-and-whisker entity to the table.
+void add(BoxAndWhiskerItem item, Comparable rowKey, Comparable columnKey)	Adds a list of values relating to one Box and Whisker entity to the table.
+void clear()	Clears all data from the dataset and sends a DatasetChangeEvent to all registered listeners.
+Object clone()	Returns a clone of this dataset.
+boolean equals(Object obj)	Tests this dataset for equality with an arbitrary object.
+int getColumnCount()	Returns the number of columns in the table.
+int getColumnIndex(Comparable key)	Returns the column index for a given key.
+Comparable getColumnKey(int column)	Returns a column key.
+List getColumnKeys()	Returns the column keys.
+BoxAndWhiskerItem getItem(int row, int column)	Return an item from within the dataset.
+Number getMaxOutlier(int row, int column)	Returns the maximum outlier (non farout) value for an item.
+Number getMaxOutlier(Comparable rowKey, Comparable columnKey)	Returns the maximum outlier (non farout) value for an item.
+Number getMaxRegularValue(int row, int column)	Returns the maximum regular (non outlier) value for an item.
+Number getMaxRegularValue(Comparable rowKey, Comparable columnKey)	Returns the maximum regular (non outlier) value for an item.
+Number getMeanValue(int row, int column)	Returns the mean value for an item.
+Number getMeanValue(Comparable rowKey, Comparable columnKey)	Returns the mean value for an item.
+Number getMedianValue(int row, int column)	Returns the median value for an item.
+Number getMedianValue(Comparable rowKey, Comparable columnKey)	Returns the median value for an item.
+Number getMinOutlier(int row, int column)	Returns the minimum outlier (non farout) value for an item.
+Number getMinOutlier(Comparable rowKey, Comparable columnKey)	Returns the minimum outlier (non farout) value for an item.
+Number getMinRegularValue(int row, int column)	Returns the minimum regular (non outlier) value for an item.
+Number getMinRegularValue(Comparable rowKey, Comparable columnKey)	Returns the minimum regular (non outlier) value for an item.
+List getOutliers(int row, int column)	Returns a list of outlier values for an item.
+List getOutliers(Comparable rowKey, Comparable columnKey)	Returns a list of outlier values for an item.
+Number getQ1Value(int row, int column)	Returns the first quartile value.
+Number getQ1Value(Comparable rowKey, Comparable columnKey)	Returns the first quartile value.
+Number getQ3Value(int row, int column)	Returns the third quartile value.
+Number getQ3Value(Comparable rowKey, Comparable columnKey)	Returns the third quartile value.
+Range getRangeBounds(boolean includeInterval)	Returns the range of the values in this dataset's range.
+double getRangeLowerBound(boolean includeInterval)	Returns the minimum y-value in the dataset.
+double getRangeUpperBound(boolean includeInterval)	Returns the maximum y-value in the dataset.
+int getRowCount()	Returns the number of rows in the table.
+int getRowIndex(Comparable key)	Returns the row index for a given key.
+Comparable getRowKey(int row)	Returns a row key.
+List getRowKeys()	Returns the row keys.
+Number getValue(int row, int column)	Returns the value for an item.
+Number getValue(Comparable rowKey, Comparable columnKey)	Returns the value for an item.
+void remove(Comparable rowKey, Comparable columnKey)	Removes an item from the dataset and sends a DatasetChangeEvent to all registered listeners.
+void removeColumn(int columnIndex)	Removes a column from the dataset and sends a DatasetChangeEvent to all registered listeners.
+void removeColumn(Comparable columnKey)	Removes a column from the dataset and sends a DatasetChangeEvent to all registered listeners.
+void removeRow(int rowIndex)	Removes a row from the dataset and sends a DatasetChangeEvent to all registered listeners.
+void removeRow(Comparable rowKey)	Removes a row from the dataset and sends a DatasetChangeEvent to all registered listeners.

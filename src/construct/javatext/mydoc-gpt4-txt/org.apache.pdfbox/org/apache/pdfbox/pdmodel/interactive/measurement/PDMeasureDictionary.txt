@@ -1,0 +1,18 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.measurement.PDMeasureDictionary
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDRectlinearMeasureDictionary
+public class PDMeasureDictionary extends Object implements COSObjectable This class represents a measure dictionary.
+[Constructor Summary]
+protected PDMeasureDictionary()	Constructor.
+PDMeasureDictionary(COSDictionary dictionary)	Constructor.
+[Field Summary]
+static String TYPE	The type of the dictionary.
+[Method Summary]
+COSDictionary getCOSObject()	This will return the corresponding dictionary.
+String getSubtype()	returns the subtype of the measure dictionary.
+String getType()	This will return the type of the measure dictionary.
+protected void setSubtype(String subtype)	This will set the subtype of the measure dictionary.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

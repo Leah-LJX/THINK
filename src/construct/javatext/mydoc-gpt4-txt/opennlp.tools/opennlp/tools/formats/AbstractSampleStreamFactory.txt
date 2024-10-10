@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.formats.AbstractSampleStreamFactory<T,P>
+[Type] Class
+[Info]
+All Implemented Interfaces: opennlp.tools.cmdline.ObjectStreamFactory<T,P>
+Direct Known Subclasses: BioNLP2004NameSampleStreamFactory, BratNameSampleStreamFactory, ChunkerSampleStreamFactory, ConlluLemmaSampleStreamFactory, ConlluPOSSampleStreamFactory, ConlluSentenceSampleStreamFactory, ConlluTokenSampleStreamFactory, ConllXPOSSampleStreamFactory, ConstitParseSampleStreamFactory, DetokenizerSampleStreamFactory, DocumentSampleStreamFactory, IrishSentenceBankSentenceStreamFactory, LanguageDetectorSampleStreamFactory, LanguageSampleStreamFactory, LeipzigLanguageSampleStreamFactory, LemmatizerSampleStreamFactory, LetsmtSentenceStreamFactory, MascNamedEntitySampleStreamFactory, MascPOSSampleStreamFactory, MascSentenceSampleStreamFactory, MascTokenSampleStreamFactory, MosesSentenceSampleStreamFactory, Muc6NameSampleStreamFactory, NameSampleDataStreamFactory, NKJPSentenceSampleStreamFactory, OntoNotesNameSampleStreamFactory, OntoNotesParseSampleStreamFactory, OntoNotesPOSSampleStreamFactory, ParseSampleStreamFactory, SentenceSampleStreamFactory, TwentyNewsgroupSampleStreamFactory, WordTagSampleStreamFactory
+public abstract class AbstractSampleStreamFactory<T,P> extends Object implements opennlp.tools.cmdline.ObjectStreamFactory<T,P> Base class for sample stream factories.
+[Method Summary]
+String getLang()	
+Class<P> getParameters()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface opennlp.tools.cmdline.ObjectStreamFactory]
+create

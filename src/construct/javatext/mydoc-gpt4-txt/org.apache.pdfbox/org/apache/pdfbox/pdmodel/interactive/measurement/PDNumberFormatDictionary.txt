@@ -1,0 +1,41 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.measurement.PDNumberFormatDictionary
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDNumberFormatDictionary extends Object implements COSObjectable This class represents a number format dictionary.
+[Constructor Summary]
+PDNumberFormatDictionary()	Constructor.
+PDNumberFormatDictionary(COSDictionary dictionary)	Constructor.
+[Field Summary]
+static String FRACTIONAL_DISPLAY_DECIMAL	Constant for showing a fractional value as decimal to the precision specified by the D entry.
+static String FRACTIONAL_DISPLAY_FRACTION	Constant for showing a fractional value as a fraction with denominator specified by the D entry.
+static String FRACTIONAL_DISPLAY_ROUND	Constant for showing a fractional value without fractional part; round to the nearest whole unit.
+static String FRACTIONAL_DISPLAY_TRUNCATE	Constant for showing a fractional value without fractional part; truncate to achieve whole units.
+static String LABEL_PREFIX_TO_VALUE	Constant indicating that the label specified by U is a postfix to the value.
+static String LABEL_SUFFIX_TO_VALUE	Constant indicating that the label specified by U is a suffix to the value.
+static String TYPE	The type of the dictionary.
+[Method Summary]
+float getConversionFactor()	This will return the conversion factor.
+COSDictionary getCOSObject()	This will return the dictionary.
+String getDecimalSeparator()	This will return the text to be used as the decimal point in displaying numerical values.
+int getDenominator()	This will return the precision or denominator of a fractional amount.
+String getFractionalDisplay()	This will return the value for the manner to display a fractional value.
+String getLabelPositionToValue()	This will return a value indicating the ordering of the label specified by U to the calculated unit value.
+String getLabelPrefixString()	This will return the text to be concatenated to the left of the label specified by U.
+String getLabelSuffixString()	This will return the text to be concatenated after the label specified by U.
+String getThousandsSeparator()	This will return the text to be used between orders of thousands in display of numerical values.
+String getType()	This will return the type of the number format dictionary.
+String getUnits()	This will return the label for the units.
+boolean isFD()	This will return the value indication if the denominator of the fractional value is reduced/truncated .
+void setConversionFactor(float conversionFactor)	This will set the conversion factor.
+void setDecimalSeparator(String decimalSeparator)	This will set the text to be used as the decimal point in displaying numerical values.
+void setDenominator(int denominator)	This will set the precision or denominator of a fractional amount.
+void setFD(boolean fd)	This will set the value indication if the denominator of the fractional value is reduced/truncated .
+void setFractionalDisplay(String fractionalDisplay)	This will set the value for the manner to display a fractional value.
+void setLabelPositionToValue(String labelPositionToValue)	This will set the value indicating the ordering of the label specified by U to the calculated unit value.
+void setLabelPrefixString(String labelPrefixString)	This will set the text to be concatenated to the left of the label specified by U.
+void setLabelSuffixString(String labelSuffixString)	This will set the text to be concatenated after the label specified by U.
+void setThousandsSeparator(String thousandsSeparator)	This will set the text to be used between orders of thousands in display of numerical values.
+void setUnits(String units)	This will set the label for the units.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

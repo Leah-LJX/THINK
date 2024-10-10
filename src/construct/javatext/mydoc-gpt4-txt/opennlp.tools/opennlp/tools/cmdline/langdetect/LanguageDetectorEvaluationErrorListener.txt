@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.cmdline.langdetect.LanguageDetectorEvaluationErrorListener
+[Type] Class
+[Info]
+All Implemented Interfaces: LanguageDetectorEvaluationMonitor, EvaluationMonitor<LanguageSample>
+public class LanguageDetectorEvaluationErrorListener extends opennlp.tools.cmdline.EvaluationErrorPrinter<LanguageSample> implements LanguageDetectorEvaluationMonitor A default implementation of EvaluationMonitor that prints to an  output stream.
+[Constructor Summary]
+LanguageDetectorEvaluationErrorListener()	Creates a listener that will print to the configured logger.
+LanguageDetectorEvaluationErrorListener(OutputStream outputStream)	Creates a listener that will print to a given OutputStream
+[Method Summary]
+void misclassified(LanguageSample reference, LanguageSample prediction)	
+[Methods inherited from class opennlp.tools.cmdline.EvaluationErrorPrinter]
+correctlyClassified
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface opennlp.tools.util.eval.EvaluationMonitor]
+correctlyClassified

@@ -1,0 +1,12 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.iptc.PhotoshopApp13Data
+[Type] Class
+[Info]
+public class PhotoshopApp13Data extends Object
+[Constructor Summary]
+PhotoshopApp13Data​(List<IptcRecord> records, List<IptcBlock> rawBlocks)	
+[Method Summary]
+List<IptcBlock> getNonIptcBlocks()	
+List<IptcBlock> getRawBlocks()	
+List<IptcRecord> getRecords()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

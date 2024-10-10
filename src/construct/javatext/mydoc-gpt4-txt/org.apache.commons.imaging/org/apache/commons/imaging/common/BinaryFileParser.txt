@@ -1,0 +1,15 @@
+[API Name] Package org.apache.commons.imaging.common.BinaryFileParser
+[Type] Class
+[Info]
+Direct Known Subclasses: ExifRewriter, IccProfileParser, ImageParser, IptcParser, JpegDecoder, JpegRewriter, JpegUtils, JpegXmpParser, Segment, TiffReader
+public class BinaryFileParser extends Object
+[Constructor Summary]
+BinaryFileParser()	Constructs a BinaryFileParser with the default, big-endian, byte order.
+BinaryFileParser​(ByteOrder byteOrder)	
+[Method Summary]
+protected void debugNumber​(PrintWriter pw, String msg, int data, int bytes)	
+protected void debugNumber​(String msg, int data, int bytes)	
+ByteOrder getByteOrder()	
+protected void setByteOrder​(ByteOrder byteOrder)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

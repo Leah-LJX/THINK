@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.xy.XYItemRendererState
+[Flag] Class
+[Info]
+Direct Known Subclasses: SamplingXYLineRenderer.State, StandardXYItemRenderer.State, XYBarRenderer.XYBarRendererState, XYLineAndShapeRenderer.State
+[Constructor Summary]
+XYItemRendererState(PlotRenderingInfo info) Creates a new state.
+[Method Summary]
+void endSeriesPass(XYDataset dataset, int series, int firstItem, int lastItem, int pass, int passCount) This method is called by the XYPlot when it ends a pass through the (visible) items in a series.

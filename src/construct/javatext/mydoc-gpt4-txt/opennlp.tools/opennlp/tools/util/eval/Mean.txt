@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.util.eval.Mean
+[Type] Class
+[Info]
+public class Mean extends Object Calculates the arithmetic mean of values  added with the add(double) method.
+[Constructor Summary]
+Mean()	
+[Method Summary]
+void add(double value)	Adds a value to the arithmetic mean.
+void add(double value, long count)	Adds a value count times to the arithmetic mean.
+long count()	
+double mean()	
+String toString()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, wait, wait, wait

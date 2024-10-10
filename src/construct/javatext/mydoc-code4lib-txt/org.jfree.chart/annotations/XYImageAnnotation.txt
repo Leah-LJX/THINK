@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.annotations.XYImageAnnotation
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Annotation, XYAnnotation, org.jfree.util.PublicCloneable
+[Constructor Summary]
+XYImageAnnotation(double x, double y, Image image) Creates a new annotation to be displayed at the specified (x, y) location.
+[Method Summary]
+Object clone() Returns a clone of the annotation.

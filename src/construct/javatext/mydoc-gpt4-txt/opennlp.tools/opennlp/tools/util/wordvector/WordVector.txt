@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.util.wordvector.WordVector
+[Type] Interface
+[Info]
+@Experimental public interface WordVector A word vector.
+   Warning: Experimental new feature, see OPENNLP-1144 for details, the API might be changed anytime.
+[Method Summary]
+int dimension()	
+double getAsDouble(int index)	
+float getAsFloat(int index)	
+WordVectorType getDataType()	
+DoubleBuffer toDoubleBuffer()	
+FloatBuffer toFloatBuffer()	

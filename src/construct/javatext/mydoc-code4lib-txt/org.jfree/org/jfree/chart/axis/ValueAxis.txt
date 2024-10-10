@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.axis.ValueAxis
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, org.jfree.util.PublicCloneable
+Direct Known Subclasses: DateAxis, LogAxis, NumberAxis, PeriodAxis
+[Constructor Summary]
+protected ValueAxis(String label, TickUnitSource standardTickUnits) Constructs a value axis.
+[Method Summary]
+protected abstract void autoAdjustRange() Automatically sets the axis range to fit the range of values in the dataset.

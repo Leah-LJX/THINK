@@ -1,0 +1,10 @@
+[API Name] opennlp.tools.util.normalizer.CharSequenceNormalizer
+[Type] Interface
+[Info]
+All Superinterfaces: Serializable
+All Known Implementing Classes: AggregateCharSequenceNormalizer, EmojiCharSequenceNormalizer, NumberCharSequenceNormalizer, ShrinkCharSequenceNormalizer, TwitterCharSequenceNormalizer, UrlCharSequenceNormalizer
+public interface CharSequenceNormalizer extends Serializable A char sequence normalizer, used to adjusting (prune, substitute, add, etc.)  characters in order to remove noise from text
+See Also:
+Text normalization
+[Method Summary]
+CharSequence normalize(CharSequence text)	Normalizes a sequence of characters.

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.labels.CategorySeriesLabelGenerator
+[Flag] Interface
+[Info]
+All Known Implementing Classes: StandardCategorySeriesLabelGenerator
+[Constructor Summary]
+
+[Method Summary]
+String generateLabel(CategoryDataset dataset, int series) Generates a label for the specified series.

@@ -1,0 +1,11 @@
+[Class] org.w3c.dom.svg.SVGTests
+[Flag] Interface
+[Info]
+All Known Subinterfaces: SVGAElement, SVGAltGlyphElement, SVGAnimateColorElement, SVGAnimateElement, SVGAnimateMotionElement, SVGAnimateTransformElement, SVGAnimationElement, SVGCircleElement, SVGClipPathElement, SVGCursorElement, SVGDefsElement, SVGEllipseElement, SVGForeignObjectElement, SVGGElement, SVGImageElement, SVGLineElement, SVGMaskElement, SVGPathElement, SVGPatternElement, SVGPolygonElement, SVGPolylineElement, SVGRectElement, SVGSetElement, SVGSVGElement, SVGSwitchElement, SVGTextContentElement, SVGTextElement, SVGTextPathElement, SVGTextPositioningElement, SVGTRefElement, SVGTSpanElement, SVGUseElement
+[Constructor Summary]
+
+[Method Summary]
+SVGStringList getRequiredExtensions()	 
+ SVGStringList getRequiredFeatures()	 
+ SVGStringList getSystemLanguage()	 
+ boolean hasExtension(java.lang.String extension)

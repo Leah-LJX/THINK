@@ -1,0 +1,25 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineNode
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDDocumentOutline, PDOutlineItem
+public abstract class PDOutlineNode extends PDDictionaryWrapper Base class for a node in the outline of a PDF document.
+Author: Ben Litchfield
+[Constructor Summary]
+PDOutlineNode()	Default Constructor.
+PDOutlineNode(COSDictionary dict)	
+[Method Summary]
+void addFirst(PDOutlineItem newChild)	Adds the given node to the top of the children list.
+void addLast(PDOutlineItem newChild)	Adds the given node to the bottom of the children list.
+Iterable<PDOutlineItem> children()	
+void closeNode()	Close this node.
+PDOutlineItem getFirstChild()	
+PDOutlineItem getLastChild()	
+int getOpenCount()	Get the number of open nodes or a negative number if this node is closed.
+boolean hasChildren()	
+boolean isNodeOpen()	
+void openNode()	This will set this node to be open when it is shown in the viewer.
+[Methods inherited from class org.apache.pdfbox.pdmodel.common.PDDictionaryWrapper]
+equals, getCOSObject, hashCode
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, toString, wait, wait, wait

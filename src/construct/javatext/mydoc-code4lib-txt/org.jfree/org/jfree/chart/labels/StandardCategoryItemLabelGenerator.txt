@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.labels.StandardCategoryItemLabelGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, CategoryItemLabelGenerator, org.jfree.util.PublicCloneable
+Direct Known Subclasses: IntervalCategoryItemLabelGenerator
+[Constructor Summary]
+StandardCategoryItemLabelGenerator() Creates a new generator with a default number formatter.
+[Method Summary]
+boolean equals(Object obj) Tests this generator for equality with an arbitrary object.

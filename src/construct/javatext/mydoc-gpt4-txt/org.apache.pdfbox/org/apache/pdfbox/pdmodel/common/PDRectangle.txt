@@ -1,0 +1,44 @@
+[API Name] org.apache.pdfbox.pdmodel.common.PDRectangle
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDImmutableRectangle
+public class PDRectangle extends Object implements COSObjectable A rectangle in a PDF document.
+Author: Ben Litchfield
+[Constructor Summary]
+PDRectangle()	Constructor.
+PDRectangle(org.apache.fontbox.util.BoundingBox box)	Constructor.
+PDRectangle(COSArray array)	Constructor.
+PDRectangle(float width, float height)	Constructor.
+PDRectangle(float x, float y, float width, float height)	Constructor.
+[Field Summary]
+static PDRectangle A0	An immutable rectangle the size of A0 Paper.
+static PDRectangle A1	An immutable rectangle the size of A1 Paper.
+static PDRectangle A2	An immutable rectangle the size of A2 Paper.
+static PDRectangle A3	An immutable rectangle the size of A3 Paper.
+static PDRectangle A4	An immutable rectangle the size of A4 Paper.
+static PDRectangle A5	An immutable rectangle the size of A5 Paper.
+static PDRectangle A6	An immutable rectangle the size of A6 Paper.
+static PDRectangle LEGAL	An immutable rectangle the size of U.S.
+static PDRectangle LETTER	An immutable rectangle the size of U.S.
+static PDRectangle TABLOID	An immutable rectangle the size of U.S.
+[Method Summary]
+boolean contains(float x, float y)	Method to determine if the x/y point is inside this rectangle.
+PDRectangle createRetranslatedRectangle()	This will create a translated rectangle based off of this rectangle, such that the new rectangle retains the same dimensions(height/width), but the lower left x,y values are zero.
+COSArray getCOSArray()	This will get the underlying array for this rectangle.
+COSBase getCOSObject()	Convert this standard java object to a COS object.
+float getHeight()	This will get the height of this rectangle as calculated by upperRightY - lowerLeftY.
+float getLowerLeftX()	This will get the lower left x coordinate.
+float getLowerLeftY()	This will get the lower left y coordinate.
+float getUpperRightX()	This will get the upper right x coordinate.
+float getUpperRightY()	This will get the upper right y coordinate.
+float getWidth()	This will get the width of this rectangle as calculated by upperRightX - lowerLeftX.
+void setLowerLeftX(float value)	This will set the lower left x coordinate.
+void setLowerLeftY(float value)	This will set the lower left y coordinate.
+void setUpperRightX(float value)	This will set the upper right x coordinate.
+void setUpperRightY(float value)	This will set the upper right y coordinate.
+GeneralPath toGeneralPath()	Returns a general path equivalent to this rectangle.
+String toString()	This will return a string representation of this rectangle.
+GeneralPath transform(Matrix matrix)	Returns a path which represents this rectangle having been transformed by the given matrix.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

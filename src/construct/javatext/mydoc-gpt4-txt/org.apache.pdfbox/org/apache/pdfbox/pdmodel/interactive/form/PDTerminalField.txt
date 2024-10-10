@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.form.PDTerminalField
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDButton, PDSignatureField, PDVariableText
+public abstract class PDTerminalField extends PDField A field in an interactive form.  Fields may be one of four types: button, text, choice, or signature.
+Author: sug
+[Constructor Summary]
+protected PDTerminalField(PDAcroForm acroForm)	Constructor.
+[Method Summary]
+protected void applyChange()	Applies a value change to the field.
+int getFieldFlags()	This will get the flags for this field.
+String getFieldType()	Get the FT entry of the field.
+List<PDAnnotationWidget> getWidgets()	Returns the widget annotations associated with this field.
+void importFDF(FDFField fdfField)	This will import a fdf field from a fdf document.
+void setActions(PDFormFieldAdditionalActions actions)	Set the actions of the field.
+void setWidgets(List<PDAnnotationWidget> children)	Sets the field's widget annotations.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDField]
+getAcroForm, getActions, getAlternateFieldName, getCOSObject, getFullyQualifiedName, getInheritableAttribute, getMappingName, getParent, getPartialName, getValueAsString, isNoExport, isReadOnly, isRequired, setAlternateFieldName, setFieldFlags, setMappingName, setNoExport, setPartialName, setReadOnly, setRequired, setValue, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

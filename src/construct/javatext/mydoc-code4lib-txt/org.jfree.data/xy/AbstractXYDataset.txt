@@ -1,0 +1,11 @@
+[Class] org.jfree.data.xy.AbstractXYDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, Dataset, SeriesChangeListener, SeriesDataset, XYDataset
+Direct Known Subclasses: AbstractIntervalXYDataset, AbstractXYZDataset, DefaultBoxAndWhiskerXYDataset, DefaultHighLowDataset, DefaultOHLCDataset, DefaultWindDataset, DefaultXYDataset, JDBCXYDataset, OHLCSeriesCollection, VectorSeriesCollection, XYTaskDataset
+[Constructor Summary]
+AbstractXYDataset()
+[Method Summary]
+DomainOrder getDomainOrder()	Returns the order of the domain (X) values.
+double getXValue(int series, int item)	Returns the x-value (as a double primitive) for an item within a series.
+double getYValue(int series, int item)	Returns the y-value (as a double primitive) for an item within a series.

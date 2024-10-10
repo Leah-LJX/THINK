@@ -1,0 +1,16 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.TiffImageData.ByteSourceData
+[Type] Class
+[Info]
+Enclosing class: TiffImageData
+public static class TiffImageData.ByteSourceData extends TiffImageData.Data
+[Constructor Summary]
+ByteSourceData​(long offset, int length, ByteSourceFile byteSource)	
+[Field Summary]
+ByteSourceData​(long offset, int length, ByteSourceFile byteSource)	
+[Method Summary]
+byte[] getData()	
+String getElementDescription()	
+[Methods inherited from class org.apache.commons.imaging.formats.tiff.TiffElement.DataElement]
+getDataLength
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

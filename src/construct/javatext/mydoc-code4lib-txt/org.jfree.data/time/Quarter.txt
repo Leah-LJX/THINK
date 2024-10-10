@@ -1,0 +1,28 @@
+[Class] org.jfree.data.time.Quarter
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable, MonthConstants, TimePeriod
+[Constructor Summary]
+Quarter()	Constructs a new Quarter, based on the current system date/time.
+Quarter(int quarter, int year)	Constructs a new quarter.
+Quarter(int quarter, Year year)	Constructs a new quarter.
+Quarter(Date time)	Constructs a new instance, based on a date/time.
+Quarter(Date time, Calendar calendar)	Constructs a new instance, based on a particular date/time.
+Quarter(Date time, TimeZone zone, Locale locale)	Creates a new Quarter instance, using the specified zone and locale.
+[Method Summary]
+int compareTo(Object o1)	Returns an integer indicating the order of this Quarter object relative to the specified object:	 negative == before, zero == same, positive == after.
+boolean equals(Object obj)	Tests the equality of this Quarter object to an arbitrary object.
+long getFirstMillisecond()	Returns the first millisecond of the quarter.
+long getFirstMillisecond(Calendar calendar)	Returns the first millisecond in the Quarter, evaluated using the supplied calendar (which determines the time zone).
+long getLastMillisecond()	Returns the last millisecond of the quarter.
+long getLastMillisecond(Calendar calendar)	Returns the last millisecond of the Quarter, evaluated using the supplied calendar (which determines the time zone).
+int getQuarter()	Returns the quarter.
+long getSerialIndex()	Returns a serial index number for the quarter.
+Year getYear()	Returns the year.
+int getYearValue()	Returns the year.
+int hashCode()	Returns a hash code for this object instance.
+RegularTimePeriod next()	Returns the quarter following this one.
+static Quarter parseQuarter(String s)	Parses the string argument as a quarter.
+void peg(Calendar calendar)	Recalculates the start date/time and end date/time for this time period relative to the supplied calendar (which incorporates a time zone).
+RegularTimePeriod previous()	Returns the quarter preceding this one.
+String toString()	Returns a string representing the quarter (e.g.

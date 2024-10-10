@@ -1,0 +1,29 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationPolyline
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDAnnotationPolyline extends PDAnnotationMarkup
+Author: Paul King
+[Constructor Summary]
+PDAnnotationPolyline()	Constructor.
+PDAnnotationPolyline(COSDictionary dict)	Constructor.
+[Field Summary]
+static String SUB_TYPE	The type of annotation.
+[Method Summary]
+void constructAppearances()	Create the appearance entry for this annotation.
+void constructAppearances(PDDocument document)	Create the appearance entry for this annotation.
+String getEndPointEndingStyle()	This will retrieve the line ending style for the end point, possible values shown in the LE_ constants section.
+PDColor getInteriorColor()	This will retrieve the interior color with which to fill the annotation’s line endings.
+String getStartPointEndingStyle()	This will retrieve the line ending style for the start point, possible values shown in the LE_ constants section.
+float[] getVertices()	This will retrieve the numbers that shall represent the alternating horizontal and vertical coordinates.
+void setCustomAppearanceHandler(PDAppearanceHandler appearanceHandler)	Set a custom appearance handler for generating the annotations appearance streams.
+void setEndPointEndingStyle(String style)	This will set the line ending style for the end point, see the LE_ constants for the possible values.
+void setInteriorColor(PDColor ic)	This will set interior color of the line endings defined in the LE entry.
+void setStartPointEndingStyle(String style)	This will set the line ending style for the start point, see the LE_ constants for the possible values.
+void setVertices(float[] points)	This will set the numbers that shall represent the alternating horizontal and vertical coordinates.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationMarkup]
+getBorderStyle, getConstantOpacity, getCreationDate, getExternalData, getInReplyTo, getIntent, getPopup, getReplyType, getRichContents, getSubject, getTitlePopup, setBorderStyle, setConstantOpacity, setCreationDate, setExternalData, setInReplyTo, setIntent, setPopup, setReplyType, setRichContents, setSubject, setTitlePopup
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation]
+createAnnotation, equals, getAnnotationFlags, getAnnotationName, getAppearance, getAppearanceState, getBorder, getColor, getColor, getContents, getCOSObject, getModifiedDate, getNormalAppearanceStream, getOptionalContent, getPage, getRectangle, getStructParent, getSubtype, hashCode, isHidden, isInvisible, isLocked, isLockedContents, isNoRotate, isNoView, isNoZoom, isPrinted, isReadOnly, isToggleNoView, setAnnotationFlags, setAnnotationName, setAppearance, setAppearanceState, setBorder, setColor, setContents, setHidden, setInvisible, setLocked, setLockedContents, setModifiedDate, setModifiedDate, setNoRotate, setNoView, setNoZoom, setOptionalContent, setPage, setPrinted, setReadOnly, setRectangle, setStructParent, setSubtype, setToggleNoView
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, toString, wait, wait, wait

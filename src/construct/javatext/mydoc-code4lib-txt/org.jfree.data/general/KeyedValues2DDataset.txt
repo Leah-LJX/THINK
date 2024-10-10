@@ -1,0 +1,8 @@
+[Class] org.jfree.data.general.KeyedValues2DDataset
+[Flag] Interface
+[Info]
+All Superinterfaces: CategoryDataset, Dataset, KeyedValues2D, Values2D
+All Known Implementing Classes: DefaultKeyedValues2DDataset
+[Constructor Summary]
+
+[Method Summary]

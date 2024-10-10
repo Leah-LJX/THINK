@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.formats.masc.MascPOSSampleStreamFactory<P>
+[Type] Class
+[Info]
+All Implemented Interfaces: opennlp.tools.cmdline.ObjectStreamFactory<POSSample,P>
+public class MascPOSSampleStreamFactory<P> extends AbstractSampleStreamFactory<POSSample,P>
+[Field Summary]
+static final String MASC_FORMAT	
+[Method Summary]
+ObjectStream<POSSample> create(String[] args)	Creates an ObjectStream of the template type T.
+static void registerFactory()	
+[Methods inherited from class opennlp.tools.formats.AbstractSampleStreamFactory]
+getLang, getParameters
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

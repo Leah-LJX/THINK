@@ -1,0 +1,32 @@
+[API Name] org.apache.pdfbox.pdmodel.common.filespecification.PDEmbeddedFile
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDEmbeddedFile extends PDStream This represents an embedded file in a file specification.
+Author: Ben Litchfield
+[Constructor Summary]
+PDEmbeddedFile(COSStream str)	
+PDEmbeddedFile(PDDocument document)	
+PDEmbeddedFile(PDDocument doc, InputStream str)	
+PDEmbeddedFile(PDDocument doc, InputStream input, COSName filter)	
+[Method Summary]
+String getCheckSum()	Get the check sum of the embedded file.
+Calendar getCreationDate()	Get the creation date of the embedded file.
+String getMacCreator()	Get the mac Creator.
+String getMacResFork()	Get the mac ResFork.
+String getMacSubtype()	Get the mac subtype.
+Calendar getModDate()	Get the mod date of the embedded file.
+int getSize()	Get the size of the embedded file.
+String getSubtype()	Get the subtype(mimetype) for the embedded file.
+void setCheckSum(String checksum)	Set the check sum.
+void setCreationDate(Calendar creation)	Set the creation date.
+void setMacCreator(String macCreator)	Set the mac Creator.
+void setMacResFork(String macResFork)	Set the mac ResFork.
+void setMacSubtype(String macSubtype)	Set the mac subtype.
+void setModDate(Calendar mod)	Set the mod date.
+void setSize(int size)	Set the size of the embedded file.
+void setSubtype(String mimeType)	Set the subtype for this embedded file.
+[Methods inherited from class org.apache.pdfbox.pdmodel.common.PDStream]
+createInputStream, createInputStream, createInputStream, createOutputStream, createOutputStream, getCOSObject, getDecodedStreamLength, getDecodeParms, getFile, getFileDecodeParams, getFileFilters, getFilters, getLength, getMetadata, setDecodedStreamLength, setDecodeParms, setFile, setFileDecodeParams, setFileFilters, setFilters, setMetadata, toByteArray
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,24 @@
+[Class] org.jfree.data.category.SlidingCategoryDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, CategoryDataset, Dataset, KeyedValues2D, Values2D
+[Constructor Summary]
+SlidingCategoryDataset(CategoryDataset underlying, int firstColumn, int maxColumns)	Creates a new instance.
+[Method Summary]
+Object clone()	Returns an independent copy of the dataset.
+boolean equals(Object obj)	Tests this SlidingCategoryDataset for equality with an arbitrary object.
+int getColumnCount()	Returns the number of columns in the table.
+int getColumnIndex(Comparable key)	Returns the index for the specified column key.
+Comparable getColumnKey(int column)	Returns the column key for a given index.
+List getColumnKeys()	Returns the column keys.
+int getFirstCategoryIndex()	Returns the index of the first visible category.
+int getMaximumCategoryCount()	Returns the maximum category count.
+int getRowCount()	Returns the number of rows in the table.
+int getRowIndex(Comparable key)	Returns the row index for a given key.
+Comparable getRowKey(int row)	Returns the row key for a given index.
+List getRowKeys()	Returns the row keys.
+CategoryDataset getUnderlyingDataset()	Returns the underlying dataset that was supplied to the constructor.
+Number getValue(int row, int column)	Returns a value from the table.
+Number getValue(Comparable rowKey, Comparable columnKey)	Returns the value for a pair of keys.
+void setFirstCategoryIndex(int first)	Sets the index of the first category that should be used from the underlying dataset, and sends a DatasetChangeEvent to all registered listeners.
+void setMaximumCategoryCount(int max)	Sets the maximum category count and sends a DatasetChangeEvent to all registered listeners.

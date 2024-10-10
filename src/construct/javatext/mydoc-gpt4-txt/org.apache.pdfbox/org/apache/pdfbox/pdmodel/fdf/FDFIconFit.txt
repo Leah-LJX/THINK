@@ -1,0 +1,28 @@
+[API Name] org.apache.pdfbox.pdmodel.fdf.FDFIconFit
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class FDFIconFit extends Object implements COSObjectable This represents an Icon fit dictionary for an FDF field.
+Author: Ben Litchfield
+[Constructor Summary]
+FDFIconFit()	Default constructor.
+FDFIconFit(COSDictionary f)	Constructor.
+[Field Summary]
+static String SCALE_OPTION_ALWAYS	A scale option.
+static String SCALE_OPTION_NEVER	A scale option.
+static String SCALE_OPTION_ONLY_WHEN_ICON_IS_BIGGER	A scale option.
+static String SCALE_OPTION_ONLY_WHEN_ICON_IS_SMALLER	A scale option.
+static String SCALE_TYPE_ANAMORPHIC	Scale to fill with of annotation, disregarding aspect ratio.
+static String SCALE_TYPE_PROPORTIONAL	Scale to fit width or height, smaller of two, while retaining aspect ration.
+[Method Summary]
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+PDRange getFractionalSpaceToAllocate()	This is guaranteed to never return null. To quote the PDF Spec "An array of two numbers between 0.0 and 1.0 indicating the fraction of leftover space to allocate at the left and bottom of the icon.
+String getScaleOption()	This will get the scale option.
+String getScaleType()	This will get the scale type.
+void setFractionalSpaceToAllocate(PDRange space)	This will set frational space to allocate.
+void setScaleOption(String option)	This will set the scale option for the icon.
+void setScaleToFitAnnotation(boolean value)	This will tell the icon to scale.
+void setScaleType(String scale)	This will set the scale type.
+boolean shouldScaleToFitAnnotation()	This will tell if the icon should scale to fit the annotation bounds.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

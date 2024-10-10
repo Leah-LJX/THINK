@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.block.EntityBlockParams
+[Flag] Interface
+[Info]
+All Known Implementing Classes: BlockParams
+[Constructor Summary]
+
+[Method Summary]
+boolean getGenerateEntities() Returns a flag that controls whether or not the block should return entities for the items it draws.

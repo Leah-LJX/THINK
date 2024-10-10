@@ -1,0 +1,18 @@
+[API Name] org.apache.pdfbox.pdmodel.common.PDImmutableRectangle
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class PDImmutableRectangle extends PDRectangle Immutable class for constant sizes.
+[Constructor Summary]
+PDImmutableRectangle(float width, float height)	Constructor for immutable rectangle.
+[Field Summary]
+PDImmutableRectangle(float width, float height)	Constructor for immutable rectangle.
+[Method Summary]
+void setLowerLeftX(float value)	This will set the lower left x coordinate.
+void setLowerLeftY(float value)	This will set the lower left y coordinate.
+void setUpperRightX(float value)	This will set the upper right x coordinate.
+void setUpperRightY(float value)	This will set the upper right y coordinate.
+[Methods inherited from class org.apache.pdfbox.pdmodel.common.PDRectangle]
+contains, createRetranslatedRectangle, getCOSArray, getCOSObject, getHeight, getLowerLeftX, getLowerLeftY, getUpperRightX, getUpperRightY, getWidth, toGeneralPath, toString, transform
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

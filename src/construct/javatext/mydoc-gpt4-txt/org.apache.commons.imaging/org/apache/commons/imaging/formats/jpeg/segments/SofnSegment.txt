@@ -1,0 +1,22 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.segments.SofnSegment
+[Type] Class
+[Info]
+public class SofnSegment extends Segment
+[Constructor Summary]
+SofnSegment​(int marker, byte[] segmentData)	
+SofnSegment​(int marker, int markerLength, InputStream is)	
+[Field Summary]
+int height	
+int numberOfComponents	
+int precision	
+int width	
+[Method Summary]
+SofnSegment.Component[] getComponents()	Returns a copy of all the components.
+SofnSegment.Component getComponents​(int index)	Returns the component at the specified index.
+String getDescription()	
+[Methods inherited from class org.apache.commons.imaging.formats.jpeg.segments.Segment]
+dump, getSegmentType, toString
+[Methods inherited from class org.apache.commons.imaging.common.BinaryFileParser]
+debugNumber, debugNumber, getByteOrder, setByteOrder
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

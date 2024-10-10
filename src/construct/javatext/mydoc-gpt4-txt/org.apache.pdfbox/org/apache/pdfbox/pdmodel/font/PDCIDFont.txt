@@ -1,0 +1,33 @@
+[API Name] org.apache.pdfbox.pdmodel.font.PDCIDFont
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable, PDFontLike, PDVectorFont
+Direct Known Subclasses: PDCIDFontType0, PDCIDFontType2
+public abstract class PDCIDFont extends Object implements COSObjectable, PDFontLike, PDVectorFont A CIDFont. A CIDFont is a PDF object that contains information about a CIDFont program. Although  its Type value is Font, a CIDFont is not actually a font.
+ It is not usually necessary to use this class directly, prefer PDType0Font.
+Author: Ben Litchfield
+[Field Summary]
+protected COSDictionary dict	
+protected PDType0Font parent	
+[Method Summary]
+abstract int codeToCID(int code)	Returns the CID for the given character code.
+abstract int codeToGID(int code)	Returns the GID for the given character code.
+protected abstract byte[] encode(int unicode)	Encodes the given Unicode code point for use in a PDF content stream.
+abstract byte[] encodeGlyphId(int glyphId)	
+float getAverageFontWidth()	This will get the average font width for all characters.
+String getBaseFont()	The PostScript name of the font.
+PDCIDSystemInfo getCIDSystemInfo()	Returns the CIDSystemInfo, or null if it is missing (which isn't allowed but could happen).
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+PDFontDescriptor getFontDescriptor()	Returns the font descriptor, may be null.
+String getName()	Returns the name of this font, either the PostScript "BaseName" or the Type 3 "Name".
+PDType0Font getParent()	Returns the Type 0 font which is the parent of this font.
+Vector getPositionVector(int code)	Returns the position vector (v), in text space, for the given character.
+float getVerticalDisplacementVectorY(int code)	Returns the y-component of the vertical displacement vector (w1).
+float getWidth(int code)	Returns the advance width of the given character, in glyph space.
+boolean hasExplicitWidth(int code)	Returns true if the Font dictionary specifies an explicit width for the given glyph.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface org.apache.pdfbox.pdmodel.font.PDFontLike]
+getBoundingBox, getFontMatrix, getHeight, getWidthFromFont, isDamaged, isEmbedded
+[Methods inherited from interface org.apache.pdfbox.pdmodel.font.PDVectorFont]
+getNormalizedPath, getPath, hasGlyph

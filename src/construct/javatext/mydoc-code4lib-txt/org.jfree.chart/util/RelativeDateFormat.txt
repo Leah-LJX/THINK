@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.util.RelativeDateFormat
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+RelativeDateFormat() Creates a new instance with base milliseconds set to zero.
+[Method Summary]
+Object clone() Returns a clone of this instance.

@@ -1,0 +1,10 @@
+[API Name] org.apache.pdfbox.pdmodel.font.PDFontFactory
+[Type] Class
+[Info]
+public final class PDFontFactory extends Object Creates the appropriate font subtype based on information in the dictionary.
+Author: Ben Litchfield
+[Method Summary]
+static PDFont createFont(COSDictionary dictionary)	Creates a new PDFont instance with the appropriate subclass.
+static PDFont createFont(COSDictionary dictionary, ResourceCache resourceCache)	Creates a new PDFont instance with the appropriate subclass.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

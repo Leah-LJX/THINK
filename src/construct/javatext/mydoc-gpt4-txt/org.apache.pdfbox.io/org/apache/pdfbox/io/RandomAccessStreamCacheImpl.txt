@@ -1,0 +1,14 @@
+[API Name] org.apache.pdfbox.io.RandomAccessStreamCacheImpl
+[Type] Class
+[Info]
+All Implemented Interfaces: Closeable, AutoCloseable, RandomAccessStreamCache
+public class RandomAccessStreamCacheImpl extends Object implements RandomAccessStreamCache A default implementation of the interface RandomAccessStreamCache using a memory backed RandomAccessReadWriteBuffer.
+[Constructor Summary]
+RandomAccessStreamCacheImpl()	
+[Nested Class Summary]
+RandomAccessStreamCacheImpl()	
+[Method Summary]
+void close()	
+RandomAccess createBuffer()	Creates an instance of a buffer implementing the interface org.apache.pdfbox.io.RandomAccess.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

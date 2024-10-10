@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.editor.ChartEditor
+[Flag] Interface
+[Info]
+See Also: ChartEditorManager.getChartEditor(JFreeChart)
+[Constructor Summary]
+
+[Method Summary]
+void updateChart(JFreeChart chart) Applies the changes to the specified chart.

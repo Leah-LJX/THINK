@@ -1,0 +1,10 @@
+[Class] org.joda.time.tz.ZoneInfoCompiler
+[Flag] Class
+[Info]
+Since: 1.0
+[Constructor Summary]
+ZoneInfoCompiler()
+[Method Summary]
+Map<String,DateTimeZone> compile(File outputDir, File[] sources) Returns a map of ids to DateTimeZones.
+static void main(String[] args) Launches the ZoneInfoCompiler tool.
+void parseDataFile(BufferedReader in, boolean backward)

@@ -1,0 +1,7 @@
+[Class] org.jfree.data.general.DefaultKeyedValuesDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, PublicCloneable, Dataset, KeyedValuesDataset, PieDataset, KeyedValues, Values
+[Constructor Summary]
+DefaultKeyedValuesDataset()
+[Method Summary]

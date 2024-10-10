@@ -1,0 +1,21 @@
+[Class] org.joda.time.format.PeriodFormatter
+[Flag] Class
+[Info]
+Since: 1.0
+[Constructor Summary]
+PeriodFormatter(PeriodPrinter printer,	PeriodParser parser)	Creates a new formatter, however you will normally use the factory	 or the builder.
+[Method Summary]
+Locale getLocale() Gets the locale that will be used for printing and parsing.
+PeriodParser getParser() Gets the internal parser object that performs the real parsing work.
+PeriodType getParseType() Gets the PeriodType that will be used for parsing.
+PeriodPrinter getPrinter() Gets the internal printer object that performs the real printing work.
+boolean isParser() Is this formatter capable of parsing.
+boolean isPrinter() Is this formatter capable of printing.
+int parseInto(ReadWritablePeriod period, String text, int position) Parses a period from the given text, at the given position, saving the result into the fields of the given ReadWritablePeriod.
+MutablePeriod parseMutablePeriod(String text) Parses a period from the given text, returning a new MutablePeriod.
+Period parsePeriod(String text) Parses a period from the given text, returning a new Period.
+String print(ReadablePeriod period) Prints a ReadablePeriod to a new String.
+void printTo(StringBuffer buf, ReadablePeriod period) Prints a ReadablePeriod to a StringBuffer.
+void printTo(Writer out, ReadablePeriod period) Prints a ReadablePeriod to a Writer.
+PeriodFormatter withLocale(Locale locale) Returns a new formatter with a different locale that will be used for printing and parsing.
+PeriodFormatter withParseType(PeriodType type) Returns a new formatter with a different PeriodType for parsing.

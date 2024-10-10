@@ -1,0 +1,11 @@
+[Class] org.joda.time.field.SkipDateTimeField
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+SkipDateTimeField(Chronology chronology,	DateTimeField field)	Constructor that skips zero.
+SkipDateTimeField(Chronology chronology,	DateTimeField field,	int skip)	Constructor.
+[Method Summary]
+int get(long millis) Get the value of this field from the milliseconds.
+int getMinimumValue() Get the minimum allowable value for this field.
+long set(long millis, int value) Sets a value in the milliseconds supplied.

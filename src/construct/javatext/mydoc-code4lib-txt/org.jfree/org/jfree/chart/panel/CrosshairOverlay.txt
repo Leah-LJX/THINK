@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.panel.CrosshairOverlay
+[Flag] Class
+[Info]
+All Implemented Interfaces: PropertyChangeListener, Serializable, Cloneable, EventListener, Overlay, org.jfree.util.PublicCloneable
+[Constructor Summary]
+CrosshairOverlay() Default constructor.
+[Method Summary]
+void addDomainCrosshair(Crosshair crosshair) Adds a crosshair against the domain axis and sends an OverlayChangeEvent to all registered listeners.

@@ -1,0 +1,15 @@
+[Class] org.jfree.data.xy.OHLCDataItem
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable
+[Constructor Summary]
+OHLCDataItem(Date date, double open, double high, double low, double close, double volume)	Creates a new item.
+[Method Summary]
+int compareTo(Object object)	Compares this object with the specified object for order.
+boolean equals(Object obj)	Checks this instance for equality with an arbitrary object.
+Number getClose()	Returns the close value.
+Date getDate()	Returns the date that the data item relates to.
+Number getHigh()	Returns the high value.
+Number getLow()	Returns the low value.
+Number getOpen()	Returns the open value.
+Number getVolume()	Returns the volume.

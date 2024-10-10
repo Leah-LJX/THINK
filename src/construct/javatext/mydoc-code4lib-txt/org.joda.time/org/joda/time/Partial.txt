@@ -1,0 +1,37 @@
+[Class] org.joda.time.Partial
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<ReadablePartial>, ReadablePartial
+[Constructor Summary]
+Partial()	Constructs a Partial with no fields or values, which can be considered	 to represent any date.
+Partial(Chronology chrono)	Constructs a Partial with no fields or values, which can be considered	 to represent any date.
+Partial(DateTimeFieldType[] types,	int[] values)	Constructs a Partial with the specified fields and values.
+Partial(DateTimeFieldType[] types,	int[] values,	Chronology chronology)	Constructs a Partial with the specified fields and values.
+Partial(DateTimeFieldType type,	int value)	Constructs a Partial with the specified field and value.
+Partial(DateTimeFieldType type,	int value,	Chronology chronology)	Constructs a Partial with the specified field and value.
+Partial(ReadablePartial partial)	Constructs a Partial by copying all the fields and types from	 another partial.
+[Method Summary]
+Chronology getChronology() Gets the chronology of the partial which is never null.
+protected DateTimeField getField(int index, Chronology chrono) Gets the field for a specific index in the chronology specified.
+DateTimeFieldType getFieldType(int index) Gets the field type at the specified index.
+DateTimeFieldType[] getFieldTypes() Gets an array of the field type of each of the fields that this partial supports.
+DateTimeFormatter getFormatter() Gets a formatter suitable for the fields in this partial.
+int getValue(int index) Gets the value of the field at the specified index.
+int[] getValues() Gets an array of the value of each of the fields that this partial supports.
+boolean isMatch(ReadableInstant instant) Does this partial match the specified instant.
+boolean isMatch(ReadablePartial partial) Does this partial match the specified partial.
+Partial minus(ReadablePeriod period) Gets a copy of this instance with the specified period take away.
+Partial plus(ReadablePeriod period) Gets a copy of this instance with the specified period added.
+Partial.Property property(DateTimeFieldType type) Gets the property object for the specified type, which contains many useful methods for getting and manipulating the partial.
+int size() Gets the number of fields in this partial.
+String toString() Output the date in an appropriate ISO8601 format.
+String toString(String pattern) Output the date using the specified format pattern.
+String toString(String pattern, Locale locale) Output the date using the specified format pattern.
+String toStringList() Gets a string version of the partial that lists all the fields.
+Partial with(DateTimeFieldType fieldType, int value) Gets a copy of this date with the specified field set to a new value.
+Partial withChronologyRetainFields(Chronology newChronology) Creates a new Partial instance with the specified chronology.
+Partial withField(DateTimeFieldType fieldType, int value) Gets a copy of this Partial with the specified field set to a new value.
+Partial withFieldAdded(DurationFieldType fieldType, int amount) Gets a copy of this Partial with the value of the specified field increased.
+Partial withFieldAddWrapped(DurationFieldType fieldType, int amount) Gets a copy of this Partial with the value of the specified field increased.
+Partial without(DateTimeFieldType fieldType) Gets a copy of this date with the specified field removed.
+Partial withPeriodAdded(ReadablePeriod period, int scalar) Gets a copy of this Partial with the specified period added.

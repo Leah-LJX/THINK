@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDLinkAppearanceHandler
+[Type] Class
+[Info]
+All Implemented Interfaces: PDAppearanceHandler
+public class PDLinkAppearanceHandler extends PDAbstractAppearanceHandler Handler to generate the link annotations appearance.
+[Constructor Summary]
+PDLinkAppearanceHandler(PDAnnotation annotation)	
+PDLinkAppearanceHandler(PDAnnotation annotation, PDDocument document)	
+[Field Summary]
+PDLinkAppearanceHandler(PDAnnotation annotation)	
+PDLinkAppearanceHandler(PDAnnotation annotation, PDDocument document)	
+[Method Summary]
+void generateDownAppearance()	
+void generateNormalAppearance()	
+void generateRolloverAppearance()	
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDAbstractAppearanceHandler]
+createCOSStream, getDefaultFont
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDAppearanceHandler]
+generateAppearanceStreams

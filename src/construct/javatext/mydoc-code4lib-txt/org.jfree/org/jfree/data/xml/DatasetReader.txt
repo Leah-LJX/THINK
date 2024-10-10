@@ -1,0 +1,13 @@
+[Class] org.jfree.data.xml.DatasetReader
+[Flag] Class
+[Info]
+Returns: The SAXParserFactory (never null).
+[Constructor Summary]
+DatasetReader()
+[Method Summary]
+static SAXParserFactory getSAXParserFactory()	Returns the SAXParserFactory used to create SAXParser instances.
+static CategoryDataset readCategoryDatasetFromXML(File file)	Reads a CategoryDataset from a file.
+static CategoryDataset readCategoryDatasetFromXML(InputStream in)	Reads a CategoryDataset from a stream.
+static PieDataset readPieDatasetFromXML(File file)	Reads a PieDataset from an XML file.
+static PieDataset readPieDatasetFromXML(InputStream in)	Reads a PieDataset from a stream.
+static void setSAXParserFactory(SAXParserFactory f)	Sets the SAXParserFactory that will be used to create SAXParser instances.

@@ -1,0 +1,26 @@
+[API Name] opennlp.tools.chunker.ChunkerModel
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, ArtifactProvider
+public class ChunkerModel extends BaseModel The ChunkerModel is the model used by a learnable Chunker.
+See Also:
+ChunkerME Serialized Form
+[Constructor Summary]
+ChunkerModel(File modelFile)	Initializes a ChunkerModel instance via a valid File.
+ChunkerModel(InputStream in)	Initializes a ChunkerModel instance via a valid InputStream.
+ChunkerModel(String languageCode, MaxentModel chunkerModel, int beamSize, Map<String,String> manifestInfoEntries, ChunkerFactory factory)	Initializes a ChunkerModel instance via given parameters.
+ChunkerModel(String languageCode, MaxentModel chunkerModel, Map<String,String> manifestInfoEntries, ChunkerFactory factory)	Initializes a ChunkerModel instance via given parameters.
+ChunkerModel(String languageCode, MaxentModel chunkerModel, ChunkerFactory factory)	Initializes a ChunkerModel instance via given parameters.
+ChunkerModel(String languageCode, SequenceClassificationModel<String> chunkerModel, Map<String,String> manifestInfoEntries, ChunkerFactory factory)	Initializes a ChunkerModel instance via given parameters.
+ChunkerModel(URL modelURL)	Initializes a ChunkerModel instance via a valid URL.
+ChunkerModel(Path modelPath)	Initializes a ChunkerModel instance via a valid Path.
+[Method Summary]
+MaxentModel getChunkerModel()	Deprecated. use getChunkerSequenceModel() instead.
+SequenceClassificationModel<TokenTag> getChunkerSequenceModel()	
+ChunkerFactory getFactory()	
+[Fields inherited from class opennlp.tools.util.model.BaseModel]
+TRAINING_CUTOFF_PROPERTY, TRAINING_EVENTHASH_PROPERTY, TRAINING_ITERATIONS_PROPERTY
+[Methods inherited from class opennlp.tools.util.model.BaseModel]
+getArtifact, getLanguage, getManifestProperty, getVersion, isLoadedFromSerialized, serialize, serialize, serialize
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

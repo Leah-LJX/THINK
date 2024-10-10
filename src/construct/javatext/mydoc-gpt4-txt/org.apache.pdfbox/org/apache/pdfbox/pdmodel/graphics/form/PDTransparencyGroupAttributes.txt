@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.form.PDTransparencyGroupAttributes
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class PDTransparencyGroupAttributes extends Object implements COSObjectable Transparency group attributes.
+Author: Kühn & Weyh Software GmbH
+[Constructor Summary]
+PDTransparencyGroupAttributes()	Creates a group object with /Transparency subtype entry.
+PDTransparencyGroupAttributes(COSDictionary dic)	Creates a group object from a given dictionary
+[Method Summary]
+PDColorSpace getColorSpace()	Returns the group color space or null if it isn't defined.
+PDColorSpace getColorSpace(PDResources resources)	Returns the group color space or null if it isn't defined.
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+boolean isIsolated()	Returns true if this group is isolated.
+boolean isKnockout()	Returns true if this group is a knockout.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

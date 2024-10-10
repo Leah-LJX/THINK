@@ -1,0 +1,22 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.JpegImageMetadata
+[Type] Class
+[Info]
+All Implemented Interfaces: ImageMetadata
+public class JpegImageMetadata extends Object implements ImageMetadata
+[Constructor Summary]
+JpegImageMetadata​(JpegPhotoshopMetadata photoshop, TiffImageMetadata exif)	
+[Method Summary]
+void dump()	
+TiffField findEXIFValue​(TagInfo tagInfo)	
+TiffField findEXIFValueWithExactMatch​(TagInfo tagInfo)	
+TiffImageMetadata getExif()	
+BufferedImage getEXIFThumbnail()	Get the thumbnail image if available.
+byte[] getEXIFThumbnailData()	Returns the data of the first JPEG thumbnail found in the EXIF metadata.
+Dimension getEXIFThumbnailSize()	Returns the size of the first JPEG thumbnail found in the EXIF metadata.
+List<ImageMetadata.ImageMetadataItem> getItems()	
+JpegPhotoshopMetadata getPhotoshop()	
+TiffImageData getRawImageData()	
+String toString()	
+String toString​(String prefix)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

@@ -1,0 +1,10 @@
+[Class] org.w3c.dom.svg.SVGCircleElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, EventTarget, Node, SVGElement, SVGExternalResourcesRequired, SVGLangSpace, SVGLocatable, SVGStylable, SVGTests, SVGTransformable
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedLength getCx()	 
+ SVGAnimatedLength getCy()	 
+ SVGAnimatedLength getR()

@@ -1,0 +1,13 @@
+[Class] org.jfree.data.general.HeatMapUtils
+[Flag] Class
+[Info]
+Parameters: dataset - the dataset (null not permitted).
+row - the row (y) index.
+seriesName - the series name/key (null not permitted).
+Returns: The dataset.
+[Constructor Summary]
+HeatMapUtils()
+[Method Summary]
+static BufferedImage createHeatMapImage(HeatMapDataset dataset, PaintScale paintScale)	Creates an image that displays the values from the specified dataset.
+static XYDataset extractColumnFromHeatMapDataset(HeatMapDataset dataset, int column, Comparable seriesName)	Returns a dataset containing one series that holds a copy of the (y, z) data from one column (x-index) of the specified dataset.
+static XYDataset extractRowFromHeatMapDataset(HeatMapDataset dataset, int row, Comparable seriesName)	Returns a dataset containing one series that holds a copy of the (x, z) data from one row (y-index) of the specified dataset.

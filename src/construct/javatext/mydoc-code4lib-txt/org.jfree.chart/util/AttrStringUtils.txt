@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.util.AttrStringUtils
+[Flag] Class
+[Info]
+Since: 1.0.16
+[Constructor Summary]
+
+[Method Summary]
+static void drawRotatedString(AttributedString text, Graphics2D g2, double angle, float x, float y) Draws the attributed string at (x, y), rotated by the specified angle about (x, y).

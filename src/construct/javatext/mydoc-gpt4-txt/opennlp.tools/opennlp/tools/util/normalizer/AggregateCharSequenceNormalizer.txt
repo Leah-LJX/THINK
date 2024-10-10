@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.util.normalizer.AggregateCharSequenceNormalizer
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, CharSequenceNormalizer
+public class AggregateCharSequenceNormalizer extends Object implements CharSequenceNormalizer A CharSequenceNormalizer implementation that aggregates the  functionality of other normalizers.
+See Also:
+Serialized Form
+[Constructor Summary]
+AggregateCharSequenceNormalizer(CharSequenceNormalizer... normalizers)	
+[Method Summary]
+CharSequence normalize(CharSequence text)	Normalizes a sequence of characters.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

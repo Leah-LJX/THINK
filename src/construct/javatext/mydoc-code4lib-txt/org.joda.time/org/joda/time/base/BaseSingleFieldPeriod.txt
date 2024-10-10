@@ -1,0 +1,25 @@
+[Class] org.joda.time.base.BaseSingleFieldPeriod
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<BaseSingleFieldPeriod>, ReadablePeriod
+Direct Known Subclasses: Days, Hours, Minutes, Months, Seconds, Weeks, Years
+[Constructor Summary]
+protected 	BaseSingleFieldPeriod(int period)	Creates a new instance representing the specified period.
+[Method Summary]
+protected static int between(ReadableInstant start, ReadableInstant end, DurationFieldType field) Calculates the number of whole units between the two specified datetimes.
+protected static int between(ReadablePartial start, ReadablePartial end, ReadablePeriod zeroInstance) Calculates the number of whole units between the two specified partial datetimes.
+int compareTo(BaseSingleFieldPeriod other) Compares this period to another object of the same class.
+boolean equals(Object period) Compares this object with the specified object for equality based on the value of each field.
+int get(DurationFieldType type) Gets the value of a duration field represented by this period.
+abstract DurationFieldType getFieldType() Gets the single duration field type.
+DurationFieldType getFieldType(int index) Gets the field type at the specified index.
+abstract PeriodType getPeriodType() Gets the period type which matches the duration field type.
+protected int getValue() Gets the amount of this period.
+int getValue(int index) Gets the value at the specified index.
+int hashCode() Gets a hash code for the period as defined by ReadablePeriod.
+boolean isSupported(DurationFieldType type) Checks whether the duration field specified is supported by this period.
+protected void setValue(int value) Sets the amount of this period.
+int size() Gets the number of fields that this period supports, which is one.
+protected static int standardPeriodIn(ReadablePeriod period, long millisPerUnit) Creates a new instance representing the number of complete standard length units in the specified period.
+MutablePeriod toMutablePeriod() Get this object as a MutablePeriod.
+Period toPeriod() Get this period as an immutable Period object.

@@ -1,0 +1,25 @@
+[API Name] opennlp.tools.sentdetect.SentenceModel
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, ArtifactProvider
+public class SentenceModel extends BaseModel The SentenceModel is the model used by a learnable  SentenceDetector.
+See Also:
+SentenceDetectorME Serialized Form
+[Constructor Summary]
+SentenceModel(File modelFile)	Initializes a SentenceModel instance via a valid File.
+SentenceModel(InputStream in)	Initializes a SentenceModel instance via a valid InputStream.
+SentenceModel(String languageCode, MaxentModel sentModel, Map<String,String> manifestInfoEntries, SentenceDetectorFactory sdFactory)	Initializes a SentenceModel instance via given parameters.
+SentenceModel(URL modelURL)	Initializes a SentenceModel instance via a valid URL.
+SentenceModel(Path modelPath)	Initializes a SentenceModel instance via a valid Path.
+[Method Summary]
+Dictionary getAbbreviations()	
+char[] getEosCharacters()	
+SentenceDetectorFactory getFactory()	
+MaxentModel getMaxentModel()	
+boolean useTokenEnd()	
+[Fields inherited from class opennlp.tools.util.model.BaseModel]
+TRAINING_CUTOFF_PROPERTY, TRAINING_EVENTHASH_PROPERTY, TRAINING_ITERATIONS_PROPERTY
+[Methods inherited from class opennlp.tools.util.model.BaseModel]
+getArtifact, getLanguage, getManifestProperty, getVersion, isLoadedFromSerialized, serialize, serialize, serialize
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,34 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationRubberStamp
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDAnnotationRubberStamp extends PDAnnotationMarkup This is the class that represents a rubber stamp annotation. Introduced in PDF 1.3 specification
+Author: Paul King
+[Constructor Summary]
+PDAnnotationRubberStamp()	Constructor.
+PDAnnotationRubberStamp(COSDictionary field)	Creates a Rubber Stamp annotation from a COSDictionary, expected to be a correct object definition.
+[Field Summary]
+static String NAME_APPROVED	Constant for the name of a rubber stamp.
+static String NAME_AS_IS	Constant for the name of a rubber stamp.
+static String NAME_CONFIDENTIAL	Constant for the name of a rubber stamp.
+static String NAME_DEPARTMENTAL	Constant for the name of a rubber stamp.
+static String NAME_DRAFT	Constant for the name of a rubber stamp.
+static String NAME_EXPERIMENTAL	Constant for the name of a rubber stamp.
+static String NAME_EXPIRED	Constant for the name of a rubber stamp.
+static String NAME_FINAL	Constant for the name of a rubber stamp.
+static String NAME_FOR_COMMENT	Constant for the name of a rubber stamp.
+static String NAME_FOR_PUBLIC_RELEASE	Constant for the name of a rubber stamp.
+static String NAME_NOT_APPROVED	Constant for the name of a rubber stamp.
+static String NAME_NOT_FOR_PUBLIC_RELEASE	Constant for the name of a rubber stamp.
+static String NAME_SOLD	Constant for the name of a rubber stamp.
+static String NAME_TOP_SECRET	Constant for the name of a rubber stamp.
+static String SUB_TYPE	The type of annotation.
+[Method Summary]
+String getName()	This will retrieve the name (and hence appearance, AP taking precedence) For this annotation.
+void setName(String name)	This will set the name (and hence appearance, AP taking precedence) For this annotation.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationMarkup]
+getBorderStyle, getConstantOpacity, getCreationDate, getExternalData, getInReplyTo, getIntent, getPopup, getReplyType, getRichContents, getSubject, getTitlePopup, setBorderStyle, setConstantOpacity, setCreationDate, setExternalData, setInReplyTo, setIntent, setPopup, setReplyType, setRichContents, setSubject, setTitlePopup
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation]
+constructAppearances, constructAppearances, createAnnotation, equals, getAnnotationFlags, getAnnotationName, getAppearance, getAppearanceState, getBorder, getColor, getColor, getContents, getCOSObject, getModifiedDate, getNormalAppearanceStream, getOptionalContent, getPage, getRectangle, getStructParent, getSubtype, hashCode, isHidden, isInvisible, isLocked, isLockedContents, isNoRotate, isNoView, isNoZoom, isPrinted, isReadOnly, isToggleNoView, setAnnotationFlags, setAnnotationName, setAppearance, setAppearanceState, setBorder, setColor, setContents, setHidden, setInvisible, setLocked, setLockedContents, setModifiedDate, setModifiedDate, setNoRotate, setNoView, setNoZoom, setOptionalContent, setPage, setPrinted, setReadOnly, setRectangle, setStructParent, setSubtype, setToggleNoView
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.stemmer.snowball.Among
+[Type] Class
+[Info]
+public class Among extends Object
+[Constructor Summary]
+Among(String s, int substring_i, int result)	
+Among(String s, int substring_i, int result, String methodname, Class<? extends opennlp.tools.stemmer.snowball.AbstractSnowballStemmer> programclass)	
+[Field Summary]
+final Method method	
+final int result	
+final char[] s	
+final int substring_i	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

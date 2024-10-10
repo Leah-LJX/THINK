@@ -1,0 +1,14 @@
+[API Name] org.apache.pdfbox.cos.COSInputStream
+[Type] Class
+[Info]
+All Implemented Interfaces: Closeable, AutoCloseable
+public final class COSInputStream extends FilterInputStream An InputStream which reads from an encoded COS stream.
+Author: John Hewson
+[Field Summary]
+DecodeResult getDecodeResult()	Returns the result of the last filter, for use by repair mechanisms.
+[Method Summary]
+DecodeResult getDecodeResult()	Returns the result of the last filter, for use by repair mechanisms.
+[Methods inherited from class java.io.FilterInputStream]
+available, close, mark, markSupported, read, read, read, reset, skip
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

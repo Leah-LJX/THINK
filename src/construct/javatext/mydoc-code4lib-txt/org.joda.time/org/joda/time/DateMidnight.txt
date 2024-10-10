@@ -1,0 +1,73 @@
+[Class] org.joda.time.DateMidnight
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<ReadableInstant>, ReadableDateTime, ReadableInstant
+[Constructor Summary]
+DateMidnight()	Deprecated. 	Constructs an instance set to the current system millisecond time	 using ISOChronology in the default time zone.
+DateMidnight(Chronology chronology)	Deprecated. 	Constructs an instance set to the current system millisecond time	 using the specified chronology.
+DateMidnight(DateTimeZone zone)	Deprecated. 	Constructs an instance set to the current system millisecond time	 using ISOChronology in the specified time zone.
+DateMidnight(int year,	int monthOfYear,	int dayOfMonth)	Deprecated. 	Constructs an instance from datetime field values	 using ISOChronology in the default time zone.
+DateMidnight(int year,	int monthOfYear,	int dayOfMonth,	Chronology chronology)	Deprecated. 	Constructs an instance from datetime field values	 using the specified chronology.
+DateMidnight(int year,	int monthOfYear,	int dayOfMonth,	DateTimeZone zone)	Deprecated. 	Constructs an instance from datetime field values	 using ISOChronology in the specified time zone.
+DateMidnight(long instant)	Deprecated. 	Constructs an instance set to the milliseconds from 1970-01-01T00:00:00Z	 using ISOChronology in the default time zone.
+DateMidnight(long instant,	Chronology chronology)	Deprecated. 	Constructs an instance set to the milliseconds from 1970-01-01T00:00:00Z	 using the specified chronology.
+DateMidnight(long instant,	DateTimeZone zone)	Deprecated. 	Constructs an instance set to the milliseconds from 1970-01-01T00:00:00Z	 using ISOChronology in the specified time zone.
+DateMidnight(Object instant)	Deprecated. 	Constructs an instance from an Object that represents a datetime.
+DateMidnight(Object instant,	Chronology chronology)	Deprecated. 	Constructs an instance from an Object that represents a datetime,	 using the specified chronology.
+DateMidnight(Object instant,	DateTimeZone zone)	Deprecated. 	Constructs an instance from an Object that represents a datetime,	 forcing the time zone to that specified.
+[Method Summary]
+DateMidnight.Property centuryOfEra() Deprecated. Get the century of era property which provides access to advanced functionality.
+protected long checkInstant(long instant, Chronology chronology) Deprecated. Rounds the specified instant to midnight.
+DateMidnight.Property dayOfMonth() Deprecated. Get the day of month property which provides access to advanced functionality.
+DateMidnight.Property dayOfWeek() Deprecated. Get the day of week property which provides access to advanced functionality.
+DateMidnight.Property dayOfYear() Deprecated. Get the day of year property which provides access to advanced functionality.
+DateMidnight.Property era() Deprecated. Get the era property which provides access to advanced functionality.
+DateMidnight minus(long duration) Deprecated. Returns a copy of this date with the specified duration taken away.
+DateMidnight minus(ReadableDuration duration) Deprecated. Returns a copy of this date with the specified duration taken away.
+DateMidnight minus(ReadablePeriod period) Deprecated. Returns a copy of this date with the specified period taken away.
+DateMidnight minusDays(int days) Deprecated. Returns a copy of this date minus the specified number of days.
+DateMidnight minusMonths(int months) Deprecated. Returns a copy of this date minus the specified number of months.
+DateMidnight minusWeeks(int weeks) Deprecated. Returns a copy of this date minus the specified number of weeks.
+DateMidnight minusYears(int years) Deprecated. Returns a copy of this date minus the specified number of years.
+DateMidnight.Property monthOfYear() Deprecated. Get the month of year property which provides access to advanced functionality.
+static DateMidnight now() Deprecated. Obtains a DateMidnight set to the current system millisecond time using ISOChronology in the default time zone.
+static DateMidnight now(Chronology chronology) Deprecated. Obtains a DateMidnight set to the current system millisecond time using the specified chronology.
+static DateMidnight now(DateTimeZone zone) Deprecated. Obtains a DateMidnight set to the current system millisecond time using ISOChronology in the specified time zone.
+static DateMidnight parse(String str) Deprecated. Parses a DateMidnight from the specified string.
+static DateMidnight parse(String str, DateTimeFormatter formatter) Deprecated. Parses a DateMidnight from the specified string using a formatter.
+DateMidnight plus(long duration) Deprecated. Returns a copy of this date with the specified duration added.
+DateMidnight plus(ReadableDuration duration) Deprecated. Returns a copy of this date with the specified duration added.
+DateMidnight plus(ReadablePeriod period) Deprecated. Returns a copy of this date with the specified period added.
+DateMidnight plusDays(int days) Deprecated. Returns a copy of this date plus the specified number of days.
+DateMidnight plusMonths(int months) Deprecated. Returns a copy of this date plus the specified number of months.
+DateMidnight plusWeeks(int weeks) Deprecated. Returns a copy of this date plus the specified number of weeks.
+DateMidnight plusYears(int years) Deprecated. Returns a copy of this date plus the specified number of years.
+DateMidnight.Property property(DateTimeFieldType type) Deprecated. Gets the property object for the specified type, which contains many useful methods.
+Interval toInterval() Deprecated. Converts this object to an Interval encompassing the whole of this day.
+LocalDate toLocalDate() Deprecated. Converts this object to a LocalDate with the same date and chronology.
+YearMonthDay toYearMonthDay() Deprecated. Use LocalDate instead of YearMonthDay
+ DateMidnight.Property weekOfWeekyear() Deprecated. Get the week of a week based year property which provides access to advanced functionality.
+DateMidnight.Property weekyear() Deprecated. Get the year of a week based year property which provides access to advanced functionality.
+DateMidnight withCenturyOfEra(int centuryOfEra) Deprecated. Returns a copy of this date with the century of era field updated.
+DateMidnight withChronology(Chronology newChronology) Deprecated. Returns a copy of this date with a different chronology, potentially changing the day in unexpected ways.
+DateMidnight withDayOfMonth(int dayOfMonth) Deprecated. Returns a copy of this date with the day of month field updated.
+DateMidnight withDayOfWeek(int dayOfWeek) Deprecated. Returns a copy of this date with the day of week field updated.
+DateMidnight withDayOfYear(int dayOfYear) Deprecated. Returns a copy of this date with the day of year field updated.
+DateMidnight withDurationAdded(long durationToAdd, int scalar) Deprecated. Returns a copy of this date with the specified duration added.
+DateMidnight withDurationAdded(ReadableDuration durationToAdd, int scalar) Deprecated. Returns a copy of this date with the specified duration added.
+DateMidnight withEra(int era) Deprecated. Returns a copy of this date with the era field updated.
+DateMidnight withField(DateTimeFieldType fieldType, int value) Deprecated. Returns a copy of this date with the specified field set to a new value.
+DateMidnight withFieldAdded(DurationFieldType fieldType, int amount) Deprecated. Returns a copy of this date with the value of the specified field increased.
+DateMidnight withFields(ReadablePartial partial) Deprecated. Returns a copy of this date with the partial set of fields replacing those from this instance.
+DateMidnight withMillis(long newMillis) Deprecated. Returns a copy of this date with a different millisecond instant.
+DateMidnight withMonthOfYear(int monthOfYear) Deprecated. Returns a copy of this date with the month of year field updated.
+DateMidnight withPeriodAdded(ReadablePeriod period, int scalar) Deprecated. Returns a copy of this date with the specified period added.
+DateMidnight withWeekOfWeekyear(int weekOfWeekyear) Deprecated. Returns a copy of this date with the week of weekyear field updated.
+DateMidnight withWeekyear(int weekyear) Deprecated. Returns a copy of this date with the weekyear field updated.
+DateMidnight withYear(int year) Deprecated. Returns a copy of this date with the year field updated.
+DateMidnight withYearOfCentury(int yearOfCentury) Deprecated. Returns a copy of this date with the year of century field updated.
+DateMidnight withYearOfEra(int yearOfEra) Deprecated. Returns a copy of this date with the year of era field updated.
+DateMidnight withZoneRetainFields(DateTimeZone newZone) Deprecated. Returns a copy of this date with a different time zone, preserving the day The returned object will have a local time of midnight in the new zone on the same day as the original instant.
+DateMidnight.Property year() Deprecated. Get the year property which provides access to advanced functionality.
+DateMidnight.Property yearOfCentury() Deprecated. Get the year of century property which provides access to advanced functionality.
+DateMidnight.Property yearOfEra() Deprecated. Get the year of era property which provides access to advanced functionality.

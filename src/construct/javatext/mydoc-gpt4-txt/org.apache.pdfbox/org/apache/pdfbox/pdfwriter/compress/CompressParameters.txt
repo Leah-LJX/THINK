@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.pdfwriter.compress.CompressParameters
+[Type] Class
+[Info]
+public class CompressParameters extends Object An instance of this class centralizes and provides the configuration for a PDF compression.
+Author: Christian Appl
+[Constructor Summary]
+CompressParameters()	
+CompressParameters(int objectStreamSize)	Sets the number of objects, that can be contained in compressed object streams.
+[Field Summary]
+static CompressParameters DEFAULT_COMPRESSION	
+static int DEFAULT_OBJECT_STREAM_SIZE	
+static CompressParameters NO_COMPRESSION	
+[Method Summary]
+int getObjectStreamSize()	Returns the number of objects, that can be contained in compressed object streams.
+boolean isCompress()	Indicates whether the creation of compressed object streams is enabled or not.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

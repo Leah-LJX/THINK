@@ -1,0 +1,14 @@
+[Class] org.jfree.data.statistics.MeanAndStandardDeviation
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+MeanAndStandardDeviation(double mean, double standardDeviation)	Creates a new mean and standard deviation record.
+MeanAndStandardDeviation(Number mean, Number standardDeviation)	Creates a new mean and standard deviation record.
+[Method Summary]
+boolean equals(Object obj)	Tests this instance for equality with an arbitrary object.
+Number getMean()	Returns the mean.
+double getMeanValue()	Returns the mean as a double primitive.
+Number getStandardDeviation()	Returns the standard deviation.
+double getStandardDeviationValue()	Returns the standard deviation as a double primitive.
+String toString()	Returns a string representing this instance.

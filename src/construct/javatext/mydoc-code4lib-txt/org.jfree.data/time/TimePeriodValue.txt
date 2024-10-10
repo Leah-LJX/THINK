@@ -1,0 +1,15 @@
+[Class] org.jfree.data.time.TimePeriodValue
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+TimePeriodValue(TimePeriod period, double value)	Constructs a new data item.
+TimePeriodValue(TimePeriod period, Number value)	Constructs a new data item.
+[Method Summary]
+Object clone()	Clones the object.
+boolean equals(Object obj)	Tests this object for equality with the target object.
+TimePeriod getPeriod()	Returns the time period.
+Number getValue()	Returns the value.
+int hashCode()	Returns a hash code value for the object.
+void setValue(Number value)	Sets the value for this data item.
+String toString()	Returns a string representing this instance, primarily for use in debugging.

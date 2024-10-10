@@ -1,0 +1,27 @@
+[API Name] org.apache.pdfbox.pdmodel.common.PDNameTreeNode<T
+[Type] Class
+[Info]
+Type Parameters: T - The type of the values in this name tree.
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDDestinationNameTreeNode, PDEmbeddedFilesNameTreeNode, PDJavascriptNameTreeNode, PDStructureElementNameTreeNode
+public abstract class PDNameTreeNode<T extends COSObjectable> extends Object implements COSObjectable This class represents a node in a name tree.
+Author: Ben Litchfield
+[Constructor Summary]
+protected PDNameTreeNode()	Constructor.
+protected PDNameTreeNode(COSDictionary dict)	Constructor.
+[Method Summary]
+protected abstract T convertCOSToPD(COSBase base)	Method to convert the COS value in the name tree to the PD Model object.
+protected abstract PDNameTreeNode<T> createChildNode(COSDictionary dic)	Create a child node object.
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+List<PDNameTreeNode<T>> getKids()	Return the children of this node.
+String getLowerLimit()	Get the lowest value for a key in the name map.
+Map<String,T> getNames()	This will return a map of names on this level.
+PDNameTreeNode<T> getParent()	Returns the parent node.
+String getUpperLimit()	Get the highest value for a key in the name map.
+T getValue(String name)	The name to retrieve.
+boolean isRootNode()	Determines if this is a root node or not.
+void setKids(List<? extends PDNameTreeNode<T>> kids)	Set the children of this named tree.
+void setNames(Map<String,T> names)	Set the names for this node.
+void setParent(PDNameTreeNode<T> parentNode)	Sets the parent to the given node.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

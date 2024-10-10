@@ -1,0 +1,17 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.photometricinterpreters.floatingpoint.PaletteEntryForValue
+[Type] Class
+[Info]
+All Implemented Interfaces: PaletteEntry
+public class PaletteEntryForValue extends Object implements PaletteEntry Provides a palette entry for a color assignment to a single value. This class  will assign a color to a value only if it is an exact match for the input.  This class will also support Float.NaN
+[Constructor Summary]
+PaletteEntryForValue​(float value, Color color)	Constructs a palette entry for a single value.
+[Method Summary]
+boolean coversSingleEntry()	Indicates that the entry covers exactly one unique value (including, potentially, Float.NaN).
+int getARGB​(float f)	Gets the integer ARGB color assignment associated with the input value.
+Color getColor​(float f)	Gets the color assignment associated with the input value.
+float getLowerBound()	Gets the lower-bound value for the palette entry
+float getUpperBound()	Gets the upper-bound value for the palette entry
+boolean isCovered​(float f)	Indicates whether the indicated floating-point value is within the range covered by this palette entry and can be assigned a valid color by the implementation.
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

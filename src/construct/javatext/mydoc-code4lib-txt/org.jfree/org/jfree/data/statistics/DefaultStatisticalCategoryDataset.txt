@@ -1,0 +1,34 @@
+[Class] org.jfree.data.statistics.DefaultStatisticalCategoryDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, PublicCloneable, CategoryDataset, Dataset, KeyedValues2D, RangeInfo, StatisticalCategoryDataset, Values2D
+[Constructor Summary]
+DefaultStatisticalCategoryDataset()	Creates a new dataset.
+[Method Summary]
+void add(double mean, double standardDeviation, Comparable rowKey, Comparable columnKey)	Adds a mean and standard deviation to the table.
+void add(Number mean, Number standardDeviation, Comparable rowKey, Comparable columnKey)	Adds a mean and standard deviation to the table.
+void clear()	Clears all data from the dataset and sends a DatasetChangeEvent to all registered listeners.
+Object clone()	Returns a clone of this dataset.
+boolean equals(Object obj)	Tests this instance for equality with an arbitrary object.
+int getColumnCount()	Returns the number of columns in the table.
+int getColumnIndex(Comparable key)	Returns the column index for a given key.
+Comparable getColumnKey(int column)	Returns a column key.
+List getColumnKeys()	Returns the column keys.
+Number getMeanValue(int row, int column)	Returns the mean value for an item.
+Number getMeanValue(Comparable rowKey, Comparable columnKey)	Returns the mean value for an item.
+Range getRangeBounds(boolean includeInterval)	Returns the bounds of the values in this dataset's y-values.
+double getRangeLowerBound(boolean includeInterval)	Returns the minimum y-value in the dataset.
+double getRangeUpperBound(boolean includeInterval)	Returns the maximum y-value in the dataset.
+int getRowCount()	Returns the number of rows in the table.
+int getRowIndex(Comparable key)	Returns the row index for a given key.
+Comparable getRowKey(int row)	Returns a row key.
+List getRowKeys()	Returns the row keys.
+Number getStdDevValue(int row, int column)	Returns the standard deviation value for an item.
+Number getStdDevValue(Comparable rowKey, Comparable columnKey)	Returns the standard deviation value for an item.
+Number getValue(int row, int column)	Returns the value for an item (for this dataset, the mean value is returned).
+Number getValue(Comparable rowKey, Comparable columnKey)	Returns the value for an item (for this dataset, the mean value is returned).
+void remove(Comparable rowKey, Comparable columnKey)	Removes an item from the dataset and sends a DatasetChangeEvent to all registered listeners.
+void removeColumn(int columnIndex)	Removes a column from the dataset and sends a DatasetChangeEvent to all registered listeners.
+void removeColumn(Comparable columnKey)	Removes a column from the dataset and sends a DatasetChangeEvent to all registered listeners.
+void removeRow(int rowIndex)	Removes a row from the dataset and sends a DatasetChangeEvent to all registered listeners.
+void removeRow(Comparable rowKey)	Removes a row from the dataset and sends a DatasetChangeEvent to all registered listeners.

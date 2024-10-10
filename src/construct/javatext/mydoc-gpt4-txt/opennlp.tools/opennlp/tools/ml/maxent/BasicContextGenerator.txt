@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.ml.maxent.BasicContextGenerator
+[Type] Class
+[Info]
+All Implemented Interfaces: ContextGenerator<String>
+public class BasicContextGenerator extends Object implements ContextGenerator<String> A ContextGenerator implementation for maxent decisions, assuming that the input  given to the getContext(String) method is a String containing contextual  predicates separated by spaces, for instance:   cp_1 cp_2 ... cp_n
+[Constructor Summary]
+BasicContextGenerator()	
+BasicContextGenerator(String sep)	Initializes a BasicContextGenerator with a different separator char.
+[Method Summary]
+String[] getContext(String o)	Builds up the list of contextual predicates given an object.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

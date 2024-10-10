@@ -1,0 +1,23 @@
+[API Name] Package org.apache.commons.imaging.color.ColorHsv
+[Type] Class
+[Info]
+public final class ColorHsv extends Object Represents a color in the HSV color space.
+ Contains the constant values for black, white, red,  green, blue, cyan, magenta, and yellow.
+Since: 1.0-alpha1 See Also: https://en.wikipedia.org/wiki/HSL_and_HSV
+[Constructor Summary]
+ColorHsv​(double H, double S, double V)	
+[Field Summary]
+static ColorHsv BLACK	A constant for color black.
+static ColorHsv BLUE	A constant for color blue.
+static ColorHsv GREEN	A constant for color green.
+double H	
+static ColorHsv RED	A constant for color red.
+double S	
+double V	
+static ColorHsv WHITE	A constant for color white.
+[Method Summary]
+boolean equals​(Object o)	
+int hashCode()	
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

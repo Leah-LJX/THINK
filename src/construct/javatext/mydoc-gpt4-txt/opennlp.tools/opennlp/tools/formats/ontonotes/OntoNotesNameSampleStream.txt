@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.formats.ontonotes.OntoNotesNameSampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<NameSample>
+public class OntoNotesNameSampleStream extends FilterObjectStream<String,NameSample> Name Sample Stream parser for the OntoNotes 4.0 corpus.
+[Constructor Summary]
+OntoNotesNameSampleStream(ObjectStream<String> samples)	Initializes a OntoNotesNameSampleStream.
+[Method Summary]
+NameSample read()	Returns the next ObjectStream object.
+[Methods inherited from class opennlp.tools.util.FilterObjectStream]
+close, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

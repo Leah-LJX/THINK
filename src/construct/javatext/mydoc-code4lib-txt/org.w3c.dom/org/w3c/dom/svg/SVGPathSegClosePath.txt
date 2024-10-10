@@ -1,0 +1,7 @@
+[Class] org.w3c.dom.svg.SVGPathSegClosePath
+[Flag] Interface
+[Info]
+All Superinterfaces: SVGPathSeg
+[Constructor Summary]
+
+[Method Summary]

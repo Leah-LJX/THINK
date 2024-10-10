@@ -1,0 +1,13 @@
+[Class] org.jfree.data.flow.FlowDatasetUtils
+[Flag] Class
+[Info]
+Since: 1.5.3
+[Constructor Summary]
+
+[Method Summary]
+static <K extends Comparable<K>>double calculateInflow(FlowDataset<K> dataset, K node, int stage)	Returns the total inflow for the specified node (a destination node for the specified stage).
+static <K extends Comparable<K>>double calculateOutflow(FlowDataset<K> dataset, K source, int stage)	Returns the total outflow for the specified node (a source node for the specified stage).
+static <K extends Comparable<K>>double calculateTotalFlow(FlowDataset<K> dataset, int stage)	Returns the total flow from all sources to all destinations at the specified stage.
+static <K extends Comparable<K>>boolean hasFlowSelections(FlowDataset<K> dataset)	Returns true if any of the flows in the dataset have a property 'selected' with the value Boolean.TRUE, and false otherwise.
+static <K extends Comparable<K>>boolean hasNodeSelections(FlowDataset<K> dataset)	Returns true if any of the nodes in the dataset have a property 'selected' with the value Boolean.TRUE, and false otherwise.
+static <K extends Comparable<K>>int selectedNodeCount(FlowDataset<K> dataset)	Returns the number of selected nodes.

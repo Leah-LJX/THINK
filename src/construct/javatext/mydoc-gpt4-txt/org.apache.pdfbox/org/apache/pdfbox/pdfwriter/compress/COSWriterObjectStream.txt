@@ -1,0 +1,13 @@
+[API Name] org.apache.pdfbox.pdfwriter.compress.COSWriterObjectStream
+[Type] Class
+[Info]
+public class COSWriterObjectStream extends Object An instance of this class represents an object stream, that compresses a number of COSObjects in a stream. It  may be added to the top level container of a written PDF document in place of the compressed objects. The document's  PDFXRefStream must be adapted accordingly.
+Author: Christian Appl
+[Constructor Summary]
+COSWriterObjectStream(COSWriterCompressionPool compressionPool)	Creates an object stream for compressible objects from the given COSWriterCompressionPool.
+[Method Summary]
+List<COSObjectKey> getPreparedKeys()	Returns all COSObjectKeys, that shall be added to the object stream, when writeObjectsToStream(COSStream) is called.
+void prepareStreamObject(COSObjectKey key, COSBase object)	Prepares the given COSObject to be written to this object stream, using the given COSObjectKey as it's ID for indirect references.
+COSStream writeObjectsToStream(COSStream stream)	Writes all prepared COSObjects to the given COSStream.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,38 @@
+[API Name] org.apache.pdfbox.cos.COSStream
+[Type] Class
+[Info]
+All Implemented Interfaces: Closeable, AutoCloseable, COSUpdateInfo, COSObjectable
+public class COSStream extends COSDictionary implements Closeable This class represents a stream object in a PDF document.
+Author: Ben Litchfield
+[Constructor Summary]
+COSStream()	Creates a new stream with an empty dictionary.
+COSStream(org.apache.pdfbox.io.RandomAccessStreamCache streamCache)	Creates a new stream with an empty dictionary.
+COSStream(org.apache.pdfbox.io.RandomAccessStreamCache streamCache, org.apache.pdfbox.io.RandomAccessReadView randomAccessReadView)	Creates a new stream with an empty dictionary.
+[Field Summary]
+COSStream()	Creates a new stream with an empty dictionary.
+COSStream(org.apache.pdfbox.io.RandomAccessStreamCache streamCache)	Creates a new stream with an empty dictionary.
+COSStream(org.apache.pdfbox.io.RandomAccessStreamCache streamCache, org.apache.pdfbox.io.RandomAccessReadView randomAccessReadView)	Creates a new stream with an empty dictionary.
+[Method Summary]
+void accept(ICOSVisitor visitor)	visitor pattern double dispatch method.
+void close()	Called by PDFBox when the PDDocument is closed, this closes the stream and removes the data.
+COSInputStream createInputStream()	Returns a new InputStream which reads the decoded stream data.
+COSInputStream createInputStream(DecodeOptions options)	
+OutputStream createOutputStream()	Returns a new OutputStream for writing stream data, using the current filters.
+OutputStream createOutputStream(COSBase filters)	Returns a new OutputStream for writing stream data, using and the given filters.
+InputStream createRawInputStream()	Returns a new InputStream which reads the encoded PDF stream data.
+OutputStream createRawOutputStream()	Returns a new OutputStream for writing encoded PDF data.
+org.apache.pdfbox.io.RandomAccessRead createView()	Returns a new RandomAccessRead which reads the decoded stream data.
+COSBase getFilters()	This will return the filters to apply to the byte stream.
+long getLength()	Returns the length of the encoded stream.
+boolean hasData()	Indicates whether the stream contains any data or not.
+String toTextString()	Returns the contents of the stream as a PDF "text string".
+[Methods inherited from class org.apache.pdfbox.cos.COSDictionary]
+addAll, asUnmodifiableDictionary, clear, containsKey, containsKey, containsValue, entrySet, forEach, getBoolean, getBoolean, getBoolean, getCOSArray, getCOSDictionary, getCOSDictionary, getCOSName, getCOSName, getCOSObject, getCOSStream, getDate, getDate, getDate, getDate, getDictionaryObject, getDictionaryObject, getDictionaryObject, getEmbeddedDate, getEmbeddedDate, getEmbeddedInt, getEmbeddedInt, getEmbeddedString, getEmbeddedString, getFlag, getFloat, getFloat, getFloat, getFloat, getIndirectObjectKeys, getInt, getInt, getInt, getInt, getInt, getInt, getItem, getItem, getItem, getKeyForValue, getLong, getLong, getLong, getLong, getNameAsString, getNameAsString, getNameAsString, getNameAsString, getObjectFromPath, getString, getString, getString, getString, getUpdateState, getValues, keySet, removeItem, setBoolean, setBoolean, setDate, setDate, setEmbeddedDate, setEmbeddedInt, setEmbeddedString, setFlag, setFloat, setFloat, setInt, setInt, setItem, setItem, setItem, setItem, setLong, setLong, setName, setName, setString, setString, size, toString
+[Methods inherited from class org.apache.pdfbox.cos.COSBase]
+getCOSObject, getKey, isDirect, setDirect, setKey
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait
+[Methods inherited from interface org.apache.pdfbox.cos.COSUpdateInfo]
+isNeedToBeUpdated, setNeedToBeUpdated, toIncrement
+[Methods inherited from interface org.apache.pdfbox.pdmodel.common.COSObjectable]
+getCOSObject

@@ -1,0 +1,15 @@
+[API Name] org.apache.pdfbox.contentstream.operator.Operator
+[Type] Class
+[Info]
+public final class Operator extends Object An Operator in a PDF content stream.
+Author: Ben Litchfield
+[Method Summary]
+byte[] getImageData()	This is the special case for the ID operator where there are just random bytes inlined the stream.
+COSDictionary getImageParameters()	This will get the image parameters, this is only valid for BI operators.
+String getName()	This will get the name of the operator.
+static Operator getOperator(String operator)	This is used to create/cache operators in the system.
+void setImageData(byte[] imageDataArray)	This will set the image data, this is only used for the ID operator.
+void setImageParameters(COSDictionary params)	This will set the image parameters, this is only valid for BI operators.
+String toString()	This will print a string rep of this class.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

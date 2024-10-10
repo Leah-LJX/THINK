@@ -1,0 +1,9 @@
+[Class] org.w3c.dom.svg.SVGAnimatedPoints
+[Flag] Interface
+[Info]
+All Known Subinterfaces: SVGPolygonElement, SVGPolylineElement
+[Constructor Summary]
+
+[Method Summary]
+SVGPointList getAnimatedPoints()	 
+ SVGPointList getPoints()

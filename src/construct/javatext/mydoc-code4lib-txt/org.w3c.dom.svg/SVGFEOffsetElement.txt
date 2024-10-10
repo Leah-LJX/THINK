@@ -1,0 +1,10 @@
+[Class] org.w3c.dom.svg.SVGFEOffsetElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGFilterPrimitiveStandardAttributes, SVGStylable
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedNumber getDx()	 
+ SVGAnimatedNumber getDy()	 
+ SVGAnimatedString getIn1()

@@ -1,0 +1,14 @@
+[Class] org.w3c.dom.DOMError
+[Flag] Interface
+[Info]
+Since:
+DOM Level 3
+[Constructor Summary]
+
+[Method Summary]
+DOMLocator getLocation() The location of the error.
+String getMessage() An implementation specific string describing the error that occurred.
+Object getRelatedData() The related DOMError.type dependent data if any.
+Object getRelatedException() The related platform dependent exception if any.
+short getSeverity() The severity of the error, either SEVERITY_WARNING, SEVERITY_ERROR, or SEVERITY_FATAL_ERROR.
+String getType() A DOMString indicating which related data is expected in relatedData.

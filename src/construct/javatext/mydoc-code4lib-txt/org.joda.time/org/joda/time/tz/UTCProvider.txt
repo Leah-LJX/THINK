@@ -1,0 +1,9 @@
+[Class] org.joda.time.tz.UTCProvider
+[Flag] Class
+[Info]
+All Implemented Interfaces: Provider
+[Constructor Summary]
+UTCProvider()	Constructor.
+[Method Summary]
+Set<String> getAvailableIDs() Returns a singleton collection containing only "UTC".
+DateTimeZone getZone(String id) Returns UTC for "UTC", null otherwise.

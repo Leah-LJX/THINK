@@ -1,0 +1,14 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.iptc.IptcRecord
+[Type] Class
+[Info]
+public class IptcRecord extends Object
+[Constructor Summary]
+IptcRecord​(IptcType iptcType, String value)	
+[Field Summary]
+static Comparator<IptcRecord> COMPARATOR	
+IptcType iptcType	
+[Method Summary]
+String getIptcTypeName()	
+String getValue()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

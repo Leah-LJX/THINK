@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.formats.DetokenizerSampleStreamFactory<T,P>
+[Type] Class
+[Info]
+All Implemented Interfaces: opennlp.tools.cmdline.ObjectStreamFactory<T,P>
+Direct Known Subclasses: ADTokenSampleStreamFactory, ConllXSentenceSampleStreamFactory, ConllXTokenSampleStreamFactory, IrishSentenceBankTokenSampleStreamFactory, NameToSentenceSampleStreamFactory, NameToTokenSampleStreamFactory, ParseToSentenceSampleStreamFactory, ParseToTokenSampleStreamFactory, POSToSentenceSampleStreamFactory, POSToTokenSampleStreamFactory
+public abstract class DetokenizerSampleStreamFactory<T,P> extends AbstractSampleStreamFactory<T,P> Base class for factories which need a Detokenizer.
+[Methods inherited from class opennlp.tools.formats.AbstractSampleStreamFactory]
+getLang, getParameters
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface opennlp.tools.cmdline.ObjectStreamFactory]
+create

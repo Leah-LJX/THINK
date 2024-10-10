@@ -1,0 +1,15 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.annotation.PDAppearanceStream
+[Type] Class
+[Info]
+All Implemented Interfaces: PDContentStream, COSObjectable
+public class PDAppearanceStream extends PDFormXObject An appearance stream is a form XObject, a self-contained content stream that shall be rendered inside the annotation  rectangle.
+Author: Ben Litchfield, John Hewson
+[Constructor Summary]
+PDAppearanceStream(COSStream stream)	Creates a Form XObject for reading.
+PDAppearanceStream(PDDocument document)	Creates a Form Image XObject for writing, in the given document.
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.form.PDFormXObject]
+getBBox, getContents, getContentsForRandomAccess, getContentStream, getFormType, getGroup, getMatrix, getOptionalContent, getResources, getStructParents, setBBox, setFormType, setMatrix, setOptionalContent, setResources, setStructParents
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.PDXObject]
+createXObject, getCOSObject, getStream
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

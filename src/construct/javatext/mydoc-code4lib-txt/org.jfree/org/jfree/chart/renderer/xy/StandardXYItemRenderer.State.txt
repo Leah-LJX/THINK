@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.xy.StandardXYItemRenderer.State
+[Flag] Class
+[Info]
+Enclosing class: StandardXYItemRenderer
+[Constructor Summary]
+State(PlotRenderingInfo info) Creates a new state instance.
+[Method Summary]
+int getSeriesIndex() Returns the series index for the current path.

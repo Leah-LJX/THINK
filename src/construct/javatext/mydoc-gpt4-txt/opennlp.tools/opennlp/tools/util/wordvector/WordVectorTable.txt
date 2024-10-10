@@ -1,0 +1,10 @@
+[API Name] opennlp.tools.util.wordvector.WordVectorTable
+[Type] Interface
+[Info]
+@Experimental public interface WordVectorTable A table that maps tokens to word vectors.
+   Warning: Experimental new feature, see OPENNLP-1144 for details, the API might be changed anytime.
+[Method Summary]
+int dimension()	
+WordVector get(String token)	
+int size()	
+Iterator<String> tokens()	

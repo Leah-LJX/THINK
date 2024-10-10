@@ -1,0 +1,23 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.documentnavigation.destination.PDPageFitHeightDestination
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable, PDDestinationOrAction
+public class PDPageFitHeightDestination extends PDPageDestination This represents a destination to a page at a x location and the height is magnified  to just fit on the screen.
+Author: Ben Litchfield
+[Constructor Summary]
+PDPageFitHeightDestination()	Default constructor.
+PDPageFitHeightDestination(COSArray arr)	Constructor from an existing destination array.
+[Field Summary]
+protected static String TYPE	The type of this destination.
+protected static String TYPE_BOUNDED	The type of this destination.
+[Method Summary]
+boolean fitBoundingBox()	A flag indicating if this page destination should just fit bounding box of the PDF.
+int getLeft()	Get the left x coordinate.
+void setFitBoundingBox(boolean fitBoundingBox)	Set if this page destination should just fit the bounding box.
+void setLeft(int x)	Set the left x-coordinate, a value of -1 implies that the current x-coordinate will be used.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.documentnavigation.destination.PDPageDestination]
+getCOSObject, getPage, getPageNumber, retrievePageNumber, setPage, setPageNumber
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.documentnavigation.destination.PDDestination]
+create
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

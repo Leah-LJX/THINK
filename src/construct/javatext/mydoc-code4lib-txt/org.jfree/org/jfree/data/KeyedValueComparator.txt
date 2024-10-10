@@ -1,0 +1,10 @@
+[Class] org.jfree.data.KeyedValueComparator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparator
+[Constructor Summary]
+KeyedValueComparator(KeyedValueComparatorType type, SortOrder order)	Creates a new comparator.
+[Method Summary]
+int compare(Object o1, Object o2)	Compares two KeyedValue instances and returns an int that indicates the relative order of the two objects.
+SortOrder getOrder()	Returns the sort order.
+KeyedValueComparatorType getType()	Returns the type.

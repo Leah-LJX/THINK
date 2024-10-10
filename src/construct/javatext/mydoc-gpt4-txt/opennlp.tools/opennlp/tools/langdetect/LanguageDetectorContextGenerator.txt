@@ -1,0 +1,8 @@
+[API Name] opennlp.tools.langdetect.LanguageDetectorContextGenerator
+[Type] Interface
+[Info]
+All Superinterfaces: Serializable
+All Known Implementing Classes: DefaultLanguageDetectorContextGenerator
+public interface LanguageDetectorContextGenerator extends Serializable A context generator interface for LanguageDetector.
+[Method Summary]
+<T extends CharSequence>T[] getContext(CharSequence document)	Retrieves the contexts for a document using character ngrams.

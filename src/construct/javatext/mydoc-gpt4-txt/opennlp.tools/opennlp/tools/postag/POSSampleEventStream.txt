@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.postag.POSSampleEventStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<Event>
+public class POSSampleEventStream extends AbstractEventStream<POSSample> Reads the samples from an Iterator  and converts those samples into events which  can be used by the maxent library for training.
+[Constructor Summary]
+POSSampleEventStream(ObjectStream<POSSample> samples)	Initializes the current instance with given samples and a DefaultPOSContextGenerator.
+POSSampleEventStream(ObjectStream<POSSample> samples, POSContextGenerator cg)	Initializes the current instance with the given samples and a POSContextGenerator.
+[Method Summary]
+static List<Event> generateEvents(String[] sentence, String[] tags, Object[] additionalContext, POSContextGenerator cg)	
+static List<Event> generateEvents(String[] sentence, String[] tags, POSContextGenerator cg)	
+[Methods inherited from class opennlp.tools.util.AbstractEventStream]
+close, read, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

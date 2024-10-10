@@ -1,0 +1,8 @@
+[Class] org.w3c.dom.svg.SVGFEFloodElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGFilterPrimitiveStandardAttributes, SVGStylable
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedString getIn1()

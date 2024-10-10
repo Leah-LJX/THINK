@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.util.HMSNumberFormat
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+HMSNumberFormat() Creates a new instance.
+[Method Summary]
+StringBuffer format(double number, StringBuffer toAppendTo, FieldPosition pos) Formats the specified number as a string of the form HH:MM:SS.

@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.lemmatizer.LemmaSampleSequenceStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, SequenceStream<LemmaSample>, ObjectStream<Sequence<LemmaSample>>
+public class LemmaSampleSequenceStream extends Object implements SequenceStream<LemmaSample> A SequenceStream implementation encapsulating samples.
+[Constructor Summary]
+LemmaSampleSequenceStream(ObjectStream<LemmaSample> samples, LemmatizerContextGenerator contextGenerator)	
+[Method Summary]
+void close()	Closes the ObjectStream and releases all allocated resources.
+Sequence<LemmaSample> read()	Returns the next ObjectStream object.
+void reset()	Repositions the stream at the beginning and the previously seen object sequence will be repeated exactly.
+Event[] updateContext(Sequence<LemmaSample> sequence, AbstractModel model)	Creates a new event array based on the outcomes predicted by the specified parameters for the specified Sequence.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,9 @@
+[Class] org.joda.time.tz.Provider
+[Flag] Interface
+[Info]
+All Known Implementing Classes: UTCProvider, ZoneInfoProvider
+[Constructor Summary]
+
+[Method Summary]
+Set<String> getAvailableIDs() Returns an unmodifiable set of ids.
+DateTimeZone getZone(String id) Retrieves a DateTimeZone for the given id.

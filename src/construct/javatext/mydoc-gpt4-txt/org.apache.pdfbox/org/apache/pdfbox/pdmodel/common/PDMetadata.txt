@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.pdmodel.common.PDMetadata
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDMetadata extends PDStream This class represents metadata for various objects in a PDF document.
+Author: Ben Litchfield
+[Constructor Summary]
+PDMetadata(COSStream str)	Constructor.
+PDMetadata(PDDocument document)	This will create a new PDMetadata object.
+PDMetadata(PDDocument doc, InputStream str)	Constructor.
+[Method Summary]
+InputStream exportXMPMetadata()	Extract the XMP metadata.
+void importXMPMetadata(byte[] xmp)	Import an XMP stream into the PDF document.
+[Methods inherited from class org.apache.pdfbox.pdmodel.common.PDStream]
+createInputStream, createInputStream, createInputStream, createOutputStream, createOutputStream, getCOSObject, getDecodedStreamLength, getDecodeParms, getFile, getFileDecodeParams, getFileFilters, getFilters, getLength, getMetadata, setDecodedStreamLength, setDecodeParms, setFile, setFileDecodeParams, setFileFilters, setFilters, setMetadata, toByteArray
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

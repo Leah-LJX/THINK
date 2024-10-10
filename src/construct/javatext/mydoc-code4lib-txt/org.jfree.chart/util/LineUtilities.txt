@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.util.LineUtilities
+[Flag] Class
+[Info]
+Since: 1.0.12
+[Constructor Summary]
+LineUtilities()
+[Method Summary]
+static boolean clipLine(Line2D line, Rectangle2D rect) Clips the specified line to the given rectangle.

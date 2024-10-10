@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.CombinedRangeCategoryPlot
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, AnnotationChangeListener, AxisChangeListener, MarkerChangeListener, PlotChangeListener, RendererChangeListener, LegendItemSource, Pannable, ValueAxisPlot, Zoomable, DatasetChangeListener, org.jfree.util.PublicCloneable
+[Constructor Summary]
+CombinedRangeCategoryPlot() Default constructor.
+[Method Summary]
+void add(CategoryPlot subplot) Adds a subplot (with a default 'weight' of 1) and sends a PlotChangeEvent to all registered listeners.

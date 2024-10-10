@@ -1,0 +1,19 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.segments.Segment
+[Type] Class
+[Info]
+Direct Known Subclasses: DhtSegment, DqtSegment, GenericSegment, JfifSegment, SofnSegment, SosSegment
+public abstract class Segment extends BinaryFileParser
+[Constructor Summary]
+Segment​(int marker, int length)	
+[Field Summary]
+int length	
+int marker	
+[Method Summary]
+void dump​(PrintWriter pw)	
+abstract String getDescription()	
+String getSegmentType()	
+String toString()	
+[Methods inherited from class org.apache.commons.imaging.common.BinaryFileParser]
+debugNumber, debugNumber, getByteOrder, setByteOrder
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

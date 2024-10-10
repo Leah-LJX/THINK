@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.formats.frenchtreebank.ConstitParseSampleStreamFactory
+[Type] Class
+[Info]
+All Implemented Interfaces: opennlp.tools.cmdline.ObjectStreamFactory<Parse,opennlp.tools.formats.frenchtreebank.ConstitParseSampleStreamFactory.Parameters>
+@Internal public class ConstitParseSampleStreamFactory extends AbstractSampleStreamFactory<Parse,opennlp.tools.formats.frenchtreebank.ConstitParseSampleStreamFactory.Parameters> Note:  Do not use this class, internal use only!
+See Also:
+ConstitParseSampleStream
+[Method Summary]
+ObjectStream<Parse> create(String[] args)	Creates an ObjectStream of the template type T.
+static void registerFactory()	
+[Methods inherited from class opennlp.tools.formats.AbstractSampleStreamFactory]
+getLang, getParameters
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

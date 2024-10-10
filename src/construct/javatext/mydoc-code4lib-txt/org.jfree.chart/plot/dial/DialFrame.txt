@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.plot.dial.DialFrame
+[Flag] Interface
+[Info]
+All Superinterfaces: DialLayer
+All Known Implementing Classes: ArcDialFrame, StandardDialFrame
+[Constructor Summary]
+
+[Method Summary]
+Shape getWindow(Rectangle2D frame) Returns the shape of the viewing window for the dial, or null if the dial is completely open.

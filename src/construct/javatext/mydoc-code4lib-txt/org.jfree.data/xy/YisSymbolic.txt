@@ -1,0 +1,10 @@
+[Class] org.jfree.data.xy.YisSymbolic
+[Flag] Interface
+[Info]
+Returns: The symbolic values.
+[Constructor Summary]
+
+[Method Summary]
+String getYSymbolicValue(int series, int item)	Returns the symbolic value of the data set specified by series and item parameters.
+String getYSymbolicValue(Integer val)	Returns the symbolic value linked with the specified Integer.
+String[] getYSymbolicValues()	Returns the list of symbolic values.

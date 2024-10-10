@@ -1,0 +1,38 @@
+[API Name] org.apache.pdfbox.pdmodel.encryption.SecurityHandler<T_POLICY
+[Type] Class
+[Info]
+Type Parameters: T_POLICY - the protection policy.
+Direct Known Subclasses: PublicKeySecurityHandler, StandardSecurityHandler
+public abstract class SecurityHandler<T_POLICY extends ProtectionPolicy> extends Object A security handler as described in the PDF specifications.  A security handler is responsible of documents protection.
+Author: Ben Litchfield, Benoit Guillon, Manuel Kasper
+[Constructor Summary]
+protected SecurityHandler()	Constructor.
+protected SecurityHandler(T_POLICY protectionPolicy)	Constructor used for encryption.
+[Method Summary]
+protected int computeVersionNumber()	Computes the version number of the SecurityHandler based on the encryption key length.
+void decrypt(COSBase obj, long objNum, long genNum)	This will dispatch to the correct method.
+void decryptStream(COSStream stream, long objNum, long genNum)	This will decrypt a stream.
+protected void encryptDataRC4(byte[] finalKey, byte[] input, OutputStream output)	Encrypt or decrypt data with RC4.
+protected void encryptDataRC4(byte[] finalKey, InputStream input, OutputStream output)	Encrypt or decrypt data with RC4.
+void encryptStream(COSStream stream, long objNum, int genNum)	This will encrypt a stream, but not the dictionary as the dictionary is encrypted by visitFromString() in COSWriter and we don't want to encrypt it twice.
+void encryptString(COSString string, long objNum, int genNum)	This will encrypt a string.
+AccessPermission getCurrentAccessPermission()	Returns the access permissions that were computed during document decryption.
+byte[] getEncryptionKey()	Returns the current encryption key data.
+int getKeyLength()	Getter of the property keyLength.
+protected T_POLICY getProtectionPolicy()	Returns the set ProtectionPolicy or null.
+boolean hasProtectionPolicy()	Returns whether a protection policy has been set.
+boolean isAES()	True if AES is used for encryption and decryption.
+boolean isDecryptMetadata()	Returns true if meta data is to be decrypted.
+abstract void prepareDocumentForEncryption(PDDocument doc)	Prepare the document for encryption.
+abstract void prepareForDecryption(PDEncryption encryption, COSArray documentIDArray, DecryptionMaterial decryptionMaterial)	Prepares everything to decrypt the document.
+void setAES(boolean aesValue)	Set to true if AES for encryption and decryption should be used.
+void setCurrentAccessPermission(AccessPermission currentAccessPermission)	Sets the access permissions.
+void setCustomSecureRandom(SecureRandom customSecureRandom)	Set the custom SecureRandom.
+protected void setDecryptMetadata(boolean decryptMetadata)	Set whether to decrypt meta data.
+void setEncryptionKey(byte[] encryptionKey)	Sets the current encryption key data.
+void setKeyLength(int keyLen)	Setter of the property keyLength.
+protected void setProtectionPolicy(T_POLICY protectionPolicy)	Sets the ProtectionPolicy to the given value.
+protected void setStreamFilterName(COSName streamFilterName)	Set the stream filter name.
+protected void setStringFilterName(COSName stringFilterName)	Set the string filter name.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

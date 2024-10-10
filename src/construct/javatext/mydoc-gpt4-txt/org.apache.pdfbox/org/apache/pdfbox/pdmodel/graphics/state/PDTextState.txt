@@ -1,0 +1,30 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.state.PDTextState
+[Type] Class
+[Info]
+All Implemented Interfaces: Cloneable
+public class PDTextState extends Object implements Cloneable This class will hold the current state of the text parameters when executing a  content stream.
+Author: Ben Litchfield
+[Constructor Summary]
+PDTextState()	
+[Method Summary]
+PDTextState clone()	
+float getCharacterSpacing()	Get the value of the characterSpacing.
+PDFont getFont()	Get the value of the font.
+float getFontSize()	Get the value of the fontSize.
+float getHorizontalScaling()	Get the value of the horizontalScaling.
+boolean getKnockoutFlag()	Get the value of the knockout.
+float getLeading()	Get the value of the leading.
+RenderingMode getRenderingMode()	Get the value of the renderingMode.
+float getRise()	Get the value of the rise.
+float getWordSpacing()	Get the value of the wordSpacing.
+void setCharacterSpacing(float value)	Set the value of the characterSpacing.
+void setFont(PDFont value)	Set the value of the font.
+void setFontSize(float value)	Set the value of the fontSize.
+void setHorizontalScaling(float value)	Set the value of the horizontalScaling.
+void setKnockoutFlag(boolean value)	Set the value of the knockout.
+void setLeading(float value)	Set the value of the leading.
+void setRenderingMode(RenderingMode renderingMode)	Set the value of the renderingMode.
+void setRise(float value)	Set the value of the rise.
+void setWordSpacing(float value)	Set the value of the wordSpacing.
+[Methods inherited from class java.lang.Object]
+equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

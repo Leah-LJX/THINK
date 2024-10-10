@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.labels.StandardXYToolTipGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, XYToolTipGenerator, org.jfree.util.PublicCloneable
+Direct Known Subclasses: BoxAndWhiskerXYToolTipGenerator, StandardXYZToolTipGenerator
+[Constructor Summary]
+StandardXYToolTipGenerator() Creates a tool tip generator using default number formatters.
+[Method Summary]
+Object clone() Returns an independent copy of the generator.

@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.action.PDPageAdditionalActions
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDPageAdditionalActions extends Object implements COSObjectable This class represents a page object's dictionary of actions  that occur due to events.
+Author: Ben Litchfield, Panagiotis Toumasis
+[Constructor Summary]
+PDPageAdditionalActions()	Default constructor.
+PDPageAdditionalActions(COSDictionary a)	Constructor.
+[Method Summary]
+PDAction getC()	This will get an action to be performed when the page is closed.
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+PDAction getO()	This will get an action to be performed when the page is opened.
+void setC(PDAction c)	This will set an action to be performed when the page is closed.
+void setO(PDAction o)	This will set an action to be performed when the page is opened.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

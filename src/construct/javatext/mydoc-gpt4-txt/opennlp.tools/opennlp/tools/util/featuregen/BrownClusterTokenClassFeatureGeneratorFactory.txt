@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.util.featuregen.BrownClusterTokenClassFeatureGeneratorFactory
+[Type] Class
+[Info]
+public class BrownClusterTokenClassFeatureGeneratorFactory extends GeneratorFactory.AbstractXmlFeatureGeneratorFactory Generates Brown clustering features for token classes.
+[Constructor Summary]
+BrownClusterTokenClassFeatureGeneratorFactory()	
+[Method Summary]
+AdaptiveFeatureGenerator create()	
+Map<String,ArtifactSerializer<?>> getArtifactSerializerMapping()	
+[Methods inherited from class opennlp.tools.util.featuregen.GeneratorFactory.AbstractXmlFeatureGeneratorFactory]
+getBool, getBool, getDouble, getDouble, getFloat, getFloat, getInt, getInt, getLong, getLong, getStr, getStr
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

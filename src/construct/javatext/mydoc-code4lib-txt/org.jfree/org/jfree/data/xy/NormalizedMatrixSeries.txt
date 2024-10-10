@@ -1,0 +1,12 @@
+[Class] org.jfree.data.xy.NormalizedMatrixSeries
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+NormalizedMatrixSeries(String name, int rows, int columns)	Constructor for NormalizedMatrixSeries.
+[Method Summary]
+Number getItem(int itemIndex)	Returns an item.
+double getScaleFactor()	Returns the factor that multiplies each item in this series when observed using getItem mehtod.
+void setScaleFactor(double factor)	Sets the factor that multiplies each item in this series when observed using getItem mehtod.
+void update(int i, int j, double mij)	Updates the value of the specified item in this matrix series.
+void zeroAll()	Sets all matrix values to zero and sends a SeriesChangeEvent to all registered listeners.

@@ -1,0 +1,73 @@
+[Class] org.joda.time.format.DateTimeFormatterBuilder
+[Flag] Class
+[Info]
+Since: 1.0
+See Also: DateTimeFormat, 
+ISODateTimeFormat
+[Constructor Summary]
+DateTimeFormatterBuilder()	Creates a DateTimeFormatterBuilder.
+[Method Summary]
+DateTimeFormatterBuilder append(DateTimeFormatter formatter) Appends another formatter.
+DateTimeFormatterBuilder append(DateTimeParser parser) Appends just a parser.
+DateTimeFormatterBuilder append(DateTimePrinter printer) Appends just a printer.
+DateTimeFormatterBuilder append(DateTimePrinter printer, DateTimeParser parser) Appends a printer/parser pair.
+DateTimeFormatterBuilder append(DateTimePrinter printer, DateTimeParser[] parsers) Appends a printer and a set of matching parsers.
+DateTimeFormatterBuilder appendCenturyOfEra(int minDigits, int maxDigits) Instructs the printer to emit a numeric century of era field.
+DateTimeFormatterBuilder appendClockhourOfDay(int minDigits) Instructs the printer to emit a numeric clockhourOfDay field.
+DateTimeFormatterBuilder appendClockhourOfHalfday(int minDigits) Instructs the printer to emit a numeric clockhourOfHalfday field.
+DateTimeFormatterBuilder appendDayOfMonth(int minDigits) Instructs the printer to emit a numeric dayOfMonth field.
+DateTimeFormatterBuilder appendDayOfWeek(int minDigits) Instructs the printer to emit a numeric dayOfWeek field.
+DateTimeFormatterBuilder appendDayOfWeekShortText() Instructs the printer to emit a short locale-specific dayOfWeek text.
+DateTimeFormatterBuilder appendDayOfWeekText() Instructs the printer to emit a locale-specific dayOfWeek text.
+DateTimeFormatterBuilder appendDayOfYear(int minDigits) Instructs the printer to emit a numeric dayOfYear field.
+DateTimeFormatterBuilder appendDecimal(DateTimeFieldType fieldType, int minDigits, int maxDigits) Instructs the printer to emit a field value as a decimal number, and the parser to expect an unsigned decimal number.
+DateTimeFormatterBuilder appendEraText() Instructs the printer to emit a locale-specific era text (BC/AD), and the parser to expect it.
+DateTimeFormatterBuilder appendFixedDecimal(DateTimeFieldType fieldType, int numDigits) Instructs the printer to emit a field value as a fixed-width decimal number (smaller numbers will be left-padded with zeros), and the parser to expect an unsigned decimal number with the same fixed width.
+DateTimeFormatterBuilder appendFixedSignedDecimal(DateTimeFieldType fieldType, int numDigits) Instructs the printer to emit a field value as a fixed-width decimal number (smaller numbers will be left-padded with zeros), and the parser to expect an signed decimal number with the same fixed width.
+DateTimeFormatterBuilder appendFraction(DateTimeFieldType fieldType, int minDigits, int maxDigits) Instructs the printer to emit a remainder of time as a decimal fraction, without decimal point.
+DateTimeFormatterBuilder appendFractionOfDay(int minDigits, int maxDigits) Appends the print/parse of a fractional day.
+DateTimeFormatterBuilder appendFractionOfHour(int minDigits, int maxDigits) Appends the print/parse of a fractional hour.
+DateTimeFormatterBuilder appendFractionOfMinute(int minDigits, int maxDigits) Appends the print/parse of a fractional minute.
+DateTimeFormatterBuilder appendFractionOfSecond(int minDigits, int maxDigits) Appends the print/parse of a fractional second.
+DateTimeFormatterBuilder appendHalfdayOfDayText() Instructs the printer to emit a locale-specific AM/PM text, and the parser to expect it.
+DateTimeFormatterBuilder appendHourOfDay(int minDigits) Instructs the printer to emit a numeric hourOfDay field.
+DateTimeFormatterBuilder appendHourOfHalfday(int minDigits) Instructs the printer to emit a numeric hourOfHalfday field.
+DateTimeFormatterBuilder appendLiteral(char c) Instructs the printer to emit a specific character, and the parser to expect it.
+DateTimeFormatterBuilder appendLiteral(String text) Instructs the printer to emit specific text, and the parser to expect it.
+DateTimeFormatterBuilder appendMillisOfDay(int minDigits) Instructs the printer to emit a numeric millisOfDay field.
+DateTimeFormatterBuilder appendMillisOfSecond(int minDigits) Instructs the printer to emit a numeric millisOfSecond field.
+DateTimeFormatterBuilder appendMinuteOfDay(int minDigits) Instructs the printer to emit a numeric minuteOfDay field.
+DateTimeFormatterBuilder appendMinuteOfHour(int minDigits) Instructs the printer to emit a numeric minuteOfHour field.
+DateTimeFormatterBuilder appendMonthOfYear(int minDigits) Instructs the printer to emit a numeric monthOfYear field.
+DateTimeFormatterBuilder appendMonthOfYearShortText() Instructs the printer to emit a locale-specific monthOfYear text.
+DateTimeFormatterBuilder appendMonthOfYearText() Instructs the printer to emit a short locale-specific monthOfYear text.
+DateTimeFormatterBuilder appendOptional(DateTimeParser parser) Appends just a parser element which is optional.
+DateTimeFormatterBuilder appendPattern(String pattern) Calls upon DateTimeFormat to parse the pattern and append the results into this builder.
+DateTimeFormatterBuilder appendSecondOfDay(int minDigits) Instructs the printer to emit a numeric secondOfDay field.
+DateTimeFormatterBuilder appendSecondOfMinute(int minDigits) Instructs the printer to emit a numeric secondOfMinute field.
+DateTimeFormatterBuilder appendShortText(DateTimeFieldType fieldType) Instructs the printer to emit a field value as short text, and the parser to expect text.
+DateTimeFormatterBuilder appendSignedDecimal(DateTimeFieldType fieldType, int minDigits, int maxDigits) Instructs the printer to emit a field value as a decimal number, and the parser to expect a signed decimal number.
+DateTimeFormatterBuilder appendText(DateTimeFieldType fieldType) Instructs the printer to emit a field value as text, and the parser to expect text.
+DateTimeFormatterBuilder appendTimeZoneId() Instructs the printer to emit the identifier of the time zone.
+DateTimeFormatterBuilder appendTimeZoneName() Instructs the printer to emit a locale-specific time zone name.
+DateTimeFormatterBuilder appendTimeZoneName(Map<String,DateTimeZone> parseLookup) Instructs the printer to emit a locale-specific time zone name, providing a lookup for parsing.
+DateTimeFormatterBuilder appendTimeZoneOffset(String zeroOffsetText, boolean showSeparators, int minFields, int maxFields) Instructs the printer to emit text and numbers to display time zone offset from UTC.
+DateTimeFormatterBuilder appendTimeZoneOffset(String zeroOffsetPrintText, String zeroOffsetParseText, boolean showSeparators, int minFields, int maxFields) Instructs the printer to emit text and numbers to display time zone offset from UTC.
+DateTimeFormatterBuilder appendTimeZoneShortName() Instructs the printer to emit a short locale-specific time zone name.
+DateTimeFormatterBuilder appendTimeZoneShortName(Map<String,DateTimeZone> parseLookup) Instructs the printer to emit a short locale-specific time zone name, providing a lookup for parsing.
+DateTimeFormatterBuilder appendTwoDigitWeekyear(int pivot) Instructs the printer to emit a numeric weekyear field which always prints and parses two digits.
+DateTimeFormatterBuilder appendTwoDigitWeekyear(int pivot, boolean lenientParse) Instructs the printer to emit a numeric weekyear field which always prints two digits.
+DateTimeFormatterBuilder appendTwoDigitYear(int pivot) Instructs the printer to emit a numeric year field which always prints and parses two digits.
+DateTimeFormatterBuilder appendTwoDigitYear(int pivot, boolean lenientParse) Instructs the printer to emit a numeric year field which always prints two digits.
+DateTimeFormatterBuilder appendWeekOfWeekyear(int minDigits) Instructs the printer to emit a numeric weekOfWeekyear field.
+DateTimeFormatterBuilder appendWeekyear(int minDigits, int maxDigits) Instructs the printer to emit a numeric weekyear field.
+DateTimeFormatterBuilder appendYear(int minDigits, int maxDigits) Instructs the printer to emit a numeric year field.
+DateTimeFormatterBuilder appendYearOfCentury(int minDigits, int maxDigits) Instructs the printer to emit a numeric year of century field.
+DateTimeFormatterBuilder appendYearOfEra(int minDigits, int maxDigits) Instructs the printer to emit a numeric yearOfEra field.
+boolean canBuildFormatter() Returns true if toFormatter can be called without throwing an UnsupportedOperationException.
+boolean canBuildParser() Returns true if toParser can be called without throwing an UnsupportedOperationException.
+boolean canBuildPrinter() Returns true if toPrinter can be called without throwing an UnsupportedOperationException.
+void clear() Clears out all the appended elements, allowing this builder to be reused.
+DateTimeFormatter toFormatter() Constructs a DateTimeFormatter using all the appended elements.
+DateTimeParser toParser() Internal method to create a DateTimeParser instance using all the appended elements.
+DateTimePrinter toPrinter() Internal method to create a DateTimePrinter instance using all the appended elements.

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.category.ScatterRenderer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, LegendItemSource, CategoryItemRenderer, org.jfree.util.PublicCloneable
+[Constructor Summary]
+ScatterRenderer() Constructs a new renderer.
+[Method Summary]
+Object clone() Returns an independent copy of the renderer.

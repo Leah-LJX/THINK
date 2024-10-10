@@ -1,0 +1,10 @@
+[Class] org.w3c.dom.svg.SVGFEBlendElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGFilterPrimitiveStandardAttributes, SVGStylable
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedString getIn1()	 
+ SVGAnimatedString getIn2()	 
+ SVGAnimatedEnumeration getMode()

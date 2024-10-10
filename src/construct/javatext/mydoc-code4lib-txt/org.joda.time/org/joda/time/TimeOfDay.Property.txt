@@ -1,0 +1,20 @@
+[Class] org.joda.time.TimeOfDay.Property
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+Enclosing class: TimeOfDay
+[Constructor Summary]
+
+[Method Summary]
+TimeOfDay addNoWrapToCopy(int valueToAdd) Deprecated. Adds to the value of this field in a copy of this TimeOfDay, throwing an Exception if the bounds are exceeded.
+TimeOfDay addToCopy(int valueToAdd) Deprecated. Adds to the value of this field in a copy of this TimeOfDay, wrapping to what would be the next day if necessary.
+TimeOfDay addWrapFieldToCopy(int valueToAdd) Deprecated. Adds to the value of this field in a copy of this TimeOfDay wrapping within this field if the maximum value is reached.
+int get() Deprecated. Gets the value of this field.
+DateTimeField getField() Deprecated. Gets the field that this property uses.
+protected ReadablePartial getReadablePartial() Deprecated. Gets the partial that this property belongs to.
+TimeOfDay getTimeOfDay() Deprecated. Gets the partial that this property belongs to.
+TimeOfDay setCopy(int value) Deprecated. Sets this field in a copy of the TimeOfDay.
+TimeOfDay setCopy(String text) Deprecated. Sets this field in a copy of the TimeOfDay to a parsed text value.
+TimeOfDay setCopy(String text, Locale locale) Deprecated. Sets this field in a copy of the TimeOfDay to a parsed text value.
+TimeOfDay withMaximumValue() Deprecated. Returns a new TimeOfDay with this field set to the maximum value for this field.
+TimeOfDay withMinimumValue() Deprecated. Returns a new TimeOfDay with this field set to the minimum value for this field.

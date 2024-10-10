@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.event.ChartProgressListener
+[Flag] Interface
+[Info]
+All Superinterfaces: EventListener
+All Known Implementing Classes: ChartPanel, PolarChartPanel
+[Constructor Summary]
+
+[Method Summary]
+void chartProgress(ChartProgressEvent event) Receives notification of a chart progress event.

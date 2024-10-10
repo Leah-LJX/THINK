@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.util.DirectionalGradientPaintTransformer
+[Flag] Class
+[Info]
+All Implemented Interfaces: org.jfree.ui.GradientPaintTransformer
+[Constructor Summary]
+DirectionalGradientPaintTransformer() Default constructor.
+[Method Summary]
+GradientPaint transform(GradientPaint paint, Shape target) Transforms a GradientPaint instance to fit some target shape.

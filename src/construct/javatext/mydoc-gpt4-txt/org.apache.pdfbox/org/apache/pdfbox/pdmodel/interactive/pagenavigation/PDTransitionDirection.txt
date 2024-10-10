@@ -1,0 +1,14 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDTransitionDirection
+[Type] Enum
+[Info]
+All Implemented Interfaces: Serializable, Comparable<PDTransitionDirection>
+public enum PDTransitionDirection extends Enum<PDTransitionDirection> The direction in which the specified transition effect shall moves, expressed in degrees counterclockwise starting  from a left-to-right direction. Only for PDTransitionStyle.Wipe, PDTransitionStyle.Glitter,  PDTransitionStyle.Fly, PDTransitionStyle.Cover, PDTransitionStyle.Uncover and  PDTransitionStyle.Push.
+Author: Andrea Vacondio
+[Method Summary]
+COSBase getCOSBase()	
+static PDTransitionDirection valueOf(String name)	Returns the enum constant of this type with the specified name.
+static PDTransitionDirection[] values()	Returns an array containing the constants of this enum type, in the order they are declared.
+[Methods inherited from class java.lang.Enum]
+clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, toString, valueOf
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

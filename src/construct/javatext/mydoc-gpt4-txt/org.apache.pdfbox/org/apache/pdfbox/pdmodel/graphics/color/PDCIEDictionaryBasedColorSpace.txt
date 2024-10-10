@@ -1,0 +1,28 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.color.PDCIEDictionaryBasedColorSpace
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDCalGray, PDCalRGB, PDLab
+public abstract class PDCIEDictionaryBasedColorSpace extends PDCIEBasedColorSpace CIE-based colour spaces that use a dictionary.
+Author: Ben Litchfield, John Hewson
+[Constructor Summary]
+protected PDCIEDictionaryBasedColorSpace(COSArray rgb)	Creates a new CalRGB color space using the given COS array.
+protected PDCIEDictionaryBasedColorSpace(COSName cosName)	
+[Field Summary]
+protected COSDictionary dictionary	
+protected float wpX	
+protected float wpY	
+protected float wpZ	
+[Method Summary]
+protected float[] convXYZtoRGB(float x, float y, float z)	
+PDTristimulus getBlackPoint()	This will return the BlackPoint tristimulus.
+PDTristimulus getWhitepoint()	This will return the whitepoint tristimulus.
+protected boolean isWhitePoint()	Tests if the current point is the white point.
+void setBlackPoint(PDTristimulus blackpoint)	This will set the BlackPoint tristimulus.
+void setWhitePoint(PDTristimulus whitepoint)	This will set the whitepoint tristimulus.
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.color.PDCIEBasedColorSpace]
+toRawImage, toRGBImage, toString
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace]
+create, create, create, getCOSObject, getDefaultDecode, getInitialColor, getName, getNumberOfComponents, toRawImage, toRGB, toRGBImageAWT
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

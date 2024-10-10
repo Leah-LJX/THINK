@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.LegendItem
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+LegendItem(AttributedString label, String description, String toolTipText, String urlText, boolean shapeVisible, Shape shape, boolean shapeFilled, Paint fillPaint, boolean shapeOutlineVisible, Paint outlinePaint, Stroke outlineStroke, boolean lineVisible, Shape line, Stroke lineStroke, Paint linePaint) Creates a new legend item.
+[Method Summary]
+Object clone() Returns an independent copy of this object (except that the clone will still reference the same dataset as the original LegendItem).

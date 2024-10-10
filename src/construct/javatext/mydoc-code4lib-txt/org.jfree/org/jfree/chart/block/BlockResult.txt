@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.block.BlockResult
+[Flag] Class
+[Info]
+All Implemented Interfaces: EntityBlockResult
+[Constructor Summary]
+BlockResult() Creates a new result instance.
+[Method Summary]
+EntityCollection getEntityCollection() Returns the collection of entities from the block.

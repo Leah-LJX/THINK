@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.needle.PinNeedle
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+PinNeedle()
+[Method Summary]
+Object clone() Returns a clone of this needle.

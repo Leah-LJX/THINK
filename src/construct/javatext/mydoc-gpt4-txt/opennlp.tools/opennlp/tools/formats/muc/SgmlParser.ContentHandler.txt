@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.formats.muc.SgmlParser.ContentHandler
+[Type] Class
+[Info]
+Direct Known Subclasses: MucNameContentHandler
+Enclosing class: SgmlParser
+public abstract static class SgmlParser.ContentHandler extends Object
+[Constructor Summary]
+ContentHandler()	
+[Method Summary]
+void characters(CharSequence chars)	
+void endElement(String name)	
+void startElement(String name, Map<String,String> attributes)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

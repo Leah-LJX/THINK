@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.axis.CategoryAxis
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+Direct Known Subclasses: CategoryAxis3D, ExtendedCategoryAxis, SubCategoryAxis
+[Constructor Summary]
+CategoryAxis() Creates a new category axis with no label.
+[Method Summary]
+void addCategoryLabelToolTip(Comparable category, String tooltip) Adds a tooltip to the specified category and sends an AxisChangeEvent to all registered listeners.

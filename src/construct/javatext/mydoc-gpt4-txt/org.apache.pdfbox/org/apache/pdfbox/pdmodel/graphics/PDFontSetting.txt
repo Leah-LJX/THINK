@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.PDFontSetting
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDFontSetting extends Object implements COSObjectable This class represents a font setting used for the graphics state.  A font setting is a font and a  font size.  Maybe there is a better name for this?
+Author: Ben Litchfield
+[Constructor Summary]
+PDFontSetting()	Creates a blank font setting, font will be null, size will be 1.
+PDFontSetting(COSArray fs)	Constructs a font setting from an existing array.
+[Method Summary]
+COSBase getCOSObject()	Convert this standard java object to a COS object.
+PDFont getFont()	This will get the font for this font setting.
+float getFontSize()	This will get the size of the font.
+void setFont(PDFont font)	This will set the font for this font setting.
+void setFontSize(float size)	This will set the size of the font.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

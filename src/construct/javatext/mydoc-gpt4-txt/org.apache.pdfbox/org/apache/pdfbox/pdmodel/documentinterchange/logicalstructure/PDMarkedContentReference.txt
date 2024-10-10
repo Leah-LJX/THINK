@@ -1,0 +1,20 @@
+[API Name] org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDMarkedContentReference
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDMarkedContentReference extends Object implements COSObjectable A marked-content reference.
+Author: Johannes Koch
+[Constructor Summary]
+PDMarkedContentReference()	Default constructor
+PDMarkedContentReference(COSDictionary dictionary)	Constructor for an existing marked content reference.
+[Field Summary]
+static String TYPE	
+[Method Summary]
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+int getMCID()	Gets the marked content identifier.
+PDPage getPage()	Gets the page.
+void setMCID(int mcid)	Sets the marked content identifier.
+void setPage(PDPage page)	Sets the page.
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

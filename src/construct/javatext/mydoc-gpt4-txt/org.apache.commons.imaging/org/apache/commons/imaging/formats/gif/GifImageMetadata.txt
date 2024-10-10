@@ -1,0 +1,12 @@
+[API Name] Package org.apache.commons.imaging.formats.gif.GifImageMetadata
+[Type] Class
+[Info]
+All Implemented Interfaces: ImageMetadata
+public class GifImageMetadata extends Object implements ImageMetadata
+[Method Summary]
+int getHeight()	
+List<GifImageMetadataItem> getItems()	
+int getWidth()	
+String toString​(String prefix)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,26 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.segments.App2Segment
+[Type] Class
+[Info]
+All Implemented Interfaces: Comparable<App2Segment>
+public class App2Segment extends AppnSegment implements Comparable<App2Segment>
+[Constructor Summary]
+App2Segment​(int marker, byte[] segmentData)	
+App2Segment​(int marker, int markerLength, InputStream is2)	
+[Field Summary]
+int curMarker	
+int numMarkers	
+[Method Summary]
+int compareTo​(App2Segment other)	
+boolean equals​(Object obj)	
+byte[] getIccBytes()	
+int hashCode()	
+[Methods inherited from class org.apache.commons.imaging.formats.jpeg.segments.AppnSegment]
+getDescription
+[Methods inherited from class org.apache.commons.imaging.formats.jpeg.segments.GenericSegment]
+dump, dump, getSegmentData, getSegmentData, getSegmentDataAsString
+[Methods inherited from class org.apache.commons.imaging.formats.jpeg.segments.Segment]
+getSegmentType, toString
+[Methods inherited from class org.apache.commons.imaging.common.BinaryFileParser]
+debugNumber, debugNumber, getByteOrder, setByteOrder
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

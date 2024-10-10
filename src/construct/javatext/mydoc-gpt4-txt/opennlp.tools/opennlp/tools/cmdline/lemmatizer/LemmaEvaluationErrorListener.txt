@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.cmdline.lemmatizer.LemmaEvaluationErrorListener
+[Type] Class
+[Info]
+All Implemented Interfaces: LemmatizerEvaluationMonitor, EvaluationMonitor<LemmaSample>
+public class LemmaEvaluationErrorListener extends opennlp.tools.cmdline.EvaluationErrorPrinter<LemmaSample> implements LemmatizerEvaluationMonitor A default implementation of EvaluationMonitor that prints to an  output stream.
+[Constructor Summary]
+LemmaEvaluationErrorListener()	Creates a listener that will print to the configured logger.
+LemmaEvaluationErrorListener(OutputStream outputStream)	Creates a listener that will print to a given OutputStream
+[Method Summary]
+void misclassified(LemmaSample reference, LemmaSample prediction)	
+[Methods inherited from class opennlp.tools.cmdline.EvaluationErrorPrinter]
+correctlyClassified
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface opennlp.tools.util.eval.EvaluationMonitor]
+correctlyClassified

@@ -1,0 +1,31 @@
+[Class] org.joda.time.Minutes
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<BaseSingleFieldPeriod>, ReadablePeriod
+[Constructor Summary]
+
+[Method Summary]
+Minutes dividedBy(int divisor) Returns a new instance with the minutes divided by the specified divisor.
+DurationFieldType getFieldType() Gets the duration field type, which is minutes.
+int getMinutes() Gets the number of minutes that this period represents.
+PeriodType getPeriodType() Gets the period type, which is minutes.
+boolean isGreaterThan(Minutes other) Is this minutes instance greater than the specified number of minutes.
+boolean isLessThan(Minutes other) Is this minutes instance less than the specified number of minutes.
+Minutes minus(int minutes) Returns a new instance with the specified number of minutes taken away.
+Minutes minus(Minutes minutes) Returns a new instance with the specified number of minutes taken away.
+static Minutes minutes(int minutes) Obtains an instance of Minutes that may be cached.
+static Minutes minutesBetween(ReadableInstant start, ReadableInstant end) Creates a Minutes representing the number of whole minutes between the two specified datetimes.
+static Minutes minutesBetween(ReadablePartial start, ReadablePartial end) Creates a Minutes representing the number of whole minutes between the two specified partial datetimes.
+static Minutes minutesIn(ReadableInterval interval) Creates a Minutes representing the number of whole minutes in the specified interval.
+Minutes multipliedBy(int scalar) Returns a new instance with the minutes multiplied by the specified scalar.
+Minutes negated() Returns a new instance with the minutes value negated.
+static Minutes parseMinutes(String periodStr) Creates a new Minutes by parsing a string in the ISO8601 format 'PTnM'.
+Minutes plus(int minutes) Returns a new instance with the specified number of minutes added.
+Minutes plus(Minutes minutes) Returns a new instance with the specified number of minutes added.
+static Minutes standardMinutesIn(ReadablePeriod period) Creates a new Minutes representing the number of complete standard length minutes in the specified period.
+Days toStandardDays() Converts this period in minutes to a period in days assuming a 24 hour day and 60 minute hour.
+Duration toStandardDuration() Converts this period in minutes to a duration in milliseconds assuming a 60 second minute.
+Hours toStandardHours() Converts this period in minutes to a period in hours assuming a 60 minute hour.
+Seconds toStandardSeconds() Converts this period in minutes to a period in seconds assuming a 60 second minute.
+Weeks toStandardWeeks() Converts this period in minutes to a period in weeks assuming a 7 days week, 24 hour day and 60 minute hour.
+String toString() Gets this instance as a String in the ISO8601 duration format.

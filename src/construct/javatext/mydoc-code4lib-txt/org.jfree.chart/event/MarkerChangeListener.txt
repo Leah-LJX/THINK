@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.event.MarkerChangeListener
+[Flag] Interface
+[Info]
+All Superinterfaces: EventListener
+All Known Implementing Classes: CategoryPlot, CombinedDomainCategoryPlot, CombinedDomainXYPlot, CombinedRangeCategoryPlot, CombinedRangeXYPlot, CompassPlot, ContourPlot, DialPlot, FastScatterPlot, MeterPlot, MultiplePiePlot, PiePlot, PiePlot3D, Plot, PolarPlot, RingPlot, SpiderWebPlot, ThermometerPlot, WaferMapPlot, XYPlot
+[Constructor Summary]
+
+[Method Summary]
+void markerChanged(MarkerChangeEvent event) Receives notification of a marker change event.

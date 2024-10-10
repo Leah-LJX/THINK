@@ -1,0 +1,10 @@
+[Class] org.jfree.data.RangeInfo
+[Flag] Interface
+[Info]
+All Known Implementing Classes: DefaultBoxAndWhiskerCategoryDataset, DefaultBoxAndWhiskerXYDataset, DefaultMultiValueCategoryDataset, DefaultStatisticalCategoryDataset, DynamicTimeSeriesCollection, JDBCXYDataset, XYSeriesCollection
+[Constructor Summary]
+
+[Method Summary]
+Range getRangeBounds(boolean includeInterval)	Returns the range of the values in this dataset's range.
+double getRangeLowerBound(boolean includeInterval)	Returns the minimum y-value in the dataset.
+double getRangeUpperBound(boolean includeInterval)	Returns the maximum y-value in the dataset.

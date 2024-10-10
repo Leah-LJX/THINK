@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.StandardTickUnitSource
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, TickUnitSource
+[Constructor Summary]
+StandardTickUnitSource() Default constructor.
+[Method Summary]
+boolean equals(Object obj) Tests this instance for equality with an arbitrary object.

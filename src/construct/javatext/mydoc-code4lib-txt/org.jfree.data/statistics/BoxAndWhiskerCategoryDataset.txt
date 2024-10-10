@@ -1,0 +1,26 @@
+[Class] org.jfree.data.statistics.BoxAndWhiskerCategoryDataset
+[Flag] Interface
+[Info]
+All Superinterfaces: CategoryDataset, Dataset, KeyedValues2D, Values2D
+All Known Implementing Classes: DefaultBoxAndWhiskerCategoryDataset
+[Constructor Summary]
+
+[Method Summary]
+Number getMaxOutlier(int row, int column)	Returns the maximum outlier (non-farout) for an item.
+Number getMaxOutlier(Comparable rowKey, Comparable columnKey)	Returns the maximum outlier (non-farout) for an item.
+Number getMaxRegularValue(int row, int column)	Returns the maximum regular (non-outlier) value for an item.
+Number getMaxRegularValue(Comparable rowKey, Comparable columnKey)	Returns the maximum regular (non-outlier) value for an item.
+Number getMeanValue(int row, int column)	Returns the mean value for an item.
+Number getMeanValue(Comparable rowKey, Comparable columnKey)	Returns the average value for an item.
+Number getMedianValue(int row, int column)	Returns the median value for an item.
+Number getMedianValue(Comparable rowKey, Comparable columnKey)	Returns the median value for an item.
+Number getMinOutlier(int row, int column)	Returns the minimum outlier (non-farout) for an item.
+Number getMinOutlier(Comparable rowKey, Comparable columnKey)	Returns the minimum outlier (non-farout) for an item.
+Number getMinRegularValue(int row, int column)	Returns the minimum regular (non-outlier) value for an item.
+Number getMinRegularValue(Comparable rowKey, Comparable columnKey)	Returns the minimum regular (non-outlier) value for an item.
+List getOutliers(int row, int column)	Returns a list of outlier values for an item.
+List getOutliers(Comparable rowKey, Comparable columnKey)	Returns a list of outlier values for an item.
+Number getQ1Value(int row, int column)	Returns the q1median value for an item.
+Number getQ1Value(Comparable rowKey, Comparable columnKey)	Returns the q1median value for an item.
+Number getQ3Value(int row, int column)	Returns the q3median value for an item.
+Number getQ3Value(Comparable rowKey, Comparable columnKey)	Returns the q3median value for an item.

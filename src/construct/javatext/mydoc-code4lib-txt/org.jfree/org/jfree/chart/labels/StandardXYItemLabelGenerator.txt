@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.labels.StandardXYItemLabelGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, XYItemLabelGenerator, org.jfree.util.PublicCloneable
+[Constructor Summary]
+StandardXYItemLabelGenerator() Creates an item label generator using default number formatters.
+[Method Summary]
+Object clone() Returns an independent copy of the generator.

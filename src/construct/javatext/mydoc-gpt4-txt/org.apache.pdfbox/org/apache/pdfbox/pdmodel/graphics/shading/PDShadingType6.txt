@@ -1,0 +1,30 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.shading.PDShadingType6
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDShadingType6 extends PDShadingType4 Resources for a shading type 6 (Coons Patch Mesh).
+[Constructor Summary]
+PDShadingType6(COSDictionary shadingDictionary)	Constructor using the given shading dictionary.
+[Field Summary]
+PDShadingType6(COSDictionary shadingDictionary)	Constructor using the given shading dictionary.
+[Method Summary]
+protected org.apache.pdfbox.pdmodel.graphics.shading.Patch generatePatch(Point2D[] points, float[][] color)	Create a patch using control points and 4 corner color values, in Type6ShadingContext, a CoonsPatch is returned; in Type6ShadingContext, a TensorPatch is returned.
+int getBitsPerComponent()	The bits per component of this shading.
+int getBitsPerCoordinate()	The bits per coordinate of this shading.
+Rectangle2D getBounds(AffineTransform xform, Matrix matrix)	Calculate a bounding rectangle around the areas of this shading context.
+PDRange getDecodeForParameter(int paramNum)	Get the decode for the input parameter.
+int getNumberOfColorComponents()	The number of color components of this shading.
+int getShadingType()	This will return the shading type.
+protected float interpolate(float src, long srcMax, float dstMin, float dstMax)	Calculate the interpolation, see p.345 pdf spec 1.7.
+protected org.apache.pdfbox.pdmodel.graphics.shading.Patch readPatch(ImageInputStream input, boolean isFree, Point2D[] implicitEdge, float[][] implicitCornerColor, long maxSrcCoord, long maxSrcColor, PDRange rangeX, PDRange rangeY, PDRange[] colRange, Matrix matrix, AffineTransform xform, int controlPoints)	Read a single patch from a data stream, a patch contains information of its coordinates and color parameters.
+protected org.apache.pdfbox.pdmodel.graphics.shading.Vertex readVertex(ImageInputStream input, long maxSrcCoord, long maxSrcColor, PDRange rangeX, PDRange rangeY, PDRange[] colRangeTab, Matrix matrix, AffineTransform xform)	Read a vertex from the bit input stream performs interpolations.
+void setBitsPerComponent(int bitsPerComponent)	Set the number of bits per component.
+void setBitsPerCoordinate(int bitsPerCoordinate)	Set the number of bits per coordinate.
+void setDecodeValues(COSArray decodeValues)	This will set the decode values.
+Paint toPaint(Matrix matrix)	Returns an AWT paint which corresponds to this shading
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.shading.PDShadingType4]
+getBitsPerFlag, setBitsPerFlag
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.shading.PDShading]
+create, evalFunction, evalFunction, getAntiAlias, getBackground, getBBox, getColorSpace, getCOSObject, getFunction, getType, setAntiAlias, setBackground, setBBox, setColorSpace, setFunction, setFunction, setShadingType
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

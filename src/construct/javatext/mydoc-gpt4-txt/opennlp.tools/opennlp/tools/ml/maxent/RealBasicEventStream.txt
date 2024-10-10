@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.ml.maxent.RealBasicEventStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<Event>
+public class RealBasicEventStream extends Object implements ObjectStream<Event> Class for real-valued events as an  event stream.  .
+See Also:
+Event ObjectStream
+[Constructor Summary]
+RealBasicEventStream(ObjectStream<String> ds)	
+[Method Summary]
+void close()	Closes the ObjectStream and releases all allocated resources.
+Event read()	Returns the next ObjectStream object.
+void reset()	Repositions the stream at the beginning and the previously seen object sequence will be repeated exactly.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

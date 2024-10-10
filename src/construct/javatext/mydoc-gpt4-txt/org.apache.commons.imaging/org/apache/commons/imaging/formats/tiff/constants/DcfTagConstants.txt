@@ -1,0 +1,15 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.constants.DcfTagConstants
+[Type] Class
+[Info]
+public final class DcfTagConstants extends Object Design rule for Camera Filesystem    http://www.exif.org/dcf.PDF
+[Field Summary]
+static List<TagInfo> ALL_DCF_TAGS	
+static int COLOR_SPACE_VALUE_ADOBE_RGB	
+static int COLOR_SPACE_VALUE_SRGB	
+static int COLOR_SPACE_VALUE_UNCALIBRATED	
+static TagInfoShort EXIF_TAG_COLOR_SPACE	
+static TagInfoAscii EXIF_TAG_RELATED_IMAGE_FILE_FORMAT	
+static TagInfoShortOrLong EXIF_TAG_RELATED_IMAGE_LENGTH	
+static TagInfoShortOrLong EXIF_TAG_RELATED_IMAGE_WIDTH	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

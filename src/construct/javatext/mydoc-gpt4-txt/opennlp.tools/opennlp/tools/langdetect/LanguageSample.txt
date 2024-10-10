@@ -1,0 +1,19 @@
+[API Name] opennlp.tools.langdetect.Class
+[Type] Record
+[Info]
+All Implemented Interfaces: Serializable
+public record LanguageSample(Language language, CharSequence context) extends Record implements Serializable Holds a classified document and its Language.
+See Also:
+Serialized Form
+[Constructor Summary]
+LanguageSample(Language language, CharSequence context)	Creates an instance of a LanguageSample record class.
+[Method Summary]
+CharSequence context()	Returns the value of the context record component.
+final boolean equals(Object o)	Indicates whether some other object is "equal to" this one.
+CharSequence getContext()	Deprecated, for removal: This API element is subject to removal in a future version.
+Language getLanguage()	Deprecated, for removal: This API element is subject to removal in a future version.
+final int hashCode()	Returns a hash code value for this object.
+Language language()	Returns the value of the language record component.
+String toString()	Returns a string representation of this record class.
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

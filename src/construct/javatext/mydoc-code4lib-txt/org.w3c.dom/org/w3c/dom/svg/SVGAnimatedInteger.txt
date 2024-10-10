@@ -1,0 +1,10 @@
+[Class] org.w3c.dom.svg.SVGAnimatedInteger
+[Flag] Interface
+[Info]
+public interface SVGAnimatedInteger
+[Constructor Summary]
+
+[Method Summary]
+int getAnimVal()	 
+ int getBaseVal()	 
+ void setBaseVal(int baseVal)

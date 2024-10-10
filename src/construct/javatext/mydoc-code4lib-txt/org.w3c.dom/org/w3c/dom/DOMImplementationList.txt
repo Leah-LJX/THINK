@@ -1,0 +1,10 @@
+[Class] org.w3c.dom.DOMImplementationList
+[Flag] Interface
+[Info]
+Since:
+DOM Level 3
+[Constructor Summary]
+
+[Method Summary]
+int getLength() The number of DOMImplementations in the list.
+DOMImplementation item(int index) Returns the indexth item in the collection.

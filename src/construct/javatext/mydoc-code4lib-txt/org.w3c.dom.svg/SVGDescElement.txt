@@ -1,0 +1,7 @@
+[Class] org.w3c.dom.svg.SVGDescElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGLangSpace, SVGStylable
+[Constructor Summary]
+
+[Method Summary]

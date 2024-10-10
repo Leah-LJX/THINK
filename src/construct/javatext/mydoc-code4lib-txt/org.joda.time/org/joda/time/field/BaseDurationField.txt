@@ -1,0 +1,18 @@
+[Class] org.joda.time.field.BaseDurationField
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<DurationField>
+Direct Known Subclasses: DecoratedDurationField, PreciseDurationField
+[Constructor Summary]
+protected 	BaseDurationField(DurationFieldType type)
+[Method Summary]
+int compareTo(DurationField otherField) int getDifference(long minuendInstant, long subtrahendInstant) Computes the difference between two instants, as measured in the units of this field.
+long getMillis(int value) Get the millisecond duration of this field from its value, which is approximate if this field is imprecise.
+long getMillis(long value) Get the millisecond duration of this field from its value, which is approximate if this field is imprecise.
+String getName() Get the name of the field.
+DurationFieldType getType() Get the type of the field.
+int getValue(long duration) Get the value of this field from the milliseconds, which is approximate if this field is imprecise.
+int getValue(long duration, long instant) Get the value of this field from the milliseconds relative to an instant.
+long getValueAsLong(long duration) Get the value of this field from the milliseconds, which is approximate if this field is imprecise.
+boolean isSupported() Returns true if this field is supported.
+String toString() Get a suitable debug string.

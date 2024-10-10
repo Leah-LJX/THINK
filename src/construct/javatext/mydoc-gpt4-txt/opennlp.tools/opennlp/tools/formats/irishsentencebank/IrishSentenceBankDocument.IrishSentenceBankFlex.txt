@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.formats.irishsentencebank.IrishSentenceBankDocument.IrishSentenceBankFlex
+[Type] Class
+[Info]
+Enclosing class: IrishSentenceBankDocument
+public static class IrishSentenceBankDocument.IrishSentenceBankFlex extends Object
+[Constructor Summary]
+IrishSentenceBankFlex(String sf, String[] fl)	
+[Method Summary]
+String[] getFlex()	
+String getSurface()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

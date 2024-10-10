@@ -1,0 +1,10 @@
+[API Name] org.apache.pdfbox.pdmodel.encryption.DecryptionMaterial
+[Type] Class
+[Info]
+Direct Known Subclasses: PublicKeyDecryptionMaterial, StandardDecryptionMaterial
+public abstract class DecryptionMaterial extends Object This class represents data required to decrypt PDF documents. This can  be a password for standard security or a X509 certificate with a private  key for public key security.
+Author: Benoit Guillon
+[Constructor Summary]
+DecryptionMaterial()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

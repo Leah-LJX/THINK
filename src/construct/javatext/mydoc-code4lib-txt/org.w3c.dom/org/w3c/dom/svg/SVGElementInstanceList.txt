@@ -1,0 +1,9 @@
+[Class] org.w3c.dom.svg.SVGElementInstanceList
+[Flag] Interface
+[Info]
+public interface SVGElementInstanceList
+[Constructor Summary]
+
+[Method Summary]
+int getLength()	 
+ SVGElementInstance item(int index)

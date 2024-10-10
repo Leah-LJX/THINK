@@ -1,0 +1,12 @@
+[API Name] org.apache.pdfbox.io.RandomAccessStreamCache
+[Type] Interface
+[Info]
+All Superinterfaces: AutoCloseable, Closeable
+All Known Implementing Classes: RandomAccessStreamCacheImpl, ScratchFile
+public interface RandomAccessStreamCache extends Closeable An interface describing a StreamCache to be used when creating/writing streams of a PDF.
+[Nested Class Summary]
+static interface RandomAccessStreamCache.StreamCacheCreateFunction	
+[Method Summary]
+RandomAccess createBuffer()	Creates an instance of a buffer implementing the interface org.apache.pdfbox.io.RandomAccess.
+[Methods inherited from interface java.io.Closeable]
+close

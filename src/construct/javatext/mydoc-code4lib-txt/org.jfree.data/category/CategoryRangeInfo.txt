@@ -1,0 +1,12 @@
+[Class] org.jfree.data.category.CategoryRangeInfo
+[Flag] Interface
+[Info]
+Parameters: visibleSeriesKeys - the keys of the visible series.
+includeInterval - a flag that determines whether or not the
+                         y-interval is taken into account.
+Returns: The range (or null if the dataset contains no
+     values).
+[Constructor Summary]
+
+[Method Summary]
+Range getRangeBounds(List visibleSeriesKeys, boolean includeInterval)	Returns the range of the values in this dataset's range.

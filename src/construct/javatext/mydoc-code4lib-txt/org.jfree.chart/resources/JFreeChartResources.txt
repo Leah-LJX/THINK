@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.resources.JFreeChartResources
+[Flag] Class
+[Info]
+Specified by: getContents in class ListResourceBundle
+Returns: The resources.
+[Constructor Summary]
+JFreeChartResources()
+[Method Summary]
+Object[][] getContents() Returns the array of strings in the resource bundle.

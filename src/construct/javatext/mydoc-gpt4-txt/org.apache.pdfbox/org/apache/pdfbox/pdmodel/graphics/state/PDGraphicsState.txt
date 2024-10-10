@@ -1,0 +1,70 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.state.PDGraphicsState
+[Type] Class
+[Info]
+All Implemented Interfaces: Cloneable
+public class PDGraphicsState extends Object implements Cloneable The current state of the graphics parameters when executing a content stream.
+Author: Ben Litchfield
+[Constructor Summary]
+PDGraphicsState(PDRectangle page)	Constructor with a given page size to initialize the clipping path.
+[Method Summary]
+PDGraphicsState clone()	
+double getAlphaConstant()	Get the value of the stroke alpha constant property.
+BlendMode getBlendMode()	Returns the current blend mode
+Area getCurrentClippingPath()	This will get the current clipping path.
+List<Path2D> getCurrentClippingPaths()	This will get the current clipping path, as one or more individual paths.
+Matrix getCurrentTransformationMatrix()	Get the value of the CTM.
+double getFlatness()	get the value of the flatness property.
+int getLineCap()	Get the value of the line cap.
+PDLineDashPattern getLineDashPattern()	This will get the current line dash pattern.
+int getLineJoin()	Get the value of the line join.
+float getLineWidth()	Get the value of the line width.
+float getMiterLimit()	Get the value of the miter limit.
+double getNonStrokeAlphaConstant()	Get the value of the non-stroke alpha constant property.
+PDColor getNonStrokingColor()	Returns the non-stroking color.
+PDColorSpace getNonStrokingColorSpace()	Returns the non-stroking color space.
+Composite getNonStrokingJavaComposite()	
+int getOverprintMode()	get the value of the overprint mode property.
+RenderingIntent getRenderingIntent()	This will get the rendering intent.
+double getSmoothness()	get the value of the smoothness property.
+PDSoftMask getSoftMask()	returns the current softmask
+PDColor getStrokingColor()	Returns the stroking color.
+PDColorSpace getStrokingColorSpace()	Returns the stroking color space.
+Composite getStrokingJavaComposite()	
+Matrix getTextLineMatrix()	
+Matrix getTextMatrix()	
+PDTextState getTextState()	This will get the graphics text state.
+COSBase getTransfer()	This will get the transfer function.
+void intersectClippingPath(Area area)	Modify the current clipping path by intersecting it with the given path.
+void intersectClippingPath(GeneralPath path)	Modify the current clipping path by intersecting it with the given path.
+boolean isAlphaSource()	get the value of the stroke alpha source property.
+boolean isNonStrokingOverprint()	get the value of the non stroking overprint property.
+boolean isOverprint()	get the value of the overprint property.
+boolean isStrokeAdjustment()	Get the value of the stroke adjustment parameter.
+void setAlphaConstant(double value)	set the value of the stroke alpha constant property.
+void setAlphaSource(boolean value)	set the value of the alpha source property.
+void setBlendMode(BlendMode blendMode)	Sets the blend mode in the current graphics state
+void setCurrentTransformationMatrix(Matrix value)	Set the value of the CTM.
+void setFlatness(double value)	set the value of the flatness property.
+void setLineCap(int value)	set the value of the line cap.
+void setLineDashPattern(PDLineDashPattern value)	This will set the current line dash pattern.
+void setLineJoin(int value)	Get the value of the line join.
+void setLineWidth(float value)	set the value of the line width.
+void setMiterLimit(float value)	set the value of the miter limit.
+void setNonStrokeAlphaConstant(double value)	set the value of the non-stroke alpha constant property.
+void setNonStrokingColor(PDColor color)	Sets the non-stroking color.
+void setNonStrokingColorSpace(PDColorSpace colorSpace)	Sets the non-stroking color space.
+void setNonStrokingOverprint(boolean value)	set the value of the non stroking overprint property.
+void setOverprint(boolean value)	set the value of the overprint property.
+void setOverprintMode(int value)	set the value of the overprint mode property.
+void setRenderingIntent(RenderingIntent value)	This will set the rendering intent.
+void setSmoothness(double value)	set the value of the smoothness property.
+void setSoftMask(PDSoftMask softMask)	Sets the current soft mask
+void setStrokeAdjustment(boolean value)	set the value of the stroke adjustment.
+void setStrokingColor(PDColor color)	Sets the stroking color.
+void setStrokingColorSpace(PDColorSpace colorSpace)	Sets the stroking color space.
+void setTextLineMatrix(Matrix value)	
+void setTextMatrix(Matrix value)	
+void setTextState(PDTextState value)	This will set the graphics text state.
+void setTransfer(COSBase transfer)	This will set the transfer function.
+[Methods inherited from class java.lang.Object]
+equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,34 @@
+[Class] org.joda.time.base.AbstractInterval
+[Flag] Class
+[Info]
+All Implemented Interfaces: ReadableInterval
+Direct Known Subclasses: BaseInterval
+[Constructor Summary]
+protected 	AbstractInterval()	Constructor.
+[Method Summary]
+protected void checkInterval(long start, long end) Validates an interval.
+boolean contains(long millisInstant) Does this time interval contain the specified millisecond instant.
+boolean contains(ReadableInstant instant) Does this time interval contain the specified instant.
+boolean contains(ReadableInterval interval) Does this time interval contain the specified time interval.
+boolean containsNow() Does this time interval contain the current instant.
+boolean equals(Object readableInterval) Compares this object with the specified object for equality based on start and end millis plus the chronology.
+DateTime getEnd() Gets the end of this time interval, which is exclusive, as a DateTime.
+DateTime getStart() Gets the start of this time interval, which is inclusive, as a DateTime.
+int hashCode() Hashcode compatible with equals method.
+boolean isAfter(long millisInstant) Is this time interval after the specified millisecond instant.
+boolean isAfter(ReadableInstant instant) Is this time interval after the specified instant.
+boolean isAfter(ReadableInterval interval) Is this time interval entirely after the specified interval.
+boolean isAfterNow() Is this time interval after the current instant.
+boolean isBefore(long millisInstant) Is this time interval before the specified millisecond instant.
+boolean isBefore(ReadableInstant instant) Is this time interval before the specified instant.
+boolean isBefore(ReadableInterval interval) Is this time interval entirely before the specified instant.
+boolean isBeforeNow() Is this time interval before the current instant.
+boolean isEqual(ReadableInterval other) Is this interval equal to the specified interval ignoring the chronology.
+boolean overlaps(ReadableInterval interval) Does this time interval overlap the specified time interval.
+Duration toDuration() Gets the duration of this time interval.
+long toDurationMillis() Gets the duration of this time interval in milliseconds.
+Interval toInterval() Get this interval as an immutable Interval object.
+MutableInterval toMutableInterval() Get this time interval as a MutableInterval.
+Period toPeriod() Converts the duration of the interval to a Period using the All period type.
+Period toPeriod(PeriodType type) Converts the duration of the interval to a Period using the specified period type.
+String toString() Output a string in ISO8601 interval format.

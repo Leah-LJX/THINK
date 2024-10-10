@@ -1,0 +1,30 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.color.PDIndexed
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class PDIndexed extends PDSpecialColorSpace An Indexed colour space specifies that an area is to be painted using a colour table  of arbitrary colours from another color space.
+Author: John Hewson, Ben Litchfield
+[Constructor Summary]
+PDIndexed()	Creates a new Indexed color space.
+PDIndexed(COSArray indexedArray)	Creates a new indexed color space from the given PDF array.
+PDIndexed(COSArray indexedArray, PDResources resources)	Creates a new indexed color space from the given PDF array.
+[Field Summary]
+PDIndexed()	Creates a new Indexed color space.
+PDIndexed(COSArray indexedArray)	Creates a new indexed color space from the given PDF array.
+PDIndexed(COSArray indexedArray, PDResources resources)	Creates a new indexed color space from the given PDF array.
+[Method Summary]
+PDColorSpace getBaseColorSpace()	Returns the base color space.
+float[] getDefaultDecode(int bitsPerComponent)	Returns the default decode array for this color space.
+PDColor getInitialColor()	Returns the initial color value for this color space.
+String getName()	Returns the name of the color space.
+int getNumberOfComponents()	Returns the number of components in this color space
+void setBaseColorSpace(PDColorSpace base)	Sets the base color space.
+void setHighValue(int high)	Sets the highest value that is allowed.
+BufferedImage toRawImage(WritableRaster raster)	Returns the image in this colorspace or null.
+float[] toRGB(float[] value)	Returns the RGB equivalent of the given color value.
+BufferedImage toRGBImage(WritableRaster raster)	Returns the (A)RGB equivalent of the given raster.
+String toString()	
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace]
+create, create, create, getCOSObject, toRawImage, toRGBImageAWT
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

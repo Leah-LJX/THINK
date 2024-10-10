@@ -1,0 +1,17 @@
+[Class] org.joda.time.field.ImpreciseDateTimeField
+[Flag] Class
+[Info]
+Since: 1.0
+See Also: PreciseDateTimeField
+[Constructor Summary]
+ImpreciseDateTimeField(DateTimeFieldType type,	long unitMillis)	Constructor.
+[Method Summary]
+abstract long add(long instant, int value) Adds a value (which may be negative) to the instant value, overflowing into larger fields if necessary.
+abstract long add(long instant, long value) Adds a value (which may be negative) to the instant value, overflowing into larger fields if necessary.
+abstract int get(long instant) Get the value of this field from the milliseconds.
+int getDifference(long minuendInstant, long subtrahendInstant) Computes the difference between two instants, as measured in the units of this field.
+long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) Computes the difference between two instants, as measured in the units of this field.
+DurationField getDurationField() Returns the duration per unit value of this field.
+protected long getDurationUnitMillis() abstract DurationField getRangeDurationField() Returns the range duration of this field.
+abstract long roundFloor(long instant) Round to the lowest whole unit of this field.
+abstract long set(long instant, int value) Sets a value in the milliseconds supplied.

@@ -1,0 +1,31 @@
+[API Name] Package org.apache.commons.imaging.common.ByteConversions
+[Type] Class
+[Info]
+public final class ByteConversions extends Object Convenience methods for converting data types to and from  byte arrays.
+[Method Summary]
+static byte[] toBytes​(double[] values, ByteOrder byteOrder)	
+static byte[] toBytes​(double value, ByteOrder byteOrder)	
+static byte[] toBytes​(float[] values, ByteOrder byteOrder)	
+static byte[] toBytes​(float value, ByteOrder byteOrder)	
+static byte[] toBytes​(int[] values, ByteOrder byteOrder)	
+static byte[] toBytes​(int value, ByteOrder byteOrder)	
+static byte[] toBytes​(short[] values, ByteOrder byteOrder)	
+static byte[] toBytes​(short value, ByteOrder byteOrder)	
+static byte[] toBytes​(RationalNumber[] values, ByteOrder byteOrder)	
+static byte[] toBytes​(RationalNumber value, ByteOrder byteOrder)	
+static double toDouble​(byte[] bytes, ByteOrder byteOrder)	
+static double[] toDoubles​(byte[] bytes, ByteOrder byteOrder)	
+static float toFloat​(byte[] bytes, ByteOrder byteOrder)	
+static float[] toFloats​(byte[] bytes, ByteOrder byteOrder)	
+static int toInt​(byte[] bytes, int offset, ByteOrder byteOrder)	
+static int toInt​(byte[] bytes, ByteOrder byteOrder)	
+static int[] toInts​(byte[] bytes, ByteOrder byteOrder)	
+static RationalNumber toRational​(byte[] bytes, ByteOrder byteOrder, boolean unsignedType)	Interprets the content of a specified bytes array to create an instance of the RationalNumber class.
+static RationalNumber[] toRationals​(byte[] bytes, ByteOrder byteOrder, boolean unsignedType)	
+static short toShort​(byte[] bytes, ByteOrder byteOrder)	
+static short[] toShorts​(byte[] bytes, ByteOrder byteOrder)	
+static int toUInt16​(byte[] bytes, int offset, ByteOrder byteOrder)	
+static int toUInt16​(byte[] bytes, ByteOrder byteOrder)	
+static int[] toUInt16s​(byte[] bytes, ByteOrder byteOrder)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

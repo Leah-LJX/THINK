@@ -1,0 +1,19 @@
+[API Name] opennlp.tools.util.StringUtil
+[Type] Class
+[Info]
+public class StringUtil extends Object
+[Constructor Summary]
+StringUtil()	
+[Method Summary]
+static void computeShortestEditScript(String wordForm, String lemma, int[][] distance, StringBuffer permutations)	Computes the Shortest Edit Script (SES) to convert a word into its lemma.
+static String decodeShortestEditScript(String wordForm, String permutations)	Reads the predicted Shortest Edit Script (SES) by a lemmatizer model and applies the permutations to obtain the lemma from the wordForm.
+static String getShortestEditScript(String wordForm, String lemma)	
+static boolean isEmpty(CharSequence theString)	
+static boolean isWhitespace(char charCode)	Determines if the specified Character is a whitespace.
+static boolean isWhitespace(int charCode)	Determines if the specified Character is a whitespace.
+static int[][] levenshteinDistance(String wordForm, String lemma)	Computes the Levenshtein distance of two strings in a matrix.
+static String toLowerCase(CharSequence string)	Converts a CharSequence to lower case, independent of the current Locale via Character.toLowerCase(int) which uses mapping information from the UnicodeData file.
+static CharBuffer toLowerCaseCharBuffer(CharSequence sequence)	
+static String toUpperCase(CharSequence string)	Converts a CharSequence to upper case, independent of the current Locale via Character.toUpperCase(char) which uses mapping information from the UnicodeData file.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

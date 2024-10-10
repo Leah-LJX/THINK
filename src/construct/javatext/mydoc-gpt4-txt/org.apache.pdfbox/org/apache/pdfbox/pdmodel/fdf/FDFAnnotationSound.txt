@@ -1,0 +1,16 @@
+[API Name] org.apache.pdfbox.pdmodel.fdf.FDFAnnotationSound
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class FDFAnnotationSound extends FDFAnnotation This represents a Sound FDF annotation.
+Author: Ben Litchfield
+[Constructor Summary]
+FDFAnnotationSound()	Default constructor.
+FDFAnnotationSound(COSDictionary a)	Constructor.
+FDFAnnotationSound(Element element)	Constructor.
+[Field Summary]
+static String SUBTYPE	COS Model value for SubType entry.
+[Methods inherited from class org.apache.pdfbox.pdmodel.fdf.FDFAnnotation]
+create, getBorderEffect, getBorderStyle, getColor, getContents, getCOSObject, getCreationDate, getDate, getIntent, getName, getOpacity, getPage, getRectangle, getRichContents, getStringOrStream, getSubject, getTitle, isHidden, isInvisible, isLocked, isLockedContents, isNoRotate, isNoView, isNoZoom, isPrinted, isReadOnly, isToggleNoView, setBorderEffect, setBorderStyle, setColor, setContents, setCreationDate, setDate, setHidden, setIntent, setInvisible, setLocked, setLockedContents, setName, setNoRotate, setNoView, setNoZoom, setOpacity, setPage, setPrinted, setReadOnly, setRectangle, setRichContents, setSubject, setTitle, setToggleNoView
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

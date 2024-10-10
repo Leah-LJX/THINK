@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.event.RendererChangeEvent
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+RendererChangeEvent(Object renderer) Creates a new event.
+[Method Summary]
+Object getRenderer() Returns the renderer that generated the event.

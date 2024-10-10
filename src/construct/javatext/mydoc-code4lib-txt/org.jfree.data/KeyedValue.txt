@@ -1,0 +1,11 @@
+[Class] org.jfree.data.KeyedValue
+[Flag] Interface
+[Info]
+Type Parameters: K - the key type.
+All Superinterfaces: Value
+All Known Subinterfaces: KeyedValueDataset
+All Known Implementing Classes: DefaultKeyedValue, DefaultKeyedValueDataset
+[Constructor Summary]
+
+[Method Summary]
+K getKey()	Returns the key associated with the value.

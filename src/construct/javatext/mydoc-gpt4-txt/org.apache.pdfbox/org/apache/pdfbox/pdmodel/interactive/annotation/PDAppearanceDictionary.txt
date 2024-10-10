@@ -1,0 +1,22 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.annotation.PDAppearanceDictionary
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDAppearanceDictionary extends Object implements COSObjectable An appearance dictionary specifying how the annotation shall be presented visually on the page.
+Author: Ben Litchfield
+[Constructor Summary]
+PDAppearanceDictionary()	Constructor for embedding.
+PDAppearanceDictionary(COSDictionary dictionary)	Constructor for reading.
+[Method Summary]
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+PDAppearanceEntry getDownAppearance()	This will return a list of appearances.
+PDAppearanceEntry getNormalAppearance()	This will return a list of appearances.
+PDAppearanceEntry getRolloverAppearance()	This will return a list of appearances.
+void setDownAppearance(PDAppearanceEntry entry)	This will set a list of appearances.
+void setDownAppearance(PDAppearanceStream ap)	This will set the down appearance when there is down appearance to be shown.
+void setNormalAppearance(PDAppearanceEntry entry)	This will set a list of appearances.
+void setNormalAppearance(PDAppearanceStream ap)	This will set the normal appearance when there is only one appearance to be shown.
+void setRolloverAppearance(PDAppearanceEntry entry)	This will set a list of appearances.
+void setRolloverAppearance(PDAppearanceStream ap)	This will set the rollover appearance when there is rollover appearance to be shown.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

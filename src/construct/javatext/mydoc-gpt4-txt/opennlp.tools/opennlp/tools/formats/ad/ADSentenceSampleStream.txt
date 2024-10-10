@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.formats.ad.ADSentenceSampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<SentenceSample>
+@Internal public class ADSentenceSampleStream extends Object implements ObjectStream<SentenceSample> Note:  Do not use this class, internal use only!
+[Constructor Summary]
+ADSentenceSampleStream(InputStreamFactory in, String charsetName, boolean includeHeadlines)	Initializes a new ADSentenceSampleStream.
+ADSentenceSampleStream(ObjectStream<String> lineStream, boolean includeHeadlines)	Initializes a new ADSentenceSampleStream from a ObjectStream<String>, that could be a PlainTextByLineStream object.
+[Method Summary]
+void close()	Closes the ObjectStream and releases all allocated resources.
+SentenceSample read()	Returns the next ObjectStream object.
+void reset()	Repositions the stream at the beginning and the previously seen object sequence will be repeated exactly.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.Pannable
+[Flag] Interface
+[Info]
+All Known Implementing Classes: CategoryPlot, CombinedDomainCategoryPlot, CombinedDomainXYPlot, CombinedRangeCategoryPlot, CombinedRangeXYPlot, FastScatterPlot, XYPlot
+[Constructor Summary]
+
+[Method Summary]
+PlotOrientation getOrientation() Returns the orientation of the plot.

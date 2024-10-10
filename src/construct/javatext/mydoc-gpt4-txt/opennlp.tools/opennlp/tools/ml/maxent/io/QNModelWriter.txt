@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.ml.maxent.io.QNModelWriter
+[Type] Class
+[Info]
+Direct Known Subclasses: BinaryQNModelWriter
+public abstract class QNModelWriter extends GISModelWriter The base class for writers of models.    It provides the persist() method which takes care of the structure of a  stored document, and requires an extending class to define precisely how  the data should be stored.
+[Constructor Summary]
+QNModelWriter(AbstractModel model)	
+[Method Summary]
+void persist()	Writes the QN model, using the AbstractModelWriter.writeUTF(String), AbstractModelWriter.writeDouble(double), or AbstractModelWriter.writeInt(int)} methods implemented by extending classes.
+[Methods inherited from class opennlp.tools.ml.model.AbstractModelWriter]
+close, writeDouble, writeInt, writeUTF
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

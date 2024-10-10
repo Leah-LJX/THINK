@@ -1,0 +1,12 @@
+[Class] org.jfree.data.general.SeriesDataset
+[Flag] Interface
+[Info]
+All Superinterfaces: Dataset
+All Known Subinterfaces: BoxAndWhiskerXYDataset, IntervalXYDataset, IntervalXYZDataset, OHLCDataset, TableXYDataset, VectorXYDataset, WindDataset, XYDataset, XYZDataset
+All Known Implementing Classes: AbstractIntervalXYDataset, AbstractSeriesDataset, AbstractXYDataset, AbstractXYZDataset, CategoryTableXYDataset, CyclicXYItemRenderer.OverwriteDataSet, DefaultBoxAndWhiskerXYDataset, DefaultHighLowDataset, DefaultIntervalCategoryDataset, DefaultIntervalXYDataset, DefaultOHLCDataset, DefaultTableXYDataset, DefaultWindDataset, DefaultXYDataset, DefaultXYZDataset, DynamicTimeSeriesCollection, HistogramDataset, JDBCXYDataset, MatrixSeriesCollection, OHLCSeriesCollection, SimpleHistogramDataset, TaskSeriesCollection, TimePeriodValuesCollection, TimeSeriesCollection, TimeTableXYDataset, VectorSeriesCollection, XIntervalSeriesCollection, XYBarDataset, XYIntervalSeriesCollection, XYSeriesCollection, XYTaskDataset, YIntervalSeriesCollection
+[Constructor Summary]
+
+[Method Summary]
+int getSeriesCount()	Returns the number of series in the dataset.
+Comparable getSeriesKey(int series)	Returns the key for a series.
+int indexOf(Comparable seriesKey)	Returns the index of the series with the specified key, or -1 if there is no such series in the dataset.

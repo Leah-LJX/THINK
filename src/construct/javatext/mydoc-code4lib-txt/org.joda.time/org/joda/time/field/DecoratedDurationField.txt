@@ -1,0 +1,17 @@
+[Class] org.joda.time.field.DecoratedDurationField
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<DurationField>
+Direct Known Subclasses: ScaledDurationField
+[Constructor Summary]
+DecoratedDurationField(DurationField field,	DurationFieldType type)	Constructor.
+[Method Summary]
+long add(long instant, int value) Adds a duration value (which may be negative) to the instant.
+long add(long instant, long value) Adds a duration value (which may be negative) to the instant.
+long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) Computes the difference between two instants, as measured in the units of this field.
+long getMillis(int value, long instant) Get the millisecond duration of this field from its value relative to an instant.
+long getMillis(long value, long instant) Get the millisecond duration of this field from its value relative to an instant.
+long getUnitMillis() Returns the amount of milliseconds per unit value of this field.
+long getValueAsLong(long duration, long instant) Get the value of this field from the milliseconds relative to an instant.
+DurationField getWrappedField() Gets the wrapped duration field.
+boolean isPrecise() Is this field precise.

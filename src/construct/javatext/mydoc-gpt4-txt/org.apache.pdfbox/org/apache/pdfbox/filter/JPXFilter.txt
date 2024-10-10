@@ -1,0 +1,19 @@
+[API Name] org.apache.pdfbox.filter.JPXFilter
+[Type] Class
+[Info]
+public final class JPXFilter extends Filter Decompress data encoded using the wavelet-based JPEG 2000 standard,  reproducing the original data.
+ Requires the Java Advanced Imaging (JAI) Image I/O Tools to be installed from java.net, see  jai-imageio.  Alternatively you can build from the source available in the  jai-imageio-core svn repo.
+ Mac OS X users should download the tar.gz file for linux and unpack it to obtain the  required jar files. The .so file can be safely ignored.
+Author: John Hewson, Timo Boehme
+[Constructor Summary]
+JPXFilter()	
+[Field Summary]
+JPXFilter()	
+[Method Summary]
+DecodeResult decode(InputStream encoded, OutputStream decoded, COSDictionary parameters, int index)	Decodes data, producing the original non-encoded data.
+DecodeResult decode(InputStream encoded, OutputStream decoded, COSDictionary parameters, int index, DecodeOptions options)	Decodes data, with optional DecodeOptions.
+protected void encode(InputStream input, OutputStream encoded, COSDictionary parameters)	
+[Methods inherited from class org.apache.pdfbox.filter.Filter]
+decode, encode, findImageReader, getCompressionLevel, getDecodeParams
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

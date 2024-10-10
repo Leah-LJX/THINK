@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.util.featuregen.WordClusterDictionary
+[Type] Class
+[Info]
+All Implemented Interfaces: SerializableArtifact
+public class WordClusterDictionary extends Object implements SerializableArtifact
+[Constructor Summary]
+WordClusterDictionary(InputStream in)	Read word2vec and clark clustering style lexicons.
+[Nested Class Summary]
+Nested Class Summary
+static class 
+[Method Summary]
+Class<?> getArtifactSerializerClass()	Retrieves the class which can serialize and recreate this artifact.
+String lookupToken(String string)	
+void serialize(OutputStream out)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

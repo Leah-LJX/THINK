@@ -1,0 +1,24 @@
+[API Name] Package org.apache.commons.imaging.ColorTools
+[Type] Class
+[Info]
+public class ColorTools extends Object A selection of tools for evaluating and manipulating color  spaces, color values, etc.  The Javadoc provided in the original code gave the  following notation:
+     "This class is a mess and needs to be cleaned up."
+[Constructor Summary]
+ColorTools()	
+[Method Summary]
+BufferedImage convertBetweenColorSpaces​(BufferedImage bi, ColorSpace from, ColorSpace to)	
+BufferedImage convertBetweenColorSpacesX2​(BufferedImage bi, ColorSpace from, ColorSpace to)	
+BufferedImage convertBetweenICCProfiles​(BufferedImage bi, ICC_Profile from, ICC_Profile to)	
+protected BufferedImage convertFromColorSpace​(BufferedImage bi, ColorSpace from)	
+BufferedImage convertToColorSpace​(BufferedImage bi, ColorSpace to)	
+BufferedImage convertToICCProfile​(BufferedImage bi, ICC_Profile to)	
+BufferedImage convertTosRGB​(BufferedImage bi)	
+BufferedImage correctImage​(BufferedImage src, File file)	
+ColorModel deriveColorModel​(BufferedImage bi, ColorSpace cs)	
+ColorModel deriveColorModel​(BufferedImage bi, ColorSpace cs, boolean forceNoAlpha)	
+ColorModel deriveColorModel​(ColorModel colorModel, ColorSpace cs, boolean forceNoAlpha)	
+BufferedImage relabelColorSpace​(BufferedImage bi, ColorSpace cs)	
+BufferedImage relabelColorSpace​(BufferedImage bi, ICC_Profile profile)	
+BufferedImage relabelColorSpace​(BufferedImage bi, ColorModel cm)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

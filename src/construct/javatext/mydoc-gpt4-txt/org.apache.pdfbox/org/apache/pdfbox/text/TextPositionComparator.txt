@@ -1,0 +1,14 @@
+[API Name] org.apache.pdfbox.text.TextPositionComparator
+[Type] Class
+[Info]
+All Implemented Interfaces: Comparator<TextPosition>
+public class TextPositionComparator extends Object implements Comparator<TextPosition> This class is a comparator for TextPosition operators.  It handles  pages with text in different directions by grouping the text based  on direction and sorting in that direction. This allows continuous text  in a given direction to be more easily grouped together.
+Author: Ben Litchfield
+[Constructor Summary]
+TextPositionComparator()	
+[Method Summary]
+int compare(TextPosition pos1, TextPosition pos2)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface java.util.Comparator]
+comparing, comparing, comparingDouble, comparingInt, comparingLong, equals, naturalOrder, nullsFirst, nullsLast, reversed, reverseOrder, thenComparing, thenComparing, thenComparing, thenComparingDouble, thenComparingInt, thenComparingLong

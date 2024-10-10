@@ -1,0 +1,10 @@
+[Class] org.w3c.dom.Notation
+[Flag] Interface
+[Info]
+All Superinterfaces:
+Node
+[Constructor Summary]
+
+[Method Summary]
+String getPublicId() The public identifier of this notation.
+String getSystemId() The system identifier of this notation.

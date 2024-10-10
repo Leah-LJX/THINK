@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.postag.WordTagSampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<POSSample>
+public class WordTagSampleStream extends FilterObjectStream<String,POSSample> A stream filter which reads a sentence per line which contains  words and tags in word_tag format and outputs a POSSample objects.
+[Constructor Summary]
+WordTagSampleStream(ObjectStream<String> sentences)	Initializes a POSSample instance.
+[Method Summary]
+POSSample read()	Parses the next sentence and return the next POSSample object.
+[Methods inherited from class opennlp.tools.util.FilterObjectStream]
+close, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

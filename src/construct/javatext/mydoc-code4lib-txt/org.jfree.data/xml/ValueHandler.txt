@@ -1,0 +1,12 @@
+[Class] org.jfree.data.xml.ValueHandler
+[Flag] Class
+[Info]
+All Implemented Interfaces: DatasetTags, ContentHandler, DTDHandler, EntityResolver, ErrorHandler
+[Constructor Summary]
+ValueHandler(RootHandler rootHandler, ItemHandler itemHandler)	Creates a new value handler.
+[Method Summary]
+void characters(char[] ch, int start, int length)	Receives some (or all) of the text in the current element.
+protected void clearCurrentText()	Removes all text from the textbuffer at the end of a CDATA section.
+void endElement(String namespaceURI, String localName, String qName)	The end of an element.
+protected String getCurrentText()	Returns the current text of the textbuffer.
+void startElement(String namespaceURI, String localName, String qName, Attributes atts)	The start of an element.

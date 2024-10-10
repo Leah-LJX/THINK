@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.util.SequenceCodec<T>
+[Type] Interface
+[Info]
+Type Parameters: T - The generic type for the elements to handle.
+All Known Implementing Classes: BilouCodec, BioCodec
+public interface SequenceCodec<T> A codec for sequences of type SequenceCodec.  Defines methods to en- or decode, and validate.
+[Method Summary]
+boolean areOutcomesCompatible(String[] outcomes)	Checks if the outcomes of a model are compatible with this SequenceCodec.
+SequenceValidator<T> createSequenceValidator()	
+Span[] decode(List<T> c)	Decodes a sequence of objects into Span objects.
+T[] encode(Span[] names, int length)	Encodes Span objects into a sequence of objects.

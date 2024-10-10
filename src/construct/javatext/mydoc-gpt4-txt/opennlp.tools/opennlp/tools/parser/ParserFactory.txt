@@ -1,0 +1,9 @@
+[API Name] opennlp.tools.parser.ParserFactory
+[Type] Class
+[Info]
+public class ParserFactory extends Object
+[Method Summary]
+static Parser create(ParserModel model)	Instantiates a Parser via a given model and default configuration parameters (see: AbstractBottomUpParser).
+static Parser create(ParserModel model, int beamSize, double advancePercentage)	Instantiates a Parser via a given model and other configuration parameters.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

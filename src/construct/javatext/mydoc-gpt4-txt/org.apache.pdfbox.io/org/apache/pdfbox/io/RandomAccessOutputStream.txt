@@ -1,0 +1,16 @@
+[API Name] org.apache.pdfbox.io.RandomAccessOutputStream
+[Type] Class
+[Info]
+All Implemented Interfaces: Closeable, Flushable, AutoCloseable
+public class RandomAccessOutputStream extends OutputStream An OutputStream which writes to a RandomAccessWrite.
+Author: Ben Litchfield, John Hewson
+[Constructor Summary]
+RandomAccessOutputStream(RandomAccessWrite writer)	Constructor to create a new output stream which writes to the given RandomAccessWrite.
+[Method Summary]
+void write(byte[] b)	
+void write(byte[] b, int offset, int length)	
+void write(int b)	
+[Methods inherited from class java.io.OutputStream]
+close, flush
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

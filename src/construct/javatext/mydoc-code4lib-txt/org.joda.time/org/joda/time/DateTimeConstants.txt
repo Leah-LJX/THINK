@@ -1,0 +1,7 @@
+[Class] org.joda.time.DateTimeConstants
+[Flag] Class
+[Info]
+Since: 1.0
+[Constructor Summary]
+protected 	DateTimeConstants()	Restrictive constructor
+[Method Summary]

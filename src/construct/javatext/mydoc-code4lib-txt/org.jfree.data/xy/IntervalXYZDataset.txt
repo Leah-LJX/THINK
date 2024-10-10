@@ -1,0 +1,13 @@
+[Class] org.jfree.data.xy.IntervalXYZDataset
+[Flag] Interface
+[Info]
+All Superinterfaces: Dataset, SeriesDataset, XYDataset, XYZDataset
+[Constructor Summary]
+
+[Method Summary]
+Number getEndXValue(int series, int item)	Returns the ending X value for the specified series and item.
+Number getEndYValue(int series, int item)	Returns the ending Y value for the specified series and item.
+Number getEndZValue(int series, int item)	Returns the ending Z value for the specified series and item.
+Number getStartXValue(int series, int item)	Returns the starting X value for the specified series and item.
+Number getStartYValue(int series, int item)	Returns the starting Y value for the specified series and item.
+Number getStartZValue(int series, int item)	Returns the starting Z value for the specified series and item.

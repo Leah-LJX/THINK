@@ -1,0 +1,7 @@
+[Class] org.w3c.dom.svg.SVGSymbolElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, EventTarget, Node, SVGElement, SVGExternalResourcesRequired, SVGFitToViewBox, SVGLangSpace, SVGStylable
+[Constructor Summary]
+
+[Method Summary]

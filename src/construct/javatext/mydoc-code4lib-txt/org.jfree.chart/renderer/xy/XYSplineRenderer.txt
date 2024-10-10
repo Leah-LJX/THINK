@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.xy.XYSplineRenderer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, AnnotationChangeListener, LegendItemSource, XYItemRenderer, org.jfree.util.PublicCloneable
+[Constructor Summary]
+XYSplineRenderer() Creates a new instance with the precision attribute defaulting to 5 and no fill of the area 'under' the spline.
+[Method Summary]
+protected void drawPrimaryLineAsPath(XYItemRendererState state, Graphics2D g2, XYPlot plot, XYDataset dataset, int pass, int series, int item, ValueAxis xAxis, ValueAxis yAxis, Rectangle2D dataArea) Draws the item (first pass).

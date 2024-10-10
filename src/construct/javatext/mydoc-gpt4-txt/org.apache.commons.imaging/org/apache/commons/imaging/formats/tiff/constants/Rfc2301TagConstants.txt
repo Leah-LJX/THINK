@@ -1,0 +1,39 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.constants.Rfc2301TagConstants
+[Type] Class
+[Info]
+public final class Rfc2301TagConstants extends Object RFC 2301: File Format for Internet Fax    www.ietf.org/rfc/rfc2301.txt    Also subsumes  "The spirit of TIFF class F"    http://cool.conservation-us.org/bytopic/imaging/std/tiff-f.html
+[Field Summary]
+static List<TagInfo> ALL_RFC_2301_TAGS	
+static int CLEAN_FAX_DATA_VALUE_CLEAN	
+static int CLEAN_FAX_DATA_VALUE_REGENERATED	
+static int CLEAN_FAX_DATA_VALUE_UNCLEAN	
+static int CODING_METHODS_VALUE_T4_1D	
+static int CODING_METHODS_VALUE_T4_2D	
+static int CODING_METHODS_VALUE_T6	
+static int CODING_METHODS_VALUE_T81	
+static int CODING_METHODS_VALUE_T82_T43	
+static int CODING_METHODS_VALUE_T82_T85	
+static int FAX_PROFILE_VALUE_EXTENDED_B_AND_W_LOSSLESS_F	
+static int FAX_PROFILE_VALUE_LOSSLESS_COLOR_AND_GRAYSCALE_L	
+static int FAX_PROFILE_VALUE_LOSSLESS_JBIG_B_AND_W_J	
+static int FAX_PROFILE_VALUE_LOSSY_COLOR_AND_GRAYSCALE_C	
+static int FAX_PROFILE_VALUE_MINIMAL_B_AND_W_LOSSLESS_S	
+static int FAX_PROFILE_VALUE_MIXED_RASTER_CONTENT_M	
+static int FAX_PROFILE_VALUE_UNKNOWN	
+static int PROFILE_TYPE_VALUE_GROUP_3_FAX	
+static int PROFILE_TYPE_VALUE_UNSPECIFIED	
+static TagInfoShortOrLong TIFF_TAG_BAD_FAX_LINES	
+static TagInfoShort TIFF_TAG_CLEAN_FAX_DATA	
+static TagInfoLong TIFF_TAG_CODING_METHODS	
+static TagInfoShortOrLong TIFF_TAG_CONSECUTIVE_BAD_FAX_LINES	
+static TagInfoRationals TIFF_TAG_DECODE	
+static TagInfoShorts TIFF_TAG_DEFAULT_IMAGE_COLOR	
+static TagInfoByte TIFF_TAG_FAX_PROFILE	
+static TagInfoDirectory TIFF_TAG_GLOBAL_PARAMETERS_IFD	
+static TagInfoShortOrLong TIFF_TAG_IMAGE_LAYER	
+static TagInfoByte TIFF_TAG_MODE_NUMBER	
+static TagInfoLong TIFF_TAG_PROFILE_TYPE	
+static TagInfoLongs TIFF_TAG_STRIP_ROW_COUNTS	
+static TagInfoBytes TIFF_TAG_VERSION_YEAR	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

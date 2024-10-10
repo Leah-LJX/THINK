@@ -1,0 +1,21 @@
+[API Name] opennlp.tools.tokenize.TokenizerFactory
+[Type] Class
+[Info]
+public class TokenizerFactory extends BaseToolFactory The factory that provides Tokenizer default implementation and  resources. Users can extend this class if their application requires  overriding the TokenContextGenerator, Dictionary etc.
+[Constructor Summary]
+TokenizerFactory()	Instantiates a TokenizerFactory that provides the default implementation of the resources.
+TokenizerFactory(String languageCode, Dictionary abbreviationDictionary, boolean useAlphaNumericOptimization, Pattern alphaNumericPattern)	Instantiates a TokenizerFactory.
+[Method Summary]
+static TokenizerFactory create(String subclassName, String languageCode, Dictionary abbreviationDictionary, boolean useAlphaNumericOptimization, Pattern alphaNumericPattern)	Factory method the framework uses instantiate a new TokenizerFactory.
+Map<String,Object> createArtifactMap()	A model's implementation should call this constructor that creates a model programmatically.
+Map<String,String> createManifestEntries()	
+Dictionary getAbbreviationDictionary()	
+Pattern getAlphaNumericPattern()	
+TokenContextGenerator getContextGenerator()	
+String getLanguageCode()	
+boolean isUseAlphaNumericOptimization()	
+void validateArtifactMap()	Validates the parsed artifacts.
+[Methods inherited from class opennlp.tools.util.BaseToolFactory]
+create, create, createArtifactSerializersMap
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

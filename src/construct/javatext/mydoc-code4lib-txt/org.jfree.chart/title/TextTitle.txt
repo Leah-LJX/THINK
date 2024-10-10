@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.title.TextTitle
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Block, org.jfree.ui.Drawable, org.jfree.util.PublicCloneable
+Direct Known Subclasses: DateTitle, ShortTextTitle
+[Constructor Summary]
+TextTitle() Creates a new title, using default attributes where necessary.
+[Method Summary]
+org.jfree.ui.Size2D arrange(Graphics2D g2, RectangleConstraint constraint) Arranges the contents of the block, within the given constraints, and returns the block size.

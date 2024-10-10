@@ -1,0 +1,9 @@
+[API Name] opennlp.tools.parser.GapLabeler
+[Type] Interface
+[Info]
+All Known Implementing Classes: AncoraSpanishHeadRules, HeadRules
+public interface GapLabeler Represents a labeler for nodes which contain traces so that these traces can be predicted  by a Parser.
+See Also:
+Parser
+[Method Summary]
+void labelGaps(Stack<Constituent> stack)	Labels constituents found in the stack with gap labels if appropriate.

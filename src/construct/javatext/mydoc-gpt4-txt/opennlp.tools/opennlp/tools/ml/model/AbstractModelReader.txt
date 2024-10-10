@@ -1,0 +1,17 @@
+[API Name] opennlp.tools.ml.model.AbstractModelReader
+[Type] Class
+[Info]
+Direct Known Subclasses: GenericModelReader, GISModelReader, NaiveBayesModelReader, PerceptronModelReader
+public abstract class AbstractModelReader extends Object An abstract, basic implementation of a model reader.
+[Constructor Summary]
+AbstractModelReader(File f)	Initializes a AbstractModelReader via a File.
+AbstractModelReader(DataReader dataReader)	Initializes a AbstractModelReader via a DataReader.
+[Method Summary]
+abstract void checkModelType()	Checks the model type via the the underlying DataReader.
+abstract AbstractModel constructModel()	Constructs a model.
+AbstractModel getModel()	
+double readDouble()	Implement as needed for the format the model is stored in.
+int readInt()	Implement as needed for the format the model is stored in.
+String readUTF()	Implement as needed for the format the model is stored in.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,22 @@
+[Class] org.jfree.data.statistics.HistogramDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, PublicCloneable, Dataset, SeriesChangeListener, SeriesDataset, IntervalXYDataset, XYDataset
+[Constructor Summary]
+HistogramDataset()	Creates a new (empty) dataset with a default type of HistogramType.FREQUENCY.
+[Method Summary]
+void addSeries(Comparable key, double[] values, int bins)	Adds a series to the dataset, using the specified number of bins, and sends a DatasetChangeEvent to all registered listeners.
+void addSeries(Comparable key, double[] values, int bins, double minimum, double maximum)	Adds a series to the dataset.
+Object clone()	Returns a clone of the dataset.
+boolean equals(Object obj)	Tests this dataset for equality with an arbitrary object.
+Number getEndX(int series, int item)	Returns the end value for a bin.
+Number getEndY(int series, int item)	Returns the end y-value for a bin (which is the same as the y-value, this method exists only to support the general form of the IntervalXYDataset interface).
+int getItemCount(int series)	Returns the number of data items for a series.
+int getSeriesCount()	Returns the number of series in the dataset.
+Comparable getSeriesKey(int series)	Returns the key for a series.
+Number getStartX(int series, int item)	Returns the start value for a bin.
+Number getStartY(int series, int item)	Returns the start y-value for a bin (which is the same as the y-value, this method exists only to support the general form of the IntervalXYDataset interface).
+HistogramType getType()	Returns the histogram type.
+Number getX(int series, int item)	Returns the X value for a bin.
+Number getY(int series, int item)	Returns the y-value for a bin (calculated to take into account the histogram type).
+void setType(HistogramType type)	Sets the histogram type and sends a DatasetChangeEvent to all registered listeners.

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.labels.CustomXYToolTipGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, XYToolTipGenerator, org.jfree.util.PublicCloneable
+[Constructor Summary]
+CustomXYToolTipGenerator() Default constructor.
+[Method Summary]
+void addToolTipSeries(List toolTips) Adds a list of tooltips for a series.

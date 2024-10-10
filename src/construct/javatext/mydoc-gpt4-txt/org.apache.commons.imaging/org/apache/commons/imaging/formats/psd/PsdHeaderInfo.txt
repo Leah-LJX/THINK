@@ -1,0 +1,19 @@
+[API Name] Package org.apache.commons.imaging.formats.psd.PsdHeaderInfo
+[Type] Class
+[Info]
+public class PsdHeaderInfo extends Object
+[Constructor Summary]
+PsdHeaderInfo​(int version, byte[] reserved, int channels, int rows, int columns, int depth, int mode)	
+[Field Summary]
+int channels	
+int columns	
+int depth	
+int mode	
+int rows	
+int version	
+[Method Summary]
+void dump()	
+void dump​(PrintWriter pw)	
+byte[] getReserved()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

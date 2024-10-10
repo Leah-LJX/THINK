@@ -1,0 +1,17 @@
+[API Name] Package org.apache.commons.imaging.common.mylzw.MyBitInputStream
+[Type] Class
+[Info]
+All Implemented Interfaces: Closeable, AutoCloseable
+public class MyBitInputStream extends InputStream
+[Constructor Summary]
+MyBitInputStream​(InputStream is, ByteOrder byteOrder)	
+[Method Summary]
+void flushCache()	
+long getBytesRead()	
+int read()	
+int readBits​(int sampleBits)	
+void setTiffLZWMode()	
+[Methods inherited from class java.io.InputStream]
+available, close, mark, markSupported, nullInputStream, read, read, readAllBytes, readNBytes, readNBytes, reset, skip, transferTo
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

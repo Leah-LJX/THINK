@@ -1,0 +1,40 @@
+[API Name] org.apache.pdfbox.pdmodel.font.PDTrueTypeFont
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable, PDFontLike, PDVectorFont
+public class PDTrueTypeFont extends PDSimpleFont implements PDVectorFont TrueType font.
+Author: Ben Litchfield
+[Constructor Summary]
+PDTrueTypeFont(COSDictionary fontDictionary)	Creates a new TrueType font from a Font dictionary.
+[Field Summary]
+PDTrueTypeFont(COSDictionary fontDictionary)	Creates a new TrueType font from a Font dictionary.
+[Method Summary]
+int codeToGID(int code)	Returns the GID for the given character code.
+protected byte[] encode(int unicode)	Encodes the given Unicode code point for use in a PDF content stream.
+String getBaseFont()	Returns the PostScript name of the font.
+org.apache.fontbox.util.BoundingBox getBoundingBox()	Returns the font's bounding box.
+org.apache.fontbox.FontBoxFont getFontBoxFont()	Returns the embedded or system font used for rendering.
+protected Map<Integer,Integer> getGIDToCode()	Inverts the font's code -> GID mapping.
+float getHeight(int code)	Returns the height of the given character, in glyph space.
+String getName()	Returns the name of this font, either the PostScript "BaseName" or the Type 3 "Name".
+GeneralPath getNormalizedPath(int code)	Returns the normalized glyph path for the given character code in a PDF.
+GeneralPath getPath(int code)	Returns the glyph path for the given character code.
+GeneralPath getPath(String name)	Returns the path for the character with the given name.
+org.apache.fontbox.ttf.TrueTypeFont getTrueTypeFont()	Returns the embedded or substituted TrueType font.
+float getWidthFromFont(int code)	Returns the width of a glyph in the embedded font file.
+boolean hasGlyph(int code)	Returns true if this font contains a glyph for the given character code in a PDF.
+boolean hasGlyph(String name)	Returns true if the font contains the character with the given name.
+boolean isDamaged()	Returns true if the embedded font file is damaged.
+boolean isEmbedded()	Returns true if the font file is embedded in the PDF.
+static PDTrueTypeFont load(PDDocument doc, File file, Encoding encoding)	Loads a TTF to be embedded into a document as a simple font.
+static PDTrueTypeFont load(PDDocument doc, InputStream input, Encoding encoding)	Loads a TTF to be embedded into a document as a simple font.
+static PDTrueTypeFont load(PDDocument doc, org.apache.pdfbox.io.RandomAccessRead randomAccessRead, Encoding encoding)	Loads a TTF to be embedded into a document as a simple font.
+static PDTrueTypeFont load(PDDocument doc, org.apache.fontbox.ttf.TrueTypeFont ttf, Encoding encoding)	Loads a TTF to be embedded into a document as a simple font.
+int readCode(InputStream in)	Reads a character code from a content stream string.
+protected Encoding readEncodingFromFont()	Called by readEncoding() if the encoding needs to be extracted from the font file.
+[Methods inherited from class org.apache.pdfbox.pdmodel.font.PDSimpleFont]
+addToSubset, getEncoding, getGlyphList, getStandard14Width, getSymbolicFlag, hasExplicitWidth, isFontSymbolic, isNonZeroBoundingBox, isStandard14, isSymbolic, isVertical, readEncoding, subset, toUnicode, toUnicode, willBeSubset
+[Methods inherited from class org.apache.pdfbox.pdmodel.font.PDFont]
+encode, equals, getAverageFontWidth, getCOSObject, getDisplacement, getFontDescriptor, getFontMatrix, getPositionVector, getSpaceWidth, getStandard14AFM, getStringWidth, getSubType, getToUnicodeCMap, getType, getWidth, getWidths, hashCode, readCMap, setFontDescriptor, toString
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

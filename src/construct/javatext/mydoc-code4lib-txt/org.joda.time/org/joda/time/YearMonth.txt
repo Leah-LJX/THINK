@@ -1,0 +1,49 @@
+[Class] org.joda.time.YearMonth
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<ReadablePartial>, ReadablePartial
+[Constructor Summary]
+YearMonth()	Constructs a YearMonth with the current year-month, using ISOChronology in	 the default zone to extract the fields.
+YearMonth(Chronology chronology)	Constructs a YearMonth with the current year-month, using the specified chronology	 and zone to extract the fields.
+YearMonth(DateTimeZone zone)	Constructs a YearMonth with the current year-month, using ISOChronology in	 the specified zone to extract the fields.
+YearMonth(int year,	int monthOfYear)	Constructs a YearMonth with specified year and month	 using ISOChronology.
+YearMonth(int year,	int monthOfYear,	Chronology chronology)	Constructs an instance set to the specified year and month	 using the specified chronology, whose zone is ignored.
+YearMonth(long instant)	Constructs a YearMonth extracting the partial fields from the specified	 milliseconds using the ISOChronology in the default zone.
+YearMonth(long instant,	Chronology chronology)	Constructs a YearMonth extracting the partial fields from the specified	 milliseconds using the chronology provided.
+YearMonth(Object instant)	Constructs a YearMonth from an Object that represents some form of time.
+YearMonth(Object instant,	Chronology chronology)	Constructs a YearMonth from an Object that represents some form of time,	 using the specified chronology.
+[Method Summary]
+static YearMonth fromCalendarFields(Calendar calendar) Constructs a YearMonth from a java.util.Calendar using exactly the same field values avoiding any time zone effects.
+static YearMonth fromDateFields(Date date) Constructs a YearMonth from a java.util.Date using exactly the same field values avoiding any time zone effects.
+protected DateTimeField getField(int index, Chronology chrono) Gets the field for a specific index in the chronology specified.
+DateTimeFieldType getFieldType(int index) Gets the field type at the specified index.
+DateTimeFieldType[] getFieldTypes() Gets an array of the field type of each of the fields that this partial supports.
+int getMonthOfYear() Get the month of year field value.
+int getYear() Get the year field value.
+YearMonth minus(ReadablePeriod period) Returns a copy of this year-month with the specified period taken away.
+YearMonth minusMonths(int months) Returns a copy of this year-month minus the specified number of months.
+YearMonth minusYears(int years) Returns a copy of this year-month minus the specified number of years.
+YearMonth.Property monthOfYear() Get the month of year field property which provides access to advanced functionality.
+static YearMonth now() Obtains a YearMonth set to the current system millisecond time using ISOChronology in the default time zone.
+static YearMonth now(Chronology chronology) Obtains a YearMonth set to the current system millisecond time using the specified chronology.
+static YearMonth now(DateTimeZone zone) Obtains a YearMonth set to the current system millisecond time using ISOChronology in the specified time zone.
+static YearMonth parse(String str) Parses a YearMonth from the specified string.
+static YearMonth parse(String str, DateTimeFormatter formatter) Parses a YearMonth from the specified string using a formatter.
+YearMonth plus(ReadablePeriod period) Returns a copy of this year-month with the specified period added.
+YearMonth plusMonths(int months) Returns a copy of this year-month plus the specified number of months.
+YearMonth plusYears(int years) Returns a copy of this year-month plus the specified number of years.
+YearMonth.Property property(DateTimeFieldType type) Gets the property object for the specified type, which contains many useful methods.
+int size() Gets the number of fields in this partial, which is two.
+Interval toInterval() Converts this object to an Interval representing the whole month.
+Interval toInterval(DateTimeZone zone) Converts this object to an Interval representing the whole month.
+LocalDate toLocalDate(int dayOfMonth) Converts this object to a LocalDate with the same year-month and chronology.
+String toString() Output the year-month in ISO8601 format (yyyy-MM).
+String toString(String pattern) Output the year-month using the specified format pattern.
+String toString(String pattern, Locale locale) Output the year-month using the specified format pattern.
+YearMonth withChronologyRetainFields(Chronology newChronology) Returns a copy of this year-month with the specified chronology.
+YearMonth withField(DateTimeFieldType fieldType, int value) Returns a copy of this year-month with the specified field set to a new value.
+YearMonth withFieldAdded(DurationFieldType fieldType, int amount) Returns a copy of this year-month with the value of the specified field increased.
+YearMonth withMonthOfYear(int monthOfYear) Returns a copy of this year-month with the month of year field updated.
+YearMonth withPeriodAdded(ReadablePeriod period, int scalar) Returns a copy of this year-month with the specified period added.
+YearMonth withYear(int year) Returns a copy of this year-month with the year field updated.
+YearMonth.Property year() Get the year field property which provides access to advanced functionality.

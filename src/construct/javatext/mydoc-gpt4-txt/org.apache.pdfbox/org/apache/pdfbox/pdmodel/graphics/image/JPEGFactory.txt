@@ -1,0 +1,13 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.image.JPEGFactory
+[Type] Class
+[Info]
+public final class JPEGFactory extends Object Factory for creating a PDImageXObject containing a JPEG compressed image.
+Author: John Hewson
+[Method Summary]
+static PDImageXObject JPEGFactory.createFromByteArray(PDDocument document, byte[] byteArray)	Creates a new JPEG Image XObject from a byte array containing JPEG data.
+static PDImageXObject JPEGFactory.createFromImage(PDDocument document, BufferedImage image)	Creates a new JPEG PDImageXObject from a BufferedImage.
+static PDImageXObject JPEGFactory.createFromImage(PDDocument document, BufferedImage image, float quality)	Creates a new JPEG PDImageXObject from a BufferedImage and a given quality.
+static PDImageXObject JPEGFactory.createFromImage(PDDocument document, BufferedImage image, float quality, int dpi)	Creates a new JPEG Image XObject from a BufferedImage, a given quality and dpi metadata.
+static PDImageXObject JPEGFactory.createFromStream(PDDocument document, InputStream stream)	Creates a new JPEG Image XObject from an input stream containing JPEG data.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

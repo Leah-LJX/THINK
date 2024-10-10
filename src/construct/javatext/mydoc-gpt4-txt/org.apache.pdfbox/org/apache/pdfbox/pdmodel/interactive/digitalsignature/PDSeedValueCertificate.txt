@@ -1,0 +1,55 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.digitalsignature.PDSeedValueCertificate
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDSeedValueCertificate extends Object implements COSObjectable This class represents a certificate seed value dictionary that is in the seed value which puts  constraints on certificates when signing documents.
+Author: Hossam Hazem
+[Constructor Summary]
+PDSeedValueCertificate()	Default constructor.
+PDSeedValueCertificate(COSDictionary dict)	Constructor.
+[Field Summary]
+static int FLAG_ISSUER	A Ff flag.
+static int FLAG_KEY_USAGE	A Ff flag.
+static int FLAG_OID	A Ff flag.
+static int FLAG_SUBJECT	A Ff flag.
+static int FLAG_SUBJECT_DN	A Ff flag.
+static int FLAG_URL	A Ff flag.
+[Method Summary]
+void addIssuer(byte[] issuer)	array of bytes containing DER-encoded X.509v3 certificates of acceptable issuers.
+void addKeyUsage(char digitalSignature, char nonRepudiation, char keyEncipherment, char dataEncipherment, char keyAgreement, char keyCertSign, char cRLSign, char encipherOnly, char decipherOnly)	works like addKeyUsage(String) but enters each character separately
+void addKeyUsage(String keyUsageExtension)	(Optional; PDF 1.7) specifies an acceptable key-usage extension that must be presennt in the signing certificate for works like setKeyUsage(List) but takes only one string
+void addOID(byte[] oid)	works like setOID(List) but for one object
+void addSubject(byte[] subject)	(Optional) byte array containing DER-encoded X.509v3 certificate that is acceptable for signing.
+COSDictionary getCOSObject()	Convert this standard java object to a COS dictionary.
+List<byte[]> getIssuer()	Returns list of array of bytes of DER-encoded X.509v3 certificates
+List<String> getKeyUsage()	Returns list of key usages of certificate strings where each string is 9 characters long and each character is one of these values {0, 1, X} 0 for must not set, 1 for must set, X for don't care.
+List<byte[]> getOID()	Returns A list of array of bytes that contain Object Identifiers (OIDs) of the certificate policies that must be present in the signing certificate
+List<byte[]> getSubject()	Returns list of byte arrays that contains DER-encoded X.509v3 certificates
+List<Map<String,String>> getSubjectDN()	Returns list of maps that contains subject distinguished names like [(cn: John Doe, o: Doe), (cn: John Smith)] both keys are typically of the form 'cn', 'o', 'email', '2.5.4.43'; and values are text strings.
+String getURL()	returns String of the URL
+String getURLType()	A name indicating the usage of the URL entry.
+boolean isIssuerRequired()	
+boolean isKeyUsageRequired()	
+boolean isOIDRequired()	
+boolean isSubjectDNRequired()	
+boolean isSubjectRequired()	
+boolean isURLRequired()	
+void removeIssuer(byte[] issuer)	Removes an issuer from the issuers list
+void removeKeyUsage(String keyUsageExtension)	Removes a key usage extension
+void removeOID(byte[] oid)	removes an OID from the list
+void removeSubject(byte[] subject)	removes a subject from the list
+void setIssuer(List<byte[]> issuers)	(Optional) A list of array of bytes containing DER-encoded X.509v3 certificates of acceptable issuers.
+void setIssuerRequired(boolean flag)	set true if Issuer shall be required as a constraint on signature.
+void setKeyUsage(List<String> keyUsageExtensions)	(Optional; PDF 1.7) A List of ASCII strings, where each string specifies an acceptable key-usage extension that must be present in the signing certificate.
+void setKeyUsageRequired(boolean flag)	set true if KeyUsage shall be required as a constraint on signature.
+void setOID(List<byte[]> oidByteStrings)	(Optional) A list of byte arrays that contain Object Identifiers (OIDs) of the certificate policies that must be present in the signing certificate.
+void setOIDRequired(boolean flag)	set true if OID shall be required as a constraint on signature.
+void setSubject(List<byte[]> subjects)	(Optional) A list of byte arrays containing DER-encoded X.509v3 certificates that are acceptable for signing.
+void setSubjectDN(List<Map<String,String>> subjectDN)	(Optional; PDF 1.7) A list of maps, where each map contains key value pairs, that specify the Subject Distinguished Name (DN) that must be present within the certificate for it to be acceptable for signing.
+void setSubjectDNRequired(boolean flag)	set true if subject DN shall be required as a constraint on signature.
+void setSubjectRequired(boolean flag)	set true if subject shall be required as a constraint on signature.
+void setURL(String url)	(Optional) A URL, the use for which is defined by the URLType entry.
+void setURLRequired(boolean flag)	set true if URL shall be required as a constraint on signature.
+void setURLType(String urlType)	(Optional; PDF 1.7) A name indicating the usage of the URL entry.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

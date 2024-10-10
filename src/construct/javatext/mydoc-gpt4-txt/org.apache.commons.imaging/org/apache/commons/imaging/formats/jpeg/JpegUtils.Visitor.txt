@@ -1,0 +1,10 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.JpegUtils.Visitor
+[Type] Interface
+[Info]
+All Known Implementing Classes: JpegDecoder
+Enclosing class: JpegUtils
+public static interface JpegUtils.Visitor
+[Method Summary]
+boolean beginSOS()	
+boolean visitSegment​(int marker, byte[] markerBytes, int segmentLength, byte[] segmentLengthBytes, byte[] segmentData)	
+void visitSOS​(int marker, byte[] markerBytes, byte[] imageData)	

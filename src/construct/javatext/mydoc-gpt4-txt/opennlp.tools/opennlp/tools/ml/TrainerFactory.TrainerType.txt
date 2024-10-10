@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.ml.Class
+[Type] Enum
+[Info]
+All Implemented Interfaces: Serializable, Comparable<TrainerFactory.TrainerType>, Constable
+Enclosing class: TrainerFactory
+public static enum TrainerFactory.TrainerType extends Enum<TrainerFactory.TrainerType>
+[Nested Class Summary]
+Nested Class Summary
+Enum.EnumDesc<E extends Enum<E>>
+[Method Summary]
+static TrainerFactory.TrainerType valueOf(String name)	Returns the enum constant of this class with the specified name.
+static TrainerFactory.TrainerType[] values()	Returns an array containing the constants of this enum class, in the order they are declared.
+[Methods inherited from class java.lang.Enum]
+compareTo, describeConstable, equals, getDeclaringClass, hashCode, name, ordinal, toString, valueOf
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

@@ -1,0 +1,15 @@
+[Class] org.jfree.data.ComparableObjectItem
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Comparable
+Direct Known Subclasses: OHLCItem, VectorDataItem, XIntervalDataItem, XYIntervalDataItem, YIntervalDataItem
+[Constructor Summary]
+ComparableObjectItem(Comparable x, Object y)	Constructs a new data item.
+[Method Summary]
+Object clone()	Returns a clone of this object.
+int compareTo(Object o1)	Returns an integer indicating the order of this object relative to another object.
+boolean equals(Object obj)	Tests if this object is equal to another.
+protected Comparable getComparable()	Returns the x-value.
+protected Object getObject()	Returns the y-value.
+int hashCode()	Returns a hash code.
+protected void setObject(Object y)	Sets the y-value for this data item.

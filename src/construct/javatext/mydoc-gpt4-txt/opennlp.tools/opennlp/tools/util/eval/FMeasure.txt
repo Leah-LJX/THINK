@@ -1,0 +1,17 @@
+[API Name] opennlp.tools.util.eval.FMeasure
+[Type] Class
+[Info]
+public final class FMeasure extends Object The FMeasure is a utility class for evaluators  which measures precision, recall and the resulting f-measure.    Evaluation results are the arithmetic mean of the precision  scores calculated for each reference sample and  the arithmetic mean of the recall scores calculated for  each reference sample.
+[Constructor Summary]
+FMeasure()	
+[Method Summary]
+double getFMeasure()	f-measure = 2 * precision * recall / (precision + recall).
+double getPrecisionScore()	
+double getRecallScore()	
+void mergeInto(FMeasure measure)	Merge results into metric.
+static double precision(Object[] references, Object[] predictions)	Calculates the precision score for the given reference and predicted spans.
+static double recall(Object[] references, Object[] predictions)	Calculates the recall score for the given reference and predicted spans.
+String toString()	
+void updateScores(Object[] references, Object[] predictions)	Updates the score based on the number of true positives and the number of predictions and references.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, wait, wait, wait

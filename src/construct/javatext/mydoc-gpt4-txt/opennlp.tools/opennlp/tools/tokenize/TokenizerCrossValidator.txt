@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.tokenize.TokenizerCrossValidator
+[Type] Class
+[Info]
+public class TokenizerCrossValidator extends Object A cross validator for tokenizers.
+[Constructor Summary]
+TokenizerCrossValidator(TrainingParameters params, TokenizerFactory factory, TokenizerEvaluationMonitor... listeners)	Creates a TokenizerCrossValidator using the given TokenizerFactory.
+[Method Summary]
+void evaluate(ObjectStream<TokenSample> samples, int nFolds)	Starts the evaluation.
+FMeasure getFMeasure()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

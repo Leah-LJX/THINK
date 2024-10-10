@@ -1,0 +1,16 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.PDLineDashPattern
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class PDLineDashPattern extends Object implements COSObjectable A line dash pattern for stroking paths.  Instances of PDLineDashPattern are immutable.
+Author: Ben Litchfield, John Hewson
+[Constructor Summary]
+PDLineDashPattern()	Creates a new line dash pattern, with no dashes and a phase of 0.
+PDLineDashPattern(COSArray array, int phase)	Creates a new line dash pattern from a dash array and phase.
+[Method Summary]
+COSBase getCOSObject()	Convert this standard java object to a COS object.
+float[] getDashArray()	Returns the dash array.
+int getPhase()	Returns the dash phase.
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

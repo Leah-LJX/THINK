@@ -1,0 +1,31 @@
+[Class] org.joda.time.Hours
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<BaseSingleFieldPeriod>, ReadablePeriod
+[Constructor Summary]
+
+[Method Summary]
+Hours dividedBy(int divisor) Returns a new instance with the hours divided by the specified divisor.
+DurationFieldType getFieldType() Gets the duration field type, which is hours.
+int getHours() Gets the number of hours that this period represents.
+PeriodType getPeriodType() Gets the period type, which is hours.
+static Hours hours(int hours) Obtains an instance of Hours that may be cached.
+static Hours hoursBetween(ReadableInstant start, ReadableInstant end) Creates a Hours representing the number of whole hours between the two specified datetimes.
+static Hours hoursBetween(ReadablePartial start, ReadablePartial end) Creates a Hours representing the number of whole hours between the two specified partial datetimes.
+static Hours hoursIn(ReadableInterval interval) Creates a Hours representing the number of whole hours in the specified interval.
+boolean isGreaterThan(Hours other) Is this hours instance greater than the specified number of hours.
+boolean isLessThan(Hours other) Is this hours instance less than the specified number of hours.
+Hours minus(Hours hours) Returns a new instance with the specified number of hours taken away.
+Hours minus(int hours) Returns a new instance with the specified number of hours taken away.
+Hours multipliedBy(int scalar) Returns a new instance with the hours multiplied by the specified scalar.
+Hours negated() Returns a new instance with the hours value negated.
+static Hours parseHours(String periodStr) Creates a new Hours by parsing a string in the ISO8601 format 'PTnH'.
+Hours plus(Hours hours) Returns a new instance with the specified number of hours added.
+Hours plus(int hours) Returns a new instance with the specified number of hours added.
+static Hours standardHoursIn(ReadablePeriod period) Creates a new Hours representing the number of complete standard length hours in the specified period.
+Days toStandardDays() Converts this period in hours to a period in days assuming a 24 hour day.
+Duration toStandardDuration() Converts this period in hours to a duration in milliseconds assuming a 60 minute hour and 60 second minute.
+Minutes toStandardMinutes() Converts this period in hours to a period in minutes assuming a 60 minute hour.
+Seconds toStandardSeconds() Converts this period in hours to a period in seconds assuming a 60 minute hour and 60 second minute.
+Weeks toStandardWeeks() Converts this period in hours to a period in weeks assuming a 7 day week and 24 hour day.
+String toString() Gets this instance as a String in the ISO8601 duration format.

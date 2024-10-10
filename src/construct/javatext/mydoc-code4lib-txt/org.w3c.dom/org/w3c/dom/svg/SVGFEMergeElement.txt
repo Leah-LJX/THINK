@@ -1,0 +1,7 @@
+[Class] org.w3c.dom.svg.SVGFEMergeElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGFilterPrimitiveStandardAttributes, SVGStylable
+[Constructor Summary]
+
+[Method Summary]

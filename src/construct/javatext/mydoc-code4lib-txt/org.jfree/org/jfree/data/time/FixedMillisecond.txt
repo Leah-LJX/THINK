@@ -1,0 +1,23 @@
+[Class] org.jfree.data.time.FixedMillisecond
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable, MonthConstants, TimePeriod
+[Constructor Summary]
+FixedMillisecond()	Constructs a millisecond based on the current system time.
+FixedMillisecond(long millisecond)	Constructs a millisecond.
+FixedMillisecond(Date time)	Constructs a millisecond.
+[Method Summary]
+int compareTo(Object o1)	Returns an integer indicating the order of this Millisecond object relative to the specified object: negative == before, zero == same, positive == after.
+boolean equals(Object object)	Tests the equality of this object against an arbitrary Object.
+long getFirstMillisecond()	Returns the first millisecond of the time period.
+long getFirstMillisecond(Calendar calendar)	Returns the first millisecond of the time period.
+long getLastMillisecond()	Returns the last millisecond of the time period.
+long getLastMillisecond(Calendar calendar)	Returns the last millisecond of the time period.
+long getMiddleMillisecond()	Returns the millisecond closest to the middle of the time period.
+long getMiddleMillisecond(Calendar calendar)	Returns the millisecond closest to the middle of the time period.
+long getSerialIndex()	Returns a serial index number for the millisecond.
+Date getTime()	Returns the date/time (creates a new Date instance each time this method is called).
+int hashCode()	Returns a hash code for this object instance.
+RegularTimePeriod next()	Returns the millisecond following this one.
+void peg(Calendar calendar)	This method is overridden to do nothing.
+RegularTimePeriod previous()	Returns the millisecond preceding this one.

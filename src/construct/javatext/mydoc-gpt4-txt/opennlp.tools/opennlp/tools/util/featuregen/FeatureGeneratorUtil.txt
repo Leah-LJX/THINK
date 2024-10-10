@@ -1,0 +1,10 @@
+[API Name] opennlp.tools.util.featuregen.FeatureGeneratorUtil
+[Type] Class
+[Info]
+public class FeatureGeneratorUtil extends Object This class provide common utilities for feature generation.
+[Constructor Summary]
+FeatureGeneratorUtil()	
+[Method Summary]
+static String tokenFeature(String token)	Generates a class name for the specified token.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

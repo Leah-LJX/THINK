@@ -1,0 +1,25 @@
+[Class] org.jfree.data.statistics.DefaultMultiValueCategoryDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, PublicCloneable, CategoryDataset, Dataset, KeyedValues2D, RangeInfo, MultiValueCategoryDataset, Values2D
+[Constructor Summary]
+DefaultMultiValueCategoryDataset()	Creates a new dataset.
+[Method Summary]
+void add(List values, Comparable rowKey, Comparable columnKey)	Adds a list of values to the dataset (null and Double.NaN items are automatically removed) and sends a DatasetChangeEvent to all registered listeners.
+Object clone()	Returns a clone of this instance.
+boolean equals(Object obj)	Tests this dataset for equality with an arbitrary object.
+int getColumnCount()	Returns the number of columns in the table.
+int getColumnIndex(Comparable key)	Returns the column index for a given key.
+Comparable getColumnKey(int column)	Returns a column key.
+List getColumnKeys()	Returns the column keys.
+Range getRangeBounds(boolean includeInterval)	Returns the range of the values in this dataset's range.
+double getRangeLowerBound(boolean includeInterval)	Returns the minimum y-value in the dataset.
+double getRangeUpperBound(boolean includeInterval)	Returns the maximum y-value in the dataset.
+int getRowCount()	Returns the number of rows in the table.
+int getRowIndex(Comparable key)	Returns the row index for a given key.
+Comparable getRowKey(int row)	Returns a row key.
+List getRowKeys()	Returns the row keys.
+Number getValue(int row, int column)	Returns the average value for the specified item.
+Number getValue(Comparable row, Comparable column)	Returns the average value for the specified item.
+List getValues(int row, int column)	Returns a list (possibly empty) of the values for the specified item.
+List getValues(Comparable rowKey, Comparable columnKey)	Returns a list (possibly empty) of the values for the specified item.

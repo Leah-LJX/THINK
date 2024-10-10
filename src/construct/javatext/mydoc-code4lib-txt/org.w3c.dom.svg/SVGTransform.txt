@@ -1,0 +1,16 @@
+[Class] org.w3c.dom.svg.SVGTransform
+[Flag] Interface
+[Info]
+public interface SVGTransform
+[Constructor Summary]
+
+[Method Summary]
+float getAngle()	 
+ SVGMatrix getMatrix()	 
+ short getType()	 
+ void setMatrix(SVGMatrix matrix)	 
+ void setRotate(float angle, float cx, float cy)	 
+ void setScale(float sx, float sy)	 
+ void setSkewX(float angle)	 
+ void setSkewY(float angle)	 
+ void setTranslate(float tx, float ty)

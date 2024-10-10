@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.dial.DialLayerChangeEvent
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+DialLayerChangeEvent(DialLayer layer) Creates a new instance.
+[Method Summary]
+DialLayer getDialLayer() Returns the layer that generated the event.

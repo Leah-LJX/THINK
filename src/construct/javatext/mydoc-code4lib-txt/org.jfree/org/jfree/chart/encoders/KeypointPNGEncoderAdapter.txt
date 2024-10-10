@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.encoders.KeypointPNGEncoderAdapter
+[Flag] Class
+[Info]
+All Implemented Interfaces: ImageEncoder
+[Constructor Summary]
+KeypointPNGEncoderAdapter()
+[Method Summary]
+byte[] encode(BufferedImage bufferedImage) Encodes an image in PNG format.

@@ -1,0 +1,14 @@
+[Class] org.jfree.data.KeyedValues2DItemKey
+[Flag] Class
+[Info]
+Type Parameters: R - the row key type.
+C - the column key type.
+All Implemented Interfaces: Serializable, Comparable<KeyedValues2DItemKey<R,​C>>, ItemKey
+[Constructor Summary]
+KeyedValues2DItemKey(R rowKey, C columnKey)	Creates a new instance.
+[Method Summary]
+int compareTo(KeyedValues2DItemKey<R,C> key) 	 boolean equals(Object obj)	Tests this key for equality with an arbitrary object.
+C getColumnKey()	Returns the column key.
+R getRowKey()	Returns the row key.
+int hashCode() 	 String toJSONString()	Returns a JSON formatted string representing the key.
+String toString()

@@ -1,0 +1,19 @@
+[API Name] org.apache.pdfbox.pdfparser.xref.FreeXReference
+[Type] Class
+[Info]
+All Implemented Interfaces: Comparable<XReferenceEntry>, XReferenceEntry
+public class FreeXReference extends AbstractXReference A class representing a free reference in a PDF's crossreference stream (PDFXRefStream).
+Author: Christian Appl
+[Constructor Summary]
+FreeXReference(COSObjectKey key, long nextFreeObject)	Sets the given COSObjectKey as a free reference in a PDF's crossreference stream (PDFXRefStream).
+[Field Summary]
+static FreeXReference NULL_ENTRY	
+[Method Summary]
+COSObjectKey getReferencedKey()	Returns the COSObjectKey of the object, that is described by this crossreference stream entry.
+long getSecondColumnValue()	Returns the value for the second column of the crossreference stream entry.
+long getThirdColumnValue()	Returns the value for the third column of the crossreference stream entry.
+String toString()	Returns a string representation of this crossreference stream entry.
+[Methods inherited from class org.apache.pdfbox.pdfparser.xref.AbstractXReference]
+compareTo, getFirstColumnValue, getType
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

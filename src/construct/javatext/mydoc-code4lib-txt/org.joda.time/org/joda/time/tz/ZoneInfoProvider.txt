@@ -1,0 +1,12 @@
+[Class] org.joda.time.tz.ZoneInfoProvider
+[Flag] Class
+[Info]
+All Implemented Interfaces: Provider
+[Constructor Summary]
+ZoneInfoProvider(File fileDir)	ZoneInfoProvider searches the given directory for compiled data files.
+ZoneInfoProvider(String resourcePath)	ZoneInfoProvider searches the given ClassLoader resource path for	 compiled data files.
+ZoneInfoProvider(String resourcePath,	ClassLoader loader)	ZoneInfoProvider searches the given ClassLoader resource path for	 compiled data files.
+[Method Summary]
+Set<String> getAvailableIDs() Gets a list of all the available zone ids.
+DateTimeZone getZone(String id) If an error is thrown while loading zone data, the exception is logged to system error and null is returned for this and all future requests.
+protected void uncaughtException(Exception ex) Called if an exception is thrown from getZone while loading zone data.

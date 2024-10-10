@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.annotations.CategoryPointerAnnotation
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Annotation, CategoryAnnotation, org.jfree.util.PublicCloneable
+[Constructor Summary]
+CategoryPointerAnnotation(String label, Comparable key, double value, double angle) Creates a new label and arrow annotation.
+[Method Summary]
+Object clone() Returns a clone of the annotation.

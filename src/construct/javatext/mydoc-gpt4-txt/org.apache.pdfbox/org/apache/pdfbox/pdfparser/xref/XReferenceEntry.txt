@@ -1,0 +1,15 @@
+[API Name] org.apache.pdfbox.pdfparser.xref.XReferenceEntry
+[Type] Interface
+[Info]
+All Superinterfaces: Comparable<XReferenceEntry>
+All Known Implementing Classes: AbstractXReference, FreeXReference, NormalXReference, ObjectStreamXReference
+public interface XReferenceEntry extends Comparable<XReferenceEntry> An implementing class represents an entry, as it can be found in a PDF's crossreference stream  (PDFXRefStream). Such an entry shall locate a PDF object/resource in a PDF document.
+Author: Christian Appl
+[Method Summary]
+long getFirstColumnValue()	Returns the value for the first column of the crossreference stream entry.
+COSObjectKey getReferencedKey()	Returns the COSObjectKey of the object, that is described by this crossreference stream entry.
+long getSecondColumnValue()	Returns the value for the second column of the crossreference stream entry.
+long getThirdColumnValue()	Returns the value for the third column of the crossreference stream entry.
+XReferenceType getType()	Returns the XReferenceType of this crossreference stream entry.
+[Methods inherited from interface java.lang.Comparable]
+compareTo

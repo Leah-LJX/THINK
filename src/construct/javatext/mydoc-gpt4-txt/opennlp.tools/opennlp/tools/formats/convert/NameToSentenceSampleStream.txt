@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.formats.convert.NameToSentenceSampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<SentenceSample>
+@Internal public class NameToSentenceSampleStream extends AbstractToSentenceSampleStream<NameSample> Note:  Do not use this class, internal use only!
+[Constructor Summary]
+NameToSentenceSampleStream(Detokenizer detokenizer, ObjectStream<NameSample> samples, int chunkSize)	Initializes a NameToSentenceSampleStream.
+[Methods inherited from class opennlp.tools.formats.convert.AbstractToSentenceSampleStream]
+read
+[Methods inherited from class opennlp.tools.util.FilterObjectStream]
+close, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

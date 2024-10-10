@@ -1,0 +1,14 @@
+[Class] org.w3c.dom.Entity
+[Flag] Interface
+[Info]
+All Superinterfaces:
+Node
+[Constructor Summary]
+
+[Method Summary]
+String getInputEncoding() An attribute specifying the encoding used for this entity at the time of parsing, when it is an external parsed entity.
+String getNotationName() For unparsed entities, the name of the notation for the entity.
+String getPublicId() The public identifier associated with the entity if specified, and null otherwise.
+String getSystemId() The system identifier associated with the entity if specified, and null otherwise.
+String getXmlEncoding() An attribute specifying, as part of the text declaration, the encoding of this entity, when it is an external parsed entity.
+String getXmlVersion() An attribute specifying, as part of the text declaration, the version number of this entity, when it is an external parsed entity.

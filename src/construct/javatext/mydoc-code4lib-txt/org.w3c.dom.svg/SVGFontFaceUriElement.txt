@@ -1,0 +1,7 @@
+[Class] org.w3c.dom.svg.SVGFontFaceUriElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement
+[Constructor Summary]
+
+[Method Summary]

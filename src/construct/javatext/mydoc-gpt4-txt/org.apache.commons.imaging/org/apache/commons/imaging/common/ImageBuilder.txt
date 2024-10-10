@@ -1,0 +1,17 @@
+[API Name] Package org.apache.commons.imaging.common.ImageBuilder
+[Type] Class
+[Info]
+public class ImageBuilder extends Object A utility class primary intended for storing data obtained by reading  image files.
+[Constructor Summary]
+ImageBuilder​(int width, int height, boolean hasAlpha)	Construct an ImageBuilder instance
+ImageBuilder​(int width, int height, boolean hasAlpha, boolean isAlphaPremultiplied)	Construct an ImageBuilder instance
+[Method Summary]
+BufferedImage getBufferedImage()	Create a BufferedImage using the data stored in the ImageBuilder.
+int getHeight()	Get the height of the ImageBuilder pixel field
+int getRGB​(int x, int y)	Get the RGB or ARGB value for the pixel at the position (x,y) within the image builder pixel field.
+BufferedImage getSubimage​(int x, int y, int w, int h)	Gets a subimage from the ImageBuilder using the specified parameters.
+ImageBuilder getSubset​(int x, int y, int w, int h)	Gets a subset of the ImageBuilder content using the specified parameters to indicate an area of interest.
+int getWidth()	Get the width of the ImageBuilder pixel field
+void setRGB​(int x, int y, int argb)	Set the RGB or ARGB value for the pixel at position (x,y) within the image builder pixel field.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,8 @@
+[Class] org.w3c.dom.svg.EventListenerInitializer
+[Flag] Interface
+[Info]
+public interface EventListenerInitializer
+[Constructor Summary]
+
+[Method Summary]
+void initializeEventListeners(SVGDocument doc)	 This method is called by the SVG viewer when the scripts are loaded to register the listener needed.

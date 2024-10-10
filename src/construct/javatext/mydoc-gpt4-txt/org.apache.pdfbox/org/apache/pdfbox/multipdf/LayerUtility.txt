@@ -1,0 +1,14 @@
+[API Name] org.apache.pdfbox.multipdf.LayerUtility
+[Type] Class
+[Info]
+public class LayerUtility extends Object This class allows to import pages as Form XObjects into a document and use them to create layers  (optional content groups). It should used only on loaded documents, not on generated documents  because these can contain unfinished parts, e.g. font subsetting information.
+[Constructor Summary]
+LayerUtility(PDDocument targetDoc)	Creates a new instance.
+[Method Summary]
+PDOptionalContentGroup appendFormAsLayer(PDPage targetPage, PDFormXObject form, AffineTransform transform, String layerName)	Places the given form over the existing content of the indicated page (like an overlay).
+PDDocument getDocument()	Returns the PDF document we work on.
+PDFormXObject importPageAsForm(PDDocument sourceDoc, int pageNumber)	Imports a page from some PDF file as a Form XObject so it can be placed on another page in the target document.
+PDFormXObject importPageAsForm(PDDocument sourceDoc, PDPage page)	Imports a page from some PDF file as a Form XObject so it can be placed on another page in the target document.
+void wrapInSaveRestore(PDPage page)	Some applications may not wrap their page content in a save/restore (q/Q) pair which can lead to problems with coordinate system transformations when content is appended.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

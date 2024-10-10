@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.entity.CategoryItemEntity
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, org.jfree.util.PublicCloneable
+[Constructor Summary]
+CategoryItemEntity(Shape area, String toolTipText, String urlText, CategoryDataset dataset, Comparable rowKey, Comparable columnKey) Creates a new entity instance for an item in the specified dataset.
+[Method Summary]
+boolean equals(Object obj) Tests the entity for equality with an arbitrary object.

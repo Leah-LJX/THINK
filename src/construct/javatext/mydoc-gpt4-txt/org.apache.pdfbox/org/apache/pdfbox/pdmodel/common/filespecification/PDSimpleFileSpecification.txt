@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.pdmodel.common.filespecification.PDSimpleFileSpecification
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDSimpleFileSpecification extends PDFileSpecification A file specification that is just a string.
+Author: Ben Litchfield
+[Constructor Summary]
+PDSimpleFileSpecification()	Constructor.
+PDSimpleFileSpecification(COSString fileName)	Constructor.
+[Method Summary]
+COSBase getCOSObject()	Convert this standard java object to a COS object.
+String getFile()	This will get the file name.
+void setFile(String fileName)	This will set the file name.
+[Methods inherited from class org.apache.pdfbox.pdmodel.common.filespecification.PDFileSpecification]
+createFS
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

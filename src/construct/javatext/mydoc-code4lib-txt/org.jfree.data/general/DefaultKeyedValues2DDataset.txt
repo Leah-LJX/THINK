@@ -1,0 +1,7 @@
+[Class] org.jfree.data.general.DefaultKeyedValues2DDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, PublicCloneable, CategoryDataset, Dataset, KeyedValues2DDataset, KeyedValues2D, Values2D
+[Constructor Summary]
+DefaultKeyedValues2DDataset()
+[Method Summary]

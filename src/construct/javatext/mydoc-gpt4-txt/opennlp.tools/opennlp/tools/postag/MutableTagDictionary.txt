@@ -1,0 +1,10 @@
+[API Name] opennlp.tools.postag.MutableTagDictionary
+[Type] Interface
+[Info]
+All Superinterfaces: TagDictionary
+All Known Implementing Classes: POSDictionary
+public interface MutableTagDictionary extends TagDictionary Interface that allows TagDictionary entries to be added and removed.  This can be used to induce the dictionary from training data.
+[Method Summary]
+String[] put(String word, String... tags)	Associates the specified tags with the specified word.
+[Methods inherited from interface opennlp.tools.postag.TagDictionary]
+getTags, isCaseSensitive

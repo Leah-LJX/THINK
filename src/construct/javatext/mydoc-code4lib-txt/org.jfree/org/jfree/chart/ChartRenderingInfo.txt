@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.ChartRenderingInfo
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+ChartRenderingInfo() Constructs a new ChartRenderingInfo structure that can be used to collect information about the dimensions of a rendered chart.
+[Method Summary]
+void clear() Clears the information recorded by this object.

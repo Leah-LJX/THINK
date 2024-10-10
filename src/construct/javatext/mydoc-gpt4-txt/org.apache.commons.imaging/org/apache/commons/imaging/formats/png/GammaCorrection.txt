@@ -1,0 +1,11 @@
+[API Name] Package org.apache.commons.imaging.formats.png.GammaCorrection
+[Type] Class
+[Info]
+public class GammaCorrection extends Object
+[Constructor Summary]
+GammaCorrection​(double srcGamma, double dstGamma)	
+[Method Summary]
+int correctARGB​(int pixel)	
+int correctSample​(int sample)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,7 @@
+[API Name] opennlp.tools.sentdetect.SDContextGenerator
+[Type] Interface
+[Info]
+All Known Implementing Classes: DefaultSDContextGenerator, SentenceContextGenerator
+public interface SDContextGenerator Interface for SentenceDetectorME context generators.
+[Method Summary]
+String[] getContext(CharSequence s, int position)	Returns an array of contextual features for the potential sentence boundary at the specified position within the specified string buffer.

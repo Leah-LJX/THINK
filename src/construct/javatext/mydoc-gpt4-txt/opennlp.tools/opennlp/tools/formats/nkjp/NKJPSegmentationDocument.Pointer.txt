@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.formats.nkjp.NKJPSegmentationDocument.Pointer
+[Type] Class
+[Info]
+Enclosing class: NKJPSegmentationDocument
+public static class NKJPSegmentationDocument.Pointer extends Object
+[Constructor Summary]
+Pointer(String doc, String id, int offset, int length, boolean space_after)	
+[Method Summary]
+Span toSpan()	
+String toString()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, wait, wait, wait

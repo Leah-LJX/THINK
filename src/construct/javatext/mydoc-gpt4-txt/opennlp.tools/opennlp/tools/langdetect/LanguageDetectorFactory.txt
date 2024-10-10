@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.langdetect.LanguageDetectorFactory
+[Type] Class
+[Info]
+public class LanguageDetectorFactory extends BaseToolFactory Default factory used by LanguageDetector.    Extend this class to change the Language Detector behaviour,  such as the LanguageDetectorContextGenerator.  The default DefaultLanguageDetectorContextGenerator will use char n-grams of  size 1 to 3 and the following normalizers:    EmojiCharSequenceNormalizer  UrlCharSequenceNormalizer  TwitterCharSequenceNormalizer  NumberCharSequenceNormalizer  ShrinkCharSequenceNormalizer
+[Constructor Summary]
+LanguageDetectorFactory()	
+[Method Summary]
+static LanguageDetectorFactory create(String subclassName)	Instantiates a LanguageDetectorFactory via a given subclassName.
+LanguageDetectorContextGenerator getContextGenerator()	
+void init()	
+void validateArtifactMap()	Validates the parsed artifacts.
+[Methods inherited from class opennlp.tools.util.BaseToolFactory]
+create, create, createArtifactMap, createArtifactSerializersMap, createManifestEntries
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

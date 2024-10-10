@@ -1,0 +1,13 @@
+[API Name] org.apache.pdfbox.pdmodel.fixup.processor.AcroFormOrphanWidgetsProcessor
+[Type] Class
+[Info]
+All Implemented Interfaces: PDDocumentProcessor
+public class AcroFormOrphanWidgetsProcessor extends AbstractProcessor Generate field entries from page level widget annotations   if there AcroForm /Fields entry is empty.
+[Constructor Summary]
+AcroFormOrphanWidgetsProcessor(PDDocument document)	
+[Field Summary]
+AcroFormOrphanWidgetsProcessor(PDDocument document)	
+[Method Summary]
+void process()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

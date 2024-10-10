@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.PaintScale
+[Flag] Interface
+[Info]
+All Known Implementing Classes: GrayPaintScale, LookupPaintScale
+[Constructor Summary]
+
+[Method Summary]
+double getLowerBound() Returns the lower bound for the scale.

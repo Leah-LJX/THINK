@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.category.StackedBarRenderer3D
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Effect3D, LegendItemSource, CategoryItemRenderer, org.jfree.util.PublicCloneable
+[Constructor Summary]
+StackedBarRenderer3D() Creates a new renderer with no tool tip generator and no URL generator.
+[Method Summary]
+protected void calculateBarWidth(CategoryPlot plot, Rectangle2D dataArea, int rendererIndex, CategoryItemRendererState state) Calculates the bar width and stores it in the renderer state.

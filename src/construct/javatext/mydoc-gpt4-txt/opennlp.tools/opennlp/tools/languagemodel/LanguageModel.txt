@@ -1,0 +1,8 @@
+[API Name] opennlp.tools.languagemodel.LanguageModel
+[Type] Interface
+[Info]
+All Known Implementing Classes: NGramLanguageModel
+public interface LanguageModel A language model can calculate the probability p (between 0 and 1) of a  certain sequence of tokens, given its underlying vocabulary.
+[Method Summary]
+double calculateProbability(String... tokens)	Calculate the probability of a series of tokens (e.g. a sentence), given a vocabulary.
+String[] predictNextTokens(String... tokens)	Predict the most probable output sequence of tokens, given an input sequence of tokens.

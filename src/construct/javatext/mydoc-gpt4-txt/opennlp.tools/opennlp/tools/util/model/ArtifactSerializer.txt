@@ -1,0 +1,8 @@
+[API Name] opennlp.tools.util.model.ArtifactSerializer<T>
+[Type] Interface
+[Info]
+All Known Implementing Classes: AncoraSpanishHeadRules.HeadRulesSerializer, BrownCluster.BrownClusterSerializer, ByteArraySerializer, ChunkerModelSerializer, DictionarySerializer, GenericModelSerializer, HeadRules.HeadRulesSerializer, POSModelSerializer, POSTaggerFactory.POSDictionarySerializer, WordClusterDictionary.WordClusterDictionarySerializer
+public interface ArtifactSerializer<T> Responsible to create an artifact from an InputStream.
+[Method Summary]
+T create(InputStream in)	Creates an artifact from the provided InputStream.
+void serialize(T artifact, OutputStream out)	Serializes an artifact to the provided OutputStream.

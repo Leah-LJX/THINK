@@ -1,0 +1,23 @@
+[API Name] opennlp.tools.util.model.BaseModel
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, ArtifactProvider
+Direct Known Subclasses: ChunkerModel, DoccatModel, LanguageDetectorModel, LemmatizerModel, ParserModel, POSModel, SentenceModel, TokenizerModel, TokenNameFinderModel
+public abstract class BaseModel extends Object implements ArtifactProvider, Serializable This is a common base model which can be used by the components' specific  model classes.
+See Also:
+Serialized Form
+[Field Summary]
+static final String TRAINING_CUTOFF_PROPERTY	
+static final String TRAINING_EVENTHASH_PROPERTY	
+static final String TRAINING_ITERATIONS_PROPERTY	
+[Method Summary]
+<T> T getArtifact(String key)	
+final String getLanguage()	
+final String getManifestProperty(String key)	
+final Version getVersion()	
+boolean isLoadedFromSerialized()	Indicates if this provider was loaded from a serialized form.
+final void serialize(File f)	Serializes the model to the specified File.
+final void serialize(OutputStream out)	Serializes the model to the given OutputStream.
+final void serialize(Path p)	Serializes the model to the specified Path.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

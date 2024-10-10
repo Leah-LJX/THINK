@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.doccat.DocumentSampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<DocumentSample>
+public class DocumentSampleStream extends FilterObjectStream<String,DocumentSample> Reads in string encoded training samples, parses them and  outputs DocumentSample objects.    Format:  Each line contains one sample document.  The category is the first string in the line followed by a tab and whitespace  separated document tokens.    Sample line:  category-string tab-char whitespace-separated-tokens line-break-char(s)
+See Also:
+DocumentSample
+[Constructor Summary]
+DocumentSampleStream(ObjectStream<String> samples)	Initializes a instance.
+[Method Summary]
+DocumentSample read()	Returns the next ObjectStream object.
+[Methods inherited from class opennlp.tools.util.FilterObjectStream]
+close, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

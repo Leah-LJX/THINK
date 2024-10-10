@@ -1,0 +1,42 @@
+[Class] org.jfree.data.gantt.TaskSeriesCollection
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, PublicCloneable, CategoryDataset, IntervalCategoryDataset, GanttCategoryDataset, Dataset, SeriesChangeListener, SeriesDataset, KeyedValues2D, Values2D
+[Constructor Summary]
+TaskSeriesCollection()	Default constructor.
+[Method Summary]
+void add(TaskSeries series)	Adds a series to the dataset and sends a DatasetChangeEvent to all registered listeners.
+Object clone()	Returns an independent copy of this dataset.
+boolean equals(Object obj)	Tests this instance for equality with an arbitrary object.
+int getColumnCount()	Returns the number of column in the dataset.
+int getColumnIndex(Comparable columnKey)	Returns the column index for a column key.
+Comparable getColumnKey(int index)	Returns a column key.
+List getColumnKeys()	Returns a list of the column keys in the dataset.
+Number getEndValue(int row, int column)	Returns the end value for a task.
+Number getEndValue(int row, int column, int subinterval)	Returns the end value of a sub-interval for a given item.
+Number getEndValue(Comparable rowKey, Comparable columnKey)	Returns the end value for a task.
+Number getEndValue(Comparable rowKey, Comparable columnKey, int subinterval)	Returns the end value of a sub-interval for a given item.
+Number getPercentComplete(int row, int column)	Returns the percent complete for a given item.
+Number getPercentComplete(int row, int column, int subinterval)	Returns the percentage complete value of a sub-interval for a given item.
+Number getPercentComplete(Comparable rowKey, Comparable columnKey)	Returns the percent complete for a given item.
+Number getPercentComplete(Comparable rowKey, Comparable columnKey, int subinterval)	Returns the percentage complete value of a sub-interval for a given item.
+int getRowCount()	Returns the number of rows (series) in the collection.
+int getRowIndex(Comparable rowKey)	Returns the row index for the given row key.
+Comparable getRowKey(int index)	Returns the key for a row.
+List getRowKeys()	Returns the row keys.
+TaskSeries getSeries(int series)	Returns a series from the collection.
+TaskSeries getSeries(Comparable key)	Returns a series from the collection.
+int getSeriesCount()	Returns the number of series in the collection.
+Comparable getSeriesKey(int series)	Returns the name of a series.
+Number getStartValue(int row, int column)	Returns the start value for a task.
+Number getStartValue(int row, int column, int subinterval)	Returns the start value of a sub-interval for a given item.
+Number getStartValue(Comparable rowKey, Comparable columnKey)	Returns the start value for a task.
+Number getStartValue(Comparable rowKey, Comparable columnKey, int subinterval)	Returns the start value of a sub-interval for a given item.
+int getSubIntervalCount(int row, int column)	Returns the number of sub-intervals for a given item.
+int getSubIntervalCount(Comparable rowKey, Comparable columnKey)	Returns the number of sub-intervals for a given item.
+Number getValue(int row, int column)	Returns the value for a task.
+Number getValue(Comparable rowKey, Comparable columnKey)	Returns the value for an item.
+void remove(int series)	Removes a series from the collection and sends a DatasetChangeEvent to all registered listeners.
+void remove(TaskSeries series)	Removes a series from the collection and sends a DatasetChangeEvent to all registered listeners.
+void removeAll()	Removes all the series from the collection and sends a DatasetChangeEvent to all registered listeners.
+void seriesChanged(SeriesChangeEvent event)	Called when a series belonging to the dataset changes.

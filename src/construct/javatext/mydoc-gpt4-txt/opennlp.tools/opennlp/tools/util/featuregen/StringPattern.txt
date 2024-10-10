@@ -1,0 +1,22 @@
+[API Name] opennlp.tools.util.featuregen.StringPattern
+[Type] Class
+[Info]
+public class StringPattern extends Object Recognizes predefined patterns in strings.
+[Method Summary]
+boolean containsComma()	
+boolean containsDigit()	
+boolean containsHyphen()	
+boolean containsLetters()	
+boolean containsPeriod()	
+boolean containsSlash()	
+int digits()	Retrieves the number of digits.
+boolean isAllCapitalLetter()	
+boolean isAllDigit()	
+boolean isAllHiragana()	
+boolean isAllKatakana()	
+boolean isAllLetter()	
+boolean isAllLowerCaseLetter()	
+boolean isInitialCapitalLetter()	
+static StringPattern recognize(String token)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

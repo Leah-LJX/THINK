@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.DrawingSupplier
+[Flag] Interface
+[Info]
+All Known Implementing Classes: DefaultDrawingSupplier
+[Constructor Summary]
+
+[Method Summary]
+Paint getNextFillPaint() Returns the next fill paint in a sequence maintained by the supplier.

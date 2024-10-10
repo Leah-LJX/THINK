@@ -1,0 +1,27 @@
+[Class] org.jfree.data.time.RegularTimePeriod
+[Flag] Class
+[Info]
+All Implemented Interfaces: Comparable, MonthConstants, TimePeriod
+Direct Known Subclasses: Day, FixedMillisecond, Hour, Millisecond, Minute, Month, Quarter, Second, Week, Year
+[Constructor Summary]
+RegularTimePeriod()
+[Method Summary]
+static RegularTimePeriod createInstance(Class c, Date millisecond, TimeZone zone, Locale locale)	Creates a time period that includes the specified millisecond, assuming the given time zone.
+static Class downsize(Class c)	Returns a subclass of RegularTimePeriod that is smaller than the specified class.
+protected static Calendar getCalendarInstance()	Creates or returns a thread-local Calendar instance.
+Date getEnd()	Returns the date/time that marks the end of the time period.
+abstract long getFirstMillisecond()	Returns the first millisecond of the time period.
+abstract long getFirstMillisecond(Calendar calendar)	Returns the first millisecond of the time period, evaluated using the supplied calendar (which incorporates a timezone).
+abstract long getLastMillisecond()	Returns the last millisecond of the time period.
+abstract long getLastMillisecond(Calendar calendar)	Returns the last millisecond of the time period, evaluated using the supplied calendar (which incorporates a timezone).
+long getMiddleMillisecond()	Returns the millisecond closest to the middle of the time period.
+long getMiddleMillisecond(Calendar calendar)	Returns the millisecond closest to the middle of the time period, evaluated using the supplied calendar (which incorporates a timezone).
+long getMillisecond(TimePeriodAnchor anchor, Calendar calendar)	Returns the millisecond (relative to the epoch) corresponding to the specified anchor using the supplied calendar (which incorporates a time zone).
+abstract long getSerialIndex()	Returns a serial index number for the time unit.
+Date getStart()	Returns the date/time that marks the start of the time period.
+abstract RegularTimePeriod next()	Returns the time period following this one, or null if some limit has been reached.
+abstract void peg(Calendar calendar)	Recalculates the start date/time and end date/time for this time period relative to the supplied calendar (which incorporates a time zone).
+abstract RegularTimePeriod previous()	Returns the time period preceding this one, or null if some lower limit has been reached.
+static void setCalendarInstancePrototype(Calendar calendar)	Sets a global calendar prototype for time calculations.
+static void setThreadLocalCalendarInstance(Calendar calendar)	Sets the thread-local calendar instance for time calculations.
+String toString()	Returns a string representation of the time period.

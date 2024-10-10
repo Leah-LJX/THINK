@@ -1,0 +1,28 @@
+[API Name] Package org.apache.commons.imaging.formats.png.PngImagingParameters
+[Type] Class
+[Info]
+public class PngImagingParameters extends XmpImagingParameters Png format parameters.
+Since: 1.0-alpha3
+[Constructor Summary]
+PngImagingParameters()	
+[Field Summary]
+static byte DEFAULT_BIT_DEPTH	
+[Method Summary]
+byte getBitDepth()	
+PhysicalScale getPhysicalScale()	
+List<? extends PngText> getTextChunks()	
+boolean isForceIndexedColor()	
+boolean isForceTrueColor()	
+boolean isPredictorEnabled()	Indicates that the PNG write operation should enable the predictor.
+void setBitDepth​(byte bitDepth)	
+void setForceIndexedColor​(boolean forceIndexedColor)	
+void setForceTrueColor​(boolean forceTrueColor)	
+void setPhysicalScale​(PhysicalScale physicalScale)	
+void setPredictorEnabled​(boolean predictorEnabled)	Sets the enabled status of the predictor.
+void setTextChunks​(List<? extends PngText> textChunks)	
+[Methods inherited from class org.apache.commons.imaging.common.XmpImagingParameters]
+getXmpXml, setXmpXml
+[Methods inherited from class org.apache.commons.imaging.ImagingParameters]
+getBufferedImageFactory, getFileName, getPixelDensity, isStrict, setBufferedImageFactory, setFileName, setPixelDensity, setStrict
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

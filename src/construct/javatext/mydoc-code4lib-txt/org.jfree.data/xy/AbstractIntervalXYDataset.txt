@@ -1,0 +1,12 @@
+[Class] org.jfree.data.xy.AbstractIntervalXYDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, Dataset, SeriesChangeListener, SeriesDataset, IntervalXYDataset, XYDataset
+Direct Known Subclasses: CategoryTableXYDataset, DefaultIntervalXYDataset, DefaultTableXYDataset, DynamicTimeSeriesCollection, HistogramDataset, SimpleHistogramDataset, TimePeriodValuesCollection, TimeSeriesCollection, TimeTableXYDataset, XIntervalSeriesCollection, XYBarDataset, XYIntervalSeriesCollection, XYSeriesCollection, YIntervalSeriesCollection
+[Constructor Summary]
+AbstractIntervalXYDataset()
+[Method Summary]
+double getEndXValue(int series, int item)	Returns the end x-value (as a double primitive) for an item within a series.
+double getEndYValue(int series, int item)	Returns the end y-value (as a double primitive) for an item within a series.
+double getStartXValue(int series, int item)	Returns the start x-value (as a double primitive) for an item within a series.
+double getStartYValue(int series, int item)	Returns the start y-value (as a double primitive) for an item within a series.

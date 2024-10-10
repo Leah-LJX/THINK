@@ -1,0 +1,24 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.segments.JfifSegment
+[Type] Class
+[Info]
+public class JfifSegment extends Segment
+[Constructor Summary]
+JfifSegment​(int marker, byte[] segmentData)	
+JfifSegment​(int marker, int markerLength, InputStream is)	
+[Field Summary]
+int densityUnits	
+int jfifMajorVersion	
+int jfifMinorVersion	
+int thumbnailSize	
+int xDensity	
+int xThumbnail	
+int yDensity	
+int yThumbnail	
+[Method Summary]
+String getDescription()	
+[Methods inherited from class org.apache.commons.imaging.formats.jpeg.segments.Segment]
+dump, getSegmentType, toString
+[Methods inherited from class org.apache.commons.imaging.common.BinaryFileParser]
+debugNumber, debugNumber, getByteOrder, setByteOrder
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

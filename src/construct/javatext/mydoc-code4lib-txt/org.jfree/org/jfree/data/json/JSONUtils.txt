@@ -1,0 +1,12 @@
+[Class] org.jfree.data.json.JSONUtils
+[Flag] Class
+[Info]
+Parameters: data - the data (null not permitted).
+Returns: A string in JSON format.
+[Constructor Summary]
+JSONUtils()
+[Method Summary]
+static String writeKeyedValues(KeyedValues data)	Returns a string containing the data in JSON format.
+static void writeKeyedValues(KeyedValues data, Writer writer)	Writes the data in JSON format to the supplied writer.
+static String writeKeyedValues2D(KeyedValues2D data)	Returns a string containing the data in JSON format.
+static void writeKeyedValues2D(KeyedValues2D data, Writer writer)	Writes the data in JSON format to the supplied writer.

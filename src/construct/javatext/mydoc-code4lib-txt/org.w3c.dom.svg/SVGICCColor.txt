@@ -1,0 +1,10 @@
+[Class] org.w3c.dom.svg.SVGICCColor
+[Flag] Interface
+[Info]
+public interface SVGICCColor
+[Constructor Summary]
+
+[Method Summary]
+java.lang.String getColorProfile()	 
+ SVGNumberList getColors()	 
+ void setColorProfile(java.lang.String colorProfile)

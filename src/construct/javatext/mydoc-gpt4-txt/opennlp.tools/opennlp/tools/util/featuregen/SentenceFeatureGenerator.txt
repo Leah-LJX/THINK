@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.util.featuregen.SentenceFeatureGenerator
+[Type] Class
+[Info]
+All Implemented Interfaces: AdaptiveFeatureGenerator
+public class SentenceFeatureGenerator extends Object implements AdaptiveFeatureGenerator This feature generator creates sentence begin and end features.
+[Constructor Summary]
+SentenceFeatureGenerator(boolean isGenerateFirstWordFeature, boolean isGenerateLastWordFeature)	
+[Method Summary]
+void createFeatures(List<String> features, String[] tokens, int index, String[] previousOutcomes)	Adds the appropriate features for the token at the specified index with the specified array of previousOutcomes to the specified list of features.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface opennlp.tools.util.featuregen.AdaptiveFeatureGenerator]
+clearAdaptiveData, updateAdaptiveData

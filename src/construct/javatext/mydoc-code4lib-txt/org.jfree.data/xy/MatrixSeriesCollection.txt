@@ -1,0 +1,22 @@
+[Class] org.jfree.data.xy.MatrixSeriesCollection
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, PublicCloneable, Dataset, SeriesChangeListener, SeriesDataset, XYDataset, XYZDataset
+[Constructor Summary]
+MatrixSeriesCollection()	Constructs an empty dataset.
+MatrixSeriesCollection(MatrixSeries series)	Constructs a dataset and populates it with a single matrix series.
+[Method Summary]
+void addSeries(MatrixSeries series)	Adds a series to the collection.
+Object clone()	Returns a clone of this instance.
+boolean equals(Object obj)	Tests this collection for equality with an arbitrary object.
+int getItemCount(int seriesIndex)	Returns the number of items in the specified series.
+MatrixSeries getSeries(int seriesIndex)	Returns the series having the specified index.
+int getSeriesCount()	Returns the number of series in the collection.
+Comparable getSeriesKey(int seriesIndex)	Returns the key for a series.
+Number getX(int seriesIndex, int itemIndex)	Returns the j index value of the specified Mij matrix item in the specified matrix series.
+Number getY(int seriesIndex, int itemIndex)	Returns the i index value of the specified Mij matrix item in the specified matrix series.
+Number getZ(int seriesIndex, int itemIndex)	Returns the Mij item value of the specified Mij matrix item in the specified matrix series.
+int hashCode()	Returns a hash code.
+void removeAllSeries()	Removes all the series from the collection.
+void removeSeries(int seriesIndex)	Removes a series from the collection.
+void removeSeries(MatrixSeries series)	Removes a series from the collection.

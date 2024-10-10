@@ -1,0 +1,11 @@
+[Class] org.w3c.dom.TypeInfo
+[Flag] Interface
+[Info]
+Since:
+DOM Level 3
+[Constructor Summary]
+
+[Method Summary]
+String getTypeName() The name of a type declared for the associated element or attribute, or null if unknown.
+String getTypeNamespace() The namespace of the type declared for the associated element or attribute or null if the element does not have declaration or if no namespace information is available.
+boolean isDerivedFrom(String typeNamespaceArg, String typeNameArg, int derivationMethod) This method returns if there is a derivation between the reference type definition, i.e.

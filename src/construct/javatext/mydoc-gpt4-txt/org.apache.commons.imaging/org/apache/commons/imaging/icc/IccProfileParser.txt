@@ -1,0 +1,19 @@
+[API Name] Package org.apache.commons.imaging.icc.IccProfileParser
+[Type] Class
+[Info]
+public class IccProfileParser extends BinaryFileParser
+[Constructor Summary]
+IccProfileParser()	
+[Method Summary]
+IccProfileInfo getICCProfileInfo​(byte[] bytes)	
+IccProfileInfo getICCProfileInfo​(ICC_Profile iccProfile)	
+IccProfileInfo getICCProfileInfo​(File file)	
+IccProfileInfo getICCProfileInfo​(ByteSource byteSource)	
+boolean issRGB​(byte[] bytes)	
+boolean issRGB​(ICC_Profile iccProfile)	
+boolean issRGB​(File file)	
+boolean issRGB​(ByteSource byteSource)	
+[Methods inherited from class org.apache.commons.imaging.common.BinaryFileParser]
+debugNumber, debugNumber, getByteOrder, setByteOrder
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

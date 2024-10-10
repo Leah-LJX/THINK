@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.PiePlotState
+[Flag] Class
+[Info]
+Parameters: info - the plot rendering info.
+[Constructor Summary]
+PiePlotState(PlotRenderingInfo info) Creates a new object for recording temporary state information for a renderer.
+[Method Summary]
+Rectangle2D getExplodedPieArea() Returns the exploded pie area.

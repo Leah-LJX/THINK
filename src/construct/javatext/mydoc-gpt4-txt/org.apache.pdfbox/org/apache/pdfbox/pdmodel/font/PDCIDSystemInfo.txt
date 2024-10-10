@@ -1,0 +1,14 @@
+[API Name] org.apache.pdfbox.pdmodel.font.PDCIDSystemInfo
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class PDCIDSystemInfo extends Object implements COSObjectable Represents a CIDSystemInfo.
+Author: John Hewson
+[Method Summary]
+COSBase getCOSObject()	Convert this standard java object to a COS object.
+String getOrdering()	
+String getRegistry()	
+int getSupplement()	
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

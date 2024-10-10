@@ -1,0 +1,16 @@
+[API Name] Package org.apache.commons.imaging.formats.pnm.PnmImagingParameters
+[Type] Class
+[Info]
+public class PnmImagingParameters extends ImagingParameters Pnm format parameters.
+Since: 1.0-alpha3
+[Constructor Summary]
+PnmImagingParameters()	
+[Method Summary]
+ImageFormats getSubtype()	
+boolean isRawBits()	
+void setRawBits​(boolean rawBits)	
+void setSubtype​(ImageFormats subtype)	
+[Methods inherited from class org.apache.commons.imaging.ImagingParameters]
+getBufferedImageFactory, getFileName, getPixelDensity, isStrict, setBufferedImageFactory, setFileName, setPixelDensity, setStrict
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

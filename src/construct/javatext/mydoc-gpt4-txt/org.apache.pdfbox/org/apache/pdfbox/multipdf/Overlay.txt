@@ -1,0 +1,33 @@
+[API Name] org.apache.pdfbox.multipdf.Overlay
+[Type] Class
+[Info]
+All Implemented Interfaces: Closeable, AutoCloseable
+public class Overlay extends Object implements Closeable Adds an overlay to an existing PDF document.    Based on code contributed by Balazs Jerk.
+[Constructor Summary]
+Overlay()	
+[Nested Class Summary]
+static class Overlay.Position	Possible location of the overlaid pages: foreground or background.
+[Method Summary]
+protected AffineTransform calculateAffineTransform(PDPage page, PDRectangle overlayMediaBox)	Calculate the transform to be used when positioning the overlay.
+void close()	Close all input documents which were used for the overlay and opened by this class.
+String getDefaultOverlayFile()	Returns the default overlay file.
+String getInputFile()	Returns the input file.
+PDDocument overlay(Map<Integer,String> specificPageOverlayMap)	This will add overlays to a document.
+PDDocument overlayDocuments(Map<Integer,PDDocument> specificPageOverlayDocumentMap)	This will add overlays documents to a document.
+void setAllPagesOverlayFile(String allPagesOverlayFile)	Sets the all pages overlay file.
+void setAllPagesOverlayPDF(PDDocument allPagesOverlayPDF)	Sets the all pages overlay PDF.
+void setDefaultOverlayFile(String defaultOverlayFile)	Sets the default overlay file.
+void setDefaultOverlayPDF(PDDocument defaultOverlayPDF)	Sets the default overlay PDF.
+void setEvenPageOverlayFile(String evenPageOverlayFile)	Sets the even page overlay file.
+void setEvenPageOverlayPDF(PDDocument evenPageOverlayPDF)	Sets the even page overlay PDF.
+void setFirstPageOverlayFile(String firstPageOverlayFile)	Sets the first page overlay file.
+void setFirstPageOverlayPDF(PDDocument firstPageOverlayPDF)	Sets the first page overlay PDF.
+void setInputFile(String inputFile)	Sets the file to be overlaid.
+void setInputPDF(PDDocument inputPDF)	Sets the PDF to be overlaid.
+void setLastPageOverlayFile(String lastPageOverlayFile)	Sets the last page overlay file.
+void setLastPageOverlayPDF(PDDocument lastPageOverlayPDF)	Sets the last page overlay PDF.
+void setOddPageOverlayFile(String oddPageOverlayFile)	Sets the odd page overlay file.
+void setOddPageOverlayPDF(PDDocument oddPageOverlayPDF)	Sets the odd page overlay PDF.
+void setOverlayPosition(Overlay.Position overlayPosition)	Sets the overlay position.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

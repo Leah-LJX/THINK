@@ -1,0 +1,26 @@
+[API Name] Package org.apache.commons.imaging.common.RationalNumber
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable
+public class RationalNumber extends Number Rational number, as used by the TIFF image format.    The TIFF format specifies two data types for rational numbers based on  a pair of 32-bit integers.  Rational is based on unsigned 32-bit integers  and SRational is based on signed 32-bit integers.  This treatment is  problematic in Java because Java does not support unsigned types.  To address this challenge, this class stores the numerator and divisor  in long (64-bit) integers, applying masks as necessary for the unsigned  type.
+See Also: Serialized Form
+[Constructor Summary]
+RationalNumber​(int numerator, int divisor)	Constructs an instance based on signed integers
+RationalNumber​(int numerator, int divisor, boolean unsignedType)	Constructs an instance supports either signed or unsigned integers.
+[Field Summary]
+long divisor	
+long numerator	
+boolean unsignedType	
+[Method Summary]
+double doubleValue()	
+float floatValue()	
+int intValue()	
+long longValue()	
+RationalNumber negate()	Negates the value of the RationalNumber.
+String toDisplayString()	
+String toString()	
+static RationalNumber valueOf​(double value)	Calculate rational number using successive approximations.
+[Methods inherited from class java.lang.Number]
+byteValue, shortValue
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

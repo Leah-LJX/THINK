@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.util.featuregen.PreviousMapFeatureGenerator
+[Type] Class
+[Info]
+All Implemented Interfaces: AdaptiveFeatureGenerator
+public class PreviousMapFeatureGenerator extends Object implements AdaptiveFeatureGenerator This AdaptiveFeatureGenerator generates features indicating the  outcome associated with a previously occurring word.
+[Constructor Summary]
+PreviousMapFeatureGenerator()	
+[Method Summary]
+void clearAdaptiveData()	Informs a feature generator that the context of the adaptive data (typically a document) is no longer valid.
+void createFeatures(List<String> features, String[] tokens, int index, String[] preds)	Adds the appropriate features for the token at the specified index with the specified array of previousOutcomes to the specified list of features.
+void updateAdaptiveData(String[] tokens, String[] outcomes)	Generates previous decision features for the token based on contents of the previous map.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

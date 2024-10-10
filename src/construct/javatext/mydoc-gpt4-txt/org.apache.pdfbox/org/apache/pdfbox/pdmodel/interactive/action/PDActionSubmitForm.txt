@@ -1,0 +1,22 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.action.PDActionSubmitForm
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable, PDDestinationOrAction
+public class PDActionSubmitForm extends PDAction This represents a Submit-Form action that can be executed in a PDF document.
+Author: Evgeniy Muravitskiy
+[Constructor Summary]
+PDActionSubmitForm()	Default Constructor
+PDActionSubmitForm(COSDictionary a)	Constructor
+[Field Summary]
+static String SUB_TYPE	This type of action this object represents.
+[Method Summary]
+COSArray getFields()	An array identifying which fields to include in the submission or which to exclude, depending on the setting of the Include/Exclude flag in the Flags entry
+PDFileSpecification getFile()	This will get the file in which the destination is located.
+int getFlags()	A set of flags specifying various characteristics of the action
+void setFields(COSArray array)	
+void setFile(PDFileSpecification fs)	This will set the file in which the destination is located.
+void setFlags(int flags)	
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.action.PDAction]
+getCOSObject, getNext, getSubType, getType, setNext, setSubType, setType
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

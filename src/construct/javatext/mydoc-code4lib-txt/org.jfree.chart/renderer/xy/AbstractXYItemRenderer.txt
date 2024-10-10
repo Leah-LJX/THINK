@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.renderer.xy.AbstractXYItemRenderer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, AnnotationChangeListener, LegendItemSource, XYItemRenderer
+Direct Known Subclasses: CandlestickRenderer, HighLowRenderer, SamplingXYLineRenderer, StandardXYItemRenderer, VectorRenderer, WindItemRenderer, XYAreaRenderer, XYAreaRenderer2, XYBarRenderer, XYBlockRenderer, XYBoxAndWhiskerRenderer, XYBubbleRenderer, XYDifferenceRenderer, XYDotRenderer, XYLineAndShapeRenderer, XYShapeRenderer, XYStepAreaRenderer, YIntervalRenderer
+[Constructor Summary]
+protected AbstractXYItemRenderer() Creates a renderer where the tooltip generator and the URL generator are both null.
+[Method Summary]
+void addAnnotation(XYAnnotation annotation) Adds an annotation and sends a RendererChangeEvent to all registered listeners.

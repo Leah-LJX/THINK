@@ -1,0 +1,20 @@
+[API Name] org.apache.pdfbox.pdmodel.encryption.StandardProtectionPolicy
+[Type] Class
+[Info]
+public final class StandardProtectionPolicy extends ProtectionPolicy The protection policy to add to a document for password-based protection.
+ The following example shows how to protect a PDF document with password.  In this example, the document will be protected so that someone opening  the document with the user password user_pwd will not be  able to modify the document.
+   AccessPermission ap = new AccessPermission();  ap.setCanModify(false);  StandardProtectionPolicy policy = new StandardProtectionPolicy(owner_pwd, user_pwd, ap);  doc.protect(policy);  
+Author: Benoit Guillon
+[Constructor Summary]
+StandardProtectionPolicy(String ownerPassword, String userPassword, AccessPermission permissions)	Creates an new instance of the standard protection policy in order to protect a PDF document with passwords.
+[Method Summary]
+String getOwnerPassword()	Returns the owner password.
+AccessPermission getPermissions()	Returns the access permissions
+String getUserPassword()	Returns the user password.
+void setOwnerPassword(String ownerPassword)	Sets the owner password
+void setPermissions(AccessPermission permissions)	Sets the access permissions
+void setUserPassword(String userPassword)	Sets the user password.
+[Methods inherited from class org.apache.pdfbox.pdmodel.encryption.ProtectionPolicy]
+getEncryptionKeyLength, isPreferAES, setEncryptionKeyLength, setPreferAES
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

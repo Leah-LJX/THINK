@@ -1,0 +1,7 @@
+[API Name] opennlp.tools.ml.maxent.ContextGenerator<T>
+[Type] Interface
+[Info]
+All Known Implementing Classes: BasicContextGenerator
+public interface ContextGenerator<T> Represents a generator of contexts for maxent decisions.
+[Method Summary]
+String[] getContext(T o)	Builds up the list of contextual predicates given an object.

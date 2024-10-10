@@ -1,0 +1,36 @@
+[Class] org.joda.time.base.AbstractInstant
+[Flag] Class
+[Info]
+All Implemented Interfaces: Comparable<ReadableInstant>, ReadableInstant
+Direct Known Subclasses: AbstractDateTime, Instant
+[Constructor Summary]
+protected 	AbstractInstant()	Constructor.
+[Method Summary]
+int compareTo(ReadableInstant other) Compares this object with the specified object for ascending millisecond instant order.
+boolean equals(Object readableInstant) Compares this object with the specified object for equality based on the millisecond instant, chronology and time zone.
+int get(DateTimeField field) Get the value of one of the fields of a datetime.
+int get(DateTimeFieldType type) Get the value of one of the fields of a datetime using the chronology of the instant.
+DateTimeZone getZone() Gets the time zone of the instant from the chronology.
+int hashCode() Gets a hash code for the instant as defined in ReadableInstant.
+boolean isAfter(long instant) Is this instant strictly after the millisecond instant passed in comparing solely by millisecond.
+boolean isAfter(ReadableInstant instant) Is this instant strictly after the instant passed in comparing solely by millisecond.
+boolean isAfterNow() Is this instant strictly after the current instant comparing solely by millisecond.
+boolean isBefore(long instant) Is this instant strictly before the millisecond instant passed in comparing solely by millisecond.
+boolean isBefore(ReadableInstant instant) Is this instant strictly before the instant passed in comparing solely by millisecond.
+boolean isBeforeNow() Is this instant strictly before the current instant comparing solely by millisecond.
+boolean isEqual(long instant) Is this instant equal to the millisecond instant passed in comparing solely by millisecond.
+boolean isEqual(ReadableInstant instant) Is this instant equal to the instant passed in comparing solely by millisecond.
+boolean isEqualNow() Is this instant equal to the current instant comparing solely by millisecond.
+boolean isSupported(DateTimeFieldType type) Checks if the field type specified is supported by this instant and chronology.
+Date toDate() Get the date time as a java.util.Date.
+DateTime toDateTime() Get this object as a DateTime in the same zone.
+DateTime toDateTime(Chronology chronology) Get this object as a DateTime using the given chronology and its zone.
+DateTime toDateTime(DateTimeZone zone) Get this object as a DateTime using the same chronology but a different zone.
+DateTime toDateTimeISO() Get this object as a DateTime using ISOChronology in the same zone.
+Instant toInstant() Get this object as an Instant.
+MutableDateTime toMutableDateTime() Get this object as a MutableDateTime in the same zone.
+MutableDateTime toMutableDateTime(Chronology chronology) Get this object as a MutableDateTime using the given chronology and its zone.
+MutableDateTime toMutableDateTime(DateTimeZone zone) Get this object as a MutableDateTime using the same chronology but a different zone.
+MutableDateTime toMutableDateTimeISO() Get this object as a MutableDateTime using ISOChronology in the same zone.
+String toString() Output the date time in ISO8601 format (yyyy-MM-ddTHH:mm:ss.SSSZZ).
+String toString(DateTimeFormatter formatter) Uses the specified formatter to convert this partial to a String.

@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.pdfparser.xref.AbstractXReference
+[Type] Class
+[Info]
+All Implemented Interfaces: Comparable<XReferenceEntry>, XReferenceEntry
+Direct Known Subclasses: FreeXReference, NormalXReference, ObjectStreamXReference
+public abstract class AbstractXReference extends Object implements XReferenceEntry An extending class represents an entry, as it can be found in a PDF's crossreference stream (PDFXRefStream).  Such an entry shall locate a PDF object/resource in a PDF document.
+Author: Christian Appl
+[Constructor Summary]
+protected AbstractXReference(XReferenceType type)	Creates a crossreference stream entry of the given XReferenceType.
+[Method Summary]
+int compareTo(XReferenceEntry xReferenceEntry)	Compares this object with the specified object for order.
+long getFirstColumnValue()	Returns the value for the first column of the crossreference stream entry.
+XReferenceType getType()	Returns the XReferenceType of this crossreference stream entry.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface org.apache.pdfbox.pdfparser.xref.XReferenceEntry]
+getReferencedKey, getSecondColumnValue, getThirdColumnValue

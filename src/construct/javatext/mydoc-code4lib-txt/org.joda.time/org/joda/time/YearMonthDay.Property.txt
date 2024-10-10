@@ -1,0 +1,19 @@
+[Class] org.joda.time.YearMonthDay.Property
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+Enclosing class: YearMonthDay
+[Constructor Summary]
+
+[Method Summary]
+YearMonthDay addToCopy(int valueToAdd) Deprecated. Adds to the value of this field in a copy of this YearMonthDay.
+YearMonthDay addWrapFieldToCopy(int valueToAdd) Deprecated. Adds to the value of this field in a copy of this YearMonthDay wrapping within this field if the maximum value is reached.
+int get() Deprecated. Gets the value of this field.
+DateTimeField getField() Deprecated. Gets the field that this property uses.
+protected ReadablePartial getReadablePartial() Deprecated. Gets the partial that this property belongs to.
+YearMonthDay getYearMonthDay() Deprecated. Gets the partial that this property belongs to.
+YearMonthDay setCopy(int value) Deprecated. Sets this field in a copy of the YearMonthDay.
+YearMonthDay setCopy(String text) Deprecated. Sets this field in a copy of the YearMonthDay to a parsed text value.
+YearMonthDay setCopy(String text, Locale locale) Deprecated. Sets this field in a copy of the YearMonthDay to a parsed text value.
+YearMonthDay withMaximumValue() Deprecated. Returns a new YearMonthDay with this field set to the maximum value for this field.
+YearMonthDay withMinimumValue() Deprecated. Returns a new YearMonthDay with this field set to the minimum value for this field.

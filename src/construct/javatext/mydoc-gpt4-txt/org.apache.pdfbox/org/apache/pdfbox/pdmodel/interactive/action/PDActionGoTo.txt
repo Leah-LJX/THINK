@@ -1,0 +1,18 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.action.PDActionGoTo
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable, PDDestinationOrAction
+public class PDActionGoTo extends PDAction This represents a go-to action that can be executed in a PDF document.
+Author: Ben Litchfield, Panagiotis Toumasis
+[Constructor Summary]
+PDActionGoTo()	Default constructor.
+PDActionGoTo(COSDictionary a)	Constructor.
+[Field Summary]
+static String SUB_TYPE	This type of action this object represents.
+[Method Summary]
+PDDestination getDestination()	This will get the destination to jump to.
+void setDestination(PDDestination d)	This will set the destination to jump to.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.action.PDAction]
+getCOSObject, getNext, getSubType, getType, setNext, setSubType, setType
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

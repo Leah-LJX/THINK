@@ -1,0 +1,10 @@
+[API Name] org.apache.pdfbox.pdmodel.font.PDVectorFont
+[Type] Interface
+[Info]
+All Known Implementing Classes: PDCIDFont, PDCIDFontType0, PDCIDFontType2, PDMMType1Font, PDTrueTypeFont, PDType0Font, PDType1CFont, PDType1Font
+public interface PDVectorFont A vector outline font, e.g. not Type 3.
+Author: John Hewson
+[Method Summary]
+GeneralPath getNormalizedPath(int code)	Returns the normalized glyph path for the given character code in a PDF.
+GeneralPath getPath(int code)	Returns the glyph path for the given character code.
+boolean hasGlyph(int code)	Returns true if this font contains a glyph for the given character code in a PDF.

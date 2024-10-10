@@ -1,0 +1,57 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable, PDImage
+public final class PDImageXObject extends PDXObject implements PDImage An Image XObject.
+Author: John Hewson, Ben Litchfield
+[Constructor Summary]
+PDImageXObject(PDDocument document)	Creates an Image XObject in the given document.
+PDImageXObject(PDDocument document, InputStream encodedStream, COSBase cosFilter, int width, int height, int bitsPerComponent, PDColorSpace initColorSpace)	Creates an Image XObject in the given document using the given filtered stream.
+PDImageXObject(PDStream stream, PDResources resources)	Creates an Image XObject with the given stream as its contents and current color spaces.
+[Method Summary]
+static PDImageXObject createFromByteArray(PDDocument document, byte[] byteArray, String name)	Create a PDImageXObject from bytes of an image file.
+static PDImageXObject createFromFile(String imagePath, PDDocument doc)	Create a PDImageXObject from an image file, see createFromFileByExtension(File, PDDocument) for more details.
+static PDImageXObject createFromFileByContent(File file, PDDocument doc)	Create a PDImageXObject from an image file.
+static PDImageXObject createFromFileByExtension(File file, PDDocument doc)	Create a PDImageXObject from an image file.
+InputStream createInputStream()	Returns an InputStream containing the image data, irrespective of whether this is an inline image or an image XObject.
+InputStream createInputStream(DecodeOptions options)	Returns an InputStream, passing additional options to each filter.
+InputStream createInputStream(List<String> stopFilters)	Returns an InputStream containing the image data, irrespective of whether this is an inline image or an image XObject.
+static PDImageXObject createThumbnail(COSStream cosStream)	Creates a thumbnail Image XObject from the given COSBase and name.
+int getBitsPerComponent()	Returns bits per component of this image, or -1 if one has not been set.
+COSArray getColorKeyMask()	Returns the color key mask array associated with this image, or null if there is none.
+PDColorSpace getColorSpace()	Returns the image's color space.
+COSArray getDecode()	Returns the decode array.
+int getHeight()	Returns height of this image, or -1 if one has not been set.
+BufferedImage getImage()	Returns the content of this image as an AWT buffered image with an (A)RGB color space.
+BufferedImage getImage(Rectangle region, int subsampling)	Returns the content of this image as an AWT buffered image with an (A)RGB colored space.
+boolean getInterpolate()	Returns true if the image should be interpolated when rendered.
+PDImageXObject getMask()	Returns the Mask Image XObject associated with this image, or null if there is none.
+PDMetadata getMetadata()	Returns the metadata associated with this XObject, or null if there is none.
+BufferedImage getOpaqueImage()	Returns an RGB buffered image containing the opaque image stream without any masks applied.
+BufferedImage getOpaqueImage(Rectangle region, int subsampling)	Returns an RGB buffered image containing the opaque image stream without any masks applied.
+PDPropertyList getOptionalContent()	This will get the optional content group or optional content membership dictionary.
+BufferedImage getRawImage()	Try to get the raw image as AWT buffered image with it's original colorspace.
+WritableRaster getRawRaster()	Return the image data as WritableRaster.
+PDImageXObject getSoftMask()	Returns the Soft Mask Image XObject associated with this image, or null if there is none.
+BufferedImage getStencilImage(Paint paint)	Returns an ARGB image filled with the given paint and using this image as a mask.
+int getStructParent()	Returns the key of this XObject in the structural parent tree.
+String getSuffix()	This will get the suffix for this image type, e.g.
+int getWidth()	Returns the width of this image, or -1 if one has not been set.
+boolean isEmpty()	Returns true if the image has no data.
+boolean isStencil()	Returns true if the image is a stencil mask.
+void setBitsPerComponent(int bpc)	Set the number of bits per component.
+void setColorSpace(PDColorSpace cs)	Sets the color space for this image.
+void setDecode(COSArray decode)	Sets the decode array.
+void setHeight(int h)	Sets the height of the image.
+void setInterpolate(boolean value)	Sets the Interpolate flag, true for high-quality image scaling.
+void setMetadata(PDMetadata meta)	Sets the metadata associated with this XObject, or null if there is none.
+void setOptionalContent(PDPropertyList oc)	Sets the optional content group or optional content membership dictionary.
+void setStencil(boolean isStencil)	Sets whether or not the image is a stencil.
+void setStructParent(int key)	Sets the key of this XObject in the structural parent tree.
+void setWidth(int w)	Sets the width of the image.
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.PDXObject]
+createXObject, getCOSObject, getStream
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface org.apache.pdfbox.pdmodel.graphics.image.PDImage]
+getCOSObject

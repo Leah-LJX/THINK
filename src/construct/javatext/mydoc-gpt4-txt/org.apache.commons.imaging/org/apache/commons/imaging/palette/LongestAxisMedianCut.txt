@@ -1,0 +1,11 @@
+[API Name] Package org.apache.commons.imaging.palette.LongestAxisMedianCut
+[Type] Class
+[Info]
+All Implemented Interfaces: MedianCut
+public class LongestAxisMedianCut extends Object implements MedianCut
+[Constructor Summary]
+LongestAxisMedianCut()	
+[Method Summary]
+boolean performNextMedianCut​(List<org.apache.commons.imaging.palette.ColorGroup> colorGroups, boolean ignoreAlpha)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

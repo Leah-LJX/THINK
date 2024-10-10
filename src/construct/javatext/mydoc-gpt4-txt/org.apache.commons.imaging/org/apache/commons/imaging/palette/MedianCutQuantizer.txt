@@ -1,0 +1,11 @@
+[API Name] Package org.apache.commons.imaging.palette.MedianCutQuantizer
+[Type] Class
+[Info]
+public class MedianCutQuantizer extends Object
+[Constructor Summary]
+MedianCutQuantizer​(boolean ignoreAlpha)	
+[Method Summary]
+Map<Integer,​org.apache.commons.imaging.palette.ColorCount> groupColors​(BufferedImage image, int maxColors)	
+Palette process​(BufferedImage image, int maxColors, MedianCut medianCut)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

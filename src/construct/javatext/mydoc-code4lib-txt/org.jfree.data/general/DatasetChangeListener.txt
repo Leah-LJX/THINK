@@ -1,0 +1,9 @@
+[Class] org.jfree.data.general.DatasetChangeListener
+[Flag] Interface
+[Info]
+All Superinterfaces: EventListener
+All Known Implementing Classes: CategoryPlot, CategoryToPieDataset, CombinedDomainCategoryPlot, CombinedDomainXYPlot, CombinedRangeCategoryPlot, CombinedRangeXYPlot, CompassPlot, DialPlot, FastScatterPlot, FlowPlot, IntervalXYDelegate, MeterPlot, MultiplePiePlot, PiePlot, PiePlot3D, Plot, PolarPlot, RingPlot, SpiderWebPlot, ThermometerPlot, WaferMapPlot, XYBarDataset, XYDatasetTableModel, XYPlot, XYTaskDataset
+[Constructor Summary]
+
+[Method Summary]
+void datasetChanged(DatasetChangeEvent event)	Receives notification of an dataset change event.

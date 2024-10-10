@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.formats.muc.SgmlParser
+[Type] Class
+[Info]
+public class SgmlParser extends Object SAX style SGML parser.    Note:  The implementation is very limited, but good enough to  parse the MUC corpora. Its must very likely be extended/improved/fixed to parse  a different SGML corpora.
+[Constructor Summary]
+SgmlParser()	
+[Nested Class Summary]
+Nested Class Summary
+static class 
+[Method Summary]
+void parse(Reader in, SgmlParser.ContentHandler handler)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

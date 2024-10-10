@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.plot.Plot
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, AnnotationChangeListener, AxisChangeListener, MarkerChangeListener, LegendItemSource, DatasetChangeListener, org.jfree.util.PublicCloneable
+Direct Known Subclasses: CategoryPlot, CompassPlot, ContourPlot, DialPlot, FastScatterPlot, MeterPlot, MultiplePiePlot, PiePlot, PolarPlot, SpiderWebPlot, ThermometerPlot, WaferMapPlot, XYPlot
+[Constructor Summary]
+protected Plot() Creates a new plot.
+[Method Summary]
+void addChangeListener(PlotChangeListener listener) Registers an object for notification of changes to the plot.

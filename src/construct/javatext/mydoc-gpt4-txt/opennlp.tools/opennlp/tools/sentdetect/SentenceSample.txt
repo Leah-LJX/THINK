@@ -1,0 +1,18 @@
+[API Name] opennlp.tools.sentdetect.SentenceSample
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, Sample
+public class SentenceSample extends Object implements Sample A SentenceSample contains a document with  begin indexes of the individual sentences.
+See Also:
+Serialized Form
+[Constructor Summary]
+SentenceSample(CharSequence document, Span... sentences)	Initializes the current instance.
+SentenceSample(Detokenizer detokenizer, String[][] sentences)	
+[Method Summary]
+boolean equals(Object obj)	
+String getDocument()	
+Span[] getSentences()	
+int hashCode()	
+String toString()	
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

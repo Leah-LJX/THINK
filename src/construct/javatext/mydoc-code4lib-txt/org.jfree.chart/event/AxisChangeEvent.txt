@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.event.AxisChangeEvent
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+AxisChangeEvent(Axis axis) Creates a new AxisChangeEvent.
+[Method Summary]
+Axis getAxis() Returns the axis that generated the event.

@@ -1,0 +1,23 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.action.PDAction
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable, PDDestinationOrAction
+Direct Known Subclasses: PDActionEmbeddedGoTo, PDActionGoTo, PDActionHide, PDActionImportData, PDActionJavaScript, PDActionLaunch, PDActionMovie, PDActionNamed, PDActionRemoteGoTo, PDActionResetForm, PDActionSound, PDActionSubmitForm, PDActionThread, PDActionURI
+public abstract class PDAction extends Object implements PDDestinationOrAction This represents an action that can be executed in a PDF document.
+Author: Ben Litchfield, Panagiotis Toumasis
+[Constructor Summary]
+PDAction()	Default constructor.
+PDAction(COSDictionary a)	Constructor.
+[Field Summary]
+protected COSDictionary action	The action dictionary.
+static String TYPE	The type of PDF object.
+[Method Summary]
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+List<PDAction> getNext()	This will get the next action, or sequence of actions, to be performed after this one.
+String getSubType()	This will get the type of action that the actions dictionary describes.
+String getType()	This will get the type of PDF object that the actions dictionary describes.
+void setNext(List<PDAction> next)	This will set the next action, or sequence of actions, to be performed after this one.
+protected void setSubType(String s)	This will set the type of action that the actions dictionary describes.
+protected void setType(String type)	This will set the type of PDF object that the actions dictionary describes.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

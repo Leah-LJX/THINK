@@ -1,0 +1,11 @@
+[Class] org.joda.time.format.PeriodParser
+[Flag] Interface
+[Info]
+Since: 1.0
+See Also: PeriodFormatter, 
+PeriodFormatterBuilder, 
+PeriodFormat
+[Constructor Summary]
+
+[Method Summary]
+int parseInto(ReadWritablePeriod period, String periodStr, int position, Locale locale) Parses a period from the given text, at the given position, saving the result into the fields of the given ReadWritablePeriod.

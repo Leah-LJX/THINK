@@ -1,0 +1,7 @@
+[Class] org.jfree.chart.renderer.category.CategoryStepRenderer.State
+[Flag] Class
+[Info]
+Enclosing class: CategoryStepRenderer
+[Constructor Summary]
+State(PlotRenderingInfo info) Creates a new state instance.
+[Method Summary]

@@ -1,0 +1,4 @@
+[API Name] opennlp.tools.util.java.Interface
+[Type] Annotation
+[Info]
+@Documented public @interface Experimental Indicates that a certain API feature is not stable  and might change with a new release.

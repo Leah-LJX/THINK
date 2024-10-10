@@ -1,0 +1,28 @@
+[Class] org.jfree.data.time.Minute
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable, MonthConstants, TimePeriod
+[Constructor Summary]
+Minute()	Constructs a new Minute, based on the system date/time.
+Minute(int minute, int hour, int day, int month, int year)	Creates a new minute.
+Minute(int minute, Hour hour)	Constructs a new Minute.
+Minute(Date time)	Constructs a new instance, based on the supplied date/time.
+Minute(Date time, Calendar calendar)	Constructs a new instance, based on a particular date/time.
+Minute(Date time, TimeZone zone, Locale locale)	Constructs a new Minute, based on the supplied date/time and timezone.
+[Method Summary]
+int compareTo(Object o1)	Returns an integer indicating the order of this Minute object relative to the specified object:	 negative == before, zero == same, positive == after.
+boolean equals(Object obj)	Tests the equality of this object against an arbitrary Object.
+Day getDay()	Returns the day.
+long getFirstMillisecond()	Returns the first millisecond of the minute.
+long getFirstMillisecond(Calendar calendar)	Returns the first millisecond of the minute.
+Hour getHour()	Returns the hour.
+int getHourValue()	Returns the hour.
+long getLastMillisecond()	Returns the last millisecond of the minute.
+long getLastMillisecond(Calendar calendar)	Returns the last millisecond of the minute.
+int getMinute()	Returns the minute.
+long getSerialIndex()	Returns a serial index number for the minute.
+int hashCode()	Returns a hash code for this object instance.
+RegularTimePeriod next()	Returns the minute following this one.
+static Minute parseMinute(String s)	Creates a Minute instance by parsing a string.
+void peg(Calendar calendar)	Recalculates the start date/time and end date/time for this time period relative to the supplied calendar (which incorporates a time zone).
+RegularTimePeriod previous()	Returns the minute preceding this one.

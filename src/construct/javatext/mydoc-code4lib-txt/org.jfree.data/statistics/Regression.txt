@@ -1,0 +1,13 @@
+[Class] org.jfree.data.statistics.Regression
+[Flag] Class
+[Info]
+Parameters: data - the data.
+Returns: The parameters.
+[Constructor Summary]
+Regression()
+[Method Summary]
+static double[] getOLSRegression(double[][] data)	Returns the parameters 'a' and 'b' for an equation y = a + bx, fitted to the data using ordinary least squares regression.
+static double[] getOLSRegression(XYDataset data, int series)	Returns the parameters 'a' and 'b' for an equation y = a + bx, fitted to the data using ordinary least squares regression.
+static double[] getPolynomialRegression(XYDataset dataset, int series, int order)	Returns the parameters 'a0', 'a1', 'a2', ..., 'an' for a polynomial function of order n, y = a0 + a1 * x + a2 * x^2 + ...
+static double[] getPowerRegression(double[][] data)	Returns the parameters 'a' and 'b' for an equation y = ax^b, fitted to the data using a power regression equation.
+static double[] getPowerRegression(XYDataset data, int series)	Returns the parameters 'a' and 'b' for an equation y = ax^b, fitted to the data using a power regression equation.

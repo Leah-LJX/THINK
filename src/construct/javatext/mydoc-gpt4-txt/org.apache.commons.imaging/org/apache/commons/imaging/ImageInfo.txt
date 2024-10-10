@@ -1,0 +1,31 @@
+[API Name] Package org.apache.commons.imaging.ImageInfo
+[Type] Class
+[Info]
+Direct Known Subclasses: PngImageInfo
+public class ImageInfo extends Object ImageInfo represents a collection of basic properties of an image, such as  width, height, format, bit depth, etc.
+[Constructor Summary]
+ImageInfo​(String formatDetails, int bitsPerPixel, List<String> comments, ImageFormat format, String formatName, int height, String mimeType, int numberOfImages, int physicalHeightDpi, float physicalHeightInch, int physicalWidthDpi, float physicalWidthInch, int width, boolean progressive, boolean transparent, boolean usesPalette, ImageInfo.ColorType colorType, ImageInfo.CompressionAlgorithm compressionAlgorithm)	
+[Method Summary]
+void dump()	
+int getBitsPerPixel()	Returns the bits per pixel of the image data.
+ImageInfo.ColorType getColorType()	Returns the ImageInfo.ColorType of the image.
+List<String> getComments()	Returns a list of comments from the image file.
+ImageInfo.CompressionAlgorithm getCompressionAlgorithm()	Returns a description of the compression algorithm, if any.
+ImageFormat getFormat()	Returns the image file format, ie.
+String getFormatDetails()	Returns a description of the file format, ie.
+String getFormatName()	Returns a string with the name of the image file format.
+int getHeight()	Returns the height of the image in pixels.
+String getMimeType()	Returns the MIME type of the image.
+int getNumberOfImages()	Returns the number of images in the file.
+int getPhysicalHeightDpi()	Returns horizontal dpi of the image, if available.
+float getPhysicalHeightInch()	Returns physical height of the image in inches, if available.
+int getPhysicalWidthDpi()	Returns vertical dpi of the image, if available.
+float getPhysicalWidthInch()	Returns physical width of the image in inches, if available.
+int getWidth()	Returns the width of the image in pixels.
+boolean isProgressive()	Returns true if the image is progressive or interlaced.
+boolean isTransparent()	Returns true if the image has transparency.
+String toString()	
+void toString​(PrintWriter pw, String prefix)	
+boolean usesPalette()	Returns true if the image uses a palette.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.CategoryCrosshairState
+[Flag] Class
+[Info]
+Since: 1.0.11
+[Constructor Summary]
+CategoryCrosshairState() Creates a new instance.
+[Method Summary]
+Comparable getColumnKey() Returns the column key.

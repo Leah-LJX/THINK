@@ -1,0 +1,8 @@
+[API Name] Package org.apache.commons.imaging.common.BufferedImageFactory
+[Type] Interface
+[Info]
+All Known Implementing Classes: RgbBufferedImageFactory, SimpleBufferedImageFactory
+public interface BufferedImageFactory
+[Method Summary]
+BufferedImage getColorBufferedImage​(int width, int height, boolean hasAlpha)	
+BufferedImage getGrayscaleBufferedImage​(int width, int height, boolean hasAlpha)	

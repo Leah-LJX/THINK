@@ -1,0 +1,10 @@
+[Class] org.w3c.dom.svg.SVGAnimatedNumber
+[Flag] Interface
+[Info]
+public interface SVGAnimatedNumber
+[Constructor Summary]
+
+[Method Summary]
+float getAnimVal()	 
+ float getBaseVal()	 
+ void setBaseVal(float baseVal)

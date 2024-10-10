@@ -1,0 +1,32 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.color.PDICCBased
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class PDICCBased extends PDCIEBasedColorSpace ICCBased color spaces are based on a cross-platform color profile as defined by the  International Color Consortium (ICC).
+Author: Ben Litchfield, John Hewson
+[Constructor Summary]
+PDICCBased(PDDocument doc)	Creates a new ICC color space with an empty stream.
+[Field Summary]
+PDICCBased(PDDocument doc)	Creates a new ICC color space with an empty stream.
+[Method Summary]
+static PDICCBased create(COSArray iccArray, PDResources resources)	Creates a new ICC color space using the PDF array, optionally using a resource cache.
+PDColorSpace getAlternateColorSpace()	Returns a list of alternate color spaces for non-conforming readers.
+int getColorSpaceType()	Returns the type of the color space in the ICC profile.
+float[] getDefaultDecode(int bitsPerComponent)	Returns the default decode array for this color space.
+PDColor getInitialColor()	Returns the initial color value for this color space.
+COSStream getMetadata()	Returns the metadata stream for this object, or null if there is no metadata stream.
+String getName()	Returns the name of the color space.
+int getNumberOfComponents()	Returns the number of components in this color space
+PDStream getPDStream()	Get the underlying ICC profile stream.
+PDRange getRangeForComponent(int n)	Returns the range for a certain component number.
+void setAlternateColorSpaces(List<PDColorSpace> list)	Sets the list of alternateColorSpace color spaces.
+void setMetadata(COSStream metadata)	Sets the metadata stream that is associated with this color space.
+void setRangeForComponent(PDRange range, int n)	Sets the range for this color space.
+BufferedImage toRawImage(WritableRaster raster)	Returns the image in this colorspace or null.
+float[] toRGB(float[] value)	Returns the RGB equivalent of the given color value.
+BufferedImage toRGBImage(WritableRaster raster)	Returns the (A)RGB equivalent of the given raster.
+String toString()	
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace]
+create, create, create, getCOSObject, toRawImage, toRGBImageAWT
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

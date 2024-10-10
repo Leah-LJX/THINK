@@ -1,0 +1,16 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.constants.MolecularDynamicsGelTagConstants
+[Type] Class
+[Info]
+public final class MolecularDynamicsGelTagConstants extends Object Molecular Dynamics GEL file format    http://www.awaresystems.be/imaging/tiff/tifftags/docs/gel.html
+[Field Summary]
+static List<TagInfo> ALL_MOLECULAR_DYNAMICS_GEL_TAGS	
+static TagInfoShorts EXIF_TAG_MD_COLOR_TABLE	
+static TagInfoLong EXIF_TAG_MD_FILE_TAG	
+static TagInfoAscii EXIF_TAG_MD_FILE_UNITS	
+static TagInfoAscii EXIF_TAG_MD_LAB_NAME	
+static TagInfoAscii EXIF_TAG_MD_PREP_DATE	
+static TagInfoAscii EXIF_TAG_MD_PREP_TIME	
+static TagInfoAscii EXIF_TAG_MD_SAMPLE_INFO	
+static TagInfoRational EXIF_TAG_MD_SCALE_PIXEL	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

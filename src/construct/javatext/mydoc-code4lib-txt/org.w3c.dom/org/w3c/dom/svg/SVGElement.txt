@@ -1,0 +1,14 @@
+[Class] org.w3c.dom.svg.SVGElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node
+All Known Subinterfaces: SVGAElement, SVGAltGlyphDefElement, SVGAltGlyphElement, SVGAltGlyphItemElement, SVGAnimateColorElement, SVGAnimateElement, SVGAnimateMotionElement, SVGAnimateTransformElement, SVGAnimationElement, SVGCircleElement, SVGClipPathElement, SVGColorProfileElement, SVGComponentTransferFunctionElement, SVGCursorElement, SVGDefinitionSrcElement, SVGDefsElement, SVGDescElement, SVGEllipseElement, SVGFEBlendElement, SVGFEColorMatrixElement, SVGFEComponentTransferElement, SVGFECompositeElement, SVGFEConvolveMatrixElement, SVGFEDiffuseLightingElement, SVGFEDisplacementMapElement, SVGFEDistantLightElement, SVGFEFloodElement, SVGFEFuncAElement, SVGFEFuncBElement, SVGFEFuncGElement, SVGFEFuncRElement, SVGFEGaussianBlurElement, SVGFEImageElement, SVGFEMergeElement, SVGFEMergeNodeElement, SVGFEMorphologyElement, SVGFEOffsetElement, SVGFEPointLightElement, SVGFESpecularLightingElement, SVGFESpotLightElement, SVGFETileElement, SVGFETurbulenceElement, SVGFilterElement, SVGFontElement, SVGFontFaceElement, SVGFontFaceFormatElement, SVGFontFaceNameElement, SVGFontFaceSrcElement, SVGFontFaceUriElement, SVGForeignObjectElement, SVGGElement, SVGGlyphElement, SVGGlyphRefElement, SVGGradientElement, SVGHKernElement, SVGImageElement, SVGLinearGradientElement, SVGLineElement, SVGMarkerElement, SVGMaskElement, SVGMetadataElement, SVGMissingGlyphElement, SVGMPathElement, SVGPathElement, SVGPatternElement, SVGPolygonElement, SVGPolylineElement, SVGRadialGradientElement, SVGRectElement, SVGScriptElement, SVGSetElement, SVGStopElement, SVGStyleElement, SVGSVGElement, SVGSwitchElement, SVGSymbolElement, SVGTextContentElement, SVGTextElement, SVGTextPathElement, SVGTextPositioningElement, SVGTitleElement, SVGTRefElement, SVGTSpanElement, SVGUseElement, SVGViewElement, SVGVKernElement
+[Constructor Summary]
+
+[Method Summary]
+java.lang.String getId()	 
+ SVGSVGElement getOwnerSVGElement()	 
+ SVGElement getViewportElement()	 
+ java.lang.String getXMLbase()	 
+ void setId(java.lang.String id)	 
+ void setXMLbase(java.lang.String xmlbase)

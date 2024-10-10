@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.ngram.NGramGenerator
+[Type] Class
+[Info]
+public class NGramGenerator extends Object Generates an nGram, via an optional separator, and returns the grams as a list  of strings
+[Constructor Summary]
+NGramGenerator()	
+[Method Summary]
+static List<String> generate(char[] input, int n, String separator)	Generates nGrams based on a char[] input.
+static List<String> generate(List<String> input, int n, String separator)	Creates nGrams separated by the separator param value i.e.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

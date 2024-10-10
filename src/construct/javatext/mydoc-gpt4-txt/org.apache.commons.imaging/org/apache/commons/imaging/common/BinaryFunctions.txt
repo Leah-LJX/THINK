@@ -1,0 +1,35 @@
+[API Name] Package org.apache.commons.imaging.common.BinaryFunctions
+[Type] Class
+[Info]
+public final class BinaryFunctions extends Object Convenience methods for various binary and I/O operations.
+[Method Summary]
+static int charsToQuad​(char c1, char c2, char c3, char c4)	
+static boolean compareBytes​(byte[] a, int aStart, byte[] b, int bStart, int length)	
+static void copyStreamToStream​(InputStream is, OutputStream os)	
+static int findNull​(byte[] src)	
+static int findNull​(byte[] src, int start)	
+static byte[] getRAFBytes​(RandomAccessFile raf, long pos, int length, String exception)	
+static byte[] getStreamBytes​(InputStream is)	
+static byte[] head​(byte[] bytes, int count)	
+static void printByteBits​(String msg, byte i)	
+static void printCharQuad​(PrintWriter pw, String msg, int i)	
+static void printCharQuad​(String msg, int i)	
+static byte[] quadsToByteArray​(int quad)	Convert a quad into a byte array.
+static int read2Bytes​(String name, InputStream is, String exception, ByteOrder byteOrder)	
+static int read3Bytes​(String name, InputStream is, String exception, ByteOrder byteOrder)	
+static int read4Bytes​(String name, InputStream is, String exception, ByteOrder byteOrder)	
+static void readAndVerifyBytes​(InputStream is, byte[] expected, String exception)	
+static void readAndVerifyBytes​(InputStream is, BinaryConstant expected, String exception)	
+static byte readByte​(String name, InputStream is, String exception)	
+static byte[] readBytes​(InputStream is, int count)	
+static byte[] readBytes​(String name, InputStream is, int length)	
+static byte[] readBytes​(String name, InputStream is, int length, String exception)	
+static byte[] remainingBytes​(String name, byte[] bytes, int count)	
+static boolean searchQuad​(int quad, InputStream bis)	Consumes the InputStream (without closing it) searching for a quad.
+static void skipBytes​(InputStream is, long length)	
+static void skipBytes​(InputStream is, long length, String exception)	
+static byte[] slice​(byte[] bytes, int start, int count)	
+static boolean startsWith​(byte[] haystack, byte[] needle)	
+static boolean startsWith​(byte[] haystack, BinaryConstant needle)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.labels.IntervalCategoryToolTipGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, CategoryToolTipGenerator, org.jfree.util.PublicCloneable
+[Constructor Summary]
+IntervalCategoryToolTipGenerator() Creates a new generator with a default number formatter.
+[Method Summary]
+protected Object[] createItemArray(CategoryDataset dataset, int row, int column) Creates the array of items that can be passed to the MessageFormat class for creating labels.

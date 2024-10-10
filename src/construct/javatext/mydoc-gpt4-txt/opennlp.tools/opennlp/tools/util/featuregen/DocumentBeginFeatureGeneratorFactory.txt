@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.util.featuregen.DocumentBeginFeatureGeneratorFactory
+[Type] Class
+[Info]
+public class DocumentBeginFeatureGeneratorFactory extends GeneratorFactory.AbstractXmlFeatureGeneratorFactory
+[Constructor Summary]
+DocumentBeginFeatureGeneratorFactory()	
+[Method Summary]
+AdaptiveFeatureGenerator create()	
+[Methods inherited from class opennlp.tools.util.featuregen.GeneratorFactory.AbstractXmlFeatureGeneratorFactory]
+getArtifactSerializerMapping, getBool, getBool, getDouble, getDouble, getFloat, getFloat, getInt, getInt, getLong, getLong, getStr, getStr
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

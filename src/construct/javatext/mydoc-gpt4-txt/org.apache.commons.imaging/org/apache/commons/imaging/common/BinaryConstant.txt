@@ -1,0 +1,17 @@
+[API Name] Package org.apache.commons.imaging.common.BinaryConstant
+[Type] Class
+[Info]
+public class BinaryConstant extends Object
+[Constructor Summary]
+BinaryConstant​(byte[] value)	
+[Method Summary]
+boolean equals​(byte[] bytes)	
+boolean equals​(byte[] bytes, int offset, int length)	
+boolean equals​(Object obj)	
+byte get​(int i)	
+int hashCode()	
+int size()	
+byte[] toByteArray()	
+void writeTo​(OutputStream os)	
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, toString, wait, wait, wait

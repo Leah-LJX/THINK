@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.encoders.ImageEncoderFactory
+[Flag] Class
+[Info]
+Parameters: format - The image format name.
+imageEncoderClassName - The name of the ImageEncoder class.
+[Constructor Summary]
+ImageEncoderFactory()
+[Method Summary]
+static ImageEncoder newInstance(String format) Used to retrieve an ImageEncoder for a specific image format.

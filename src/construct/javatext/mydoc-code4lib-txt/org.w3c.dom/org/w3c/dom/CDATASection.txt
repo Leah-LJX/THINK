@@ -1,0 +1,8 @@
+[Class] org.w3c.dom.CDATASection
+[Flag] Interface
+[Info]
+All Superinterfaces:
+CharacterData, Node, Text
+[Constructor Summary]
+
+[Method Summary]

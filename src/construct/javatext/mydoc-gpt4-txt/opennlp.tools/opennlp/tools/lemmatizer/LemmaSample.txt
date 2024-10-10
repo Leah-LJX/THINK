@@ -1,0 +1,19 @@
+[API Name] opennlp.tools.lemmatizer.LemmaSample
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, Sample
+public class LemmaSample extends Object implements Sample Represents a lemmatized sentence.
+See Also:
+Serialized Form
+[Constructor Summary]
+LemmaSample(String[] tokens, String[] tags, String[] lemmas)	Initializes a LemmaSample instance with the given parameters.
+LemmaSample(List<String> tokens, List<String> tags, List<String> lemmas)	Initializes a LemmaSample instance with the given parameters.
+[Method Summary]
+boolean equals(Object obj)	
+String[] getLemmas()	
+String[] getTags()	
+String[] getTokens()	
+int hashCode()	
+String toString()	
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

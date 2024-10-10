@@ -1,0 +1,19 @@
+[API Name] org.apache.pdfbox.contentstream.operator.color.SetStrokingColor
+[Type] Class
+[Info]
+Direct Known Subclasses: SetStrokingColorN, SetStrokingDeviceCMYKColor, SetStrokingDeviceGrayColor, SetStrokingDeviceRGBColor
+public class SetStrokingColor extends SetColor SC: Sets the colour to use for stroking stroking operations.
+Author: John Hewson
+[Constructor Summary]
+SetStrokingColor(PDFStreamEngine context)	
+[Method Summary]
+protected PDColor getColor()	Returns the stroking color.
+protected PDColorSpace getColorSpace()	Returns the stroking color space.
+String getName()	Returns the name of this operator, e.g.
+protected void setColor(PDColor color)	Sets the stroking color.
+[Methods inherited from class org.apache.pdfbox.contentstream.operator.color.SetColor]
+process
+[Methods inherited from class org.apache.pdfbox.contentstream.operator.OperatorProcessor]
+checkArrayTypesClass, getContext
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

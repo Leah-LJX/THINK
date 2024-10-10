@@ -1,0 +1,15 @@
+[API Name] org.apache.pdfbox.contentstream.operator.OperatorProcessor
+[Type] Class
+[Info]
+Direct Known Subclasses: BeginMarkedContentSequence, BeginMarkedContentSequenceWithProperties, BeginText, Concatenate, DrawObject, DrawObject, EndMarkedContentSequence, EndText, GraphicsOperatorProcessor, MoveText, MoveTextSetLeading, NextLine, Restore, Save, SetCharSpacing, SetColor, SetFlatness, SetFontAndSize, SetGraphicsStateParameters, SetLineCapStyle, SetLineDashPattern, SetLineJoinStyle, SetLineMiterLimit, SetLineWidth, SetMatrix, SetNonStrokingColorSpace, SetRenderingIntent, SetStrokingColorSpace, SetTextHorizontalScaling, SetTextLeading, SetTextRenderingMode, SetTextRise, SetWordSpacing, ShowText, ShowTextAdjusted, ShowTextLine, ShowTextLineAndSpace
+public abstract class OperatorProcessor extends Object Processes a PDF operator.
+Author: Laurent Huault
+[Constructor Summary]
+protected OperatorProcessor(PDFStreamEngine context)	Creates a new OperatorProcessor.
+[Method Summary]
+boolean checkArrayTypesClass(List<COSBase> operands, Class<?> clazz)	Check whether all operands list elements are an instance of a specific class.
+protected PDFStreamEngine getContext()	Returns the processing context.
+abstract String getName()	Returns the name of this operator, e.g.
+abstract void process(Operator operator, List<COSBase> operands)	Process the operator.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,11 @@
+[Class] org.w3c.dom.svg.SVGPreserveAspectRatio
+[Flag] Interface
+[Info]
+public interface SVGPreserveAspectRatio
+[Constructor Summary]
+
+[Method Summary]
+short getAlign()	 
+ short getMeetOrSlice()	 
+ void setAlign(short align)	 
+ void setMeetOrSlice(short meetOrSlice)

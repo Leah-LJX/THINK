@@ -1,0 +1,24 @@
+[Class] org.jfree.data.xy.VectorSeriesCollection
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, PublicCloneable, Dataset, SeriesChangeListener, SeriesDataset, VectorXYDataset, XYDataset
+[Constructor Summary]
+VectorSeriesCollection()	Creates a new VectorSeriesCollection instance.
+[Method Summary]
+void addSeries(VectorSeries series)	Adds a series to the collection and sends a DatasetChangeEvent to all registered listeners.
+Object clone()	Returns a clone of this instance.
+boolean equals(Object obj)	Tests this instance for equality with an arbitrary object.
+int getItemCount(int series)	Returns the number of items in the specified series.
+VectorSeries getSeries(int series)	Returns a series from the collection.
+int getSeriesCount()	Returns the number of series in the collection.
+Comparable getSeriesKey(int series)	Returns the key for a series.
+Vector getVector(int series, int item)	Returns the vector for an item in a series.
+double getVectorXValue(int series, int item)	Returns the x-component of the vector for an item in a series.
+double getVectorYValue(int series, int item)	Returns the y-component of the vector for an item in a series.
+Number getX(int series, int item)	Returns the x-value for an item within a series.
+double getXValue(int series, int item)	Returns the x-value for an item within a series.
+Number getY(int series, int item)	Returns the y-value for an item within a series.
+double getYValue(int series, int item)	Returns the y-value for an item within a series.
+int indexOf(VectorSeries series)	Returns the index of the specified series, or -1 if that series is not present in the dataset.
+void removeAllSeries()	Removes all the series from the collection and sends a DatasetChangeEvent to all registered listeners.
+boolean removeSeries(VectorSeries series)	Removes the specified series from the collection and sends a DatasetChangeEvent to all registered listeners.

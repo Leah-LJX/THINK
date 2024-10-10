@@ -1,0 +1,24 @@
+[API Name] opennlp.tools.entitylinker.BaseLink
+[Type] Class
+[Info]
+public abstract class BaseLink extends Object Represents a minimal tuple of information.  Intended to be used with LinkedSpan.
+See Also:
+EntityLinker LinkedSpan
+[Constructor Summary]
+BaseLink(String itemParentID, String itemID, String itemName, String itemType)	
+[Method Summary]
+boolean equals(Object obj)	
+String getItemID()	
+String getItemName()	
+String getItemParentID()	
+String getItemType()	
+Map<String,Double> getScoreMap()	
+int hashCode()	
+void setItemID(String itemID)	
+void setItemName(String itemName)	
+void setItemParentID(String itemParentID)	
+void setItemType(String itemType)	
+void setScoreMap(Map<String,Double> scoreMap)	
+String toString()	
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

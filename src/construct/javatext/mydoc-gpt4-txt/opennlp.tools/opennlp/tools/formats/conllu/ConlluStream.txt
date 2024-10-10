@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.formats.conllu.ConlluStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<ConlluSentence>
+public class ConlluStream extends Object implements ObjectStream<ConlluSentence> The CoNNL-U Format is specified  here.
+[Constructor Summary]
+ConlluStream(InputStreamFactory in)	Initializes a ConlluStream.
+[Method Summary]
+void close()	Closes the ObjectStream and releases all allocated resources.
+ConlluSentence read()	Returns the next ObjectStream object.
+void reset()	Repositions the stream at the beginning and the previously seen object sequence will be repeated exactly.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

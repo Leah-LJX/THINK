@@ -1,0 +1,9 @@
+[API Name] Package org.apache.commons.imaging.formats.pcx.PcxConstants
+[Type] Class
+[Info]
+public final class PcxConstants extends Object
+[Field Summary]
+static int PCX_COMPRESSION_RLE	
+static int PCX_COMPRESSION_UNCOMPRESSED	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

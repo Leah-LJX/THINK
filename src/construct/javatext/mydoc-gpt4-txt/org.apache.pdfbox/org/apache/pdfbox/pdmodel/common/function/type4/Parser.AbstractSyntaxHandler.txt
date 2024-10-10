@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.pdmodel.common.function.type4.Parser.AbstractSyntaxHandler
+[Type] Class
+[Info]
+All Implemented Interfaces: Parser.SyntaxHandler
+Direct Known Subclasses: InstructionSequenceBuilder
+Enclosing class: Parser
+public abstract static class Parser.AbstractSyntaxHandler extends Object implements Parser.SyntaxHandler Abstract base class for a Parser.SyntaxHandler.
+[Constructor Summary]
+AbstractSyntaxHandler()	
+[Method Summary]
+void comment(CharSequence text)	Called for a comment.
+void newLine(CharSequence text)	Indicates that a new line starts.
+void whitespace(CharSequence text)	Called when whitespace characters are encountered.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface org.apache.pdfbox.pdmodel.common.function.type4.Parser.SyntaxHandler]
+token

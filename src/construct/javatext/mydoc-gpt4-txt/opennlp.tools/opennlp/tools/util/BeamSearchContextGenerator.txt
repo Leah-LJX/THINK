@@ -1,0 +1,8 @@
+[API Name] opennlp.tools.util.BeamSearchContextGenerator<T>
+[Type] Interface
+[Info]
+All Known Subinterfaces: ChunkerContextGenerator, LemmatizerContextGenerator, NameContextGenerator, POSContextGenerator
+All Known Implementing Classes: ChunkContextGenerator, ConfigurablePOSContextGenerator, DefaultChunkerContextGenerator, DefaultLemmatizerContextGenerator, DefaultNameContextGenerator, DefaultPOSContextGenerator
+public interface BeamSearchContextGenerator<T> Interface for context generators used with a sequence beam search.
+[Method Summary]
+String[] getContext(int index, T[] sequence, String[] priorDecisions, Object[] additionalContext)	Returns the context for the specified position in the specified sequence (list).

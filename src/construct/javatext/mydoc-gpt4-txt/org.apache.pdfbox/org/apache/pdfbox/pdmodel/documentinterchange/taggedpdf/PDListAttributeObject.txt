@@ -1,0 +1,33 @@
+[API Name] org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.PDListAttributeObject
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDListAttributeObject extends PDStandardAttributeObject A List attribute object.
+Author: Johannes Koch
+[Constructor Summary]
+PDListAttributeObject()	Default constructor.
+PDListAttributeObject(COSDictionary dictionary)	Creates a new List attribute object with a given dictionary.
+[Field Summary]
+protected static String LIST_NUMBERING	
+static String LIST_NUMBERING_CIRCLE	ListNumbering: Circle: Open circular bullet
+static String LIST_NUMBERING_DECIMAL	ListNumbering: Decimal: Decimal arabic numerals (1–9, 10–99, …)
+static String LIST_NUMBERING_DISC	ListNumbering: Disc: Solid circular bullet
+static String LIST_NUMBERING_LOWER_ALPHA	ListNumbering: LowerAlpha: Lowercase letters (a, b, c, …)
+static String LIST_NUMBERING_LOWER_ROMAN	ListNumbering: LowerRoman: Lowercase roman numerals (i, ii, iii, iv, …)
+static String LIST_NUMBERING_NONE	ListNumbering: None: No autonumbering; Lbl elements (if present) contain arbitrary text not subject to any numbering scheme
+static String LIST_NUMBERING_SQUARE	ListNumbering: Square: Solid square bullet
+static String LIST_NUMBERING_UPPER_ALPHA	ListNumbering: UpperAlpha: Uppercase letters (A, B, C, …)
+static String LIST_NUMBERING_UPPER_ROMAN	ListNumbering: UpperRoman: Uppercase roman numerals (I, II, III, IV, …)
+static String OWNER_LIST	standard attribute owner: List
+[Method Summary]
+String getListNumbering()	Gets the list numbering (ListNumbering).
+void setListNumbering(String listNumbering)	Sets the list numbering (ListNumbering).
+String toString()	
+[Methods inherited from class org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.PDStandardAttributeObject]
+getArrayOfString, getColor, getColorOrFourColors, getInteger, getName, getName, getNameOrArrayOfName, getNumber, getNumber, getNumberOrArrayOfNumber, getNumberOrName, getString, isSpecified, setArrayOfName, setArrayOfNumber, setArrayOfString, setColor, setFourColors, setInteger, setName, setNumber, setNumber, setString
+[Methods inherited from class org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDAttributeObject]
+arrayToString, arrayToString, create, getOwner, isEmpty, notifyChanged, potentiallyNotifyChanged, setOwner, setStructureElement
+[Methods inherited from class org.apache.pdfbox.pdmodel.common.PDDictionaryWrapper]
+equals, getCOSObject, hashCode
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

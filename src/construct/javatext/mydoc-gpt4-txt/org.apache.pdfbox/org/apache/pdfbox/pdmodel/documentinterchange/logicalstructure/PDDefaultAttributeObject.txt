@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDDefaultAttributeObject
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDDefaultAttributeObject extends PDAttributeObject A default attribute object.
+Author: Johannes Koch
+[Constructor Summary]
+PDDefaultAttributeObject()	Default constructor.
+PDDefaultAttributeObject(COSDictionary dictionary)	Creates a default attribute object with a given dictionary.
+[Method Summary]
+List<String> getAttributeNames()	Gets the attribute names.
+COSBase getAttributeValue(String attrName)	Gets the attribute value for a given name.
+protected COSBase getAttributeValue(String attrName, COSBase defaultValue)	Gets the attribute value for a given name.
+void setAttribute(String attrName, COSBase attrValue)	Sets an attribute.
+String toString()	
+[Methods inherited from class org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDAttributeObject]
+arrayToString, arrayToString, create, getOwner, isEmpty, notifyChanged, potentiallyNotifyChanged, setOwner, setStructureElement
+[Methods inherited from class org.apache.pdfbox.pdmodel.common.PDDictionaryWrapper]
+equals, getCOSObject, hashCode
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

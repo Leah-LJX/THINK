@@ -1,0 +1,18 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.state.PDSoftMask
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class PDSoftMask extends Object implements COSObjectable Soft mask.
+Author: Kühn & Weyh Software GmbH
+[Constructor Summary]
+PDSoftMask(COSDictionary dictionary)	Creates a new soft mask.
+[Method Summary]
+static PDSoftMask create(COSBase dictionary)	Creates a new soft mask.
+COSArray getBackdropColor()	Returns the backdrop color.
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+PDTransparencyGroup getGroup()	Returns the G entry of the soft mask object
+Matrix getInitialTransformationMatrix()	Returns the CTM at the time the ExtGState was activated.
+COSName getSubType()	Returns the subtype of the soft mask (Alpha, Luminosity) - S entry
+PDFunction getTransferFunction()	Returns the transfer function.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

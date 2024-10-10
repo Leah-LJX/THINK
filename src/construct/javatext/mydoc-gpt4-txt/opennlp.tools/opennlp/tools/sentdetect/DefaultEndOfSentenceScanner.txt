@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.sentdetect.DefaultEndOfSentenceScanner
+[Type] Class
+[Info]
+All Implemented Interfaces: EndOfSentenceScanner
+public class DefaultEndOfSentenceScanner extends Object implements EndOfSentenceScanner Default implementation of the EndOfSentenceScanner.  It uses a character array with possible end of sentence chars  to identify potential sentence endings.
+[Constructor Summary]
+DefaultEndOfSentenceScanner(char[] eosCharacters)	Initializes the current instance.
+[Method Summary]
+Set<Character> getEOSCharacters()	
+List<Integer> getPositions(char[] cbuf)	The receiver scans cbuf for sentence ending characters and returns their offsets.
+List<Integer> getPositions(CharSequence s)	The receiver scans the specified string for sentence ending characters and returns their offsets.
+List<Integer> getPositions(StringBuffer buf)	The receiver scans buf for sentence ending characters and returns their offsets.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

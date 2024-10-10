@@ -1,0 +1,4 @@
+[API Name] opennlp.tools.commons.Interface
+[Type] Annotation
+[Info]
+@Documented @Retention(RUNTIME) public @interface Internal Classes, fields, or methods annotated &#64;Internal are for OpenNLP  internal use only. Such elements are likely to be removed, have a different access level,  or might experience a signature change in upcoming releases of OpenNLP.

@@ -1,0 +1,33 @@
+[Class] org.jfree.data.statistics.SimpleHistogramDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, PublicCloneable, Dataset, SeriesChangeListener, SeriesDataset, IntervalXYDataset, XYDataset
+[Constructor Summary]
+SimpleHistogramDataset(Comparable key)	Creates a new histogram dataset.
+[Method Summary]
+void addBin(SimpleHistogramBin bin)	Adds a bin to the dataset.
+void addObservation(double value)	Adds an observation to the dataset (by incrementing the item count for the appropriate bin).
+void addObservation(double value, boolean notify)	Adds an observation to the dataset (by incrementing the item count for the appropriate bin).
+void addObservations(double[] values)	Adds a set of values to the dataset and sends a DatasetChangeEvent to all registered listeners.
+void clearObservations()	Removes all current observation data and sends a DatasetChangeEvent to all registered listeners.
+Object clone()	Returns a clone of the dataset.
+boolean equals(Object obj)	Compares the dataset for equality with an arbitrary object.
+boolean getAdjustForBinSize()	Returns a flag that controls whether or not the bin count is divided by the bin size in the getXValue(int, int) method.
+DomainOrder getDomainOrder()	Returns the order of the domain (or X) values returned by the dataset.
+Number getEndX(int series, int item)	Returns the ending X value for the specified series and item.
+double getEndXValue(int series, int item)	Returns the end x-value (as a double primitive) for an item within a series.
+Number getEndY(int series, int item)	Returns the ending Y value for the specified series and item.
+double getEndYValue(int series, int item)	Returns the end y-value (as a double primitive) for an item within a series.
+int getItemCount(int series)	Returns the number of items in a series.
+int getSeriesCount()	Returns the number of series in the dataset (always 1 for this dataset).
+Comparable getSeriesKey(int series)	Returns the key for a series.
+Number getStartX(int series, int item)	Returns the starting X value for the specified series and item.
+double getStartXValue(int series, int item)	Returns the start x-value (as a double primitive) for an item within a series.
+Number getStartY(int series, int item)	Returns the starting Y value for the specified series and item.
+double getStartYValue(int series, int item)	Returns the start y-value (as a double primitive) for an item within a series.
+Number getX(int series, int item)	Returns the x-value for an item within a series.
+double getXValue(int series, int item)	Returns the x-value (as a double primitive) for an item within a series.
+Number getY(int series, int item)	Returns the y-value for an item within a series.
+double getYValue(int series, int item)	Returns the y-value (as a double primitive) for an item within a series.
+void removeAllBins()	Removes all bins and sends a DatasetChangeEvent to all registered listeners.
+void setAdjustForBinSize(boolean adjust)	Sets the flag that controls whether or not the bin count is divided by the bin size in the getYValue(int, int) method, and sends a DatasetChangeEvent to all registered listeners.

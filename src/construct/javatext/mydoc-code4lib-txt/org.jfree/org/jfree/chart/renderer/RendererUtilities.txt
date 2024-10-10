@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.RendererUtilities
+[Flag] Class
+[Info]
+Since: 1.0.6
+[Constructor Summary]
+RendererUtilities()
+[Method Summary]
+static int[] findLiveItems(XYDataset dataset, int series, double xLow, double xHigh) Finds a range of item indices that is guaranteed to contain all the x-values from x0 to x1 (inclusive).

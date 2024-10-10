@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.digitalsignature.COSFilterInputStream
+[Type] Class
+[Info]
+All Implemented Interfaces: Closeable, AutoCloseable
+public class COSFilterInputStream extends FilterInputStream A filtered stream that includes the bytes that are in the (begin,length) intervals passed in the  constructor.
+Author: boix_jor
+[Constructor Summary]
+COSFilterInputStream(byte[] in, int[] byteRange)	
+COSFilterInputStream(InputStream in, int[] byteRange)	
+[Field Summary]
+COSFilterInputStream(byte[] in, int[] byteRange)	
+COSFilterInputStream(InputStream in, int[] byteRange)	
+[Method Summary]
+int read()	
+int read(byte[] b)	
+int read(byte[] b, int off, int len)	
+byte[] toByteArray()	
+[Methods inherited from class java.io.FilterInputStream]
+available, close, mark, markSupported, reset, skip
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

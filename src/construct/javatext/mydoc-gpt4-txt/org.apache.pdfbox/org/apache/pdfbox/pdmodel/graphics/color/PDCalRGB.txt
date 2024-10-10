@@ -1,0 +1,30 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.color.PDCalRGB
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDCalRGB extends PDCIEDictionaryBasedColorSpace A CalRGB colour space is a CIE-based colour space with one transformation stage instead of two.  In this type of space, A, B, and C represent calibrated red, green, and blue colour values.
+Author: Ben Litchfield, John Hewson
+[Constructor Summary]
+PDCalRGB()	Creates a new CalRGB color space.
+PDCalRGB(COSArray rgb)	Creates a new CalRGB color space using the given COS array.
+[Field Summary]
+PDCalRGB()	Creates a new CalRGB color space.
+PDCalRGB(COSArray rgb)	Creates a new CalRGB color space using the given COS array.
+[Method Summary]
+float[] getDefaultDecode(int bitsPerComponent)	Returns the default decode array for this color space.
+PDGamma getGamma()	Returns the gamma value.
+PDColor getInitialColor()	Returns the initial color value for this color space.
+float[] getMatrix()	Returns the linear interpretation matrix, which is an array of nine numbers.
+String getName()	Returns the name of the color space.
+int getNumberOfComponents()	Returns the number of components in this color space
+void setGamma(PDGamma gamma)	Sets the gamma value.
+void setMatrix(Matrix matrix)	Sets the linear interpretation matrix.
+float[] toRGB(float[] value)	Returns the RGB equivalent of the given color value.
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.color.PDCIEDictionaryBasedColorSpace]
+convXYZtoRGB, getBlackPoint, getWhitepoint, isWhitePoint, setBlackPoint, setWhitePoint
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.color.PDCIEBasedColorSpace]
+toRawImage, toRGBImage, toString
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace]
+create, create, create, getCOSObject, toRawImage, toRGBImageAWT
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

@@ -1,0 +1,11 @@
+[Class] org.jfree.data.xml.CategorySeriesHandler
+[Flag] Class
+[Info]
+All Implemented Interfaces: DatasetTags, ContentHandler, DTDHandler, EntityResolver, ErrorHandler
+[Constructor Summary]
+CategorySeriesHandler(RootHandler root)	Creates a new item handler.
+[Method Summary]
+void addItem(Comparable key, Number value)	Adds an item to the temporary storage for the series.
+void endElement(String namespaceURI, String localName, String qName)	The end of an element.
+void setSeriesKey(Comparable key)	Sets the series key.
+void startElement(String namespaceURI, String localName, String qName, Attributes atts)	The start of an element.

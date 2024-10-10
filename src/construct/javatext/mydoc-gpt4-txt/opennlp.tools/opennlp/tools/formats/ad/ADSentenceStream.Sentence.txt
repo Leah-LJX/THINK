@@ -1,0 +1,18 @@
+[API Name] opennlp.tools.formats.ad.ADSentenceStream.Sentence
+[Type] Class
+[Info]
+Enclosing class: ADSentenceStream
+public static class ADSentenceStream.Sentence extends Object
+[Constructor Summary]
+Sentence()	
+[Field Summary]
+static final String META_LABEL_FINAL	
+[Method Summary]
+String getMetadata()	
+ADSentenceStream.SentenceParser.Node getRoot()	
+String getText()	
+void setMetadata(String metadata)	
+void setRoot(ADSentenceStream.SentenceParser.Node root)	
+void setText(String text)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

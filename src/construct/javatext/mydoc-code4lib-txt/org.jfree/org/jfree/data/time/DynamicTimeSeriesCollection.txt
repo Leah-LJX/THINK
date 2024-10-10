@@ -1,0 +1,47 @@
+[Class] org.jfree.data.time.DynamicTimeSeriesCollection
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, DomainInfo, Dataset, SeriesChangeListener, SeriesDataset, RangeInfo, IntervalXYDataset, XYDataset
+[Constructor Summary]
+DynamicTimeSeriesCollection(int nSeries, int nMoments)	Constructs a dataset with capacity for N series, tied to default timezone.
+DynamicTimeSeriesCollection(int nSeries, int nMoments, TimeZone zone)	Constructs an empty dataset, tied to a specific timezone.
+DynamicTimeSeriesCollection(int nSeries, int nMoments, RegularTimePeriod timeSample)	Creates a new dataset.
+DynamicTimeSeriesCollection(int nSeries, int nMoments, RegularTimePeriod timeSample, TimeZone zone)	Creates a new dataset.
+[Method Summary]
+void addSeries(float[] values, int seriesNumber, Comparable seriesKey)	Adds a series to the dataset.
+void addValue(int seriesNumber, int index, float value)	Adds a value to a series.
+RegularTimePeriod advanceTime()	Adjust the array offset as needed when a new time-period is added: Increments the indices "oldestAt" and "newestAt", mod(array length), zeroes the series values at newestAt, returns the new TimePeriod.
+void appendData(float[] newData)	Appends new data.
+void appendData(float[] newData, int insertionIndex, int refresh)	Appends data at specified index, for loading up with data from file(s).
+protected void findDomainLimits()	Finds the domain limits.
+protected double findMaxValue()	Returns the maximum value.
+protected void fireSeriesChanged()	Sends a SeriesChangeEvent to all registered listeners.
+Range getDomainBounds(boolean includeInterval)	Returns the range of the values in this dataset's domain.
+double getDomainLowerBound(boolean includeInterval)	Returns the minimum x-value in the dataset.
+double getDomainUpperBound(boolean includeInterval)	Returns the maximum x-value in the dataset.
+Number getEndX(int series, int item)	Returns the end x-value.
+Number getEndY(int series, int item)	Returns the end y-value.
+int getItemCount(int series)	Returns the number of items in a series.
+int getNewestIndex()	Returns the index of the newest data item.
+RegularTimePeriod getNewestTime()	Returns the newest time.
+int getOldestIndex()	Returns the index of the oldest data item.
+RegularTimePeriod getOldestTime()	Returns the oldest time.
+int getPosition()	Returns the x position type (START, MIDDLE or END).
+Range getRangeBounds(boolean includeInterval)	Returns the value range.
+double getRangeLowerBound(boolean includeInterval)	Returns the minimum range value.
+double getRangeUpperBound(boolean includeInterval)	Returns the maximum range value.
+int getSeriesCount()	Returns the number of series in the collection.
+Comparable getSeriesKey(int series)	Returns the key for a series.
+Number getStartX(int series, int item)	Returns the start x-value.
+Number getStartY(int series, int item)	Returns the start y-value.
+Number getX(int series, int item)	Returns the x-value.
+Number getY(int series, int item)	Returns the y-value.
+double getYValue(int series, int item)	Returns the y-value.
+void invalidateRangeInfo()	Invalidates the range info.
+int offsetFromNewest(int delta)	Returns the actual index to a time offset by "delta" from newestAt.
+int offsetFromOldest(int delta)	??
+void setPosition(int position)	Sets the x position type (START, MIDDLE or END).
+void setSeriesKey(int seriesNumber, Comparable key)	Sets the name of a series.
+long setTimeBase(RegularTimePeriod start)	Fill the pointsInTime with times using TimePeriod.next(): Will silently return if the time array was already populated.
+protected int translateGet(int toFetch)	Re-map an index, for use in retrieving data.
+protected int wrapOffset(int protoIndex)	??

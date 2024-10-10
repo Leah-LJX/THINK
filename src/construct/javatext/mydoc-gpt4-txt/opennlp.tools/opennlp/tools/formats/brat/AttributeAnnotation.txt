@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.formats.brat.AttributeAnnotation
+[Type] Class
+[Info]
+public class AttributeAnnotation extends BratAnnotation
+[Method Summary]
+String getAttachedTo()	
+String getValue()	
+String toString()	
+[Methods inherited from class opennlp.tools.formats.brat.BratAnnotation]
+getId, getNote, getType, setNote
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, wait, wait, wait

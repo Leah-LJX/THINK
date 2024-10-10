@@ -1,0 +1,13 @@
+[Class] org.jfree.data.category.IntervalCategoryDataset
+[Flag] Interface
+[Info]
+All Superinterfaces: CategoryDataset, Dataset, KeyedValues2D, Values2D
+All Known Subinterfaces: GanttCategoryDataset
+All Known Implementing Classes: DefaultIntervalCategoryDataset, SlidingGanttCategoryDataset, TaskSeriesCollection
+[Constructor Summary]
+
+[Method Summary]
+Number getEndValue(int series, int category)	Returns the end value for the interval for a given series and category.
+Number getEndValue(Comparable series, Comparable category)	Returns the end value for the interval for a given series and category.
+Number getStartValue(int series, int category)	Returns the start value for the interval for a given series and category.
+Number getStartValue(Comparable series, Comparable category)	Returns the start value for the interval for a given series and category.

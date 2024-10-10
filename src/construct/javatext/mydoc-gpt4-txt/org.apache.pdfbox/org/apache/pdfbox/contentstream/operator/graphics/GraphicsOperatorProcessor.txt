@@ -1,0 +1,14 @@
+[API Name] org.apache.pdfbox.contentstream.operator.graphics.GraphicsOperatorProcessor
+[Type] Class
+[Info]
+Direct Known Subclasses: AppendRectangleToPath, BeginInlineImage, ClipEvenOddRule, ClipNonZeroRule, CloseAndStrokePath, CloseFillEvenOddAndStrokePath, CloseFillNonZeroAndStrokePath, ClosePath, CurveTo, CurveToReplicateFinalPoint, CurveToReplicateInitialPoint, DrawObject, EndPath, FillEvenOddAndStrokePath, FillEvenOddRule, FillNonZeroAndStrokePath, FillNonZeroRule, LineTo, MoveTo, ShadingFill, StrokePath
+public abstract class GraphicsOperatorProcessor extends OperatorProcessor Base class for graphics operators.
+Author: John Hewson
+[Constructor Summary]
+protected GraphicsOperatorProcessor(PDFGraphicsStreamEngine context)	
+[Method Summary]
+protected PDFGraphicsStreamEngine getGraphicsContext()	GraphicsOperatorProcessor uses a spezialized engine.
+[Methods inherited from class org.apache.pdfbox.contentstream.operator.OperatorProcessor]
+checkArrayTypesClass, getContext, getName, process
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

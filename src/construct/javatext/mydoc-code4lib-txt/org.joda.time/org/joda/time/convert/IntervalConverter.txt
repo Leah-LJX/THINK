@@ -1,0 +1,9 @@
+[Class] org.joda.time.convert.IntervalConverter
+[Flag] Interface
+[Info]
+All Superinterfaces: Converter
+[Constructor Summary]
+
+[Method Summary]
+boolean isReadableInterval(Object object, Chronology chrono) Checks if the input is a ReadableInterval.
+void setInto(ReadWritableInterval writableInterval, Object object, Chronology chrono) Extracts interval endpoint values from an object of this converter's type, and sets them into the given ReadWritableInterval.

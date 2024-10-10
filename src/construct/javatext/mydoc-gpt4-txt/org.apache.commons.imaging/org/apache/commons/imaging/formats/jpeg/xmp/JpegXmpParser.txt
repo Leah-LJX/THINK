@@ -1,0 +1,13 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.xmp.JpegXmpParser
+[Type] Class
+[Info]
+public class JpegXmpParser extends BinaryFileParser
+[Constructor Summary]
+JpegXmpParser()	
+[Method Summary]
+boolean isXmpJpegSegment​(byte[] segmentData)	
+String parseXmpJpegSegment​(byte[] segmentData)	
+[Methods inherited from class org.apache.commons.imaging.common.BinaryFileParser]
+debugNumber, debugNumber, getByteOrder, setByteOrder
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

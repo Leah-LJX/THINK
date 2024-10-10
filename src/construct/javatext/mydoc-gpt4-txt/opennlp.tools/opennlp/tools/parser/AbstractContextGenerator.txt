@@ -1,0 +1,9 @@
+[API Name] opennlp.tools.parser.AbstractContextGenerator
+[Type] Class
+[Info]
+Direct Known Subclasses: AttachContextGenerator, BuildContextGenerator, BuildContextGenerator, CheckContextGenerator, CheckContextGenerator
+public abstract class AbstractContextGenerator extends Object Abstract class containing many of the methods used to generate contexts for parsing.
+[Constructor Summary]
+AbstractContextGenerator()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

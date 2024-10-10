@@ -1,0 +1,31 @@
+[API Name] opennlp.tools.dictionary.Dictionary
+[Type] Class
+[Info]
+All Implemented Interfaces: Iterable<StringList>, SerializableArtifact
+public class Dictionary extends Object implements Iterable<StringList>, SerializableArtifact An iterable and serializable dictionary implementation.
+See Also:
+SerializableArtifact Iterable
+[Constructor Summary]
+Dictionary()	Initializes an empty Dictionary.
+Dictionary(boolean caseSensitive)	Initializes an empty Dictionary.
+Dictionary(InputStream in)	Initializes the Dictionary from an existing dictionary resource.
+[Method Summary]
+Set<String> asStringSet()	Converts this Dictionary to a Set<String>.
+boolean contains(StringList tokens)	Checks if this dictionary has the given entry.
+boolean equals(Object obj)	
+Class<?> getArtifactSerializerClass()	Retrieves the class which can serialize and recreate this artifact.
+int getMaxTokenCount()	
+int getMinTokenCount()	
+int hashCode()	
+boolean isCaseSensitive()	
+Iterator<StringList> iterator()	
+static Dictionary parseOneEntryPerLine(Reader in)	Reads a Dictionary which has one entry per line.
+void put(StringList tokens)	Adds the tokens to the dictionary as one new entry.
+void remove(StringList tokens)	Removes the given tokens form the current instance.
+void serialize(OutputStream out)	Writes the current instance to the given OutputStream.
+int size()	
+String toString()	
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait
+[Methods inherited from interface java.lang.Iterable]
+forEach, spliterator

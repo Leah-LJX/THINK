@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.urls.CategoryURLGenerator
+[Flag] Interface
+[Info]
+All Known Implementing Classes: CustomCategoryURLGenerator, StandardCategoryURLGenerator
+[Constructor Summary]
+
+[Method Summary]
+String generateURL(CategoryDataset dataset, int series, int category) Returns a URL for one item in a dataset.

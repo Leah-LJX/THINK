@@ -1,0 +1,15 @@
+[Class] org.jfree.data.DefaultKeyedValue
+[Flag] Class
+[Info]
+Type Parameters: K - the key type (String is a good default).
+All Implemented Interfaces: Serializable, Cloneable, PublicCloneable, KeyedValue<K>, Value
+[Constructor Summary]
+DefaultKeyedValue(K key, Number value)	Creates a new (key, value) item.
+[Method Summary]
+Object clone()	Returns a clone.
+boolean equals(Object obj)	Tests this key-value pair for equality with an arbitrary object.
+K getKey()	Returns the key.
+Number getValue()	Returns the value.
+int hashCode()	Returns a hash code.
+void setValue(Number value)	Sets the value.
+String toString()	Returns a string representing this instance, primarily useful for debugging.

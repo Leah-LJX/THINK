@@ -1,0 +1,25 @@
+[API Name] org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDUserProperty
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDUserProperty extends PDDictionaryWrapper A user property.
+Author: Johannes Koch
+[Constructor Summary]
+PDUserProperty(COSDictionary dictionary, PDUserAttributeObject userAttributeObject)	Creates a user property with a given dictionary.
+PDUserProperty(PDUserAttributeObject userAttributeObject)	Creates a new user property.
+[Method Summary]
+boolean equals(Object obj)	
+String getFormattedValue()	Returns the string for the property value.
+String getName()	Returns the property name.
+COSBase getValue()	Returns the property value.
+int hashCode()	
+boolean isHidden()	Shall the property be hidden?
+void setFormattedValue(String formattedValue)	Sets the string for the property value.
+void setHidden(boolean hidden)	Specifies whether the property shall be hidden.
+void setName(String name)	Sets the property name.
+void setValue(COSBase value)	Sets the property value.
+String toString()	
+[Methods inherited from class org.apache.pdfbox.pdmodel.common.PDDictionaryWrapper]
+getCOSObject
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

@@ -1,0 +1,26 @@
+[API Name] opennlp.tools.tokenize.TokenizerModel
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, ArtifactProvider
+public final class TokenizerModel extends BaseModel The TokenizerModel is the model used  by a learnable Tokenizer.
+See Also:
+TokenizerME TokenizerFactory Serialized Form
+[Constructor Summary]
+TokenizerModel(File modelFile)	Initializes a TokenizerModel instance via a valid File.
+TokenizerModel(InputStream in)	Initializes a TokenizerModel instance via a valid InputStream.
+TokenizerModel(URL modelURL)	Initializes a TokenizerModel instance via a valid URL.
+TokenizerModel(Path modelPath)	Initializes a TokenizerModel instance via a valid Path.
+TokenizerModel(MaxentModel tokenizerModel, Map<String,String> manifestInfoEntries, TokenizerFactory tokenizerFactory)	Initializes a TokenizerModel instance via a MaxentModel and related resources.
+[Method Summary]
+boolean equals(Object obj)	
+Dictionary getAbbreviations()	
+TokenizerFactory getFactory()	
+MaxentModel getMaxentModel()	
+int hashCode()	
+boolean useAlphaNumericOptimization()	
+[Fields inherited from class opennlp.tools.util.model.BaseModel]
+TRAINING_CUTOFF_PROPERTY, TRAINING_EVENTHASH_PROPERTY, TRAINING_ITERATIONS_PROPERTY
+[Methods inherited from class opennlp.tools.util.model.BaseModel]
+getArtifact, getLanguage, getManifestProperty, getVersion, isLoadedFromSerialized, serialize, serialize, serialize
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, toString, wait, wait, wait

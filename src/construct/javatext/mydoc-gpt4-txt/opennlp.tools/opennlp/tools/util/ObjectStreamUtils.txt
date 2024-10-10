@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.util.ObjectStreamUtils
+[Type] Class
+[Info]
+public class ObjectStreamUtils extends Object
+[Constructor Summary]
+ObjectStreamUtils()	
+[Method Summary]
+static <T> ObjectStream<T> concatenateObjectStream(Collection<ObjectStream<T>> streams)	Creates a single concatenated ObjectStream from multiple individual streams with the same type ObjectStreamUtils.
+static <T> ObjectStream<T> concatenateObjectStream(ObjectStream<T>... streams)	Creates a single concatenated ObjectStream from multiple individual streams with the same type.
+static <T> ObjectStream<T> createObjectStream(Collection<T> collection)	Creates an ObjectStream form a Collection<T>.
+static <T> ObjectStream<T> createObjectStream(T... array)	Creates an ObjectStream form an array of ObjectStreamUtils.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.PieLabelRecord
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable
+[Constructor Summary]
+PieLabelRecord(Comparable key, double angle, double baseY, org.jfree.text.TextBox label, double labelHeight, double gap, double linkPercent) Creates a new record.
+[Method Summary]
+int compareTo(Object obj) Compares this object to an arbitrary object.

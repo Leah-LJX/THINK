@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.SegmentedTimeline
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Timeline
+[Constructor Summary]
+SegmentedTimeline(long segmentSize, int segmentsIncluded, int segmentsExcluded) Constructs a new segmented timeline, optionaly using another segmented timeline as its base.
+[Method Summary]
+void addBaseTimelineException(Date date) Adds a segment relative to the baseTimeline as an exception.

@@ -1,0 +1,27 @@
+[Class] org.jfree.data.Range
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+Direct Known Subclasses: DateRange
+[Constructor Summary]
+Range(double lower, double upper)	Creates a new range.
+[Method Summary]
+static Range combine(Range range1, Range range2)	Creates a new range by combining two existing ranges.
+static Range combineIgnoringNaN(Range range1, Range range2)	Returns a new range that spans both range1 and range2.
+double constrain(double value)	Returns the value within the range that is closest to the specified value.
+boolean contains(double value)	Returns true if the range contains the specified value and false otherwise.
+boolean equals(Object obj)	Tests this object for equality with an arbitrary object.
+static Range expand(Range range, double lowerMargin, double upperMargin)	Creates a new range by adding margins to an existing range.
+static Range expandToInclude(Range range, double value)	Returns a range that includes all the values in the specified range AND the specified value.
+double getCentralValue()	Returns the central value for the range.
+double getLength()	Returns the length of the range.
+double getLowerBound()	Returns the lower bound for the range.
+double getUpperBound()	Returns the upper bound for the range.
+int hashCode()	Returns a hash code.
+boolean intersects(double b0, double b1)	Returns true if the range intersects with the specified range, and false otherwise.
+boolean intersects(Range range)	Returns true if the range intersects with the specified range, and false otherwise.
+boolean isNaNRange()	Returns true if both the lower and upper bounds are Double.NaN, and false otherwise.
+static Range scale(Range base, double factor)	Scales the range by the specified factor.
+static Range shift(Range base, double delta)	Shifts the range by the specified amount.
+static Range shift(Range base, double delta, boolean allowZeroCrossing)	Shifts the range by the specified amount.
+String toString()	Returns a string representation of this Range.

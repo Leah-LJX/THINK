@@ -1,0 +1,12 @@
+[API Name] org.apache.pdfbox.pdmodel.MissingResourceException
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable
+public final class MissingResourceException extends IOException Thrown when a named resource is missing.
+See Also: Serialized Form
+[Constructor Summary]
+MissingResourceException(String message)	
+[Methods inherited from class java.lang.Throwable]
+addSuppressed, fillInStackTrace, getCause, getLocalizedMessage, getMessage, getStackTrace, getSuppressed, initCause, printStackTrace, printStackTrace, printStackTrace, setStackTrace, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

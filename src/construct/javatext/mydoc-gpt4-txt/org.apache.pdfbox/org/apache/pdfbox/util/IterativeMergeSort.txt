@@ -1,0 +1,11 @@
+[API Name] org.apache.pdfbox.util.IterativeMergeSort
+[Type] Class
+[Info]
+public final class IterativeMergeSort extends Object This class provides an iterative (bottom-up) implementation of the  MergeSort algorithm for any generic Java  object which implements a Comparator.
+   This implementation uses an iterative implementation approach over the more classical recursive  approach in order to save the auxiliary space required by the call stack in recursive  implementations.  
+ Complexity:   Worst case time: O(n log n) Best case time: O(n log n) Average case time: O(n log n) Space: O(n log n)
+Author: Alistair Oldfield
+[Method Summary]
+static <T> void sort(List<T> list, Comparator<? super T> cmp)	Sorts this list according to the order induced by the specified Comparator.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

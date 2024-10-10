@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.parser.ParserEvaluator
+[Type] Class
+[Info]
+public class ParserEvaluator extends Evaluator<Parse> This implementation of Evaluator<Parse> behaves like EVALB with no exceptions,  e.g, without removing punctuation tags, or equality between ADVP and PRT, as  in   COLLINS convention.    To follow parsing evaluation conventions (Bikel, Collins, Charniak, etc.) as in EVALB,  options are to be added to the ParserEvaluatorTool.
+See Also:
+Parser Evaluator Parse
+[Constructor Summary]
+ParserEvaluator(Parser aParser, ParserEvaluationMonitor... monitors)	Initializes a ParserEvaluator instance with the given Parser.
+[Method Summary]
+final FMeasure getFMeasure()	
+[Methods inherited from class opennlp.tools.util.eval.Evaluator]
+evaluate, evaluateSample
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,15 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.taginfos.TagInfoRationals
+[Type] Class
+[Info]
+public class TagInfoRationals extends TagInfo
+[Constructor Summary]
+TagInfoRationals​(String name, int tag, int length, TiffDirectoryType directoryType)	
+[Field Summary]
+TagInfoRationals​(String name, int tag, int length, TiffDirectoryType directoryType)	
+[Method Summary]
+byte[] encodeValue​(ByteOrder byteOrder, RationalNumber... values)	
+RationalNumber[] getValue​(ByteOrder byteOrder, byte[] bytes)	
+[Methods inherited from class org.apache.commons.imaging.formats.tiff.taginfos.TagInfo]
+encodeValue, getDescription, getValue, isOffset, isText, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

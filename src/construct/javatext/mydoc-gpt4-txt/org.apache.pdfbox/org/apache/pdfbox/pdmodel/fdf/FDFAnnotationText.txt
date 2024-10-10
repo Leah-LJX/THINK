@@ -1,0 +1,23 @@
+[API Name] org.apache.pdfbox.pdmodel.fdf.FDFAnnotationText
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class FDFAnnotationText extends FDFAnnotation This represents a Text FDF annotation.
+Author: Ben Litchfield, Johanneke Lamberink
+[Constructor Summary]
+FDFAnnotationText()	Default constructor.
+FDFAnnotationText(COSDictionary a)	Constructor.
+FDFAnnotationText(Element element)	Constructor.
+[Field Summary]
+static String SUBTYPE	COS Model value for SubType entry.
+[Method Summary]
+String getIcon()	This will retrieve the icon (and hence appearance, AP taking precedence) For this annotation.
+String getState()	This will retrieve the annotation state.
+String getStateModel()	This will retrieve the annotation state model.
+void setIcon(String icon)	This will set the icon (and hence appearance, AP taking precedence) For this annotation.
+void setState(String state)	This will set the annotation state.
+void setStateModel(String stateModel)	This will set the annotation state model.
+[Methods inherited from class org.apache.pdfbox.pdmodel.fdf.FDFAnnotation]
+create, getBorderEffect, getBorderStyle, getColor, getContents, getCOSObject, getCreationDate, getDate, getIntent, getName, getOpacity, getPage, getRectangle, getRichContents, getStringOrStream, getSubject, getTitle, isHidden, isInvisible, isLocked, isLockedContents, isNoRotate, isNoView, isNoZoom, isPrinted, isReadOnly, isToggleNoView, setBorderEffect, setBorderStyle, setColor, setContents, setCreationDate, setDate, setHidden, setIntent, setInvisible, setLocked, setLockedContents, setName, setNoRotate, setNoView, setNoZoom, setOpacity, setPage, setPrinted, setReadOnly, setRectangle, setRichContents, setSubject, setTitle, setToggleNoView
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

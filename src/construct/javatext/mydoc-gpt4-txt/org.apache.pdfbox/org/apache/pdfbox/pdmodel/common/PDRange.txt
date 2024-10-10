@@ -1,0 +1,20 @@
+[API Name] org.apache.pdfbox.pdmodel.common.PDRange
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDRange extends Object implements COSObjectable This class will be used to signify a range.  a(min) <= a* <= a(max)
+Author: Ben Litchfield
+[Constructor Summary]
+PDRange()	Constructor with an initial range of 0..1.
+PDRange(COSArray range)	Constructor assumes a starting index of 0.
+PDRange(COSArray range, int index)	Constructor with an index into an array.
+[Method Summary]
+COSArray getCOSArray()	This will get the underlying array value.
+COSBase getCOSObject()	Convert this standard java object to a COS object.
+float getMax()	This will get the maximum value of the range.
+float getMin()	This will get the minimum value of the range.
+void setMax(float max)	This will set the maximum value for the range.
+void setMin(float min)	This will set the minimum value for the range.
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

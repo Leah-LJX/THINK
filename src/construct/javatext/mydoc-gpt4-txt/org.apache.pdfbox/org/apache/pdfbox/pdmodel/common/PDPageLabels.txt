@@ -1,0 +1,19 @@
+[API Name] org.apache.pdfbox.pdmodel.common.PDPageLabels
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDPageLabels extends Object implements COSObjectable Represents the page label dictionary of a document.
+Author: Igor Podolskiy
+[Constructor Summary]
+PDPageLabels(PDDocument document)	Creates an empty page label dictionary for the given document.
+PDPageLabels(PDDocument document, COSDictionary dict)	Creates an page label dictionary for a document using the information in the given COS dictionary.
+[Method Summary]
+COSBase getCOSObject()	Convert this standard java object to a COS object.
+String[] getLabelsByPageIndices()	Returns a mapping with 0-based page indices as keys and corresponding page labels as values as an array.
+NavigableSet<Integer> getPageIndices()	Get an ordered set of page indices having a page label range.
+Map<String,Integer> getPageIndicesByLabels()	Returns a mapping with computed page labels as keys and corresponding 0-based page indices as values.
+PDPageLabelRange getPageLabelRange(int startPage)	Returns the page label range starting at the given page, or null if no such range is defined.
+int getPageRangeCount()	Returns the number of page label ranges.
+void setLabelItem(int startPage, PDPageLabelRange item)	Sets the page label range beginning at the specified start page.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

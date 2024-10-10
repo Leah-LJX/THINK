@@ -1,0 +1,14 @@
+[Class] org.jfree.data.statistics.HistogramBin
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+HistogramBin(double startBoundary, double endBoundary)	Creates a new bin.
+[Method Summary]
+Object clone()	Returns a clone of the bin.
+boolean equals(Object obj)	Tests this object for equality with an arbitrary object.
+double getBinWidth()	Returns the bin width.
+int getCount()	Returns the number of items in the bin.
+double getEndBoundary()	Returns the end boundary.
+double getStartBoundary()	Returns the start boundary.
+void incrementCount()	Increments the item count.

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.AxisState
+[Flag] Class
+[Info]
+Parameters: cursor - the cursor.
+[Constructor Summary]
+AxisState() Creates a new axis state.
+[Method Summary]
+void cursorDown(double units) Moves the cursor down by the specified number of Java 2D units.

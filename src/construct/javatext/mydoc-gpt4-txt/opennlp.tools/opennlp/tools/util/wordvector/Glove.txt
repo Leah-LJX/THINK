@@ -1,0 +1,8 @@
+[API Name] opennlp.tools.util.wordvector.Glove
+[Type] Class
+[Info]
+@Experimental public class Glove extends Object GloVe is an unsupervised learning algorithm for obtaining vector representations for words.  Details are found on this  web site.    Warning: Experimental new feature, see OPENNLP-1144 for details, the API might be changed anytime.
+[Method Summary]
+static WordVectorTable parse(InputStream in)	Parses a glove vector plain text file.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

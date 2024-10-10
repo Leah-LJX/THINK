@@ -1,0 +1,10 @@
+[API Name] opennlp.tools.cmdline.params.BasicFormatParams
+[Type] Interface
+[Info]
+All Superinterfaces: EncodingParameter
+All Known Subinterfaces: NameSampleDataStreamFactory.Parameters, ParseSampleStreamFactory.Parameters, WordTagSampleStreamFactory.Parameters
+public interface BasicFormatParams extends EncodingParameter Common format parameters.
+[Method Summary]
+File getData()	
+[Methods inherited from interface opennlp.tools.cmdline.params.EncodingParameter]
+getEncoding

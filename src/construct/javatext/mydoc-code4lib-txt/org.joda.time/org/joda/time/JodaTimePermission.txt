@@ -1,0 +1,7 @@
+[Class] org.joda.time.JodaTimePermission
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Guard
+[Constructor Summary]
+JodaTimePermission(String name)	Constructs a new permission object.
+[Method Summary]

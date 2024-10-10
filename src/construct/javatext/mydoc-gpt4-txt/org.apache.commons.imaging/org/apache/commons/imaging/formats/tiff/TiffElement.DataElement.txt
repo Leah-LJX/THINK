@@ -1,0 +1,17 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.TiffElement.DataElement
+[Type] Class
+[Info]
+Direct Known Subclasses: JpegImageData, TiffImageData.Data
+Enclosing class: TiffElement
+public abstract static class TiffElement.DataElement extends TiffElement
+[Constructor Summary]
+DataElement​(long offset, int length, byte[] data)	
+[Field Summary]
+DataElement​(long offset, int length, byte[] data)	
+[Method Summary]
+byte[] getData()	
+int getDataLength()	
+[Methods inherited from class org.apache.commons.imaging.formats.tiff.TiffElement]
+getElementDescription
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

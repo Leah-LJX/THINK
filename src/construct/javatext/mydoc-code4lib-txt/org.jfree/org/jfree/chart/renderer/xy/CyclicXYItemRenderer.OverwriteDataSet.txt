@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.renderer.xy.CyclicXYItemRenderer.OverwriteDataSet
+[Flag] Class
+[Info]
+All Implemented Interfaces: Dataset, SeriesDataset, XYDataset
+Enclosing class: CyclicXYItemRenderer
+[Constructor Summary]
+OverwriteDataSet(double[] x, double[] y, XYDataset delegateSet) Creates a new dataset.
+[Method Summary]
+void addChangeListener(DatasetChangeListener listener) Does nothing.

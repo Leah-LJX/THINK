@@ -1,0 +1,23 @@
+[Class] org.joda.time.DurationFieldType
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+protected 	DurationFieldType(String name)	Constructor.
+[Method Summary]
+static DurationFieldType centuries() Get the centuries field type.
+static DurationFieldType days() Get the days field type.
+static DurationFieldType eras() Get the eras field type.
+abstract DurationField getField(Chronology chronology) Gets a suitable field for this type from the given Chronology.
+String getName() Get the name of the field.
+static DurationFieldType halfdays() Get the halfdays field type.
+static DurationFieldType hours() Get the hours field type.
+boolean isSupported(Chronology chronology) Checks whether this field supported in the given Chronology.
+static DurationFieldType millis() Get the millis field type.
+static DurationFieldType minutes() Get the minutes field type.
+static DurationFieldType months() Get the months field type.
+static DurationFieldType seconds() Get the seconds field type.
+String toString() Get a suitable debug string.
+static DurationFieldType weeks() Get the weeks field type.
+static DurationFieldType weekyears() Get the weekyears field type.
+static DurationFieldType years() Get the years field type.

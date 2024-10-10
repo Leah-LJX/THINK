@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.util.ParagraphStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<String>
+public class ParagraphStream extends FilterObjectStream<String,String> A FilterObjectStream which merges text lines into paragraphs.    The boundary of paragraph is defined by an empty text line.  If the last paragraph in the stream is not terminated by an empty line  the left over is assumed to be a paragraph.
+[Constructor Summary]
+ParagraphStream(ObjectStream<String> lineStream)	Initializes an FilterObjectStream.
+[Method Summary]
+String read()	Returns the next ObjectStream object.
+[Methods inherited from class opennlp.tools.util.FilterObjectStream]
+close, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

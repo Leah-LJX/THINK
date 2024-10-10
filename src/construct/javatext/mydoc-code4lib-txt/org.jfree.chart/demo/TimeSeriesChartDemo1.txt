@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.demo.TimeSeriesChartDemo1
+[Flag] Class
+[Info]
+All Implemented Interfaces: WindowListener, ImageObserver, MenuContainer, Serializable, EventListener, Accessible, RootPaneContainer, WindowConstants
+[Constructor Summary]
+TimeSeriesChartDemo1(String title) A demonstration application showing how to create a simple time series chart.
+[Method Summary]
+static JPanel createDemoPanel() Creates a panel for the demo (used by SuperDemo.java).

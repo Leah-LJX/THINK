@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.parser.Constituent
+[Type] Class
+[Info]
+public class Constituent extends Object Holds constituents when reading parses.
+See Also:
+Parse
+[Constructor Summary]
+Constituent(String label, Span span)	
+[Method Summary]
+String getLabel()	Returns the label of the constituent.
+Span getSpan()	Returns the span of the constituent.
+void setLabel(String label)	Assigns the label to the constituent.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,19 @@
+[API Name] opennlp.tools.cmdline.namefind.TokenNameFinderFineGrainedReportListener
+[Type] Class
+[Info]
+All Implemented Interfaces: TokenNameFinderEvaluationMonitor, EvaluationMonitor<NameSample>
+public class TokenNameFinderFineGrainedReportListener extends opennlp.tools.cmdline.FineGrainedReportListener implements TokenNameFinderEvaluationMonitor Generates a detailed report for the NameFinder.    It is possible to use it from an API and access the statistics using the  provided getters.
+[Constructor Summary]
+TokenNameFinderFineGrainedReportListener(SequenceCodec<String> seqCodec)	Creates a listener that will print to the configured logger.
+TokenNameFinderFineGrainedReportListener(SequenceCodec<String> seqCodec, OutputStream outputStream)	Creates a listener that prints to a given OutputStream.
+[Nested Class Summary]
+Nested Class Summary
+opennlp.tools.cmdline.FineGrainedReportListener.ConfusionMatrixLine, opennlp.tools.cmdline.FineGrainedReportListener.Counter, opennlp.tools.cmdline.FineGrainedReportListener.GroupedLabelComparator, opennlp.tools.cmdline.FineGrainedReportListener.GroupedMatrixLabelComparator, opennlp.tools.cmdline.FineGrainedReportListener.MatrixLabelComparator, opennlp.tools.cmdline.FineGrainedReportListener.SimpleLabelComparator, opennlp.tools.cmdline.FineGrainedReportListener.Stats
+[Method Summary]
+void correctlyClassified(NameSample reference, NameSample prediction)	
+Comparator<String> getLabelComparator(Map<String,opennlp.tools.cmdline.FineGrainedReportListener.Counter> map)	
+Comparator<String> getMatrixLabelComparator(Map<String,opennlp.tools.cmdline.FineGrainedReportListener.ConfusionMatrixLine> confusionMatrix)	
+void misclassified(NameSample reference, NameSample prediction)	
+void writeReport()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

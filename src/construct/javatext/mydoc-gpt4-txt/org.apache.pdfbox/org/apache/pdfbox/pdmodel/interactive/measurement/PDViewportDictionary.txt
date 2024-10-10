@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.measurement.PDViewportDictionary
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDViewportDictionary extends Object implements COSObjectable This class represents a viewport dictionary.
+[Constructor Summary]
+PDViewportDictionary()	Constructor.
+PDViewportDictionary(COSDictionary dictionary)	Constructor.
+[Field Summary]
+static String TYPE	The type of this object.
+[Method Summary]
+PDRectangle getBBox()	This will retrieve the rectangle specifying the location of the viewport.
+COSDictionary getCOSObject()	This will return the corresponding dictionary.
+PDMeasureDictionary getMeasure()	This will retrieve the measure dictionary.
+String getName()	This will retrieve the name of the viewport.
+String getType()	Returns the type of the viewport dictionary.
+void setBBox(PDRectangle rectangle)	This will set the rectangle specifying the location of the viewport.
+void setMeasure(PDMeasureDictionary measure)	This will set the measure dictionary.
+void setName(String name)	This will set the name of the viewport.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

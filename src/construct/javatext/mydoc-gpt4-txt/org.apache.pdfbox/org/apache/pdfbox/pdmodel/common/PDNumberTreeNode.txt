@@ -1,0 +1,22 @@
+[API Name] org.apache.pdfbox.pdmodel.common.PDNumberTreeNode
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDNumberTreeNode extends Object implements COSObjectable This class represents a PDF Number tree. See the PDF Reference 1.7 section  7.9.7 for more details.
+Author: Ben Litchfield,, Igor Podolskiy
+[Constructor Summary]
+PDNumberTreeNode(Class<? extends COSObjectable> valueClass)	Constructor.
+PDNumberTreeNode(COSDictionary dict, Class<? extends COSObjectable> valueClass)	Constructor.
+[Method Summary]
+protected COSObjectable convertCOSToPD(COSBase base)	Method to convert the COS value in the number tree to the PD Model object.
+protected PDNumberTreeNode createChildNode(COSDictionary dic)	Create a child node object.
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+List<PDNumberTreeNode> getKids()	Return the children of this node.
+Integer getLowerLimit()	Get the lowest value for a key in the number map.
+Map<Integer,COSObjectable> getNumbers()	This will return a map of numbers.
+Integer getUpperLimit()	Get the highest value for a key in the number map.
+Object getValue(Integer index)	Returns the value corresponding to an index in the number tree.
+void setKids(List<? extends PDNumberTreeNode> kids)	Set the children of this number tree.
+void setNumbers(Map<Integer,? extends COSObjectable> numbers)	Set the numbers for this node.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

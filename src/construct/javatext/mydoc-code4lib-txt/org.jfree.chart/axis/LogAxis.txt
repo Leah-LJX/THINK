@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.LogAxis
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, org.jfree.util.PublicCloneable
+[Constructor Summary]
+LogAxis() Creates a new LogAxis with no label.
+[Method Summary]
+protected void autoAdjustRange() Adjusts the axis range to match the data range that the axis is required to display.

@@ -1,0 +1,34 @@
+[Class] org.joda.time.ReadWritablePeriod
+[Flag] Interface
+[Info]
+All Superinterfaces: ReadablePeriod
+All Known Implementing Classes: MutablePeriod
+[Constructor Summary]
+
+[Method Summary]
+void add(DurationFieldType field, int value) Adds to the value of one of the fields.
+void add(int years, int months, int weeks, int days, int hours, int minutes, int seconds, int millis) Adds to each field of this period.
+void add(ReadableInterval interval) Adds an interval to this one by dividing the interval into fields and then adding each field in turn.
+void add(ReadablePeriod period) Adds a period to this one by adding each field in turn.
+void addDays(int days) Adds the specified days to the number of days in the period.
+void addHours(int hours) Adds the specified hours to the number of hours in the period.
+void addMillis(int millis) Adds the specified millis to the number of millis in the period.
+void addMinutes(int minutes) Adds the specified minutes to the number of minutes in the period.
+void addMonths(int months) Adds the specified months to the number of months in the period.
+void addSeconds(int seconds) Adds the specified seconds to the number of seconds in the period.
+void addWeeks(int weeks) Adds the specified weeks to the number of weeks in the period.
+void addYears(int years) Adds the specified years to the number of years in the period.
+void clear() Clears the period, setting all values back to zero.
+void set(DurationFieldType field, int value) Sets the value of one of the fields.
+void setDays(int days) Sets the number of days of the period.
+void setHours(int hours) Sets the number of hours of the period.
+void setMillis(int millis) Sets the number of millis of the period.
+void setMinutes(int minutes) Sets the number of minutes of the period.
+void setMonths(int months) Sets the number of months of the period.
+void setPeriod(int years, int months, int weeks, int days, int hours, int minutes, int seconds, int millis) Sets all the fields in one go.
+void setPeriod(ReadableInterval interval) Sets all the fields in one go from an interval dividing the fields using the period type.
+void setPeriod(ReadablePeriod period) Sets all the fields in one go from another ReadablePeriod.
+void setSeconds(int seconds) Sets the number of seconds of the period.
+void setValue(int index, int value) Sets the value of one of the fields by index.
+void setWeeks(int weeks) Sets the number of weeks of the period.
+void setYears(int years) Sets the number of years of the period.

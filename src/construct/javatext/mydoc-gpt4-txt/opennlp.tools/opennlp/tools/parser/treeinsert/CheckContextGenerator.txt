@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.parser.treeinsert.CheckContextGenerator
+[Type] Class
+[Info]
+public class CheckContextGenerator extends AbstractContextGenerator Generates predictive context for deciding when a constituent is complete.
+See Also:
+AbstractContextGenerator
+[Constructor Summary]
+CheckContextGenerator(Set<String> punctSet)	Instantiates a CheckContextGenerator for making decisions using a punctSet.
+[Method Summary]
+String[] getContext(Object o)	
+String[] getContext(Parse parent, Parse[] constituents, int index, boolean trimFrontier)	Finds the predictive context used to determine how constituent at the specified index should be combined with a parent constituent.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

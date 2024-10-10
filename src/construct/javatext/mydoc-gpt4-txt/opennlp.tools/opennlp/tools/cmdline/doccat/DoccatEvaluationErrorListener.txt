@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.cmdline.doccat.DoccatEvaluationErrorListener
+[Type] Class
+[Info]
+All Implemented Interfaces: DoccatEvaluationMonitor, EvaluationMonitor<DocumentSample>
+public class DoccatEvaluationErrorListener extends opennlp.tools.cmdline.EvaluationErrorPrinter<DocumentSample> implements DoccatEvaluationMonitor A default implementation of EvaluationMonitor that prints to an  output stream.
+[Constructor Summary]
+DoccatEvaluationErrorListener()	Creates a listener that will print to the configured logger.
+DoccatEvaluationErrorListener(OutputStream outputStream)	Creates a listener that will print to a given OutputStream
+[Method Summary]
+void misclassified(DocumentSample reference, DocumentSample prediction)	
+[Methods inherited from class opennlp.tools.cmdline.EvaluationErrorPrinter]
+correctlyClassified
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface opennlp.tools.util.eval.EvaluationMonitor]
+correctlyClassified

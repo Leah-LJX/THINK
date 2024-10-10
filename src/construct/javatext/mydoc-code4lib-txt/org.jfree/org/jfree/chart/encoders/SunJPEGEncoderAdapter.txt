@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.encoders.SunJPEGEncoderAdapter
+[Flag] Class
+[Info]
+All Implemented Interfaces: ImageEncoder
+[Constructor Summary]
+SunJPEGEncoderAdapter() Creates a new SunJPEGEncoderAdapter instance.
+[Method Summary]
+byte[] encode(BufferedImage bufferedImage) Encodes an image in JPEG format.

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.labels.XYItemLabelGenerator
+[Flag] Interface
+[Info]
+All Known Implementing Classes: BubbleXYItemLabelGenerator, HighLowItemLabelGenerator, IntervalXYItemLabelGenerator, StandardXYItemLabelGenerator, SymbolicXYItemLabelGenerator
+[Constructor Summary]
+
+[Method Summary]
+String generateLabel(XYDataset dataset, int series, int item) Generates a label for the specified item.

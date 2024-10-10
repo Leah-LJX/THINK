@@ -1,0 +1,18 @@
+[Class] org.jfree.data.xy.MatrixSeries
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+Direct Known Subclasses: NormalizedMatrixSeries
+[Constructor Summary]
+MatrixSeries(String name, int rows, int columns)	Constructs a new matrix series.
+[Method Summary]
+boolean equals(Object obj)	Tests this object instance for equality with an arbitrary object.
+double get(int i, int j)	Returns the value of the specified item in this matrix series.
+int getColumnsCount()	Returns the number of columns in this matrix series.
+Number getItem(int itemIndex)	Return the matrix item at the specified index.
+int getItemColumn(int itemIndex)	Returns the column of the specified item.
+int getItemCount()	Returns the number of items in the series.
+int getItemRow(int itemIndex)	Returns the row of the specified item.
+int getRowCount()	Returns the number of rows in this matrix series.
+void update(int i, int j, double mij)	Updates the value of the specified item in this matrix series.
+void zeroAll()	Sets all matrix values to zero and sends a SeriesChangeEvent to all registered listeners.

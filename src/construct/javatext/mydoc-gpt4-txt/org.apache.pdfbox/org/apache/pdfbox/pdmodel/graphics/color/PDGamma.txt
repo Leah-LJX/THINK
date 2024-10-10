@@ -1,0 +1,20 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.color.PDGamma
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class PDGamma extends Object implements COSObjectable A gamma array, or collection of three floating point parameters used for color operations.
+Author: Ben Litchfield
+[Constructor Summary]
+PDGamma()	Creates a new gamma.
+PDGamma(COSArray array)	Creates a new gamma from a COS array.
+[Method Summary]
+float getB()	Returns the b value of the tristimulus.
+COSArray getCOSArray()	Convert this standard java object to a COS object.
+COSBase getCOSObject()	Convert this standard java object to a COS object.
+float getG()	Returns the g value of the tristimulus.
+float getR()	Returns the r value of the tristimulus.
+void setB(float b)	Sets the b value of the tristimulus.
+void setG(float g)	Sets the g value of the tristimulus.
+void setR(float r)	Sets the r value of the tristimulus.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

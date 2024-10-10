@@ -1,0 +1,10 @@
+[API Name] opennlp.tools.dictionary.Index
+[Type] Class
+[Info]
+public class Index extends Object This classes indexes string lists. This makes it possible  to check if a certain token is contained in at least one of the  StringLists.
+[Constructor Summary]
+Index(Iterator<StringList> tokenLists)	Initializes an Index with the given Iterator over StringList elements.
+[Method Summary]
+boolean contains(String token)	Checks if at least one StringList contains the specified token.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

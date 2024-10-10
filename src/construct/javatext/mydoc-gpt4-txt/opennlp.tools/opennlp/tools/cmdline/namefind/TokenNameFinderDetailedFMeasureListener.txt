@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.cmdline.namefind.TokenNameFinderDetailedFMeasureListener
+[Type] Class
+[Info]
+All Implemented Interfaces: TokenNameFinderEvaluationMonitor, EvaluationMonitor<NameSample>
+public class TokenNameFinderDetailedFMeasureListener extends opennlp.tools.cmdline.DetailedFMeasureListener<NameSample> implements TokenNameFinderEvaluationMonitor
+[Constructor Summary]
+TokenNameFinderDetailedFMeasureListener()	
+[Methods inherited from class opennlp.tools.cmdline.DetailedFMeasureListener]
+correctlyClassified, createReport, createReport, misclassified, toString
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, wait, wait, wait
+[Methods inherited from interface opennlp.tools.util.eval.EvaluationMonitor]
+correctlyClassified, misclassified

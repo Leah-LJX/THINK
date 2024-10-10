@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.chunker.DefaultChunkerSequenceValidator
+[Type] Class
+[Info]
+All Implemented Interfaces: SequenceValidator<TokenTag>
+public class DefaultChunkerSequenceValidator extends Object implements SequenceValidator<TokenTag> The default chunker SequenceValidator implementation.
+[Constructor Summary]
+DefaultChunkerSequenceValidator()	
+[Method Summary]
+boolean validSequence(int i, TokenTag[] sequence, String[] s, String outcome)	Determines whether a particular continuation of a sequence is valid.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

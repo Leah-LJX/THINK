@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.formats.convert.ParseToPOSSampleStreamFactory
+[Type] Class
+[Info]
+All Implemented Interfaces: opennlp.tools.cmdline.ObjectStreamFactory<POSSample,ParseSampleStreamFactory.Parameters>
+@Internal public class ParseToPOSSampleStreamFactory extends LanguageSampleStreamFactory<POSSample,ParseSampleStreamFactory.Parameters> Note:  Do not use this class, internal use only!
+See Also:
+ParseToPOSSampleStream
+[Method Summary]
+ObjectStream<POSSample> create(String[] args)	Creates an ObjectStream of the template type T.
+static void registerFactory()	
+[Methods inherited from class opennlp.tools.formats.LanguageSampleStreamFactory]
+getLang
+[Methods inherited from class opennlp.tools.formats.AbstractSampleStreamFactory]
+getParameters
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

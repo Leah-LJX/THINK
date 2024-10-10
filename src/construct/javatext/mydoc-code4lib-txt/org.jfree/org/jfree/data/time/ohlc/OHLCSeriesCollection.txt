@@ -1,0 +1,34 @@
+[Class] org.jfree.data.time.ohlc.OHLCSeriesCollection
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, Dataset, SeriesChangeListener, SeriesDataset, OHLCDataset, XYDataset
+[Constructor Summary]
+OHLCSeriesCollection()	Creates a new instance of OHLCSeriesCollection.
+[Method Summary]
+void addSeries(OHLCSeries series)	Adds a series to the collection and sends a DatasetChangeEvent to all registered listeners.
+Object clone()	Returns a clone of this instance.
+boolean equals(Object obj)	Tests this instance for equality with an arbitrary object.
+Number getClose(int series, int item)	Returns the close-value for an item within a series.
+double getCloseValue(int series, int item)	Returns the close-value for an item within a series.
+Number getHigh(int series, int item)	Returns the high-value for an item within a series.
+double getHighValue(int series, int item)	Returns the high-value for an item within a series.
+int getItemCount(int series)	Returns the number of items in the specified series.
+Number getLow(int series, int item)	Returns the low-value for an item within a series.
+double getLowValue(int series, int item)	Returns the low-value for an item within a series.
+Number getOpen(int series, int item)	Returns the open-value for an item within a series.
+double getOpenValue(int series, int item)	Returns the open-value for an item within a series.
+OHLCSeries getSeries(int series)	Returns a series from the collection.
+int getSeriesCount()	Returns the number of series in the collection.
+Comparable getSeriesKey(int series)	Returns the key for a series.
+Number getVolume(int series, int item)	Returns null always, because this dataset doesn't record any volume data.
+double getVolumeValue(int series, int item)	Returns Double.NaN always, because this dataset doesn't record any volume data.
+Number getX(int series, int item)	Returns the x-value for an item within a series.
+protected long getX(RegularTimePeriod period)	Returns the x-value for a time period.
+TimePeriodAnchor getXPosition()	Returns the position within each time period that is used for the X value when the collection is used as an XYDataset.
+double getXValue(int series, int item)	Returns the x-value for an item within a series.
+Number getY(int series, int item)	Returns the y-value for an item within a series.
+int hashCode()	Returns a hash code for this instance.
+void removeAllSeries()	Removes all the series from the collection and sends a DatasetChangeEvent to all registered listeners.
+void removeSeries(int index)	Removes the series with the specified index and sends a DatasetChangeEvent to all registered listeners.
+boolean removeSeries(OHLCSeries series)	Removes the specified series from the dataset and sends a DatasetChangeEvent to all registered listeners.
+void setXPosition(TimePeriodAnchor anchor)	Sets the position within each time period that is used for the X values when the collection is used as an XYDataset, then sends a DatasetChangeEvent is sent to all registered listeners.

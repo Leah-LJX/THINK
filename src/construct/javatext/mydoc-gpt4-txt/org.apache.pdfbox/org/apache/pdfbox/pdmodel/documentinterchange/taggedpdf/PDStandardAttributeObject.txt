@@ -1,0 +1,42 @@
+[API Name] org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.PDStandardAttributeObject
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDLayoutAttributeObject, PDListAttributeObject, PDPrintFieldAttributeObject, PDTableAttributeObject
+public abstract class PDStandardAttributeObject extends PDAttributeObject A standard attribute object.
+Author: Johannes Koch
+[Constructor Summary]
+PDStandardAttributeObject()	Default constructor.
+PDStandardAttributeObject(COSDictionary dictionary)	Creates a new standard attribute object with a given dictionary.
+[Field Summary]
+protected static float UNSPECIFIED	An "unspecified" default float value.
+[Method Summary]
+protected String[] getArrayOfString(String name)	Gets an array of strings.
+protected PDGamma getColor(String name)	Gets a colour.
+protected Object getColorOrFourColors(String name)	Gets a single colour or four colours.
+protected int getInteger(String name, int defaultValue)	Gets an integer.
+protected String getName(String name)	Gets a name value.
+protected String getName(String name, String defaultValue)	Gets a name value.
+protected Object getNameOrArrayOfName(String name, String defaultValue)	Gets a name value or array of name values.
+protected float getNumber(String name)	Gets a number value.
+protected float getNumber(String name, float defaultValue)	Gets a number value.
+protected Object getNumberOrArrayOfNumber(String name, float defaultValue)	Gets a number or an array of numbers.
+protected Object getNumberOrName(String name, String defaultValue)	Gets a number or a name value.
+protected String getString(String name)	Gets a string attribute value.
+boolean isSpecified(String name)	Is the attribute with the given name specified in this attribute object?
+protected void setArrayOfName(String name, String[] values)	Sets an array of name values.
+protected void setArrayOfNumber(String name, float[] values)	Sets an array of float numbers.
+protected void setArrayOfString(String name, String[] values)	Sets an array of strings.
+protected void setColor(String name, PDGamma value)	Sets a colour.
+protected void setFourColors(String name, PDFourColours value)	Sets four colours.
+protected void setInteger(String name, int value)	Sets an integer.
+protected void setName(String name, String value)	Sets a name value.
+protected void setNumber(String name, float value)	Sets a float number.
+protected void setNumber(String name, int value)	Sets an integer number.
+protected void setString(String name, String value)	Sets a string attribute value.
+[Methods inherited from class org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDAttributeObject]
+arrayToString, arrayToString, create, getOwner, isEmpty, notifyChanged, potentiallyNotifyChanged, setOwner, setStructureElement, toString
+[Methods inherited from class org.apache.pdfbox.pdmodel.common.PDDictionaryWrapper]
+equals, getCOSObject, hashCode
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

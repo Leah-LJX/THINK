@@ -1,0 +1,10 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.constants.GdalLibraryTagConstants
+[Type] Class
+[Info]
+public final class GdalLibraryTagConstants extends Object GDAL library.    http://www.awaresystems.be/imaging/tiff/tifftags/gdal_metadata.html    http://www.awaresystems.be/imaging/tiff/tifftags/gdal_nodata.html
+[Field Summary]
+static List<TagInfo> ALL_GDAL_LIBRARY_TAGS	
+static TagInfoAscii EXIF_TAG_GDAL_METADATA	
+static TagInfoAscii EXIF_TAG_GDAL_NO_DATA	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

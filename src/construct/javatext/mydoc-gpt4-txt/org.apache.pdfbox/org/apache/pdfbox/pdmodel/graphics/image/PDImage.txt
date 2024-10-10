@@ -1,0 +1,33 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.image.PDImage
+[Type] Interface
+[Info]
+All Superinterfaces: COSObjectable
+All Known Implementing Classes: PDImageXObject, PDInlineImage
+public interface PDImage extends COSObjectable An image in a PDF document.
+Author: John Hewson
+[Method Summary]
+InputStream createInputStream()	Returns an InputStream containing the image data, irrespective of whether this is an inline image or an image XObject.
+InputStream createInputStream(DecodeOptions options)	Returns an InputStream, passing additional options to each filter.
+InputStream createInputStream(List<String> stopFilters)	Returns an InputStream containing the image data, irrespective of whether this is an inline image or an image XObject.
+int getBitsPerComponent()	Returns bits per component of this image, or -1 if one has not been set.
+PDColorSpace getColorSpace()	Returns the image's color space.
+COSDictionary getCOSObject()	Convert this image to a COS object.
+COSArray getDecode()	Returns the decode array.
+int getHeight()	Returns height of this image, or -1 if one has not been set.
+BufferedImage getImage()	Returns the content of this image as an AWT buffered image with an (A)RGB color space.
+BufferedImage getImage(Rectangle region, int subsampling)	Returns the content of this image as an AWT buffered image with an (A)RGB colored space.
+boolean getInterpolate()	Returns true if the image should be interpolated when rendered.
+BufferedImage getRawImage()	Try to get the raw image as AWT buffered image with it's original colorspace.
+WritableRaster getRawRaster()	Return the image data as WritableRaster.
+BufferedImage getStencilImage(Paint paint)	Returns an ARGB image filled with the given paint and using this image as a mask.
+String getSuffix()	Returns the suffix for this image type, e.g.
+int getWidth()	Returns the width of this image, or -1 if one has not been set.
+boolean isEmpty()	Returns true if the image has no data.
+boolean isStencil()	Returns true if the image is a stencil mask.
+void setBitsPerComponent(int bitsPerComponent)	Set the number of bits per component.
+void setColorSpace(PDColorSpace colorSpace)	Sets the color space for this image.
+void setDecode(COSArray decode)	Sets the decode array.
+void setHeight(int height)	Sets the height of the image.
+void setInterpolate(boolean value)	Sets the Interpolate flag, true for high-quality image scaling.
+void setStencil(boolean isStencil)	Sets whether or not the image is a stencil.
+void setWidth(int width)	Sets the width of the image.

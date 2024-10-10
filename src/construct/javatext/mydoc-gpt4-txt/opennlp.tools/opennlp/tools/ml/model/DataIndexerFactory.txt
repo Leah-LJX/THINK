@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.ml.model.DataIndexerFactory
+[Type] Class
+[Info]
+public class DataIndexerFactory extends Object A factory that produces DataIndexer instances.
+See Also:
+DataIndexer
+[Constructor Summary]
+DataIndexerFactory()	
+[Method Summary]
+static DataIndexer getDataIndexer(TrainingParameters parameters, Map<String,String> reportMap)	Instantiates a DataIndexer configured via TrainingParameters.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

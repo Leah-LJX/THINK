@@ -1,0 +1,13 @@
+[API Name] Package org.apache.commons.imaging.formats.gif.GifImagingParameters
+[Type] Class
+[Info]
+public class GifImagingParameters extends XmpImagingParameters Gif format parameters.
+Since: 1.0-alpha3
+[Constructor Summary]
+GifImagingParameters()	
+[Methods inherited from class org.apache.commons.imaging.common.XmpImagingParameters]
+getXmpXml, setXmpXml
+[Methods inherited from class org.apache.commons.imaging.ImagingParameters]
+getBufferedImageFactory, getFileName, getPixelDensity, isStrict, setBufferedImageFactory, setFileName, setPixelDensity, setStrict
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

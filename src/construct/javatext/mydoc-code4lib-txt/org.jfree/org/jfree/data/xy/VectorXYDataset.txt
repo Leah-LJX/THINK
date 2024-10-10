@@ -1,0 +1,11 @@
+[Class] org.jfree.data.xy.VectorXYDataset
+[Flag] Interface
+[Info]
+All Superinterfaces: Dataset, SeriesDataset, XYDataset
+All Known Implementing Classes: VectorSeriesCollection
+[Constructor Summary]
+
+[Method Summary]
+Vector getVector(int series, int item)	Returns the vector for an item in a series.
+double getVectorXValue(int series, int item)	Returns the x-component of the vector for an item in a series.
+double getVectorYValue(int series, int item)	Returns the y-component of the vector for an item in a series.

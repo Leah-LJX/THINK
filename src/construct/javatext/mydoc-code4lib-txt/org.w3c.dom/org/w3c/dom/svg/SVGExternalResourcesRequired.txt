@@ -1,0 +1,8 @@
+[Class] org.w3c.dom.svg.SVGExternalResourcesRequired
+[Flag] Interface
+[Info]
+All Known Subinterfaces: SVGAElement, SVGAltGlyphElement, SVGAnimateColorElement, SVGAnimateElement, SVGAnimateMotionElement, SVGAnimateTransformElement, SVGAnimationElement, SVGCircleElement, SVGClipPathElement, SVGCursorElement, SVGDefsElement, SVGEllipseElement, SVGFEImageElement, SVGFilterElement, SVGFontElement, SVGForeignObjectElement, SVGGElement, SVGGradientElement, SVGImageElement, SVGLinearGradientElement, SVGLineElement, SVGMarkerElement, SVGMaskElement, SVGMPathElement, SVGPathElement, SVGPatternElement, SVGPolygonElement, SVGPolylineElement, SVGRadialGradientElement, SVGRectElement, SVGScriptElement, SVGSetElement, SVGSVGElement, SVGSwitchElement, SVGSymbolElement, SVGTextContentElement, SVGTextElement, SVGTextPathElement, SVGTextPositioningElement, SVGTRefElement, SVGTSpanElement, SVGUseElement, SVGViewElement
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedBoolean getExternalResourcesRequired()

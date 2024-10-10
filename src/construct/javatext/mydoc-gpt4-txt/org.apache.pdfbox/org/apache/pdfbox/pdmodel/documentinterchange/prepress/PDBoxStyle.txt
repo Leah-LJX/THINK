@@ -1,0 +1,24 @@
+[API Name] org.apache.pdfbox.pdmodel.documentinterchange.prepress.PDBoxStyle
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDBoxStyle extends Object implements COSObjectable The Box Style specifies visual characteristics for displaying box areas.
+Author: Ben Litchfield
+[Constructor Summary]
+PDBoxStyle()	Default Constructor.
+PDBoxStyle(COSDictionary dic)	Constructor for an existing BoxStyle element.
+[Field Summary]
+static String GUIDELINE_STYLE_DASHED	Style for guideline.
+static String GUIDELINE_STYLE_SOLID	Style for guideline.
+[Method Summary]
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+PDColor getGuidelineColor()	Get the RGB color to be used for the guidelines.
+String getGuidelineStyle()	Get the style for the guideline.
+float getGuidelineWidth()	Get the width of the of the guideline in default user space units.
+PDLineDashPattern getLineDashPattern()	Get the line dash pattern for this box style.
+void setGuideLineColor(PDColor color)	Set the color space instance for this box style.
+void setGuidelineStyle(String style)	Set the style for the box.
+void setGuidelineWidth(float width)	Set the guideline width.
+void setLineDashPattern(COSArray dashArray)	Set the line dash pattern associated with this box style.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

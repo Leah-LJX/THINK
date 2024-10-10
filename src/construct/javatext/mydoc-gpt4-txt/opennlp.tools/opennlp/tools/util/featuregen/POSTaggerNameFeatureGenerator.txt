@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.util.featuregen.POSTaggerNameFeatureGenerator
+[Type] Class
+[Info]
+All Implemented Interfaces: AdaptiveFeatureGenerator
+public class POSTaggerNameFeatureGenerator extends Object implements AdaptiveFeatureGenerator Adds the token POS Tag as feature. Requires a POS Tag model.
+[Constructor Summary]
+POSTaggerNameFeatureGenerator(POSModel aPosModel)	Initializes a new instance.
+POSTaggerNameFeatureGenerator(POSTagger aPosTagger)	Initializes a new instance.
+[Method Summary]
+void createFeatures(List<String> feats, String[] toks, int index, String[] preds)	Adds the appropriate features for the token at the specified index with the specified array of previousOutcomes to the specified list of features.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface opennlp.tools.util.featuregen.AdaptiveFeatureGenerator]
+clearAdaptiveData, updateAdaptiveData

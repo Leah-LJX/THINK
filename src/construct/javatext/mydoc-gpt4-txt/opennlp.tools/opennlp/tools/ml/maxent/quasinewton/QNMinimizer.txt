@@ -1,0 +1,34 @@
+[API Name] opennlp.tools.ml.maxent.quasinewton.QNMinimizer
+[Type] Class
+[Info]
+public class QNMinimizer extends Object Implementation of L-BFGS which supports L1-, L2-regularization  and Elastic Net for solving convex optimization problems.
+   Usage example:     // Quadratic function f(x) = (x-1)^2 + 10   // f obtains its minimum value 10 at x = 1   Function f = new Function() {
+    @Override     public int getDimension() {       return 1;     }
+    @Override     public double valueAt(double[] x) {       return StrictMath.pow(x[0]-1, 2) + 10;     }
+    @Override     public double[] gradientAt(double[] x) {       return new double[] { 2*(x[0]-1) };     }
+  };
+  QNMinimizer minimizer = new QNMinimizer();   double[] x = minimizer.minimize(f);   double min = f.valueAt(x);
+[Constructor Summary]
+QNMinimizer()	Initializes a QNMinimizer with default parameters.
+QNMinimizer(double l1Cost, double l2Cost)	Initializes a QNMinimizer.
+QNMinimizer(double l1Cost, double l2Cost, int iterations)	Initializes a QNMinimizer.
+QNMinimizer(double l1Cost, double l2Cost, int iterations, int m, int maxFctEval)	Initializes a QNMinimizer.
+[Field Summary]
+static final double CONVERGE_TOLERANCE	
+static final double INITIAL_STEP_SIZE	
+static final double L1COST_DEFAULT	
+static final double L2COST_DEFAULT	
+static final int M_DEFAULT	
+static final int MAX_FCT_EVAL_DEFAULT	
+static final double MIN_STEP_SIZE	
+static final int NUM_ITERATIONS_DEFAULT	
+static final double REL_GRAD_NORM_TOL	
+[Nested Class Summary]
+Nested Class Summary
+static interface 
+[Method Summary]
+QNMinimizer.Evaluator getEvaluator()	
+double[] minimize(Function function)	Finds the parameters that minimize the objective function.
+void setEvaluator(QNMinimizer.Evaluator evaluator)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

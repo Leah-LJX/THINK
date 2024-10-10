@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.labels.XYSeriesLabelGenerator
+[Flag] Interface
+[Info]
+All Known Implementing Classes: MultipleXYSeriesLabelGenerator, StandardXYSeriesLabelGenerator
+[Constructor Summary]
+
+[Method Summary]
+String generateLabel(XYDataset dataset, int series) Generates a label for the specified series.

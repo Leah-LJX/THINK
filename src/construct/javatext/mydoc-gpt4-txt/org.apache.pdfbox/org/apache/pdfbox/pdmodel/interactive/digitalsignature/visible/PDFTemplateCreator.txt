@@ -1,0 +1,12 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDFTemplateCreator
+[Type] Class
+[Info]
+public class PDFTemplateCreator extends Object Class to build PDF template.
+Author: Vakhtang Koroghlishvili
+[Constructor Summary]
+PDFTemplateCreator(PDFTemplateBuilder templateBuilder)	Constructor.
+[Method Summary]
+InputStream buildPDF(PDVisibleSignDesigner properties)	Build a PDF with a visible signature step by step, and return it as a stream.
+PDFTemplateStructure getPdfStructure()	Returns the PDFTemplateStructure object.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

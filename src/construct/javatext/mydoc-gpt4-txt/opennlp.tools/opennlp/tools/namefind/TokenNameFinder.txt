@@ -1,0 +1,8 @@
+[API Name] opennlp.tools.namefind.TokenNameFinder
+[Type] Interface
+[Info]
+All Known Implementing Classes: DictionaryNameFinder, NameFinderME, RegexNameFinder
+public interface TokenNameFinder The interface for name finders which provide name tags for a sequence of tokens.
+[Method Summary]
+void clearAdaptiveData()	Forgets all adaptive data which was collected during previous calls to one of the find methods.
+Span[] find(String[] tokens)	Generates name tags for the given sequence, typically a sentence, returning token spans for any identified names.

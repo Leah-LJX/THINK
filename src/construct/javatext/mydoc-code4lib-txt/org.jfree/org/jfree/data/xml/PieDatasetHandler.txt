@@ -1,0 +1,11 @@
+[Class] org.jfree.data.xml.PieDatasetHandler
+[Flag] Class
+[Info]
+All Implemented Interfaces: DatasetTags, ContentHandler, DTDHandler, EntityResolver, ErrorHandler
+[Constructor Summary]
+PieDatasetHandler()	Default constructor.
+[Method Summary]
+void addItem(Comparable key, Number value)	Adds an item to the dataset under construction.
+void endElement(String namespaceURI, String localName, String qName)	The end of an element.
+PieDataset getDataset()	Returns the dataset.
+void startElement(String namespaceURI, String localName, String qName, Attributes atts)	Starts an element.

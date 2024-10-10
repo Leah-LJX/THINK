@@ -1,0 +1,15 @@
+[Class] org.w3c.dom.svg.SVGPathSegCurvetoQuadraticAbs
+[Flag] Interface
+[Info]
+All Superinterfaces: SVGPathSeg
+[Constructor Summary]
+
+[Method Summary]
+float getX()	 
+ float getX1()	 
+ float getY()	 
+ float getY1()	 
+ void setX(float x)	 
+ void setX1(float x1)	 
+ void setY(float y)	 
+ void setY1(float y1)

@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.pdmodel.fdf.FDFCatalog
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class FDFCatalog extends Object implements COSObjectable This represents an FDF catalog that is part of the FDF document.
+Author: Ben Litchfield
+[Constructor Summary]
+FDFCatalog()	Default constructor.
+FDFCatalog(COSDictionary cat)	Constructor.
+FDFCatalog(Element element)	This will create an FDF catalog from an XFDF XML document.
+[Method Summary]
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+FDFDictionary getFDF()	This will get the FDF dictionary.
+PDSignature getSignature()	This will get the signature or null if there is none.
+String getVersion()	This will get the version that was specified in the catalog dictionary.
+void setFDF(FDFDictionary fdf)	This will set the FDF document.
+void setSignature(PDSignature sig)	This will set the signature that is associated with this catalog.
+void setVersion(String version)	This will set the version of the FDF document.
+void writeXML(Writer output)	This will write this element as an XML document.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

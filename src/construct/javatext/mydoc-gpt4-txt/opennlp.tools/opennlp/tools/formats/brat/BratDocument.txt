@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.formats.brat.BratDocument
+[Type] Class
+[Info]
+public class BratDocument extends Object Brat (brat rapid annotation tool) is based on the stav visualiser  which was originally made in order to visualise BioNLP'11 Shared Task data.    Data can be found on this  web site.    Information about the format are found on this  web site.
+[Constructor Summary]
+BratDocument(AnnotationConfiguration config, String id, String text, Collection<BratAnnotation> annotations)	
+[Method Summary]
+BratAnnotation getAnnotation(String id)	
+Collection<BratAnnotation> getAnnotations()	
+AnnotationConfiguration getConfig()	
+String getId()	
+String getText()	
+static BratDocument parseDocument(AnnotationConfiguration config, String id, InputStream txtIn, InputStream annIn)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

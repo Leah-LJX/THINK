@@ -1,0 +1,19 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.color.PDCIEBasedColorSpace
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDCIEDictionaryBasedColorSpace, PDICCBased
+public abstract class PDCIEBasedColorSpace extends PDColorSpace CIE-based colour spaces specify colours in a way that is independent of the characteristics  of any particular output device. They are based on an international standard for colour  specification created by the Commission Internationale de l'Éclairage (CIE).
+Author: John Hewson
+[Constructor Summary]
+PDCIEBasedColorSpace()	
+[Field Summary]
+PDCIEBasedColorSpace()	
+[Method Summary]
+BufferedImage toRawImage(WritableRaster raster)	Returns the image in this colorspace or null.
+BufferedImage toRGBImage(WritableRaster raster)	Returns the (A)RGB equivalent of the given raster.
+String toString()	
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace]
+create, create, create, getCOSObject, getDefaultDecode, getInitialColor, getName, getNumberOfComponents, toRawImage, toRGB, toRGBImageAWT
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

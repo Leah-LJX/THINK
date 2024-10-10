@@ -1,0 +1,27 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationWidget
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDAnnotationWidget extends PDAnnotation This is the class that represents a widget annotation. This represents the  appearance of a field and manages user interactions. A field may have several  widget annotations, which may be on several pages.
+Author: Ben Litchfield
+[Constructor Summary]
+PDAnnotationWidget()	Constructor.
+PDAnnotationWidget(COSDictionary field)	Creates a PDWidget from a COSDictionary, expected to be a correct object definition for a field in PDF.
+[Field Summary]
+static String SUB_TYPE	The type of annotation.
+[Method Summary]
+PDAction getAction()	Get the action to be performed when this annotation is to be activated.
+PDAnnotationAdditionalActions getActions()	Get the additional actions for this field.
+PDAppearanceCharacteristicsDictionary getAppearanceCharacteristics()	Returns the appearance characteristics dictionary.
+PDBorderStyleDictionary getBorderStyle()	This will retrieve the border style dictionary, specifying the width and dash pattern used in drawing the line.
+String getHighlightingMode()	Returns the highlighting mode.
+void setAction(PDAction action)	Set the annotation action.
+void setActions(PDAnnotationAdditionalActions actions)	Set the actions of the field.
+void setAppearanceCharacteristics(PDAppearanceCharacteristicsDictionary appearanceCharacteristics)	Sets the appearance characteristics dictionary.
+void setBorderStyle(PDBorderStyleDictionary bs)	This will set the border style dictionary, specifying the width and dash pattern used in drawing the line.
+void setHighlightingMode(String highlightingMode)	Sets the highlighting mode.
+void setParent(PDTerminalField field)	Set the parent field of a widget annotation.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation]
+constructAppearances, constructAppearances, createAnnotation, equals, getAnnotationFlags, getAnnotationName, getAppearance, getAppearanceState, getBorder, getColor, getColor, getContents, getCOSObject, getModifiedDate, getNormalAppearanceStream, getOptionalContent, getPage, getRectangle, getStructParent, getSubtype, hashCode, isHidden, isInvisible, isLocked, isLockedContents, isNoRotate, isNoView, isNoZoom, isPrinted, isReadOnly, isToggleNoView, setAnnotationFlags, setAnnotationName, setAppearance, setAppearanceState, setBorder, setColor, setContents, setHidden, setInvisible, setLocked, setLockedContents, setModifiedDate, setModifiedDate, setNoRotate, setNoView, setNoZoom, setOptionalContent, setPage, setPrinted, setReadOnly, setRectangle, setStructParent, setSubtype, setToggleNoView
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, toString, wait, wait, wait

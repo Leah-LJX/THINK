@@ -1,0 +1,23 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.pattern.PDAbstractPattern
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDShadingPattern, PDTilingPattern
+public abstract class PDAbstractPattern extends Object implements COSObjectable This class wraps a pattern dictionary. Patterns can be found in resource dictionaries.
+[Constructor Summary]
+PDAbstractPattern()	Creates a new Pattern dictionary.
+PDAbstractPattern(COSDictionary dictionary)	Creates a new Pattern dictionary from the given COS dictionary.
+[Field Summary]
+static int TYPE_SHADING_PATTERN	Shading pattern type.
+static int TYPE_TILING_PATTERN	Tiling pattern type.
+[Method Summary]
+static PDAbstractPattern create(COSDictionary dictionary, ResourceCache resourceCache)	Create the correct PD Model pattern based on the COS base pattern.
+COSDictionary getCOSObject()	This will get the underlying dictionary.
+Matrix getMatrix()	Returns the pattern matrix, or the identity matrix is none is available.
+abstract int getPatternType()	This will return the pattern type.
+String getType()	This will return the paint type.
+void setMatrix(AffineTransform transform)	Sets the optional Matrix entry for the Pattern.
+void setPaintType(int paintType)	This will set the paint type.
+void setPatternType(int patternType)	This will set the pattern type.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,58 @@
+[API Name] org.apache.pdfbox.contentstream.PDFStreamEngine
+[Type] Class
+[Info]
+Direct Known Subclasses: PDFGraphicsStreamEngine, PDFMarkedContentExtractor, PDFTextStripper
+public abstract class PDFStreamEngine extends Object Processes a PDF content stream and executes certain operations.  Provides a callback interface for clients that want to do things with the stream.
+Author: Ben Litchfield
+[Constructor Summary]
+protected PDFStreamEngine()	Creates a new PDFStreamEngine.
+[Method Summary]
+void addOperator(OperatorProcessor op)	Adds an operator processor to the engine.
+protected void applyTextAdjustment(float tx, float ty)	Applies a text position adjustment from the TJ operator.
+void beginMarkedContentSequence(COSName tag, COSDictionary properties)	Called when a marked content group begins
+void beginText()	Called when the BT operator is encountered.
+void decreaseLevel()	Decrease the level.
+void endMarkedContentSequence()	Called when a marked content group ends
+void endText()	Called when the ET operator is encountered.
+PDAppearanceStream getAppearance(PDAnnotation annotation)	Returns the appearance stream to process for the given annotation.
+PDPage getCurrentPage()	Returns the current page.
+int getGraphicsStackSize()	
+PDGraphicsState getGraphicsState()	
+Matrix getInitialMatrix()	Gets the stream's initial matrix.
+int getLevel()	Get the current level.
+PDResources getResources()	
+Matrix getTextLineMatrix()	
+Matrix getTextMatrix()	
+void increaseLevel()	Increase the level.
+protected void operatorException(Operator operator, List<COSBase> operands, IOException exception)	Called when an exception is thrown by an operator.
+protected void processAnnotation(PDAnnotation annotation, PDAppearanceStream appearance)	Process the given annotation with the specified appearance stream.
+protected void processChildStream(PDContentStream contentStream, PDPage page)	Process a child stream of the given page.
+protected void processOperator(Operator operator, List<COSBase> operands)	This is used to handle an operation.
+void processOperator(String operation, List<COSBase> arguments)	This is used to handle an operation.
+void processPage(PDPage page)	This will initialize and process the contents of the stream.
+protected void processSoftMask(PDTransparencyGroup group)	Processes a soft mask transparency group stream.
+protected void processTilingPattern(PDTilingPattern tilingPattern, PDColor color, PDColorSpace colorSpace)	Process the given tiling pattern.
+protected void processTilingPattern(PDTilingPattern tilingPattern, PDColor color, PDColorSpace colorSpace, Matrix patternMatrix)	Process the given tiling pattern.
+protected void processTransparencyGroup(PDTransparencyGroup group)	Processes a transparency group stream.
+protected void processType3Stream(PDType3CharProc charProc, Matrix textRenderingMatrix)	Processes a Type 3 character stream.
+protected void restoreGraphicsStack(Deque<PDGraphicsState> snapshot)	Restores the entire graphics stack.
+void restoreGraphicsState()	Pops the current graphics state from the stack.
+protected Deque<PDGraphicsState> saveGraphicsStack()	Saves the entire graphics stack.
+void saveGraphicsState()	Pushes the current graphics state to the stack.
+void setLineDashPattern(COSArray array, int phase)	
+void setTextLineMatrix(Matrix value)	
+void setTextMatrix(Matrix value)	
+void showAnnotation(PDAnnotation annotation)	Shows the given annotation.
+protected void showFontGlyph(Matrix textRenderingMatrix, PDFont font, int code, Vector displacement)	Called when a glyph is to be processed.
+void showForm(PDFormXObject form)	Shows a form from the content stream.
+protected void showGlyph(Matrix textRenderingMatrix, PDFont font, int code, Vector displacement)	Called when a glyph is to be processed.
+protected void showText(byte[] string)	Process text from the PDF Stream.
+void showTextString(byte[] string)	Called when a string of text is to be shown.
+void showTextStrings(COSArray array)	Called when a string of text with spacing adjustments is to be shown.
+void showTransparencyGroup(PDTransparencyGroup form)	Shows a transparency group from the content stream.
+protected void showType3Glyph(Matrix textRenderingMatrix, PDType3Font font, int code, Vector displacement)	Called when a glyph is to be processed.
+Point2D.Float transformedPoint(float x, float y)	Transforms a point using the CTM.
+protected float transformWidth(float width)	Transforms a width using the CTM.
+protected void unsupportedOperator(Operator operator, List<COSBase> operands)	Called when an unsupported operator is encountered.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

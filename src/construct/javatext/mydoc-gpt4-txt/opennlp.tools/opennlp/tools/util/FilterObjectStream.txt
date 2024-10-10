@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.util.FilterObjectStream<S,T>
+[Type] Class
+[Info]
+Type Parameters: S - The sample type of the source or input stream. T - The sample type of this stream
+All Implemented Interfaces: AutoCloseable, ObjectStream<T>
+Direct Known Subclasses: AbstractToSentenceSampleStream, ADSentenceStream, ChunkSampleStream, ChunkSampleStream, ConlluLemmaSampleStream, ConlluPOSSampleStream, ConlluSentenceSampleStream, ConlluTokenSampleStream, ConllXPOSSampleStream, ConstitParseSampleStream, DetokenizeSentenceSampleStream, DocumentSampleStream, EmptyLinePreprocessorStream, EventTraceStream, FileToByteArraySampleStream, FileToStringSampleStream, LanguageDetectorSampleStream, LemmaSampleStream, MascNamedEntitySampleStream, MascPOSSampleStream, MascSentenceSampleStream, MascTokenSampleStream, MosesSentenceSampleStream, MucNameSampleStream, NameSampleCountersStream, NameSampleDataStream, NameSampleTypeFilter, NameToTokenSampleStream, OntoNotesNameSampleStream, OntoNotesParseSampleStream, ParagraphStream, ParseSampleStream, ParseToPOSSampleStream, PosSampleStream, POSToTokenSampleStream, SegmenterObjectStream, SentenceSampleStream, TokenSampleStream, WhitespaceTokenStream, WordTagSampleStream
+public abstract class FilterObjectStream<S,T> extends Object implements ObjectStream<T> Abstract base class for filtering streams.    Filtering streams take an existing stream and convert  its output to something else.
+[Method Summary]
+void close()	Closes the ObjectStream and releases all allocated resources.
+void reset()	Repositions the stream at the beginning and the previously seen object sequence will be repeated exactly.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface opennlp.tools.util.ObjectStream]
+read

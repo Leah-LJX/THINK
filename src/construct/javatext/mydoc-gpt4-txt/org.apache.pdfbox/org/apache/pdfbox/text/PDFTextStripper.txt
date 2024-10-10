@@ -1,0 +1,89 @@
+[API Name] org.apache.pdfbox.text.PDFTextStripper
+[Type] Class
+[Info]
+Direct Known Subclasses: PDFTextStripperByArea
+public class PDFTextStripper extends PDFStreamEngine This class will take a pdf document and strip out all of the text and ignore the formatting and such. Please note; it  is up to clients of this class to verify that a specific user has the correct permissions to extract text from the  PDF document.    The basic flow of this process is that we get a document and use a series of processXXX() functions that work on  smaller and smaller chunks of the page. Eventually, we fully process each page and then print it.
+Author: Ben Litchfield
+[Constructor Summary]
+PDFTextStripper()	Instantiate a new PDFTextStripper object.
+[Field Summary]
+protected ArrayList<List<TextPosition>> charactersByArticle	The charactersByArticle is used to extract text by article divisions.
+protected PDDocument document	
+protected static String LINE_SEPARATOR	The platform's line separator.
+protected Writer output	
+[Method Summary]
+protected float computeFontHeight(PDFont font)	Compute the font height.
+protected void endArticle()	End an article.
+protected void endDocument(PDDocument document)	This method is available for subclasses of this class.
+protected void endPage(PDPage page)	End a page.
+boolean getAddMoreFormatting()	This will tell if the text stripper should add some more text formatting.
+String getArticleEnd()	Returns the string which will be used at the end of an article.
+String getArticleStart()	Returns the string which will be used at the beginning of an article.
+float getAverageCharTolerance()	Get the current character width-based tolerance value that is being used to estimate where spaces in text should be added.
+protected List<List<TextPosition>> getCharactersByArticle()	Character strings are grouped by articles.
+protected int getCurrentPageNo()	Get the current page number that is being processed.
+float getDropThreshold()	the minimum whitespace, as a multiple of the max height of the current characters beyond which the current line start is considered to be a paragraph start.
+PDOutlineItem getEndBookmark()	Get the bookmark where text extraction should end, inclusive.
+int getEndPage()	This will get the last page that will be extracted.
+float getIndentThreshold()	returns the multiple of whitespace character widths for the current text which the current line start can be indented from the previous line start beyond which the current line start is considered to be a paragraph start.
+String getLineSeparator()	This will get the line separator.
+protected List<Pattern> getListItemPatterns()	returns a list of regular expression Patterns representing different common list item formats.
+protected Writer getOutput()	The output stream that is being written to.
+String getPageEnd()	Returns the string which will be used at the end of a page.
+String getPageStart()	Returns the string which will be used at the beginning of a page.
+String getParagraphEnd()	Returns the string which will be used at the end of a paragraph.
+String getParagraphStart()	Returns the string which will be used at the beginning of a paragraph.
+boolean getSeparateByBeads()	This will tell if the text stripper should separate by beads.
+boolean getSortByPosition()	This will tell if the text stripper should sort the text tokens before writing to the stream.
+float getSpacingTolerance()	Get the current space width-based tolerance value that is being used to estimate where spaces in text should be added.
+PDOutlineItem getStartBookmark()	Get the bookmark where text extraction should start, inclusive.
+int getStartPage()	This is the page that the text extraction will start on.
+boolean getSuppressDuplicateOverlappingText()	
+String getText(PDDocument doc)	This will return the text of a document.
+String getWordSeparator()	This will get the word separator.
+protected static Pattern matchPattern(String string, List<Pattern> patterns)	iterates over the specified list of Patterns until it finds one that matches the specified string.
+void processPage(PDPage page)	This will process the contents of a page.
+protected void processPages(PDPageTree pages)	This will process all of the pages and the text that is in them.
+protected void processTextPosition(TextPosition text)	This will process a TextPosition object and add the text to the list of characters on a page.
+void setAddMoreFormatting(boolean newAddMoreFormatting)	There will some additional text formatting be added if addMoreFormatting is set to true.
+void setArticleEnd(String articleEndValue)	Sets the string which will be used at the end of an article.
+void setArticleStart(String articleStartValue)	Sets the string which will be used at the beginning of an article.
+void setAverageCharTolerance(float averageCharToleranceValue)	Set the character width-based tolerance value that is used to estimate where spaces in text should be added.
+void setDropThreshold(float dropThresholdValue)	sets the minimum whitespace, as a multiple of the max height of the current characters beyond which the current line start is considered to be a paragraph start.
+void setEndBookmark(PDOutlineItem aEndBookmark)	Set the bookmark where the text extraction should stop.
+void setEndPage(int endPageValue)	This will set the last page to be extracted by this class.
+void setIndentThreshold(float indentThresholdValue)	sets the multiple of whitespace character widths for the current text which the current line start can be indented from the previous line start beyond which the current line start is considered to be a paragraph start.
+void setLineSeparator(String separator)	Set the desired line separator for output text.
+protected void setListItemPatterns(List<Pattern> patterns)	use to supply a different set of regular expression patterns for matching list item starts.
+void setPageEnd(String pageEndValue)	Sets the string which will be used at the end of a page.
+void setPageStart(String pageStartValue)	Sets the string which will be used at the beginning of a page.
+void setParagraphEnd(String s)	Sets the string which will be used at the end of a paragraph.
+void setParagraphStart(String s)	Sets the string which will be used at the beginning of a paragraph.
+void setShouldSeparateByBeads(boolean aShouldSeparateByBeads)	Set if the text stripper should group the text output by a list of beads.
+void setSortByPosition(boolean newSortByPosition)	The order of the text tokens in a PDF file may not be in the same as they appear visually on the screen.
+void setSpacingTolerance(float spacingToleranceValue)	Set the space width-based tolerance value that is used to estimate where spaces in text should be added.
+void setStartBookmark(PDOutlineItem aStartBookmark)	Set the bookmark where text extraction should start, inclusive.
+void setStartPage(int startPageValue)	This will set the first page to be extracted by this class.
+void setSuppressDuplicateOverlappingText(boolean suppressDuplicateOverlappingTextValue)	By default the text stripper will attempt to remove text that overlapps each other.
+void setWordSeparator(String separator)	Set the desired word separator for output text.
+protected void showGlyph(Matrix textRenderingMatrix, PDFont font, int code, Vector displacement)	Called when a glyph is to be processed.
+protected void startArticle()	Start a new article, which is typically defined as a column on a single page (also referred to as a bead).
+protected void startArticle(boolean isLTR)	Start a new article, which is typically defined as a column on a single page (also referred to as a bead).
+protected void startDocument(PDDocument document)	This method is available for subclasses of this class.
+protected void startPage(PDPage page)	Start a new page.
+protected void writeCharacters(TextPosition text)	Write the string in TextPosition to the output stream.
+protected void writeLineSeparator()	Write the line separator value to the output stream.
+protected void writePage()	This will print the text of the processed page to "output".
+protected void writePageEnd()	Write something (if defined) at the end of a page.
+protected void writePageStart()	Write something (if defined) at the start of a page.
+protected void writeParagraphEnd()	Write something (if defined) at the end of a paragraph.
+protected void writeParagraphSeparator()	writes the paragraph separator string to the output.
+protected void writeParagraphStart()	Write something (if defined) at the start of a paragraph.
+protected void writeString(String text)	Write a Java string to the output stream.
+protected void writeString(String text, List<TextPosition> textPositions)	Write a Java string to the output stream.
+void writeText(PDDocument doc, Writer outputStream)	This will take a PDDocument and write the text of that document to the print writer.
+protected void writeWordSeparator()	Write the word separator value to the output stream.
+[Methods inherited from class org.apache.pdfbox.contentstream.PDFStreamEngine]
+addOperator, applyTextAdjustment, beginMarkedContentSequence, beginText, decreaseLevel, endMarkedContentSequence, endText, getAppearance, getCurrentPage, getGraphicsStackSize, getGraphicsState, getInitialMatrix, getLevel, getResources, getTextLineMatrix, getTextMatrix, increaseLevel, operatorException, processAnnotation, processChildStream, processOperator, processOperator, processSoftMask, processTilingPattern, processTilingPattern, processTransparencyGroup, processType3Stream, restoreGraphicsStack, restoreGraphicsState, saveGraphicsStack, saveGraphicsState, setLineDashPattern, setTextLineMatrix, setTextMatrix, showAnnotation, showFontGlyph, showForm, showText, showTextString, showTextStrings, showTransparencyGroup, showType3Glyph, transformedPoint, transformWidth, unsupportedOperator
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

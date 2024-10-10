@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.parser.ParserChunkerFactory
+[Type] Class
+[Info]
+public class ParserChunkerFactory extends ChunkerFactory
+[Constructor Summary]
+ParserChunkerFactory()	
+[Method Summary]
+ChunkerContextGenerator getContextGenerator()	
+SequenceValidator<TokenTag> getSequenceValidator()	
+[Methods inherited from class opennlp.tools.chunker.ChunkerFactory]
+create, validateArtifactMap
+[Methods inherited from class opennlp.tools.util.BaseToolFactory]
+create, create, createArtifactMap, createArtifactSerializersMap, createManifestEntries
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

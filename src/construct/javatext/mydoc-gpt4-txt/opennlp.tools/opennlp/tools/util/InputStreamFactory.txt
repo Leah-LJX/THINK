@@ -1,0 +1,7 @@
+[API Name] opennlp.tools.util.InputStreamFactory
+[Type] Interface
+[Info]
+All Known Implementing Classes: MarkableFileInputStreamFactory
+public interface InputStreamFactory Allows repeated reads through a stream for certain model building types.
+[Method Summary]
+InputStream createInputStream()	

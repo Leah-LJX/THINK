@@ -1,0 +1,7 @@
+[Class] org.w3c.dom.svg.SVGRenderingIntent
+[Flag] Interface
+[Info]
+All Known Subinterfaces: SVGColorProfileElement, SVGColorProfileRule
+[Constructor Summary]
+
+[Method Summary]

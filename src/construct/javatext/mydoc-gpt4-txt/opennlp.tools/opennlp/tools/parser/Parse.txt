@@ -1,0 +1,77 @@
+[API Name] opennlp.tools.parser.Parse
+[Type] Class
+[Info]
+All Implemented Interfaces: Cloneable, Comparable<Parse>
+public class Parse extends Object implements Cloneable, Comparable<Parse> Data structure for holding parse constituents.
+[Constructor Summary]
+Parse(String text, Span span, String type, double p, int index)	Initializes a node for this specified text and span of the specified type with probability p and the head index.
+Parse(String text, Span span, String type, double p, Parse h)	Initializes a node for this specified text and span of the specified type with probability p and the head index.
+[Field Summary]
+static final String BRACKET_LCB	
+static final String BRACKET_LRB	
+static final String BRACKET_LSB	
+static final String BRACKET_RCB	
+static final String BRACKET_RRB	
+static final String BRACKET_RSB	
+[Method Summary]
+void add(Parse daughter, HeadRules rules)	
+static void addNames(String tag, Span[] names, Parse[] tokens)	Utility method to insert named entities.
+void addNextPunctuation(Parse punct)	Designates that the specified punctuation follows this parse.
+void addPreviousPunctuation(Parse punct)	Designates that the specified punctuation should is prior to this parse.
+void addProb(double logProb)	Adds the specified logProb to this current log for this parse.
+Parse adjoin(Parse sister, HeadRules rules)	Sister adjoins this node's last child and the specified sister node and returns their new parent node.
+Parse adjoinRoot(Parse node, HeadRules rules, int parseIndex)	
+Object clone()	
+Parse clone(Parse node)	Clones the right frontier of Parse up to the specified node.
+Parse cloneRoot(Parse node, int parseIndex)	Clones the right frontier of this root Parse up to and including the specified node.
+int compareTo(Parse p)	
+boolean complete()	
+boolean equals(Object obj)	
+void expandTopNode(Parse root)	
+static void fixPossesives(Parse parse)	
+int getChildCount()	
+Parse[] getChildren()	
+Parse getCommonParent(Parse node)	Returns the deepest shared parent of this node and the specified node.
+String getCoveredText()	
+StringBuffer getDerivation()	
+Parse getHead()	
+int getHeadIndex()	
+String getLabel()	Retrieves the label assigned to this parse node during parsing which specifies how this node will be formed into a constituent.
+Collection<Parse> getNextPunctuationSet()	
+Parse getParent()	
+Collection<Parse> getPreviousPunctuationSet()	
+double getProb()	
+Span getSpan()	
+Parse[] getTagNodes()	
+double getTagSequenceProb()	
+String getText()	
+Parse[] getTokenNodes()	
+String getType()	
+int hashCode()	
+int indexOf(Parse child)	
+void insert(Parse constituent)	Inserts the specified constituent into this parse based on its text span.
+boolean isChunk()	
+void isChunk(boolean ic)	
+boolean isFlat()	Indicates whether this parse node contains no sub-constituents.
+boolean isPosTag()	Indicates whether this parse node is a pos-tag.
+static Parse parseParse(String parse)	Parses the specified tree-bank style parse string and return a Parse structure for that string.
+static Parse parseParse(String parse, GapLabeler gl)	Parses the specified tree-bank style Parse string and return a Parse structure for that string.
+static void pruneParse(Parse parse)	Prune the specified sentence parse of vacuous productions.
+void remove(int index)	
+void setChild(int index, String label)	Replaces the child at the specified index with a new child with the specified label.
+void setDerivation(StringBuffer derivation)	Specifies the derivation string to be associated with this parse.
+void setLabel(String label)	Assigns this parse the specified label.
+void setNextPunctuation(Collection<Parse> punctSet)	Sets the punctuation tags which follow this parse.
+void setParent(Parse parent)	Specifies the parent parse node for this constituent.
+void setPrevPunctuation(Collection<Parse> punctSet)	Sets the punctuation tags which precede this parse.
+void setType(String type)	Set the type of this constituent to the specified type.
+void show()	Prints this parse using Penn Treebank-style formatting.
+void show(StringBuffer sb)	Fills the specified StringBuffer with a string representation of this parse.
+void showCodeTree()	Prints to standard out a representation of the specified parse which contains hash codes so that parent/child relationships can be explicitly seen.
+String toString()	Represents this Parse in a human-readable way.
+String toStringPennTreebank()	
+void updateHeads(HeadRules rules)	Computes the head parses for this parse and its sub-parses and stores this information in the parse data structure.
+void updateSpan()	
+static void useFunctionTags(boolean uft)	Specifies whether function tags should be included as part of the constituent type.
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

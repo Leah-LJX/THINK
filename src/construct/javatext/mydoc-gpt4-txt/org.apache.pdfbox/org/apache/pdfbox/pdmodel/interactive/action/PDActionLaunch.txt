@@ -1,0 +1,30 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.action.PDActionLaunch
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable, PDDestinationOrAction
+public class PDActionLaunch extends PDAction This represents a launch action that can be executed in a PDF document.
+Author: Ben Litchfield, Panagiotis Toumasis
+[Constructor Summary]
+PDActionLaunch()	Default constructor.
+PDActionLaunch(COSDictionary a)	Constructor.
+[Field Summary]
+static String SUB_TYPE	This type of action this object represents.
+[Method Summary]
+String getD()	This will get the string specifying the default directory in standard DOS syntax.
+String getF()	This will get the file name to be launched or the document to be opened or printed, in standard Windows pathname format.
+PDFileSpecification getFile()	This will get the application to be launched or the document to be opened or printed.
+String getO()	This will get the string specifying the operation to perform: open to open a document print to print a document If the F entry designates an application instead of a document, this entry is ignored and the application is launched.
+OpenMode getOpenInNewWindow()	This will specify whether to open the destination document in a new window, in the same window, or behave in accordance with the current user preference.
+String getP()	This will get a parameter string to be passed to the application designated by the F entry.
+PDWindowsLaunchParams getWinLaunchParams()	This will get a dictionary containing Windows-specific launch parameters.
+void setD(String d)	This will set the string specifying the default directory in standard DOS syntax.
+void setF(String f)	This will set the file name to be launched or the document to be opened or printed, in standard Windows pathname format.
+void setFile(PDFileSpecification fs)	This will set the application to be launched or the document to be opened or printed.
+void setO(String o)	This will set the string specifying the operation to perform: open to open a document print to print a document If the F entry designates an application instead of a document, this entry is ignored and the application is launched.
+void setOpenInNewWindow(OpenMode value)	This will specify whether to open the destination document in a new window.
+void setP(String p)	This will set a parameter string to be passed to the application designated by the F entry.
+void setWinLaunchParams(PDWindowsLaunchParams win)	This will set a dictionary containing Windows-specific launch parameters.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.action.PDAction]
+getCOSObject, getNext, getSubType, getType, setNext, setSubType, setType
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

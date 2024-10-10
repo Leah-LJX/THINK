@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.util.featuregen.BrownCluster
+[Type] Class
+[Info]
+All Implemented Interfaces: SerializableArtifact
+public class BrownCluster extends Object implements SerializableArtifact Class to load a Brown cluster document: word\tword_class\tprob    Originally available at:   http://metaoptimize.com/projects/wordreprs/.  Further details can be found in the  related research paper.    The file containing the clustering lexicon has to be passed as the  value of the dict attribute of each BrownCluster feature generator.
+[Constructor Summary]
+BrownCluster(InputStream in)	Generates the token to cluster map from Brown cluster an InputStream.
+[Nested Class Summary]
+Nested Class Summary
+static class 
+[Method Summary]
+Class<?> getArtifactSerializerClass()	Retrieves the class which can serialize and recreate this artifact.
+String lookupToken(String string)	Check if a token is in the Brown:paths, token map.
+void serialize(OutputStream out)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

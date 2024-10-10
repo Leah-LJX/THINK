@@ -1,0 +1,58 @@
+[Class] org.joda.time.TimeOfDay
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<ReadablePartial>, ReadablePartial
+[Constructor Summary]
+TimeOfDay()	Deprecated. 	Constructs a TimeOfDay with the current time, using ISOChronology in	 the default zone to extract the fields.
+TimeOfDay(Chronology chronology)	Deprecated. 	Constructs a TimeOfDay with the current time, using the specified chronology	 and zone to extract the fields.
+TimeOfDay(DateTimeZone zone)	Deprecated. 	Constructs a TimeOfDay with the current time, using ISOChronology in	 the specified zone to extract the fields.
+TimeOfDay(int hourOfDay,	int minuteOfHour)	Deprecated. 	Constructs a TimeOfDay with specified hour and minute and zero seconds and milliseconds	 using ISOChronology in the default zone.
+TimeOfDay(int hourOfDay,	int minuteOfHour,	Chronology chronology)	Deprecated. 	Constructs a TimeOfDay with specified hour and minute and zero seconds and milliseconds.
+TimeOfDay(int hourOfDay,	int minuteOfHour,	int secondOfMinute)	Deprecated. 	Constructs a TimeOfDay with specified time field values and zero milliseconds	 using ISOChronology in the default zone.
+TimeOfDay(int hourOfDay,	int minuteOfHour,	int secondOfMinute,	Chronology chronology)	Deprecated. 	Constructs a TimeOfDay with specified time field values and zero milliseconds.
+TimeOfDay(int hourOfDay,	int minuteOfHour,	int secondOfMinute,	int millisOfSecond)	Deprecated. 	Constructs a TimeOfDay with specified time field values using	 ISOChronology in the default zone.
+TimeOfDay(int hourOfDay,	int minuteOfHour,	int secondOfMinute,	int millisOfSecond,	Chronology chronology)	Deprecated. 	Constructs a TimeOfDay with specified time field values and chronology.
+TimeOfDay(long instant)	Deprecated. 	Constructs a TimeOfDay extracting the partial fields from the specified	 milliseconds using the ISOChronology in the default zone.
+TimeOfDay(long instant,	Chronology chronology)	Deprecated. 	Constructs a TimeOfDay extracting the partial fields from the specified	 milliseconds using the chronology provided.
+TimeOfDay(Object instant)	Deprecated. 	Constructs a TimeOfDay from an Object that represents a time.
+TimeOfDay(Object instant,	Chronology chronology)	Deprecated. 	Constructs a TimeOfDay from an Object that represents a time, using the	 specified chronology.
+[Method Summary]
+static TimeOfDay fromCalendarFields(Calendar calendar) Deprecated. Constructs a TimeOfDay from a java.util.Calendar using exactly the same field values avoiding any time zone effects.
+static TimeOfDay fromDateFields(Date date) Deprecated. Constructs a TimeOfDay from a java.util.Date using exactly the same field values avoiding any time zone effects.
+static TimeOfDay fromMillisOfDay(long millisOfDay) Deprecated. Constructs a TimeOfDay from the specified millis of day using the ISO chronology.
+static TimeOfDay fromMillisOfDay(long millisOfDay, Chronology chrono) Deprecated. Constructs a TimeOfDay from the specified millis of day using the specified chronology.
+protected DateTimeField getField(int index, Chronology chrono) Deprecated. Gets the field for a specific index in the chronology specified.
+DateTimeFieldType getFieldType(int index) Deprecated. Gets the field type at the specified index.
+DateTimeFieldType[] getFieldTypes() Deprecated. Gets an array of the field type of each of the fields that this partial supports.
+int getHourOfDay() Deprecated. Get the hour of day (0-23) field value.
+int getMillisOfSecond() Deprecated. Get the millis of second field value.
+int getMinuteOfHour() Deprecated. Get the minute of hour field value.
+int getSecondOfMinute() Deprecated. Get the second of minute field value.
+TimeOfDay.Property hourOfDay() Deprecated. Get the hour of day field property which provides access to advanced functionality.
+TimeOfDay.Property millisOfSecond() Deprecated. Get the millis of second property which provides access to advanced functionality.
+TimeOfDay minus(ReadablePeriod period) Deprecated. Returns a copy of this time with the specified period taken away, wrapping to what would be a new day if required.
+TimeOfDay minusHours(int hours) Deprecated. Returns a copy of this time minus the specified number of hours.
+TimeOfDay minusMillis(int millis) Deprecated. Returns a copy of this time minus the specified number of millis.
+TimeOfDay minusMinutes(int minutes) Deprecated. Returns a copy of this time minus the specified number of minutes.
+TimeOfDay minusSeconds(int seconds) Deprecated. Returns a copy of this time minus the specified number of seconds.
+TimeOfDay.Property minuteOfHour() Deprecated. Get the minute of hour field property which provides access to advanced functionality.
+TimeOfDay plus(ReadablePeriod period) Deprecated. Returns a copy of this time with the specified period added, wrapping to what would be a new day if required.
+TimeOfDay plusHours(int hours) Deprecated. Returns a copy of this time plus the specified number of hours.
+TimeOfDay plusMillis(int millis) Deprecated. Returns a copy of this time plus the specified number of millis.
+TimeOfDay plusMinutes(int minutes) Deprecated. Returns a copy of this time plus the specified number of minutes.
+TimeOfDay plusSeconds(int seconds) Deprecated. Returns a copy of this time plus the specified number of seconds.
+TimeOfDay.Property property(DateTimeFieldType type) Deprecated. Gets the property object for the specified type, which contains many useful methods.
+TimeOfDay.Property secondOfMinute() Deprecated. Get the second of minute field property which provides access to advanced functionality.
+int size() Deprecated. Gets the number of fields in this partial.
+DateTime toDateTimeToday() Deprecated. Converts this partial to a full datetime using the default time zone setting the time fields from this instance and the date fields from the current time.
+DateTime toDateTimeToday(DateTimeZone zone) Deprecated. Converts this partial to a full datetime using the specified time zone setting the time fields from this instance and the date fields from the current time.
+LocalTime toLocalTime() Deprecated. Converts this object to a LocalTime with the same time and chronology.
+String toString() Deprecated. Output the time in the ISO8601 format THH:mm:ss.SSS.
+TimeOfDay withChronologyRetainFields(Chronology newChronology) Deprecated. Returns a copy of this time with the specified chronology.
+TimeOfDay withField(DateTimeFieldType fieldType, int value) Deprecated. Returns a copy of this time with the specified field set to a new value.
+TimeOfDay withFieldAdded(DurationFieldType fieldType, int amount) Deprecated. Returns a copy of this time with the value of the specified field increased, wrapping to what would be a new day if required.
+TimeOfDay withHourOfDay(int hour) Deprecated. Returns a copy of this time with the hour of day field updated.
+TimeOfDay withMillisOfSecond(int millis) Deprecated. Returns a copy of this time with the millis of second field updated.
+TimeOfDay withMinuteOfHour(int minute) Deprecated. Returns a copy of this time with the minute of hour field updated.
+TimeOfDay withPeriodAdded(ReadablePeriod period, int scalar) Deprecated. Returns a copy of this time with the specified period added, wrapping to what would be a new day if required.
+TimeOfDay withSecondOfMinute(int second) Deprecated. Returns a copy of this time with the second of minute field updated.

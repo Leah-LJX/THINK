@@ -1,0 +1,17 @@
+[API Name] opennlp.tools.ml.model.PlainTextFileDataReader
+[Type] Class
+[Info]
+All Implemented Interfaces: DataReader
+public class PlainTextFileDataReader extends Object implements DataReader A generic DataReader implementation for plain text files.
+See Also:
+DataReader
+[Constructor Summary]
+PlainTextFileDataReader(BufferedReader in)	Initializes a PlainTextFileDataReader via a BufferedReader.
+PlainTextFileDataReader(File f)	Initializes a PlainTextFileDataReader via a File.
+PlainTextFileDataReader(InputStream in)	Initializes a PlainTextFileDataReader via a InputStream.
+[Method Summary]
+double readDouble()	
+int readInt()	
+String readUTF()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,13 @@
+[Class] org.jfree.data.jdbc.JDBCCategoryDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, PublicCloneable, CategoryDataset, Dataset, KeyedValues2D, Values2D
+[Constructor Summary]
+JDBCCategoryDataset(String url, String driverName, String user, String passwd)	Creates a new dataset with a database connection.
+JDBCCategoryDataset(Connection connection)	Create a new dataset with the given database connection.
+JDBCCategoryDataset(Connection connection, String query)	Creates a new dataset with the given database connection, and executes the supplied query to populate the dataset.
+[Method Summary]
+void executeQuery(String query)	Populates the dataset by executing the supplied query against the existing database connection.
+void executeQuery(Connection con, String query)	Populates the dataset by executing the supplied query against the existing database connection.
+boolean getTranspose()	Returns a flag that controls whether or not the table values are transposed when added to the dataset.
+void setTranspose(boolean transpose)	Sets a flag that controls whether or not the table values are transposed when added to the dataset.

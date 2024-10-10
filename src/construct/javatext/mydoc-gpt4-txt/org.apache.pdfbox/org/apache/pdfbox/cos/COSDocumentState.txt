@@ -1,0 +1,12 @@
+[API Name] org.apache.pdfbox.cos.COSDocumentState
+[Type] Class
+[Info]
+public class COSDocumentState extends Object An instance of COSDocumentState collects all known states a COSDocument may have and shall allow  their evaluation.
+Author: Christian Appl See Also: COSDocument
+[Constructor Summary]
+COSDocumentState()	
+[Method Summary]
+boolean isAcceptingUpdates()	Returns true, if the document´s parsing is completed and it may be updated.
+void setParsing(boolean parsing)	Sets the parsing state of the document.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

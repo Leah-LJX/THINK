@@ -1,0 +1,21 @@
+[Class] org.jfree.data.general.DefaultHeatMapDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, PublicCloneable, Dataset, HeatMapDataset
+[Constructor Summary]
+DefaultHeatMapDataset(int xSamples, int ySamples, double minX, double maxX, double minY, double maxY)	Creates a new dataset where all the z-values are initially 0.
+[Method Summary]
+Object clone()	Returns an independent copy of this dataset.
+boolean equals(Object obj)	Tests this dataset for equality with an arbitrary object.
+double getMaximumXValue()	Returns the highest x-value represented in this dataset.
+double getMaximumYValue()	Returns the highest y-value represented in this dataset.
+double getMinimumXValue()	Returns the lowest x-value represented in this dataset.
+double getMinimumYValue()	Returns the lowest y-value represented in this dataset.
+int getXSampleCount()	Returns the number of x values across the width of the dataset.
+double getXValue(int xIndex)	A convenience method that returns the x-value for the given index.
+int getYSampleCount()	Returns the number of y values (or samples) for the dataset.
+double getYValue(int yIndex)	A convenience method that returns the y-value for the given index.
+Number getZ(int xIndex, int yIndex)	Returns the z-value at the specified sample position in the dataset.
+double getZValue(int xIndex, int yIndex)	Returns the z-value at the specified sample position in the dataset.
+void setZValue(int xIndex, int yIndex, double z)	Updates a z-value in the dataset and sends a DatasetChangeEvent to all registered listeners.
+void setZValue(int xIndex, int yIndex, double z, boolean notify)	Updates a z-value in the dataset and, if requested, sends a DatasetChangeEvent to all registered listeners.

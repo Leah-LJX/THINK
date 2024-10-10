@@ -1,0 +1,15 @@
+[API Name] Package org.apache.commons.imaging.palette.ColorCountComparator
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparator<org.apache.commons.imaging.palette.ColorCount>
+public class ColorCountComparator extends Object implements Comparator<org.apache.commons.imaging.palette.ColorCount>, Serializable A comparator for {#link ColorCount} elements.
+ It uses a given {#link ColorComponent} to choose what  channel must be used for the comparison. For example, if the comparator is created for the  ColorComponent.RED channel, then it will  compare the value of red of each ColorCount  object in the array of elements.
+Since: 1.0-alpha2 See Also: Serialized Form
+[Constructor Summary]
+ColorCountComparator​(org.apache.commons.imaging.palette.ColorComponent colorComponent)	
+[Method Summary]
+int compare​(org.apache.commons.imaging.palette.ColorCount c1, org.apache.commons.imaging.palette.ColorCount c2)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface java.util.Comparator]
+equals, reversed, thenComparing, thenComparing, thenComparing, thenComparingDouble, thenComparingInt, thenComparingLong

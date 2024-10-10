@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.namefind.DefaultNameContextGenerator
+[Type] Class
+[Info]
+All Implemented Interfaces: NameContextGenerator, BeamSearchContextGenerator<String>
+public class DefaultNameContextGenerator extends Object implements NameContextGenerator A NameContextGenerator implementation for determining contextual features  for a tag-chunk style named-entity recognizer.
+[Constructor Summary]
+DefaultNameContextGenerator(AdaptiveFeatureGenerator... featureGenerators)	Creates a name context generator with the specified feature generators.
+[Method Summary]
+void addFeatureGenerator(AdaptiveFeatureGenerator generator)	Adds a feature generator.
+void clearAdaptiveData()	Informs all the feature generators that the context of the adaptive data (typically a document) is no longer valid and should be cleared.
+String[] getContext(int index, String[] tokens, String[] preds, Object[] additionalContext)	Finds the context for finding names at the specified index.
+void updateAdaptiveData(String[] tokens, String[] outcomes)	Informs all the feature generators that the specified tokens have been classified with the corresponds set of specified outcomes.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,24 @@
+[API Name] org.apache.pdfbox.pdmodel.documentinterchange.markedcontent.PDMarkedContent
+[Type] Class
+[Info]
+Direct Known Subclasses: PDArtifactMarkedContent
+public class PDMarkedContent extends Object A marked content.
+Author: Johannes Koch
+[Constructor Summary]
+PDMarkedContent(COSName tag, COSDictionary properties)	Creates a new marked content object.
+[Method Summary]
+void addMarkedContent(PDMarkedContent markedContent)	Adds a marked content to the contents.
+void addText(TextPosition text)	Adds a text position to the contents.
+void addXObject(PDXObject xobject)	Adds an XObject to the contents.
+static PDMarkedContent create(COSName tag, COSDictionary properties)	Creates a marked-content sequence.
+String getActualText()	Gets the actual text (ActualText).
+String getAlternateDescription()	Gets the alternate description (Alt).
+List<Object> getContents()	Gets the contents of the marked content sequence.
+String getExpandedForm()	Gets the expanded form (E).
+String getLanguage()	Gets the language (Lang).
+int getMCID()	Gets the marked-content identifier.
+COSDictionary getProperties()	Gets the properties.
+String getTag()	Gets the tag.
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

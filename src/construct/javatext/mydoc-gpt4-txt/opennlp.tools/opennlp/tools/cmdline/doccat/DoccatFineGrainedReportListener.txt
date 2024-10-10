@@ -1,0 +1,19 @@
+[API Name] opennlp.tools.cmdline.doccat.DoccatFineGrainedReportListener
+[Type] Class
+[Info]
+All Implemented Interfaces: DoccatEvaluationMonitor, EvaluationMonitor<DocumentSample>
+public class DoccatFineGrainedReportListener extends opennlp.tools.cmdline.FineGrainedReportListener implements DoccatEvaluationMonitor Generates a detailed report for the POS Tagger.    It is possible to use it from an API and access the statistics using the  provided getters
+[Constructor Summary]
+DoccatFineGrainedReportListener()	Creates a listener that will print to the configured logger.
+DoccatFineGrainedReportListener(OutputStream outputStream)	Creates a listener that prints to a given OutputStream
+[Nested Class Summary]
+Nested Class Summary
+opennlp.tools.cmdline.FineGrainedReportListener.ConfusionMatrixLine, opennlp.tools.cmdline.FineGrainedReportListener.Counter, opennlp.tools.cmdline.FineGrainedReportListener.GroupedLabelComparator, opennlp.tools.cmdline.FineGrainedReportListener.GroupedMatrixLabelComparator, opennlp.tools.cmdline.FineGrainedReportListener.MatrixLabelComparator, opennlp.tools.cmdline.FineGrainedReportListener.SimpleLabelComparator, opennlp.tools.cmdline.FineGrainedReportListener.Stats
+[Method Summary]
+void correctlyClassified(DocumentSample reference, DocumentSample prediction)	
+void misclassified(DocumentSample reference, DocumentSample prediction)	
+void writeReport()	
+[Methods inherited from class opennlp.tools.cmdline.FineGrainedReportListener]
+getLabelComparator, getMatrixLabelComparator
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

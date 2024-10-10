@@ -1,0 +1,17 @@
+[API Name] opennlp.tools.formats.masc.MascNamedEntityParser
+[Type] Class
+[Info]
+All Implemented Interfaces: ContentHandler, DTDHandler, EntityResolver, ErrorHandler
+public class MascNamedEntityParser extends DefaultHandler A class to process the MASC Named entity stand-off annotation file
+[Constructor Summary]
+MascNamedEntityParser()	
+[Method Summary]
+Map<Integer,List<Integer>> getEntityIDsToTokens()	
+Map<Integer,String> getEntityIDtoEntityType()	
+void startElement(String uri, String localName, String qName, Attributes attributes)	
+[Methods inherited from class org.xml.sax.helpers.DefaultHandler]
+characters, endDocument, endElement, endPrefixMapping, error, fatalError, ignorableWhitespace, notationDecl, processingInstruction, resolveEntity, setDocumentLocator, skippedEntity, startDocument, startPrefixMapping, unparsedEntityDecl, warning
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface org.xml.sax.ContentHandler]
+declaration

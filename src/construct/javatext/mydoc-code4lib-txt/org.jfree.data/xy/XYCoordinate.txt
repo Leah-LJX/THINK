@@ -1,0 +1,14 @@
+[Class] org.jfree.data.xy.XYCoordinate
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable
+[Constructor Summary]
+XYCoordinate()	Creates a new coordinate for the point (0.0, 0.0).
+XYCoordinate(double x, double y)	Creates a new coordinate for the point (x, y).
+[Method Summary]
+int compareTo(Object obj)	Compares this instance against an arbitrary object.
+boolean equals(Object obj)	Tests this coordinate for equality with an arbitrary object.
+double getX()	Returns the x-coordinate.
+double getY()	Returns the y-coordinate.
+int hashCode()	Returns a hash code for this instance.
+String toString()	Returns a string representation of this instance, primarily for debugging purposes.

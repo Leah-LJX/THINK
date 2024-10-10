@@ -1,0 +1,67 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.write.TiffOutputDirectory
+[Type] Class
+[Info]
+public final class TiffOutputDirectory extends Object
+[Constructor Summary]
+TiffOutputDirectory​(int type, ByteOrder byteOrder)	
+[Field Summary]
+static Comparator<TiffOutputDirectory> COMPARATOR	
+int type	
+static long UNDEFINED_VALUE	
+[Method Summary]
+void add​(TagInfoAsciiOrByte tagInfo, String... values)	
+void add​(TagInfoAsciiOrRational tagInfo, String... values)	
+void add​(TagInfoAsciiOrRational tagInfo, RationalNumber... values)	
+void add​(TagInfoAscii tagInfo, String... values)	
+void add​(TagInfoByteOrShort tagInfo, byte... values)	
+void add​(TagInfoByteOrShort tagInfo, short... values)	
+void add​(TagInfoByte tagInfo, byte value)	
+void add​(TagInfoBytes tagInfo, byte... values)	
+void add​(TagInfoDouble tagInfo, double value)	
+void add​(TagInfoDoubles tagInfo, double... values)	
+void add​(TagInfoFloat tagInfo, float value)	
+void add​(TagInfoFloats tagInfo, float... values)	
+void add​(TagInfoGpsText tagInfo, String value)	
+void add​(TagInfoLong tagInfo, int value)	
+void add​(TagInfoLongs tagInfo, int... values)	
+void add​(TagInfoRational tagInfo, RationalNumber value)	
+void add​(TagInfoRationals tagInfo, RationalNumber... values)	
+void add​(TagInfoSByte tagInfo, byte value)	
+void add​(TagInfoSBytes tagInfo, byte... values)	
+void add​(TagInfoShortOrLongOrRational tagInfo, int... values)	
+void add​(TagInfoShortOrLongOrRational tagInfo, short... values)	
+void add​(TagInfoShortOrLongOrRational tagInfo, RationalNumber... values)	
+void add​(TagInfoShortOrLong tagInfo, int... values)	
+void add​(TagInfoShortOrLong tagInfo, short... values)	
+void add​(TagInfoShortOrRational tagInfo, short... values)	
+void add​(TagInfoShortOrRational tagInfo, RationalNumber... values)	
+void add​(TagInfoShort tagInfo, short value)	
+void add​(TagInfoShorts tagInfo, short... values)	
+void add​(TagInfoSLong tagInfo, int value)	
+void add​(TagInfoSLongs tagInfo, int... values)	
+void add​(TagInfoSRational tagInfo, RationalNumber value)	
+void add​(TagInfoSRationals tagInfo, RationalNumber... values)	
+void add​(TagInfoSShort tagInfo, short value)	
+void add​(TagInfoSShorts tagInfo, short... values)	
+void add​(TagInfoXpString tagInfo, String value)	
+void add​(TiffOutputField field)	
+String description()	
+TiffOutputField findField​(int tag)	Finds the TiffOutputField for the given tag from this TiffOutputDirectory.
+TiffOutputField findField​(TagInfo tagInfo)	Finds the TiffOutputField for the given TagInfo from this TiffOutputDirectory.
+List<TiffOutputField> getFields()	
+String getItemDescription()	
+int getItemLength()	
+protected long getOffset()	
+protected List<org.apache.commons.imaging.formats.tiff.write.TiffOutputItem> getOutputItems​(org.apache.commons.imaging.formats.tiff.write.TiffOutputSummary outputSummary)	
+JpegImageData getRawJpegImageData()	
+TiffImageData getRawTiffImageData()	
+void removeField​(int tag)	
+void removeField​(TagInfo tagInfo)	
+void setJpegImageData​(JpegImageData rawJpegImageData)	
+void setNextDirectory​(TiffOutputDirectory nextDirectory)	
+protected void setOffset​(long offset)	
+void setTiffImageData​(TiffImageData rawTiffImageData)	
+void sortFields()	
+void writeItem​(BinaryOutputStream bos)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

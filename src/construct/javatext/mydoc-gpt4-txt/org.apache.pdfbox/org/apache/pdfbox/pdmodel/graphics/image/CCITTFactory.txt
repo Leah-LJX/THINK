@@ -1,0 +1,13 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.image.CCITTFactory
+[Type] Class
+[Info]
+public final class CCITTFactory extends Object Factory for creating a PDImageXObject containing a CCITT Fax compressed TIFF image.
+Author: Ben Litchfield, Paul King
+[Method Summary]
+static PDImageXObject createFromByteArray(PDDocument document, byte[] byteArray)	Creates a new CCITT Fax compressed image XObject from a specific image of a TIFF file stored in a byte array.
+static PDImageXObject createFromByteArray(PDDocument document, byte[] byteArray, int number)	Creates a new CCITT Fax compressed image XObject from a specific image of a TIFF file stored in a byte array.
+static PDImageXObject createFromFile(PDDocument document, File file)	Creates a new CCITT Fax compressed image XObject from the first image of a TIFF file.
+static PDImageXObject createFromFile(PDDocument document, File file, int number)	Creates a new CCITT Fax compressed image XObject from a specific image of a TIFF file.
+static PDImageXObject createFromImage(PDDocument document, BufferedImage image)	Creates a new CCITT group 4 (T6) compressed image XObject from a b/w BufferedImage.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

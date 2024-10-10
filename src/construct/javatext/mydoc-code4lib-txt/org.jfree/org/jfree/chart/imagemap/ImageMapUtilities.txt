@@ -1,0 +1,11 @@
+[Class] org.jfree.chart.imagemap.ImageMapUtilities
+[Flag] Class
+[Info]
+Parameters: writer - the writer (null not permitted).
+name - the map name (null not permitted).
+info - the chart rendering info (null not permitted).
+Throws: IOException - if there are any I/O errors.
+[Constructor Summary]
+ImageMapUtilities()
+[Method Summary]
+static String getImageMap(String name, ChartRenderingInfo info) Creates an image map element that complies with the XHTML 1.0 specification.

@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.ml.model.SequenceStream<S>
+[Type] Interface
+[Info]
+All Superinterfaces: AutoCloseable, ObjectStream<Sequence<S>>
+All Known Implementing Classes: ChunkSampleSequenceStream, LemmaSampleSequenceStream, NameSampleSequenceStream, POSSampleSequenceStream
+public interface SequenceStream<S> extends ObjectStream<Sequence<S>> Interface for streams of sequences used to train sequence models.
+See Also:
+Event ObjectStream
+[Method Summary]
+Event[] updateContext(Sequence<S> sequence, AbstractModel model)	Creates a new event array based on the outcomes predicted by the specified parameters for the specified Sequence.
+[Methods inherited from interface opennlp.tools.util.ObjectStream]
+close, read, reset

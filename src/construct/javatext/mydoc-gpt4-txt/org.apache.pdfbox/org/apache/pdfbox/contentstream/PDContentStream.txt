@@ -1,0 +1,12 @@
+[API Name] org.apache.pdfbox.contentstream.PDContentStream
+[Type] Interface
+[Info]
+All Known Implementing Classes: PDAppearanceStream, PDFormXObject, PDPage, PDTilingPattern, PDTransparencyGroup, PDType3CharProc
+public interface PDContentStream A content stream.
+Author: John Hewson
+[Method Summary]
+PDRectangle getBBox()	Returns the bounding box of the contents.
+InputStream getContents()	Returns this stream's content, if any.
+org.apache.pdfbox.io.RandomAccessRead getContentsForRandomAccess()	Returns this stream's content, if any.
+Matrix getMatrix()	Returns the matrix which transforms from the stream's space to user space.
+PDResources getResources()	Returns this stream's resources, if any.

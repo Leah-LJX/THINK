@@ -1,0 +1,17 @@
+[Class] org.jfree.data.xy.XYIntervalSeries
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+XYIntervalSeries(Comparable key)	Creates a new empty series.
+XYIntervalSeries(Comparable key, boolean autoSort, boolean allowDuplicateXValues)	Constructs a new xy-series that contains no data.
+[Method Summary]
+void add(double x, double xLow, double xHigh, double y, double yLow, double yHigh)	Adds a data item to the series and sends a SeriesChangeEvent to all registered listeners.
+void add(XYIntervalDataItem item, boolean notify)	Adds a data item to the series and, if requested, sends a SeriesChangeEvent to all registered listeners.
+ComparableObjectItem getDataItem(int index)	Returns the data item at the specified index.
+Number getX(int index)	Returns the x-value for the specified item.
+double getXHighValue(int index)	Returns the upper bound of the x-interval for the specified item in the series.
+double getXLowValue(int index)	Returns the lower bound of the x-interval for the specified item in the series.
+double getYHighValue(int index)	Returns the upper bound of the y-interval for the specified item in the series.
+double getYLowValue(int index)	Returns the lower bound of the Y-interval for the specified item in the series.
+double getYValue(int index)	Returns the y-value for the specified item.

@@ -1,0 +1,41 @@
+[Class] org.w3c.dom.Document
+[Flag] Interface
+[Info]
+All Superinterfaces:
+Node
+All Known Implementing Classes:
+SOAPPart
+[Constructor Summary]
+
+[Method Summary]
+Node adoptNode(Node source) Attempts to adopt a node from another document to this document.
+Attr createAttribute(String name) Creates an Attr of the given name.
+Attr createAttributeNS(String namespaceURI, String qualifiedName) Creates an attribute of the given qualified name and namespace URI.
+CDATASection createCDATASection(String data) Creates a CDATASection node whose value is the specified string.
+Comment createComment(String data) Creates a Comment node given the specified string.
+DocumentFragment createDocumentFragment() Creates an empty DocumentFragment object.
+Element createElement(String tagName) Creates an element of the type specified.
+Element createElementNS(String namespaceURI, String qualifiedName) Creates an element of the given qualified name and namespace URI.
+EntityReference createEntityReference(String name) Creates an EntityReference object.
+ProcessingInstruction createProcessingInstruction(String target, String data) Creates a ProcessingInstruction node given the specified name and data strings.
+Text createTextNode(String data) Creates a Text node given the specified string.
+DocumentType getDoctype() The Document Type Declaration (see DocumentType) associated with this document.
+Element getDocumentElement() This is a convenience attribute that allows direct access to the child node that is the document element of the document.
+String getDocumentURI() The location of the document or null if undefined or if the Document was created using DOMImplementation.createDocument.
+DOMConfiguration getDomConfig() The configuration used when Document.normalizeDocument() is invoked.
+Element getElementById(String elementId) Returns the Element that has an ID attribute with the given value.
+NodeList getElementsByTagName(String tagname) Returns a NodeList of all the Elements in document order with a given tag name and are contained in the document.
+NodeList getElementsByTagNameNS(String namespaceURI, String localName) Returns a NodeList of all the Elements with a given local name and namespace URI in document order.
+DOMImplementation getImplementation() The DOMImplementation object that handles this document.
+String getInputEncoding() An attribute specifying the encoding used for this document at the time of the parsing.
+boolean getStrictErrorChecking() An attribute specifying whether error checking is enforced or not.
+String getXmlEncoding() An attribute specifying, as part of the XML declaration, the encoding of this document.
+boolean getXmlStandalone() An attribute specifying, as part of the XML declaration, whether this document is standalone.
+String getXmlVersion() An attribute specifying, as part of the XML declaration, the version number of this document.
+Node importNode(Node importedNode, boolean deep) Imports a node from another document to this document, without altering or removing the source node from the original document; this method creates a new copy of the source node.
+void normalizeDocument() This method acts as if the document was going through a save and load cycle, putting the document in a "normal" form.
+Node renameNode(Node n, String namespaceURI, String qualifiedName) Rename an existing node of type ELEMENT_NODE or ATTRIBUTE_NODE.
+void setDocumentURI(String documentURI) The location of the document or null if undefined or if the Document was created using DOMImplementation.createDocument.
+void setStrictErrorChecking(boolean strictErrorChecking) An attribute specifying whether error checking is enforced or not.
+void setXmlStandalone(boolean xmlStandalone) An attribute specifying, as part of the XML declaration, whether this document is standalone.
+void setXmlVersion(String xmlVersion) An attribute specifying, as part of the XML declaration, the version number of this document.

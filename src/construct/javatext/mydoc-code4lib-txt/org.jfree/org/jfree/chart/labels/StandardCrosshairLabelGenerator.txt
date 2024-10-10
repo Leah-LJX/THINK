@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.labels.StandardCrosshairLabelGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, CrosshairLabelGenerator
+[Constructor Summary]
+StandardCrosshairLabelGenerator() Creates a new instance with default attributes.
+[Method Summary]
+boolean equals(Object obj) Tests this generator for equality with an arbitrary object.

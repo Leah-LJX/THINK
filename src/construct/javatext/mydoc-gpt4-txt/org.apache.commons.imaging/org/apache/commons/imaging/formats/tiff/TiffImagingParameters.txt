@@ -1,0 +1,35 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.TiffImagingParameters
+[Type] Class
+[Info]
+public class TiffImagingParameters extends XmpImagingParameters Tiff format parameters.
+Since: 1.0-alpha3
+[Constructor Summary]
+TiffImagingParameters()	
+[Method Summary]
+void clearSubImage()	Clears settings for sub-image.
+Integer getCompression()	
+PhotometricInterpreter getCustomPhotometricInterpreter()	
+Integer getLzwCompressionBlockSize()	
+TiffOutputSet getOutputSet()	Get the TIFF output set for writing TIFF files.
+int getSubImageHeight()	Gets the height for a sub-image setting.
+int getSubImageWidth()	Gets the width for a sub-image setting.
+int getSubImageX()	Gets the X coordinate of a sub-image.
+int getSubImageY()	Gets the Y coordinate of a sub-image.
+Integer getT4Options()	
+Integer getT6Options()	
+boolean isReadThumbnails()	
+boolean isSubImageSet()	Indicates whether the application has set sub-image parameters.
+void setCompression​(Integer compression)	
+void setCustomPhotometricInterpreter​(PhotometricInterpreter customPhotometricInterpreter)	
+void setLzwCompressionBlockSize​(Integer lzwCompressionBlockSize)	
+void setOutputSet​(TiffOutputSet tiffOutputSet)	Set the TIFF output set for writing TIFF files.
+void setReadThumbnails​(boolean readThumbnails)	
+void setSubImage​(int x, int y, int width, int height)	Sets parameters for performing a partial read operation on an image.
+void setT4Options​(Integer t4Options)	
+void setT6Options​(Integer t6Options)	
+[Methods inherited from class org.apache.commons.imaging.common.XmpImagingParameters]
+getXmpXml, setXmpXml
+[Methods inherited from class org.apache.commons.imaging.ImagingParameters]
+getBufferedImageFactory, getFileName, getPixelDensity, isStrict, setBufferedImageFactory, setFileName, setPixelDensity, setStrict
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,15 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.TiffElement
+[Type] Class
+[Info]
+Direct Known Subclasses: TiffDirectory, TiffDirectory.ImageDataElement, TiffElement.DataElement, TiffElement.Stub, TiffField.OversizeValueElement, TiffHeader
+public abstract class TiffElement extends Object
+[Constructor Summary]
+TiffElement​(long offset, int length)	
+[Field Summary]
+static Comparator<TiffElement> COMPARATOR	
+int length	
+long offset	
+[Method Summary]
+abstract String getElementDescription()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

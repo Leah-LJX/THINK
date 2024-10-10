@@ -1,0 +1,10 @@
+[Class] org.jfree.data.xy.WindDataset
+[Flag] Interface
+[Info]
+All Superinterfaces: Dataset, SeriesDataset, XYDataset
+All Known Implementing Classes: DefaultWindDataset
+[Constructor Summary]
+
+[Method Summary]
+Number getWindDirection(int series, int item)	Returns the wind direction (should be in the range 0 to 12, corresponding to the positions on an upside-down clock face).
+Number getWindForce(int series, int item)	Returns the wind force on the Beaufort scale (0 to 12).

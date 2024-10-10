@@ -1,0 +1,31 @@
+[Class] org.joda.time.Seconds
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<BaseSingleFieldPeriod>, ReadablePeriod
+[Constructor Summary]
+
+[Method Summary]
+Seconds dividedBy(int divisor) Returns a new instance with the seconds divided by the specified divisor.
+DurationFieldType getFieldType() Gets the duration field type, which is seconds.
+PeriodType getPeriodType() Gets the period type, which is seconds.
+int getSeconds() Gets the number of seconds that this period represents.
+boolean isGreaterThan(Seconds other) Is this seconds instance greater than the specified number of seconds.
+boolean isLessThan(Seconds other) Is this seconds instance less than the specified number of seconds.
+Seconds minus(int seconds) Returns a new instance with the specified number of seconds taken away.
+Seconds minus(Seconds seconds) Returns a new instance with the specified number of seconds taken away.
+Seconds multipliedBy(int scalar) Returns a new instance with the seconds multiplied by the specified scalar.
+Seconds negated() Returns a new instance with the seconds value negated.
+static Seconds parseSeconds(String periodStr) Creates a new Seconds by parsing a string in the ISO8601 format 'PTnS'.
+Seconds plus(int seconds) Returns a new instance with the specified number of seconds added.
+Seconds plus(Seconds seconds) Returns a new instance with the specified number of seconds added.
+static Seconds seconds(int seconds) Obtains an instance of Seconds that may be cached.
+static Seconds secondsBetween(ReadableInstant start, ReadableInstant end) Creates a Seconds representing the number of whole seconds between the two specified datetimes.
+static Seconds secondsBetween(ReadablePartial start, ReadablePartial end) Creates a Seconds representing the number of whole seconds between the two specified partial datetimes.
+static Seconds secondsIn(ReadableInterval interval) Creates a Seconds representing the number of whole seconds in the specified interval.
+static Seconds standardSecondsIn(ReadablePeriod period) Creates a new Seconds representing the number of complete standard length seconds in the specified period.
+Days toStandardDays() Converts this period in seconds to a period in days assuming a 24 hour day, 60 minute hour and 60 second minute.
+Duration toStandardDuration() Converts this period in seconds to a duration in milliseconds assuming a 24 hour day, 60 minute hour and 60 second minute.
+Hours toStandardHours() Converts this period in seconds to a period in hours assuming a 60 minute hour and 60 second minute.
+Minutes toStandardMinutes() Converts this period in seconds to a period in minutes assuming a 60 second minute.
+Weeks toStandardWeeks() Converts this period in seconds to a period in weeks assuming a 7 day week, 24 hour day, 60 minute hour and 60 second minute.
+String toString() Gets this instance as a String in the ISO8601 duration format.

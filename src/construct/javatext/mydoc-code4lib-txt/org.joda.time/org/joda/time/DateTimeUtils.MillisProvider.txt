@@ -1,0 +1,8 @@
+[Class] org.joda.time.DateTimeUtils.MillisProvider
+[Flag] Interface
+[Info]
+Enclosing class: DateTimeUtils
+[Constructor Summary]
+
+[Method Summary]
+long getMillis() Gets the current time.

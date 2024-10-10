@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.postag.POSTaggerCrossValidator
+[Type] Class
+[Info]
+public class POSTaggerCrossValidator extends Object
+[Constructor Summary]
+POSTaggerCrossValidator(String languageCode, TrainingParameters trainParam, File tagDictionary, byte[] featureGeneratorBytes, Map<String,Object> resources, Integer tagdicCutoff, String factoryClass, POSTaggerEvaluationMonitor... listeners)	Initializes a POSTaggerCrossValidator that builds a ngram dictionary dynamically.
+POSTaggerCrossValidator(String languageCode, TrainingParameters trainParam, POSTaggerFactory factory, POSTaggerEvaluationMonitor... listeners)	Creates a POSTaggerCrossValidator using the given POSTaggerFactory.
+[Method Summary]
+void evaluate(ObjectStream<POSSample> samples, int nFolds)	Starts the evaluation.
+double getWordAccuracy()	
+long getWordCount()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.ValueAxisPlot
+[Flag] Interface
+[Info]
+All Known Implementing Classes: CategoryPlot, CombinedDomainCategoryPlot, CombinedDomainXYPlot, CombinedRangeCategoryPlot, CombinedRangeXYPlot, ContourPlot, FastScatterPlot, PolarPlot, ThermometerPlot, XYPlot
+[Constructor Summary]
+
+[Method Summary]
+Range getDataRange(ValueAxis axis) Returns the data range that should apply for the specified axis.

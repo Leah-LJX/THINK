@@ -1,0 +1,10 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDAppearanceHandler
+[Type] Interface
+[Info]
+All Known Implementing Classes: PDAbstractAppearanceHandler, PDCaretAppearanceHandler, PDCircleAppearanceHandler, PDFileAttachmentAppearanceHandler, PDFreeTextAppearanceHandler, PDHighlightAppearanceHandler, PDInkAppearanceHandler, PDLineAppearanceHandler, PDLinkAppearanceHandler, PDPolygonAppearanceHandler, PDPolylineAppearanceHandler, PDSoundAppearanceHandler, PDSquareAppearanceHandler, PDSquigglyAppearanceHandler, PDStrikeoutAppearanceHandler, PDTextAppearanceHandler, PDUnderlineAppearanceHandler
+public interface PDAppearanceHandler
+[Method Summary]
+default void generateAppearanceStreams()	
+void generateDownAppearance()	
+void generateNormalAppearance()	
+void generateRolloverAppearance()	

@@ -1,0 +1,34 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.form.PDField
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDNonTerminalField, PDTerminalField
+public abstract class PDField extends Object implements COSObjectable A field in an interactive form.
+[Method Summary]
+PDAcroForm getAcroForm()	This will get the acroform that this field is part of.
+PDFormFieldAdditionalActions getActions()	Get the additional actions for this field.
+String getAlternateFieldName()	Gets the alternate name of the field ("shall be used in place of the actual field name wherever the field shall be identified in the user interface (such as in error or status messages referring to the field)").
+COSDictionary getCOSObject()	This will get the dictionary associated with this field.
+abstract int getFieldFlags()	This will get the flags for this field.
+abstract String getFieldType()	Get the FT entry of the field.
+String getFullyQualifiedName()	Returns the fully qualified name of the field, which is a concatenation of the names of all the parents fields.
+protected COSBase getInheritableAttribute(COSName key)	Returns the given attribute, inheriting from parent nodes if necessary.
+String getMappingName()	Gets the mapping name of the field.
+PDNonTerminalField getParent()	Get the parent field to this field, or null if none exists.
+String getPartialName()	Returns the partial name of the field.
+abstract String getValueAsString()	Returns a string representation of the "V" entry, or an empty string.
+abstract List<PDAnnotationWidget> getWidgets()	Returns the widget annotations associated with this field.
+boolean isNoExport()	
+boolean isReadOnly()	
+boolean isRequired()	
+void setAlternateFieldName(String alternateFieldName)	This will set the alternate name of the field ("shall be used in place of the actual field name wherever the field shall be identified in the user interface (such as in error or status messages referring to the field)").
+void setFieldFlags(int flags)	This will set the flags for this field.
+void setMappingName(String mappingName)	This will set the mapping name of the field.
+void setNoExport(boolean noExport)	sets the field to be not exported.
+void setPartialName(String name)	This will set the partial name of the field.
+void setReadOnly(boolean readonly)	sets the field to be read-only.
+void setRequired(boolean required)	sets the flag whether the field is to be required to have a value at the time it is exported by a submit-form action.
+abstract void setValue(String value)	Sets the value of the field.
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

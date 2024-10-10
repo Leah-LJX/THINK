@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.plot.ColorPalette
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+Direct Known Subclasses: GreyPalette, RainbowPalette
+[Constructor Summary]
+ColorPalette() Deprecated. Default contructor.
+[Method Summary]
+Object clone() Deprecated. Returns a clone of the palette.

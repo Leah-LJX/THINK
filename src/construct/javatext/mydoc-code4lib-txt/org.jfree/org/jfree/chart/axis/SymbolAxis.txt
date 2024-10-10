@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.SymbolAxis
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, org.jfree.util.PublicCloneable
+[Constructor Summary]
+SymbolAxis(String label, String[] sv) Constructs a symbol axis, using default attribute values where necessary.
+[Method Summary]
+protected void autoAdjustRange() Rescales the axis to ensure that all data is visible.

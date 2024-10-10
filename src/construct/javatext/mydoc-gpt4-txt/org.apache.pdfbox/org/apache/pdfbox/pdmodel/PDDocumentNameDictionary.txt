@@ -1,0 +1,19 @@
+[API Name] org.apache.pdfbox.pdmodel.PDDocumentNameDictionary
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDDocumentNameDictionary extends Object implements COSObjectable This class holds all of the name trees that are available at the document level.
+Author: Ben Litchfield
+[Constructor Summary]
+PDDocumentNameDictionary(PDDocumentCatalog cat)	Constructor.
+PDDocumentNameDictionary(PDDocumentCatalog cat, COSDictionary names)	Constructor.
+[Method Summary]
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+PDDestinationNameTreeNode getDests()	Get the destination named tree node.
+PDEmbeddedFilesNameTreeNode getEmbeddedFiles()	Get the embedded files named tree node.
+PDJavascriptNameTreeNode getJavaScript()	Get the document level JavaScript name tree.
+void setDests(PDDestinationNameTreeNode dests)	Set the named destinations that are associated with this document.
+void setEmbeddedFiles(PDEmbeddedFilesNameTreeNode ef)	Set the named embedded files that are associated with this document.
+void setJavascript(PDJavascriptNameTreeNode js)	Set the named javascript entries that are associated with this document.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

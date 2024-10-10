@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.block.BlockParams
+[Flag] Class
+[Info]
+All Implemented Interfaces: EntityBlockParams
+[Constructor Summary]
+BlockParams() Creates a new instance.
+[Method Summary]
+boolean getGenerateEntities() Returns the flag that controls whether or not chart entities are generated.

@@ -1,0 +1,28 @@
+[API Name] org.apache.pdfbox.printing.PDFPrintable
+[Type] Class
+[Info]
+All Implemented Interfaces: Printable
+public final class PDFPrintable extends Object implements Printable Prints pages from a PDF document using any page size or scaling mode.
+Author: John Hewson
+[Constructor Summary]
+PDFPrintable(PDDocument document)	Creates a new PDFPrintable.
+PDFPrintable(PDDocument document, Scaling scaling)	Creates a new PDFPrintable with the given page scaling.
+PDFPrintable(PDDocument document, Scaling scaling, boolean showPageBorder)	Creates a new PDFPrintable with the given page scaling and with optional page borders shown.
+PDFPrintable(PDDocument document, Scaling scaling, boolean showPageBorder, float dpi)	Creates a new PDFPrintable with the given page scaling and with optional page borders shown.
+PDFPrintable(PDDocument document, Scaling scaling, boolean showPageBorder, float dpi, boolean center)	Creates a new PDFPrintable with the given page scaling and with optional page borders shown.
+PDFPrintable(PDDocument document, Scaling scaling, boolean showPageBorder, float dpi, boolean center, PDFRenderer renderer)	Creates a new PDFPrintable with the given page scaling and with optional page borders shown.
+[Field Summary]
+PDFPrintable(PDDocument document)	Creates a new PDFPrintable.
+PDFPrintable(PDDocument document, Scaling scaling)	Creates a new PDFPrintable with the given page scaling.
+PDFPrintable(PDDocument document, Scaling scaling, boolean showPageBorder)	Creates a new PDFPrintable with the given page scaling and with optional page borders shown.
+PDFPrintable(PDDocument document, Scaling scaling, boolean showPageBorder, float dpi)	Creates a new PDFPrintable with the given page scaling and with optional page borders shown.
+PDFPrintable(PDDocument document, Scaling scaling, boolean showPageBorder, float dpi, boolean center)	Creates a new PDFPrintable with the given page scaling and with optional page borders shown.
+PDFPrintable(PDDocument document, Scaling scaling, boolean showPageBorder, float dpi, boolean center, PDFRenderer renderer)	Creates a new PDFPrintable with the given page scaling and with optional page borders shown.
+[Method Summary]
+RenderingHints getRenderingHints()	Get the rendering hints.
+boolean isSubsamplingAllowed()	Value indicating if the renderer is allowed to subsample images before drawing, according to image dimensions and requested scale.
+int print(Graphics graphics, PageFormat pageFormat, int pageIndex)	
+void setRenderingHints(RenderingHints renderingHints)	Set the rendering hints.
+void setSubsamplingAllowed(boolean subsamplingAllowed)	Sets a value instructing the renderer whether it is allowed to subsample images before drawing.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

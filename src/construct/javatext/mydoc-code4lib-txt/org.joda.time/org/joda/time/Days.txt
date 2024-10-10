@@ -1,0 +1,31 @@
+[Class] org.joda.time.Days
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<BaseSingleFieldPeriod>, ReadablePeriod
+[Constructor Summary]
+
+[Method Summary]
+static Days days(int days) Obtains an instance of Days that may be cached.
+static Days daysBetween(ReadableInstant start, ReadableInstant end) Creates a Days representing the number of whole days between the two specified datetimes.
+static Days daysBetween(ReadablePartial start, ReadablePartial end) Creates a Days representing the number of whole days between the two specified partial datetimes.
+static Days daysIn(ReadableInterval interval) Creates a Days representing the number of whole days in the specified interval.
+Days dividedBy(int divisor) Returns a new instance with the days divided by the specified divisor.
+int getDays() Gets the number of days that this period represents.
+DurationFieldType getFieldType() Gets the duration field type, which is days.
+PeriodType getPeriodType() Gets the period type, which is days.
+boolean isGreaterThan(Days other) Is this days instance greater than the specified number of days.
+boolean isLessThan(Days other) Is this days instance less than the specified number of days.
+Days minus(Days days) Returns a new instance with the specified number of days taken away.
+Days minus(int days) Returns a new instance with the specified number of days taken away.
+Days multipliedBy(int scalar) Returns a new instance with the days multiplied by the specified scalar.
+Days negated() Returns a new instance with the days value negated.
+static Days parseDays(String periodStr) Creates a new Days by parsing a string in the ISO8601 format 'PnD'.
+Days plus(Days days) Returns a new instance with the specified number of days added.
+Days plus(int days) Returns a new instance with the specified number of days added.
+static Days standardDaysIn(ReadablePeriod period) Creates a new Days representing the number of complete standard length days in the specified period.
+Duration toStandardDuration() Converts this period in days to a duration in milliseconds assuming a 24 hour day, 60 minute hour and 60 second minute.
+Hours toStandardHours() Converts this period in days to a period in hours assuming a 24 hour day.
+Minutes toStandardMinutes() Converts this period in days to a period in minutes assuming a 24 hour day and 60 minute hour.
+Seconds toStandardSeconds() Converts this period in days to a period in seconds assuming a 24 hour day, 60 minute hour and 60 second minute.
+Weeks toStandardWeeks() Converts this period in days to a period in weeks assuming a 7 day week.
+String toString() Gets this instance as a String in the ISO8601 duration format.

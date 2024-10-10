@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.event.AxisChangeListener
+[Flag] Interface
+[Info]
+All Superinterfaces: EventListener
+All Known Implementing Classes: CategoryPlot, CombinedDomainCategoryPlot, CombinedDomainXYPlot, CombinedRangeCategoryPlot, CombinedRangeXYPlot, CompassPlot, ContourPlot, DialPlot, FastScatterPlot, MeterPlot, MultiplePiePlot, PaintScaleLegend, PiePlot, PiePlot3D, Plot, PolarPlot, RingPlot, SpiderWebPlot, ThermometerPlot, WaferMapPlot, XYPlot
+[Constructor Summary]
+
+[Method Summary]
+void axisChanged(AxisChangeEvent event) Receives notification of an axis change event.

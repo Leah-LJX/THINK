@@ -1,0 +1,19 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.constants.AdobePageMaker6TagConstants
+[Type] Class
+[Info]
+public final class AdobePageMaker6TagConstants extends Object TIFF specification supplement 1    Enhancements for Adobe PageMaker(R) 6.0 software    http://partners.adobe.com/public/developer/en/tiff/TIFFPM6.pdf
+[Field Summary]
+static List<TagInfo> ALL_ADOBE_PAGEMAKER_6_TAGS	
+static int INDEXED_VALUE_INDEXED	
+static int INDEXED_VALUE_NOT_INDEXED	
+static int OPIPROXY_VALUE_HIGHER_RESOLUTION_IMAGE_DOES_NOT_EXIST	
+static int OPIPROXY_VALUE_HIGHER_RESOLUTION_IMAGE_EXISTS	
+static TagInfoBytes TIFF_TAG_CLIP_PATH	
+static TagInfoAscii TIFF_TAG_IMAGE_ID	
+static TagInfoShort TIFF_TAG_INDEXED	
+static TagInfoShort TIFF_TAG_OPIPROXY	
+static TagInfoLongOrIFD TIFF_TAG_SUB_IFD	
+static TagInfoLong TIFF_TAG_XCLIP_PATH_UNITS	
+static TagInfoLong TIFF_TAG_YCLIP_PATH_UNITS	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

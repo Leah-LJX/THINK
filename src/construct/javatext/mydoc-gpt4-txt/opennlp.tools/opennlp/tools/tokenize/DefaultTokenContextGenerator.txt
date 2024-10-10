@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.tokenize.DefaultTokenContextGenerator
+[Type] Class
+[Info]
+All Implemented Interfaces: TokenContextGenerator
+public class DefaultTokenContextGenerator extends Object implements TokenContextGenerator A default TokenContextGenerator which produces events for maxent decisions  for tokenization.
+[Constructor Summary]
+DefaultTokenContextGenerator()	Initializes a plain DefaultTokenContextGenerator instance.
+DefaultTokenContextGenerator(Set<String> inducedAbbreviations)	Initializes a customized DefaultTokenContextGenerator instance via a set of inducedAbbreviations.
+[Method Summary]
+String[] getContext(String sentence, int index)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

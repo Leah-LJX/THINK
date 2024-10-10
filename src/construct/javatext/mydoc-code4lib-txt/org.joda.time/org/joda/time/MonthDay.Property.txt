@@ -1,0 +1,17 @@
+[Class] org.joda.time.MonthDay.Property
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+Enclosing class: MonthDay
+[Constructor Summary]
+
+[Method Summary]
+MonthDay addToCopy(int valueToAdd) Adds to the value of this field in a copy of this MonthDay.
+MonthDay addWrapFieldToCopy(int valueToAdd) Adds to the value of this field in a copy of this MonthDay wrapping within this field if the maximum value is reached.
+int get() Gets the value of this field.
+DateTimeField getField() Gets the field that this property uses.
+MonthDay getMonthDay() Gets the partial that this property belongs to.
+protected ReadablePartial getReadablePartial() Gets the partial that this property belongs to.
+MonthDay setCopy(int value) Sets this field in a copy of the MonthDay.
+MonthDay setCopy(String text) Sets this field in a copy of the MonthDay to a parsed text value.
+MonthDay setCopy(String text, Locale locale) Sets this field in a copy of the MonthDay to a parsed text value.

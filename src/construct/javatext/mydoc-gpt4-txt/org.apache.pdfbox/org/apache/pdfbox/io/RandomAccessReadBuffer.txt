@@ -1,0 +1,37 @@
+[API Name] org.apache.pdfbox.io.RandomAccessReadBuffer
+[Type] Class
+[Info]
+All Implemented Interfaces: Closeable, AutoCloseable, RandomAccessRead
+Direct Known Subclasses: RandomAccessReadWriteBuffer
+public class RandomAccessReadBuffer extends Object implements RandomAccessRead An implementation of the RandomAccessRead interface to store data in memory. The data will be stored in chunks  organized in an ArrayList.
+[Constructor Summary]
+protected RandomAccessReadBuffer()	Default constructor.
+RandomAccessReadBuffer(byte[] input)	Create a random access buffer using the given byte array.
+RandomAccessReadBuffer(ByteBuffer input)	Create a random access buffer using the given ByteBuffer.
+RandomAccessReadBuffer(InputStream input)	Create a random access read buffer of the given input stream by copying the data to the memory.
+protected RandomAccessReadBuffer(int definedChunkSize)	Default constructor.
+[Field Summary]
+protected int chunkSize	
+protected ByteBuffer currentBuffer	
+protected int currentBufferPointer	
+static int DEFAULT_CHUNK_SIZE_4KB	
+protected long pointer	
+protected long size	
+[Method Summary]
+protected void checkClosed()	Ensure that the RandomAccessBuffer is not closed
+void close()	
+static RandomAccessReadBuffer createBufferFromStream(InputStream inputStream)	Create e new RandomAccessReadBuffer using the given InputStream.
+RandomAccessReadView createView(long startPosition, long streamLength)	Creates a random access read view starting at the given position with the given length.
+protected void expandBuffer()	create a new buffer chunk and adjust all pointers and indices.
+long getPosition()	Returns offset of next byte to be returned by a read method.
+boolean isClosed()	Returns true if this source has been closed.
+boolean isEOF()	A simple test to see if we are at the end of the data.
+long length()	The total number of bytes that are available.
+int read()	Read a single byte of data.
+int read(byte[] b, int offset, int length)	Read a buffer of data.
+protected void resetBuffers()	Reset to position 0 and remove all buffers but the first one.
+void seek(long position)	Seek to a position in the data.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface org.apache.pdfbox.io.RandomAccessRead]
+available, peek, read, rewind, skip

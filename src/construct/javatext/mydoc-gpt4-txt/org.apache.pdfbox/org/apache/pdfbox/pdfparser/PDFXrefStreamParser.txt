@@ -1,0 +1,15 @@
+[API Name] org.apache.pdfbox.pdfparser.PDFXrefStreamParser
+[Type] Class
+[Info]
+public class PDFXrefStreamParser extends BaseParser This will parse a PDF 1.5 (or better) Xref stream and  extract the xref information from the stream.
+Author: Justin LeFebvre
+[Constructor Summary]
+PDFXrefStreamParser(COSStream stream, COSDocument document)	Constructor.
+[Field Summary]
+PDFXrefStreamParser(COSStream stream, COSDocument document)	Constructor.
+[Method Summary]
+void parse(XrefTrailerResolver resolver)	Parses through the unfiltered stream and populates the xrefTable HashMap.
+[Methods inherited from class org.apache.pdfbox.pdfparser.BaseParser]
+getObjectKey, isClosing, isClosing, isDigit, isDigit, isEndOfName, isEOF, isEOL, isEOL, isSpace, isSpace, isWhitespace, isWhitespace, parseCOSArray, parseCOSDictionary, parseCOSName, parseCOSString, parseDirObject, readExpectedChar, readExpectedString, readGenerationNumber, readInt, readLine, readLong, readObjectNumber, readString, readString, readStringNumber, skipSpaces, skipWhiteSpaces
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

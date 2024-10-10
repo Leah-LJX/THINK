@@ -1,0 +1,15 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.fieldtypes.FieldTypeFloat
+[Type] Class
+[Info]
+public class FieldTypeFloat extends FieldType
+[Constructor Summary]
+FieldTypeFloat​(int type, String name)	
+[Field Summary]
+FieldTypeFloat​(int type, String name)	
+[Method Summary]
+Object getValue​(TiffField entry)	
+byte[] writeData​(Object o, ByteOrder byteOrder)	
+[Methods inherited from class org.apache.commons.imaging.formats.tiff.fieldtypes.FieldType]
+getFieldType, getName, getSize, getType
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

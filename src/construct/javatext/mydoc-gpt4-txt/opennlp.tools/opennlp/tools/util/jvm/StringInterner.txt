@@ -1,0 +1,6 @@
+[API Name] opennlp.tools.util.jvm.StringInterner
+[Type] Interface
+[Info]
+public interface StringInterner A marker-interface for a String interner implementation.
+[Method Summary]
+String intern(String sample)	Interns and returns a reference to the representative instance for any collection of string instances that are equal to each other.

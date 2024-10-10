@@ -1,0 +1,29 @@
+[API Name] opennlp.tools.ml.model.AbstractDataIndexer
+[Type] Class
+[Info]
+All Implemented Interfaces: DataIndexer
+Direct Known Subclasses: OnePassDataIndexer, TwoPassDataIndexer
+public abstract class AbstractDataIndexer extends Object implements DataIndexer Abstract DataIndexer implementation for collecting  event and context counts used in training.
+See Also:
+DataIndexer
+[Constructor Summary]
+AbstractDataIndexer()	
+[Field Summary]
+static final int CUTOFF_DEFAULT	
+static final String CUTOFF_PARAM	
+static final boolean SORT_DEFAULT	
+static final String SORT_PARAM	
+[Method Summary]
+int[][] getContexts()	
+int getNumEvents()	
+int[] getNumTimesEventsSeen()	
+String[] getOutcomeLabels()	
+int[] getOutcomeList()	
+int[] getPredCounts()	
+String[] getPredLabels()	
+float[][] getValues()	
+void init(TrainingParameters indexingParameters, Map<String,String> reportMap)	Sets parameters used during the data indexing.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface opennlp.tools.ml.model.DataIndexer]
+index

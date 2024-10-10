@@ -1,0 +1,10 @@
+[API Name] org.apache.pdfbox.multipdf.PDFCloneUtility
+[Type] Class
+[Info]
+public class PDFCloneUtility extends Object Utility class used to clone PDF objects. It keeps track of objects it has already cloned.
+[Constructor Summary]
+protected PDFCloneUtility(PDDocument dest)	Creates a new instance for the given target document.
+[Method Summary]
+<TCOSBase extends COSBase>TCOSBase cloneForNewDocument(TCOSBase base)	Deep-clones the given object for inclusion into a different PDF document identified by the destination parameter.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

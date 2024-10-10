@@ -1,0 +1,14 @@
+[API Name] org.apache.pdfbox.pdmodel.encryption.PublicKeyDecryptionMaterial
+[Type] Class
+[Info]
+public class PublicKeyDecryptionMaterial extends DecryptionMaterial This class holds necessary information to decrypt a PDF document  protected by the public key security handler.
+ To decrypt such a document, we need:   a valid X509 certificate which correspond to one of the recipient of the document the private key corresponding to this certificate  the password to decrypt the private key if necessary
+Author: Benoit Guillon
+[Constructor Summary]
+PublicKeyDecryptionMaterial(KeyStore keystore, String a, String pwd)	Create a new public key decryption material.
+[Method Summary]
+X509Certificate getCertificate()	Returns the certificate contained in the keystore.
+String getPassword()	Returns the password given by the user and that will be used to open the private key.
+Key getPrivateKey()	returns The private key that will be used to open the document protection.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

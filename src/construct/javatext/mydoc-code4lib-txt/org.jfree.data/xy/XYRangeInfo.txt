@@ -1,0 +1,8 @@
+[Class] org.jfree.data.xy.XYRangeInfo
+[Flag] Interface
+[Info]
+All Known Implementing Classes: TimeSeriesCollection
+[Constructor Summary]
+
+[Method Summary]
+Range getRangeBounds(List visibleSeriesKeys, Range xRange, boolean includeInterval)	Returns the range of the values in this dataset's range.

@@ -1,0 +1,35 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.constants.TiffDirectoryType
+[Type] Enum
+[Info]
+All Implemented Interfaces: Serializable, Comparable<TiffDirectoryType>
+public enum TiffDirectoryType extends Enum<TiffDirectoryType>
+[Enum Constant Summary]
+EXIF_DIRECTORY_EXIF_IFD	
+EXIF_DIRECTORY_GPS	
+EXIF_DIRECTORY_INTEROP_IFD	
+EXIF_DIRECTORY_MAKER_NOTES	
+TIFF_DIRECTORY_IFD0	
+TIFF_DIRECTORY_IFD1	
+TIFF_DIRECTORY_IFD2	
+TIFF_DIRECTORY_IFD3	
+[Field Summary]
+int directoryType	
+static TiffDirectoryType EXIF_DIRECTORY_IFD0	
+static TiffDirectoryType EXIF_DIRECTORY_IFD1	
+static TiffDirectoryType EXIF_DIRECTORY_IFD2	
+static TiffDirectoryType EXIF_DIRECTORY_IFD3	
+static TiffDirectoryType EXIF_DIRECTORY_SUB_IFD	
+static TiffDirectoryType EXIF_DIRECTORY_SUB_IFD1	
+static TiffDirectoryType EXIF_DIRECTORY_SUB_IFD2	
+static TiffDirectoryType EXIF_DIRECTORY_UNKNOWN	
+String name	
+static TiffDirectoryType TIFF_DIRECTORY_ROOT	
+[Method Summary]
+static TiffDirectoryType getExifDirectoryType​(int type)	
+boolean isImageDirectory()	
+static TiffDirectoryType valueOf​(String name)	Returns the enum constant of this type with the specified name.
+static TiffDirectoryType[] values()	Returns an array containing the constants of this enum type, in the order they are declared.
+[Methods inherited from class java.lang.Enum]
+clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, toString, valueOf
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

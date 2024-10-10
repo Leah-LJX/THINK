@@ -1,0 +1,10 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.constants.AdobePhotoshopTagConstants
+[Type] Class
+[Info]
+public final class AdobePhotoshopTagConstants extends Object TIFF specification supplement 2    Adobe Photoshop (R) TIFF Technical Notes    http://partners.adobe.com/public/developer/en/tiff/TIFFphotoshop.pdf
+[Field Summary]
+static List<TagInfo> ALL_ADOBE_PHOTOSHOP_TAGS	
+static TagInfoUndefineds EXIF_TAG_IMAGE_SOURCE_DATA	
+static TagInfoUndefineds EXIF_TAG_JPEGTABLES	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

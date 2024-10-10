@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.multipdf.Splitter
+[Type] Class
+[Info]
+public class Splitter extends Object Split a document into several other documents.
+Author: Mario Ivankovits, Ben Litchfield, Tilman Hausherr
+[Constructor Summary]
+Splitter()	
+[Method Summary]
+protected PDDocument createNewDocument()	Create a new document to write the split contents to.
+protected PDDocument getDestinationDocument()	The source PDF document.
+protected PDDocument getSourceDocument()	The source PDF document.
+org.apache.pdfbox.io.RandomAccessStreamCache.StreamCacheCreateFunction getStreamCacheCreateFunction()	
+protected void processPage(PDPage page)	Interface to start processing a new page.
+void setEndPage(int end)	This will set the end page.
+void setSplitAtPage(int split)	This will tell the splitting algorithm where to split the pages.
+void setStartPage(int start)	This will set the start page.
+void setStreamCacheCreateFunction(org.apache.pdfbox.io.RandomAccessStreamCache.StreamCacheCreateFunction streamCacheCreateFunction)	Set the current function to be used to create an instance of stream cache.
+List<PDDocument> split(PDDocument document)	This will take a document and split into several other documents.
+protected boolean splitAtPage(int pageNumber)	Check if it is necessary to create a new document.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

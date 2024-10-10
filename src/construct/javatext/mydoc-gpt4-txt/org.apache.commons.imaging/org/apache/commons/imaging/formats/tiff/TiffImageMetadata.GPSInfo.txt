@@ -1,0 +1,22 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.TiffImageMetadata.GPSInfo
+[Type] Class
+[Info]
+Enclosing class: TiffImageMetadata
+public static class TiffImageMetadata.GPSInfo extends Object
+[Constructor Summary]
+GPSInfo​(String latitudeRef, String longitudeRef, RationalNumber latitudeDegrees, RationalNumber latitudeMinutes, RationalNumber latitudeSeconds, RationalNumber longitudeDegrees, RationalNumber longitudeMinutes, RationalNumber longitudeSeconds)	
+[Field Summary]
+RationalNumber latitudeDegrees	
+RationalNumber latitudeMinutes	
+String latitudeRef	
+RationalNumber latitudeSeconds	
+RationalNumber longitudeDegrees	
+RationalNumber longitudeMinutes	
+String longitudeRef	
+RationalNumber longitudeSeconds	
+[Method Summary]
+double getLatitudeAsDegreesNorth()	
+double getLongitudeAsDegreesEast()	
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

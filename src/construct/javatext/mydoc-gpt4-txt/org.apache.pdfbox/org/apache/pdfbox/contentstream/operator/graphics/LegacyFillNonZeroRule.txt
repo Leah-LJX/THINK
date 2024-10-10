@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.contentstream.operator.graphics.LegacyFillNonZeroRule
+[Type] Class
+[Info]
+public final class LegacyFillNonZeroRule extends FillNonZeroRule F Fill path using non zero winding rule. Included only for compatibility with Acrobat.
+Author: John Hewson
+[Constructor Summary]
+LegacyFillNonZeroRule(PDFGraphicsStreamEngine context)	
+[Method Summary]
+String getName()	Returns the name of this operator, e.g.
+[Methods inherited from class org.apache.pdfbox.contentstream.operator.graphics.FillNonZeroRule]
+process
+[Methods inherited from class org.apache.pdfbox.contentstream.operator.graphics.GraphicsOperatorProcessor]
+getGraphicsContext
+[Methods inherited from class org.apache.pdfbox.contentstream.operator.OperatorProcessor]
+checkArrayTypesClass, getContext
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

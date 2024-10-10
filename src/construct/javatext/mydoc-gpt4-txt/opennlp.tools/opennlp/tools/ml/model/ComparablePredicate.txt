@@ -1,0 +1,18 @@
+[API Name] opennlp.tools.ml.model.ComparablePredicate
+[Type] Class
+[Info]
+All Implemented Interfaces: Comparable<ComparablePredicate>
+public class ComparablePredicate extends Object implements Comparable<ComparablePredicate> A maxent predicate representation which we can use to sort based on the  outcomes. This allows us to make the mapping of features to their parameters  much more compact.
+[Constructor Summary]
+ComparablePredicate(String n, int[] ocs, double[] ps)	
+[Field Summary]
+final String name	
+final int[] outcomes	
+final double[] params	
+[Method Summary]
+int compareTo(ComparablePredicate cp)	
+boolean equals(Object obj)	
+int hashCode()	
+String toString()	
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

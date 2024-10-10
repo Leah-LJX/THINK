@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.annotations.XYBoxAnnotation
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Annotation, XYAnnotation, org.jfree.util.PublicCloneable
+[Constructor Summary]
+XYBoxAnnotation(double x0, double y0, double x1, double y1) Creates a new annotation (where, by default, the box is drawn with a black outline).
+[Method Summary]
+Object clone() Returns a clone.

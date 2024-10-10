@@ -1,0 +1,18 @@
+[API Name] opennlp.tools.formats.brat.AnnotationConfiguration
+[Type] Class
+[Info]
+public class AnnotationConfiguration extends Object
+[Constructor Summary]
+AnnotationConfiguration(Map<String,String> typeToClassMap)	
+[Field Summary]
+static final String ATTRIBUTE_TYPE	
+static final String ENTITY_TYPE	
+static final String EVENT_TYPE	
+static final String RELATION_TYPE	
+static final String SPAN_TYPE	
+[Method Summary]
+String getTypeClass(String type)	
+static AnnotationConfiguration parse(File annConfigFile)	
+static AnnotationConfiguration parse(InputStream in)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

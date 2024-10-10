@@ -1,0 +1,22 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.action.PDActionRemoteGoTo
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable, PDDestinationOrAction
+public class PDActionRemoteGoTo extends PDAction This represents a remote go-to action that can be executed in a PDF document.
+Author: Ben Litchfield, Panagiotis Toumasis
+[Constructor Summary]
+PDActionRemoteGoTo()	Default constructor.
+PDActionRemoteGoTo(COSDictionary a)	Constructor.
+[Field Summary]
+static String SUB_TYPE	This type of action this object represents.
+[Method Summary]
+COSBase getD()	This will get the destination to jump to.
+PDFileSpecification getFile()	This will get the file in which the destination is located.
+OpenMode getOpenInNewWindow()	This will specify whether to open the destination document in a new window, in the same window, or behave in accordance with the current user preference.
+void setD(COSBase d)	This will set the destination to jump to.
+void setFile(PDFileSpecification fs)	This will set the file in which the destination is located.
+void setOpenInNewWindow(OpenMode value)	This will specify whether to open the destination document in a new window.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.action.PDAction]
+getCOSObject, getNext, getSubType, getType, setNext, setSubType, setType
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.formats.masc.MascSentenceSampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<SentenceSample>
+public class MascSentenceSampleStream extends FilterObjectStream<MascDocument,SentenceSample>
+[Constructor Summary]
+MascSentenceSampleStream(ObjectStream<MascDocument> samples, int sentencesPerSample)	
+[Method Summary]
+void close()	Closes the ObjectStream and releases all allocated resources.
+SentenceSample read()	Reads a new sample of sentences.
+void reset()	Repositions the stream at the beginning and the previously seen object sequence will be repeated exactly.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

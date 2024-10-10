@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.PDFourColours
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDFourColours extends Object implements COSObjectable An object for four colours.
+Author: Johannes Koch
+[Constructor Summary]
+PDFourColours()	
+PDFourColours(COSArray array)	
+[Method Summary]
+PDGamma getAfterColour()	Gets the colour for the after edge.
+PDGamma getBeforeColour()	Gets the colour for the before edge.
+COSBase getCOSObject()	Convert this standard java object to a COS object.
+PDGamma getEndColour()	Gets the colour for the end edge.
+PDGamma getStartColour()	Gets the colour for the start edge.
+void setAfterColour(PDGamma colour)	Sets the colour for the after edge.
+void setBeforeColour(PDGamma colour)	Sets the colour for the before edge.
+void setEndColour(PDGamma colour)	Sets the colour for the end edge.
+void setStartColour(PDGamma colour)	Sets the colour for the start edge.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,41 @@
+[Class] org.joda.time.PeriodType
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+protected 	PeriodType(String name,	DurationFieldType[] types,	int[] indices)	Constructor.
+[Method Summary]
+static PeriodType days() Gets a type that defines just the days field.
+static PeriodType dayTime() Gets a type that defines all standard fields from days downwards.
+boolean equals(Object obj) Compares this type to another object.
+static PeriodType forFields(DurationFieldType[] types) Gets a period type that contains the duration types of the array.
+DurationFieldType getFieldType(int index) Gets the field type by index.
+String getName() Gets the name of the period type.
+int hashCode() Returns a hashcode based on the field types.
+static PeriodType hours() Gets a type that defines just the hours field.
+int indexOf(DurationFieldType type) Gets the index of the field in this period.
+boolean isSupported(DurationFieldType type) Checks whether the field specified is supported by this period.
+static PeriodType millis() Gets a type that defines just the millis field.
+static PeriodType minutes() Gets a type that defines just the minutes field.
+static PeriodType months() Gets a type that defines just the months field.
+static PeriodType seconds() Gets a type that defines just the seconds field.
+int size() Gets the number of fields in the period type.
+static PeriodType standard() Gets a type that defines all standard fields.
+static PeriodType time() Gets a type that defines all standard time fields.
+String toString() Gets a debugging to string.
+static PeriodType weeks() Gets a type that defines just the weeks field.
+PeriodType withDaysRemoved() Returns a version of this PeriodType instance that does not support days.
+PeriodType withHoursRemoved() Returns a version of this PeriodType instance that does not support hours.
+PeriodType withMillisRemoved() Returns a version of this PeriodType instance that does not support milliseconds.
+PeriodType withMinutesRemoved() Returns a version of this PeriodType instance that does not support minutes.
+PeriodType withMonthsRemoved() Returns a version of this PeriodType instance that does not support months.
+PeriodType withSecondsRemoved() Returns a version of this PeriodType instance that does not support seconds.
+PeriodType withWeeksRemoved() Returns a version of this PeriodType instance that does not support weeks.
+PeriodType withYearsRemoved() Returns a version of this PeriodType instance that does not support years.
+static PeriodType yearDay() Gets a type that defines the year and day fields.
+static PeriodType yearDayTime() Gets a type that defines all standard fields except months and weeks.
+static PeriodType yearMonthDay() Gets a type that defines the year, month and day fields.
+static PeriodType yearMonthDayTime() Gets a type that defines all standard fields except weeks.
+static PeriodType years() Gets a type that defines just the years field.
+static PeriodType yearWeekDay() Gets a type that defines year, week and day fields.
+static PeriodType yearWeekDayTime() Gets a type that defines all standard fields except months.

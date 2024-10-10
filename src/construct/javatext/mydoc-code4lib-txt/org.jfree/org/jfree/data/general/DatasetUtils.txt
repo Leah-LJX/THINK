@@ -1,0 +1,65 @@
+[Class] org.jfree.data.general.DatasetUtils
+[Flag] Class
+[Info]
+Parameters: dataset - the dataset (null not permitted).
+Returns: The total.
+[Constructor Summary]
+
+[Method Summary]
+static double calculatePieDatasetTotal(PieDataset dataset)	Calculates the total of all the values in a PieDataset.
+static double calculateStackTotal(TableXYDataset dataset, int item)	Calculates the total for the y-values in all series for a given item index.
+static CategoryDataset createCategoryDataset(Comparable[] rowKeys, Comparable[] columnKeys, double[][] data)	Creates a CategoryDataset that contains a copy of the data in an array (instances of double are created to represent the data items).
+static CategoryDataset createCategoryDataset(Comparable rowKey, KeyedValues rowData)	Creates a CategoryDataset by copying the data from the supplied KeyedValues instance.
+static CategoryDataset createCategoryDataset(String rowKeyPrefix, String columnKeyPrefix, double[][] data)	Creates a CategoryDataset that contains a copy of the data in an array (instances of double are created to represent the data items).
+static CategoryDataset createCategoryDataset(String rowKeyPrefix, String columnKeyPrefix, Number[][] data)	Creates a CategoryDataset that contains a copy of the data in an array.
+static PieDataset createConsolidatedPieDataset(PieDataset source, Comparable key, double minimumPercent)	Creates a new pie dataset based on the supplied dataset, but modified by aggregating all the low value items (those whose value is lower than the percentThreshold) into a single item with the key "Other".
+static PieDataset createConsolidatedPieDataset(PieDataset source, Comparable key, double minimumPercent, int minItems)	Creates a new pie dataset based on the supplied dataset, but modified by aggregating all the low value items (those whose value is lower than the percentThreshold) into a single item.
+static PieDataset createPieDatasetForColumn(CategoryDataset dataset, int column)	Creates a pie dataset from a CategoryDataset by taking all the values for a single column.
+static PieDataset createPieDatasetForColumn(CategoryDataset dataset, Comparable columnKey)	Creates a pie dataset from a table dataset by taking all the values for a single column.
+static PieDataset createPieDatasetForRow(CategoryDataset dataset, int row)	Creates a pie dataset from a table dataset by taking all the values for a single row.
+static PieDataset createPieDatasetForRow(CategoryDataset dataset, Comparable rowKey)	Creates a pie dataset from a table dataset by taking all the values for a single row.
+static Range findCumulativeRangeBounds(CategoryDataset dataset)	Calculates the range of values for a dataset where each item is the running total of the items for the current series.
+static Range findDomainBounds(XYDataset dataset)	Returns the range of values in the domain (x-values) of a dataset.
+static Range findDomainBounds(XYDataset dataset, boolean includeInterval)	Returns the range of values in the domain (x-values) of a dataset.
+static Range findDomainBounds(XYDataset dataset, List visibleSeriesKeys, boolean includeInterval)	Returns the bounds of the x-values in the specified dataset taking into account only the visible series and including any x-interval if requested.
+static int[] findItemIndicesForX(XYDataset dataset, int series, double x)	Finds the indices of the the items in the dataset that span the specified x-value.
+static Number findMaximumDomainValue(XYDataset dataset)	Returns the maximum domain value for the specified dataset.
+static Number findMaximumRangeValue(CategoryDataset dataset)	Returns the maximum range value for the specified dataset.
+static Number findMaximumRangeValue(XYDataset dataset)	Returns the maximum range value for the specified dataset.
+static Number findMaximumStackedRangeValue(CategoryDataset dataset)	Returns the maximum value in the dataset range, assuming that values in each category are "stacked".
+static Number findMinimumDomainValue(XYDataset dataset)	Finds the minimum domain (or X) value for the specified dataset.
+static Number findMinimumRangeValue(CategoryDataset dataset)	Returns the minimum range value for the specified dataset.
+static Number findMinimumRangeValue(XYDataset dataset)	Returns the minimum range value for the specified dataset.
+static Number findMinimumStackedRangeValue(CategoryDataset dataset)	Returns the minimum value in the dataset range, assuming that values in each category are "stacked".
+static Range findRangeBounds(CategoryDataset dataset)	Returns the range of values in the range for the dataset.
+static Range findRangeBounds(CategoryDataset dataset, boolean includeInterval)	Returns the range of values in the range for the dataset.
+static Range findRangeBounds(CategoryDataset dataset, List visibleSeriesKeys, boolean includeInterval)	Finds the bounds of the y-values in the specified dataset, including only those series that are listed in visibleSeriesKeys.
+static Range findRangeBounds(XYDataset dataset)	Returns the range of values in the range for the dataset.
+static Range findRangeBounds(XYDataset dataset, boolean includeInterval)	Returns the range of values in the range for the dataset.
+static Range findRangeBounds(XYDataset dataset, List visibleSeriesKeys, Range xRange, boolean includeInterval)	Finds the bounds of the y-values in the specified dataset, including only those series that are listed in visibleSeriesKeys, and those items whose x-values fall within the specified range.
+static Range findStackedRangeBounds(CategoryDataset dataset)	Returns the minimum and maximum values for the dataset's range (y-values), assuming that the series in one category are stacked.
+static Range findStackedRangeBounds(CategoryDataset dataset, double base)	Returns the minimum and maximum values for the dataset's range (y-values), assuming that the series in one category are stacked.
+static Range findStackedRangeBounds(CategoryDataset dataset, KeyToGroupMap map)	Returns the minimum and maximum values for the dataset's range (y-values), assuming that the series in one category are stacked.
+static Range findStackedRangeBounds(TableXYDataset dataset)	Returns the minimum and maximum values for the dataset's range, assuming that the series are stacked.
+static Range findStackedRangeBounds(TableXYDataset dataset, double base)	Returns the minimum and maximum values for the dataset's range, assuming that the series are stacked, using the specified base value.
+static double findYValue(XYDataset dataset, int series, double x)	Returns the interpolated value of y that corresponds to the specified x-value in the given series.
+static Range findZBounds(XYZDataset dataset)	Returns the range of values in the z-dimension for the dataset.
+static Range findZBounds(XYZDataset dataset, boolean includeInterval)	Returns the range of values in the z-dimension for the dataset.
+static Range findZBounds(XYZDataset dataset, List visibleSeriesKeys, Range xRange, boolean includeInterval)	Finds the bounds of the z-values in the specified dataset, including only those series that are listed in visibleSeriesKeys, and those items whose x-values fall within the specified range.
+static boolean isEmptyOrNull(CategoryDataset dataset)	Returns true if the dataset is empty (or null), and false otherwise.
+static boolean isEmptyOrNull(PieDataset dataset)	Returns true if the dataset is empty (or null), and false otherwise.
+static boolean isEmptyOrNull(XYDataset dataset)	Returns true if the dataset is empty (or null), and false otherwise.
+static Range iterateDomainBounds(XYDataset dataset)	Iterates over the items in an XYDataset to find the range of x-values.
+static Range iterateDomainBounds(XYDataset dataset, boolean includeInterval)	Iterates over the items in an XYDataset to find the range of x-values.
+static Range iterateRangeBounds(CategoryDataset dataset)	Iterates over the data item of the category dataset to find the range bounds.
+static Range iterateRangeBounds(CategoryDataset dataset, boolean includeInterval)	Iterates over the data item of the category dataset to find the range bounds.
+static Range iterateRangeBounds(XYDataset dataset)	Iterates over the data item of the xy dataset to find the range bounds.
+static Range iterateRangeBounds(XYDataset dataset, boolean includeInterval)	Iterates over the data items of the xy dataset to find the range bounds.
+static Range iterateToFindDomainBounds(XYDataset dataset, List visibleSeriesKeys, boolean includeInterval)	Returns the range of x-values in the specified dataset for the data items belonging to the visible series.
+static Range iterateToFindRangeBounds(CategoryDataset dataset, List visibleSeriesKeys, boolean includeInterval)	Iterates over the data item of the category dataset to find the range bounds.
+static Range iterateToFindRangeBounds(XYDataset dataset, List visibleSeriesKeys, Range xRange, boolean includeInterval)	Returns the range of y-values in the specified dataset for the data items belonging to the visible series and with x-values in the given range.
+static Range iterateToFindZBounds(XYZDataset dataset, List visibleSeriesKeys, Range xRange, boolean includeInterval)	Returns the range of z-values in the specified dataset for the data items belonging to the visible series and with x-values in the given range.
+static Range iterateZBounds(XYZDataset dataset)	Iterates over the data item of the xyz dataset to find the z-dimension bounds.
+static Range iterateZBounds(XYZDataset dataset, boolean includeInterval)	Iterates over the data items of the xyz dataset to find the z-dimension bounds.
+static XYDataset sampleFunction2D(Function2D f, double start, double end, int samples, Comparable seriesKey)	Creates an XYDataset by sampling the specified function over a fixed range.
+static XYSeries sampleFunction2DToSeries(Function2D f, double start, double end, int samples, Comparable seriesKey)	Creates an XYSeries by sampling the specified function over a fixed range.

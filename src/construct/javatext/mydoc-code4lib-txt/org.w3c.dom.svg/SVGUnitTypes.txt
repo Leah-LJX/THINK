@@ -1,0 +1,7 @@
+[Class] org.w3c.dom.svg.SVGUnitTypes
+[Flag] Interface
+[Info]
+All Known Subinterfaces: SVGClipPathElement, SVGFilterElement, SVGGradientElement, SVGLinearGradientElement, SVGMaskElement, SVGPatternElement, SVGRadialGradientElement
+[Constructor Summary]
+
+[Method Summary]

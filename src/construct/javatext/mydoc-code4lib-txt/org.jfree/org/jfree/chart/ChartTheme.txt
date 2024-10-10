@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.ChartTheme
+[Flag] Interface
+[Info]
+All Known Implementing Classes: StandardChartTheme
+[Constructor Summary]
+
+[Method Summary]
+void apply(JFreeChart chart) Applies this theme to the supplied chart.

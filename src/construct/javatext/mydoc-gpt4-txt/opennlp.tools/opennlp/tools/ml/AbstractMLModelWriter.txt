@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.ml.AbstractMLModelWriter
+[Type] Class
+[Info]
+Direct Known Subclasses: GISModelWriter, NaiveBayesModelWriter, PerceptronModelWriter
+public abstract class AbstractMLModelWriter extends AbstractModelWriter
+[Constructor Summary]
+AbstractMLModelWriter()	
+[Method Summary]
+void persist()	Serializes the model using the AbstractModelWriter.writeUTF(String), AbstractModelWriter.writeDouble(double), or AbstractModelWriter.writeInt(int)} methods implemented by extending classes.
+[Methods inherited from class opennlp.tools.ml.model.AbstractModelWriter]
+close, writeDouble, writeInt, writeUTF
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

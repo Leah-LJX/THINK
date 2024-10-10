@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.imagemap.StandardToolTipTagFragmentGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: ToolTipTagFragmentGenerator
+[Constructor Summary]
+StandardToolTipTagFragmentGenerator() Creates a new instance.
+[Method Summary]
+String generateToolTipFragment(String toolTipText) Generates a tooltip string to go in an HTML image map.

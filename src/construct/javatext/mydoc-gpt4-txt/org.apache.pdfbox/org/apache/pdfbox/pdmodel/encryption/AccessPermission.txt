@@ -1,0 +1,37 @@
+[API Name] org.apache.pdfbox.pdmodel.encryption.AccessPermission
+[Type] Class
+[Info]
+public class AccessPermission extends Object This class represents the access permissions to a document.  These permissions are specified in the PDF format specifications, they include:   print the document modify the content of the document copy or extract content of the document add or modify annotations fill in interactive form fields extract text and graphics for accessibility to visually impaired people assemble the document print in degraded quality
+ This class can be used to protect a document by assigning access permissions to recipients.  In this case, it must be used with a specific ProtectionPolicy.
+ When a document is decrypted, it has a currentAccessPermission property which is the access permissions  granted to the user who decrypted the document.
+Author: Ben Litchfield, Benoit Guillon See Also: ProtectionPolicy,  PDDocument.getCurrentAccessPermission()
+[Constructor Summary]
+AccessPermission()	Create a new access permission object.
+AccessPermission(byte[] b)	Create a new access permission object from a byte array.
+AccessPermission(int permissions)	Creates a new access permission object from a single integer.
+[Method Summary]
+boolean canAssembleDocument()	This will tell if the user can insert/rotate/delete pages.
+boolean canExtractContent()	This will tell if the user can extract text and images from the PDF document.
+boolean canExtractForAccessibility()	This will tell if the user can extract text and images from the PDF document for accessibility purposes.
+boolean canFillInForm()	This will tell if the user can fill in interactive form fields (including signature fields) even if canModifyAnnotations() returns false.
+boolean canModify()	This will tell if the user can modify contents of the document.
+boolean canModifyAnnotations()	This will tell if the user can add or modify text annotations and fill in interactive forms fields and, if canModify() returns true, create or modify interactive form fields (including signature fields).
+boolean canPrint()	This will tell if the user can print.
+boolean canPrintFaithful()	This will tell if the user can print the document in a faithful format or in a degraded format (if print is enabled).
+static AccessPermission getOwnerAccessPermission()	returns an access permission object for a document owner.
+int getPermissionBytes()	The returns an integer representing the access permissions.
+int getPermissionBytesForPublicKey()	This returns an integer representing the access permissions.
+protected boolean hasAnyRevision3PermissionSet()	Indicates if any revision 3 access permission is set or not.
+boolean isOwnerPermission()	This will tell if the access permission corresponds to owner access permission (no restriction).
+boolean isReadOnly()	This will tell if the object has been set as read only.
+void setCanAssembleDocument(boolean allowAssembly)	Set if the user can insert/rotate/delete pages.
+void setCanExtractContent(boolean allowExtraction)	Set if the user can extract content from the document.
+void setCanExtractForAccessibility(boolean allowExtraction)	Set if the user can extract content from the document for accessibility purposes.
+void setCanFillInForm(boolean allowFillingInForm)	Set if the user can fill in interactive form fields (including signature fields) even if canModifyAnnotations() returns false.
+void setCanModify(boolean allowModifications)	Set if the user can modify the document.
+void setCanModifyAnnotations(boolean allowAnnotationModification)	Set if the user can add or modify text annotations and fill in interactive forms fields and, if canModify() returns true, create or modify interactive form fields (including signature fields).
+void setCanPrint(boolean allowPrinting)	Set if the user can print.
+void setCanPrintFaithful(boolean canPrintFaithful)	Set if the user can print the document in a faithful format or in a degraded format (if print is enabled).
+void setReadOnly()	Locks the access permission read only (ie, the setters will have no effects).
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

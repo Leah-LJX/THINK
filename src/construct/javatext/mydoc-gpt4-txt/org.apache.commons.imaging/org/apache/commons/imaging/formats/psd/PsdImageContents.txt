@@ -1,0 +1,17 @@
+[API Name] Package org.apache.commons.imaging.formats.psd.PsdImageContents
+[Type] Class
+[Info]
+public class PsdImageContents extends Object
+[Constructor Summary]
+PsdImageContents​(PsdHeaderInfo header, int ColorModeDataLength, int ImageResourcesLength, int LayerAndMaskDataLength, int Compression)	
+[Field Summary]
+int ColorModeDataLength	
+int Compression	
+PsdHeaderInfo header	
+int ImageResourcesLength	
+int LayerAndMaskDataLength	
+[Method Summary]
+void dump()	
+void dump​(PrintWriter pw)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

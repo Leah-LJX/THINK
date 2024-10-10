@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.labels.AbstractCategoryItemLabelGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, org.jfree.util.PublicCloneable
+Direct Known Subclasses: StandardCategoryItemLabelGenerator, StandardCategoryToolTipGenerator
+[Constructor Summary]
+protected AbstractCategoryItemLabelGenerator(String labelFormat, DateFormat formatter) Creates a label generator with the specified date formatter.
+[Method Summary]
+Object clone() Returns an independent copy of the generator.

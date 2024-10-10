@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.formats.ad.ADPOSSampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<POSSample>
+@Internal public class ADPOSSampleStream extends Object implements ObjectStream<POSSample> Note:  Do not use this class, internal use only!
+[Constructor Summary]
+ADPOSSampleStream(InputStreamFactory in, String charsetName, boolean expandME, boolean includeFeatures)	Creates a new POSSample stream from an InputStreamFactory
+ADPOSSampleStream(ObjectStream<String> lineStream, boolean expandME, boolean includeFeatures)	Creates a new ADPOSSampleStream stream from a ObjectStream<String>, that could be a PlainTextByLineStream object.
+[Method Summary]
+void close()	Closes the ObjectStream and releases all allocated resources.
+POSSample read()	Returns the next ObjectStream object.
+void reset()	Repositions the stream at the beginning and the previously seen object sequence will be repeated exactly.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

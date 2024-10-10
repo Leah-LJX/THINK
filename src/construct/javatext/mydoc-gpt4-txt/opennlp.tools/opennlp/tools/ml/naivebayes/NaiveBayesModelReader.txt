@@ -1,0 +1,18 @@
+[API Name] opennlp.tools.ml.naivebayes.NaiveBayesModelReader
+[Type] Class
+[Info]
+Direct Known Subclasses: BinaryNaiveBayesModelReader, PlainTextNaiveBayesModelReader
+public class NaiveBayesModelReader extends AbstractModelReader The base class for readers of models.  It assumes that models are saved in the following sequence:
+ NaiveBayes (model type identifier)  1. # of parameters (int)  2. # of outcomes (int)     * list of outcome names (String)  3. # of different types of outcome patterns (int)     * list of (int int[])     [# of predicates for which outcome pattern is true] [outcome pattern]  4. # of predicates (int)     * list of predicate names (String)
+See Also:
+NaiveBayesModel AbstractModelReader
+[Constructor Summary]
+NaiveBayesModelReader(File file)	Initializes a NaiveBayesModelReader via a File.
+NaiveBayesModelReader(DataReader dataReader)	Initializes a NaiveBayesModelReader via a DataReader.
+[Method Summary]
+void checkModelType()	Reads the mode type from the underlying reader and informs if it not a Naive Bayes model.
+AbstractModel constructModel()	Constructs a model.
+[Methods inherited from class opennlp.tools.ml.model.AbstractModelReader]
+getModel, readDouble, readInt, readUTF
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

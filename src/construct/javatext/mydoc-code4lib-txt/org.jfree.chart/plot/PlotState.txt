@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.PlotState
+[Flag] Class
+[Info]
+Returns: A map.
+[Constructor Summary]
+PlotState() Creates a new state object.
+[Method Summary]
+Map getSharedAxisStates() Returns a map containing the shared axis states.

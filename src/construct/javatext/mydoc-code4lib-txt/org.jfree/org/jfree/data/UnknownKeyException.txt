@@ -1,0 +1,7 @@
+[Class] org.jfree.data.UnknownKeyException
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+UnknownKeyException(String message)	Creates a new exception.
+[Method Summary]

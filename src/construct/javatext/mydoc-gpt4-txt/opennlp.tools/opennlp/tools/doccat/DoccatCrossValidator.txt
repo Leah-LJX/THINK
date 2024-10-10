@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.doccat.DoccatCrossValidator
+[Type] Class
+[Info]
+public class DoccatCrossValidator extends Object Cross validator for DocumentCategorizer.
+[Constructor Summary]
+DoccatCrossValidator(String languageCode, TrainingParameters mlParams, DoccatFactory factory, DoccatEvaluationMonitor... listeners)	Instantiates a DoccatCrossValidator with the given generators.
+[Method Summary]
+void evaluate(ObjectStream<DocumentSample> samples, int nFolds)	Starts the evaluation.
+double getDocumentAccuracy()	
+long getDocumentCount()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

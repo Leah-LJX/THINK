@@ -1,0 +1,22 @@
+[Class] org.jfree.data.KeyedObjects
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, PublicCloneable
+[Constructor Summary]
+KeyedObjects()	Creates a new collection (initially empty).
+[Method Summary]
+void addObject(Comparable key, Object object)	Adds a new object to the collection, or overwrites an existing object.
+void clear()	Clears all values from the collection.
+Object clone()	Returns a clone of this object.
+boolean equals(Object obj)	Tests this object for equality with an arbitrary object.
+int getIndex(Comparable key)	Returns the index for a given key, or -1.
+int getItemCount()	Returns the number of items (values) in the collection.
+Comparable getKey(int index)	Returns the key at the specified position in the list.
+List getKeys()	Returns a list containing all the keys in the list.
+Object getObject(int item)	Returns an object from the list.
+Object getObject(Comparable key)	Returns the object for a given key.
+int hashCode()	Returns a hash code.
+void insertValue(int position, Comparable key, Object value)	Inserts a new value at the specified position in the dataset or, if there is an existing item with the specified key, updates the value for that item and moves it to the specified position.
+void removeValue(int index)	Removes a value from the collection.
+void removeValue(Comparable key)	Removes a value from the collection.
+void setObject(Comparable key, Object object)	Replaces an existing object, or adds a new object to the collection.

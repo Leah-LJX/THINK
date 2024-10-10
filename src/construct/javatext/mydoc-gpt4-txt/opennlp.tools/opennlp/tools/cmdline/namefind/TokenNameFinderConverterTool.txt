@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.cmdline.namefind.TokenNameFinderConverterTool
+[Type] Class
+[Info]
+public class TokenNameFinderConverterTool extends opennlp.tools.cmdline.AbstractConverterTool<NameSample,BasicFormatParams> Tool to convert multiple data formats into native OpenNLP name finder  training format.
+See Also:
+AbstractConverterTool NameSample
+[Constructor Summary]
+TokenNameFinderConverterTool()	
+[Methods inherited from class opennlp.tools.cmdline.AbstractConverterTool]
+getHelp, getHelp, getShortDescription, run
+[Methods inherited from class opennlp.tools.cmdline.CmdLineTool]
+getName, hasParams
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,9 @@
+[Class] org.jfree.data.general.SeriesChangeListener
+[Flag] Interface
+[Info]
+All Superinterfaces: EventListener
+All Known Implementing Classes: AbstractIntervalXYDataset, AbstractSeriesDataset, AbstractXYDataset, AbstractXYZDataset, CategoryTableXYDataset, DefaultBoxAndWhiskerXYDataset, DefaultHighLowDataset, DefaultIntervalCategoryDataset, DefaultIntervalXYDataset, DefaultOHLCDataset, DefaultTableXYDataset, DefaultWindDataset, DefaultXYDataset, DefaultXYZDataset, DynamicTimeSeriesCollection, HistogramDataset, JDBCXYDataset, MatrixSeriesCollection, OHLCSeriesCollection, SimpleHistogramDataset, TaskSeriesCollection, TimePeriodValuesCollection, TimeSeriesCollection, TimeSeriesTableModel, TimeTableXYDataset, VectorSeriesCollection, XIntervalSeriesCollection, XYBarDataset, XYIntervalSeriesCollection, XYSeriesCollection, XYTaskDataset, YIntervalSeriesCollection
+[Constructor Summary]
+
+[Method Summary]
+void seriesChanged(SeriesChangeEvent event)	Called when an observed series changes in some way.

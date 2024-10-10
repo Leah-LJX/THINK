@@ -1,0 +1,20 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.segments.UnknownSegment
+[Type] Class
+[Info]
+public class UnknownSegment extends GenericSegment
+[Constructor Summary]
+UnknownSegment​(int marker, byte[] bytes)	
+UnknownSegment​(int marker, int markerLength, InputStream is)	
+[Field Summary]
+UnknownSegment​(int marker, byte[] bytes)	
+UnknownSegment​(int marker, int markerLength, InputStream is)	
+[Method Summary]
+String getDescription()	
+[Methods inherited from class org.apache.commons.imaging.formats.jpeg.segments.GenericSegment]
+dump, dump, getSegmentData, getSegmentData, getSegmentDataAsString
+[Methods inherited from class org.apache.commons.imaging.formats.jpeg.segments.Segment]
+getSegmentType, toString
+[Methods inherited from class org.apache.commons.imaging.common.BinaryFileParser]
+debugNumber, debugNumber, getByteOrder, setByteOrder
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

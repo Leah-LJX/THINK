@@ -1,0 +1,12 @@
+[Class] org.w3c.dom.svg.SVGFEDiffuseLightingElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGFilterPrimitiveStandardAttributes, SVGStylable
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedNumber getDiffuseConstant()	 
+ SVGAnimatedString getIn1()	 
+ SVGAnimatedNumber getKernelUnitLengthX()	 
+ SVGAnimatedNumber getKernelUnitLengthY()	 
+ SVGAnimatedNumber getSurfaceScale()

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.block.EntityBlockResult
+[Flag] Interface
+[Info]
+All Known Implementing Classes: BlockResult
+[Constructor Summary]
+
+[Method Summary]
+EntityCollection getEntityCollection() Returns the entity collection.

@@ -1,0 +1,18 @@
+[API Name] opennlp.tools.formats.ad.ADSentenceStream.SentenceParser.TreeElement
+[Type] Class
+[Info]
+Direct Known Subclasses: ADSentenceStream.SentenceParser.Leaf, ADSentenceStream.SentenceParser.Node
+Enclosing class: ADSentenceStream.SentenceParser
+public abstract static class ADSentenceStream.SentenceParser.TreeElement extends Object Represents a tree element, Node or Leaf
+[Constructor Summary]
+TreeElement()	
+[Method Summary]
+int getLevel()	
+String getMorphologicalTag()	
+String getSyntacticTag()	
+boolean isLeaf()	
+void setLevel(int level)	
+void setMorphologicalTag(String morphologicalTag)	
+void setSyntacticTag(String syntacticTag)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

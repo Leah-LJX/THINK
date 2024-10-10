@@ -1,0 +1,13 @@
+[Class] org.w3c.dom.svg.SVGUseElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, EventTarget, Node, SVGElement, SVGExternalResourcesRequired, SVGLangSpace, SVGLocatable, SVGStylable, SVGTests, SVGTransformable, SVGURIReference
+[Constructor Summary]
+
+[Method Summary]
+SVGElementInstance getAnimatedInstanceRoot()	 
+ SVGAnimatedLength getHeight()	 
+ SVGElementInstance getInstanceRoot()	 
+ SVGAnimatedLength getWidth()	 
+ SVGAnimatedLength getX()	 
+ SVGAnimatedLength getY()

@@ -1,0 +1,12 @@
+[Class] org.w3c.dom.svg.SVGRadialGradientElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGExternalResourcesRequired, SVGGradientElement, SVGStylable, SVGUnitTypes, SVGURIReference
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedLength getCx()	 
+ SVGAnimatedLength getCy()	 
+ SVGAnimatedLength getFx()	 
+ SVGAnimatedLength getFy()	 
+ SVGAnimatedLength getR()

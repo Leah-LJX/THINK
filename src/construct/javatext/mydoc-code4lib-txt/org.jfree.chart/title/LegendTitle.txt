@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.title.LegendTitle
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Block, org.jfree.ui.Drawable, org.jfree.util.PublicCloneable
+[Constructor Summary]
+LegendTitle(LegendItemSource source) Constructs a new (empty) legend for the specified source.
+[Method Summary]
+org.jfree.ui.Size2D arrange(Graphics2D g2, RectangleConstraint constraint) Arranges the contents of the block, within the given constraints, and returns the block size.

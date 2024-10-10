@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.category.StandardBarPainter
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, BarPainter
+[Constructor Summary]
+StandardBarPainter() Creates a new instance.
+[Method Summary]
+boolean equals(Object obj) Tests this instance for equality with an arbitrary object.

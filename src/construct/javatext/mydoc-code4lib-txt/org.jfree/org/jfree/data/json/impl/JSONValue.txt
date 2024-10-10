@@ -1,0 +1,14 @@
+[Class] org.jfree.data.json.impl.JSONValue
+[Flag] Class
+[Info]
+Parameters: value - the value.
+out - the output writer.
+Throws: IOException - if there is an I/O problem.
+See Also: JSONObject.writeJSONString(Map, Writer), 
+JSONArray.writeJSONString(List, Writer)
+[Constructor Summary]
+JSONValue()
+[Method Summary]
+static String escape(String s)	Escape quotes, \, /, \r, \n, \b, \f, \t and other control characters (U+0000 through U+001F).
+static String toJSONString(Object value)	Convert an object to JSON text.
+static void writeJSONString(Object value, Writer out)	Encode an object into JSON text and write it to out.

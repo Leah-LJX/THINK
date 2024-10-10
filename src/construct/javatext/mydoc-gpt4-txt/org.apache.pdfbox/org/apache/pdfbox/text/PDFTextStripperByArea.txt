@@ -1,0 +1,26 @@
+[API Name] org.apache.pdfbox.text.PDFTextStripperByArea
+[Type] Class
+[Info]
+public class PDFTextStripperByArea extends PDFTextStripper This will extract text from a specified region in the PDF.
+Author: Ben Litchfield
+[Constructor Summary]
+PDFTextStripperByArea()	Constructor.
+[Field Summary]
+PDFTextStripperByArea()	Constructor.
+[Method Summary]
+void addRegion(String regionName, Rectangle2D rect)	Add a new region to group text by.
+protected float computeFontHeight(PDFont font)	Compute the font height.
+void extractRegions(PDPage page)	Process the page to extract the region text.
+List<String> getRegions()	Get the list of regions that have been setup.
+String getTextForRegion(String regionName)	Get the text for the region, this should be called after extractRegions().
+protected void processTextPosition(TextPosition text)	This will process a TextPosition object and add the text to the list of characters on a page.
+void removeRegion(String regionName)	Delete a region to group text by.
+void setShouldSeparateByBeads(boolean aShouldSeparateByBeads)	This method does nothing in this derived class, because beads and regions are incompatible.
+protected void showGlyph(Matrix textRenderingMatrix, PDFont font, int code, Vector displacement)	Called when a glyph is to be processed.
+protected void writePage()	This will print the processed page text to the output stream.
+[Methods inherited from class org.apache.pdfbox.text.PDFTextStripper]
+endArticle, endDocument, endPage, getAddMoreFormatting, getArticleEnd, getArticleStart, getAverageCharTolerance, getCharactersByArticle, getCurrentPageNo, getDropThreshold, getEndBookmark, getEndPage, getIndentThreshold, getLineSeparator, getListItemPatterns, getOutput, getPageEnd, getPageStart, getParagraphEnd, getParagraphStart, getSeparateByBeads, getSortByPosition, getSpacingTolerance, getStartBookmark, getStartPage, getSuppressDuplicateOverlappingText, getText, getWordSeparator, matchPattern, processPage, processPages, setAddMoreFormatting, setArticleEnd, setArticleStart, setAverageCharTolerance, setDropThreshold, setEndBookmark, setEndPage, setIndentThreshold, setLineSeparator, setListItemPatterns, setPageEnd, setPageStart, setParagraphEnd, setParagraphStart, setSortByPosition, setSpacingTolerance, setStartBookmark, setStartPage, setSuppressDuplicateOverlappingText, setWordSeparator, startArticle, startArticle, startDocument, startPage, writeCharacters, writeLineSeparator, writePageEnd, writePageStart, writeParagraphEnd, writeParagraphSeparator, writeParagraphStart, writeString, writeString, writeText, writeWordSeparator
+[Methods inherited from class org.apache.pdfbox.contentstream.PDFStreamEngine]
+addOperator, applyTextAdjustment, beginMarkedContentSequence, beginText, decreaseLevel, endMarkedContentSequence, endText, getAppearance, getCurrentPage, getGraphicsStackSize, getGraphicsState, getInitialMatrix, getLevel, getResources, getTextLineMatrix, getTextMatrix, increaseLevel, operatorException, processAnnotation, processChildStream, processOperator, processOperator, processSoftMask, processTilingPattern, processTilingPattern, processTransparencyGroup, processType3Stream, restoreGraphicsStack, restoreGraphicsState, saveGraphicsStack, saveGraphicsState, setLineDashPattern, setTextLineMatrix, setTextMatrix, showAnnotation, showFontGlyph, showForm, showText, showTextString, showTextStrings, showTransparencyGroup, showType3Glyph, transformedPoint, transformWidth, unsupportedOperator
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

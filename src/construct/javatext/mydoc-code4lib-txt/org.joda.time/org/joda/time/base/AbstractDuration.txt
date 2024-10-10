@@ -1,0 +1,17 @@
+[Class] org.joda.time.base.AbstractDuration
+[Flag] Class
+[Info]
+All Implemented Interfaces: Comparable<ReadableDuration>, ReadableDuration
+Direct Known Subclasses: BaseDuration
+[Constructor Summary]
+protected 	AbstractDuration()	Constructor.
+[Method Summary]
+int compareTo(ReadableDuration other) Compares this duration with the specified duration based on length.
+boolean equals(Object duration) Compares this object with the specified object for equality based on the millisecond length.
+int hashCode() Gets a hash code for the duration that is compatible with the equals method.
+boolean isEqual(ReadableDuration duration) Is the length of this duration equal to the duration passed in.
+boolean isLongerThan(ReadableDuration duration) Is the length of this duration longer than the duration passed in.
+boolean isShorterThan(ReadableDuration duration) Is the length of this duration shorter than the duration passed in.
+Duration toDuration() Get this duration as an immutable Duration object.
+Period toPeriod() Converts this duration to a Period instance using the standard period type and the ISO chronology.
+String toString() Gets the value as a String in the ISO8601 duration format including only seconds and milliseconds.

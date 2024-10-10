@@ -1,0 +1,29 @@
+[Class] org.joda.time.ReadableInterval
+[Flag] Interface
+[Info]
+All Known Subinterfaces: ReadWritableInterval
+All Known Implementing Classes: AbstractInterval, BaseInterval, Interval, MutableInterval
+[Constructor Summary]
+
+[Method Summary]
+boolean contains(ReadableInstant instant) Does this time interval contain the specified instant.
+boolean contains(ReadableInterval interval) Does this time interval contain the specified time interval.
+boolean equals(Object readableInterval) Compares this object with the specified object for equality based on start and end millis plus the chronology.
+Chronology getChronology() Gets the chronology of the interval, which is the chronology of the first datetime.
+DateTime getEnd() Gets the end of this time interval, which is exclusive, as a DateTime.
+long getEndMillis() Gets the end of this time interval which is exclusive.
+DateTime getStart() Gets the start of this time interval, which is inclusive, as a DateTime.
+long getStartMillis() Gets the start of this time interval which is inclusive.
+int hashCode() Gets a hash code for the time interval that is compatible with the equals method.
+boolean isAfter(ReadableInstant instant) Is this time interval after the specified instant.
+boolean isAfter(ReadableInterval interval) Is this time interval entirely after the specified interval.
+boolean isBefore(ReadableInstant instant) Is this time interval before the specified instant.
+boolean isBefore(ReadableInterval interval) Is this time interval entirely before the specified interval.
+boolean overlaps(ReadableInterval interval) Does this time interval overlap the specified time interval.
+Duration toDuration() Gets the millisecond duration of this time interval.
+long toDurationMillis() Gets the millisecond duration of this time interval.
+Interval toInterval() Get this interval as an immutable Interval object.
+MutableInterval toMutableInterval() Get this time interval as a MutableInterval.
+Period toPeriod() Converts the duration of the interval to a period using the standard period type.
+Period toPeriod(PeriodType type) Converts the duration of the interval to a period using the specified period type.
+String toString() Get the value as a String in the ISO8601 interval format.

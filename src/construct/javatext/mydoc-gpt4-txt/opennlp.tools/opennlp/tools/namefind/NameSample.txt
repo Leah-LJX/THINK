@@ -1,0 +1,26 @@
+[API Name] opennlp.tools.namefind.NameSample
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, Sample
+public class NameSample extends Object implements Sample Encapsulates names for a single unit of text.
+See Also:
+Serialized Form
+[Constructor Summary]
+NameSample(String[] sentence, Span[] names, boolean clearAdaptiveData)	Initializes a NameSample instance with given parameters.
+NameSample(String[] sentence, Span[] names, String[][] additionalContext, boolean clearAdaptiveData)	Initializes a NameSample instance with given parameters.
+NameSample(String id, String[] sentence, Span[] names, String[][] additionalContext, boolean clearAdaptiveData)	Initializes a NameSample instance with given parameters.
+[Field Summary]
+static final String DEFAULT_TYPE	The default type value when there is no type in training data.
+[Method Summary]
+boolean equals(Object obj)	
+String[][] getAdditionalContext()	
+String getId()	
+Span[] getNames()	
+String[] getSentence()	
+int hashCode()	
+boolean isClearAdaptiveDataSet()	
+static NameSample parse(String taggedTokens, boolean clearAdaptiveData)	Parses given input into a NameSample.
+static NameSample parse(String taggedTokens, String defaultType, boolean clearAdaptiveData)	Parses given input into a NameSample.
+String toString()	
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.util.InvalidFormatException
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable
+public class InvalidFormatException extends IOException This exception indicates that a resource violates the expected data format.
+See Also:
+Serialized Form
+[Constructor Summary]
+InvalidFormatException(String message)	
+InvalidFormatException(String message, Throwable t)	
+InvalidFormatException(Throwable t)	
+[Methods inherited from class java.lang.Throwable]
+addSuppressed, fillInStackTrace, getCause, getLocalizedMessage, getMessage, getStackTrace, getSuppressed, initCause, printStackTrace, printStackTrace, printStackTrace, setStackTrace, toString
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, wait, wait, wait

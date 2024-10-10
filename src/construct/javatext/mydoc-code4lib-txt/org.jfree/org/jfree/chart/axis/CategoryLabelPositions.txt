@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.CategoryLabelPositions
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+CategoryLabelPositions() Default constructor.
+[Method Summary]
+static CategoryLabelPositions createDownRotationLabelPositions(double angle) Creates a new instance where the category labels angled downwards by the specified amount.

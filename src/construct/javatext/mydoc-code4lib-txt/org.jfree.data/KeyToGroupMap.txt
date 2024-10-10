@@ -1,0 +1,16 @@
+[Class] org.jfree.data.KeyToGroupMap
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, PublicCloneable
+[Constructor Summary]
+KeyToGroupMap()	Creates a new map with a default group named 'Default Group'.
+KeyToGroupMap(Comparable defaultGroup)	Creates a new map with the specified default group.
+[Method Summary]
+Object clone()	Returns a clone of the map.
+boolean equals(Object obj)	Tests the map for equality against an arbitrary object.
+Comparable getGroup(Comparable key)	Returns the group that a key is mapped to.
+int getGroupCount()	Returns the number of groups in the map.
+int getGroupIndex(Comparable group)	Returns the index for the group.
+List getGroups()	Returns a list of the groups (always including the default group) in the map.
+int getKeyCount(Comparable group)	Returns the number of keys mapped to the specified group.
+void mapKeyToGroup(Comparable key, Comparable group)	Maps a key to a group.

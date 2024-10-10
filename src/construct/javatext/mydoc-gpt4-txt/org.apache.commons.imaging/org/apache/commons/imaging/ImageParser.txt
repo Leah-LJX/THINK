@@ -1,0 +1,62 @@
+[API Name] Package org.apache.commons.imaging.ImageParser<T
+[Type] Class
+[Info]
+Type Parameters: T - type of parameters used by this image parser
+Direct Known Subclasses: BmpImageParser, DcxImageParser, GifImageParser, IcnsImageParser, IcoImageParser, JpegImageParser, PcxImageParser, PngImageParser, PnmImageParser, PsdImageParser, RgbeImageParser, TiffImageParser, WbmpImageParser, XbmImageParser, XpmImageParser
+public abstract class ImageParser<T extends ImagingParameters> extends BinaryFileParser Provides the abstract base class for all image reading and writing  utilities.  ImageParser implementations are expected to extend this  class providing logic for identifying and processing data in their  own specific format.   Specific implementations are found  under the com.apache.commons.imaging.formats package.
+ Application Notes Format support
+ For the most recent information on format support for the  Apache Commons Imaging package, refer to  Format Support  at the main project development web site.
+ On the accuracy of this Javadoc
+ The original authors of this class did not supply documentation.  The Javadoc for this class is based on inspection of the  source code.  In some cases, the purpose and usage for particular  methods was deduced from the source and may not perfectly reflect  the intentions of the original. Therefore, you should not assume  that the documentation is perfect, especially in the more obscure  and specialized areas of implementation.
+ The "params" argument Many of the methods specified by this class accept an argument of  type T defining the parameters to be used when  processing an image. For example, some of the output formats permit  of different kinds of image compression or color models. Some of the  reading methods permit the calling application to require strict  format compliance.
+[Constructor Summary]
+ImageParser()	
+[Method Summary]
+boolean canAcceptExtension​(File file)	Indicates whether the ImageParser implementation can accept the specified file based on its extension.
+boolean canAcceptExtension​(String fileName)	Indicates whether the ImageParser implementation can accept the specified file name based on its extension.
+boolean canAcceptType​(ImageFormat type)	Indicates whether the ImageParser implementation can accept the specified format
+String dumpImageFile​(byte[] bytes)	Write the ImageInfo and format-specific information for the image content of the specified byte array to a string.
+String dumpImageFile​(File file)	Write the ImageInfo and format-specific information for the image content of the specified file to a string.
+boolean dumpImageFile​(PrintWriter pw, ByteSource byteSource)	Write the ImageInfo and format-specific information for the image content of the specified byte source to a PrintWriter
+String dumpImageFile​(ByteSource byteSource)	Write the ImageInfo and format-specific information for the image content of the specified byte source to a string.
+protected abstract String[] getAcceptedExtensions()	Get an array of all accepted extensions
+protected abstract ImageFormat[] getAcceptedTypes()	Get an array of ImageFormat objects describing all accepted types
+List<BufferedImage> getAllBufferedImages​(byte[] bytes)	Gets all images specified by the byte array (some formats may include multiple images within a single data source).
+List<BufferedImage> getAllBufferedImages​(File file)	Gets all images specified by indicated file (some formats may include multiple images within a single data source).
+List<BufferedImage> getAllBufferedImages​(ByteSource byteSource)	Gets all images specified by the byte source (some formats may include multiple images within a single data source).
+static List<ImageParser<?>> getAllImageParsers()	Gets an array of new instances of all image parsers.
+BufferedImage getBufferedImage​(byte[] bytes, T params)	Gets a buffered image specified by the byte array (for sources that specify multiple images, choice of which image is returned is implementation dependent).
+BufferedImage getBufferedImage​(File file, T params)	Gets a buffered image specified by the indicated file (for sources that specify multiple images, choice of which image is returned is implementation dependent).
+abstract BufferedImage getBufferedImage​(ByteSource byteSource, T params)	Gets a buffered image specified by the byte source (for sources that specify multiple images, choice of which image is returned is implementation dependent).
+protected BufferedImageFactory getBufferedImageFactory​(T params)	Get an instance of IBufferedImageFactory based on the presence of a specification for ImagingConstants..BUFFERED_IMAGE_FACTORY within the supplied params.
+abstract String getDefaultExtension()	Get the default extension for the format specified by an implementation of ImageParser.
+abstract T getDefaultParameters()	Get a default parameters instance for this parser.
+FormatCompliance getFormatCompliance​(byte[] bytes)	Determines the format compliance of the content of the supplied byte array based on rules provided by a specific implementation.
+FormatCompliance getFormatCompliance​(File file)	Determines the format compliance of the specified file based on rules provided by a specific implementation.
+FormatCompliance getFormatCompliance​(ByteSource byteSource)	Determines the format compliance of the content of the supplied byte source based on rules provided by a specific implementation.
+byte[] getICCProfileBytes​(byte[] bytes)	Get an array of bytes describing the International Color Consortium (ICC) specification for the color space of the image contained in the input byte array.
+byte[] getICCProfileBytes​(byte[] bytes, T params)	Get an array of bytes describing the International Color Consortium (ICC) specification for the color space of the image contained in the input byte array.
+byte[] getICCProfileBytes​(File file)	Get an array of bytes describing the International Color Consortium (ICC) specification for the color space of the image contained in the input file.
+byte[] getICCProfileBytes​(File file, T params)	Get an array of bytes describing the International Color Consortium (ICC) specification for the color space of the image contained in the input file.
+abstract byte[] getICCProfileBytes​(ByteSource byteSource, T params)	Get an array of bytes describing the International Color Consortium (ICC) specification for the color space of the image contained in the input byteSource.
+ImageInfo getImageInfo​(byte[] bytes, T params)	Get image information from the specified array of bytes.
+ImageInfo getImageInfo​(File file, T params)	Get image information from the specified file Format-specific ImageParser implementations are expected to return a valid ImageInfo object or to throw an ImageReadException if unable to process the specified data.
+ImageInfo getImageInfo​(ByteSource byteSource)	Get image information from the specified ByteSource.
+abstract ImageInfo getImageInfo​(ByteSource byteSource, T params)	Get image information from the specified ByteSource.
+Dimension getImageSize​(byte[] bytes)	Get the size of the image described by the specified byte array.
+Dimension getImageSize​(byte[] bytes, T params)	Get the size of the image described by the specified byte array.
+Dimension getImageSize​(File file)	Get the size of the image described by the specified file.
+Dimension getImageSize​(File file, T params)	Get the size of the image described by the specified file.
+abstract Dimension getImageSize​(ByteSource byteSource, T params)	Get the size of the image described by the specified ByteSource.
+ImageMetadata getMetadata​(byte[] bytes)	Get image metadata from the specified array of bytes.
+ImageMetadata getMetadata​(byte[] bytes, T params)	Get image metadata from the specified array of bytes.
+ImageMetadata getMetadata​(File file)	Get image metadata from the specified file.
+ImageMetadata getMetadata​(File file, T params)	Get image metadata from the specified file.
+ImageMetadata getMetadata​(ByteSource byteSource)	Get image metadata from the specified byte source.
+abstract ImageMetadata getMetadata​(ByteSource byteSource, T params)	Get image metadata from the specified byte source.
+abstract String getName()	Get a descriptive name for the implementation of an ImageParser.
+void writeImage​(BufferedImage src, OutputStream os, T params)	Writes the content of a BufferedImage to the specified output stream.
+[Methods inherited from class org.apache.commons.imaging.common.BinaryFileParser]
+debugNumber, debugNumber, getByteOrder, setByteOrder
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,15 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.datareaders.DataReaderTiled
+[Type] Class
+[Info]
+public final class DataReaderTiled extends ImageDataReader Provides a data reader for TIFF file images organized by tiles.
+[Constructor Summary]
+DataReaderTiled​(TiffDirectory directory, PhotometricInterpreter photometricInterpreter, int tileWidth, int tileLength, int bitsPerPixel, int[] bitsPerSample, int predictor, int samplesPerPixel, int sampleFormat, int width, int height, int compression, TiffPlanarConfiguration planarConfiguration, ByteOrder byteOrder, TiffImageData.Tiles imageData)	
+[Field Summary]
+DataReaderTiled​(TiffDirectory directory, PhotometricInterpreter photometricInterpreter, int tileWidth, int tileLength, int bitsPerPixel, int[] bitsPerSample, int predictor, int samplesPerPixel, int sampleFormat, int width, int height, int compression, TiffPlanarConfiguration planarConfiguration, ByteOrder byteOrder, TiffImageData.Tiles imageData)	
+[Method Summary]
+ImageBuilder readImageData​(Rectangle subImageSpecification, boolean hasAlpha, boolean isAlphaPreMultiplied)	Read the image data from the IFD associated with this instance of ImageDataReader using the optional sub-image specification if desired.
+TiffRasterData readRasterData​(Rectangle subImage)	Defines a method for accessing the floating-point raster data in a TIFF image.
+[Methods inherited from class org.apache.commons.imaging.formats.tiff.datareaders.ImageDataReader]
+applyPredictor, applyPredictorToBlock, decompress, isHomogenous, resetPredictor, unpackFloatingPointSamples, unpackIntSamples
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.labels.PieToolTipGenerator
+[Flag] Interface
+[Info]
+All Known Implementing Classes: StandardPieToolTipGenerator
+[Constructor Summary]
+
+[Method Summary]
+String generateToolTip(PieDataset dataset, Comparable key) Generates a tool tip text item for the specified item in the dataset.

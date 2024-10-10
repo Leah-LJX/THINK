@@ -1,0 +1,45 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationText
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDAnnotationText extends PDAnnotationMarkup This is the class that represents a text annotation.
+Author: Paul King
+[Constructor Summary]
+PDAnnotationText()	Constructor.
+PDAnnotationText(COSDictionary field)	Creates a Text annotation from a COSDictionary, expected to be a correct object definition.
+[Field Summary]
+static String NAME_CHECK	Constant for the name of a check annotation.
+static String NAME_CIRCLE	Constant for the name of a circle annotation.
+static String NAME_COMMENT	Constant for the name of a text annotation.
+static String NAME_CROSS	Constant for the name of a cross annotation.
+static String NAME_CROSS_HAIRS	Constant for the name of a crosshairs annotation.
+static String NAME_HELP	Constant for the name of a text annotation.
+static String NAME_INSERT	Constant for the name of a text annotation.
+static String NAME_KEY	Constant for the name of a text annotation.
+static String NAME_NEW_PARAGRAPH	Constant for the name of a text annotation.
+static String NAME_NOTE	Constant for the name of a text annotation.
+static String NAME_PARAGRAPH	Constant for the name of a text annotation.
+static String NAME_RIGHT_ARROW	Constant for the name of a right arrow annotation.
+static String NAME_RIGHT_POINTER	Constant for the name of a right pointer annotation.
+static String NAME_STAR	Constant for the name of a star annotation.
+static String NAME_UP_ARROW	Constant for the name of a crosshairs annotation.
+static String NAME_UP_LEFT_ARROW	Constant for the name of a crosshairs annotation.
+static String SUB_TYPE	The type of annotation.
+[Method Summary]
+void constructAppearances()	Create the appearance entry for this annotation.
+void constructAppearances(PDDocument document)	Create the appearance entry for this annotation.
+String getName()	This will retrieve the name (and hence appearance, AP taking precedence) For this annotation.
+boolean getOpen()	This will retrieve the initial state of the annotation, open Or closed (default closed).
+String getState()	This will retrieve the annotation state.
+String getStateModel()	This will retrieve the annotation state model.
+void setCustomAppearanceHandler(PDAppearanceHandler appearanceHandler)	Set a custom appearance handler for generating the annotations appearance streams.
+void setName(String name)	This will set the name (and hence appearance, AP taking precedence) For this annotation.
+void setOpen(boolean open)	This will set initial state of the annotation, open or closed.
+void setState(String state)	This will set the annotation state.
+void setStateModel(String stateModel)	This will set the annotation state model.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationMarkup]
+getBorderStyle, getConstantOpacity, getCreationDate, getExternalData, getInReplyTo, getIntent, getPopup, getReplyType, getRichContents, getSubject, getTitlePopup, setBorderStyle, setConstantOpacity, setCreationDate, setExternalData, setInReplyTo, setIntent, setPopup, setReplyType, setRichContents, setSubject, setTitlePopup
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation]
+createAnnotation, equals, getAnnotationFlags, getAnnotationName, getAppearance, getAppearanceState, getBorder, getColor, getColor, getContents, getCOSObject, getModifiedDate, getNormalAppearanceStream, getOptionalContent, getPage, getRectangle, getStructParent, getSubtype, hashCode, isHidden, isInvisible, isLocked, isLockedContents, isNoRotate, isNoView, isNoZoom, isPrinted, isReadOnly, isToggleNoView, setAnnotationFlags, setAnnotationName, setAppearance, setAppearanceState, setBorder, setColor, setContents, setHidden, setInvisible, setLocked, setLockedContents, setModifiedDate, setModifiedDate, setNoRotate, setNoView, setNoZoom, setOptionalContent, setPage, setPrinted, setReadOnly, setRectangle, setStructParent, setSubtype, setToggleNoView
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, toString, wait, wait, wait

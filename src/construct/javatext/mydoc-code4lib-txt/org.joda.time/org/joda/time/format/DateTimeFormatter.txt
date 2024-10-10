@@ -1,0 +1,48 @@
+[Class] org.joda.time.format.DateTimeFormatter
+[Flag] Class
+[Info]
+Since: 1.0
+[Constructor Summary]
+DateTimeFormatter(DateTimePrinter printer,	DateTimeParser parser)	Creates a new formatter, however you will normally use the factory	 or the builder.
+[Method Summary]
+Chronology getChronolgy() Deprecated. Use the method with the correct spelling
+ Chronology getChronology() Gets the chronology to use as an override.
+int getDefaultYear() Gets the default year for parsing months and days.
+Locale getLocale() Gets the locale that will be used for printing and parsing.
+DateTimeParser getParser() Gets the internal parser object that performs the real parsing work.
+Integer getPivotYear() Gets the pivot year to use as an override.
+DateTimePrinter getPrinter() Gets the internal printer object that performs the real printing work.
+DateTimeZone getZone() Gets the zone to use as an override.
+boolean isOffsetParsed() Checks whether the offset from the string is used as the zone of the parsed datetime.
+boolean isParser() Is this formatter capable of parsing.
+boolean isPrinter() Is this formatter capable of printing.
+DateTime parseDateTime(String text) Parses a date-time from the given text, returning a new DateTime.
+int parseInto(ReadWritableInstant instant, String text, int position) Parses a datetime from the given text, at the given position, saving the result into the fields of the given ReadWritableInstant.
+LocalDate parseLocalDate(String text) Parses only the local date from the given text, returning a new LocalDate.
+LocalDateTime parseLocalDateTime(String text) Parses only the local date-time from the given text, returning a new LocalDateTime.
+LocalTime parseLocalTime(String text) Parses only the local time from the given text, returning a new LocalTime.
+long parseMillis(String text) Parses a datetime from the given text, returning the number of milliseconds since the epoch, 1970-01-01T00:00:00Z.
+MutableDateTime parseMutableDateTime(String text) Parses a date-time from the given text, returning a new MutableDateTime.
+String print(long instant) Prints a millisecond instant to a String.
+String print(ReadableInstant instant) Prints a ReadableInstant to a String.
+String print(ReadablePartial partial) Prints a ReadablePartial to a new String.
+void printTo(Appendable appendable, long instant) Prints an instant from milliseconds since 1970-01-01T00:00:00Z, using ISO chronology in the default DateTimeZone.
+void printTo(Appendable appendable, ReadableInstant instant) Prints a ReadableInstant, using the chronology supplied by the instant.
+void printTo(Appendable appendable, ReadablePartial partial) Prints a ReadablePartial.
+void printTo(StringBuffer buf, long instant) Prints an instant from milliseconds since 1970-01-01T00:00:00Z, using ISO chronology in the default DateTimeZone.
+void printTo(StringBuffer buf, ReadableInstant instant) Prints a ReadableInstant, using the chronology supplied by the instant.
+void printTo(StringBuffer buf, ReadablePartial partial) Prints a ReadablePartial.
+void printTo(StringBuilder buf, long instant) Prints an instant from milliseconds since 1970-01-01T00:00:00Z, using ISO chronology in the default DateTimeZone.
+void printTo(StringBuilder buf, ReadableInstant instant) Prints a ReadableInstant, using the chronology supplied by the instant.
+void printTo(StringBuilder buf, ReadablePartial partial) Prints a ReadablePartial.
+void printTo(Writer out, long instant) Prints an instant from milliseconds since 1970-01-01T00:00:00Z, using ISO chronology in the default DateTimeZone.
+void printTo(Writer out, ReadableInstant instant) Prints a ReadableInstant, using the chronology supplied by the instant.
+void printTo(Writer out, ReadablePartial partial) Prints a ReadablePartial.
+DateTimeFormatter withChronology(Chronology chrono) Returns a new formatter that will use the specified chronology in preference to that of the printed object, or ISO on a parse.
+DateTimeFormatter withDefaultYear(int defaultYear) Returns a new formatter that will use the specified default year.
+DateTimeFormatter withLocale(Locale locale) Returns a new formatter with a different locale that will be used for printing and parsing.
+DateTimeFormatter withOffsetParsed() Returns a new formatter that will create a datetime with a time zone equal to that of the offset of the parsed string.
+DateTimeFormatter withPivotYear(int pivotYear) Returns a new formatter that will use the specified pivot year for two digit year parsing in preference to that stored in the parser.
+DateTimeFormatter withPivotYear(Integer pivotYear) Returns a new formatter that will use the specified pivot year for two digit year parsing in preference to that stored in the parser.
+DateTimeFormatter withZone(DateTimeZone zone) Returns a new formatter that will use the specified zone in preference to the zone of the printed object, or default zone on a parse.
+DateTimeFormatter withZoneUTC() Returns a new formatter that will use the UTC zone in preference to the zone of the printed object, or default zone on a parse.

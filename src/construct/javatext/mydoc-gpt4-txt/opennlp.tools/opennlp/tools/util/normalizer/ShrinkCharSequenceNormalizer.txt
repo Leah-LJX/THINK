@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.util.normalizer.ShrinkCharSequenceNormalizer
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, CharSequenceNormalizer
+public class ShrinkCharSequenceNormalizer extends Object implements CharSequenceNormalizer A ShrinkCharSequenceNormalizer implementation that shrinks repeated spaces / chars in text.
+See Also:
+Serialized Form
+[Constructor Summary]
+ShrinkCharSequenceNormalizer()	
+[Method Summary]
+static ShrinkCharSequenceNormalizer getInstance()	
+CharSequence normalize(CharSequence text)	Normalizes a sequence of characters.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

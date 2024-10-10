@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.ml.model.MutableContext
+[Type] Class
+[Info]
+public class MutableContext extends Context An extension of Context used to store parameters or expected values  associated with this context which can be updated or assigned.
+See Also:
+Context
+[Constructor Summary]
+MutableContext(int[] outcomePattern, double[] parameters)	Creates a new parameters object with the specified parameters associated with the specified outcome pattern.
+[Method Summary]
+boolean contains(int outcome)	
+void setParameter(int outcomeIndex, double value)	Assigns the parameter or expected value at the specified outcomeIndex the specified value.
+void updateParameter(int outcomeIndex, double value)	Updated the parameter or expected value at the specified outcomeIndex by adding the specified value to its current value.
+[Methods inherited from class opennlp.tools.ml.model.Context]
+equals, getOutcomes, getParameters, hashCode
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, toString, wait, wait, wait

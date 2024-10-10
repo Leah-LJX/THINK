@@ -1,0 +1,16 @@
+[API Name] org.apache.pdfbox.multipdf.PageExtractor
+[Type] Class
+[Info]
+public class PageExtractor extends Object This class will extract one or more sequential pages and create a new document.
+Author: Adam Nichols (adam@apache.org)
+[Constructor Summary]
+PageExtractor(PDDocument sourceDocument)	Creates a new instance of PageExtractor
+PageExtractor(PDDocument sourceDocument, int startPage, int endPage)	Creates a new instance of PageExtractor
+[Method Summary]
+PDDocument extract()	This will take a document and extract the desired pages into a new document.
+int getEndPage()	Gets the last page number (inclusive) to be extracted.
+int getStartPage()	Gets the first page number to be extracted.
+void setEndPage(int endPage)	Sets the last page number to be extracted.
+void setStartPage(int startPage)	Sets the first page number to be extracted.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,23 @@
+[Class] org.joda.time.base.BasePartial
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<ReadablePartial>, ReadablePartial
+Direct Known Subclasses: MonthDay, TimeOfDay, YearMonth, YearMonthDay
+[Constructor Summary]
+protected 	BasePartial()	Constructs a partial with the current time, using ISOChronology in	 the default zone to extract the fields.
+protected 	BasePartial(BasePartial base,	Chronology chrono)	Private constructor to be used by subclasses only which performs no validation.
+protected 	BasePartial(BasePartial base,	int[] values)	Private constructor to be used by subclasses only which performs no validation.
+protected 	BasePartial(Chronology chronology)	Constructs a partial with the current time, using the specified chronology	 and zone to extract the fields.
+protected 	BasePartial(int[] values,	Chronology chronology)	Constructs a partial with specified time field values and chronology.
+protected 	BasePartial(long instant)	Constructs a partial extracting the partial fields from the specified	 milliseconds using the ISOChronology in the default zone.
+protected 	BasePartial(long instant,	Chronology chronology)	Constructs a partial extracting the partial fields from the specified	 milliseconds using the chronology provided.
+protected 	BasePartial(Object instant,	Chronology chronology)	Constructs a partial from an Object that represents a time, using the	 specified chronology.
+protected 	BasePartial(Object instant,	Chronology chronology,	DateTimeFormatter parser)	Constructs a partial from an Object that represents a time, using the	 specified chronology.
+[Method Summary]
+Chronology getChronology() Gets the chronology of the partial which is never null.
+int getValue(int index) Gets the value of the field at the specified index.
+int[] getValues() Gets an array of the value of each of the fields that this partial supports.
+protected void setValue(int index, int value) Sets the value of the field at the specified index.
+protected void setValues(int[] values) Sets the values of all fields.
+String toString(String pattern) Output the date using the specified format pattern.
+String toString(String pattern, Locale locale) Output the date using the specified format pattern.

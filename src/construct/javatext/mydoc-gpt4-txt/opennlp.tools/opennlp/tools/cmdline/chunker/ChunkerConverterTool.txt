@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.cmdline.chunker.ChunkerConverterTool
+[Type] Class
+[Info]
+public class ChunkerConverterTool extends opennlp.tools.cmdline.AbstractConverterTool<ChunkSample,BasicFormatParams> Tool to convert multiple data formats into native OpenNLP chunker training  format.
+See Also:
+AbstractConverterTool ChunkSample
+[Constructor Summary]
+ChunkerConverterTool()	
+[Methods inherited from class opennlp.tools.cmdline.AbstractConverterTool]
+getHelp, getHelp, getShortDescription, run
+[Methods inherited from class opennlp.tools.cmdline.CmdLineTool]
+getName, hasParams
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,18 @@
+[API Name] org.apache.pdfbox.pdmodel.font.PDMMType1Font
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable, PDFontLike, PDVectorFont
+public class PDMMType1Font extends PDType1Font Type 1 Multiple Master Font.
+Author: Ben Litchfield
+[Constructor Summary]
+PDMMType1Font(COSDictionary fontDictionary)	Creates an MMType1Font from a Font dictionary in a PDF.
+[Field Summary]
+PDMMType1Font(COSDictionary fontDictionary)	Creates an MMType1Font from a Font dictionary in a PDF.
+[Methods inherited from class org.apache.pdfbox.pdmodel.font.PDType1Font]
+codeToName, encode, getAverageFontWidth, getBaseFont, getBoundingBox, getFontBoxFont, getFontMatrix, getHeight, getName, getNormalizedPath, getPath, getPath, getType1Font, getWidthFromFont, hasGlyph, hasGlyph, isDamaged, isEmbedded, readCode, readEncodingFromFont
+[Methods inherited from class org.apache.pdfbox.pdmodel.font.PDSimpleFont]
+addToSubset, getEncoding, getGlyphList, getStandard14Width, getSymbolicFlag, hasExplicitWidth, isFontSymbolic, isNonZeroBoundingBox, isStandard14, isSymbolic, isVertical, readEncoding, subset, toUnicode, toUnicode, willBeSubset
+[Methods inherited from class org.apache.pdfbox.pdmodel.font.PDFont]
+encode, equals, getCOSObject, getDisplacement, getFontDescriptor, getPositionVector, getSpaceWidth, getStandard14AFM, getStringWidth, getSubType, getToUnicodeCMap, getType, getWidth, getWidths, hashCode, readCMap, setFontDescriptor, toString
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

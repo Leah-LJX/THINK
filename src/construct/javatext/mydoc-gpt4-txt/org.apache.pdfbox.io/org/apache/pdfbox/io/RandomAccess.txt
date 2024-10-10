@@ -1,0 +1,13 @@
+[API Name] org.apache.pdfbox.io.RandomAccess
+[Type] Interface
+[Info]
+All Superinterfaces: AutoCloseable, Closeable, RandomAccessRead, RandomAccessWrite
+All Known Implementing Classes: RandomAccessReadWriteBuffer
+public interface RandomAccess extends RandomAccessRead, RandomAccessWrite An interface to allow data to be stored completely in memory or  to use a scratch file on the disk.
+Author: Ben Litchfield
+[Methods inherited from interface org.apache.pdfbox.io.RandomAccessRead]
+available, createView, getPosition, isClosed, isEOF, length, peek, read, read, read, rewind, seek, skip
+[Methods inherited from interface org.apache.pdfbox.io.RandomAccessWrite]
+clear, write, write, write
+[Methods inherited from interface java.io.Closeable]
+close

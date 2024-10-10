@@ -1,0 +1,14 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.JpegUtils
+[Type] Class
+[Info]
+public class JpegUtils extends BinaryFileParser
+[Constructor Summary]
+JpegUtils()	
+[Method Summary]
+void dumpJFIF​(ByteSource byteSource)	
+static String getMarkerName​(int marker)	
+void traverseJFIF​(ByteSource byteSource, JpegUtils.Visitor visitor)	
+[Methods inherited from class org.apache.commons.imaging.common.BinaryFileParser]
+debugNumber, debugNumber, getByteOrder, setByteOrder
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

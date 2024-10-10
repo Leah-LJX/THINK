@@ -1,0 +1,9 @@
+[Class] org.joda.time.convert.PeriodConverter
+[Flag] Interface
+[Info]
+All Superinterfaces: Converter
+[Constructor Summary]
+
+[Method Summary]
+PeriodType getPeriodType(Object object) Selects a suitable period type for the given object.
+void setInto(ReadWritablePeriod period, Object object, Chronology chrono) Extracts duration values from an object of this converter's type, and sets them into the given ReadWritableDuration.

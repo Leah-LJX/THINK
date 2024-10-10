@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.formats.letsmt.LetsmtDocument
+[Type] Class
+[Info]
+public class LetsmtDocument extends Object A structure to hold the letsmt document. The documents contain sentences and depending on the  source it either contains tokenized text (words) or an un-tokenized sentence string.    The format specification can be found      here.
+[Nested Class Summary]
+Nested Class Summary
+static class 
+[Method Summary]
+List<LetsmtDocument.LetsmtSentence> getSentences()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,14 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.TiffHeader
+[Type] Class
+[Info]
+public class TiffHeader extends TiffElement
+[Constructor Summary]
+TiffHeader​(ByteOrder byteOrder, int tiffVersion, long offsetToFirstIFD)	
+[Field Summary]
+ByteOrder byteOrder	
+long offsetToFirstIFD	
+int tiffVersion	
+[Method Summary]
+String getElementDescription()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

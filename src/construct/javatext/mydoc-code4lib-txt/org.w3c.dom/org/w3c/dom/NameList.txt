@@ -1,0 +1,13 @@
+[Class] org.w3c.dom.NameList
+[Flag] Interface
+[Info]
+Since:
+DOM Level 3
+[Constructor Summary]
+
+[Method Summary]
+boolean contains(String str) Test if a name is part of this NameList.
+boolean containsNS(String namespaceURI, String name) Test if the pair namespaceURI/name is part of this NameList.
+int getLength() The number of pairs (name and namespaceURI) in the list.
+String getName(int index) Returns the indexth name item in the collection.
+String getNamespaceURI(int index) Returns the indexth namespaceURI item in the collection.

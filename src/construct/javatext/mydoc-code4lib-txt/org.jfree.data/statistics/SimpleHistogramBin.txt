@@ -1,0 +1,17 @@
+[Class] org.jfree.data.statistics.SimpleHistogramBin
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Comparable, PublicCloneable
+[Constructor Summary]
+SimpleHistogramBin(double lowerBound, double upperBound)	Creates a new bin.
+SimpleHistogramBin(double lowerBound, double upperBound, boolean includeLowerBound, boolean includeUpperBound)	Creates a new bin.
+[Method Summary]
+boolean accepts(double value)	Returns true if the specified value belongs in the bin, and false otherwise.
+Object clone()	Returns a clone of the bin.
+int compareTo(Object obj)	Compares the bin to an arbitrary object and returns the relative ordering.
+boolean equals(Object obj)	Tests this bin for equality with an arbitrary object.
+int getItemCount()	Returns the item count.
+double getLowerBound()	Returns the lower bound.
+double getUpperBound()	Return the upper bound.
+boolean overlapsWith(SimpleHistogramBin bin)	Returns true if this bin overlaps with the specified bin, and false otherwise.
+void setItemCount(int count)	Sets the item count.

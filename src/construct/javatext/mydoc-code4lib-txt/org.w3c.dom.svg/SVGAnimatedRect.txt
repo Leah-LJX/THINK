@@ -1,0 +1,9 @@
+[Class] org.w3c.dom.svg.SVGAnimatedRect
+[Flag] Interface
+[Info]
+public interface SVGAnimatedRect
+[Constructor Summary]
+
+[Method Summary]
+SVGRect getAnimVal()	 
+ SVGRect getBaseVal()

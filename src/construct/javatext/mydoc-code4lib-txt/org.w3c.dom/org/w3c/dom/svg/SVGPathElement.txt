@@ -1,0 +1,30 @@
+[Class] org.w3c.dom.svg.SVGPathElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, EventTarget, Node, SVGAnimatedPathData, SVGElement, SVGExternalResourcesRequired, SVGLangSpace, SVGLocatable, SVGStylable, SVGTests, SVGTransformable
+[Constructor Summary]
+
+[Method Summary]
+SVGPathSegArcAbs createSVGPathSegArcAbs(float x, float y, float r1, float r2, float angle, boolean largeArcFlag, boolean sweepFlag)	 
+ SVGPathSegArcRel createSVGPathSegArcRel(float x, float y, float r1, float r2, float angle, boolean largeArcFlag, boolean sweepFlag)	 
+ SVGPathSegClosePath createSVGPathSegClosePath()	 
+ SVGPathSegCurvetoCubicAbs createSVGPathSegCurvetoCubicAbs(float x, float y, float x1, float y1, float x2, float y2)	 
+ SVGPathSegCurvetoCubicRel createSVGPathSegCurvetoCubicRel(float x, float y, float x1, float y1, float x2, float y2)	 
+ SVGPathSegCurvetoCubicSmoothAbs createSVGPathSegCurvetoCubicSmoothAbs(float x, float y, float x2, float y2)	 
+ SVGPathSegCurvetoCubicSmoothRel createSVGPathSegCurvetoCubicSmoothRel(float x, float y, float x2, float y2)	 
+ SVGPathSegCurvetoQuadraticAbs createSVGPathSegCurvetoQuadraticAbs(float x, float y, float x1, float y1)	 
+ SVGPathSegCurvetoQuadraticRel createSVGPathSegCurvetoQuadraticRel(float x, float y, float x1, float y1)	 
+ SVGPathSegCurvetoQuadraticSmoothAbs createSVGPathSegCurvetoQuadraticSmoothAbs(float x, float y)	 
+ SVGPathSegCurvetoQuadraticSmoothRel createSVGPathSegCurvetoQuadraticSmoothRel(float x, float y)	 
+ SVGPathSegLinetoAbs createSVGPathSegLinetoAbs(float x, float y)	 
+ SVGPathSegLinetoHorizontalAbs createSVGPathSegLinetoHorizontalAbs(float x)	 
+ SVGPathSegLinetoHorizontalRel createSVGPathSegLinetoHorizontalRel(float x)	 
+ SVGPathSegLinetoRel createSVGPathSegLinetoRel(float x, float y)	 
+ SVGPathSegLinetoVerticalAbs createSVGPathSegLinetoVerticalAbs(float y)	 
+ SVGPathSegLinetoVerticalRel createSVGPathSegLinetoVerticalRel(float y)	 
+ SVGPathSegMovetoAbs createSVGPathSegMovetoAbs(float x, float y)	 
+ SVGPathSegMovetoRel createSVGPathSegMovetoRel(float x, float y)	 
+ SVGAnimatedNumber getPathLength()	 
+ int getPathSegAtLength(float distance)	 
+ SVGPoint getPointAtLength(float distance)	 
+ float getTotalLength()

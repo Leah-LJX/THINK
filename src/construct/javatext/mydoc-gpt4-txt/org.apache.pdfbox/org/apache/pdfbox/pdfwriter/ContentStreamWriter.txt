@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.pdfwriter.ContentStreamWriter
+[Type] Class
+[Info]
+public class ContentStreamWriter extends Object A class that will take a list of tokens and write out a stream with them.
+Author: Ben Litchfield
+[Constructor Summary]
+ContentStreamWriter(OutputStream out)	This will create a new content stream writer.
+[Field Summary]
+static byte[] EOL	standard line separator
+static byte[] SPACE	space character.
+[Method Summary]
+void writeToken(COSBase base)	Writes a single operand token.
+void writeToken(Operator op)	Writes a single operator token.
+void writeTokens(List<?> tokens)	This will write out the list of tokens to the stream.
+void writeTokens(Object... tokens)	Writes a series of tokens followed by a new line.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

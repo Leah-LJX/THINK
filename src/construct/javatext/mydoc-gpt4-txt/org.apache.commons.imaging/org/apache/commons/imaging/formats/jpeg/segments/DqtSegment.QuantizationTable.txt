@@ -1,0 +1,14 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.segments.DqtSegment.QuantizationTable
+[Type] Class
+[Info]
+Enclosing class: DqtSegment
+public static class DqtSegment.QuantizationTable extends Object
+[Constructor Summary]
+QuantizationTable​(int precision, int destinationIdentifier, int[] elements)	
+[Field Summary]
+int destinationIdentifier	
+int precision	
+[Method Summary]
+int[] getElements()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

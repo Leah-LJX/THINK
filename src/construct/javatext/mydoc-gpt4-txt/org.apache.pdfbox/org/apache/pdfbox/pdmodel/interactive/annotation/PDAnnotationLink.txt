@@ -1,0 +1,35 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationLink
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDAnnotationLink extends PDAnnotation This is the class that represents a link annotation.
+Author: Ben Litchfield, Paul King
+[Constructor Summary]
+PDAnnotationLink()	Constructor.
+PDAnnotationLink(COSDictionary field)	Creates a Link annotation from a COSDictionary, expected to be a correct object definition.
+[Field Summary]
+static String HIGHLIGHT_MODE_INVERT	Constant values of the Text as defined in the PDF 1.6 reference Table 8.19.
+static String HIGHLIGHT_MODE_NONE	Constant values of the Text as defined in the PDF 1.6 reference Table 8.19.
+static String HIGHLIGHT_MODE_OUTLINE	Constant values of the Text as defined in the PDF 1.6 reference Table 8.19.
+static String HIGHLIGHT_MODE_PUSH	Constant values of the Text as defined in the PDF 1.6 reference Table 8.19.
+static String SUB_TYPE	The type of annotation.
+[Method Summary]
+void constructAppearances()	Create the appearance entry for this annotation.
+void constructAppearances(PDDocument document)	Create the appearance entry for this annotation.
+PDAction getAction()	Get the action to be performed when this annotation is to be activated.
+PDBorderStyleDictionary getBorderStyle()	This will retrieve the border style dictionary, specifying the width and dash pattern used in drawing the line.
+PDDestination getDestination()	Get the destination to be displayed when the annotation is activated.
+String getHighlightMode()	Set the highlight mode for when the mouse is depressed.
+PDActionURI getPreviousURI()	This will set the previous URI action, in case it's needed.
+float[] getQuadPoints()	This will retrieve the set of quadpoints which encompass the areas of this annotation which will activate.
+void setAction(PDAction action)	Set the annotation action.
+void setBorderStyle(PDBorderStyleDictionary bs)	This will set the border style dictionary, specifying the width and dash pattern used in drawing the line.
+void setCustomAppearanceHandler(PDAppearanceHandler appearanceHandler)	Set a custom appearance handler for generating the annotations appearance streams.
+void setDestination(PDDestination dest)	The new destination value.
+void setHighlightMode(String mode)	Set the highlight mode.
+void setPreviousURI(PDActionURI pa)	This will set the previous URI action, in case it needs to be retrieved at later date.
+void setQuadPoints(float[] quadPoints)	This will set the set of quadpoints which encompass the areas of this annotation which will activate.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation]
+createAnnotation, equals, getAnnotationFlags, getAnnotationName, getAppearance, getAppearanceState, getBorder, getColor, getColor, getContents, getCOSObject, getModifiedDate, getNormalAppearanceStream, getOptionalContent, getPage, getRectangle, getStructParent, getSubtype, hashCode, isHidden, isInvisible, isLocked, isLockedContents, isNoRotate, isNoView, isNoZoom, isPrinted, isReadOnly, isToggleNoView, setAnnotationFlags, setAnnotationName, setAppearance, setAppearanceState, setBorder, setColor, setContents, setHidden, setInvisible, setLocked, setLockedContents, setModifiedDate, setModifiedDate, setNoRotate, setNoView, setNoZoom, setOptionalContent, setPage, setPrinted, setReadOnly, setRectangle, setStructParent, setSubtype, setToggleNoView
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, toString, wait, wait, wait

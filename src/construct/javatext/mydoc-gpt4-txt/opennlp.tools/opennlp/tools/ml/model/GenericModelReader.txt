@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.ml.model.GenericModelReader
+[Type] Class
+[Info]
+public class GenericModelReader extends AbstractModelReader An generic AbstractModelReader implementation.
+See Also:
+AbstractModelReader
+[Constructor Summary]
+GenericModelReader(File f)	Initializes a GenericModelReader via a File.
+GenericModelReader(DataReader dataReader)	Initializes a GenericModelReader via a DataReader.
+[Method Summary]
+void checkModelType()	Checks the model type via the the underlying DataReader.
+AbstractModel constructModel()	Constructs a model.
+[Methods inherited from class opennlp.tools.ml.model.AbstractModelReader]
+getModel, readDouble, readInt, readUTF
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

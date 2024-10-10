@@ -1,0 +1,11 @@
+[Class] org.jfree.data.xy.YIntervalDataItem
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Comparable
+[Constructor Summary]
+YIntervalDataItem(double x, double y, double yLow, double yHigh)	Creates a new instance of YIntervalDataItem.
+[Method Summary]
+Double getX()	Returns the x-value.
+double getYHighValue()	Returns the upper bound of the y-interval.
+double getYLowValue()	Returns the lower bound of the y-interval.
+double getYValue()	Returns the y-value.

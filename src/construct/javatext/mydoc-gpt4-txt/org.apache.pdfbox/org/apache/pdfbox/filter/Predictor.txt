@@ -1,0 +1,6 @@
+[API Name] org.apache.pdfbox.filter.Predictor
+[Type] Class
+[Info]
+public final class Predictor extends Object Helper class to contain predictor decoding used by Flate and LZW filter.   To see the history, look at the FlateFilter class.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,11 @@
+[Class] org.jfree.chart.ChartFactory
+[Flag] Class
+[Info]
+Returns: The chart theme.
+Since: 1.0.11
+See Also: setChartTheme(ChartTheme), 
+ChartUtilities.applyCurrentTheme(JFreeChart)
+[Constructor Summary]
+ChartFactory()
+[Method Summary]
+static JFreeChart createAreaChart(String title, String categoryAxisLabel, String valueAxisLabel, CategoryDataset dataset) Creates an area chart with default settings.

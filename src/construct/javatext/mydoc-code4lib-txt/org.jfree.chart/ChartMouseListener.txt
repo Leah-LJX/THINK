@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.ChartMouseListener
+[Flag] Interface
+[Info]
+All Superinterfaces: EventListener
+[Constructor Summary]
+
+[Method Summary]
+void chartMouseClicked(ChartMouseEvent event) Callback method for receiving notification of a mouse click on a chart.

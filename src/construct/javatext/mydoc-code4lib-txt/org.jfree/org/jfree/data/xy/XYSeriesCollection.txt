@@ -1,0 +1,43 @@
+[Class] org.jfree.data.xy.XYSeriesCollection
+[Flag] Class
+[Info]
+All Implemented Interfaces: VetoableChangeListener, ObjectInputValidation, Serializable, Cloneable, EventListener, PublicCloneable, DomainInfo, Dataset, SeriesChangeListener, SeriesDataset, RangeInfo, IntervalXYDataset, XYDataset
+[Constructor Summary]
+XYSeriesCollection()	Constructs an empty dataset.
+XYSeriesCollection(XYSeries series)	Constructs a dataset and populates it with a single series.
+[Method Summary]
+void addSeries(XYSeries series)	Adds a series to the collection and sends a DatasetChangeEvent to all registered listeners.
+Object clone()	Returns a clone of this instance.
+boolean equals(Object obj)	Tests this collection for equality with an arbitrary object.
+Range getDomainBounds(boolean includeInterval)	Returns the range of the values in this dataset's domain.
+double getDomainLowerBound(boolean includeInterval)	Returns the minimum x-value in the dataset.
+DomainOrder getDomainOrder()	Returns the order of the domain (X) values, if this is known.
+double getDomainUpperBound(boolean includeInterval)	Returns the maximum x-value in the dataset.
+Number getEndX(int series, int item)	Returns the ending X value for the specified series and item.
+Number getEndY(int series, int item)	Returns the ending Y value for the specified series and item.
+double getIntervalPositionFactor()	Returns the interval position factor.
+double getIntervalWidth()	Returns the interval width.
+int getItemCount(int series)	Returns the number of items in the specified series.
+Range getRangeBounds(boolean includeInterval)	Returns the range of the values in this dataset's range.
+double getRangeLowerBound(boolean includeInterval)	Returns the minimum y-value in the dataset.
+double getRangeUpperBound(boolean includeInterval)	Returns the maximum y-value in the dataset.
+List getSeries()	Returns a list of all the series in the collection.
+XYSeries getSeries(int series)	Returns a series from the collection.
+XYSeries getSeries(Comparable key)	Returns a series from the collection.
+int getSeriesCount()	Returns the number of series in the collection.
+int getSeriesIndex(Comparable key)	Returns the index of the series with the specified key, or -1 if no series has that key.
+Comparable getSeriesKey(int series)	Returns the key for a series.
+Number getStartX(int series, int item)	Returns the starting X value for the specified series and item.
+Number getStartY(int series, int item)	Returns the starting Y value for the specified series and item.
+Number getX(int series, int item)	Returns the x-value for the specified series and item.
+Number getY(int series, int index)	Returns the y-value for the specified series and item.
+int hashCode()	Returns a hash code.
+int indexOf(XYSeries series)	Returns the index of the specified series, or -1 if that series is not present in the dataset.
+boolean isAutoWidth()	Returns whether the interval width is automatically calculated or not.
+void removeAllSeries()	Removes all the series from the collection and sends a DatasetChangeEvent to all registered listeners.
+void removeSeries(int series)	Removes a series from the collection and sends a DatasetChangeEvent to all registered listeners.
+void removeSeries(XYSeries series)	Removes a series from the collection and sends a DatasetChangeEvent to all registered listeners.
+void setAutoWidth(boolean b)	Sets the flag that indicates whether the interval width is automatically calculated or not.
+void setIntervalPositionFactor(double factor)	Sets the interval position factor.
+void setIntervalWidth(double width)	Sets the interval width and sends a DatasetChangeEvent to all registered listeners.
+void vetoableChange(PropertyChangeEvent e)	Receives notification that the key for one of the series in the collection has changed, and vetos it if the key is already present in the collection.

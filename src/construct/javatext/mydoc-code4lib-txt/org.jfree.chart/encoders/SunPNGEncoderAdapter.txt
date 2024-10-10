@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.encoders.SunPNGEncoderAdapter
+[Flag] Class
+[Info]
+All Implemented Interfaces: ImageEncoder
+[Constructor Summary]
+SunPNGEncoderAdapter()
+[Method Summary]
+byte[] encode(BufferedImage bufferedImage) Encodes an image in PNG format.

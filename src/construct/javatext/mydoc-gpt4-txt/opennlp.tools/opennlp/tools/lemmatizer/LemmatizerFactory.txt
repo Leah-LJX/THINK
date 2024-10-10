@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.lemmatizer.LemmatizerFactory
+[Type] Class
+[Info]
+public class LemmatizerFactory extends BaseToolFactory The factory that provides Lemmatizer default implementation and  resources.
+[Constructor Summary]
+LemmatizerFactory()	Instantiates a LemmatizerFactory that provides the default implementation of the resources.
+[Method Summary]
+static LemmatizerFactory create(String subclassName)	Instantiates a LemmatizerFactory via a given subclassName.
+LemmatizerContextGenerator getContextGenerator()	
+SequenceValidator<String> getSequenceValidator()	
+void validateArtifactMap()	Validates the parsed artifacts.
+[Methods inherited from class opennlp.tools.util.BaseToolFactory]
+create, create, createArtifactMap, createArtifactSerializersMap, createManifestEntries
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

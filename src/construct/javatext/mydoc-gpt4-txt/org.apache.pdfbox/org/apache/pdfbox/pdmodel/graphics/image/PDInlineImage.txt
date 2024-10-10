@@ -1,0 +1,39 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.image.PDInlineImage
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable, PDImage
+public final class PDInlineImage extends Object implements PDImage An inline image object which uses a special syntax to express the data for a  small image directly within the content stream.
+Author: Ben Litchfield, John Hewson
+[Constructor Summary]
+PDInlineImage(COSDictionary parameters, byte[] data, PDResources resources)	Creates an inline image from the given parameters and data.
+[Method Summary]
+InputStream createInputStream()	Returns an InputStream containing the image data, irrespective of whether this is an inline image or an image XObject.
+InputStream createInputStream(DecodeOptions options)	Returns an InputStream, passing additional options to each filter.
+InputStream createInputStream(List<String> stopFilters)	Returns an InputStream containing the image data, irrespective of whether this is an inline image or an image XObject.
+int getBitsPerComponent()	Returns bits per component of this image, or -1 if one has not been set.
+PDColorSpace getColorSpace()	Returns the image's color space.
+COSDictionary getCOSObject()	Convert this image to a COS object.
+byte[] getData()	Returns the inline image data.
+COSArray getDecode()	Returns the decode array.
+List<String> getFilters()	Returns A list of filters applied to this stream.
+int getHeight()	Returns height of this image, or -1 if one has not been set.
+BufferedImage getImage()	Returns the content of this image as an AWT buffered image with an (A)RGB color space.
+BufferedImage getImage(Rectangle region, int subsampling)	Returns the content of this image as an AWT buffered image with an (A)RGB colored space.
+boolean getInterpolate()	Returns true if the image should be interpolated when rendered.
+BufferedImage getRawImage()	Try to get the raw image as AWT buffered image with it's original colorspace.
+WritableRaster getRawRaster()	Return the image data as WritableRaster.
+BufferedImage getStencilImage(Paint paint)	Returns an ARGB image filled with the given paint and using this image as a mask.
+String getSuffix()	Returns the suffix for this image type, e.g.
+int getWidth()	Returns the width of this image, or -1 if one has not been set.
+boolean isEmpty()	Returns true if the image has no data.
+boolean isStencil()	Returns true if the image is a stencil mask.
+void setBitsPerComponent(int bitsPerComponent)	Set the number of bits per component.
+void setColorSpace(PDColorSpace colorSpace)	Sets the color space for this image.
+void setDecode(COSArray decode)	Sets the decode array.
+void setFilters(List<String> filters)	Sets which filters are applied to this stream.
+void setHeight(int height)	Sets the height of the image.
+void setInterpolate(boolean value)	Sets the Interpolate flag, true for high-quality image scaling.
+void setStencil(boolean isStencil)	Sets whether or not the image is a stencil.
+void setWidth(int width)	Sets the width of the image.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

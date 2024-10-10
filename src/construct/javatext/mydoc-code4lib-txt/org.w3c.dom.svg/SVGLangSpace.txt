@@ -1,0 +1,11 @@
+[Class] org.w3c.dom.svg.SVGLangSpace
+[Flag] Interface
+[Info]
+All Known Subinterfaces: SVGAElement, SVGAltGlyphElement, SVGCircleElement, SVGClipPathElement, SVGDefsElement, SVGDescElement, SVGEllipseElement, SVGFEImageElement, SVGFilterElement, SVGForeignObjectElement, SVGGElement, SVGImageElement, SVGLineElement, SVGMarkerElement, SVGMaskElement, SVGPathElement, SVGPatternElement, SVGPolygonElement, SVGPolylineElement, SVGRectElement, SVGSVGElement, SVGSwitchElement, SVGSymbolElement, SVGTextContentElement, SVGTextElement, SVGTextPathElement, SVGTextPositioningElement, SVGTitleElement, SVGTRefElement, SVGTSpanElement, SVGUseElement
+[Constructor Summary]
+
+[Method Summary]
+java.lang.String getXMLlang()	 
+ java.lang.String getXMLspace()	 
+ void setXMLlang(java.lang.String xmllang)	 
+ void setXMLspace(java.lang.String xmlspace)

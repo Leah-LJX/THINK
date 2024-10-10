@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.NumberTickUnit
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable
+[Constructor Summary]
+NumberTickUnit(double size) Creates a new number tick unit.
+[Method Summary]
+boolean equals(Object obj) Tests this formatter for equality with an arbitrary object.

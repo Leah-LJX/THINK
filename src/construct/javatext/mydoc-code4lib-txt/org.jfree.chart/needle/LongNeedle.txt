@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.needle.LongNeedle
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+LongNeedle() Default constructor.
+[Method Summary]
+Object clone() Returns a clone of this needle.

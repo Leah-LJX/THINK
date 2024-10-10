@@ -1,0 +1,8 @@
+[Class] org.jfree.data.json.impl.JSONStreamAware
+[Flag] Interface
+[Info]
+All Known Implementing Classes: JSONArray, JSONObject
+[Constructor Summary]
+
+[Method Summary]
+void writeJSONString(Writer out)	write JSON string to out.

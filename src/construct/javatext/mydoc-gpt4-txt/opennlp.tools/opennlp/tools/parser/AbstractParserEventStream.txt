@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.parser.AbstractParserEventStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<Event>
+Direct Known Subclasses: ParserEventStream, ParserEventStream
+public abstract class AbstractParserEventStream extends AbstractEventStream<Parse> Abstract class extended by parser event streams which perform tagging and chunking.
+[Constructor Summary]
+AbstractParserEventStream(ObjectStream<Parse> d, HeadRules rules, ParserEventTypeEnum etype)	
+AbstractParserEventStream(ObjectStream<Parse> d, HeadRules rules, ParserEventTypeEnum etype, Dictionary dict)	
+[Method Summary]
+static Parse[] getInitialChunks(Parse p)	
+[Methods inherited from class opennlp.tools.util.AbstractEventStream]
+close, read, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

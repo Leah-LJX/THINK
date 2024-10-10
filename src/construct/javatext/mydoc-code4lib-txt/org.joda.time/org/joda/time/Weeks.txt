@@ -1,0 +1,31 @@
+[Class] org.joda.time.Weeks
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<BaseSingleFieldPeriod>, ReadablePeriod
+[Constructor Summary]
+
+[Method Summary]
+Weeks dividedBy(int divisor) Returns a new instance with the weeks divided by the specified divisor.
+DurationFieldType getFieldType() Gets the duration field type, which is weeks.
+PeriodType getPeriodType() Gets the period type, which is weeks.
+int getWeeks() Gets the number of weeks that this period represents.
+boolean isGreaterThan(Weeks other) Is this weeks instance greater than the specified number of weeks.
+boolean isLessThan(Weeks other) Is this weeks instance less than the specified number of weeks.
+Weeks minus(int weeks) Returns a new instance with the specified number of weeks taken away.
+Weeks minus(Weeks weeks) Returns a new instance with the specified number of weeks taken away.
+Weeks multipliedBy(int scalar) Returns a new instance with the weeks multiplied by the specified scalar.
+Weeks negated() Returns a new instance with the weeks value negated.
+static Weeks parseWeeks(String periodStr) Creates a new Weeks by parsing a string in the ISO8601 format 'PnW'.
+Weeks plus(int weeks) Returns a new instance with the specified number of weeks added.
+Weeks plus(Weeks weeks) Returns a new instance with the specified number of weeks added.
+static Weeks standardWeeksIn(ReadablePeriod period) Creates a new Weeks representing the number of complete standard length weeks in the specified period.
+Days toStandardDays() Converts this period in weeks to a period in days assuming a 7 day week.
+Duration toStandardDuration() Converts this period in weeks to a duration in milliweeks assuming a 7 day week, 24 hour day, 60 minute hour and 60 second minute.
+Hours toStandardHours() Converts this period in weeks to a period in hours assuming a 7 day week and 24 hour day.
+Minutes toStandardMinutes() Converts this period in weeks to a period in minutes assuming a 7 day week, 24 hour day and 60 minute hour.
+Seconds toStandardSeconds() Converts this period in weeks to a period in seconds assuming a 7 day week, 24 hour day, 60 minute hour and 60 second minute.
+String toString() Gets this instance as a String in the ISO8601 duration format.
+static Weeks weeks(int weeks) Obtains an instance of Weeks that may be cached.
+static Weeks weeksBetween(ReadableInstant start, ReadableInstant end) Creates a Weeks representing the number of whole weeks between the two specified datetimes.
+static Weeks weeksBetween(ReadablePartial start, ReadablePartial end) Creates a Weeks representing the number of whole weeks between the two specified partial datetimes.
+static Weeks weeksIn(ReadableInterval interval) Creates a Weeks representing the number of whole weeks in the specified interval.

@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.needle.ArrowNeedle
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+Direct Known Subclasses: WindNeedle
+[Constructor Summary]
+ArrowNeedle(boolean isArrowAtTop) Constructs a new arrow needle.
+[Method Summary]
+Object clone() Returns a clone of this needle.

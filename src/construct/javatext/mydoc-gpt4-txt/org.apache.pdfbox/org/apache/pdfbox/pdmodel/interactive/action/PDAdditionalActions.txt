@@ -1,0 +1,15 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.action.PDAdditionalActions
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDAdditionalActions extends Object implements COSObjectable This represents a dictionary of actions that occur due to events.
+Author: Ben Litchfield
+[Constructor Summary]
+PDAdditionalActions()	Default constructor.
+PDAdditionalActions(COSDictionary a)	Constructor.
+[Method Summary]
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+PDAction getF()	Get the F action.
+void setF(PDAction action)	Set the F action.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

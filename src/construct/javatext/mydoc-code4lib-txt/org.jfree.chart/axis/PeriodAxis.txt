@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.PeriodAxis
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, org.jfree.util.PublicCloneable
+[Constructor Summary]
+PeriodAxis(String label) Creates a new axis.
+[Method Summary]
+protected void autoAdjustRange() Rescales the axis to ensure that all data is visible.

@@ -1,0 +1,8 @@
+[API Name] opennlp.tools.util.ext.ExtensionLoader
+[Type] Class
+[Info]
+@Internal public class ExtensionLoader extends Object The ExtensionLoader is responsible to load extensions to the OpenNLP library.   Note:  Do not use this class, internal use only!
+[Method Summary]
+static <T> T instantiateExtension(Class<T> clazz, String extensionClassName)	Instantiates a user provided extension to OpenNLP.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

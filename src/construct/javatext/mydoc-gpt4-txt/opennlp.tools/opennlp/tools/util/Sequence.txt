@@ -1,0 +1,25 @@
+[API Name] opennlp.tools.util.Sequence
+[Type] Class
+[Info]
+All Implemented Interfaces: Comparable<Sequence>
+public class Sequence extends Object implements Comparable<Sequence> Represents a weighted sequence of outcomes.
+[Constructor Summary]
+Sequence()	Initializes a new Sequence of outcomes.
+Sequence(List<String> outcomes)	Initializes a new Sequence of outcomes from a list of outcomes.
+Sequence(Sequence s)	Initializes a new Sequence of outcomes from an existing Sequence.
+Sequence(Sequence s, String outcome, double p)	Initializes a new Sequence of outcomes from an existing Sequence.
+[Method Summary]
+void add(String outcome, double p)	Adds an outcome and probability to this sequence.
+int compareTo(Sequence s)	
+boolean equals(Object obj)	
+String getOutcome(int index)	
+List<String> getOutcomes()	
+double getProb(int index)	
+double[] getProbs()	
+void getProbs(double[] ps)	Populates an array with the probabilities associated with the Sequence outcomes.
+double getScore()	
+int getSize()	
+int hashCode()	
+String toString()	
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

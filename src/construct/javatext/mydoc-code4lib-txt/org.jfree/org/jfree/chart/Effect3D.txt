@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.Effect3D
+[Flag] Interface
+[Info]
+All Known Implementing Classes: BarRenderer3D, LineRenderer3D, StackedBarRenderer3D, XYLine3DRenderer
+[Constructor Summary]
+
+[Method Summary]
+double getXOffset() Returns the x-offset (in Java2D units) for the 3D effect.

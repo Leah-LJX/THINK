@@ -1,0 +1,28 @@
+[API Name] opennlp.tools.tokenize.TokenizerME
+[Type] Class
+[Info]
+All Implemented Interfaces: Tokenizer
+public class TokenizerME extends Object A Tokenizer for converting raw text into separated tokens. It uses  Maximum Entropy to make its decisions. The features are loosely  based off of Jeff Reynar's UPenn thesis "Topic Segmentation:  Algorithms and Applications.", which is available from his  homepage: http://www.cis.upenn.edu/~jcreynar.    This implementation needs a statistical model to tokenize a text which reproduces  the tokenization observed in the training data used to create the model.  The TokenizerModel class encapsulates that model and provides  methods to create it from the binary representation.    A tokenizer instance is not thread-safe. For each thread, one tokenizer  must be instantiated which can share one TokenizerModel instance  to safe memory.    To train a new model, the train(ObjectStream, TokenizerFactory, TrainingParameters) method  can be used.    Sample usage:  
+ InputStream modelIn;
+ ...
+ TokenizerModel model = TokenizerModel(modelIn);
+ Tokenizer tokenizer = new TokenizerME(model);
+ String tokens[] = tokenizer.tokenize("A sentence to be tokenized.");  
+See Also:
+Tokenizer TokenizerModel TokenSample
+[Constructor Summary]
+TokenizerME(String language)	Initializes a TokenizerME by downloading a default model.
+TokenizerME(TokenizerModel model)	Instantiates a TokenizerME with an existing TokenizerModel.
+TokenizerME(TokenizerModel model, Factory factory)	Deprecated. use TokenizerFactory to extend the Tokenizer functionality
+[Field Summary]
+static final String NO_SPLIT	Constant indicates no token split.
+static final String SPLIT	Constant indicates a token split.
+[Method Summary]
+double[] getTokenProbabilities()	
+void setKeepNewLines(boolean keepNewLines)	Switches whether to keep new lines or not.
+String[] tokenize(String s)	Splits a string into its atomic parts.
+Span[] tokenizePos(String d)	Tokenizes the string.
+static TokenizerModel train(ObjectStream<TokenSample> samples, TokenizerFactory factory, TrainingParameters mlParams)	Trains a model for the TokenizerME.
+boolean useAlphaNumericOptimization()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

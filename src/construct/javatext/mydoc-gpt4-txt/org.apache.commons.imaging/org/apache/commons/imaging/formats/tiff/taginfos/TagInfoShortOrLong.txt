@@ -1,0 +1,17 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.taginfos.TagInfoShortOrLong
+[Type] Class
+[Info]
+public class TagInfoShortOrLong extends TagInfo
+[Constructor Summary]
+TagInfoShortOrLong​(String name, int tag, int length, TiffDirectoryType directoryType)	
+TagInfoShortOrLong​(String name, int tag, int length, TiffDirectoryType directoryType, boolean isOffset)	
+[Field Summary]
+TagInfoShortOrLong​(String name, int tag, int length, TiffDirectoryType directoryType)	
+TagInfoShortOrLong​(String name, int tag, int length, TiffDirectoryType directoryType, boolean isOffset)	
+[Method Summary]
+byte[] encodeValue​(ByteOrder byteOrder, int... values)	
+byte[] encodeValue​(ByteOrder byteOrder, short... values)	
+[Methods inherited from class org.apache.commons.imaging.formats.tiff.taginfos.TagInfo]
+encodeValue, getDescription, getValue, isOffset, isText, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

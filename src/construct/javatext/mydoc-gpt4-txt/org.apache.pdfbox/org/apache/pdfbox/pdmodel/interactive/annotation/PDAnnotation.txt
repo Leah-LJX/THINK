@@ -1,0 +1,68 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDAnnotationLink, PDAnnotationMarkup, PDAnnotationPopup, PDAnnotationUnknown, PDAnnotationWidget
+public abstract class PDAnnotation extends Object implements COSObjectable A PDF annotation.
+Author: Ben Litchfield
+[Constructor Summary]
+PDAnnotation()	Constructor.
+PDAnnotation(COSDictionary dict)	Constructor.
+[Method Summary]
+void constructAppearances()	Create the appearance entry for this annotation.
+void constructAppearances(PDDocument document)	Create the appearance entry for this annotation.
+static PDAnnotation createAnnotation(COSBase base)	Create the correct annotation from the base COS object.
+boolean equals(Object o)	
+int getAnnotationFlags()	This will get the flags for this field.
+String getAnnotationName()	This will get the name, a string intended to uniquely identify each annotation within a page.
+PDAppearanceDictionary getAppearance()	This will get the appearance dictionary associated with this annotation.
+COSName getAppearanceState()	Returns the annotations appearance state, which selects the applicable appearance stream from an appearance subdictionary.
+COSArray getBorder()	This will retrieve the border array.
+PDColor getColor()	This will retrieve the color used in drawing various elements.
+protected PDColor getColor(COSName itemName)	
+String getContents()	Get the "contents" of the field.
+COSDictionary getCOSObject()	Interface method for COSObjectable.
+String getModifiedDate()	This will retrieve the date and time the annotation was modified.
+PDAppearanceStream getNormalAppearanceStream()	Returns the appearance stream for this annotation, if any.
+PDPropertyList getOptionalContent()	This will get the optional content group or optional content membership dictionary for the annotation.
+PDPage getPage()	This will retrieve the corresponding page of this annotation.
+PDRectangle getRectangle()	The annotation rectangle, defining the location of the annotation on the page in default user space units.
+int getStructParent()	This will get the key of this annotation in the structural parent tree.
+String getSubtype()	This will retrieve the subtype of the annotation.
+int hashCode()	
+boolean isHidden()	Get the hidden flag.
+boolean isInvisible()	Get the invisible flag.
+boolean isLocked()	Get the locked flag.
+boolean isLockedContents()	Get the LockedContents flag.
+boolean isNoRotate()	Get the noRotate flag.
+boolean isNoView()	Get the noView flag.
+boolean isNoZoom()	Get the noZoom flag.
+boolean isPrinted()	Get the printed flag.
+boolean isReadOnly()	Get the readOnly flag.
+boolean isToggleNoView()	Get the toggleNoView flag.
+void setAnnotationFlags(int flags)	This will set the flags for this field.
+void setAnnotationName(String nm)	This will set the name, a string intended to uniquely identify each annotation within a page.
+void setAppearance(PDAppearanceDictionary appearance)	This will set the appearance associated with this annotation.
+void setAppearanceState(String as)	This will set the annotations appearance state name.
+void setBorder(COSArray borderArray)	This will set the border array.
+void setColor(PDColor c)	This will set the color used in drawing various elements.
+void setContents(String value)	Set the "contents" of the field.
+void setHidden(boolean hidden)	Set the hidden flag.
+void setInvisible(boolean invisible)	Set the invisible flag.
+void setLocked(boolean locked)	Set the locked flag.
+void setLockedContents(boolean lockedContents)	Set the LockedContents flag.
+void setModifiedDate(Calendar c)	This will set the date and time the annotation was modified.
+void setModifiedDate(String m)	This will set the date and time the annotation was modified.
+void setNoRotate(boolean noRotate)	Set the noRotate flag.
+void setNoView(boolean noView)	Set the noView flag.
+void setNoZoom(boolean noZoom)	Set the noZoom flag.
+void setOptionalContent(PDPropertyList oc)	Sets the optional content group or optional content membership dictionary for the annotation.
+void setPage(PDPage page)	This will set the corresponding page for this annotation.
+void setPrinted(boolean printed)	Set the printed flag.
+void setReadOnly(boolean readOnly)	Set the readOnly flag.
+void setRectangle(PDRectangle rectangle)	This will set the rectangle for this annotation.
+void setStructParent(int structParent)	This will set the key for this annotation in the structural parent tree.
+protected void setSubtype(String subType)	This will set the sub type (and hence appearance, AP taking precedence) For this annotation.
+void setToggleNoView(boolean toggleNoView)	Set the toggleNoView flag.
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, toString, wait, wait, wait

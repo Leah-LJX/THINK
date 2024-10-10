@@ -1,0 +1,9 @@
+[Class] org.w3c.dom.UserDataHandler
+[Flag] Interface
+[Info]
+Since:
+DOM Level 3
+[Constructor Summary]
+
+[Method Summary]
+void handle(short operation, String key, Object data, Node src, Node dst) This method is called whenever the node for which this handler is registered is imported or cloned.

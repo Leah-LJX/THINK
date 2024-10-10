@@ -1,0 +1,15 @@
+[Class] org.w3c.dom.svg.SVGPathSegCurvetoCubicSmoothAbs
+[Flag] Interface
+[Info]
+All Superinterfaces: SVGPathSeg
+[Constructor Summary]
+
+[Method Summary]
+float getX()	 
+ float getX2()	 
+ float getY()	 
+ float getY2()	 
+ void setX(float x)	 
+ void setX2(float x2)	 
+ void setY(float y)	 
+ void setY2(float y2)

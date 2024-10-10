@@ -1,0 +1,17 @@
+[API Name] opennlp.tools.ml.maxent.io.GISModelReader
+[Type] Class
+[Info]
+Direct Known Subclasses: BinaryGISModelReader, QNModelReader
+public class GISModelReader extends AbstractModelReader The base class for readers of GIS models.    Format for the GIS maxent info (.mei) files:   GIS (model type identifier)  1. # of parameters (int)  2. the correction constant (int)  3. the correction constant parameter (double)  4. # of outcomes (int)     * list of outcome names (String)  5. # of different types of outcome patterns (int)     * list of (int int[])      [# of predicates for which outcome pattern is true] [outcome pattern]  6. # of predicates (int)     * list of predicate names (String)
+See Also:
+GISModel AbstractModelReader
+[Constructor Summary]
+GISModelReader(File file)	Initializes a GISModelReader via a File.
+GISModelReader(DataReader dataReader)	Initializes a GISModelReader via a DataReader.
+[Method Summary]
+void checkModelType()	Checks the model type via the the underlying DataReader.
+AbstractModel constructModel()	Retrieves a model from disk.
+[Methods inherited from class opennlp.tools.ml.model.AbstractModelReader]
+getModel, readDouble, readInt, readUTF
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

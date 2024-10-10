@@ -1,0 +1,52 @@
+[API Name] opennlp.tools.util.TrainingParameters
+[Type] Class
+[Info]
+public class TrainingParameters extends Object Declares and handles default parameters used for or during training models.
+[Constructor Summary]
+TrainingParameters()	No-arg constructor to create a default TrainingParameters instance.
+TrainingParameters(InputStream in)	InputStream based constructor that reads in TrainingParameters.
+TrainingParameters(Map<String,Object> map)	Key-value based constructor to apply a Map based configuration initialization.
+TrainingParameters(TrainingParameters trainingParameters)	Copy constructor to hand over the config of existing TrainingParameters.
+[Field Summary]
+static final String ALGORITHM_PARAM	
+static final int CUTOFF_DEFAULT_VALUE	
+static final String CUTOFF_PARAM	
+static final int ITERATIONS_DEFAULT_VALUE	
+static final String ITERATIONS_PARAM	
+static final String THREADS_PARAM	
+static final String TRAINER_TYPE_PARAM	
+[Method Summary]
+String algorithm()	
+String algorithm(String namespace)	
+static TrainingParameters defaultParams()	
+boolean getBooleanParameter(String key, boolean defaultValue)	Obtains a training parameter value.
+boolean getBooleanParameter(String namespace, String key, boolean defaultValue)	Obtains a training parameter value in the specified namespace.
+double getDoubleParameter(String key, double defaultValue)	Obtains a training parameter value.
+double getDoubleParameter(String namespace, String key, double defaultValue)	Obtains a training parameter value in the specified namespace.
+int getIntParameter(String key, int defaultValue)	Obtains a training parameter value.
+int getIntParameter(String namespace, String key, int defaultValue)	Obtains a training parameter value in the specified namespace.
+Map<String,Object> getObjectSettings()	
+Map<String,Object> getObjectSettings(String namespace)	
+TrainingParameters getParameters(String namespace)	
+String getStringParameter(String key, String defaultValue)	Obtains a training parameter value.
+String getStringParameter(String namespace, String key, String defaultValue)	Obtains a training parameter value in the specified namespace.
+void put(String key, boolean value)	Puts a value into the current TrainingParameters under a certain key.
+void put(String key, double value)	Puts a value into the current TrainingParameters under a certain key.
+void put(String key, int value)	Puts a value into the current TrainingParameters under a certain key.
+void put(String key, String value)	Puts a value into the current TrainingParameters under a certain key.
+void put(String namespace, String key, boolean value)	Puts a value into the current TrainingParameters under a certain key.
+void put(String namespace, String key, double value)	Puts a value into the current TrainingParameters under a certain key.
+void put(String namespace, String key, int value)	Puts a value into the current TrainingParameters under a certain key.
+void put(String namespace, String key, String value)	Puts a value into the current TrainingParameters under a certain key.
+void putIfAbsent(String key, boolean value)	Puts a value into the current TrainingParameters under a certain key, if the value was not present before.
+void putIfAbsent(String key, double value)	Puts a value into the current TrainingParameters under a certain key, if the value was not present before.
+void putIfAbsent(String key, int value)	Puts a value into the current TrainingParameters under a certain key, if the value was not present before.
+void putIfAbsent(String key, String value)	Puts a value into the current TrainingParameters under a certain key, if the value was not present before.
+void putIfAbsent(String namespace, String key, boolean value)	Puts a value into the current TrainingParameters under a certain key, if the value was not present before.
+void putIfAbsent(String namespace, String key, double value)	Puts a value into the current TrainingParameters under a certain key, if the value was not present before.
+void putIfAbsent(String namespace, String key, int value)	Puts a value into the current TrainingParameters under a certain key, if the value was not present before.
+void putIfAbsent(String namespace, String key, String value)	Puts a value into the current TrainingParameters under a certain key, if the value was not present before.
+void serialize(OutputStream out)	Serializes a TrainingParameters instance via a specified OutputStream.
+static TrainingParameters setParams(String[] params)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

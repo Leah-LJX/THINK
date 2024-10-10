@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.labels.ItemLabelPosition
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+ItemLabelPosition() Creates a new position record with default settings.
+[Method Summary]
+boolean equals(Object obj) Tests this object for equality with an arbitrary object.

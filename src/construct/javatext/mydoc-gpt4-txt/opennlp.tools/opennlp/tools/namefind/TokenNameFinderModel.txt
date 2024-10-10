@@ -1,0 +1,31 @@
+[API Name] opennlp.tools.namefind.TokenNameFinderModel
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, ArtifactProvider
+public class TokenNameFinderModel extends BaseModel The TokenNameFinderModel is the model used by a learnable TokenNameFinder.
+See Also:
+NameFinderME Serialized Form
+[Constructor Summary]
+TokenNameFinderModel(File modelFile)	Initializes a TokenNameFinderModel instance via a valid File.
+TokenNameFinderModel(InputStream in)	Initializes a TokenNameFinderModel instance via a valid InputStream.
+TokenNameFinderModel(String languageCode, MaxentModel nameFinderModel, byte[] generatorDescriptor, Map<String,Object> resources, Map<String,String> manifestInfoEntries)	Initializes a TokenNameFinderModel instance via given parameters.
+TokenNameFinderModel(String languageCode, MaxentModel nameFinderModel, int beamSize, byte[] generatorDescriptor, Map<String,Object> resources, Map<String,String> manifestInfoEntries)	Initializes a TokenNameFinderModel instance via given parameters.
+TokenNameFinderModel(String languageCode, MaxentModel nameFinderModel, int beamSize, byte[] generatorDescriptor, Map<String,Object> resources, Map<String,String> manifestInfoEntries, SequenceCodec<String> seqCodec, TokenNameFinderFactory factory)	Initializes a TokenNameFinderModel instance via given parameters.
+TokenNameFinderModel(String languageCode, MaxentModel nameFinderModel, Map<String,Object> resources, Map<String,String> manifestInfoEntries)	Initializes a TokenNameFinderModel instance via given parameters.
+TokenNameFinderModel(String languageCode, SequenceClassificationModel<String> nameFinderModel, byte[] generatorDescriptor, Map<String,Object> resources, Map<String,String> manifestInfoEntries, SequenceCodec<String> seqCodec, TokenNameFinderFactory factory)	Initializes a TokenNameFinderModel instance via given parameters.
+TokenNameFinderModel(URL modelURL)	Initializes a TokenNameFinderModel instance via a valid URL.
+TokenNameFinderModel(Path modelPath)	Initializes a TokenNameFinderModel instance via a valid Path.
+[Nested Class Summary]
+Nested Class Summary
+static class 
+[Method Summary]
+static Map<String,ArtifactSerializer<?>> createArtifactSerializers()	Create the serializers.
+TokenNameFinderFactory getFactory()	
+SequenceClassificationModel<String> getNameFinderSequenceModel()	
+SequenceCodec<String> getSequenceCodec()	
+[Fields inherited from class opennlp.tools.util.model.BaseModel]
+TRAINING_CUTOFF_PROPERTY, TRAINING_EVENTHASH_PROPERTY, TRAINING_ITERATIONS_PROPERTY
+[Methods inherited from class opennlp.tools.util.model.BaseModel]
+getArtifact, getLanguage, getManifestProperty, getVersion, isLoadedFromSerialized, serialize, serialize, serialize
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

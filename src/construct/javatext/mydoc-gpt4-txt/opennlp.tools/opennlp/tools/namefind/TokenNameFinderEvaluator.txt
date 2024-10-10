@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.namefind.TokenNameFinderEvaluator
+[Type] Class
+[Info]
+public class TokenNameFinderEvaluator extends Evaluator<NameSample> The TokenNameFinderEvaluator measures the performance  of the given TokenNameFinder with the provided  reference samples.
+See Also:
+Evaluator TokenNameFinder NameSample
+[Constructor Summary]
+TokenNameFinderEvaluator(TokenNameFinder nameFinder, TokenNameFinderEvaluationMonitor... listeners)	Initializes a TokenNameFinderEvaluator for a given TokenNameFinder.
+[Method Summary]
+FMeasure getFMeasure()	
+[Methods inherited from class opennlp.tools.util.eval.Evaluator]
+evaluate, evaluateSample
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

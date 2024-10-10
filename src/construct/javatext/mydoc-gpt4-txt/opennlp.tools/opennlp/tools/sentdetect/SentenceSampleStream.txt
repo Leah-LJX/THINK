@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.sentdetect.SentenceSampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<SentenceSample>
+public class SentenceSampleStream extends FilterObjectStream<String,SentenceSample> This class is a stream filter which reads a sentence by line samples from  an ObjectStream and converts them into SentenceSample objects.  An empty line indicates the beginning of a new document.
+[Constructor Summary]
+SentenceSampleStream(ObjectStream<String> sentences)	
+[Method Summary]
+SentenceSample read()	Returns the next ObjectStream object.
+static String replaceNewLineEscapeTags(String s)	
+[Methods inherited from class opennlp.tools.util.FilterObjectStream]
+close, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

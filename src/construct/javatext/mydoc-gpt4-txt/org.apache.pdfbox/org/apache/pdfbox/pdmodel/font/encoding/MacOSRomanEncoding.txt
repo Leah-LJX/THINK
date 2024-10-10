@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.pdmodel.font.encoding.MacOSRomanEncoding
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class MacOSRomanEncoding extends MacRomanEncoding This is the Mac OS Roman encoding, which is similar to the  MacRomanEncoding with the addition of 15 entries
+[Constructor Summary]
+MacOSRomanEncoding()	Constructor.
+[Field Summary]
+static MacOSRomanEncoding INSTANCE	Singleton instance of this class.
+[Method Summary]
+COSBase getCOSObject()	Convert this standard java object to a COS object.
+[Methods inherited from class org.apache.pdfbox.pdmodel.font.encoding.MacRomanEncoding]
+getEncodingName
+[Methods inherited from class org.apache.pdfbox.pdmodel.font.encoding.Encoding]
+add, contains, contains, getCodeToNameMap, getInstance, getName, getNameToCodeMap, overwrite
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

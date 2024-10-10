@@ -1,0 +1,15 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.JpegPhotoshopMetadata
+[Type] Class
+[Info]
+All Implemented Interfaces: ImageMetadata
+public class JpegPhotoshopMetadata extends GenericImageMetadata
+[Constructor Summary]
+JpegPhotoshopMetadata​(PhotoshopApp13Data photoshopApp13Data)	
+[Field Summary]
+PhotoshopApp13Data photoshopApp13Data	
+[Method Summary]
+void dump()	
+[Methods inherited from class org.apache.commons.imaging.common.GenericImageMetadata]
+add, add, getItems, toString, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

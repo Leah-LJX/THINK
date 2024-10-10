@@ -1,0 +1,13 @@
+[Class] org.jfree.data.xy.XYItemKey
+[Flag] Class
+[Info]
+Type Parameters: S - the series key type.
+All Implemented Interfaces: Serializable, Comparable<XYItemKey<S>>, ItemKey
+[Constructor Summary]
+XYItemKey(S seriesKey, int itemIndex)	Creates a new instance.
+[Method Summary]
+int compareTo(XYItemKey<S> key) 	 boolean equals(Object obj)	Tests this instance for equality with an arbitrary object.
+int getItemIndex()	Returns the item index.
+S getSeriesKey()	Returns the series key.
+int hashCode() 	 String toJSONString()	Returns a JSON formatted string representing the key.
+String toString()

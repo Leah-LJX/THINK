@@ -1,0 +1,8 @@
+[API Name] org.apache.pdfbox.cos.ICOSParser
+[Type] Interface
+[Info]
+All Known Implementing Classes: BruteForceParser, COSParser, FDFParser, PDFParser
+public interface ICOSParser
+[Method Summary]
+org.apache.pdfbox.io.RandomAccessReadView createRandomAccessReadView(long startPosition, long streamLength)	Creates a random access read view starting at the given position with the given length.
+COSBase dereferenceCOSObject(COSObject obj)	Dereference the COSBase object which is referenced by the given COSObject.

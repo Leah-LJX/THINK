@@ -1,0 +1,12 @@
+[Class] org.w3c.dom.svg.SVGFEDisplacementMapElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGFilterPrimitiveStandardAttributes, SVGStylable
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedString getIn1()	 
+ SVGAnimatedString getIn2()	 
+ SVGAnimatedNumber getScale()	 
+ SVGAnimatedEnumeration getXChannelSelector()	 
+ SVGAnimatedEnumeration getYChannelSelector()

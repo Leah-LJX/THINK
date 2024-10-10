@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.sentdetect.SDCrossValidator
+[Type] Class
+[Info]
+public class SDCrossValidator extends Object A cross validator for sentence detectors.
+[Constructor Summary]
+SDCrossValidator(String languageCode, TrainingParameters params, SentenceDetectorFactory sdFactory, SentenceDetectorEvaluationMonitor... listeners)	
+[Method Summary]
+void evaluate(ObjectStream<SentenceSample> samples, int nFolds)	Starts the evaluation.
+FMeasure getFMeasure()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

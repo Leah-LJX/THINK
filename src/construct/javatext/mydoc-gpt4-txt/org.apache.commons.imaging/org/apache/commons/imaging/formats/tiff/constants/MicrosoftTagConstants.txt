@@ -1,0 +1,15 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.constants.MicrosoftTagConstants
+[Type] Class
+[Info]
+public final class MicrosoftTagConstants extends Object Largely undocumented and derived by experimentation.
+[Field Summary]
+static List<TagInfo> ALL_MICROSOFT_TAGS	
+static TagInfoShort EXIF_TAG_RATING	
+static TagInfoShort EXIF_TAG_RATING_PERCENT	
+static TagInfoXpString EXIF_TAG_XPAUTHOR	
+static TagInfoXpString EXIF_TAG_XPCOMMENT	
+static TagInfoXpString EXIF_TAG_XPKEYWORDS	
+static TagInfoXpString EXIF_TAG_XPSUBJECT	
+static TagInfoXpString EXIF_TAG_XPTITLE	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,39 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.fieldtypes.FieldType
+[Type] Class
+[Info]
+Direct Known Subclasses: FieldTypeAscii, FieldTypeByte, FieldTypeDouble, FieldTypeFloat, FieldTypeLong, FieldTypeRational, FieldTypeShort
+public abstract class FieldType extends Object TIFF field types.
+[Constructor Summary]
+protected FieldType​(int type, String name, int elementSize)	
+[Field Summary]
+static List<FieldType> ANY	
+static FieldTypeAscii ASCII	
+static List<FieldType> ASCII_OR_BYTE	
+static List<FieldType> ASCII_OR_RATIONAL	
+static FieldTypeByte BYTE	
+static List<FieldType> BYTE_OR_SHORT	
+static FieldTypeDouble DOUBLE	
+static FieldTypeFloat FLOAT	
+static FieldTypeLong IFD	
+static FieldTypeLong LONG	
+static List<FieldType> LONG_OR_IFD	
+static List<FieldType> LONG_OR_SHORT	
+static FieldTypeRational RATIONAL	
+static FieldTypeByte SBYTE	
+static FieldTypeShort SHORT	
+static List<FieldType> SHORT_OR_LONG	
+static List<FieldType> SHORT_OR_LONG_OR_RATIONAL	
+static List<FieldType> SHORT_OR_RATIONAL	
+static FieldTypeLong SLONG	
+static FieldTypeRational SRATIONAL	
+static FieldTypeShort SSHORT	
+static FieldTypeByte UNDEFINED	
+[Method Summary]
+static FieldType getFieldType​(int type)	
+String getName()	
+int getSize()	
+int getType()	
+abstract Object getValue​(TiffField entry)	
+abstract byte[] writeData​(Object o, ByteOrder byteOrder)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

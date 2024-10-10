@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.plot.dial.AbstractDialLayer
+[Flag] Class
+[Info]
+All Implemented Interfaces: DialLayer
+Direct Known Subclasses: ArcDialFrame, DialBackground, DialCap, DialPointer, DialTextAnnotation, DialValueIndicator, StandardDialFrame, StandardDialRange, StandardDialScale
+[Constructor Summary]
+protected AbstractDialLayer() Creates a new instance.
+[Method Summary]
+void addChangeListener(DialLayerChangeListener listener) Registers an object for notification of changes to the dial layer.

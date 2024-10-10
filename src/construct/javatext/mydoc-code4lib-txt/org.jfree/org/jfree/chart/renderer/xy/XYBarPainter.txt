@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.xy.XYBarPainter
+[Flag] Interface
+[Info]
+All Known Implementing Classes: GradientXYBarPainter, StandardXYBarPainter
+[Constructor Summary]
+
+[Method Summary]
+void paintBar(Graphics2D g2, XYBarRenderer renderer, int row, int column, RectangularShape bar, org.jfree.ui.RectangleEdge base) Paints a single bar on behalf of a renderer.

@@ -1,0 +1,10 @@
+[API Name] Package org.apache.commons.imaging.common.mylzw.MyLzwCompressor.Listener
+[Type] Interface
+[Info]
+Enclosing class: MyLzwCompressor
+public static interface MyLzwCompressor.Listener
+[Method Summary]
+void clearCode​(int code)	
+void dataCode​(int code)	
+void eoiCode​(int code)	
+void init​(int clearCode, int eoiCode)	

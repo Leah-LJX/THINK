@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.ClipPath
+[Flag] Class
+[Info]
+All Implemented Interfaces: Cloneable
+[Constructor Summary]
+ClipPath() Deprecated. Constructor for ClipPath.
+[Method Summary]
+Object clone() Deprecated. Returns a clone of the object (a deeper clone than default to avoid bugs when setting values in cloned object).

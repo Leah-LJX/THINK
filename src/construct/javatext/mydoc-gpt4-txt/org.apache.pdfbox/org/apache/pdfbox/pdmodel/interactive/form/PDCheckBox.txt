@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.form.PDCheckBox
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class PDCheckBox extends PDButton A check box toggles between two states, on and off.
+Author: Ben Litchfield, sug
+[Constructor Summary]
+PDCheckBox(PDAcroForm acroForm)	
+[Method Summary]
+void check()	Checks the check box.
+String getOnValue()	Get the value which sets the check box to the On state.
+boolean isChecked()	This will tell if this radio button is currently checked or not.
+void unCheck()	Unchecks the check box.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDButton]
+getDefaultValue, getExportValues, getOnValues, getValue, getValueAsString, isPushButton, isRadioButton, setDefaultValue, setExportValues, setValue, setValue
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDTerminalField]
+applyChange, getFieldFlags, getFieldType, getWidgets, importFDF, setActions, setWidgets
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDField]
+getAcroForm, getActions, getAlternateFieldName, getCOSObject, getFullyQualifiedName, getInheritableAttribute, getMappingName, getParent, getPartialName, isNoExport, isReadOnly, isRequired, setAlternateFieldName, setFieldFlags, setMappingName, setNoExport, setPartialName, setReadOnly, setRequired, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

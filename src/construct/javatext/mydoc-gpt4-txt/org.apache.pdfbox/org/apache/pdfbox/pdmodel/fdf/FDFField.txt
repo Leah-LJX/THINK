@@ -1,0 +1,56 @@
+[API Name] org.apache.pdfbox.pdmodel.fdf.FDFField
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class FDFField extends Object implements COSObjectable This represents an FDF field that is part of the FDF document.
+Author: Ben Litchfield
+[Constructor Summary]
+FDFField()	Default constructor.
+FDFField(COSDictionary f)	Constructor.
+FDFField(Element fieldXML)	This will create an FDF field from an XFDF XML document.
+[Method Summary]
+PDAction getAction()	This will get the action that is associated with this field.
+PDAdditionalActions getAdditionalActions()	This will get a list of additional actions that will get executed based on events.
+PDAppearanceDictionary getAppearanceDictionary()	This will get the appearance dictionary that specifies the appearance of a pushbutton field.
+FDFNamedPageReference getAppearanceStreamReference()	This will get named page references.
+Integer getClearFieldFlags()	This will get the 'ClrFf' entry of the FDF field dictionary.
+Integer getClearWidgetFieldFlags()	This will get the 'ClrF' entry of the FDF field dictionary.
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+COSBase getCOSValue()	Returns the COS value of this field.
+Integer getFieldFlags()	This will get the 'Ff' entry of the FDF field dictionary.
+FDFIconFit getIconFit()	This will get the icon fit that is associated with this field.
+List<FDFField> getKids()	This will get the list of kids.
+List<Object> getOptions()	This will return a list of options for a choice field.
+String getPartialFieldName()	This will get the "T" entry in the field dictionary.
+String getRichText()	This will set the rich text that is associated with this field.
+Integer getSetFieldFlags()	This will get the 'SetFf' entry of the FDF field dictionary.
+Integer getSetWidgetFieldFlags()	This will get the 'SetF' entry of the FDF field dictionary.
+Object getValue()	This will get the value for the field.
+Integer getWidgetFieldFlags()	This will get the 'F' entry of the FDF field dictionary.
+void setAction(PDAction a)	This will set the action that is associated with this field.
+void setAdditionalActions(PDAdditionalActions aa)	This will set the additional actions that are associated with this field.
+void setAppearanceDictionary(PDAppearanceDictionary ap)	This will set the appearance dictionary.
+void setAppearanceStreamReference(FDFNamedPageReference ref)	This will set the named page references.
+void setClearFieldFlags(int ff)	This will set the field flags that are associated with this field.
+void setClearFieldFlags(Integer ff)	This will set the field flags that are associated with this field.
+void setClearWidgetFieldFlags(int ff)	This will set the field flags that are associated with this field.
+void setClearWidgetFieldFlags(Integer ff)	This will set the field flags that are associated with this field.
+void setFieldFlags(int ff)	This will set the field flags that are associated with this field.
+void setFieldFlags(Integer ff)	This will set the field flags that are associated with this field.
+void setIconFit(FDFIconFit fit)	This will set the icon fit 'IF' entry.
+void setKids(List<FDFField> kids)	This will set the list of kids.
+void setOptions(List<Object> options)	This will set the options for the choice field.
+void setPartialFieldName(String partial)	This will set the partial field name.
+void setRichText(COSStream rv)	This will set the rich text value.
+void setRichText(COSString rv)	This will set the rich text value.
+void setSetFieldFlags(int ff)	This will set the field flags that are associated with this field.
+void setSetFieldFlags(Integer ff)	This will set the field flags that are associated with this field.
+void setSetWidgetFieldFlags(int ff)	This will set the widget field flags that are associated with this field.
+void setSetWidgetFieldFlags(Integer ff)	This will set the widget field flags that are associated with this field.
+void setValue(COSBase value)	Sets the COS value of this field.
+void setValue(Object value)	You should pass a String, or a List<String> to set the value.
+void setWidgetFieldFlags(int f)	This will set the field flags that are associated with this field.
+void setWidgetFieldFlags(Integer f)	This will set the widget field flags that are associated with this field.
+void writeXML(Writer output)	This will write this element as an XML document.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

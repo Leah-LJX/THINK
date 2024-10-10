@@ -1,0 +1,32 @@
+[API Name] org.apache.pdfbox.cos.COSString
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class COSString extends COSBase A string object, which may be a text string, a PDFDocEncoded string, ASCII string, or byte string.
+ Text strings are used for character strings that contain information intended to be  human-readable, such as text annotations, bookmark names, article names, document information,  and so forth.
+ PDFDocEncoded strings are used for characters that are represented in a single byte.
+ ASCII strings are used for characters that are represented in a single byte using ASCII  encoding.
+ Byte strings are used for binary data represented as a series of bytes, but the encoding is  not known. The bytes of the string need not represent characters.
+Author: Ben Litchfield, John Hewson
+[Constructor Summary]
+COSString(byte[] bytes)	Creates a new PDF string from a byte array.
+COSString(String text)	Creates a new text string from a Java String.
+[Field Summary]
+static boolean FORCE_PARSING	
+[Method Summary]
+void accept(ICOSVisitor visitor)	Visitor pattern double dispatch method.
+boolean equals(Object obj)	
+String getASCII()	Returns the content of this string as a PDF ASCII string.
+byte[] getBytes()	Returns the raw bytes of the string using a new byte array.
+boolean getForceHexForm()	Returns true if the string is to be written in hex form.
+String getString()	Returns the content of this string as a PDF text string.
+int hashCode()	
+static COSString parseHex(String hex)	This will create a COS string from a string of hex characters.
+void setForceHexForm(boolean value)	Sets whether to force the string is to be written in hex form.
+void setValue(byte[] value)	Deprecated. to be removed in a future release.
+String toHexString()	This will take this string and create a hex representation of the bytes that make the string.
+String toString()	
+[Methods inherited from class org.apache.pdfbox.cos.COSBase]
+getCOSObject, getKey, isDirect, setDirect, setKey
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

@@ -1,0 +1,6 @@
+[API Name] opennlp.tools.dictionary.serializer.EntryInserter
+[Type] Interface
+[Info]
+public interface EntryInserter
+[Method Summary]
+void insert(Entry entry)	

@@ -1,0 +1,9 @@
+[Class] org.w3c.dom.svg.SVGPathSegLinetoVerticalRel
+[Flag] Interface
+[Info]
+All Superinterfaces: SVGPathSeg
+[Constructor Summary]
+
+[Method Summary]
+float getY()	 
+ void setY(float y)

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.CompassFormat
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+CompassFormat() Creates a new formatter using English identifiers.
+[Method Summary]
+StringBuffer format(double number, StringBuffer toAppendTo, FieldPosition pos) Formats a number into the specified string buffer.

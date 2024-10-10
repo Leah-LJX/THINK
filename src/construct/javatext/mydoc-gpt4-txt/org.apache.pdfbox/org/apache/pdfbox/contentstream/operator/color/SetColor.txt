@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.contentstream.operator.color.SetColor
+[Type] Class
+[Info]
+Direct Known Subclasses: SetNonStrokingColor, SetStrokingColor
+public abstract class SetColor extends OperatorProcessor sc,scn,SC,SCN: Sets the color to use for stroking or non-stroking operations.
+Author: John Hewson
+[Constructor Summary]
+protected SetColor(PDFStreamEngine context)	
+[Method Summary]
+protected abstract PDColor getColor()	Returns either the stroking or non-stroking color value.
+protected abstract PDColorSpace getColorSpace()	Returns either the stroking or non-stroking color space.
+void process(Operator operator, List<COSBase> arguments)	Process the operator.
+protected abstract void setColor(PDColor color)	Sets either the stroking or non-stroking color value.
+[Methods inherited from class org.apache.pdfbox.contentstream.operator.OperatorProcessor]
+checkArrayTypesClass, getContext, getName
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,7 @@
+[API Name] Package org.apache.commons.imaging.palette.MedianCut
+[Type] Interface
+[Info]
+All Known Implementing Classes: LongestAxisMedianCut, MostPopulatedBoxesMedianCut
+public interface MedianCut
+[Method Summary]
+boolean performNextMedianCut​(List<org.apache.commons.imaging.palette.ColorGroup> colorGroups, boolean ignoreAlpha)	

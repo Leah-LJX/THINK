@@ -1,0 +1,12 @@
+[API Name] Package org.apache.commons.imaging.common.mylzw.MyLzwDecompressor
+[Type] Class
+[Info]
+public final class MyLzwDecompressor extends Object
+[Constructor Summary]
+MyLzwDecompressor​(int initialCodeSize, ByteOrder byteOrder)	
+MyLzwDecompressor​(int initialCodeSize, ByteOrder byteOrder, MyLzwDecompressor.Listener listener)	
+[Method Summary]
+byte[] decompress​(InputStream is, int expectedLength)	
+void setTiffLZWMode()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

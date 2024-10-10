@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.Timeline
+[Flag] Interface
+[Info]
+All Known Implementing Classes: SegmentedTimeline
+[Constructor Summary]
+
+[Method Summary]
+boolean containsDomainRange(Date fromDate, Date toDate) Returns true if a range of dates are contained in the timeline.

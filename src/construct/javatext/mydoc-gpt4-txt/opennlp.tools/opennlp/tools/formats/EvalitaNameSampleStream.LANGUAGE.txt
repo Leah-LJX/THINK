@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.formats.Class
+[Type] Enum
+[Info]
+All Implemented Interfaces: Serializable, Comparable<EvalitaNameSampleStream.LANGUAGE>, Constable
+Enclosing class: EvalitaNameSampleStream
+public static enum EvalitaNameSampleStream.LANGUAGE extends Enum<EvalitaNameSampleStream.LANGUAGE>
+[Nested Class Summary]
+Nested Class Summary
+Enum.EnumDesc<E extends Enum<E>>
+[Method Summary]
+static EvalitaNameSampleStream.LANGUAGE valueOf(String name)	Returns the enum constant of this class with the specified name.
+static EvalitaNameSampleStream.LANGUAGE[] values()	Returns an array containing the constants of this enum class, in the order they are declared.
+[Methods inherited from class java.lang.Enum]
+compareTo, describeConstable, equals, getDeclaringClass, hashCode, name, ordinal, toString, valueOf
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

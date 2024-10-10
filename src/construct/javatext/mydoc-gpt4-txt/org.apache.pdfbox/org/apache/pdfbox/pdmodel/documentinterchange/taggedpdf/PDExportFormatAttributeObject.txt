@@ -1,0 +1,41 @@
+[API Name] org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.PDExportFormatAttributeObject
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDExportFormatAttributeObject extends PDLayoutAttributeObject An Export Format attribute object.
+Author: Johannes Koch
+[Constructor Summary]
+PDExportFormatAttributeObject(COSDictionary dictionary)	Creates a new ExportFormat attribute object with a given dictionary.
+PDExportFormatAttributeObject(String owner)	Default constructor.
+[Field Summary]
+static String OWNER_CSS_1_00	standard attribute owner: CSS-1.00
+static String OWNER_CSS_2_00	standard attribute owner: CSS-2.00
+static String OWNER_HTML_3_20	standard attribute owner: HTML-3.2
+static String OWNER_HTML_4_01	standard attribute owner: HTML-4.01
+static String OWNER_OEB_1_00	standard attribute owner: OEB-1.00
+static String OWNER_RTF_1_05	standard attribute owner: RTF-1.05
+static String OWNER_XML_1_00	standard attribute owner: XML-1.00
+[Method Summary]
+int getColSpan()	Gets the number of columns in the enclosing table that shall be spanned by the cell (ColSpan).
+String[] getHeaders()	Gets the headers (Headers).
+String getListNumbering()	Gets the list numbering (ListNumbering).
+int getRowSpan()	Gets the number of rows in the enclosing table that shall be spanned by the cell (RowSpan).
+String getScope()	Gets the scope (Scope).
+String getSummary()	Gets the summary of the table’s purpose and structure.
+void setColSpan(int colSpan)	Sets the number of columns in the enclosing table that shall be spanned by the cell (ColSpan).
+void setHeaders(String[] headers)	Sets the headers (Headers).
+void setListNumbering(String listNumbering)	Sets the list numbering (ListNumbering).
+void setRowSpan(int rowSpan)	Sets the number of rows in the enclosing table that shall be spanned by the cell (RowSpan).
+void setScope(String scope)	Sets the scope (Scope).
+void setSummary(String summary)	Sets the summary of the table’s purpose and structure.
+String toString()	
+[Methods inherited from class org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.PDLayoutAttributeObject]
+getBackgroundColor, getBaselineShift, getBBox, getBlockAlign, getBorderColors, getBorderStyle, getBorderThickness, getColor, getColumnCount, getColumnGap, getColumnWidths, getEndIndent, getGlyphOrientationVertical, getHeight, getInlineAlign, getLineHeight, getPadding, getPlacement, getRubyAlign, getRubyPosition, getSpaceAfter, getSpaceBefore, getStartIndent, getTBorderStyle, getTextAlign, getTextDecorationColor, getTextDecorationThickness, getTextDecorationType, getTextIndent, getTPadding, getWidth, getWritingMode, setAllBorderColors, setAllBorderStyles, setAllBorderThicknesses, setAllBorderThicknesses, setAllColumnWidths, setAllColumnWidths, setAllPaddings, setAllPaddings, setAllTBorderStyles, setAllTPaddings, setAllTPaddings, setBackgroundColor, setBaselineShift, setBaselineShift, setBBox, setBlockAlign, setBorderColors, setBorderStyles, setBorderThicknesses, setColor, setColumnCount, setColumnGap, setColumnGap, setColumnGaps, setColumnWidths, setEndIndent, setEndIndent, setGlyphOrientationVertical, setHeight, setHeight, setHeightAuto, setInlineAlign, setLineHeight, setLineHeight, setLineHeightAuto, setLineHeightNormal, setPaddings, setPlacement, setRubyAlign, setRubyPosition, setSpaceAfter, setSpaceAfter, setSpaceBefore, setSpaceBefore, setStartIndent, setStartIndent, setTBorderStyles, setTextAlign, setTextDecorationColor, setTextDecorationThickness, setTextDecorationThickness, setTextDecorationType, setTextIndent, setTextIndent, setTPaddings, setWidth, setWidth, setWidthAuto, setWritingMode
+[Methods inherited from class org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.PDStandardAttributeObject]
+getArrayOfString, getColor, getColorOrFourColors, getInteger, getName, getName, getNameOrArrayOfName, getNumber, getNumber, getNumberOrArrayOfNumber, getNumberOrName, getString, isSpecified, setArrayOfName, setArrayOfNumber, setArrayOfString, setColor, setFourColors, setInteger, setName, setNumber, setNumber, setString
+[Methods inherited from class org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDAttributeObject]
+arrayToString, arrayToString, create, getOwner, isEmpty, notifyChanged, potentiallyNotifyChanged, setOwner, setStructureElement
+[Methods inherited from class org.apache.pdfbox.pdmodel.common.PDDictionaryWrapper]
+equals, getCOSObject, hashCode
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

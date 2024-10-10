@@ -1,0 +1,14 @@
+[Class] org.w3c.dom.Text
+[Flag] Interface
+[Info]
+All Superinterfaces:
+CharacterData, Node
+All Known Subinterfaces:
+CDATASection, Text
+[Constructor Summary]
+
+[Method Summary]
+String getWholeText() Returns all text of Text nodes logically-adjacent text nodes to this node, concatenated in document order.
+boolean isElementContentWhitespace() Returns whether this text node contains element content whitespace, often abusively called "ignorable whitespace".
+Text replaceWholeText(String content) Replaces the text of the current node and all logically-adjacent text nodes with the specified text.
+Text splitText(int offset) Breaks this node into two nodes at the specified offset, keeping both in the tree as siblings.

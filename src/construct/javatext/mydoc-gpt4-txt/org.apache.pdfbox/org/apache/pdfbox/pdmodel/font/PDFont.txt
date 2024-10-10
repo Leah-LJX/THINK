@@ -1,0 +1,47 @@
+[API Name] org.apache.pdfbox.pdmodel.font.PDFont
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable, PDFontLike
+Direct Known Subclasses: PDSimpleFont, PDType0Font
+public abstract class PDFont extends Object implements COSObjectable, PDFontLike This is the base class for all PDF fonts.
+Author: Ben Litchfield
+[Constructor Summary]
+protected PDFont(COSDictionary fontDictionary)	Constructor.
+[Field Summary]
+protected static Matrix DEFAULT_FONT_MATRIX	
+protected COSDictionary dict	
+[Method Summary]
+abstract void addToSubset(int codePoint)	Adds the given Unicode point to the subset.
+protected abstract byte[] encode(int unicode)	Encodes the given Unicode code point for use in a PDF content stream.
+byte[] encode(String text)	Encodes the given string for use in a PDF content stream.
+boolean equals(Object other)	
+float getAverageFontWidth()	This will get the average font width for all characters.
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+Vector getDisplacement(int code)	Returns the displacement vector (w0, w1) in text space, for the given character.
+PDFontDescriptor getFontDescriptor()	Returns the font descriptor, may be null.
+Matrix getFontMatrix()	Returns the font matrix, which represents the transformation from glyph space to text space.
+Vector getPositionVector(int code)	Returns the position vector (v), in text space, for the given character.
+float getSpaceWidth()	Determines the width of the space character.
+protected org.apache.fontbox.afm.FontMetrics getStandard14AFM()	Returns the AFM if this is a Standard 14 font.
+protected abstract float getStandard14Width(int code)	Returns the glyph width from the AFM if this is a Standard 14 font.
+float getStringWidth(String text)	Returns the width of the given Unicode string.
+String getSubType()	This will get the subtype of font.
+protected org.apache.fontbox.cmap.CMap getToUnicodeCMap()	Get the /ToUnicode CMap.
+String getType()	This will always return "Font" for fonts.
+float getWidth(int code)	Returns the advance width of the given character, in glyph space.
+protected List<Float> getWidths()	The widths of the characters.
+int hashCode()	
+boolean isStandard14()	Returns true if this font is one of the "Standard 14" fonts and receives special handling.
+abstract boolean isVertical()	Returns true if the font uses vertical writing mode.
+protected org.apache.fontbox.cmap.CMap readCMap(COSBase base)	Reads a CMap given a COS Stream or Name.
+abstract int readCode(InputStream in)	Reads a character code from a content stream string.
+protected void setFontDescriptor(PDFontDescriptor fontDescriptor)	Sets the font descriptor when embedding a font.
+abstract void subset()	Replaces this font with a subset containing only the given Unicode characters.
+String toString()	
+String toUnicode(int code)	Returns the Unicode character sequence which corresponds to the given character code.
+String toUnicode(int code, GlyphList customGlyphList)	Returns the Unicode character sequence which corresponds to the given character code.
+abstract boolean willBeSubset()	Returns true if this font will be subset when embedded.
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait
+[Methods inherited from interface org.apache.pdfbox.pdmodel.font.PDFontLike]
+getBoundingBox, getHeight, getName, getWidthFromFont, hasExplicitWidth, isDamaged, isEmbedded

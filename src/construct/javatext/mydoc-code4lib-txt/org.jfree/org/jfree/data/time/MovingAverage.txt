@@ -1,0 +1,19 @@
+[Class] org.jfree.data.time.MovingAverage
+[Flag] Class
+[Info]
+Parameters: source - the source collection.
+suffix - the suffix added to each source series name to create the
+                corresponding moving average series name.
+periodCount - the number of periods in the moving average
+                     calculation.
+skip - the number of initial periods to skip.
+Returns: A collection of moving average time series.
+[Constructor Summary]
+MovingAverage()
+[Method Summary]
+static TimeSeriesCollection createMovingAverage(TimeSeriesCollection source, String suffix, int periodCount, int skip)	Creates a new TimeSeriesCollection containing a moving average series for each series in the source collection.
+static TimeSeries createMovingAverage(TimeSeries source, String name, int periodCount, int skip)	Creates a new TimeSeries containing moving average values for the given series.
+static XYSeries createMovingAverage(XYDataset source, int series, String name, double period, double skip)	Creates a new XYSeries containing the moving averages of one series in the source dataset.
+static XYDataset createMovingAverage(XYDataset source, String suffix, double period, double skip)	Creates a new XYDataset containing the moving averages of each series in the source dataset.
+static XYDataset createMovingAverage(XYDataset source, String suffix, long period, long skip)	Creates a new XYDataset containing the moving averages of each series in the source dataset.
+static TimeSeries createPointMovingAverage(TimeSeries source, String name, int pointCount)	Creates a new TimeSeries containing moving average values for the given series, calculated by number of points (irrespective of the 'age' of those points).

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.entity.CategoryLabelEntity
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, org.jfree.util.PublicCloneable
+[Constructor Summary]
+CategoryLabelEntity(Comparable key, Shape area, String toolTipText, String urlText) Creates a new entity.
+[Method Summary]
+boolean equals(Object obj) Tests this instance for equality with an arbitrary object.

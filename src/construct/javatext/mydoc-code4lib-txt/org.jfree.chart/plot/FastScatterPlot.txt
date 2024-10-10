@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.FastScatterPlot
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, AnnotationChangeListener, AxisChangeListener, MarkerChangeListener, LegendItemSource, Pannable, ValueAxisPlot, Zoomable, DatasetChangeListener, org.jfree.util.PublicCloneable
+[Constructor Summary]
+FastScatterPlot() Creates a new instance of FastScatterPlot with default axes.
+[Method Summary]
+Object clone() Returns a clone of the plot.

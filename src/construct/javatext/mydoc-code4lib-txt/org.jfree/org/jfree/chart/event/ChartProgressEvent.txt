@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.event.ChartProgressEvent
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+ChartProgressEvent(Object source, JFreeChart chart, int type, int percent) Creates a new chart change event.
+[Method Summary]
+JFreeChart getChart() Returns the chart that generated the change event.

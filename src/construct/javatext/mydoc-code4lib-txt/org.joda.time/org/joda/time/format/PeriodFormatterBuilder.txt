@@ -1,0 +1,45 @@
+[Class] org.joda.time.format.PeriodFormatterBuilder
+[Flag] Class
+[Info]
+Since: 1.0
+See Also: PeriodFormat
+[Constructor Summary]
+PeriodFormatterBuilder()
+[Method Summary]
+PeriodFormatterBuilder append(PeriodFormatter formatter) Appends another formatter.
+PeriodFormatterBuilder append(PeriodPrinter printer, PeriodParser parser) Appends a printer parser pair.
+PeriodFormatterBuilder appendDays() Instruct the printer to emit an integer days field, if supported.
+PeriodFormatterBuilder appendHours() Instruct the printer to emit an integer hours field, if supported.
+PeriodFormatterBuilder appendLiteral(String text) Instructs the printer to emit specific text, and the parser to expect it.
+PeriodFormatterBuilder appendMillis() Instruct the printer to emit an integer millis field, if supported.
+PeriodFormatterBuilder appendMillis3Digit() Instruct the printer to emit an integer millis field, if supported.
+PeriodFormatterBuilder appendMinutes() Instruct the printer to emit an integer minutes field, if supported.
+PeriodFormatterBuilder appendMonths() Instruct the printer to emit an integer months field, if supported.
+PeriodFormatterBuilder appendPrefix(String text) Append a field prefix which applies only to the next appended field.
+PeriodFormatterBuilder appendPrefix(String[] regularExpressions, String[] prefixes) Append a field prefix which applies only to the next appended field.
+PeriodFormatterBuilder appendPrefix(String singularText, String pluralText) Append a field prefix which applies only to the next appended field.
+PeriodFormatterBuilder appendSeconds() Instruct the printer to emit an integer seconds field, if supported.
+PeriodFormatterBuilder appendSecondsWithMillis() Instruct the printer to emit a combined seconds and millis field, if supported.
+PeriodFormatterBuilder appendSecondsWithOptionalMillis() Instruct the printer to emit a combined seconds and millis field, if supported.
+PeriodFormatterBuilder appendSeparator(String text) Append a separator, which is output if fields are printed both before and after the separator.
+PeriodFormatterBuilder appendSeparator(String text, String finalText) Append a separator, which is output if fields are printed both before and after the separator.
+PeriodFormatterBuilder appendSeparator(String text, String finalText, String[] variants) Append a separator, which is output if fields are printed both before and after the separator.
+PeriodFormatterBuilder appendSeparatorIfFieldsAfter(String text) Append a separator, which is output only if fields are printed after the separator.
+PeriodFormatterBuilder appendSeparatorIfFieldsBefore(String text) Append a separator, which is output only if fields are printed before the separator.
+PeriodFormatterBuilder appendSuffix(String text) Append a field suffix which applies only to the last appended field.
+PeriodFormatterBuilder appendSuffix(String[] regularExpressions, String[] suffixes) Append a field suffix which applies only to the last appended field.
+PeriodFormatterBuilder appendSuffix(String singularText, String pluralText) Append a field suffix which applies only to the last appended field.
+PeriodFormatterBuilder appendWeeks() Instruct the printer to emit an integer weeks field, if supported.
+PeriodFormatterBuilder appendYears() Instruct the printer to emit an integer years field, if supported.
+void clear() Clears out all the appended elements, allowing this builder to be reused.
+PeriodFormatterBuilder maximumParsedDigits(int maxDigits) Set the maximum digits parsed for the next and following appended fields.
+PeriodFormatterBuilder minimumPrintedDigits(int minDigits) Set the minimum digits printed for the next and following appended fields.
+PeriodFormatterBuilder printZeroAlways() Always print zero values for the next and following appended fields, even if the period doesn't support it.
+PeriodFormatterBuilder printZeroIfSupported() Print zero values for the next and following appended fields only if the period supports it.
+PeriodFormatterBuilder printZeroNever() Never print zero values for the next and following appended fields, unless no fields would be printed.
+PeriodFormatterBuilder printZeroRarelyFirst() Never print zero values for the next and following appended fields, unless no fields would be printed.
+PeriodFormatterBuilder printZeroRarelyLast() Never print zero values for the next and following appended fields, unless no fields would be printed.
+PeriodFormatterBuilder rejectSignedValues(boolean v) Reject signed values when parsing the next and following appended fields.
+PeriodFormatter toFormatter() Constructs a PeriodFormatter using all the appended elements.
+PeriodParser toParser() Internal method to create a PeriodParser instance using all the appended elements.
+PeriodPrinter toPrinter() Internal method to create a PeriodPrinter instance using all the appended elements.

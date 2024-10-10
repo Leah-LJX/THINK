@@ -1,0 +1,12 @@
+[Class] org.jfree.data.time.ohlc.OHLCSeries
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+OHLCSeries(Comparable key)	Creates a new empty series.
+[Method Summary]
+void add(OHLCItem item)	Adds a data item to the series.
+void add(RegularTimePeriod period, double open, double high, double low, double close)	Adds a data item to the series.
+ComparableObjectItem getDataItem(int index)	Returns the data item at the specified index.
+RegularTimePeriod getPeriod(int index)	Returns the time period for the specified item.
+ComparableObjectItem remove(int index)	Removes the item with the specified index.

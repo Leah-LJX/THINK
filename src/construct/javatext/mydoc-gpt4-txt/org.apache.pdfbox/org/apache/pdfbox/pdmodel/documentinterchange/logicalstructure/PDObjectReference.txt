@@ -1,0 +1,18 @@
+[API Name] org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDObjectReference
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDObjectReference extends Object implements COSObjectable An object reference.    This is described as "Entries in an object reference dictionary" in the PDF specification.
+Author: Johannes Koch
+[Constructor Summary]
+PDObjectReference()	Default Constructor.
+PDObjectReference(COSDictionary theDictionary)	Constructor for an existing object reference.
+[Field Summary]
+static String TYPE	TYPE of this object.
+[Method Summary]
+COSDictionary getCOSObject()	Returns the underlying dictionary.
+COSObjectable getReferencedObject()	Gets a higher-level object for the referenced object.
+void setReferencedObject(PDAnnotation annotation)	Sets the referenced annotation.
+void setReferencedObject(PDXObject xobject)	Sets the referenced XObject.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

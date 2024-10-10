@@ -1,0 +1,18 @@
+[API Name] opennlp.tools.util.featuregen.CachedFeatureGenerator
+[Type] Class
+[Info]
+All Implemented Interfaces: AdaptiveFeatureGenerator
+public class CachedFeatureGenerator extends Object implements AdaptiveFeatureGenerator Caches features of the aggregated generators.
+[Constructor Summary]
+CachedFeatureGenerator(AdaptiveFeatureGenerator generator)	
+CachedFeatureGenerator(AdaptiveFeatureGenerator... generators)	Deprecated.
+[Method Summary]
+void clearAdaptiveData()	Informs a feature generator that the context of the adaptive data (typically a document) is no longer valid.
+void createFeatures(List<String> features, String[] tokens, int index, String[] previousOutcomes)	Adds the appropriate features for the token at the specified index with the specified array of previousOutcomes to the specified list of features.
+AdaptiveFeatureGenerator getCachedFeatureGenerator()	
+long getNumberOfCacheHits()	
+long getNumberOfCacheMisses()	
+String toString()	
+void updateAdaptiveData(String[] tokens, String[] outcomes)	Informs a feature generator that the specified tokens have been classified with the corresponding set of specified outcomes.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, wait, wait, wait

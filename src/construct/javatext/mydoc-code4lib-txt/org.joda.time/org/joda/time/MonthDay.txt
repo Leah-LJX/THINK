@@ -1,0 +1,47 @@
+[Class] org.joda.time.MonthDay
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<ReadablePartial>, ReadablePartial
+[Constructor Summary]
+MonthDay()	Constructs a MonthDay with the current monthOfYear, using ISOChronology in	 the default zone to extract the fields.
+MonthDay(Chronology chronology)	Constructs a MonthDay with the current month-day, using the specified chronology	 and zone to extract the fields.
+MonthDay(DateTimeZone zone)	Constructs a MonthDay with the current month-day, using ISOChronology in	 the specified zone to extract the fields.
+MonthDay(int monthOfYear,	int dayOfMonth)	Constructs a MonthDay with specified year and month	 using ISOChronology.
+MonthDay(int monthOfYear,	int dayOfMonth,	Chronology chronology)	Constructs an instance set to the specified monthOfYear and dayOfMonth	 using the specified chronology, whose zone is ignored.
+MonthDay(long instant)	Constructs a MonthDay extracting the partial fields from the specified	 milliseconds using the ISOChronology in the default zone.
+MonthDay(long instant,	Chronology chronology)	Constructs a MonthDay extracting the partial fields from the specified	 milliseconds using the chronology provided.
+MonthDay(Object instant)	Constructs a MonthDay from an Object that represents some form of time.
+MonthDay(Object instant,	Chronology chronology)	Constructs a MonthDay from an Object that represents some form of time,	 using the specified chronology.
+[Method Summary]
+MonthDay.Property dayOfMonth() Get the day of month field property which provides access to advanced functionality.
+static MonthDay fromCalendarFields(Calendar calendar) Constructs a MonthDay from a java.util.Calendar using exactly the same field values avoiding any time zone effects.
+static MonthDay fromDateFields(Date date) Constructs a MonthDay from a java.util.Date using exactly the same field values avoiding any time zone effects.
+int getDayOfMonth() Get the day of month field value.
+protected DateTimeField getField(int index, Chronology chrono) Gets the field for a specific index in the chronology specified.
+DateTimeFieldType getFieldType(int index) Gets the field type at the specified index.
+DateTimeFieldType[] getFieldTypes() Gets an array of the field type of each of the fields that this partial supports.
+int getMonthOfYear() Get the month of year field value.
+MonthDay minus(ReadablePeriod period) Returns a copy of this month-day with the specified period taken away.
+MonthDay minusDays(int days) Returns a copy of this month-day minus the specified number of months.
+MonthDay minusMonths(int months) Returns a copy of this month-day minus the specified number of months.
+MonthDay.Property monthOfYear() Get the month of year field property which provides access to advanced functionality.
+static MonthDay now() Obtains a MonthDay set to the current system millisecond time using ISOChronology in the default time zone.
+static MonthDay now(Chronology chronology) Obtains a MonthDay set to the current system millisecond time using the specified chronology.
+static MonthDay now(DateTimeZone zone) Obtains a MonthDay set to the current system millisecond time using ISOChronology in the specified time zone.
+static MonthDay parse(String str) Parses a MonthDay from the specified string.
+static MonthDay parse(String str, DateTimeFormatter formatter) Parses a MonthDay from the specified string using a formatter.
+MonthDay plus(ReadablePeriod period) Returns a copy of this month-day with the specified period added.
+MonthDay plusDays(int days) Returns a copy of this month-day plus the specified number of days.
+MonthDay plusMonths(int months) Returns a copy of this month-day plus the specified number of months.
+MonthDay.Property property(DateTimeFieldType type) Gets the property object for the specified type, which contains many useful methods.
+int size() Gets the number of fields in this partial, which is two.
+LocalDate toLocalDate(int year) Converts this object to a LocalDate with the same month-day and chronology.
+String toString() Output the month-day in ISO8601 format (--MM-dd).
+String toString(String pattern) Output the month-day using the specified format pattern.
+String toString(String pattern, Locale locale) Output the month-day using the specified format pattern.
+MonthDay withChronologyRetainFields(Chronology newChronology) Returns a copy of this month-day with the specified chronology.
+MonthDay withDayOfMonth(int dayOfMonth) Returns a copy of this month-day with the day of month field updated.
+MonthDay withField(DateTimeFieldType fieldType, int value) Returns a copy of this month-day with the specified field set to a new value.
+MonthDay withFieldAdded(DurationFieldType fieldType, int amount) Returns a copy of this month-day with the value of the specified field increased.
+MonthDay withMonthOfYear(int monthOfYear) Returns a copy of this month-day with the month of year field updated.
+MonthDay withPeriodAdded(ReadablePeriod period, int scalar) Returns a copy of this month-day with the specified period added.

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.urls.CustomPieURLGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, PieURLGenerator, org.jfree.util.PublicCloneable
+[Constructor Summary]
+CustomPieURLGenerator() Creates a new CustomPieURLGenerator instance, initially empty.
+[Method Summary]
+void addURLs(Map urlMap) Adds a map containing (key, URL) mappings where each key is an instance of Comparable (corresponding to the key for an item in a pie dataset) and each URL is a String representing a URL fragment.

@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.formats.conllu.ConlluWordLine
+[Type] Class
+[Info]
+public class ConlluWordLine extends Object
+[Method Summary]
+String getDeprel()	
+String getDeps()	
+String getFeats()	
+String getForm()	
+String getHead()	
+String getId()	
+String getLemma()	
+String getMisc()	
+String getPosTag(ConlluTagset tagset)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

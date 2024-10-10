@@ -1,0 +1,17 @@
+[API Name] opennlp.tools.cmdline.postag.POSTaggerCrossValidatorTool
+[Type] Class
+[Info]
+public final class POSTaggerCrossValidatorTool extends opennlp.tools.cmdline.AbstractCrossValidatorTool<POSSample,opennlp.tools.cmdline.postag.POSTaggerCrossValidatorTool.CVToolParams>
+[Constructor Summary]
+POSTaggerCrossValidatorTool()	
+[Method Summary]
+String getShortDescription()	
+void run(String format, String[] args)	Executes the tool with the given parameters.
+[Methods inherited from class opennlp.tools.cmdline.AbstractTypedParamTool]
+getHelp
+[Methods inherited from class opennlp.tools.cmdline.TypedCmdLineTool]
+getHelp
+[Methods inherited from class opennlp.tools.cmdline.CmdLineTool]
+getName, hasParams
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.plot.dial.DialPointer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, DialLayer, org.jfree.util.PublicCloneable
+Direct Known Subclasses: DialPointer.Pin, DialPointer.Pointer
+[Constructor Summary]
+protected DialPointer() Creates a new DialPointer instance.
+[Method Summary]
+Object clone() Returns a clone of the pointer.

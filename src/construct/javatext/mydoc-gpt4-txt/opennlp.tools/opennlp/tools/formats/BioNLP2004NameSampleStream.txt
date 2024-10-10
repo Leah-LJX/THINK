@@ -1,0 +1,21 @@
+[API Name] opennlp.tools.formats.BioNLP2004NameSampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<NameSample>
+@Internal public class BioNLP2004NameSampleStream extends Object implements ObjectStream<NameSample> A sample stream for the training files of the  BioNLP/NLPBA 2004 shared task.    The data contains five named entity types:   DNA RNA protein cell_type cell_line
+ Data can be found on this  website,  or in  this repository.    The BioNLP/NLPBA 2004 data were originally published here:  
+   http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/ERtask/report.html,    yet this page was gone when last checked in December 2022.    It looks like this repo contains a copy of the data located on the original page:   The BioNLP 2004 seems to be related to http://www.geniaproject.org/shared-tasks/bionlp-jnlpba-shared-task-2004   Note:  Do not use this class, internal use only!
+[Constructor Summary]
+BioNLP2004NameSampleStream(InputStreamFactory in, int types)	Initializes a BioNLP2004NameSampleStream.
+[Field Summary]
+static final int GENERATE_CELLLINE_ENTITIES	
+static final int GENERATE_CELLTYPE_ENTITIES	
+static final int GENERATE_DNA_ENTITIES	
+static final int GENERATE_PROTEIN_ENTITIES	
+static final int GENERATE_RNA_ENTITIES	
+[Method Summary]
+void close()	Closes the ObjectStream and releases all allocated resources.
+NameSample read()	Returns the next ObjectStream object.
+void reset()	Repositions the stream at the beginning and the previously seen object sequence will be repeated exactly.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

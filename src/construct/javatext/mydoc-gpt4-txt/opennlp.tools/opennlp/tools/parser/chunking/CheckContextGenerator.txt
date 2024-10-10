@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.parser.chunking.CheckContextGenerator
+[Type] Class
+[Info]
+public class CheckContextGenerator extends AbstractContextGenerator Generates predictive context for deciding when a constituent is complete.
+See Also:
+AbstractContextGenerator
+[Constructor Summary]
+CheckContextGenerator()	Instantiates a CheckContextGenerator for generating predictive context for deciding when a constituent is complete.
+[Method Summary]
+String[] getContext(Object o)	
+String[] getContext(Parse[] constituents, String type, int start, int end)	Finds predictive context for deciding whether the specified constituents between the specified start and end index can be combined to form a new constituent of the specified type.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

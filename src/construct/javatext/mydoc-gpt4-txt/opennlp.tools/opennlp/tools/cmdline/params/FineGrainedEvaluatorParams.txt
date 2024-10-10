@@ -1,0 +1,6 @@
+[API Name] opennlp.tools.cmdline.params.FineGrainedEvaluatorParams
+[Type] Interface
+[Info]
+@Internal public interface FineGrainedEvaluatorParams Common evaluation parameters.   Note: Do not use this class, internal use only!
+[Method Summary]
+File getReportOutputFile()	

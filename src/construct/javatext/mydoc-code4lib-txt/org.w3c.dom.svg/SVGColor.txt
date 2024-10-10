@@ -1,0 +1,14 @@
+[Class] org.w3c.dom.svg.SVGColor
+[Flag] Interface
+[Info]
+All Superinterfaces: CSSValue
+All Known Subinterfaces: SVGPaint
+[Constructor Summary]
+
+[Method Summary]
+short getColorType()	 
+ SVGICCColor getICCColor()	 
+ RGBColor getRGBColor()	 
+ void setColor(short colorType, java.lang.String rgbColor, java.lang.String iccColor)	 
+ void setRGBColor(java.lang.String rgbColor)	 
+ void setRGBColorICCColor(java.lang.String rgbColor, java.lang.String iccColor)

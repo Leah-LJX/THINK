@@ -1,0 +1,7 @@
+[API Name] opennlp.tools.parser.ParserEvaluationMonitor
+[Type] Interface
+[Info]
+All Superinterfaces: EvaluationMonitor<Parse>
+public interface ParserEvaluationMonitor extends EvaluationMonitor<Parse> A marker interface for evaluating parsers.
+[Methods inherited from interface opennlp.tools.util.eval.EvaluationMonitor]
+correctlyClassified, misclassified

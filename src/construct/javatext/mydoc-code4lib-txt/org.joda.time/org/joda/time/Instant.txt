@@ -1,0 +1,26 @@
+[Class] org.joda.time.Instant
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<ReadableInstant>, ReadableInstant
+[Constructor Summary]
+Instant()	Constructs an instance set to the current system millisecond time.
+Instant(long instant)	Constructs an instance set to the milliseconds from 1970-01-01T00:00:00Z.
+Instant(Object instant)	Constructs an instance from an Object that represents a datetime.
+[Method Summary]
+Chronology getChronology() Gets the chronology of the instant, which is ISO in the UTC zone.
+long getMillis() Gets the milliseconds of the instant.
+Instant minus(long duration) Gets a copy of this instant with the specified duration taken away.
+Instant minus(ReadableDuration duration) Gets a copy of this instant with the specified duration taken away.
+static Instant now() Obtains an Instant set to the current system millisecond time.
+static Instant parse(String str) Parses a Instant from the specified string.
+static Instant parse(String str, DateTimeFormatter formatter) Parses a Instant from the specified string using a formatter.
+Instant plus(long duration) Gets a copy of this instant with the specified duration added.
+Instant plus(ReadableDuration duration) Gets a copy of this instant with the specified duration added.
+DateTime toDateTime() Get this object as a DateTime using ISOChronology in the default zone.
+DateTime toDateTimeISO() Deprecated. Use toDateTime() as it is identical
+ Instant toInstant() Get this object as an Instant by returning this.
+MutableDateTime toMutableDateTime() Get this object as a MutableDateTime using ISOChronology in the default zone.
+MutableDateTime toMutableDateTimeISO() Deprecated. Use toMutableDateTime() as it is identical
+ Instant withDurationAdded(long durationToAdd, int scalar) Gets a copy of this instant with the specified duration added.
+Instant withDurationAdded(ReadableDuration durationToAdd, int scalar) Gets a copy of this instant with the specified duration added.
+Instant withMillis(long newMillis) Gets a copy of this instant with different millis.

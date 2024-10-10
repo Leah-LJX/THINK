@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.util.model.ByteArraySerializer
+[Type] Class
+[Info]
+All Implemented Interfaces: ArtifactSerializer<byte[]>
+public class ByteArraySerializer extends Object implements ArtifactSerializer<byte[]> An ArtifactSerializer implementation for binary data, kept in byte[].
+[Constructor Summary]
+ByteArraySerializer()	
+[Method Summary]
+byte[] create(InputStream in)	Creates an artifact from the provided InputStream.
+void serialize(byte[] artifact, OutputStream out)	Serializes an artifact to the provided OutputStream.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

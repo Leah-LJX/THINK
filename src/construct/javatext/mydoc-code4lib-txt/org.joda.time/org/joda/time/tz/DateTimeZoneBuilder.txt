@@ -1,0 +1,18 @@
+[Class] org.joda.time.tz.DateTimeZoneBuilder
+[Flag] Class
+[Info]
+Since: 1.0
+See Also: ZoneInfoCompiler, 
+ZoneInfoProvider
+[Constructor Summary]
+DateTimeZoneBuilder()
+[Method Summary]
+DateTimeZoneBuilder addCutover(int year, char mode, int monthOfYear, int dayOfMonth, int dayOfWeek, boolean advanceDayOfWeek, int millisOfDay) Adds a cutover for added rules.
+DateTimeZoneBuilder addRecurringSavings(String nameKey, int saveMillis, int fromYear, int toYear, char mode, int monthOfYear, int dayOfMonth, int dayOfWeek, boolean advanceDayOfWeek, int millisOfDay) Add a recurring daylight saving time rule.
+static DateTimeZone readFrom(DataInput in, String id) Decodes a built DateTimeZone from the given stream, as encoded by writeTo.
+static DateTimeZone readFrom(InputStream in, String id) Decodes a built DateTimeZone from the given stream, as encoded by writeTo.
+DateTimeZoneBuilder setFixedSavings(String nameKey, int saveMillis) Set a fixed savings rule at the cutover.
+DateTimeZoneBuilder setStandardOffset(int standardOffset) Sets the standard offset to use for newly added rules until the next cutover is added.
+DateTimeZone toDateTimeZone(String id, boolean outputID) Processes all the rules and builds a DateTimeZone.
+void writeTo(String zoneID, DataOutput out) Encodes a built DateTimeZone to the given stream.
+void writeTo(String zoneID, OutputStream out) Encodes a built DateTimeZone to the given stream.

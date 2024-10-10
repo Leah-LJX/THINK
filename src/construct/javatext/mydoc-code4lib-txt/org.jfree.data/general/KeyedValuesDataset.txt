@@ -1,0 +1,8 @@
+[Class] org.jfree.data.general.KeyedValuesDataset
+[Flag] Interface
+[Info]
+All Superinterfaces: Dataset, KeyedValues, PieDataset, Values
+All Known Implementing Classes: DefaultKeyedValuesDataset
+[Constructor Summary]
+
+[Method Summary]

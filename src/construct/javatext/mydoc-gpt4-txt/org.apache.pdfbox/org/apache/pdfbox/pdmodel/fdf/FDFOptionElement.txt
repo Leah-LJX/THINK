@@ -1,0 +1,18 @@
+[API Name] org.apache.pdfbox.pdmodel.fdf.FDFOptionElement
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class FDFOptionElement extends Object implements COSObjectable This represents an object that can be used in a Field's Opt entry to represent an available option and a default  appearance string.
+Author: Ben Litchfield
+[Constructor Summary]
+FDFOptionElement()	Default constructor.
+FDFOptionElement(COSArray o)	Constructor.
+[Method Summary]
+COSArray getCOSArray()	Convert this standard java object to a COS object.
+COSBase getCOSObject()	Convert this standard java object to a COS object.
+String getDefaultAppearanceString()	This will get the string of default appearance string.
+String getOption()	This will get the string of one of the available options.
+void setDefaultAppearanceString(String da)	This will set the default appearance string.
+void setOption(String opt)	This will set the string for an available option.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

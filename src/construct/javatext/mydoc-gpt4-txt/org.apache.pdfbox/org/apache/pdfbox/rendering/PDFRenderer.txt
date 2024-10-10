@@ -1,0 +1,34 @@
+[API Name] org.apache.pdfbox.rendering.PDFRenderer
+[Type] Class
+[Info]
+public class PDFRenderer extends Object Renders a PDF document to an AWT BufferedImage.  This class may be overridden in order to perform custom rendering.
+Author: John Hewson
+[Constructor Summary]
+PDFRenderer(PDDocument document)	Creates a new PDFRenderer.
+[Field Summary]
+protected PDDocument document	
+[Method Summary]
+protected PageDrawer createPageDrawer(PageDrawerParameters parameters)	Returns a new PageDrawer instance, using the given parameters.
+AnnotationFilter getAnnotationsFilter()	Return the AnnotationFilter.
+RenderDestination getDefaultDestination()	
+float getImageDownscalingOptimizationThreshold()	
+RenderingHints getRenderingHints()	Get the rendering hints.
+boolean isGroupEnabled(PDOptionalContentGroup group)	Indicates whether an optional content group is enabled.
+boolean isSubsamplingAllowed()	Value indicating if the renderer is allowed to subsample images before drawing, according to image dimensions and requested scale.
+BufferedImage renderImage(int pageIndex)	Returns the given page as an RGB image at 72 DPI
+BufferedImage renderImage(int pageIndex, float scale)	Returns the given page as an RGB image at the given scale.
+BufferedImage renderImage(int pageIndex, float scale, ImageType imageType)	Returns the given page as an RGB or ARGB image at the given scale.
+BufferedImage renderImage(int pageIndex, float scale, ImageType imageType, RenderDestination destination)	Returns the given page as an RGB or ARGB image at the given scale.
+BufferedImage renderImageWithDPI(int pageIndex, float dpi)	Returns the given page as an RGB image at the given DPI.
+BufferedImage renderImageWithDPI(int pageIndex, float dpi, ImageType imageType)	Returns the given page as an RGB image at the given DPI.
+void renderPageToGraphics(int pageIndex, Graphics2D graphics)	Renders a given page to an AWT Graphics2D instance at 72 DPI.
+void renderPageToGraphics(int pageIndex, Graphics2D graphics, float scale)	Renders a given page to an AWT Graphics2D instance.
+void renderPageToGraphics(int pageIndex, Graphics2D graphics, float scaleX, float scaleY)	Renders a given page to an AWT Graphics2D instance.
+void renderPageToGraphics(int pageIndex, Graphics2D graphics, float scaleX, float scaleY, RenderDestination destination)	Renders a given page to an AWT Graphics2D instance.
+void setAnnotationsFilter(AnnotationFilter annotationsFilter)	Set the AnnotationFilter.
+void setDefaultDestination(RenderDestination defaultDestination)	
+void setImageDownscalingOptimizationThreshold(float imageDownscalingOptimizationThreshold)	Set the image downscaling optimization threshold.
+void setRenderingHints(RenderingHints renderingHints)	Set the rendering hints.
+void setSubsamplingAllowed(boolean subsamplingAllowed)	Sets a value instructing the renderer whether it is allowed to subsample images before drawing.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,20 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.annotation.PDBorderEffectDictionary
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDBorderEffectDictionary extends Object implements COSObjectable This class represents a PDF /BE entry the border effect dictionary.
+Author: Paul King
+[Constructor Summary]
+PDBorderEffectDictionary()	Constructor.
+PDBorderEffectDictionary(COSDictionary dict)	Constructor.
+[Field Summary]
+static String STYLE_CLOUDY	Constant for the name of a cloudy effect.
+static String STYLE_SOLID	Constant for the name for no effect.
+[Method Summary]
+COSDictionary getCOSObject()	returns the dictionary.
+float getIntensity()	This will retrieve the intensity of the applied effect.
+String getStyle()	This will retrieve the border effect, see the STYLE_* constants for valid values.
+void setIntensity(float i)	This will set the intensity of the applied effect.
+void setStyle(String s)	This will set the border effect, see the STYLE_* constants for valid values.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

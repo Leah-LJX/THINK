@@ -1,0 +1,45 @@
+[Class] org.joda.time.DateTimeZone
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+Direct Known Subclasses: CachedDateTimeZone, FixedDateTimeZone
+[Constructor Summary]
+protected 	DateTimeZone(String id)	Constructor.
+[Method Summary]
+long adjustOffset(long instant, boolean earlierOrLater) Adjusts the offset to be the earlier or later one during an overlap.
+long convertLocalToUTC(long instantLocal, boolean strict) Converts a local instant to a standard UTC instant with the same local time.
+long convertLocalToUTC(long instantLocal, boolean strict, long originalInstantUTC) Converts a local instant to a standard UTC instant with the same local time attempting to use the same offset as the original.
+long convertUTCToLocal(long instantUTC) Converts a standard UTC instant to a local instant with the same local time.
+abstract boolean equals(Object object) Compare this datetime zone with another.
+static DateTimeZone forID(String id) Gets a time zone instance for the specified time zone id.
+static DateTimeZone forOffsetHours(int hoursOffset) Gets a time zone instance for the specified offset to UTC in hours.
+static DateTimeZone forOffsetHoursMinutes(int hoursOffset, int minutesOffset) Gets a time zone instance for the specified offset to UTC in hours and minutes.
+static DateTimeZone forOffsetMillis(int millisOffset) Gets a time zone instance for the specified offset to UTC in milliseconds.
+static DateTimeZone forTimeZone(TimeZone zone) Gets a time zone instance for a JDK TimeZone.
+static Set<String> getAvailableIDs() Gets all the available IDs supported.
+static DateTimeZone getDefault() Gets the default time zone.
+String getID() Gets the ID of this datetime zone.
+long getMillisKeepLocal(DateTimeZone newZone, long oldInstant) Gets the millisecond instant in another zone keeping the same local time.
+String getName(long instant) Gets the long name of this datetime zone suitable for display using the default locale.
+String getName(long instant, Locale locale) Gets the long name of this datetime zone suitable for display using the specified locale.
+abstract String getNameKey(long instant) Returns a non-localized name that is unique to this time zone.
+static NameProvider getNameProvider() Gets the name provider factory.
+abstract int getOffset(long instant) Gets the millisecond offset to add to UTC to get local time.
+int getOffset(ReadableInstant instant) Gets the millisecond offset to add to UTC to get local time.
+int getOffsetFromLocal(long instantLocal) Gets the millisecond offset to subtract from local time to get UTC time.
+static Provider getProvider() Gets the zone provider factory.
+String getShortName(long instant) Gets the short name of this datetime zone suitable for display using the default locale.
+String getShortName(long instant, Locale locale) Gets the short name of this datetime zone suitable for display using the specified locale.
+abstract int getStandardOffset(long instant) Gets the standard millisecond offset to add to UTC to get local time, when standard time is in effect.
+int hashCode() Gets a hash code compatible with equals.
+abstract boolean isFixed() Returns true if this time zone has no transitions.
+boolean isLocalDateTimeGap(LocalDateTime localDateTime) Checks if the given LocalDateTime is within a gap.
+boolean isStandardOffset(long instant) Checks whether, at a particular instant, the offset is standard or not.
+abstract long nextTransition(long instant) Advances the given instant to where the time zone offset or name changes.
+abstract long previousTransition(long instant) Retreats the given instant to where the time zone offset or name changes.
+static void setDefault(DateTimeZone zone) Sets the default time zone.
+static void setNameProvider(NameProvider nameProvider) Sets the name provider factory.
+static void setProvider(Provider provider) Sets the zone provider factory.
+String toString() Gets the datetime zone as a string, which is simply its ID.
+TimeZone toTimeZone() Get the datetime zone as a TimeZone.
+protected Object writeReplace() By default, when DateTimeZones are serialized, only a "stub" object referring to the id is written out.

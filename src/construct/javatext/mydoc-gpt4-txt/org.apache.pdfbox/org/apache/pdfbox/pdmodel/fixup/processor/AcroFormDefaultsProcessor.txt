@@ -1,0 +1,13 @@
+[API Name] org.apache.pdfbox.pdmodel.fixup.processor.AcroFormDefaultsProcessor
+[Type] Class
+[Info]
+All Implemented Interfaces: PDDocumentProcessor
+public class AcroFormDefaultsProcessor extends AbstractProcessor Verify and ensure default resources for /AcroForm.     a default appearance string is defined default resources are defined Helvetica as /Helv and Zapf Dingbats as ZaDb are included.        ZaDb is required for most check boxes and radio buttons
+[Constructor Summary]
+AcroFormDefaultsProcessor(PDDocument document)	
+[Field Summary]
+AcroFormDefaultsProcessor(PDDocument document)	
+[Method Summary]
+void process()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

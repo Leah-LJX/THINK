@@ -1,0 +1,10 @@
+[API Name] opennlp.tools.formats.NameSampleDataStreamFactory.Parameters
+[Type] Interface
+[Info]
+All Superinterfaces: BasicFormatParams, EncodingParameter
+Enclosing class: NameSampleDataStreamFactory<P>
+public static interface NameSampleDataStreamFactory.Parameters extends BasicFormatParams
+[Methods inherited from interface opennlp.tools.cmdline.params.BasicFormatParams]
+getData
+[Methods inherited from interface opennlp.tools.cmdline.params.EncodingParameter]
+getEncoding

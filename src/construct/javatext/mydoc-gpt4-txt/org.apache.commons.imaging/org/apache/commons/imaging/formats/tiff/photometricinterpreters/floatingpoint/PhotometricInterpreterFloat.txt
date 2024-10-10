@@ -1,0 +1,23 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.photometricinterpreters.floatingpoint.PhotometricInterpreterFloat
+[Type] Class
+[Info]
+public class PhotometricInterpreterFloat extends PhotometricInterpreter Implements a custom photometric interpreter that can be supplied by  applications in order to render Java images from real-valued TIFF data  products. Most TIFF files include a specification for a "photometric  interpreter" that implements logic for transforming the raw data in a TIFF  file to a rendered image. But the TIFF standard does not include a  specification for a photometric interpreter that can be used for rendering  floating-point data. TIFF files are sometimes used to specify non-image data  as a floating-point raster. This approach is particularly common in GeoTIFF  files (TIFF files that contain tags for supporting geospatial reference  metadata for Geographic Information Systems). Because of the limits of the  stock photometric interpreters, most floating-point TIFF files to not produce  useful images.    This class allows an Apache Commons implementation to construct and specify a  custom photometric interpreter when reading from a TIFF file. Applications  may supply their own palette that maps real-valued data to specified colors.    This class provides two constructors:   A simple constructor to support gray scales A constructor to support a color palette (with potential  interpolation)
+ To use this class, an application must access the TIFF file using the  low-level, TIFF-specific API provided by the Apache Commons Imaging library.
+[Constructor Summary]
+PhotometricInterpreterFloat​(float valueBlack, float valueWhite)	Constructs a photometric interpreter that will produce a gray scale linearly distributed across the RGB color space for values in the range valueBlack to valueWhite.
+PhotometricInterpreterFloat​(List<PaletteEntry> paletteEntries)	Constructs a photometric interpreter that will use the specified palette to assign colors to floating-point values.
+[Field Summary]
+PhotometricInterpreterFloat​(float valueBlack, float valueWhite)	Constructs a photometric interpreter that will produce a gray scale linearly distributed across the RGB color space for values in the range valueBlack to valueWhite.
+PhotometricInterpreterFloat​(List<PaletteEntry> paletteEntries)	Constructs a photometric interpreter that will use the specified palette to assign colors to floating-point values.
+[Method Summary]
+float getMaxFound()	Gets the maximum value found while rendering the image
+int[] getMaxXY()	Gets the coordinates (x,y) at which the maximum value was identified during processing
+float getMeanFound()	Get the mean of the values found while processing
+float getMinFound()	Gets the minimum value found while rendering the image
+int[] getMinXY()	Gets the coordinates (x,y) at which the minimum value was identified during processing
+void interpretPixel​(ImageBuilder imageBuilder, int[] samples, int x, int y)	
+int mapValueToARGB​(float f)	Provides a method for mapping a pixel value to an integer (ARGB) value.
+[Methods inherited from class org.apache.commons.imaging.formats.tiff.photometricinterpreters.PhotometricInterpreter]
+getBitsPerSample
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

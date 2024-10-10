@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.dictionary.serializer.Attributes
+[Type] Class
+[Info]
+public class Attributes extends Object The Attributes class stores name value pairs.    Problem: If a HashMap is used storing name-value pairs this results  in a very high memory footprint, replace it.
+[Constructor Summary]
+Attributes()	
+[Method Summary]
+String getValue(String key)	Retrieves the value for the given key or null if attribute it not set.
+Iterator<String> iterator()	Iterates over the keys.
+void setValue(String key, String value)	Sets a key/value pair.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

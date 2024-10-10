@@ -1,0 +1,19 @@
+[API Name] org.apache.pdfbox.pdmodel.font.encoding.Type1Encoding
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class Type1Encoding extends Encoding An encoding for a Type 1 font.
+[Constructor Summary]
+Type1Encoding()	Creates an empty encoding.
+Type1Encoding(org.apache.fontbox.afm.FontMetrics fontMetrics)	Creates an encoding from the given AFM font metrics.
+[Field Summary]
+Type1Encoding()	Creates an empty encoding.
+Type1Encoding(org.apache.fontbox.afm.FontMetrics fontMetrics)	Creates an encoding from the given AFM font metrics.
+[Method Summary]
+static Type1Encoding fromFontBox(org.apache.fontbox.encoding.Encoding encoding)	Creates an encoding from the given FontBox encoding.
+COSBase getCOSObject()	Convert this standard java object to a COS object.
+String getEncodingName()	Returns the name of this encoding.
+[Methods inherited from class org.apache.pdfbox.pdmodel.font.encoding.Encoding]
+add, contains, contains, getCodeToNameMap, getInstance, getName, getNameToCodeMap, overwrite
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

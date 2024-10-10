@@ -1,0 +1,20 @@
+[API Name] opennlp.tools.doccat.DocumentCategorizerME
+[Type] Class
+[Info]
+All Implemented Interfaces: DocumentCategorizer
+public class DocumentCategorizerME extends Object implements DocumentCategorizer A Max-Ent based implementation of DocumentCategorizer.
+[Constructor Summary]
+DocumentCategorizerME(DoccatModel model)	Initializes a DocumentCategorizerME instance with a doccat model.
+[Method Summary]
+double[] categorize(String[] text)	Categorizes the given text, provided in separate tokens.
+double[] categorize(String[] text, Map<String,Object> extraInformation)	Categorize the given text provided as tokens along with the provided extra information.
+String getAllResults(double[] results)	Retrieves the name of the category associated with the given probabilities.
+String getBestCategory(double[] outcome)	Retrieves the best category from previously generated outcome probabilities
+String getCategory(int index)	Retrieves the category at a given index.
+int getIndex(String category)	Retrieves the index of a certain category.
+int getNumberOfCategories()	Retrieves the number of categories.
+Map<String,Double> scoreMap(String[] text)	Retrieves a Map in which the key is the category name and the value is the score.
+SortedMap<Double,Set<String>> sortedScoreMap(String[] text)	Retrieves a SortedMap of the scores sorted in ascending order, together with their associated categories.
+static DoccatModel train(String lang, ObjectStream<DocumentSample> samples, TrainingParameters mlParams, DoccatFactory factory)	Starts a training of a DoccatModel with the given parameters.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

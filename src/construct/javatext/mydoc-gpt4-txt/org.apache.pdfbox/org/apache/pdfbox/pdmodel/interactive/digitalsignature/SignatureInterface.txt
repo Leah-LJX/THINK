@@ -1,0 +1,7 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.digitalsignature.SignatureInterface
+[Type] Interface
+[Info]
+public interface SignatureInterface Providing an interface for accessing necessary functions for signing a PDF document.
+Author: Thomas Chojecki
+[Method Summary]
+byte[] sign(InputStream content)	Creates a cms signature for the given content

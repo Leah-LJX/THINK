@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.tokenize.TokenizerEvaluator
+[Type] Class
+[Info]
+public class TokenizerEvaluator extends Evaluator<TokenSample> The TokenizerEvaluator measures the performance of  the given Tokenizer with the provided reference  samples.
+See Also:
+Evaluator Tokenizer TokenSample
+[Constructor Summary]
+TokenizerEvaluator(Tokenizer tokenizer, TokenizerEvaluationMonitor... listeners)	Initializes an instance to evaluate a Tokenizer.
+[Method Summary]
+FMeasure getFMeasure()	
+[Methods inherited from class opennlp.tools.util.eval.Evaluator]
+evaluate, evaluateSample
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

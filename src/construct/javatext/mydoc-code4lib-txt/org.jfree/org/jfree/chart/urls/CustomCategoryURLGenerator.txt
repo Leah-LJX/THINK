@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.urls.CustomCategoryURLGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, CategoryURLGenerator, org.jfree.util.PublicCloneable
+[Constructor Summary]
+CustomCategoryURLGenerator() Default constructor.
+[Method Summary]
+void addURLSeries(List urls) Adds a list of URLs.

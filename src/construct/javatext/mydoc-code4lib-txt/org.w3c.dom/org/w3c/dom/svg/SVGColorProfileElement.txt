@@ -1,0 +1,13 @@
+[Class] org.w3c.dom.svg.SVGColorProfileElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGRenderingIntent, SVGURIReference
+[Constructor Summary]
+
+[Method Summary]
+java.lang.String getLocal()	 
+ java.lang.String getName()	 
+ short getRenderingIntent()	 
+ void setLocal(java.lang.String local)	 
+ void setName(java.lang.String name)	 
+ void setRenderingIntent(short renderingIntent)

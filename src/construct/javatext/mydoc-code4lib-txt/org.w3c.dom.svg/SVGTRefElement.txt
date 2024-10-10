@@ -1,0 +1,7 @@
+[Class] org.w3c.dom.svg.SVGTRefElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, EventTarget, Node, SVGElement, SVGExternalResourcesRequired, SVGLangSpace, SVGStylable, SVGTests, SVGTextContentElement, SVGTextPositioningElement, SVGURIReference
+[Constructor Summary]
+
+[Method Summary]

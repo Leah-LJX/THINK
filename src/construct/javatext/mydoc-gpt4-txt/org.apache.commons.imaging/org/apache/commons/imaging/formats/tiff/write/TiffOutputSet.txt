@@ -1,0 +1,35 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.write.TiffOutputSet
+[Type] Class
+[Info]
+public final class TiffOutputSet extends Object
+[Constructor Summary]
+TiffOutputSet()	
+TiffOutputSet​(ByteOrder byteOrder)	
+[Field Summary]
+ByteOrder byteOrder	
+[Method Summary]
+void addDirectory​(TiffOutputDirectory directory)	
+TiffOutputDirectory addExifDirectory()	
+TiffOutputDirectory addGPSDirectory()	
+TiffOutputDirectory addInteroperabilityDirectory()	
+TiffOutputDirectory addRootDirectory()	
+void dump()	
+TiffOutputDirectory findDirectory​(int directoryType)	
+TiffOutputField findField​(int tag)	
+TiffOutputField findField​(TagInfo tagInfo)	
+List<TiffOutputDirectory> getDirectories()	
+TiffOutputDirectory getExifDirectory()	
+TiffOutputDirectory getGPSDirectory()	
+TiffOutputDirectory getInteroperabilityDirectory()	
+TiffOutputDirectory getOrCreateExifDirectory()	
+TiffOutputDirectory getOrCreateGPSDirectory()	
+TiffOutputDirectory getOrCreateRootDirectory()	
+protected List<org.apache.commons.imaging.formats.tiff.write.TiffOutputItem> getOutputItems​(org.apache.commons.imaging.formats.tiff.write.TiffOutputSummary outputSummary)	
+TiffOutputDirectory getRootDirectory()	
+void removeField​(int tag)	
+void removeField​(TagInfo tagInfo)	
+void setGPSInDegrees​(double longitude, double latitude)	A convenience method to update GPS values in EXIF metadata.
+String toString()	
+String toString​(String prefix)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

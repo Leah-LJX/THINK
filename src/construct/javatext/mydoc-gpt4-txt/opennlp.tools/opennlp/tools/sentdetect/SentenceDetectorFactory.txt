@@ -1,0 +1,22 @@
+[API Name] opennlp.tools.sentdetect.SentenceDetectorFactory
+[Type] Class
+[Info]
+public class SentenceDetectorFactory extends BaseToolFactory The factory that provides SentenceDetector default implementations and  resources
+[Constructor Summary]
+SentenceDetectorFactory()	Creates a SentenceDetectorFactory that provides the default implementation of the resources.
+SentenceDetectorFactory(String languageCode, boolean useTokenEnd, Dictionary abbreviationDictionary, char[] eosCharacters)	Creates a SentenceDetectorFactory.
+[Method Summary]
+static SentenceDetectorFactory create(String subclassName, String languageCode, boolean useTokenEnd, Dictionary abbrDictionary, char[] eosChars)	Instantiates a SentenceDetectorFactory via a given subclassName.
+Map<String,Object> createArtifactMap()	A model's implementation should call this constructor that creates a model programmatically.
+Map<String,String> createManifestEntries()	
+Dictionary getAbbreviationDictionary()	
+EndOfSentenceScanner getEndOfSentenceScanner()	
+char[] getEOSCharacters()	
+String getLanguageCode()	
+SDContextGenerator getSDContextGenerator()	
+boolean isUseTokenEnd()	
+void validateArtifactMap()	Validates the parsed artifacts.
+[Methods inherited from class opennlp.tools.util.BaseToolFactory]
+create, create, createArtifactSerializersMap
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

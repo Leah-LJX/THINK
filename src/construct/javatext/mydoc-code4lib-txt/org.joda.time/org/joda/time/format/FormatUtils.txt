@@ -1,0 +1,20 @@
+[Class] org.joda.time.format.FormatUtils
+[Flag] Class
+[Info]
+Since: 1.0
+[Constructor Summary]
+
+[Method Summary]
+static void appendPaddedInteger(Appendable appenadble, int value, int size) Converts an integer to a string, prepended with a variable amount of '0' pad characters, and appends it to the given appendable.
+static void appendPaddedInteger(Appendable appendable, long value, int size) Converts an integer to a string, prepended with a variable amount of '0' pad characters, and appends it to the given buffer.
+static void appendPaddedInteger(StringBuffer buf, int value, int size) Converts an integer to a string, prepended with a variable amount of '0' pad characters, and appends it to the given buffer.
+static void appendPaddedInteger(StringBuffer buf, long value, int size) Converts an integer to a string, prepended with a variable amount of '0' pad characters, and appends it to the given buffer.
+static void appendUnpaddedInteger(Appendable appendable, int value) Converts an integer to a string, and appends it to the given appendable.
+static void appendUnpaddedInteger(Appendable appendable, long value) Converts an integer to a string, and appends it to the given appendable.
+static void appendUnpaddedInteger(StringBuffer buf, int value) Converts an integer to a string, and appends it to the given buffer.
+static void appendUnpaddedInteger(StringBuffer buf, long value) Converts an integer to a string, and appends it to the given buffer.
+static int calculateDigitCount(long value) Calculates the number of decimal digits for the given value, including the sign.
+static void writePaddedInteger(Writer out, int value, int size) Converts an integer to a string, prepended with a variable amount of '0' pad characters, and writes it to the given writer.
+static void writePaddedInteger(Writer out, long value, int size) Converts an integer to a string, prepended with a variable amount of '0' pad characters, and writes it to the given writer.
+static void writeUnpaddedInteger(Writer out, int value) Converts an integer to a string, and writes it to the given writer.
+static void writeUnpaddedInteger(Writer out, long value) Converts an integer to a string, and writes it to the given writer.

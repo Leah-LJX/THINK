@@ -1,0 +1,6 @@
+[API Name] opennlp.tools.formats.ontonotes.OntoNotesFormatParameters
+[Type] Interface
+[Info]
+public interface OntoNotesFormatParameters
+[Method Summary]
+String getOntoNotesDir()	

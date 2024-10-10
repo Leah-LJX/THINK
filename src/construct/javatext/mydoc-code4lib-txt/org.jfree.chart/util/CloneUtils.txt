@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.util.CloneUtils
+[Flag] Class
+[Info]
+Since: 1.0.18
+[Constructor Summary]
+CloneUtils()
+[Method Summary]
+static List<?> cloneList(List<?> source) Returns a list containing cloned copies of the items in the source list.

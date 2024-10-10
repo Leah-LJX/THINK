@@ -1,0 +1,12 @@
+[Class] org.jfree.data.KeyedObject
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, PublicCloneable
+[Constructor Summary]
+KeyedObject(Comparable key, Object object)	Creates a new (key, object) pair.
+[Method Summary]
+Object clone()	Returns a clone of this object.
+boolean equals(Object obj)	Tests if this object is equal to another.
+Comparable getKey()	Returns the key.
+Object getObject()	Returns the object.
+void setObject(Object object)	Sets the object.

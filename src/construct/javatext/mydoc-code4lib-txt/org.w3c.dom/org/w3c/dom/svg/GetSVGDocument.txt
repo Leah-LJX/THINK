@@ -1,0 +1,8 @@
+[Class] org.w3c.dom.svg.GetSVGDocument
+[Flag] Interface
+[Info]
+public interface GetSVGDocument
+[Constructor Summary]
+
+[Method Summary]
+SVGDocument getSVGDocument()

@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.formats.ConllXPOSSampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<POSSample>
+@Internal public class ConllXPOSSampleStream extends FilterObjectStream<String,POSSample> Parses the data from the CONLL 06 shared task into POS Samples.    More information about the data format can be found  here.   Note:  Do not use this class, internal use only!
+[Constructor Summary]
+ConllXPOSSampleStream(InputStreamFactory in, Charset charset)	Initializes a ConllXPOSSampleStream.
+ConllXPOSSampleStream(ObjectStream<String> lineStream)	Initializes a ConllXPOSSampleStream.
+[Method Summary]
+POSSample read()	Returns the next ObjectStream object.
+[Methods inherited from class opennlp.tools.util.FilterObjectStream]
+close, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

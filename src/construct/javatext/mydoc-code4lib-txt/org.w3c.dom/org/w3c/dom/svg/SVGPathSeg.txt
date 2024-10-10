@@ -1,0 +1,9 @@
+[Class] org.w3c.dom.svg.SVGPathSeg
+[Flag] Interface
+[Info]
+All Known Subinterfaces: SVGPathSegArcAbs, SVGPathSegArcRel, SVGPathSegClosePath, SVGPathSegCurvetoCubicAbs, SVGPathSegCurvetoCubicRel, SVGPathSegCurvetoCubicSmoothAbs, SVGPathSegCurvetoCubicSmoothRel, SVGPathSegCurvetoQuadraticAbs, SVGPathSegCurvetoQuadraticRel, SVGPathSegCurvetoQuadraticSmoothAbs, SVGPathSegCurvetoQuadraticSmoothRel, SVGPathSegLinetoAbs, SVGPathSegLinetoHorizontalAbs, SVGPathSegLinetoHorizontalRel, SVGPathSegLinetoRel, SVGPathSegLinetoVerticalAbs, SVGPathSegLinetoVerticalRel, SVGPathSegMovetoAbs, SVGPathSegMovetoRel
+[Constructor Summary]
+
+[Method Summary]
+short getPathSegType()	 
+ java.lang.String getPathSegTypeAsLetter()

@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDThread
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDThread extends Object implements COSObjectable This a single thread in a PDF document.
+Author: Ben Litchfield
+[Constructor Summary]
+PDThread()	Default constructor.
+PDThread(COSDictionary t)	Constructor that is used for a preexisting dictionary.
+[Method Summary]
+COSDictionary getCOSObject()	This will get the underlying dictionary that this object wraps.
+PDThreadBead getFirstBead()	Get the first bead in the thread, or null if it has not been set yet.
+PDDocumentInformation getThreadInfo()	Get info about the thread, or null if there is nothing.
+void setFirstBead(PDThreadBead bead)	This will set the first bead in the thread.
+void setThreadInfo(PDDocumentInformation info)	Set the thread info, can be null.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

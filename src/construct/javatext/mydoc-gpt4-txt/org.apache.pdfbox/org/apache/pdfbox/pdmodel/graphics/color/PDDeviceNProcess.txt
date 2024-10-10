@@ -1,0 +1,15 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.color.PDDeviceNProcess
+[Type] Class
+[Info]
+public class PDDeviceNProcess extends Object A DeviceN Process Dictionary
+Author: John Hewson
+[Constructor Summary]
+PDDeviceNProcess()	Creates a new DeviceN Process Dictionary.
+PDDeviceNProcess(COSDictionary attributes)	Creates a new DeviceN Process Dictionary from the given attributes.
+[Method Summary]
+PDColorSpace getColorSpace()	Returns the process color space
+List<String> getComponents()	Returns the names of the color components.
+COSDictionary getCOSDictionary()	Returns the underlying COS dictionary.
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

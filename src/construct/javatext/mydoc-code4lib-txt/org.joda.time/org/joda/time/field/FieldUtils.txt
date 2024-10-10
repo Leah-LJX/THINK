@@ -1,0 +1,24 @@
+[Class] org.joda.time.field.FieldUtils
+[Flag] Class
+[Info]
+Since: 1.0
+[Constructor Summary]
+
+[Method Summary]
+static boolean equals(Object object1, Object object2) Compares two objects as equals handling null.
+static int getWrappedValue(int value, int minValue, int maxValue) Utility method that ensures the given value lies within the field's legal value range.
+static int getWrappedValue(int currentValue, int wrapValue, int minValue, int maxValue) Utility method used by addWrapField implementations to ensure the new value lies within the field's legal value range.
+static int safeAdd(int val1, int val2) Add two values throwing an exception if overflow occurs.
+static long safeAdd(long val1, long val2) Add two values throwing an exception if overflow occurs.
+static long safeDivide(long dividend, long divisor) Divides the dividend by the divisor throwing an exception if overflow occurs or the divisor is zero.
+static long safeDivide(long dividend, long divisor, RoundingMode roundingMode) Divides the dividend by divisor.
+static int safeMultiply(int val1, int val2) Multiply two values throwing an exception if overflow occurs.
+static long safeMultiply(long val1, int val2) Multiply two values throwing an exception if overflow occurs.
+static long safeMultiply(long val1, long val2) Multiply two values throwing an exception if overflow occurs.
+static int safeMultiplyToInt(long val1, long val2) Multiply two values to return an int throwing an exception if overflow occurs.
+static int safeNegate(int value) Negates the input throwing an exception if it can't negate it.
+static long safeSubtract(long val1, long val2) Subtracts two values throwing an exception if overflow occurs.
+static int safeToInt(long value) Casts to an int throwing an exception if overflow occurs.
+static void verifyValueBounds(DateTimeField field, int value, int lowerBound, int upperBound) Verify that input values are within specified bounds.
+static void verifyValueBounds(DateTimeFieldType fieldType, int value, int lowerBound, int upperBound) Verify that input values are within specified bounds.
+static void verifyValueBounds(String fieldName, int value, int lowerBound, int upperBound) Verify that input values are within specified bounds.

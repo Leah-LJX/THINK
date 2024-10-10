@@ -1,0 +1,14 @@
+[API Name] Package org.apache.commons.imaging.ImagingException
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable
+Direct Known Subclasses: ImageReadException, ImageWriteException
+public class ImagingException extends Exception The base class for implementing custom exceptions in the  Apache Commons Imaging package.
+See Also: Serialized Form
+[Constructor Summary]
+ImagingException​(String message)	
+ImagingException​(String message, Throwable cause)	
+[Methods inherited from class java.lang.Throwable]
+addSuppressed, fillInStackTrace, getCause, getLocalizedMessage, getMessage, getStackTrace, getSuppressed, initCause, printStackTrace, printStackTrace, printStackTrace, setStackTrace, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

@@ -1,0 +1,9 @@
+[API Name] org.apache.pdfbox.util.NumberFormatUtil
+[Type] Class
+[Info]
+public class NumberFormatUtil extends Object This class contains methods to format numbers.
+Author: Michael Doswald
+[Method Summary]
+static int formatFloatFast(float value, int maxFractionDigits, byte[] asciiBuffer)	Fast variant to format a floating point value to a ASCII-string.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

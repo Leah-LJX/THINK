@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.annotations.XYTextAnnotation
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Annotation, XYAnnotation, org.jfree.util.PublicCloneable
+Direct Known Subclasses: XYPointerAnnotation
+[Constructor Summary]
+XYTextAnnotation(String text, double x, double y) Creates a new annotation to be displayed at the given coordinates.
+[Method Summary]
+Object clone() Returns a clone of the annotation.

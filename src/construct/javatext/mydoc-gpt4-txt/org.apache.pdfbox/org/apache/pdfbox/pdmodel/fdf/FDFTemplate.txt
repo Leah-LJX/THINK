@@ -1,0 +1,19 @@
+[API Name] org.apache.pdfbox.pdmodel.fdf.FDFTemplate
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class FDFTemplate extends Object implements COSObjectable This represents an FDF template that is part of the FDF page.
+Author: Ben Litchfield
+[Constructor Summary]
+FDFTemplate()	Default constructor.
+FDFTemplate(COSDictionary t)	Constructor.
+[Method Summary]
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+List<FDFField> getFields()	This will get a list of fields that are part of this template.
+FDFNamedPageReference getTemplateReference()	This is the template reference.
+void setFields(List<FDFField> fields)	This will set a list of fields for this template.
+void setRename(boolean value)	This will set if the fields can be renamed.
+void setTemplateReference(FDFNamedPageReference tRef)	This will set the template reference.
+boolean shouldRename()	A flag telling if the fields imported from the template may be renamed if there are conflicts.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,19 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.segments.AppnSegment
+[Type] Class
+[Info]
+Direct Known Subclasses: App13Segment, App14Segment, App2Segment
+public class AppnSegment extends GenericSegment
+[Constructor Summary]
+AppnSegment​(int marker, int markerLength, InputStream is)	
+[Field Summary]
+AppnSegment​(int marker, int markerLength, InputStream is)	
+[Method Summary]
+String getDescription()	
+[Methods inherited from class org.apache.commons.imaging.formats.jpeg.segments.GenericSegment]
+dump, dump, getSegmentData, getSegmentData, getSegmentDataAsString
+[Methods inherited from class org.apache.commons.imaging.formats.jpeg.segments.Segment]
+getSegmentType, toString
+[Methods inherited from class org.apache.commons.imaging.common.BinaryFileParser]
+debugNumber, debugNumber, getByteOrder, setByteOrder
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

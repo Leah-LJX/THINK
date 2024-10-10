@@ -1,0 +1,10 @@
+[Class] org.w3c.dom.svg.SVGStylable
+[Flag] Interface
+[Info]
+All Known Subinterfaces: SVGAElement, SVGAltGlyphElement, SVGCircleElement, SVGClipPathElement, SVGDefsElement, SVGDescElement, SVGEllipseElement, SVGFEBlendElement, SVGFEColorMatrixElement, SVGFEComponentTransferElement, SVGFECompositeElement, SVGFEConvolveMatrixElement, SVGFEDiffuseLightingElement, SVGFEDisplacementMapElement, SVGFEFloodElement, SVGFEGaussianBlurElement, SVGFEImageElement, SVGFEMergeElement, SVGFEMorphologyElement, SVGFEOffsetElement, SVGFESpecularLightingElement, SVGFETileElement, SVGFETurbulenceElement, SVGFilterElement, SVGFilterPrimitiveStandardAttributes, SVGFontElement, SVGForeignObjectElement, SVGGElement, SVGGlyphElement, SVGGlyphRefElement, SVGGradientElement, SVGImageElement, SVGLinearGradientElement, SVGLineElement, SVGMarkerElement, SVGMaskElement, SVGMissingGlyphElement, SVGPathElement, SVGPatternElement, SVGPolygonElement, SVGPolylineElement, SVGRadialGradientElement, SVGRectElement, SVGStopElement, SVGSVGElement, SVGSwitchElement, SVGSymbolElement, SVGTextContentElement, SVGTextElement, SVGTextPathElement, SVGTextPositioningElement, SVGTitleElement, SVGTRefElement, SVGTSpanElement, SVGUseElement
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedString getClassName()	 
+ CSSValue getPresentationAttribute(java.lang.String name)	 
+ CSSStyleDeclaration getStyle()

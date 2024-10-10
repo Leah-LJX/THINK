@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.pdmodel.font.FontInfo
+[Type] Class
+[Info]
+public abstract class FontInfo extends Object Information about a font on the system.
+Author: John Hewson
+[Constructor Summary]
+FontInfo()	
+[Method Summary]
+abstract CIDSystemInfo getCIDSystemInfo()	Returns the CIDSystemInfo associated with the font, if present.
+abstract int getCodePageRange1()	Returns the ulCodePageRange1 field of the "OS/2" table, or 0.
+abstract int getCodePageRange2()	Returns the ulCodePageRange2 field of the "OS/2" table, or 0.
+abstract int getFamilyClass()	Returns the sFamilyClass field of the "OS/2" table, or -1.
+abstract org.apache.fontbox.FontBoxFont getFont()	Returns a new FontBox font instance for the font.
+abstract FontFormat getFormat()	Returns the font's format.
+abstract int getMacStyle()	Returns the macStyle field of the "head" table, or -1.
+abstract PDPanoseClassification getPanose()	Returns the Panose classification of the font, if any.
+abstract String getPostScriptName()	Returns the PostScript name of the font.
+abstract int getWeightClass()	Returns the usWeightClass field of the "OS/2" table, or -1.
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

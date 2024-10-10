@@ -1,0 +1,30 @@
+[Class] org.jfree.data.general.Series
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+Direct Known Subclasses: ComparableObjectSeries, MatrixSeries, TaskSeries, TimePeriodValues, TimeSeries, XYSeries
+[Constructor Summary]
+protected Series(Comparable key)	Creates a new series with the specified key.
+protected Series(Comparable key, String description)	Creates a new series with the specified key and description.
+[Method Summary]
+void addChangeListener(SeriesChangeListener listener)	Registers an object with this series, to receive notification whenever the series changes.
+void addPropertyChangeListener(PropertyChangeListener listener)	Adds a property change listener to the series.
+void addVetoableChangeListener(VetoableChangeListener listener)	Adds a vetoable property change listener to the series.
+Object clone()	Returns a clone of the series.
+boolean equals(Object obj)	Tests the series for equality with another object.
+protected void firePropertyChange(String property, Object oldValue, Object newValue)	Fires a property change event.
+void fireSeriesChanged()	General method for signalling to registered listeners that the series has been changed.
+protected void fireVetoableChange(String property, Object oldValue, Object newValue)	Fires a vetoable property change event.
+String getDescription()	Returns a description of the series.
+abstract int getItemCount()	Returns the number of data items in the series.
+Comparable getKey()	Returns the key for the series.
+boolean getNotify()	Returns the flag that controls whether or not change events are sent to registered listeners.
+int hashCode()	Returns a hash code.
+boolean isEmpty()	Returns true if the series contains no data items, and false otherwise.
+protected void notifyListeners(SeriesChangeEvent event)	Sends a change event to all registered listeners.
+void removeChangeListener(SeriesChangeListener listener)	Deregisters an object, so that it not longer receives notification whenever the series changes.
+void removePropertyChangeListener(PropertyChangeListener listener)	Removes a property change listener from the series.
+void removeVetoableChangeListener(VetoableChangeListener listener)	Removes a vetoable property change listener from the series.
+void setDescription(String description)	Sets the description of the series and sends a PropertyChangeEvent to all registered listeners.
+void setKey(Comparable key)	Sets the key for the series and sends a VetoableChangeEvent (with the property name "Key") to all registered listeners.
+void setNotify(boolean notify)	Sets the flag that controls whether or not change events are sent to registered listeners.

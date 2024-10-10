@@ -1,0 +1,23 @@
+[API Name] opennlp.tools.postag.POSDictionary
+[Type] Class
+[Info]
+All Implemented Interfaces: Iterable<String>, MutableTagDictionary, TagDictionary, SerializableArtifact
+public class POSDictionary extends Object implements Iterable<String>, MutableTagDictionary, SerializableArtifact Provides a means of determining which tags are valid for a particular word  based on a TagDictionary read from a file.
+[Constructor Summary]
+POSDictionary()	Initializes an empty case sensitive POSDictionary.
+POSDictionary(boolean caseSensitive)	Initializes an empty POSDictionary.
+[Method Summary]
+static POSDictionary create(InputStream in)	Creates a new POSDictionary from an InputStream.
+boolean equals(Object obj)	
+Class<?> getArtifactSerializerClass()	Retrieves the class which can serialize and recreate this artifact.
+String[] getTags(String word)	Returns a list of valid tags for the specified word.
+int hashCode()	
+boolean isCaseSensitive()	Whether the dictionary is case-sensitive or not.
+Iterator<String> iterator()	Retrieves an Iterator over all words in the dictionary.
+String[] put(String word, String... tags)	Associates the specified tags with the specified word.
+void serialize(OutputStream out)	Writes the POSDictionary to the given OutputStream;
+String toString()	
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait
+[Methods inherited from interface java.lang.Iterable]
+forEach, spliterator

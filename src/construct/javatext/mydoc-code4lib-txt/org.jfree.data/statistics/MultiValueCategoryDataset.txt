@@ -1,0 +1,10 @@
+[Class] org.jfree.data.statistics.MultiValueCategoryDataset
+[Flag] Interface
+[Info]
+All Superinterfaces: CategoryDataset, Dataset, KeyedValues2D, Values2D
+All Known Implementing Classes: DefaultMultiValueCategoryDataset
+[Constructor Summary]
+
+[Method Summary]
+List getValues(int row, int column)	Returns a list (possibly empty) of the values for the specified item.
+List getValues(Comparable rowKey, Comparable columnKey)	Returns a list (possibly empty) of the values for the specified item.

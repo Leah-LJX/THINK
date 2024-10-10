@@ -1,0 +1,23 @@
+[API Name] Package org.apache.commons.imaging.color.ColorHunterLab
+[Type] Class
+[Info]
+public final class ColorHunterLab extends Object Represents a color in the Hunter Lab color space.
+ Contains the constant values for black, white, red,  green, and blue.
+Since: 1.0-alpha1 See Also: https://en.wikipedia.org/wiki/CIELAB_color_space#Hunter_Lab
+[Constructor Summary]
+ColorHunterLab​(double L, double a, double b)	
+[Field Summary]
+double a	
+double b	
+static ColorHunterLab BLACK	A constant for color black.
+static ColorHunterLab BLUE	A constant for color blue.
+static ColorHunterLab GREEN	A constant for color green.
+double L	
+static ColorHunterLab RED	A constant for color red.
+static ColorHunterLab WHITE	A constant for color white.
+[Method Summary]
+boolean equals​(Object o)	
+int hashCode()	
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

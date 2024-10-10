@@ -1,0 +1,30 @@
+[API Name] org.apache.pdfbox.cos.COSInteger
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class COSInteger extends COSNumber This class represents an integer number in a PDF document.
+Author: Ben Litchfield
+[Field Summary]
+static COSInteger ONE	Constant for the number one.
+protected static COSInteger OUT_OF_RANGE_MAX	Constant for an out of range value which is bigger than Log.MAX_VALUE.
+protected static COSInteger OUT_OF_RANGE_MIN	Constant for an out of range value which is smaller than Log.MIN_VALUE.
+static COSInteger THREE	Constant for the number three.
+static COSInteger TWO	Constant for the number two.
+static COSInteger ZERO	Constant for the number zero.
+[Method Summary]
+void accept(ICOSVisitor visitor)	visitor pattern double dispatch method.
+boolean equals(Object o)	
+float floatValue()	polymorphic access to value as float.
+static COSInteger get(long val)	Returns a COSInteger instance with the given value.
+int hashCode()	
+int intValue()	Polymorphic access to value as int This will get the integer value of this object.
+boolean isValid()	Indicates whether this instance represents a valid value.
+long longValue()	Polymorphic access to value as int This will get the integer value of this object.
+String toString()	
+void writePDF(OutputStream output)	This will output this string as a PDF object.
+[Methods inherited from class org.apache.pdfbox.cos.COSNumber]
+get
+[Methods inherited from class org.apache.pdfbox.cos.COSBase]
+getCOSObject, getKey, isDirect, setDirect, setKey
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

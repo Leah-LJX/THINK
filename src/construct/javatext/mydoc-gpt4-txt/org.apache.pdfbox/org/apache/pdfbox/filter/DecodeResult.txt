@@ -1,0 +1,11 @@
+[API Name] org.apache.pdfbox.filter.DecodeResult
+[Type] Class
+[Info]
+public final class DecodeResult extends Object The result of a filter decode operation. Allows information such as color space to be  extracted from image streams, and for stream parameters to be repaired during reading.
+Author: John Hewson
+[Method Summary]
+static DecodeResult createDefault()	Return a default DecodeResult.
+PDJPXColorSpace getJPXColorSpace()	Returns the embedded JPX color space, if any.
+COSDictionary getParameters()	Returns the stream parameters, repaired using the embedded stream data.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

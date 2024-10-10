@@ -1,0 +1,33 @@
+[Class] org.jfree.data.xy.CategoryTableXYDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, PublicCloneable, DomainInfo, Dataset, SeriesChangeListener, SeriesDataset, IntervalXYDataset, TableXYDataset, XYDataset
+[Constructor Summary]
+CategoryTableXYDataset()	Creates a new empty CategoryTableXYDataset.
+[Method Summary]
+void add(double x, double y, String seriesName)	Adds a data item to this dataset and sends a DatasetChangeEvent to all registered listeners.
+void add(Number x, Number y, String seriesName, boolean notify)	Adds a data item to this dataset and, if requested, sends a DatasetChangeEvent to all registered listeners.
+void clear()	Clears all data from the dataset and sends a DatasetChangeEvent to all registered listeners.
+Object clone()	Returns an independent copy of this dataset.
+boolean equals(Object obj)	Tests this dataset for equality with an arbitrary object.
+Range getDomainBounds(boolean includeInterval)	Returns the range of the values in this dataset's domain.
+double getDomainLowerBound(boolean includeInterval)	Returns the minimum x-value in the dataset.
+double getDomainUpperBound(boolean includeInterval)	Returns the maximum x-value in the dataset.
+Number getEndX(int series, int item)	Returns the ending X value for the specified series and item.
+Number getEndY(int series, int item)	Returns the ending Y value for the specified series and item.
+double getIntervalPositionFactor()	Returns the interval position factor.
+double getIntervalWidth()	Returns the full interval width.
+int getItemCount()	Returns the number of x values in the dataset.
+int getItemCount(int series)	Returns the number of items in the specified series.
+int getSeriesCount()	Returns the number of series in the collection.
+Comparable getSeriesKey(int series)	Returns the key for a series.
+Number getStartX(int series, int item)	Returns the starting X value for the specified series and item.
+Number getStartY(int series, int item)	Returns the starting Y value for the specified series and item.
+Number getX(int series, int item)	Returns the x-value for the specified series and item.
+Number getY(int series, int item)	Returns the y-value for the specified series and item.
+boolean isAutoWidth()	Returns whether the interval width is automatically calculated or not.
+void remove(double x, String seriesName)	Removes a value from the dataset.
+void remove(Number x, String seriesName, boolean notify)	Removes an item from the dataset.
+void setAutoWidth(boolean b)	Sets the flag that indicates whether the interval width is automatically calculated or not.
+void setIntervalPositionFactor(double d)	Sets the interval position factor.
+void setIntervalWidth(double d)	Sets the interval width to a fixed value, and sends a DatasetChangeEvent to all registered listeners.

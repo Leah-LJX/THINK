@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.category.GroupedStackedBarRenderer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, LegendItemSource, CategoryItemRenderer, org.jfree.util.PublicCloneable
+[Constructor Summary]
+GroupedStackedBarRenderer() Creates a new renderer.
+[Method Summary]
+protected double calculateBarW0(CategoryPlot plot, PlotOrientation orientation, Rectangle2D dataArea, CategoryAxis domainAxis, CategoryItemRendererState state, int row, int column) Calculates the coordinate of the first "side" of a bar.

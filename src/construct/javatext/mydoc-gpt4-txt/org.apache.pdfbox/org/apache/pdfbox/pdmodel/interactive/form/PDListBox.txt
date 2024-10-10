@@ -1,0 +1,23 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.form.PDListBox
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class PDListBox extends PDChoice A scrollable list box. Contains several text items, one or more of which shall be selected as the  field value.
+Author: John Hewson
+[Constructor Summary]
+PDListBox(PDAcroForm acroForm)	
+[Field Summary]
+PDListBox(PDAcroForm acroForm)	
+[Method Summary]
+int getTopIndex()	This will get the top index "TI" value.
+void setTopIndex(Integer topIndex)	This will set top index "TI" value.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDChoice]
+getDefaultValue, getOptions, getOptionsDisplayValues, getOptionsExportValues, getSelectedOptionsIndex, getValue, getValueAsString, isCombo, isCommitOnSelChange, isDoNotSpellCheck, isMultiSelect, isSort, setCombo, setCommitOnSelChange, setDefaultValue, setDoNotSpellCheck, setMultiSelect, setOptions, setOptions, setSelectedOptionsIndex, setSort, setValue, setValue
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDVariableText]
+getDefaultAppearance, getDefaultStyleString, getQ, getRichTextValue, getStringOrStream, setDefaultAppearance, setDefaultStyleString, setQ, setRichTextValue
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDTerminalField]
+applyChange, getFieldFlags, getFieldType, getWidgets, importFDF, setActions, setWidgets
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDField]
+getAcroForm, getActions, getAlternateFieldName, getCOSObject, getFullyQualifiedName, getInheritableAttribute, getMappingName, getParent, getPartialName, isNoExport, isReadOnly, isRequired, setAlternateFieldName, setFieldFlags, setMappingName, setNoExport, setPartialName, setReadOnly, setRequired, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

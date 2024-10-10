@@ -1,0 +1,9 @@
+[Class] org.w3c.dom.svg.SVGAnimatedTransformList
+[Flag] Interface
+[Info]
+public interface SVGAnimatedTransformList
+[Constructor Summary]
+
+[Method Summary]
+SVGTransformList getAnimVal()	 
+ SVGTransformList getBaseVal()

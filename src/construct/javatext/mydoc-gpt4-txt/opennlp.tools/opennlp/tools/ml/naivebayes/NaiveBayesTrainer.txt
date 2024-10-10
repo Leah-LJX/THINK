@@ -1,0 +1,30 @@
+[API Name] opennlp.tools.ml.naivebayes.NaiveBayesTrainer
+[Type] Class
+[Info]
+All Implemented Interfaces: Trainer, EventTrainer
+public class NaiveBayesTrainer extends AbstractEventTrainer Trains models using the combination of EM algorithm  and Naive Bayes classifier which is described in:    Text Classification from Labeled and Unlabeled Documents using EM  Nigam, McCallum, et al. paper of 2000
+See Also:
+NaiveBayesModel AbstractEventTrainer
+[Constructor Summary]
+NaiveBayesTrainer()	Instantiates a NaiveBayesTrainer with default training parameters.
+NaiveBayesTrainer(TrainingParameters parameters)	Instantiates a NaiveBayesTrainer with specific TrainingParameters.
+[Field Summary]
+static final String NAIVE_BAYES_VALUE	
+[Method Summary]
+AbstractModel doTrain(DataIndexer indexer)	
+boolean isSortAndMerge()	
+AbstractModel trainModel(DataIndexer di)	Trains a NaiveBayesModel with given parameters.
+[Fields inherited from class opennlp.tools.ml.AbstractEventTrainer]
+DATA_INDEXER_ONE_PASS_REAL_VALUE, DATA_INDEXER_ONE_PASS_VALUE, DATA_INDEXER_PARAM, DATA_INDEXER_TWO_PASS_VALUE
+[Fields inherited from class opennlp.tools.ml.AbstractTrainer]
+ALGORITHM_PARAM, CUTOFF_DEFAULT, CUTOFF_PARAM, ITERATIONS_DEFAULT, ITERATIONS_PARAM, TRAINER_TYPE_PARAM
+[Fields inherited from interface opennlp.tools.ml.EventTrainer]
+EVENT_VALUE
+[Methods inherited from class opennlp.tools.ml.AbstractEventTrainer]
+getDataIndexer, train, train, validate
+[Methods inherited from class opennlp.tools.ml.AbstractTrainer]
+getAlgorithm, getCutoff, getIterations, init
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface opennlp.tools.commons.Trainer]
+init

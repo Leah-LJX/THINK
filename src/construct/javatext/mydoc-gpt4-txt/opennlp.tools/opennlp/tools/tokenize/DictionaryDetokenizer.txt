@@ -1,0 +1,17 @@
+[API Name] opennlp.tools.tokenize.DictionaryDetokenizer
+[Type] Class
+[Info]
+All Implemented Interfaces: Detokenizer
+public class DictionaryDetokenizer extends Object implements Detokenizer A rule based detokenizer. Simple rules which indicate in which direction a token should be  moved are looked up in a dictionary.
+See Also:
+Detokenizer DetokenizationDictionary
+[Constructor Summary]
+DictionaryDetokenizer(DetokenizationDictionary dict)	Initializes a DictionaryDetokenizer instance.
+[Nested Class Summary]
+Nested Class Summary
+Detokenizer.DetokenizationOperation
+[Method Summary]
+Detokenizer.DetokenizationOperation[] detokenize(String[] tokens)	Detokenizes the collection of tokens.
+String detokenize(String[] tokens, String splitMarker)	Detokenizes the input tokens into a String.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

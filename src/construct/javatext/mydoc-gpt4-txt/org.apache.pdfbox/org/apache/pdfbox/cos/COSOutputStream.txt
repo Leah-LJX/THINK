@@ -1,0 +1,20 @@
+[API Name] org.apache.pdfbox.cos.COSOutputStream
+[Type] Class
+[Info]
+All Implemented Interfaces: Closeable, Flushable, AutoCloseable
+public final class COSOutputStream extends FilterOutputStream An OutputStream which writes to an encoded COS stream.
+Author: John Hewson
+[Field Summary]
+void close()	
+void flush()	
+void write(byte[] b)	
+void write(byte[] b, int off, int len)	
+void write(int b)	
+[Method Summary]
+void close()	
+void flush()	
+void write(byte[] b)	
+void write(byte[] b, int off, int len)	
+void write(int b)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

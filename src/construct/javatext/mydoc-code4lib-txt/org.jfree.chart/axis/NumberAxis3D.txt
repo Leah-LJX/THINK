@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.NumberAxis3D
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, org.jfree.util.PublicCloneable
+[Constructor Summary]
+NumberAxis3D() Default constructor.
+[Method Summary]
+AxisState draw(Graphics2D g2, double cursor, Rectangle2D plotArea, Rectangle2D dataArea, org.jfree.ui.RectangleEdge edge, PlotRenderingInfo plotState) Draws the axis on a Java 2D graphics device (such as the screen or a printer).

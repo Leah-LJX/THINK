@@ -1,0 +1,11 @@
+[Class] org.jfree.chart.encoders.EncoderUtil
+[Flag] Class
+[Info]
+Parameters: image - The image to be encoded.
+format - The ImageFormat to use.
+Returns: The byte[] that is the encoded image.
+Throws: IOException - if there is an IO problem.
+[Constructor Summary]
+EncoderUtil()
+[Method Summary]
+static byte[] encode(BufferedImage image, String format) Encode the image in a specific format.

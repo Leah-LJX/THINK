@@ -1,0 +1,9 @@
+[Class] org.w3c.dom.svg.SVGFEDistantLightElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedNumber getAzimuth()	 
+ SVGAnimatedNumber getElevation()

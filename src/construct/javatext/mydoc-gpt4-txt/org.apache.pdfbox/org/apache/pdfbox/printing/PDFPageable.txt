@@ -1,0 +1,28 @@
+[API Name] org.apache.pdfbox.printing.PDFPageable
+[Type] Class
+[Info]
+All Implemented Interfaces: Pageable
+public final class PDFPageable extends Book Prints a PDF document using its original paper size.
+Author: John Hewson
+[Constructor Summary]
+PDFPageable(PDDocument document)	Creates a new PDFPageable.
+PDFPageable(PDDocument document, Orientation orientation)	Creates a new PDFPageable with the given page orientation.
+PDFPageable(PDDocument document, Orientation orientation, boolean showPageBorder)	Creates a new PDFPageable with the given page orientation and with optional page borders shown.
+PDFPageable(PDDocument document, Orientation orientation, boolean showPageBorder, float dpi)	Creates a new PDFPageable with the given page orientation and with optional page borders shown.
+[Field Summary]
+PDFPageable(PDDocument document)	Creates a new PDFPageable.
+PDFPageable(PDDocument document, Orientation orientation)	Creates a new PDFPageable with the given page orientation.
+PDFPageable(PDDocument document, Orientation orientation, boolean showPageBorder)	Creates a new PDFPageable with the given page orientation and with optional page borders shown.
+PDFPageable(PDDocument document, Orientation orientation, boolean showPageBorder, float dpi)	Creates a new PDFPageable with the given page orientation and with optional page borders shown.
+[Method Summary]
+int getNumberOfPages()	
+PageFormat getPageFormat(int pageIndex)	Returns the actual physical size of the pages in the PDF file.
+Printable getPrintable(int i)	
+RenderingHints getRenderingHints()	Get the rendering hints.
+boolean isSubsamplingAllowed()	Value indicating if the renderer is allowed to subsample images before drawing, according to image dimensions and requested scale.
+void setRenderingHints(RenderingHints renderingHints)	Set the rendering hints.
+void setSubsamplingAllowed(boolean subsamplingAllowed)	Sets a value instructing the renderer whether it is allowed to subsample images before drawing.
+[Methods inherited from class java.awt.print.Book]
+append, append, setPage
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

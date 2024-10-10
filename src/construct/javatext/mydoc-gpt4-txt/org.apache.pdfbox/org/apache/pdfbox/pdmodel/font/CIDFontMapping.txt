@@ -1,0 +1,14 @@
+[API Name] org.apache.pdfbox.pdmodel.font.CIDFontMapping
+[Type] Class
+[Info]
+public final class CIDFontMapping extends FontMapping<org.apache.fontbox.ttf.OpenTypeFont> A CIDFontMapping is a kind of FontMapping which allows for an additional TrueTypeFont substitute  to be provided if a CID font is not available.
+Author: John Hewson
+[Constructor Summary]
+CIDFontMapping(org.apache.fontbox.ttf.OpenTypeFont font, org.apache.fontbox.FontBoxFont fontBoxFont, boolean isFallback)	
+[Method Summary]
+org.apache.fontbox.FontBoxFont getTrueTypeFont()	Returns a TrueType font when isCIDFont() is true, otherwise null.
+boolean isCIDFont()	Returns true if this is a CID font.
+[Methods inherited from class org.apache.pdfbox.pdmodel.font.FontMapping]
+getFont, isFallback
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

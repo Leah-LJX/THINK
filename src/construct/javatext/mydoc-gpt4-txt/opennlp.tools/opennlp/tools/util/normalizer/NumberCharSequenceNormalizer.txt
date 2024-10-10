@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.util.normalizer.NumberCharSequenceNormalizer
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, CharSequenceNormalizer
+public class NumberCharSequenceNormalizer extends Object implements CharSequenceNormalizer A NumberCharSequenceNormalizer implementation that normalizes text  in terms of numbers. Every encounter will be replaced by a whitespace.
+See Also:
+Serialized Form
+[Constructor Summary]
+NumberCharSequenceNormalizer()	
+[Method Summary]
+static NumberCharSequenceNormalizer getInstance()	
+CharSequence normalize(CharSequence text)	Normalizes a sequence of characters.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

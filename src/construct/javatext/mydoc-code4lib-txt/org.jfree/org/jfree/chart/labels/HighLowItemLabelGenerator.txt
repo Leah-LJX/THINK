@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.labels.HighLowItemLabelGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, XYItemLabelGenerator, XYToolTipGenerator, org.jfree.util.PublicCloneable
+[Constructor Summary]
+HighLowItemLabelGenerator() Creates an item label generator using the default date and number formats.
+[Method Summary]
+Object clone() Returns an independent copy of the generator.

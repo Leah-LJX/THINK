@@ -1,0 +1,8 @@
+[Class] org.jfree.data.general.DatasetChangeEvent
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+DatasetChangeEvent(Object source, Dataset dataset)	Constructs a new event.
+[Method Summary]
+Dataset getDataset()	Returns the dataset that generated the event.

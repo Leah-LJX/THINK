@@ -1,0 +1,39 @@
+[API Name] org.apache.pdfbox.pdmodel.common.PDStream
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDEmbeddedFile, PDMetadata, PDObjectStream
+public class PDStream extends Object implements COSObjectable A PDStream represents a stream in a PDF document. Streams are tied to a single PDF document.
+Author: Ben Litchfield
+[Constructor Summary]
+PDStream(COSDocument document)	Creates a new empty PDStream object.
+PDStream(COSStream str)	Creates a PDStream which wraps the given COSStream.
+PDStream(PDDocument document)	Creates a new empty PDStream object.
+PDStream(PDDocument doc, InputStream input)	Constructor.
+PDStream(PDDocument doc, InputStream input, COSArray filters)	Constructor.
+PDStream(PDDocument doc, InputStream input, COSName filter)	Constructor.
+[Method Summary]
+COSInputStream createInputStream()	This will get a stream that can be read from.
+COSInputStream createInputStream(DecodeOptions options)	
+InputStream createInputStream(List<String> stopFilters)	This will get a stream with some filters applied but not others.
+OutputStream createOutputStream()	This will get a stream that can be written to.
+OutputStream createOutputStream(COSName filter)	This will get a stream that can be written to, with the given filter.
+COSStream getCOSObject()	Get the cos stream associated with this object.
+int getDecodedStreamLength()	Get the decoded stream length.
+List<Object> getDecodeParms()	Get the list of decode parameters.
+PDFileSpecification getFile()	This will get the file specification for this stream.
+List<Object> getFileDecodeParams()	Get the list of decode parameters.
+List<String> getFileFilters()	This will get the list of filters that are associated with this stream.
+List<COSName> getFilters()	This will get the list of filters that are associated with this stream.
+int getLength()	This will get the length of the filtered/compressed stream.
+PDMetadata getMetadata()	Get the metadata that is part of the document catalog.
+void setDecodedStreamLength(int decodedStreamLength)	Set the decoded stream length.
+void setDecodeParms(List<?> decodeParams)	This will set the list of decode parameters.
+void setFile(PDFileSpecification f)	Set the file specification.
+void setFileDecodeParams(List<?> decodeParams)	This will set the list of decode params.
+void setFileFilters(List<String> filters)	This will set the filters that are part of this stream.
+void setFilters(List<COSName> filters)	This will set the filters that are part of this stream.
+void setMetadata(PDMetadata meta)	Set the metadata for this object.
+byte[] toByteArray()	This will copy the stream into a byte array.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

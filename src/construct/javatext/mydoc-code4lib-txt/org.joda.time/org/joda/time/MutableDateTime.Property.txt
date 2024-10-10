@@ -1,0 +1,23 @@
+[Class] org.joda.time.MutableDateTime.Property
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+Enclosing class: MutableDateTime
+[Constructor Summary]
+
+[Method Summary]
+MutableDateTime add(int value) Adds a value to the millis value.
+MutableDateTime add(long value) Adds a value to the millis value.
+MutableDateTime addWrapField(int value) Adds a value, possibly wrapped, to the millis value.
+protected Chronology getChronology() Gets the chronology of the datetime that this property is linked to.
+DateTimeField getField() Gets the field being used.
+protected long getMillis() Gets the milliseconds of the datetime that this property is linked to.
+MutableDateTime getMutableDateTime() Gets the mutable datetime being used.
+MutableDateTime roundCeiling() Round to the highest whole unit of this field.
+MutableDateTime roundFloor() Round to the lowest whole unit of this field.
+MutableDateTime roundHalfCeiling() Round to the nearest whole unit of this field, favoring the ceiling if halfway.
+MutableDateTime roundHalfEven() Round to the nearest whole unit of this field.
+MutableDateTime roundHalfFloor() Round to the nearest whole unit of this field, favoring the floor if halfway.
+MutableDateTime set(int value) Sets a value.
+MutableDateTime set(String text) Sets a text value.
+MutableDateTime set(String text, Locale locale) Sets a text value.

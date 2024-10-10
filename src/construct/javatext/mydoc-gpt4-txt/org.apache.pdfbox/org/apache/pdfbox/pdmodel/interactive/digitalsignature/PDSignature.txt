@@ -1,0 +1,47 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.digitalsignature.PDSignature
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDSignature extends Object implements COSObjectable This represents a digital signature that can be attached to a document. To learn more about  digital signatures, read  Digital  Signatures in a PDF by Adobe.
+Author: Ben Litchfield, Thomas Chojecki
+[Constructor Summary]
+PDSignature()	Default constructor.
+PDSignature(COSDictionary dict)	Constructor.
+[Field Summary]
+static COSName FILTER_ADOBE_PPKLITE	A signature filter value.
+static COSName FILTER_CICI_SIGNIT	A signature filter value.
+static COSName FILTER_ENTRUST_PPKEF	A signature filter value.
+static COSName FILTER_VERISIGN_PPKVS	A signature filter value.
+static COSName SUBFILTER_ADBE_PKCS7_DETACHED	A signature subfilter value.
+static COSName SUBFILTER_ADBE_PKCS7_SHA1	A signature subfilter value.
+static COSName SUBFILTER_ADBE_X509_RSA_SHA1	A signature subfilter value.
+static COSName SUBFILTER_ETSI_CADES_DETACHED	A signature subfilter value.
+[Method Summary]
+int[] getByteRange()	Read out the byterange from the file.
+String getContactInfo()	Returns the contact info provided by the signer to enable a recipient to contact the signer to verify the signature, e.g.
+byte[] getContents()	Returns the /Contents string as a byte array, i.e.
+byte[] getContents(byte[] pdfFile)	Will return the embedded signature between the byterange gap.
+byte[] getContents(InputStream pdfFile)	Will return the embedded signature between the byterange gap.
+COSDictionary getCOSObject()	Convert this standard java object to a COS dictionary.
+String getFilter()	Returns the filter.
+String getLocation()	Returns the CPU host name or physical location of the signing.
+String getName()	Returns the name of the person or authority signing the document.
+PDPropBuild getPropBuild()	PDF signature build dictionary.
+String getReason()	Returns the reason for the signing, such as (I agree...).
+Calendar getSignDate()	Returns the sign date.
+byte[] getSignedContent(byte[] pdfFile)	Return the signed content of the document.
+byte[] getSignedContent(InputStream pdfFile)	Return the signed content of the document.
+String getSubFilter()	Returns the subfilter.
+void setByteRange(int[] range)	Sets the byte range.
+void setContactInfo(String contactInfo)	Sets the contact info provided by the signer to enable a recipient to contact the signer to verify the signature, e.g.
+void setContents(byte[] bytes)	Sets the contents.
+void setFilter(COSName filter)	Set the filter.
+void setLocation(String location)	Sets the CPU host name or physical location of the signing.
+void setName(String name)	Sets the name of the person or authority signing the document.
+void setPropBuild(PDPropBuild propBuild)	PDF signature build dictionary.
+void setReason(String reason)	Sets the reason for the signing, such as (I agree...).
+void setSignDate(Calendar cal)	Set the sign date.
+void setSubFilter(COSName subfilter)	Set a subfilter that specify the signature that should be used.
+void setType(COSName type)	Set the dictionary type.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

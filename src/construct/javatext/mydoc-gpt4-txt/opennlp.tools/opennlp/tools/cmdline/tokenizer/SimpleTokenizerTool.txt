@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.cmdline.tokenizer.SimpleTokenizerTool
+[Type] Class
+[Info]
+public final class SimpleTokenizerTool extends opennlp.tools.cmdline.BasicCmdLineTool
+[Constructor Summary]
+SimpleTokenizerTool()	
+[Method Summary]
+String getHelp()	
+String getShortDescription()	
+boolean hasParams()	
+void run(String[] args)	Executes the tool with the given parameters.
+[Methods inherited from class opennlp.tools.cmdline.CmdLineTool]
+getName
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

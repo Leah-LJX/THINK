@@ -1,0 +1,10 @@
+[API Name] org.apache.pdfbox.pdmodel.font.FontMappers
+[Type] Class
+[Info]
+public final class FontMappers extends Object FontMapper factory class.
+Author: John Hewson
+[Method Summary]
+static FontMapper instance()	Returns the singleton FontMapper instance.
+static void set(FontMapper fontMapper)	Sets the singleton FontMapper instance.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

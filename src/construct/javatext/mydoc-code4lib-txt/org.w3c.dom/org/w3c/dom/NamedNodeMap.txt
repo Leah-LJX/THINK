@@ -1,0 +1,20 @@
+[Class] org.w3c.dom.NamedNodeMap
+[Flag] Interface
+[Info]
+Parameters:
+name - The nodeName of a node to retrieve.
+Returns:
+A Node (of any type) with the specified
+   nodeName, or null if it does not identify
+   any node in this map.
+[Constructor Summary]
+
+[Method Summary]
+int getLength() The number of nodes in this map.
+Node getNamedItem(String name) Retrieves a node specified by name.
+Node getNamedItemNS(String namespaceURI, String localName) Retrieves a node specified by local name and namespace URI.
+Node item(int index) Returns the indexth item in the map.
+Node removeNamedItem(String name) Removes a node specified by name.
+Node removeNamedItemNS(String namespaceURI, String localName) Removes a node specified by local name and namespace URI.
+Node setNamedItem(Node arg) Adds a node using its nodeName attribute.
+Node setNamedItemNS(Node arg) Adds a node using its namespaceURI and localName.

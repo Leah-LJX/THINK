@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.formats.brat.BratAnnotation
+[Type] Class
+[Info]
+Direct Known Subclasses: AnnotatorNoteAnnotation, AttributeAnnotation, EventAnnotation, RelationAnnotation, SpanAnnotation
+public abstract class BratAnnotation extends Object
+[Method Summary]
+String getId()	
+String getNote()	
+String getType()	
+void setNote(String note)	
+String toString()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, wait, wait, wait

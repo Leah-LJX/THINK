@@ -1,0 +1,24 @@
+[API Name] opennlp.tools.formats.Conll02NameSampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<NameSample>
+@Internal public class Conll02NameSampleStream extends Object implements ObjectStream<NameSample> Parser for the Dutch and Spanish ner training files of the CONLL 2002 shared task.    The Dutch data has a DOCSTART tag to mark article boundaries,  adaptive data in the feature generators will be cleared before every article.  The Spanish data does not contain article boundaries,  adaptive data will be cleared for every sentence.    The data contains four named entity types: Person, Organization, Location and Misc.
+ Data can be found on this  web site.   Note:  Do not use this class, internal use only!
+[Constructor Summary]
+Conll02NameSampleStream(Conll02NameSampleStream.LANGUAGE lang, InputStreamFactory in, int types)	Initializes a Conll02NameSampleStream.
+Conll02NameSampleStream(Conll02NameSampleStream.LANGUAGE lang, ObjectStream<String> lineStream, int types)	Initializes a Conll02NameSampleStream.
+[Field Summary]
+static final String DOCSTART	
+static final int GENERATE_LOCATION_ENTITIES	
+static final int GENERATE_MISC_ENTITIES	
+static final int GENERATE_ORGANIZATION_ENTITIES	
+static final int GENERATE_PERSON_ENTITIES	
+[Nested Class Summary]
+Nested Class Summary
+static enum 
+[Method Summary]
+void close()	Closes the ObjectStream and releases all allocated resources.
+NameSample read()	Returns the next ObjectStream object.
+void reset()	Repositions the stream at the beginning and the previously seen object sequence will be repeated exactly.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.cmdline.chunker.ChunkerDetailedFMeasureListener
+[Type] Class
+[Info]
+All Implemented Interfaces: ChunkerEvaluationMonitor, EvaluationMonitor<ChunkSample>
+public class ChunkerDetailedFMeasureListener extends opennlp.tools.cmdline.DetailedFMeasureListener<ChunkSample> implements ChunkerEvaluationMonitor
+[Constructor Summary]
+ChunkerDetailedFMeasureListener()	
+[Methods inherited from class opennlp.tools.cmdline.DetailedFMeasureListener]
+correctlyClassified, createReport, createReport, misclassified, toString
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, wait, wait, wait
+[Methods inherited from interface opennlp.tools.util.eval.EvaluationMonitor]
+correctlyClassified, misclassified

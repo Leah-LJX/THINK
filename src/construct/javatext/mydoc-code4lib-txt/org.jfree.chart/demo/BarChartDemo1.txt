@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.demo.BarChartDemo1
+[Flag] Class
+[Info]
+All Implemented Interfaces: WindowListener, ImageObserver, MenuContainer, Serializable, EventListener, Accessible, RootPaneContainer, WindowConstants
+[Constructor Summary]
+BarChartDemo1(String title) Creates a new demo instance.
+[Method Summary]
+static void main(String[] args) Starting point for the demonstration application.

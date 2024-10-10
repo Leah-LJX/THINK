@@ -1,0 +1,42 @@
+[API Name] opennlp.tools.ml.maxent.quasinewton.QNTrainer
+[Type] Class
+[Info]
+All Implemented Interfaces: Trainer, EventTrainer
+public class QNTrainer extends AbstractEventTrainer A Maxent model Trainer using L-BFGS algorithm.
+See Also:
+QNModel AbstractEventTrainer
+[Constructor Summary]
+QNTrainer()	Initializes a QNTrainer.
+QNTrainer(int m)	Initializes a QNTrainer.
+QNTrainer(int m, int maxFctEval)	Initializes a QNTrainer.
+QNTrainer(TrainingParameters parameters)	Initializes a QNTrainer.
+[Field Summary]
+static final double L1COST_DEFAULT	
+static final String L1COST_PARAM	
+static final double L2COST_DEFAULT	
+static final String L2COST_PARAM	
+static final int M_DEFAULT	
+static final String M_PARAM	
+static final int MAX_FCT_EVAL_DEFAULT	
+static final String MAX_FCT_EVAL_PARAM	
+static final String MAXENT_QN_VALUE	
+static final int THREADS_DEFAULT	
+static final String THREADS_PARAM	
+[Method Summary]
+AbstractModel doTrain(DataIndexer indexer)	
+void init(TrainingParameters trainingParameters, Map<String,String> reportMap)	Initializes a AbstractTrainer via TrainingParameters and a report map.
+boolean isSortAndMerge()	
+QNModel trainModel(int iterations, DataIndexer indexer)	Trains a model using the QN algorithm.
+void validate()	Checks the configured parameters.
+[Fields inherited from class opennlp.tools.ml.AbstractEventTrainer]
+DATA_INDEXER_ONE_PASS_REAL_VALUE, DATA_INDEXER_ONE_PASS_VALUE, DATA_INDEXER_PARAM, DATA_INDEXER_TWO_PASS_VALUE
+[Fields inherited from class opennlp.tools.ml.AbstractTrainer]
+ALGORITHM_PARAM, CUTOFF_DEFAULT, CUTOFF_PARAM, ITERATIONS_DEFAULT, ITERATIONS_PARAM, TRAINER_TYPE_PARAM
+[Fields inherited from interface opennlp.tools.ml.EventTrainer]
+EVENT_VALUE
+[Methods inherited from class opennlp.tools.ml.AbstractEventTrainer]
+getDataIndexer, train, train
+[Methods inherited from class opennlp.tools.ml.AbstractTrainer]
+getAlgorithm, getCutoff, getIterations
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

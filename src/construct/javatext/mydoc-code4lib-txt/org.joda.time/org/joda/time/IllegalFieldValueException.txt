@@ -1,0 +1,22 @@
+[Class] org.joda.time.IllegalFieldValueException
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+IllegalFieldValueException(DateTimeFieldType fieldType,	Number value,	Number lowerBound,	Number upperBound)	Constructor.
+IllegalFieldValueException(DateTimeFieldType fieldType,	Number value,	String explain)	Constructor.
+IllegalFieldValueException(DateTimeFieldType fieldType,	String value)	Constructor.
+IllegalFieldValueException(DurationFieldType fieldType,	Number value,	Number lowerBound,	Number upperBound)	Constructor.
+IllegalFieldValueException(DurationFieldType fieldType,	String value)	Constructor.
+IllegalFieldValueException(String fieldName,	Number value,	Number lowerBound,	Number upperBound)	Constructor.
+IllegalFieldValueException(String fieldName,	String value)	Constructor.
+[Method Summary]
+DateTimeFieldType getDateTimeFieldType() Returns the DateTimeFieldType whose value was invalid, or null if not applicable.
+DurationFieldType getDurationFieldType() Returns the DurationFieldType whose value was invalid, or null if not applicable.
+String getFieldName() Returns the name of the field whose value was invalid.
+Number getIllegalNumberValue() Returns the illegal integer value assigned to the field, or null if not applicable.
+String getIllegalStringValue() Returns the illegal string value assigned to the field, or null if not applicable.
+String getIllegalValueAsString() Returns the illegal value assigned to the field as a non-null string.
+Number getLowerBound() Returns the lower bound of the legal value range, or null if not applicable.
+String getMessage() Number getUpperBound() Returns the upper bound of the legal value range, or null if not applicable.
+void prependMessage(String message) Provide additional detail by prepending a message to the existing message.

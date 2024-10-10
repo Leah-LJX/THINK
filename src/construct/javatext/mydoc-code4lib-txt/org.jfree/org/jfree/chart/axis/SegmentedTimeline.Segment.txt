@@ -1,0 +1,10 @@
+[Class] org.jfree.chart.axis.SegmentedTimeline.Segment
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Comparable
+Direct Known Subclasses: SegmentedTimeline.SegmentRange
+Enclosing class: SegmentedTimeline
+[Constructor Summary]
+protected Segment() Protected constructor only used by sub-classes.
+[Method Summary]
+boolean after(SegmentedTimeline.Segment other) Returns true if this segment is wholly after another segment.

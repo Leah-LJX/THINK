@@ -1,0 +1,22 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.xmp.JpegRewriter
+[Type] Class
+[Info]
+Direct Known Subclasses: JpegIptcRewriter, JpegXmpRewriter
+public class JpegRewriter extends BinaryFileParser Interface for Exif write/update/remove functionality for Jpeg/JFIF images.
+[Constructor Summary]
+JpegRewriter()	Constructor.
+[Method Summary]
+protected JpegRewriter.JFIFPieces analyzeJFIF​(ByteSource byteSource)	
+protected <T extends JpegRewriter.JFIFPiece>List<T> filterSegments​(List<T> segments, org.apache.commons.imaging.formats.jpeg.xmp.JpegRewriter.SegmentFilter filter)	
+protected <T extends JpegRewriter.JFIFPiece>List<T> filterSegments​(List<T> segments, org.apache.commons.imaging.formats.jpeg.xmp.JpegRewriter.SegmentFilter filter, boolean reverse)	
+protected <T extends JpegRewriter.JFIFPiece>List<T> findPhotoshopApp13Segments​(List<T> segments)	
+protected <T extends JpegRewriter.JFIFPiece,​U extends JpegRewriter.JFIFPiece>List<JpegRewriter.JFIFPiece> insertAfterLastAppSegments​(List<T> segments, List<U> newSegments)	
+protected <T extends JpegRewriter.JFIFPiece,​U extends JpegRewriter.JFIFPiece>List<JpegRewriter.JFIFPiece> insertBeforeFirstAppSegments​(List<T> segments, List<U> newSegments)	
+protected <T extends JpegRewriter.JFIFPiece>List<T> removeExifSegments​(List<T> segments)	
+protected <T extends JpegRewriter.JFIFPiece>List<T> removePhotoshopApp13Segments​(List<T> segments)	
+protected <T extends JpegRewriter.JFIFPiece>List<T> removeXmpSegments​(List<T> segments)	
+protected void writeSegments​(OutputStream outputStream, List<? extends JpegRewriter.JFIFPiece> segments)	
+[Methods inherited from class org.apache.commons.imaging.common.BinaryFileParser]
+debugNumber, debugNumber, getByteOrder, setByteOrder
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

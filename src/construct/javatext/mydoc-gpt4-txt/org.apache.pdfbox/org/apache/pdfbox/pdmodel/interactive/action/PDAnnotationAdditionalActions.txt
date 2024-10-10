@@ -1,0 +1,33 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.action.PDAnnotationAdditionalActions
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDAnnotationAdditionalActions extends Object implements COSObjectable This class represents an annotation's dictionary of actions  that occur due to events.
+Author: Ben Litchfield, Panagiotis Toumasis
+[Constructor Summary]
+PDAnnotationAdditionalActions()	Default constructor.
+PDAnnotationAdditionalActions(COSDictionary a)	Constructor.
+[Method Summary]
+PDAction getBl()	This will get an action to be performed when the annotation loses the input focus.
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+PDAction getD()	This will get an action to be performed when the mouse button is pressed inside the annotation's active area.
+PDAction getE()	This will get an action to be performed when the cursor enters the annotation's active area.
+PDAction getFo()	This will get an action to be performed when the annotation receives the input focus.
+PDAction getPC()	This will get an action to be performed when the page containing the annotation is closed.
+PDAction getPI()	This will get an action to be performed when the page containing the annotation is no longer visible in the viewer application's user interface.
+PDAction getPO()	This will get an action to be performed when the page containing the annotation is opened.
+PDAction getPV()	This will get an action to be performed when the page containing the annotation becomes visible in the viewer application's user interface.
+PDAction getU()	This will get an action to be performed when the mouse button is released inside the annotation's active area.
+PDAction getX()	This will get an action to be performed when the cursor exits the annotation's active area.
+void setBl(PDAction bl)	This will set an action to be performed when the annotation loses the input focus.
+void setD(PDAction d)	This will set an action to be performed when the mouse button is pressed inside the annotation's active area.
+void setE(PDAction e)	This will set an action to be performed when the cursor enters the annotation's active area.
+void setFo(PDAction fo)	This will set an action to be performed when the annotation receives the input focus.
+void setPC(PDAction pc)	This will set an action to be performed when the page containing the annotation is closed.
+void setPI(PDAction pi)	This will set an action to be performed when the page containing the annotation is no longer visible in the viewer application's user interface.
+void setPO(PDAction po)	This will set an action to be performed when the page containing the annotation is opened.
+void setPV(PDAction pv)	This will set an action to be performed when the page containing the annotation becomes visible in the viewer application's user interface.
+void setU(PDAction u)	This will set an action to be performed when the mouse button is released inside the annotation's active area.
+void setX(PDAction x)	This will set an action to be performed when the cursor exits the annotation's active area.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

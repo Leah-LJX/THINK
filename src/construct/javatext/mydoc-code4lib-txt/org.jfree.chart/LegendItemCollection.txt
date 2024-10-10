@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.LegendItemCollection
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+LegendItemCollection() Constructs a new legend item collection, initially empty.
+[Method Summary]
+void add(LegendItem item) Adds a legend item to the collection.

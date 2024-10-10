@@ -1,0 +1,21 @@
+[Class] org.joda.time.base.AbstractPeriod
+[Flag] Class
+[Info]
+All Implemented Interfaces: ReadablePeriod
+Direct Known Subclasses: BasePeriod
+[Constructor Summary]
+protected 	AbstractPeriod()	Constructor.
+[Method Summary]
+boolean equals(Object period) Compares this object with the specified object for equality based on the value of each field.
+int get(DurationFieldType type) Gets the value of one of the fields.
+DurationFieldType getFieldType(int index) Gets the field type at the specified index.
+DurationFieldType[] getFieldTypes() Gets an array of the field types that this period supports.
+int[] getValues() Gets an array of the value of each of the fields that this period supports.
+int hashCode() Gets a hash code for the period as defined by ReadablePeriod.
+int indexOf(DurationFieldType type) Gets the index of the field in this period.
+boolean isSupported(DurationFieldType type) Checks whether the field specified is supported by this period.
+int size() Gets the number of fields that this period supports.
+MutablePeriod toMutablePeriod() Get this object as a MutablePeriod.
+Period toPeriod() Get this period as an immutable Period object.
+String toString() Gets the value as a String in the ISO8601 duration format.
+String toString(PeriodFormatter formatter) Uses the specified formatter to convert this period to a String.

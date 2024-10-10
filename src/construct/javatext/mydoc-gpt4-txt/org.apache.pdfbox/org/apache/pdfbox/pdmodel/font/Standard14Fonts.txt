@@ -1,0 +1,15 @@
+[API Name] org.apache.pdfbox.pdmodel.font.Standard14Fonts
+[Type] Class
+[Info]
+public final class Standard14Fonts extends Object The "Standard 14" PDF fonts, also known as the "base 14" fonts.  There are 14 font files, but Acrobat uses additional names for compatibility, e.g. Arial.
+Author: John Hewson
+[Nested Class Summary]
+static class Standard14Fonts.FontName	Enum for the names of the 14 standard fonts.
+[Method Summary]
+static boolean containsName(String fontName)	Returns true if the given font name is one of the known names, including alias.
+static org.apache.fontbox.afm.FontMetrics getAFM(String fontName)	Returns the metrics for font specified by fontName.
+static GeneralPath getGlyphPath(Standard14Fonts.FontName baseName, String glyphName)	Returns the path for the character with the given name for the specified Standard 14 font.
+static Standard14Fonts.FontName getMappedFontName(String fontName)	Returns the base name of the font which the given font name maps to.
+static Set<String> getNames()	Returns the set of known font names, including aliases.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

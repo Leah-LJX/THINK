@@ -1,0 +1,8 @@
+[API Name] opennlp.tools.lemmatizer.LemmatizerEvaluationMonitor
+[Type] Interface
+[Info]
+All Superinterfaces: EvaluationMonitor<LemmaSample>
+All Known Implementing Classes: LemmaEvaluationErrorListener, LemmatizerFineGrainedReportListener
+public interface LemmatizerEvaluationMonitor extends EvaluationMonitor<LemmaSample> A marker interface for evaluating lemmatizers.
+[Methods inherited from interface opennlp.tools.util.eval.EvaluationMonitor]
+correctlyClassified, misclassified

@@ -1,0 +1,13 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.TiffImageData
+[Type] Class
+[Info]
+Direct Known Subclasses: TiffImageData.Strips, TiffImageData.Tiles
+public abstract class TiffImageData extends Object
+[Constructor Summary]
+TiffImageData()	
+[Method Summary]
+abstract ImageDataReader getDataReader​(TiffDirectory directory, PhotometricInterpreter photometricInterpreter, int bitsPerPixel, int[] bitsPerSample, int predictor, int samplesPerPixel, int width, int height, int compression, TiffPlanarConfiguration planarConfiguration, ByteOrder byteOrder)	
+abstract TiffElement.DataElement[] getImageData()	
+abstract boolean stripsNotTiles()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

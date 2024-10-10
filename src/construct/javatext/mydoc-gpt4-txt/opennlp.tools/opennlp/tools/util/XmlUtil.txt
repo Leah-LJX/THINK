@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.util.XmlUtil
+[Type] Class
+[Info]
+public class XmlUtil extends Object
+[Constructor Summary]
+XmlUtil()	
+[Method Summary]
+static DocumentBuilder createDocumentBuilder()	Create a new DocumentBuilder which processes XML securely.
+static SAXParser createSaxParser()	Create a new SAXParser which processes XML securely.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

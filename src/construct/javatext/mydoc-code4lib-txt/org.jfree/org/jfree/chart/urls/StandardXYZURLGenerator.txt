@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.urls.StandardXYZURLGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, XYURLGenerator, XYZURLGenerator
+[Constructor Summary]
+StandardXYZURLGenerator()
+[Method Summary]
+String generateURL(XYZDataset dataset, int series, int item) Generates a URL for a particular item within a series.

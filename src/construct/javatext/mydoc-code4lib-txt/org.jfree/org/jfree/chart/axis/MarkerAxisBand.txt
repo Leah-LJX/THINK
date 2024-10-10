@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.MarkerAxisBand
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+MarkerAxisBand(NumberAxis axis, double topOuterGap, double topInnerGap, double bottomOuterGap, double bottomInnerGap, Font font) Constructs a new axis band.
+[Method Summary]
+void addMarker(IntervalMarker marker) Adds a marker to the band.

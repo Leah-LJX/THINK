@@ -1,0 +1,31 @@
+[API Name] opennlp.tools.ml.AbstractEventTrainer
+[Type] Class
+[Info]
+All Implemented Interfaces: Trainer, EventTrainer
+Direct Known Subclasses: GISTrainer, NaiveBayesTrainer, PerceptronTrainer, QNTrainer
+public abstract class AbstractEventTrainer extends AbstractTrainer implements EventTrainer A basic EventTrainer implementation.
+[Constructor Summary]
+AbstractEventTrainer()	
+AbstractEventTrainer(TrainingParameters parameters)	
+[Field Summary]
+static final String DATA_INDEXER_ONE_PASS_REAL_VALUE	
+static final String DATA_INDEXER_ONE_PASS_VALUE	
+static final String DATA_INDEXER_PARAM	
+static final String DATA_INDEXER_TWO_PASS_VALUE	
+[Method Summary]
+abstract MaxentModel doTrain(DataIndexer indexer)	
+DataIndexer getDataIndexer(ObjectStream<Event> events)	
+abstract boolean isSortAndMerge()	
+final MaxentModel train(DataIndexer indexer)	Trains a MaxentModel for given events.
+final MaxentModel train(ObjectStream<Event> events)	Trains a MaxentModel for given events.
+void validate()	Checks the configured parameters.
+[Fields inherited from class opennlp.tools.ml.AbstractTrainer]
+ALGORITHM_PARAM, CUTOFF_DEFAULT, CUTOFF_PARAM, ITERATIONS_DEFAULT, ITERATIONS_PARAM, TRAINER_TYPE_PARAM
+[Fields inherited from interface opennlp.tools.ml.EventTrainer]
+EVENT_VALUE
+[Methods inherited from class opennlp.tools.ml.AbstractTrainer]
+getAlgorithm, getCutoff, getIterations, init
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface opennlp.tools.commons.Trainer]
+init

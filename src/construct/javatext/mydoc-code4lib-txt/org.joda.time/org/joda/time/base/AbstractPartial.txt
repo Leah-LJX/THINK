@@ -1,0 +1,28 @@
+[Class] org.joda.time.base.AbstractPartial
+[Flag] Class
+[Info]
+All Implemented Interfaces: Comparable<ReadablePartial>, ReadablePartial
+Direct Known Subclasses: BaseLocal, BasePartial, Partial
+[Constructor Summary]
+protected 	AbstractPartial()	Constructor.
+[Method Summary]
+int compareTo(ReadablePartial other) Compares this partial with another returning an integer indicating the order.
+boolean equals(Object partial) Compares this ReadablePartial with another returning true if the chronology, field types and values are equal.
+int get(DateTimeFieldType type) Get the value of one of the fields of a datetime.
+DateTimeField getField(int index) Gets the field at the specified index.
+protected abstract DateTimeField getField(int index, Chronology chrono) Gets the field for a specific index in the chronology specified.
+DateTimeField[] getFields() Gets an array of the fields that this partial supports.
+DateTimeFieldType getFieldType(int index) Gets the field type at the specified index.
+DateTimeFieldType[] getFieldTypes() Gets an array of the field types that this partial supports.
+int[] getValues() Gets an array of the value of each of the fields that this partial supports.
+int hashCode() Gets a hash code for the ReadablePartial that is compatible with the equals method.
+int indexOf(DateTimeFieldType type) Gets the index of the specified field, or -1 if the field is unsupported.
+protected int indexOf(DurationFieldType type) Gets the index of the first fields to have the specified duration, or -1 if the field is unsupported.
+protected int indexOfSupported(DateTimeFieldType type) Gets the index of the specified field, throwing an exception if the field is unsupported.
+protected int indexOfSupported(DurationFieldType type) Gets the index of the first fields to have the specified duration, throwing an exception if the field is unsupported.
+boolean isAfter(ReadablePartial partial) Is this partial later than the specified partial.
+boolean isBefore(ReadablePartial partial) Is this partial earlier than the specified partial.
+boolean isEqual(ReadablePartial partial) Is this partial the same as the specified partial.
+boolean isSupported(DateTimeFieldType type) Checks whether the field specified is supported by this partial.
+DateTime toDateTime(ReadableInstant baseInstant) Resolves this partial against another complete instant to create a new full instant.
+String toString(DateTimeFormatter formatter) Uses the specified formatter to convert this partial to a String.

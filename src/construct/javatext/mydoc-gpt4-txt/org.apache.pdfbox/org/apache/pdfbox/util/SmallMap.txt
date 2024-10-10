@@ -1,0 +1,28 @@
+[API Name] org.apache.pdfbox.util.SmallMap<K,V>
+[Type] Class
+[Info]
+All Implemented Interfaces: Map<K,V>
+public class SmallMap<K,V> extends Object implements Map<K,V> Map implementation with a smallest possible memory usage.  It should only be used for maps with small number of items  (e.g. <30) since most operations have an O(n) complexity.  Thus it should be used in cases with large number of map  objects, each having only few items.    null is not supported for keys or values.
+[Constructor Summary]
+SmallMap()	Creates empty map.
+SmallMap(Map<? extends K,? extends V> initMap)	Creates map filled with entries from provided map.
+[Nested Class Summary]
+SmallMap()	Creates empty map.
+SmallMap(Map<? extends K,? extends V> initMap)	Creates map filled with entries from provided map.
+[Method Summary]
+void clear()	
+boolean containsKey(Object key)	
+boolean containsValue(Object value)	
+Set<Map.Entry<K,V>> entrySet()	
+V get(Object key)	
+boolean isEmpty()	
+Set<K> keySet()	Returns a set view of the keys contained in this map.
+V put(K key, V value)	
+void putAll(Map<? extends K,? extends V> otherMap)	
+V remove(Object key)	
+int size()	
+Collection<V> values()	Returns a collection of the values contained in this map.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface java.util.Map]
+compute, computeIfAbsent, computeIfPresent, equals, forEach, getOrDefault, hashCode, merge, putIfAbsent, remove, replace, replace, replaceAll

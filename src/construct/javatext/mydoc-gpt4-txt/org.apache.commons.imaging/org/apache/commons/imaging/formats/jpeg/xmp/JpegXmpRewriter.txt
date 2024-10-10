@@ -1,0 +1,21 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.xmp.JpegXmpRewriter
+[Type] Class
+[Info]
+public class JpegXmpRewriter extends JpegRewriter Interface for Exif write/update/remove functionality for Jpeg/JFIF images.
+[Constructor Summary]
+JpegXmpRewriter()	
+[Method Summary]
+void removeXmpXml​(byte[] src, OutputStream os)	Reads a Jpeg image, removes all XMP XML (by removing the APP1 segment), and writes the result to a stream.
+void removeXmpXml​(File src, OutputStream os)	Reads a Jpeg image, removes all XMP XML (by removing the APP1 segment), and writes the result to a stream.
+void removeXmpXml​(InputStream src, OutputStream os)	Reads a Jpeg image, removes all XMP XML (by removing the APP1 segment), and writes the result to a stream.
+void removeXmpXml​(ByteSource byteSource, OutputStream os)	Reads a Jpeg image, removes all XMP XML (by removing the APP1 segment), and writes the result to a stream.
+void updateXmpXml​(byte[] src, OutputStream os, String xmpXml)	Reads a Jpeg image, replaces the XMP XML and writes the result to a stream.
+void updateXmpXml​(File src, OutputStream os, String xmpXml)	Reads a Jpeg image, replaces the XMP XML and writes the result to a stream.
+void updateXmpXml​(InputStream src, OutputStream os, String xmpXml)	Reads a Jpeg image, replaces the XMP XML and writes the result to a stream.
+void updateXmpXml​(ByteSource byteSource, OutputStream os, String xmpXml)	Reads a Jpeg image, replaces the XMP XML and writes the result to a stream.
+[Methods inherited from class org.apache.commons.imaging.formats.jpeg.xmp.JpegRewriter]
+analyzeJFIF, filterSegments, filterSegments, findPhotoshopApp13Segments, insertAfterLastAppSegments, insertBeforeFirstAppSegments, removeExifSegments, removePhotoshopApp13Segments, removeXmpSegments, writeSegments
+[Methods inherited from class org.apache.commons.imaging.common.BinaryFileParser]
+debugNumber, debugNumber, getByteOrder, setByteOrder
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

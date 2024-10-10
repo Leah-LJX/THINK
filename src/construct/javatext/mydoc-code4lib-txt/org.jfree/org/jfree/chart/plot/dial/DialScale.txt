@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.plot.dial.DialScale
+[Flag] Interface
+[Info]
+All Superinterfaces: DialLayer
+All Known Implementing Classes: StandardDialScale
+[Constructor Summary]
+
+[Method Summary]
+double angleToValue(double angle) Converts an angle (in degrees) to a data value.

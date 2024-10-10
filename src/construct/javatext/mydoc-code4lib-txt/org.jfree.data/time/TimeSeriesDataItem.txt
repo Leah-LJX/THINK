@@ -1,0 +1,15 @@
+[Class] org.jfree.data.time.TimeSeriesDataItem
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Comparable
+[Constructor Summary]
+TimeSeriesDataItem(RegularTimePeriod period, double value)	Constructs a new data item that associates a value with a time period.
+TimeSeriesDataItem(RegularTimePeriod period, Number value)	Constructs a new data item that associates a value with a time period.
+[Method Summary]
+Object clone()	Clones the data item.
+int compareTo(Object o1)	Returns an integer indicating the order of this data pair object relative to another object.
+boolean equals(Object obj)	Tests this object for equality with an arbitrary object.
+RegularTimePeriod getPeriod()	Returns the time period.
+Number getValue()	Returns the value.
+int hashCode()	Returns a hash code.
+void setValue(Number value)	Sets the value for this data item.

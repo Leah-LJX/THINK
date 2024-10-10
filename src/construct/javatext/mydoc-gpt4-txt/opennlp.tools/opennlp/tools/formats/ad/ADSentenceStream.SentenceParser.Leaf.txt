@@ -1,0 +1,22 @@
+[API Name] opennlp.tools.formats.ad.ADSentenceStream.SentenceParser.Leaf
+[Type] Class
+[Info]
+Enclosing class: ADSentenceStream.SentenceParser
+public static class ADSentenceStream.SentenceParser.Leaf extends ADSentenceStream.SentenceParser.TreeElement Represents the AD leaf
+[Constructor Summary]
+Leaf()	
+[Method Summary]
+String getFunctionalTag()	
+String getLemma()	
+String getLexeme()	
+String getSecondaryTag()	
+boolean isLeaf()	
+void setFunctionalTag(String funcTag)	
+void setLemma(String lemma)	
+void setLexeme(String lexeme)	
+void setSecondaryTag(String secondaryTag)	
+String toString()	
+[Methods inherited from class opennlp.tools.formats.ad.ADSentenceStream.SentenceParser.TreeElement]
+getLevel, getMorphologicalTag, getSyntacticTag, setLevel, setMorphologicalTag, setSyntacticTag
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, wait, wait, wait

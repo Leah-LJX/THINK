@@ -1,0 +1,12 @@
+[Class] org.joda.time.format.PeriodFormat
+[Flag] Class
+[Info]
+Since: 1.0
+See Also: ISOPeriodFormat, 
+PeriodFormatterBuilder
+[Constructor Summary]
+protected 	PeriodFormat()	Constructor.
+[Method Summary]
+static PeriodFormatter getDefault() Gets the default formatter that outputs words in English.
+static PeriodFormatter wordBased() Returns a word based formatter for the JDK default locale.
+static PeriodFormatter wordBased(Locale locale) Returns a word based formatter for the specified locale.

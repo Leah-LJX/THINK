@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.util.featuregen.InSpanGenerator
+[Type] Class
+[Info]
+All Implemented Interfaces: AdaptiveFeatureGenerator
+public class InSpanGenerator extends Object implements AdaptiveFeatureGenerator Generates features if the tokens are recognized by the provided  TokenNameFinder.
+[Constructor Summary]
+InSpanGenerator(String prefix, TokenNameFinder finder)	Initializes a InSpanGenerator instance.
+[Method Summary]
+void createFeatures(List<String> features, String[] tokens, int index, String[] preds)	Adds the appropriate features for the token at the specified index with the specified array of previousOutcomes to the specified list of features.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface opennlp.tools.util.featuregen.AdaptiveFeatureGenerator]
+clearAdaptiveData, updateAdaptiveData

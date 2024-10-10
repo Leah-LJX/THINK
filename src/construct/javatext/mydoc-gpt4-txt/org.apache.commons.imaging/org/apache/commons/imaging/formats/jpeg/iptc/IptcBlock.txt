@@ -1,0 +1,13 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.iptc.IptcBlock
+[Type] Class
+[Info]
+public class IptcBlock extends Object Represents an IPTC block, a set of key-value pairs of Photoshop IPTC data.
+[Constructor Summary]
+IptcBlock​(int blockType, byte[] blockNameBytes, byte[] blockData)	
+[Method Summary]
+byte[] getBlockData()	
+byte[] getBlockNameBytes()	
+int getBlockType()	
+boolean isIPTCBlock()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

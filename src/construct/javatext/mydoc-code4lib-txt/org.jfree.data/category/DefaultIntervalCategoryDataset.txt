@@ -1,0 +1,35 @@
+[Class] org.jfree.data.category.DefaultIntervalCategoryDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, CategoryDataset, IntervalCategoryDataset, Dataset, SeriesChangeListener, SeriesDataset, KeyedValues2D, Values2D
+[Constructor Summary]
+DefaultIntervalCategoryDataset(double[][] starts, double[][] ends)	Creates a new dataset using the specified data values and automatically generated series and category keys.
+DefaultIntervalCategoryDataset(Comparable[] seriesKeys, Comparable[] categoryKeys, Number[][] starts, Number[][] ends)	Constructs a DefaultIntervalCategoryDataset, populates it with data from the arrays, and uses the supplied names for the series and the supplied objects for the categories.
+DefaultIntervalCategoryDataset(Number[][] starts, Number[][] ends)	Constructs a dataset and populates it with data from the array.
+DefaultIntervalCategoryDataset(String[] seriesNames, Number[][] starts, Number[][] ends)	Constructs a DefaultIntervalCategoryDataset, populates it with data from the arrays, and uses the supplied names for the series.
+[Method Summary]
+Object clone()	Returns a clone of this dataset.
+boolean equals(Object obj)	Tests this dataset for equality with an arbitrary object.
+int getCategoryCount()	Returns the number of categories in the dataset.
+int getCategoryIndex(Comparable category)	Returns the index for the given category.
+int getColumnCount()	Returns the number of categories in the dataset.
+int getColumnIndex(Comparable columnKey)	Returns a column index.
+Comparable getColumnKey(int column)	Returns a column key.
+List getColumnKeys()	Returns a list of the categories in the dataset.
+Number getEndValue(int series, int category)	Returns the end data value for one category in a series.
+Number getEndValue(Comparable series, Comparable category)	Returns the end data value for one category in a series.
+int getRowCount()	Returns the number of series in the dataset (possibly zero).
+int getRowIndex(Comparable rowKey)	Returns a row index.
+Comparable getRowKey(int row)	Returns the name of the specified series.
+List getRowKeys()	Returns a list of the series in the dataset.
+int getSeriesCount()	Returns the number of series in the dataset (possibly zero).
+int getSeriesIndex(Comparable seriesKey)	Returns a series index.
+Comparable getSeriesKey(int series)	Returns the name of the specified series.
+Number getStartValue(int series, int category)	Returns the start data value for one category in a series.
+Number getStartValue(Comparable series, Comparable category)	Returns the start data value for one category in a series.
+Number getValue(int series, int category)	Returns the data value for one category in a series.
+Number getValue(Comparable series, Comparable category)	Returns the data value for one category in a series.
+void setCategoryKeys(Comparable[] categoryKeys)	Sets the categories for the dataset.
+void setEndValue(int series, Comparable category, Number value)	Sets the end data value for one category in a series.
+void setSeriesKeys(Comparable[] seriesKeys)	Sets the names of the series in the dataset.
+void setStartValue(int series, Comparable category, Number value)	Sets the start data value for one category in a series.

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.editor.ChartEditorFactory
+[Flag] Interface
+[Info]
+All Known Implementing Classes: DefaultChartEditorFactory
+[Constructor Summary]
+
+[Method Summary]
+ChartEditor createEditor(JFreeChart chart) Creates an editor for the given chart.

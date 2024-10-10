@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.formats.letsmt.DetokenizeSentenceSampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<SentenceSample>
+public class DetokenizeSentenceSampleStream extends FilterObjectStream<SentenceSample,SentenceSample>
+[Constructor Summary]
+DetokenizeSentenceSampleStream(Detokenizer detokenizer, ObjectStream<SentenceSample> samples)	Initializes a DetokenizeSentenceSampleStream.
+[Method Summary]
+SentenceSample read()	Returns the next ObjectStream object.
+[Methods inherited from class opennlp.tools.util.FilterObjectStream]
+close, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

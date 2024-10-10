@@ -1,0 +1,16 @@
+[API Name] org.apache.pdfbox.pdmodel.documentinterchange.markedcontent.PDPropertyList
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDOptionalContentGroup, PDOptionalContentMembershipDictionary
+public class PDPropertyList extends Object implements COSObjectable A property list is a dictionary containing private information meaningful to the conforming  writer creating the marked content.
+[Constructor Summary]
+protected PDPropertyList()	Constructor for subclasses.
+protected PDPropertyList(COSDictionary dict)	Constructor for subclasses.
+[Field Summary]
+protected COSDictionary dict	
+[Method Summary]
+static PDPropertyList create(COSDictionary dict)	Creates a property list from the given dictionary.
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

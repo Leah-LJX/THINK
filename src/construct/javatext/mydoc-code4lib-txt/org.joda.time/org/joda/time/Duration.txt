@@ -1,0 +1,36 @@
+[Class] org.joda.time.Duration
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<ReadableDuration>, ReadableDuration
+[Constructor Summary]
+Duration(long duration)	Creates a duration from the given millisecond duration.
+Duration(long startInstant,	long endInstant)	Creates a duration from the given interval endpoints.
+Duration(Object duration)	Creates a duration from the specified object using the	 ConverterManager.
+Duration(ReadableInstant start,	ReadableInstant end)	Creates a duration from the given interval endpoints.
+[Method Summary]
+Duration dividedBy(long divisor) Returns a new duration with this length divided by the specified divisor.
+Duration dividedBy(long divisor, RoundingMode roundingMode) Returns a new duration with its length divided by the specified divisor.
+long getStandardDays() Gets the length of this duration in days assuming that there are the standard number of milliseconds in a day.
+long getStandardHours() Gets the length of this duration in hours assuming that there are the standard number of milliseconds in an hour.
+long getStandardMinutes() Gets the length of this duration in minutes assuming that there are the standard number of milliseconds in a minute.
+long getStandardSeconds() Gets the length of this duration in seconds assuming that there are the standard number of milliseconds in a second.
+static Duration millis(long millis) Create a duration with the specified number of milliseconds.
+Duration minus(long amount) Returns a new duration with this length minus that specified.
+Duration minus(ReadableDuration amount) Returns a new duration with this length minus that specified.
+Duration multipliedBy(long multiplicand) Returns a new duration with this length multiplied by the specified multiplicand.
+Duration negated() Returns a new duration with this length negated.
+static Duration parse(String str) Parses a Duration from the specified string.
+Duration plus(long amount) Returns a new duration with this length plus that specified.
+Duration plus(ReadableDuration amount) Returns a new duration with this length plus that specified.
+static Duration standardDays(long days) Create a duration with the specified number of days assuming that there are the standard number of milliseconds in a day.
+static Duration standardHours(long hours) Create a duration with the specified number of hours assuming that there are the standard number of milliseconds in an hour.
+static Duration standardMinutes(long minutes) Create a duration with the specified number of minutes assuming that there are the standard number of milliseconds in a minute.
+static Duration standardSeconds(long seconds) Create a duration with the specified number of seconds assuming that there are the standard number of milliseconds in a second.
+Duration toDuration() Get this duration as an immutable Duration object by returning this.
+Days toStandardDays() Converts this duration to a period in days assuming that there are the standard number of milliseconds in a day.
+Hours toStandardHours() Converts this duration to a period in hours assuming that there are the standard number of milliseconds in an hour.
+Minutes toStandardMinutes() Converts this duration to a period in minutes assuming that there are the standard number of milliseconds in a minute.
+Seconds toStandardSeconds() Converts this duration to a period in seconds assuming that there are the standard number of milliseconds in a second.
+Duration withDurationAdded(long durationToAdd, int scalar) Returns a new duration with this length plus that specified multiplied by the scalar.
+Duration withDurationAdded(ReadableDuration durationToAdd, int scalar) Returns a new duration with this length plus that specified multiplied by the scalar.
+Duration withMillis(long duration) Creates a new Duration instance with a different millisecond length.

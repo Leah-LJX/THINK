@@ -1,0 +1,10 @@
+[API Name] opennlp.tools.util.model.ArtifactProvider
+[Type] Interface
+[Info]
+All Known Implementing Classes: BaseModel, ChunkerModel, DoccatModel, LanguageDetectorModel, LemmatizerModel, ParserModel, POSModel, SentenceModel, TokenizerModel, TokenNameFinderModel
+public interface ArtifactProvider Provides access to model persisted artifacts.
+[Method Summary]
+<T> T getArtifact(String key)	
+String getLanguage()	
+String getManifestProperty(String key)	
+boolean isLoadedFromSerialized()	Indicates if this provider was loaded from a serialized form.

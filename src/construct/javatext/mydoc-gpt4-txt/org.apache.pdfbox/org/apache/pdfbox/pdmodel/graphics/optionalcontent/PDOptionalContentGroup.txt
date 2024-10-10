@@ -1,0 +1,22 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.optionalcontent.PDOptionalContentGroup
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDOptionalContentGroup extends PDPropertyList An optional content group (OCG).
+[Constructor Summary]
+PDOptionalContentGroup(COSDictionary dict)	Creates a new instance based on a given COSDictionary.
+PDOptionalContentGroup(String name)	Creates a new optional content group (OCG).
+[Field Summary]
+PDOptionalContentGroup(COSDictionary dict)	Creates a new instance based on a given COSDictionary.
+PDOptionalContentGroup(String name)	Creates a new optional content group (OCG).
+[Nested Class Summary]
+static class PDOptionalContentGroup.RenderState	Enumeration for the renderState dictionary entry on the "Export", "View" and "Print" dictionary.
+[Method Summary]
+String getName()	Returns the name of the optional content group.
+PDOptionalContentGroup.RenderState getRenderState(RenderDestination destination)	
+void setName(String name)	Sets the name of the optional content group.
+String toString()	
+[Methods inherited from class org.apache.pdfbox.pdmodel.documentinterchange.markedcontent.PDPropertyList]
+create, getCOSObject
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

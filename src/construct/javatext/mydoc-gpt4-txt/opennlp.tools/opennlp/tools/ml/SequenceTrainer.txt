@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.ml.SequenceTrainer
+[Type] Interface
+[Info]
+All Superinterfaces: Trainer
+public interface SequenceTrainer extends Trainer
+[Field Summary]
+static final String SEQUENCE_VALUE	
+[Method Summary]
+<T> SequenceClassificationModel<String> train(SequenceStream<T> events)	Trains a SequenceClassificationModel for given events.
+[Methods inherited from interface opennlp.tools.commons.Trainer]
+init

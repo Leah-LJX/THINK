@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.ml.perceptron.BinaryPerceptronModelReader
+[Type] Class
+[Info]
+public class BinaryPerceptronModelReader extends PerceptronModelReader A PerceptronModelReader that reads models from a binary format.
+[Constructor Summary]
+BinaryPerceptronModelReader(DataInputStream dis)	Instantiates BinaryPerceptronModelReader via a DataInputStream containing the model contents.
+BinaryPerceptronModelReader(File f)	Instantiates BinaryPerceptronModelReader via a File and creates a reader for it.
+[Methods inherited from class opennlp.tools.ml.perceptron.PerceptronModelReader]
+checkModelType, constructModel
+[Methods inherited from class opennlp.tools.ml.model.AbstractModelReader]
+getModel, readDouble, readInt, readUTF
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,11 @@
+[Class] org.w3c.dom.ProcessingInstruction
+[Flag] Interface
+[Info]
+All Superinterfaces:
+Node
+[Constructor Summary]
+
+[Method Summary]
+String getData() The content of this processing instruction.
+String getTarget() The target of this processing instruction.
+void setData(String data) The content of this processing instruction.

@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.cmdline.parser.ParserConverterTool
+[Type] Class
+[Info]
+public class ParserConverterTool extends opennlp.tools.cmdline.AbstractConverterTool<Parse,BasicFormatParams> Tool to convert multiple data formats into native OpenNLP parser  format.
+See Also:
+AbstractConverterTool Parse
+[Constructor Summary]
+ParserConverterTool()	
+[Methods inherited from class opennlp.tools.cmdline.AbstractConverterTool]
+getHelp, getHelp, getShortDescription, run
+[Methods inherited from class opennlp.tools.cmdline.CmdLineTool]
+getName, hasParams
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

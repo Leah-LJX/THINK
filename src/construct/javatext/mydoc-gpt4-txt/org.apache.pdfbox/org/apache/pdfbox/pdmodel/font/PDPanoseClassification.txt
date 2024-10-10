@@ -1,0 +1,24 @@
+[API Name] org.apache.pdfbox.pdmodel.font.PDPanoseClassification
+[Type] Class
+[Info]
+public class PDPanoseClassification extends Object Represents a 10-byte PANOSE classification.
+Author: John Hewson
+[Constructor Summary]
+PDPanoseClassification(byte[] bytes)	
+[Field Summary]
+static int LENGTH	Length.
+[Method Summary]
+int getArmStyle()	
+byte[] getBytes()	
+int getContrast()	
+int getFamilyKind()	
+int getLetterform()	
+int getMidline()	
+int getProportion()	
+int getSerifStyle()	
+int getStrokeVariation()	
+int getWeight()	
+int getXHeight()	
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

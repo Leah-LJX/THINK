@@ -1,0 +1,16 @@
+[API Name] org.apache.pdfbox.contentstream.operator.color.SetStrokingDeviceCMYKColor
+[Type] Class
+[Info]
+public class SetStrokingDeviceCMYKColor extends SetStrokingColor K: Set the stroking colour space to DeviceCMYK and set the colour to use for stroking operations.
+Author: John Hewson
+[Constructor Summary]
+SetStrokingDeviceCMYKColor(PDFStreamEngine context)	
+[Method Summary]
+String getName()	Returns the name of this operator, e.g.
+void process(Operator operator, List<COSBase> arguments)	Process the operator.
+[Methods inherited from class org.apache.pdfbox.contentstream.operator.color.SetStrokingColor]
+getColor, getColorSpace, setColor
+[Methods inherited from class org.apache.pdfbox.contentstream.operator.OperatorProcessor]
+checkArrayTypesClass, getContext
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

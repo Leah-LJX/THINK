@@ -1,0 +1,12 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.photometricinterpreters.floatingpoint.PaletteEntry
+[Type] Interface
+[Info]
+All Known Implementing Classes: PaletteEntryForRange, PaletteEntryForValue
+public interface PaletteEntry Defines an interface for specifying color assignments to floating point  values.
+[Method Summary]
+boolean coversSingleEntry()	Indicates that the entry covers exactly one unique value (including, potentially, Float.NaN).
+int getARGB​(float f)	Gets the integer ARGB color assignment associated with the input value.
+Color getColor​(float f)	Gets the color assignment associated with the input value.
+float getLowerBound()	Gets the lower-bound value for the palette entry
+float getUpperBound()	Gets the upper-bound value for the palette entry
+boolean isCovered​(float f)	Indicates whether the indicated floating-point value is within the range covered by this palette entry and can be assigned a valid color by the implementation.

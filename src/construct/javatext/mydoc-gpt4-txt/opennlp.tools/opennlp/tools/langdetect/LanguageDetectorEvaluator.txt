@@ -1,0 +1,17 @@
+[API Name] opennlp.tools.langdetect.LanguageDetectorEvaluator
+[Type] Class
+[Info]
+public class LanguageDetectorEvaluator extends Evaluator<LanguageSample> The LanguageDetectorEvaluator measures the performance of  the given LanguageDetector with the provided reference  LanguageSamples.
+See Also:
+LanguageDetector LanguageSample
+[Constructor Summary]
+LanguageDetectorEvaluator(LanguageDetector langDetect, LanguageDetectorEvaluationMonitor... listeners)	Initializes an instance to evaluate a LanguageDetector.
+[Method Summary]
+double getAccuracy()	
+long getDocumentCount()	
+LanguageSample processSample(LanguageSample sample)	Evaluates the given reference LanguageSample object.
+String toString()	Represents this object as human-readable String.
+[Methods inherited from class opennlp.tools.util.eval.Evaluator]
+evaluate, evaluateSample
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, wait, wait, wait

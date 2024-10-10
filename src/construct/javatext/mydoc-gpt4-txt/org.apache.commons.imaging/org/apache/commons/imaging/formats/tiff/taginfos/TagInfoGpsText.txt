@@ -1,0 +1,16 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.taginfos.TagInfoGpsText
+[Type] Class
+[Info]
+public final class TagInfoGpsText extends TagInfo Used by some GPS tags and the EXIF user comment tag,  this badly documented value is meant to contain  the text encoding in the first 8 bytes followed by  the non-null-terminated text in an unknown byte order.
+[Constructor Summary]
+TagInfoGpsText​(String name, int tag, TiffDirectoryType exifDirectory)	
+[Field Summary]
+TagInfoGpsText​(String name, int tag, TiffDirectoryType exifDirectory)	
+[Method Summary]
+byte[] encodeValue​(FieldType fieldType, Object value, ByteOrder byteOrder)	
+String getValue​(TiffField entry)	
+boolean isText()	
+[Methods inherited from class org.apache.commons.imaging.formats.tiff.taginfos.TagInfo]
+getDescription, isOffset, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

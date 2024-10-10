@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.entity.StandardEntityCollection
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EntityCollection, org.jfree.util.PublicCloneable
+[Constructor Summary]
+StandardEntityCollection() Constructs a new entity collection (initially empty).
+[Method Summary]
+void add(ChartEntity entity) Adds an entity to the collection.

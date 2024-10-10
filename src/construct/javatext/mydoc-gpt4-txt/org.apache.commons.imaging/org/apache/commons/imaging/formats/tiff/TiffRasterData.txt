@@ -1,0 +1,33 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.TiffRasterData
+[Type] Class
+[Info]
+Direct Known Subclasses: TiffRasterDataFloat, TiffRasterDataInt
+public abstract class TiffRasterData extends Object Provides a simple container for numeric-raster data. Some TIFF files are used  to store floating-point or integer data rather than images. This class is  intended to support access to those TIFF files.   Note: The getData() and getIntData() methods can return  direct references to the internal arrays stored in instances of this class.  Because these are not safe copies of the data, an application that modified  the arrays returned by these methods will change the content of the  associated instance. This approach is used for purposes of efficiency when  dealing with very large TIFF images.   Data layout: The elements in the returned array are stored  in row-major order. In cases where the data contains multiple samples per  raster cell (pixel), the data is organized into blocks of data one sample at  a time. The first block contains width*height values for the first sample for  each cell, the second block contains width*height values for the second  sample for each cell, etc. Thus, the array index for a particular value is  computed as       index = y*width + x + iSample * width *height;
+[Constructor Summary]
+TiffRasterData​(int width, int height, int samplesPerPixel)	Construct an instance allocating memory for the specified dimensions.
+[Field Summary]
+protected int height	
+protected int nCells	
+protected int planarOffset	
+protected int samplesPerPixel	
+protected int width	
+[Method Summary]
+protected int checkCoordinatesAndComputeIndex​(int x, int y, int i)	
+abstract float[] getData()	Returns the content stored as an array in this instance.
+abstract TiffRasterDataType getDataType()	Gets the raster data type from the instance.
+int getHeight()	Gets the height (number of rows) of the raster.
+abstract int[] getIntData()	Returns the content stored as an array in this instance.
+abstract int getIntValue​(int x, int y)	Gets the value stored at the specified raster coordinates.
+abstract int getIntValue​(int x, int y, int i)	Gets the value stored at the specified raster coordinates.
+int getSamplesPerPixel()	Gets the number of samples per pixel.
+abstract TiffRasterStatistics getSimpleStatistics()	Tabulates simple statistics for the raster and returns an instance containing general metadata.
+abstract TiffRasterStatistics getSimpleStatistics​(float valueToExclude)	Tabulates simple statistics for the raster excluding the specified value and returns an instance containing general metadata.
+abstract float getValue​(int x, int y)	Gets the value stored at the specified raster coordinates.
+abstract float getValue​(int x, int y, int i)	Gets the value stored at the specified raster coordinates.
+int getWidth()	Gets the width (number of columns) of the raster.
+abstract void setIntValue​(int x, int y, int value)	Sets the value stored at the specified raster coordinates.
+abstract void setIntValue​(int x, int y, int i, int value)	Sets the value stored at the specified raster coordinates.
+abstract void setValue​(int x, int y, float value)	Sets the value stored at the specified raster coordinates.
+abstract void setValue​(int x, int y, int i, float value)	Sets the value stored at the specified raster coordinates.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

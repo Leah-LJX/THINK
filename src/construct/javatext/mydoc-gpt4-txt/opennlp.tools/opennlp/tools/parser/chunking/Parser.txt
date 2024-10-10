@@ -1,0 +1,19 @@
+[API Name] opennlp.tools.parser.chunking.Parser
+[Type] Class
+[Info]
+All Implemented Interfaces: Parser
+public class Parser extends AbstractBottomUpParser A shift reduce style Parser implementation  based on Adwait Ratnaparkhi's 1998 thesis.
+See Also:
+AbstractBottomUpParser Parser
+[Constructor Summary]
+Parser(ParserModel model)	Instantiates a Parser via a given model.
+Parser(ParserModel model, int beamSize, double advancePercentage)	Instantiates a Parser via a given model and other configuration parameters.
+[Method Summary]
+static void mergeReportIntoManifest(Map<String,String> manifest, Map<String,String> report, String namespace)	
+static ParserModel train(String languageCode, ObjectStream<Parse> parseSamples, HeadRules rules, TrainingParameters mlParams)	Starts a training of a ParserModel.
+[Fields inherited from class opennlp.tools.parser.AbstractBottomUpParser]
+COMPLETE, CONT, defaultAdvancePercentage, defaultBeamSize, INC_NODE, INCOMPLETE, OTHER, START, TOK_NODE, TOP_NODE
+[Methods inherited from class opennlp.tools.parser.AbstractBottomUpParser]
+buildDictionary, buildDictionary, collapsePunctuation, parse, parse, setErrorReporting, setParents
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,17 @@
+[API Name] opennlp.tools.lemmatizer.DictionaryLemmatizer
+[Type] Class
+[Info]
+All Implemented Interfaces: Lemmatizer
+public class DictionaryLemmatizer extends Object implements Lemmatizer A Lemmatizer implementation that works by simple dictionary lookup into  a Map built from a file containing, for each line:   word\tabpostag\tablemma.
+[Constructor Summary]
+DictionaryLemmatizer(File dictionaryFile)	Initializes a DictionaryLemmatizer and related HashMap from the input tab separated dictionary.
+DictionaryLemmatizer(File dictionaryFile, Charset charset)	Initializes a DictionaryLemmatizer and related HashMap from the input tab separated dictionary.
+DictionaryLemmatizer(InputStream dictionaryStream)	Initializes a DictionaryLemmatizer and related HashMap from the input tab separated dictionary.
+DictionaryLemmatizer(InputStream dictionaryStream, Charset charset)	Initializes a DictionaryLemmatizer and related HashMap from the input tab separated dictionary.
+DictionaryLemmatizer(Path dictionaryPath)	Initializes a DictionaryLemmatizer and related HashMap from the input tab separated dictionary.
+[Method Summary]
+Map<List<String>,List<String>> getDictMap()	
+String[] lemmatize(String[] tokens, String[] postags)	Generates lemmas for the word and postag.
+List<List<String>> lemmatize(List<String> tokens, List<String> posTags)	Generates lemma tags for the word and postag.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

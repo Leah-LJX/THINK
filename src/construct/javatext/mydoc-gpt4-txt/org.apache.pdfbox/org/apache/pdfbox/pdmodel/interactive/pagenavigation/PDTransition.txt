@@ -1,0 +1,28 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDTransition
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class PDTransition extends PDDictionaryWrapper Represents a page transition as defined in paragraph 12.4.4.1 of PDF 32000-1:2008
+Author: Andrea Vacondio
+[Constructor Summary]
+PDTransition()	creates a new transition with default "replace" style PDTransitionStyle.R
+PDTransition(COSDictionary dictionary)	creates a new transition for an existing dictionary
+PDTransition(PDTransitionStyle style)	creates a new transition with the given style.
+[Method Summary]
+String getDimension()	
+COSBase getDirection()	
+float getDuration()	
+float getFlyScale()	
+String getMotion()	
+String getStyle()	
+boolean isFlyAreaOpaque()	
+void setDimension(PDTransitionDimension dimension)	Sets the dimension in which the specified transition effect shall occur.
+void setDirection(PDTransitionDirection direction)	Sets the direction in which the specified transition effect shall move.
+void setDuration(float duration)	
+void setFlyAreaOpaque(boolean opaque)	
+void setFlyScale(float scale)	
+void setMotion(PDTransitionMotion motion)	Sets the direction of motion for the specified transition effect.
+[Methods inherited from class org.apache.pdfbox.pdmodel.common.PDDictionaryWrapper]
+equals, getCOSObject, hashCode
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, toString, wait, wait, wait

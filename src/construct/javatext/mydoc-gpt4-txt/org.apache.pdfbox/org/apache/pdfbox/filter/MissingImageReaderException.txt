@@ -1,0 +1,12 @@
+[API Name] org.apache.pdfbox.filter.MissingImageReaderException
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable
+public class MissingImageReaderException extends IOException Thrown when a required JAI ImageReader is missing.
+Author: John Hewson See Also: Serialized Form
+[Constructor Summary]
+MissingImageReaderException(String message)	
+[Methods inherited from class java.lang.Throwable]
+addSuppressed, fillInStackTrace, getCause, getLocalizedMessage, getMessage, getStackTrace, getSuppressed, initCause, printStackTrace, printStackTrace, printStackTrace, setStackTrace, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

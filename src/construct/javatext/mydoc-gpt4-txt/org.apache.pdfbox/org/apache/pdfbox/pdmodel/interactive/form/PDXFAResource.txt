@@ -1,0 +1,14 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.form.PDXFAResource
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class PDXFAResource extends Object implements COSObjectable An XML Forms Architecture (XFA) resource.
+Author: Ben Litchfield
+[Constructor Summary]
+PDXFAResource(COSBase xfaBase)	Constructor.
+[Method Summary]
+byte[] getBytes()	Get the XFA content as byte array.
+COSBase getCOSObject()	Convert this standard java object to a COS object.
+Document getDocument()	Get the XFA content as W3C document.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

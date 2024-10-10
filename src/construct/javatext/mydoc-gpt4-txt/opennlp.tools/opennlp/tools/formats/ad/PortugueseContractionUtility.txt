@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.formats.ad.PortugueseContractionUtility
+[Type] Class
+[Info]
+@Internal public class PortugueseContractionUtility extends Object Utility class to handle Portuguese contractions.    Some Corpora split contractions in its parts, for example, "da" > "de" +  "a", but according to the phase of language processing, NER for instance, we  can't decide if to split a contraction or not, specially because contractions  inside names are not separated, but outside are.
+  Note:  Do not use this class, internal use only!
+[Constructor Summary]
+PortugueseContractionUtility()	
+[Method Summary]
+static String toContraction(String left, String right)	Merges a contraction.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

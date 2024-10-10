@@ -1,0 +1,18 @@
+[API Name] opennlp.tools.ml.model.DataIndexer
+[Type] Interface
+[Info]
+All Known Implementing Classes: AbstractDataIndexer, OnePassDataIndexer, OnePassRealValueDataIndexer, TwoPassDataIndexer
+public interface DataIndexer Represents an indexer which compresses events in memory and performs feature selection.
+See Also:
+ObjectStream TrainingParameters
+[Method Summary]
+int[][] getContexts()	
+int getNumEvents()	
+int[] getNumTimesEventsSeen()	
+String[] getOutcomeLabels()	
+int[] getOutcomeList()	
+int[] getPredCounts()	
+String[] getPredLabels()	
+float[][] getValues()	
+void index(ObjectStream<Event> eventStream)	Performs the data indexing.
+void init(TrainingParameters trainParams, Map<String,String> reportMap)	Sets parameters used during the data indexing.

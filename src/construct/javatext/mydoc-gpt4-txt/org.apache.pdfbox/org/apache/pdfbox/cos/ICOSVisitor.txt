@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.cos.ICOSVisitor
+[Type] Interface
+[Info]
+All Known Implementing Classes: COSWriter
+public interface ICOSVisitor An interface for visiting a PDF document at the type (COS) level.
+Author: Michael Traut
+[Method Summary]
+void visitFromArray(COSArray obj)	Notification of visit to Array object.
+void visitFromBoolean(COSBoolean obj)	Notification of visit to boolean object.
+void visitFromDictionary(COSDictionary obj)	Notification of visit to dictionary object.
+void visitFromDocument(COSDocument obj)	Notification of visit to document object.
+void visitFromFloat(COSFloat obj)	Notification of visit to float object.
+void visitFromInt(COSInteger obj)	Notification of visit to integer object.
+void visitFromName(COSName obj)	Notification of visit to name object.
+void visitFromNull(COSNull obj)	Notification of visit to null object.
+void visitFromStream(COSStream obj)	Notification of visit to stream object.
+void visitFromString(COSString obj)	Notification of visit to string object.

@@ -1,0 +1,26 @@
+[API Name] org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureTreeRoot
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDStructureTreeRoot extends PDStructureNode A root of a structure tree.
+Author: Ben Litchfield, Johannes Koch
+[Constructor Summary]
+PDStructureTreeRoot()	Default Constructor.
+PDStructureTreeRoot(COSDictionary dic)	Constructor for an existing structure element.
+[Method Summary]
+Map<String,Object> getClassMap()	Sets the ClassMap.
+PDNameTreeNode<PDStructureElement> getIDTree()	Returns the ID tree.
+COSBase getK()	Returns the K entry.
+PDNumberTreeNode getParentTree()	Returns the parent tree.
+int getParentTreeNextKey()	Returns the next key in the parent tree.
+Map<String,Object> getRoleMap()	Returns the role map.
+void setClassMap(Map<String,Object> classMap)	Sets the ClassMap.
+void setIDTree(PDNameTreeNode<PDStructureElement> idTree)	Sets the ID tree.
+void setK(COSBase k)	Sets the K entry.
+void setParentTree(PDNumberTreeNode parentTree)	Sets the parent tree.
+void setParentTreeNextKey(int parentTreeNextkey)	Sets the next key in the parent tree.
+void setRoleMap(Map<String,String> roleMap)	Sets the role map.
+[Methods inherited from class org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureNode]
+appendKid, appendKid, appendObjectableKid, create, createObject, getCOSObject, getKids, getType, insertBefore, insertBefore, insertObjectableBefore, removeKid, removeKid, removeObjectableKid, setKids
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,19 @@
+[API Name] org.apache.pdfbox.pdmodel.fdf.FDFJavaScript
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class FDFJavaScript extends Object implements COSObjectable This represents an FDF JavaScript dictionary that is part of the FDF document.
+Author: Ben Litchfield
+[Constructor Summary]
+FDFJavaScript()	Default constructor.
+FDFJavaScript(COSDictionary javaScript)	Constructor.
+[Method Summary]
+String getAfter()	This will get the javascript that is executed after the import.
+String getBefore()	This will get the javascript that is executed before the import.
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+Map<String,PDActionJavaScript> getDoc()	Returns the dictionary's "Doc" entry, that is, a map of key value pairs to be added to the document's JavaScript name tree.
+void setAfter(String after)	This will set the javascript code the will get execute after the import.
+void setBefore(String before)	This will set the javascript code the will get execute before the import.
+void setDoc(Map<String,PDActionJavaScript> map)	Sets the dictionary's "Doc" entry.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

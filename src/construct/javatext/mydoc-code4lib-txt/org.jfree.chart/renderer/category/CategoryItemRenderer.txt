@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.renderer.category.CategoryItemRenderer
+[Flag] Interface
+[Info]
+All Superinterfaces: LegendItemSource
+All Known Implementing Classes: AbstractCategoryItemRenderer, AreaRenderer, BarRenderer, BarRenderer3D, BoxAndWhiskerRenderer, CategoryStepRenderer, DefaultCategoryItemRenderer, GanttRenderer, GroupedStackedBarRenderer, IntervalBarRenderer, LayeredBarRenderer, LevelRenderer, LineAndShapeRenderer, LineRenderer3D, MinMaxCategoryRenderer, ScatterRenderer, StackedAreaRenderer, StackedBarRenderer, StackedBarRenderer3D, StatisticalBarRenderer, StatisticalLineAndShapeRenderer, WaterfallBarRenderer
+[Constructor Summary]
+
+[Method Summary]
+void addChangeListener(RendererChangeListener listener) Adds a change listener.

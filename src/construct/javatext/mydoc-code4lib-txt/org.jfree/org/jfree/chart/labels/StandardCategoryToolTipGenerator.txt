@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.labels.StandardCategoryToolTipGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, CategoryToolTipGenerator, org.jfree.util.PublicCloneable
+Direct Known Subclasses: BoxAndWhiskerToolTipGenerator, IntervalCategoryToolTipGenerator
+[Constructor Summary]
+StandardCategoryToolTipGenerator() Creates a new generator with a default number formatter.
+[Method Summary]
+boolean equals(Object obj) Tests this generator for equality with an arbitrary object.

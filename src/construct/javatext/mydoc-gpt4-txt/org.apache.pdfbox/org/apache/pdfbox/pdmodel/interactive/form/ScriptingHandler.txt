@@ -1,0 +1,9 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.form.ScriptingHandler
+[Type] Interface
+[Info]
+public interface ScriptingHandler
+[Method Summary]
+String calculate(PDActionJavaScript javaScriptAction, String value)	Handle the fields calculate event action.
+String format(PDActionJavaScript javaScriptAction, String value)	Handle the fields format event action.
+String keyboard(PDActionJavaScript javaScriptAction, String value)	Handle the fields keyboard event action.
+boolean validate(PDActionJavaScript javaScriptAction, String value)	Handle the fields validate event action.

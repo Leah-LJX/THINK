@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.block.ColorBlock
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Block, org.jfree.ui.Drawable
+[Constructor Summary]
+ColorBlock(Paint paint, double width, double height) Creates a new block.
+[Method Summary]
+org.jfree.ui.Size2D arrange(Graphics2D g2, RectangleConstraint constraint) Arranges the contents of the block, within the given constraints, and returns the block size.

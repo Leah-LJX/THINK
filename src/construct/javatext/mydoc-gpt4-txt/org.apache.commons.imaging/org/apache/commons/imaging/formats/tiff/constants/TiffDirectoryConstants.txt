@@ -1,0 +1,23 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.constants.TiffDirectoryConstants
+[Type] Class
+[Info]
+public final class TiffDirectoryConstants extends Object
+[Field Summary]
+static int DIRECTORY_TYPE_DIR_0	
+static int DIRECTORY_TYPE_DIR_1	
+static int DIRECTORY_TYPE_DIR_2	
+static int DIRECTORY_TYPE_DIR_3	
+static int DIRECTORY_TYPE_DIR_4	
+static int DIRECTORY_TYPE_EXIF	
+static int DIRECTORY_TYPE_GPS	
+static int DIRECTORY_TYPE_INTEROPERABILITY	
+static int DIRECTORY_TYPE_MAKER_NOTES	
+static int DIRECTORY_TYPE_ROOT	
+static int DIRECTORY_TYPE_SUB	
+static int DIRECTORY_TYPE_SUB0	
+static int DIRECTORY_TYPE_SUB1	
+static int DIRECTORY_TYPE_SUB2	
+static int DIRECTORY_TYPE_THUMBNAIL	
+static int DIRECTORY_TYPE_UNKNOWN	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

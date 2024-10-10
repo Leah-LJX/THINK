@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.renderer.category.AbstractCategoryItemRenderer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, LegendItemSource, CategoryItemRenderer, org.jfree.util.PublicCloneable
+Direct Known Subclasses: AreaRenderer, BarRenderer, BoxAndWhiskerRenderer, CategoryStepRenderer, LevelRenderer, LineAndShapeRenderer, MinMaxCategoryRenderer, ScatterRenderer
+[Constructor Summary]
+protected AbstractCategoryItemRenderer() Creates a new renderer with no tool tip generator and no URL generator.
+[Method Summary]
+protected void addEntity(EntityCollection entities, Shape hotspot, CategoryDataset dataset, int row, int column, double entityX, double entityY) Adds an entity to the collection.

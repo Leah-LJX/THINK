@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.needle.MiddlePinNeedle
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+MiddlePinNeedle()
+[Method Summary]
+Object clone() Returns a clone of this needle.

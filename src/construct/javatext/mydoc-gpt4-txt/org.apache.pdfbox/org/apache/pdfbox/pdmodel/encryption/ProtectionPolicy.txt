@@ -1,0 +1,16 @@
+[API Name] org.apache.pdfbox.pdmodel.encryption.ProtectionPolicy
+[Type] Class
+[Info]
+Direct Known Subclasses: PublicKeyProtectionPolicy, StandardProtectionPolicy
+public abstract class ProtectionPolicy extends Object This class represents the protection policy to apply to a document.
+ Objects implementing this abstract class can be passed to the protect method of PDDocument  to protect a document.
+Author: Benoit Guillon (benoit.guillon@snv.jussieu.fr) See Also: PDDocument.protect(ProtectionPolicy)
+[Constructor Summary]
+ProtectionPolicy()	
+[Method Summary]
+int getEncryptionKeyLength()	Get the length of the secrete key that will be used to encrypt document data.
+boolean isPreferAES()	Tell whether AES encryption is preferred when several encryption methods are available for the chosen key length.
+void setEncryptionKeyLength(int l)	set the length in (bits) of the secret key that will be used to encrypt document data.
+void setPreferAES(boolean preferAES)	Set whether AES encryption is preferred when several encryption methods are available for the chosen key length.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

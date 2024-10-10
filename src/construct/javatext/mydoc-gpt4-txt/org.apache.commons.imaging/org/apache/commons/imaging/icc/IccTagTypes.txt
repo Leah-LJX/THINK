@@ -1,0 +1,57 @@
+[API Name] Package org.apache.commons.imaging.icc.IccTagTypes
+[Type] Enum
+[Info]
+All Implemented Interfaces: Serializable, Comparable<IccTagTypes>
+public enum IccTagTypes extends Enum<IccTagTypes>
+[Enum Constant Summary]
+A_TO_B0_TAG	
+A_TO_B1_TAG	
+A_TO_B2_TAG	
+B_TO_A0_TAG	
+B_TO_A1_TAG	
+B_TO_A2_TAG	
+BLUE_MATRIX_COLUMN_TAG	
+BLUE_TRC_TAG	
+CALIBRATION_DATE_TIME_TAG	
+CHAR_TARGET_TAG	
+CHROMATIC_ADAPTATION_TAG	
+CHROMATICITY_TAG	
+COLORANT_ORDER_TAG	
+COLORANT_TABLE_TAG	
+COPYRIGHT_TAG	
+DEVICE_MFG_DESC_TAG	
+DEVICE_MODEL_DESC_TAG	
+GAMUT_TAG	
+GRAY_TRC_TAG	
+GREEN_MATRIX_COLUMN_TAG	
+GREEN_TRC_TAG	
+LUMINANCE_TAG	
+MEASUREMENT_TAG	
+MEDIA_BLACK_POINT_TAG	
+MEDIA_WHITE_POINT_TAG	
+NAMED_COLOR_2_TAG	
+OUTPUT_RESPONSE_TAG	
+PREVIEW_0_TAG	
+PREVIEW_1_TAG	
+PREVIEW_2_TAG	
+PROFILE_DESCRIPTION_TAG	
+PROFILE_SEQUENCE_DESC_TAG	
+RED_MATRIX_COLUMN_TAG	
+RED_TRC_TAG	
+TECHNOLOGY_TAG	
+VIEWING_COND_DESC_TAG	
+VIEWING_CONDITIONS_TAG	
+[Field Summary]
+String name	
+int signature	
+String typeDescription	
+[Method Summary]
+String getName()	
+int getSignature()	
+String getTypeDescription()	
+static IccTagTypes valueOf​(String name)	Returns the enum constant of this type with the specified name.
+static IccTagTypes[] values()	Returns an array containing the constants of this enum type, in the order they are declared.
+[Methods inherited from class java.lang.Enum]
+clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, toString, valueOf
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.axis.ValueTick
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+Direct Known Subclasses: DateTick, LogTick, NumberTick
+[Constructor Summary]
+ValueTick(double value, String label, org.jfree.ui.TextAnchor textAnchor, org.jfree.ui.TextAnchor rotationAnchor, double angle) Creates a new value tick.
+[Method Summary]
+boolean equals(Object obj) Tests this tick for equality with an arbitrary object.

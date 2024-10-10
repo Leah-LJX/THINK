@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.entitylinker.EntityLinkerProperties
+[Type] Class
+[Info]
+public class EntityLinkerProperties extends Object Properties wrapper for EntityLinker implementations.
+See Also:
+EntityLinkerFactory
+[Constructor Summary]
+EntityLinkerProperties(File propertiesFile)	Initializes EntityLinkerProperties via a File reference.
+EntityLinkerProperties(InputStream propertiesIn)	Initializes EntityLinkerProperties via a InputStream reference.
+[Method Summary]
+String getProperty(String key, String defaultValue)	Retrieves a property value for a given key.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

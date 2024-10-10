@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.ChartUtilities
+[Flag] Class
+[Info]
+See Also: ImageMapUtilities
+[Constructor Summary]
+ChartUtilities()
+[Method Summary]
+static void applyCurrentTheme(JFreeChart chart) Applies the current theme to the specified chart.

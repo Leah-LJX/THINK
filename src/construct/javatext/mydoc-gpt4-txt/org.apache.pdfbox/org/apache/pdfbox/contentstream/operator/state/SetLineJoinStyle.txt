@@ -1,0 +1,13 @@
+[API Name] org.apache.pdfbox.contentstream.operator.state.SetLineJoinStyle
+[Type] Class
+[Info]
+public class SetLineJoinStyle extends OperatorProcessor j: Set the line join style.
+[Constructor Summary]
+SetLineJoinStyle(PDFStreamEngine context)	
+[Method Summary]
+String getName()	Returns the name of this operator, e.g.
+void process(Operator operator, List<COSBase> arguments)	Process the operator.
+[Methods inherited from class org.apache.pdfbox.contentstream.operator.OperatorProcessor]
+checkArrayTypesClass, getContext
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,25 @@
+[Class] org.joda.time.DateTime.Property
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+Enclosing class: DateTime
+[Constructor Summary]
+
+[Method Summary]
+DateTime addToCopy(int value) Adds to this field in a copy of this DateTime.
+DateTime addToCopy(long value) Adds to this field in a copy of this DateTime.
+DateTime addWrapFieldToCopy(int value) Adds to this field, possibly wrapped, in a copy of this DateTime.
+protected Chronology getChronology() Gets the chronology of the datetime that this property is linked to.
+DateTime getDateTime() Gets the datetime being used.
+DateTimeField getField() Gets the field being used.
+protected long getMillis() Gets the milliseconds of the datetime that this property is linked to.
+DateTime roundCeilingCopy() Rounds to the highest whole unit of this field on a copy of this DateTime.
+DateTime roundFloorCopy() Rounds to the lowest whole unit of this field on a copy of this DateTime.
+DateTime roundHalfCeilingCopy() Rounds to the nearest whole unit of this field on a copy of this DateTime, favoring the ceiling if halfway.
+DateTime roundHalfEvenCopy() Rounds to the nearest whole unit of this field on a copy of this DateTime.
+DateTime roundHalfFloorCopy() Rounds to the nearest whole unit of this field on a copy of this DateTime, favoring the floor if halfway.
+DateTime setCopy(int value) Sets this field in a copy of the DateTime.
+DateTime setCopy(String text) Sets this field in a copy of the DateTime to a parsed text value.
+DateTime setCopy(String text, Locale locale) Sets this field in a copy of the DateTime to a parsed text value.
+DateTime withMaximumValue() Returns a new DateTime with this field set to the maximum value for this field.
+DateTime withMinimumValue() Returns a new DateTime with this field set to the minimum value for this field.

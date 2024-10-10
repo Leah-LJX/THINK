@@ -1,0 +1,11 @@
+[Class] org.jfree.chart.plot.ContourPlotUtilities
+[Flag] Class
+[Info]
+Parameters: data - the dataset.
+x - the x range.
+y - the y range.
+Returns: The range.
+[Constructor Summary]
+ContourPlotUtilities() Deprecated.
+[Method Summary]
+static Range visibleRange(ContourDataset data, Range x, Range y) Deprecated. Returns the visible z-range.

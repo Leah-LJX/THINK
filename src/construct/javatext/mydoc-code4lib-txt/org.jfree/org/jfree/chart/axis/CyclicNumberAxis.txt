@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.CyclicNumberAxis
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, org.jfree.util.PublicCloneable
+[Constructor Summary]
+CyclicNumberAxis(double period) Creates a CycleNumberAxis with the given period.
+[Method Summary]
+protected float[] calculateAnchorPoint(ValueTick tick, double cursor, Rectangle2D dataArea, org.jfree.ui.RectangleEdge edge) Calculates the anchor point for a tick.

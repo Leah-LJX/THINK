@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.pdmodel.fdf.FDFNamedPageReference
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class FDFNamedPageReference extends Object implements COSObjectable This represents an FDF named page reference that is part of the FDF field.
+Author: Ben Litchfield
+[Constructor Summary]
+FDFNamedPageReference()	Default constructor.
+FDFNamedPageReference(COSDictionary r)	Constructor.
+[Method Summary]
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+PDFileSpecification getFileSpecification()	This will get the file specification of this reference.
+String getName()	This will get the name of the referenced page.
+void setFileSpecification(PDFileSpecification fs)	This will set the file specification for this named page reference.
+void setName(String name)	This will set the name of the referenced page.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

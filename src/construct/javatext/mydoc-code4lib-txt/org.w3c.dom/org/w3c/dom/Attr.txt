@@ -1,0 +1,15 @@
+[Class] org.w3c.dom.Attr
+[Flag] Interface
+[Info]
+All Superinterfaces:
+Node
+[Constructor Summary]
+
+[Method Summary]
+String getName() Returns the name of this attribute.
+Element getOwnerElement() The Element node this attribute is attached to or null if this attribute is not in use.
+TypeInfo getSchemaTypeInfo() The type information associated with this attribute.
+boolean getSpecified() True if this attribute was explicitly given a value in the instance document, false otherwise.
+String getValue() On retrieval, the value of the attribute is returned as a string.
+boolean isId() Returns whether this attribute is known to be of type ID (i.e.
+void setValue(String value) On retrieval, the value of the attribute is returned as a string.

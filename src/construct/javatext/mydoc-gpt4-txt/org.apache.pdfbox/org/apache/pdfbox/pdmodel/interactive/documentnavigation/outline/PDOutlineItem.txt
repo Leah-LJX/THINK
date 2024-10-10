@@ -1,0 +1,37 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineItem
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class PDOutlineItem extends PDOutlineNode This represents an outline item in a pdf document. The items at each level of the hierarchy form an iterable linked  list, chained together through their Prev and Next entries.
+Author: Ben Litchfield
+[Constructor Summary]
+PDOutlineItem()	Default Constructor.
+PDOutlineItem(COSDictionary dic)	Constructor for an existing outline item.
+[Method Summary]
+PDPage findDestinationPage(PDDocument doc)	This method will attempt to find the page in this PDF document that this outline points to.
+PDAction getAction()	Get the action of this node.
+PDDestination getDestination()	Get the page destination of this node.
+PDOutlineItem getNextSibling()	
+PDOutlineItem getPreviousSibling()	Return the previous sibling or null if there is no sibling.
+PDStructureElement getStructureElement()	Get the structure element of this node.
+PDColor getTextColor()	Get the RGB text color of this node.
+String getTitle()	Get the title of this node.
+void insertSiblingAfter(PDOutlineItem newSibling)	Insert a single sibling after this node.
+void insertSiblingBefore(PDOutlineItem newSibling)	Insert a single sibling before this node.
+boolean isBold()	A flag telling if the text should be bold.
+boolean isItalic()	A flag telling if the text should be italic.
+void setAction(PDAction action)	Set the action for this node.
+void setBold(boolean bold)	Set the bold property of the text.
+void setDestination(PDDestination dest)	Set the page destination for this node.
+void setDestination(PDPage page)	A convenience method that will create an XYZ destination using only the defaults.
+void setItalic(boolean italic)	Set the italic property of the text.
+void setStructureElement(PDStructureElement structureElement)	Set the structure element for this node.
+void setTextColor(Color textColor)	Set the RGB text color for this node.
+void setTextColor(PDColor textColor)	Set the RGB text color for this node.
+void setTitle(String title)	Set the title for this node.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineNode]
+addFirst, addLast, children, closeNode, getFirstChild, getLastChild, getOpenCount, hasChildren, isNodeOpen, openNode
+[Methods inherited from class org.apache.pdfbox.pdmodel.common.PDDictionaryWrapper]
+equals, getCOSObject, hashCode
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, toString, wait, wait, wait

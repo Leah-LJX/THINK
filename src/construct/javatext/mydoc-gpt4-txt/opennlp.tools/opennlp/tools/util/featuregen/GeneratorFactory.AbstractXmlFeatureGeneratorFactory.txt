@@ -1,0 +1,25 @@
+[API Name] opennlp.tools.util.featuregen.GeneratorFactory.AbstractXmlFeatureGeneratorFactory
+[Type] Class
+[Info]
+Direct Known Subclasses: AggregatedFeatureGeneratorFactory, BigramNameFeatureGeneratorFactory, BrownClusterBigramFeatureGeneratorFactory, BrownClusterTokenClassFeatureGeneratorFactory, BrownClusterTokenFeatureGeneratorFactory, CachedFeatureGeneratorFactory, CharacterNgramFeatureGeneratorFactory, DefinitionFeatureGeneratorFactory, DictionaryFeatureGeneratorFactory, DocumentBeginFeatureGeneratorFactory, PosTaggerFeatureGeneratorFactory, POSTaggerNameFeatureGeneratorFactory, PrefixFeatureGeneratorFactory, PreviousMapFeatureGeneratorFactory, SentenceFeatureGeneratorFactory, SuffixFeatureGeneratorFactory, TokenClassFeatureGeneratorFactory, TokenFeatureGeneratorFactory, TokenPatternFeatureGeneratorFactory, TrigramNameFeatureGeneratorFactory, WindowFeatureGeneratorFactory, WordClusterFeatureGeneratorFactory
+Enclosing class: GeneratorFactory
+public abstract static class GeneratorFactory.AbstractXmlFeatureGeneratorFactory extends Object
+[Constructor Summary]
+AbstractXmlFeatureGeneratorFactory()	
+[Method Summary]
+abstract AdaptiveFeatureGenerator create()	
+Map<String,ArtifactSerializer<?>> getArtifactSerializerMapping()	
+boolean getBool(String name)	
+boolean getBool(String name, boolean defValue)	
+double getDouble(String name)	
+double getDouble(String name, double defValue)	
+float getFloat(String name)	
+float getFloat(String name, float defValue)	
+int getInt(String name)	
+int getInt(String name, int defValue)	
+long getLong(String name)	
+long getLong(String name, long defValue)	
+String getStr(String name)	
+String getStr(String name, String defValue)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

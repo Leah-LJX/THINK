@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.sentdetect.NewlineSentenceDetector
+[Type] Class
+[Info]
+All Implemented Interfaces: SentenceDetector
+public class NewlineSentenceDetector extends Object implements SentenceDetector The Newline SentenceDetector assumes that sentences are line delimited and  recognizes one sentence per non-empty line.
+[Constructor Summary]
+NewlineSentenceDetector()	
+[Method Summary]
+String[] sentDetect(CharSequence s)	Detects sentences in a character sequence.
+Span[] sentPosDetect(CharSequence s)	Detects sentences in a character sequence.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

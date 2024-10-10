@@ -1,0 +1,15 @@
+[Class] org.joda.time.format.DateTimePrinter
+[Flag] Interface
+[Info]
+Since: 1.0
+See Also: DateTimeFormatterBuilder, 
+DateTimeFormat, 
+ISODateTimeFormat
+[Constructor Summary]
+
+[Method Summary]
+int estimatePrintedLength() Returns the expected maximum number of characters produced.
+void printTo(StringBuffer buf, long instant, Chronology chrono, int displayOffset, DateTimeZone displayZone, Locale locale) Prints an instant from milliseconds since 1970-01-01T00:00:00Z, using the given Chronology.
+void printTo(StringBuffer buf, ReadablePartial partial, Locale locale) Prints a ReadablePartial.
+void printTo(Writer out, long instant, Chronology chrono, int displayOffset, DateTimeZone displayZone, Locale locale) Prints an instant from milliseconds since 1970-01-01T00:00:00Z, using the given Chronology.
+void printTo(Writer out, ReadablePartial partial, Locale locale) Prints a ReadablePartial.

@@ -1,0 +1,12 @@
+[Class] org.w3c.dom.svg.SVGImageElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, EventTarget, Node, SVGElement, SVGExternalResourcesRequired, SVGLangSpace, SVGLocatable, SVGStylable, SVGTests, SVGTransformable, SVGURIReference
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedLength getHeight()	 
+ SVGAnimatedPreserveAspectRatio getPreserveAspectRatio()	 
+ SVGAnimatedLength getWidth()	 
+ SVGAnimatedLength getX()	 
+ SVGAnimatedLength getY()

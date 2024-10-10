@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.util.AbstractObjectStream<T>
+[Type] Class
+[Info]
+Type Parameters: T - The generic type representing samples in the stream of samples.
+All Implemented Interfaces: AutoCloseable, ObjectStream<T>
+Direct Known Subclasses: HashSumEventStream
+public abstract class AbstractObjectStream<T> extends Object implements ObjectStream<T> A base ObjectStream implementation.
+[Method Summary]
+void close()	Closes the ObjectStream and releases all allocated resources.
+T read()	Returns the next ObjectStream object.
+void reset()	Repositions the stream at the beginning and the previously seen object sequence will be repeated exactly.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.renderer.AbstractRenderer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+Direct Known Subclasses: AbstractCategoryItemRenderer, AbstractXYItemRenderer, DefaultPolarItemRenderer, WaferMapRenderer
+[Constructor Summary]
+AbstractRenderer() Default constructor.
+[Method Summary]
+void addChangeListener(RendererChangeListener listener) Registers an object to receive notification of changes to the renderer.

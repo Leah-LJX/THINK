@@ -1,0 +1,9 @@
+[Class] org.w3c.dom.svg.SVGFitToViewBox
+[Flag] Interface
+[Info]
+All Known Subinterfaces: SVGMarkerElement, SVGPatternElement, SVGSVGElement, SVGSymbolElement, SVGViewElement, SVGViewSpec
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedPreserveAspectRatio getPreserveAspectRatio()	 
+ SVGAnimatedRect getViewBox()

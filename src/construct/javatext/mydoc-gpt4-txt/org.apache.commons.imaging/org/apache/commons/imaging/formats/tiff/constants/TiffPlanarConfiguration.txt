@@ -1,0 +1,18 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.constants.TiffPlanarConfiguration
+[Type] Enum
+[Info]
+All Implemented Interfaces: Serializable, Comparable<TiffPlanarConfiguration>
+public enum TiffPlanarConfiguration extends Enum<TiffPlanarConfiguration> Defines options for the organization of data in a TIFF file.
+[Enum Constant Summary]
+CHUNKY	Indicates that data is stored in an interleaved format, so that component values for each pixel are contiguous in the file.
+PLANAR	Indicates that data is stored in a non-interleaved format, component values for each pixel are separated into distinct planes.
+[Field Summary]
+int codeValue	The integer code values used for indicating the planar configuration in a TIFF file.
+[Method Summary]
+static TiffPlanarConfiguration lenientValueOf​(int codeValue)	Interprets an integer code value to determine the enumerated value.
+static TiffPlanarConfiguration valueOf​(String name)	Returns the enum constant of this type with the specified name.
+static TiffPlanarConfiguration[] values()	Returns an array containing the constants of this enum type, in the order they are declared.
+[Methods inherited from class java.lang.Enum]
+clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, toString, valueOf
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

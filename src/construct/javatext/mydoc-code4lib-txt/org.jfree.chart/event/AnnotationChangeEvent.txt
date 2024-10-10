@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.event.AnnotationChangeEvent
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+AnnotationChangeEvent(Object source, Annotation annotation) Creates a new AnnotationChangeEvent instance.
+[Method Summary]
+Annotation getAnnotation() Returns the annotation that triggered the event.

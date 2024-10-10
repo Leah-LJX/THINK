@@ -1,0 +1,21 @@
+[API Name] opennlp.tools.langdetect.LanguageDetectorME
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, LanguageDetector
+public class LanguageDetectorME extends Object implements LanguageDetector Implements a learnable LanguageDetector.
+   This will process the entire string when called with  predictLanguage(CharSequence) or  predictLanguages(CharSequence).  
+ If you want this to stop early, use probingPredictLanguages(CharSequence)  or probingPredictLanguages(CharSequence, LanguageDetectorConfig).  When run in probing mode, this starts at the beginning of the char sequence  and runs language detection on chunks of text.  If the end of the  string is reached or there are LanguageDetectorConfig.getMinConsecImprovements()  consecutive predictions for the best language and the confidence  increases over those last predictions and if the difference  in confidence between the highest confidence language  and the second highest confidence language is greater than  LanguageDetectorConfig.getMinDiff(), the language detector will  stop and report the results.  
+ The authors wish to thank Ken Krugler and  Yalder}  for the inspiration for many of the design  components of this detector.
+See Also:
+Serialized Form
+[Constructor Summary]
+LanguageDetectorME(LanguageDetectorModel model)	Initializes an instance with a specific LanguageDetectorModel.
+[Method Summary]
+String[] getSupportedLanguages()	
+Language predictLanguage(CharSequence content)	Predicts the Language for the full content length.
+Language[] predictLanguages(CharSequence content)	Predicts the languages for the full content length.
+ProbingLanguageDetectionResult probingPredictLanguages(CharSequence content)	This will stop processing early if the stopping criteria specified in LanguageDetectorConfig.DEFAULT_LANGUAGE_DETECTOR_CONFIG are met.
+ProbingLanguageDetectionResult probingPredictLanguages(CharSequence content, LanguageDetectorConfig config)	This will stop processing early if the stopping criteria specified in LanguageDetectorConfig.DEFAULT_LANGUAGE_DETECTOR_CONFIG are met.
+static LanguageDetectorModel train(ObjectStream<LanguageSample> samples, TrainingParameters mlParams, LanguageDetectorFactory factory)	Starts a training of a LanguageDetectorModel with the given parameters.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

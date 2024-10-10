@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.entitylinker.EntityLinkerFactory
+[Type] Class
+[Info]
+public class EntityLinkerFactory extends Object Generates a EntityLinker instances via a properties file configuration.    In the properties file, the linker implementation must be  provided using "linker" as the properties key, and the  full class name as value.
+[Constructor Summary]
+EntityLinkerFactory()	
+[Method Summary]
+static EntityLinker<?> getLinker(String entityType, EntityLinkerProperties properties)	Retrieves a EntityLinker instance matching the properties configuration.
+static EntityLinker<?> getLinker(EntityLinkerProperties properties)	Retrieves a EntityLinker instance matching the properties configuration.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

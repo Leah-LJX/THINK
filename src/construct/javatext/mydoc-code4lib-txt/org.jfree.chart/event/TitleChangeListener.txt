@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.event.TitleChangeListener
+[Flag] Interface
+[Info]
+All Superinterfaces: EventListener
+All Known Implementing Classes: JFreeChart
+[Constructor Summary]
+
+[Method Summary]
+void titleChanged(TitleChangeEvent event) Receives notification of a chart title change event.

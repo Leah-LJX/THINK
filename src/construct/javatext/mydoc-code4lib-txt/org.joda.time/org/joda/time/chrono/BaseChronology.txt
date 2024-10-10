@@ -1,0 +1,57 @@
+[Class] org.joda.time.chrono.BaseChronology
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+Direct Known Subclasses: AssembledChronology
+[Constructor Summary]
+protected 	BaseChronology()	Restricted constructor.
+[Method Summary]
+long add(long instant, long duration, int scalar) Adds the duration to the instant, specifying the number of times to add.
+long add(ReadablePeriod period, long instant, int scalar) Adds the period to the instant, specifying the number of times to add.
+DurationField centuries() Get the centuries duration field for this chronology.
+DateTimeField centuryOfEra() Get the century of era field for this chronology.
+DateTimeField clockhourOfDay() Get the hour of day (offset to 1-24) field for this chronology.
+DateTimeField clockhourOfHalfday() Get the hour of am/pm (offset to 1-12) field for this chronology.
+DateTimeField dayOfMonth() Get the day of month field for this chronology.
+DateTimeField dayOfWeek() Get the day of week field for this chronology.
+DateTimeField dayOfYear() Get the day of year field for this chronology.
+DurationField days() Get the days duration field for this chronology.
+DateTimeField era() Get the era field for this chronology.
+DurationField eras() Get the eras duration field for this chronology.
+int[] get(ReadablePartial partial, long instant) Gets the values of a partial from an instant.
+int[] get(ReadablePeriod period, long duration) Gets the values of a period from an interval.
+int[] get(ReadablePeriod period, long startInstant, long endInstant) Gets the values of a period from an interval.
+long getDateTimeMillis(int year, int monthOfYear, int dayOfMonth, int millisOfDay) Returns a datetime millisecond instant, formed from the given year, month, day, and millisecond values.
+long getDateTimeMillis(int year, int monthOfYear, int dayOfMonth, int hourOfDay, int minuteOfHour, int secondOfMinute, int millisOfSecond) Returns a datetime millisecond instant, formed from the given year, month, day, hour, minute, second, and millisecond values.
+long getDateTimeMillis(long instant, int hourOfDay, int minuteOfHour, int secondOfMinute, int millisOfSecond) Returns a datetime millisecond instant, from from the given instant, hour, minute, second, and millisecond values.
+abstract DateTimeZone getZone() Returns the DateTimeZone that this Chronology operates in, or null if unspecified.
+DateTimeField halfdayOfDay() Get the AM(0) PM(1) field for this chronology.
+DurationField halfdays() Get the halfdays duration field for this chronology.
+DateTimeField hourOfDay() Get the hour of day (0-23) field for this chronology.
+DateTimeField hourOfHalfday() Get the hour of am/pm (0-11) field for this chronology.
+DurationField hours() Get the hours duration field for this chronology.
+DurationField millis() Get the millis duration field for this chronology.
+DateTimeField millisOfDay() Get the millis of day field for this chronology.
+DateTimeField millisOfSecond() Get the millis of second field for this chronology.
+DateTimeField minuteOfDay() Get the minute of day field for this chronology.
+DateTimeField minuteOfHour() Get the minute of hour field for this chronology.
+DurationField minutes() Get the minutes duration field for this chronology.
+DateTimeField monthOfYear() Get the month of year field for this chronology.
+DurationField months() Get the months duration field for this chronology.
+DateTimeField secondOfDay() Get the second of day field for this chronology.
+DateTimeField secondOfMinute() Get the second of minute field for this chronology.
+DurationField seconds() Get the seconds duration field for this chronology.
+long set(ReadablePartial partial, long instant) Sets the partial into the instant.
+abstract String toString() Gets a debugging toString.
+void validate(ReadablePartial partial, int[] values) Validates whether the fields stored in a partial instant are valid.
+DateTimeField weekOfWeekyear() Get the week of a week based year field for this chronology.
+DurationField weeks() Get the weeks duration field for this chronology.
+DateTimeField weekyear() Get the year of a week based year field for this chronology.
+DateTimeField weekyearOfCentury() Get the year of a week based year in a century field for this chronology.
+DurationField weekyears() Get the weekyears duration field for this chronology.
+abstract Chronology withUTC() Returns an instance of this Chronology that operates in the UTC time zone.
+abstract Chronology withZone(DateTimeZone zone) Returns an instance of this Chronology that operates in any time zone.
+DateTimeField year() Get the year field for this chronology.
+DateTimeField yearOfCentury() Get the year of century field for this chronology.
+DateTimeField yearOfEra() Get the year of era field for this chronology.
+DurationField years() Get the years duration field for this chronology.

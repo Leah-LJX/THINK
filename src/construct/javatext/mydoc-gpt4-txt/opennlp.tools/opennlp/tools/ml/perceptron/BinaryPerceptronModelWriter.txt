@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.ml.perceptron.BinaryPerceptronModelWriter
+[Type] Class
+[Info]
+public class BinaryPerceptronModelWriter extends PerceptronModelWriter A PerceptronModelWriter that writes models in a binary format.
+[Constructor Summary]
+BinaryPerceptronModelWriter(AbstractModel model, DataOutputStream dos)	Instantiates BinaryPerceptronModelWriter via an perceptron model and a DataOutputStream.
+BinaryPerceptronModelWriter(AbstractModel model, File f)	Instantiates BinaryPerceptronModelWriter via an perceptron model and a File.
+[Method Summary]
+void close()	Closes the underlying DataOutputStream.
+void writeDouble(double d)	Writes a single double to the underlying DataOutputStream.
+void writeInt(int i)	Writes a single int to the underlying DataOutputStream.
+void writeUTF(String s)	Writes a String to the underlying DataOutputStream.
+[Methods inherited from class opennlp.tools.ml.perceptron.PerceptronModelWriter]
+persist
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

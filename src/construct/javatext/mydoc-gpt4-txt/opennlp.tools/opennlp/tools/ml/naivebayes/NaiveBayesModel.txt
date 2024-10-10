@@ -1,0 +1,22 @@
+[API Name] opennlp.tools.ml.naivebayes.NaiveBayesModel
+[Type] Class
+[Info]
+All Implemented Interfaces: MaxentModel
+public class NaiveBayesModel extends AbstractModel A MaxentModel implementation of the multinomial Naive Bayes classifier model.
+See Also:
+AbstractModel MaxentModel
+[Constructor Summary]
+NaiveBayesModel(Context[] params, String[] predLabels, String[] outcomeNames)	Initializes a NaiveBayesModel.
+[Nested Class Summary]
+Nested Class Summary
+AbstractModel.ModelType
+[Method Summary]
+static double[] eval(int[] context, double[] prior, EvalParameters model)	Evaluates a NaiveBayesModel.
+double[] eval(String[] context)	Evaluates a context.
+double[] eval(String[] context, double[] probs)	Evaluates a context.
+double[] eval(String[] context, float[] values)	Evaluates a context with the specified context values.
+double[] eval(String[] context, float[] values, double[] outsums)	
+[Methods inherited from class opennlp.tools.ml.model.AbstractModel]
+equals, getAllOutcomes, getBestOutcome, getDataStructures, getIndex, getModelType, getNumOutcomes, getOutcome, hashCode
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,12 @@
+[Class] org.jfree.data.function.LineFunction2D
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Function2D
+[Constructor Summary]
+LineFunction2D(double a, double b)	Constructs a new line function.
+[Method Summary]
+boolean equals(Object obj)	Tests this function for equality with an arbitrary object.
+double getIntercept()	Returns the 'a' coefficient that was specified in the constructor.
+double getSlope()	Returns the 'b' coefficient that was specified in the constructor.
+double getValue(double x)	Returns the function value.
+int hashCode()	Returns a hash code for this instance.

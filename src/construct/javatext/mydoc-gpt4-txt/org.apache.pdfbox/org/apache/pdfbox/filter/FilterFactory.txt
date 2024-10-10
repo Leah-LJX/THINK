@@ -1,0 +1,12 @@
+[API Name] org.apache.pdfbox.filter.FilterFactory
+[Type] Class
+[Info]
+public final class FilterFactory extends Object Factory for Filter classes.
+Author: Ben Litchfield
+[Field Summary]
+static FilterFactory INSTANCE	Singleton instance.
+[Method Summary]
+Filter getFilter(COSName filterName)	Returns a filter instance given its COSName.
+Filter getFilter(String filterName)	Returns a filter instance given its name as a string.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

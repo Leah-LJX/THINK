@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.dial.StandardDialScale
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, DialLayer, DialScale, org.jfree.util.PublicCloneable
+[Constructor Summary]
+StandardDialScale() Creates a new instance of DialScale.
+[Method Summary]
+double angleToValue(double angle) Converts the given angle to a data value, based on this scale.

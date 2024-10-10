@@ -1,0 +1,21 @@
+[Class] org.w3c.dom.svg.SVGPathSegArcRel
+[Flag] Interface
+[Info]
+All Superinterfaces: SVGPathSeg
+[Constructor Summary]
+
+[Method Summary]
+float getAngle()	 
+ boolean getLargeArcFlag()	 
+ float getR1()	 
+ float getR2()	 
+ boolean getSweepFlag()	 
+ float getX()	 
+ float getY()	 
+ void setAngle(float angle)	 
+ void setLargeArcFlag(boolean largeArcFlag)	 
+ void setR1(float r1)	 
+ void setR2(float r2)	 
+ void setSweepFlag(boolean sweepFlag)	 
+ void setX(float x)	 
+ void setY(float y)

@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.event.PlotChangeListener
+[Flag] Interface
+[Info]
+All Superinterfaces: EventListener
+All Known Implementing Classes: CombinedDomainCategoryPlot, CombinedDomainXYPlot, CombinedRangeCategoryPlot, CombinedRangeXYPlot, JFreeChart
+[Constructor Summary]
+
+[Method Summary]
+void plotChanged(PlotChangeEvent event) Receives notification of a plot change event.

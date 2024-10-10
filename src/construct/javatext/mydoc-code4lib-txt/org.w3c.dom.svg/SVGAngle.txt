@@ -1,0 +1,16 @@
+[Class] org.w3c.dom.svg.SVGAngle
+[Flag] Interface
+[Info]
+public interface SVGAngle
+[Constructor Summary]
+
+[Method Summary]
+void convertToSpecifiedUnits(short unitType)	 
+ short getUnitType()	 
+ float getValue()	 
+ java.lang.String getValueAsString()	 
+ float getValueInSpecifiedUnits()	 
+ void newValueSpecifiedUnits(short unitType, float valueInSpecifiedUnits)	 
+ void setValue(float value)	 
+ void setValueAsString(java.lang.String valueAsString)	 
+ void setValueInSpecifiedUnits(float valueInSpecifiedUnits)

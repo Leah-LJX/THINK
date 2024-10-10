@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.ml.model.Sequence<T>
+[Type] Class
+[Info]
+Type Parameters: T - The type of the object which is the source of this sequence.
+public class Sequence<T> extends Object Class which models a sequence.
+[Constructor Summary]
+Sequence(Event[] events, T source)	Initializes Sequence made up of the specified events and derived from the specified source.
+[Method Summary]
+Event[] getEvents()	
+T getSource()	This object is used when the events for this sequence need to be re-derived such as in a call to SequenceStream.updateContext(Sequence, AbstractModel).
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

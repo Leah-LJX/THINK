@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.util.featuregen.TokenPatternFeatureGenerator
+[Type] Class
+[Info]
+All Implemented Interfaces: AdaptiveFeatureGenerator
+public class TokenPatternFeatureGenerator extends Object implements AdaptiveFeatureGenerator Partitions tokens into sub-tokens based on character classes and generates  class features for each of the sub-tokens and combinations of those sub-tokens.
+[Constructor Summary]
+TokenPatternFeatureGenerator()	Initializes a TokenPatternFeatureGenerator.
+TokenPatternFeatureGenerator(Tokenizer supportTokenizer)	Initializes a TokenPatternFeatureGenerator instance.
+[Method Summary]
+void createFeatures(List<String> feats, String[] toks, int index, String[] preds)	Adds the appropriate features for the token at the specified index with the specified array of previousOutcomes to the specified list of features.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface opennlp.tools.util.featuregen.AdaptiveFeatureGenerator]
+clearAdaptiveData, updateAdaptiveData

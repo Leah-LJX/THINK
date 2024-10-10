@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.ThermometerPlot
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, AnnotationChangeListener, AxisChangeListener, MarkerChangeListener, LegendItemSource, ValueAxisPlot, Zoomable, DatasetChangeListener, org.jfree.util.PublicCloneable
+[Constructor Summary]
+ThermometerPlot() Creates a new thermometer plot.
+[Method Summary]
+Object clone() Returns a clone of the plot.

@@ -1,0 +1,31 @@
+[API Name] org.apache.pdfbox.Loader
+[Type] Class
+[Info]
+public class Loader extends Object Utility methods to load different types of documents
+[Method Summary]
+static FDFDocument Loader.loadFDF(File file)	This will load a document from a file.
+static FDFDocument Loader.loadFDF(InputStream input)	This will load a document from an input stream.
+static FDFDocument Loader.loadFDF(String filename)	This will load a document from a file.
+static PDDocument Loader.loadPDF(byte[] input)	Parses a PDF.
+static PDDocument Loader.loadPDF(byte[] input, String password)	Parses a PDF.
+static PDDocument Loader.loadPDF(byte[] input, String password, InputStream keyStore, String alias)	Parses a PDF.
+static PDDocument Loader.loadPDF(byte[] input, String password, InputStream keyStore, String alias, org.apache.pdfbox.io.RandomAccessStreamCache.StreamCacheCreateFunction streamCacheCreateFunction)	Parses a PDF.
+static PDDocument Loader.loadPDF(File file)	Parses a PDF.
+static PDDocument Loader.loadPDF(File file, org.apache.pdfbox.io.RandomAccessStreamCache.StreamCacheCreateFunction streamCacheCreateFunction)	Parses a PDF.
+static PDDocument Loader.loadPDF(File file, String password)	Parses a PDF.
+static PDDocument Loader.loadPDF(File file, String password, InputStream keyStore, String alias)	Parses a PDF.
+static PDDocument Loader.loadPDF(File file, String password, InputStream keyStore, String alias, org.apache.pdfbox.io.RandomAccessStreamCache.StreamCacheCreateFunction streamCacheCreateFunction)	Parses a PDF.
+static PDDocument Loader.loadPDF(File file, String password, org.apache.pdfbox.io.RandomAccessStreamCache.StreamCacheCreateFunction streamCacheCreateFunction)	Parses a PDF.
+static PDDocument Loader.loadPDF(org.apache.pdfbox.io.RandomAccessRead randomAccessRead)	Parses a PDF.
+static PDDocument Loader.loadPDF(org.apache.pdfbox.io.RandomAccessRead randomAccessRead, org.apache.pdfbox.io.RandomAccessStreamCache.StreamCacheCreateFunction streamCacheCreateFunction)	Parses a PDF.
+static PDDocument Loader.loadPDF(org.apache.pdfbox.io.RandomAccessRead randomAccessRead, String password)	Parses a PDF.
+static PDDocument Loader.loadPDF(org.apache.pdfbox.io.RandomAccessRead randomAccessRead, String password, InputStream keyStore, String alias)	Parses a PDF.
+static PDDocument Loader.loadPDF(org.apache.pdfbox.io.RandomAccessRead randomAccessRead, String password, InputStream keyStore, String alias, org.apache.pdfbox.io.RandomAccessStreamCache.StreamCacheCreateFunction streamCacheCreateFunction)	Parses a PDF.
+static PDDocument Loader.loadPDF(org.apache.pdfbox.io.RandomAccessRead randomAccessRead, String password, org.apache.pdfbox.io.RandomAccessStreamCache.StreamCacheCreateFunction streamCacheCreateFunction)	Parses a PDF.
+static FDFDocument Loader.loadXFDF(File file)	This will load a document from a file.
+static FDFDocument Loader.loadXFDF(InputStream input)	This will load a document from an input stream.
+static FDFDocument Loader.loadXFDF(String filename)	This will load a document from a file.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+
+# ljx modified 为方法添加了类调用

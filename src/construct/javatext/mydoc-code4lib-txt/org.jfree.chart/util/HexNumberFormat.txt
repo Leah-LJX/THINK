@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.util.HexNumberFormat
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+HexNumberFormat() Creates a new instance with 8 digits.
+[Method Summary]
+StringBuffer format(double number, StringBuffer toAppendTo, FieldPosition pos) Formats the specified number as a hexadecimal string.

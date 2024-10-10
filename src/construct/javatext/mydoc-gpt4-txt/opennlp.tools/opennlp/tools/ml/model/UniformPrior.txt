@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.ml.model.UniformPrior
+[Type] Class
+[Info]
+All Implemented Interfaces: Prior
+public class UniformPrior extends Object implements Prior Provide a maximum entropy model with a uniform Prior.
+[Constructor Summary]
+UniformPrior()	
+[Method Summary]
+boolean equals(Object obj)	
+int hashCode()	
+void logPrior(double[] dist, int[] context)	Populates the specified array with the log of the distribution for the specified context.
+void logPrior(double[] dist, int[] context, float[] values)	Populates the specified array with the log of the distribution for the specified context.
+void logPrior(double[] dist, Context[] context, float[] values)	Populates the specified array with the log of the distribution for the specified context.
+void setLabels(String[] outcomeLabels, String[] contextLabels)	Method to specify the label for the outcomes and contexts.
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, toString, wait, wait, wait

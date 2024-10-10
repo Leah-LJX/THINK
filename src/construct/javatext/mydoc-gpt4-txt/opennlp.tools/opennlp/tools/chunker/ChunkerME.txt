@@ -1,0 +1,20 @@
+[API Name] opennlp.tools.chunker.ChunkerME
+[Type] Class
+[Info]
+All Implemented Interfaces: Chunker
+public class ChunkerME extends Object implements Chunker The class represents a maximum-entropy-based Chunker. This chunker can be used to  find flat structures based on sequence inputs such as noun phrases or named entities.
+[Constructor Summary]
+ChunkerME(String language)	Initializes a Chunker by downloading a default model.
+ChunkerME(ChunkerModel model)	Initializes a Chunker with the specified ChunkerModel.
+[Field Summary]
+static final int DEFAULT_BEAM_SIZE	
+[Method Summary]
+String[] chunk(String[] toks, String[] tags)	Generates chunk tags for the given sequence returning the result in an array.
+Span[] chunkAsSpans(String[] toks, String[] tags)	Generates tagged chunk spans for the given sequence returning the result in a span array.
+double[] probs()	Returns an array with the probabilities of the last decoded sequence.
+void probs(double[] probs)	Populates the specified array with the probabilities of the last decoded sequence.
+Sequence[] topKSequences(String[] sentence, String[] tags)	Computes the top k chunk sequences for the specified sentence with the specified pos-tags.
+Sequence[] topKSequences(String[] sentence, String[] tags, double minSequenceScore)	Computes the top k chunk sequences for the specified sentence with the specified pos-tags.
+static ChunkerModel train(String lang, ObjectStream<ChunkSample> in, TrainingParameters mlParams, ChunkerFactory factory)	Starts a training of a ChunkerModel with the given parameters.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

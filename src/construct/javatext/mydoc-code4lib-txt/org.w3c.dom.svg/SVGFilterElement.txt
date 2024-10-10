@@ -1,0 +1,16 @@
+[Class] org.w3c.dom.svg.SVGFilterElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGExternalResourcesRequired, SVGLangSpace, SVGStylable, SVGUnitTypes, SVGURIReference
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedInteger getFilterResX()	 
+ SVGAnimatedInteger getFilterResY()	 
+ SVGAnimatedEnumeration getFilterUnits()	 
+ SVGAnimatedLength getHeight()	 
+ SVGAnimatedEnumeration getPrimitiveUnits()	 
+ SVGAnimatedLength getWidth()	 
+ SVGAnimatedLength getX()	 
+ SVGAnimatedLength getY()	 
+ void setFilterRes(int filterResX, int filterResY)

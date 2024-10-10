@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.labels.BoxAndWhiskerToolTipGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, CategoryToolTipGenerator, org.jfree.util.PublicCloneable
+[Constructor Summary]
+BoxAndWhiskerToolTipGenerator() Creates a default tool tip generator.
+[Method Summary]
+protected Object[] createItemArray(CategoryDataset dataset, int series, int item) Creates the array of items that can be passed to the MessageFormat class for creating labels.

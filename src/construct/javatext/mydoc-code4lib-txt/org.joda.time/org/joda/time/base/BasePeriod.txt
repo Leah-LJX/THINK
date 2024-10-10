@@ -1,0 +1,34 @@
+[Class] org.joda.time.base.BasePeriod
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, ReadablePeriod
+Direct Known Subclasses: MutablePeriod, Period
+[Constructor Summary]
+protected 	BasePeriod(int[] values,	PeriodType type)	Constructor used when we trust ourselves.
+protected 	BasePeriod(int years,	int months,	int weeks,	int days,	int hours,	int minutes,	int seconds,	int millis,	PeriodType type)	Creates a period from a set of field values.
+protected 	BasePeriod(long duration)	Creates a period from the given millisecond duration with the standard period type	 and ISO rules, ensuring that the calculation is performed with the time-only period type.
+protected 	BasePeriod(long startInstant,	long endInstant,	PeriodType type,	Chronology chrono)	Creates a period from the given interval endpoints.
+protected 	BasePeriod(long duration,	PeriodType type,	Chronology chrono)	Creates a period from the given millisecond duration, which is only really	 suitable for durations less than one day.
+protected 	BasePeriod(Object period,	PeriodType type,	Chronology chrono)	Creates a new period based on another using the ConverterManager.
+protected 	BasePeriod(ReadableDuration duration,	ReadableInstant endInstant,	PeriodType type)	Creates a period from the given duration and end point.
+protected 	BasePeriod(ReadableInstant startInstant,	ReadableDuration duration,	PeriodType type)	Creates a period from the given start point and duration.
+protected 	BasePeriod(ReadableInstant startInstant,	ReadableInstant endInstant,	PeriodType type)	Creates a period from the given interval endpoints.
+protected 	BasePeriod(ReadablePartial start,	ReadablePartial end,	PeriodType type)	Creates a period from the given duration and end point.
+[Method Summary]
+protected void addField(DurationFieldType field, int value) Adds the value of a field in this period.
+protected void addFieldInto(int[] values, DurationFieldType field, int value) Adds the value of a field in this period.
+protected void addPeriod(ReadablePeriod period) Adds the fields from another period.
+protected int[] addPeriodInto(int[] values, ReadablePeriod period) Adds the fields from another period.
+protected PeriodType checkPeriodType(PeriodType type) Validates a period type, converting nulls to a default value and checking the type is suitable for this instance.
+PeriodType getPeriodType() Gets the period type.
+int getValue(int index) Gets the value at the specified index.
+protected void mergePeriod(ReadablePeriod period) Merges the fields from another period.
+protected int[] mergePeriodInto(int[] values, ReadablePeriod period) Merges the fields from another period.
+protected void setField(DurationFieldType field, int value) Sets the value of a field in this period.
+protected void setFieldInto(int[] values, DurationFieldType field, int value) Sets the value of a field in this period.
+protected void setPeriod(int years, int months, int weeks, int days, int hours, int minutes, int seconds, int millis) Sets the eight standard the fields in one go.
+protected void setPeriod(ReadablePeriod period) Sets all the fields of this period from another.
+protected void setValue(int index, int value) Sets the value of the field at the specified index.
+protected void setValues(int[] values) Sets the values of all fields.
+Duration toDurationFrom(ReadableInstant startInstant) Gets the total millisecond duration of this period relative to a start instant.
+Duration toDurationTo(ReadableInstant endInstant) Gets the total millisecond duration of this period relative to an end instant.

@@ -1,0 +1,8 @@
+[API Name] opennlp.tools.lemmatizer.Lemmatizer
+[Type] Interface
+[Info]
+All Known Implementing Classes: DictionaryLemmatizer, LemmatizerME
+public interface Lemmatizer The common interface for lemmatizers.
+[Method Summary]
+String[] lemmatize(String[] toks, String[] tags)	Generates lemmas for the word and postag.
+List<List<String>> lemmatize(List<String> toks, List<String> tags)	Generates lemma tags for the word and postag.

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.labels.CrosshairLabelGenerator
+[Flag] Interface
+[Info]
+All Known Implementing Classes: StandardCrosshairLabelGenerator
+[Constructor Summary]
+
+[Method Summary]
+String generateLabel(Crosshair crosshair) Returns a string that can be used as the label for a crosshair.

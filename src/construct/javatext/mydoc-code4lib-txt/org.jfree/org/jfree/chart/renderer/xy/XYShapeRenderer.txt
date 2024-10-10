@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.xy.XYShapeRenderer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, AnnotationChangeListener, LegendItemSource, XYItemRenderer
+[Constructor Summary]
+XYShapeRenderer() Creates a new XYShapeRenderer instance with default attributes.
+[Method Summary]
+Object clone() Returns a clone of this renderer.

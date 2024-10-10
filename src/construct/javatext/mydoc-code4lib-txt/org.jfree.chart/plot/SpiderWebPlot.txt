@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.SpiderWebPlot
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, AnnotationChangeListener, AxisChangeListener, MarkerChangeListener, LegendItemSource, DatasetChangeListener, org.jfree.util.PublicCloneable
+[Constructor Summary]
+SpiderWebPlot() Creates a default plot with no dataset.
+[Method Summary]
+protected Point2D calculateLabelLocation(Rectangle2D labelBounds, double ascent, Rectangle2D plotArea, double startAngle) Returns the location for a label

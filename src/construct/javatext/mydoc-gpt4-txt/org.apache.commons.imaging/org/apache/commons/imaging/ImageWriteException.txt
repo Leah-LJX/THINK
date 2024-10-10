@@ -1,0 +1,15 @@
+[API Name] Package org.apache.commons.imaging.ImageWriteException
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable
+Direct Known Subclasses: ExifRewriter.ExifOverflowException, JpegRewriter.JpegSegmentOverflowException
+public class ImageWriteException extends ImagingException A custom exception thrown when an ImageParser or other utility  encounters a format-violation, non-supported element, or other  condition that renders image data unwritable.
+See Also: Serialized Form
+[Constructor Summary]
+ImageWriteException​(String message)	
+ImageWriteException​(String message, Object data)	
+ImageWriteException​(String message, Throwable cause)	
+[Methods inherited from class java.lang.Throwable]
+addSuppressed, fillInStackTrace, getCause, getLocalizedMessage, getMessage, getStackTrace, getSuppressed, initCause, printStackTrace, printStackTrace, printStackTrace, setStackTrace, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

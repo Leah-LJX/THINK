@@ -1,0 +1,16 @@
+[API Name] Package org.apache.commons.imaging.common.mylzw.MyBitOutputStream
+[Type] Class
+[Info]
+All Implemented Interfaces: Closeable, Flushable, AutoCloseable
+public class MyBitOutputStream extends OutputStream
+[Constructor Summary]
+MyBitOutputStream​(OutputStream os, ByteOrder byteOrder)	
+[Method Summary]
+void flushCache()	
+int getBytesWritten()	
+void write​(int value)	
+void writeBits​(int value, int sampleBits)	
+[Methods inherited from class java.io.OutputStream]
+close, flush, nullOutputStream, write, write
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

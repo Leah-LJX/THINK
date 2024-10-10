@@ -1,0 +1,35 @@
+[API Name] org.apache.pdfbox.pdmodel.PDDocumentInformation
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDDocumentInformation extends Object implements COSObjectable This is the document metadata.  Each getXXX method will return the entry if  it exists or null if it does not exist.  If you pass in null for the setXXX  method then it will clear the value.
+Author: Ben Litchfield, Gerardo Ortiz
+[Constructor Summary]
+PDDocumentInformation()	Default Constructor.
+PDDocumentInformation(COSDictionary dic)	Constructor that is used for a preexisting dictionary.
+[Method Summary]
+String getAuthor()	This will get the author of the document.
+COSDictionary getCOSObject()	This will get the underlying dictionary that this object wraps.
+Calendar getCreationDate()	This will get the creation date of the document.
+String getCreator()	This will get the creator of the document.
+String getCustomMetadataValue(String fieldName)	This will get the value of a custom metadata information field for the document.
+String getKeywords()	This will get the keywords of the document.
+Set<String> getMetadataKeys()	This will get the keys of all metadata information fields for the document.
+Calendar getModificationDate()	This will get the modification date of the document.
+String getProducer()	This will get the producer of the document.
+Object getPropertyStringValue(String propertyKey)	Return the properties String value.
+String getSubject()	This will get the subject of the document.
+String getTitle()	This will get the title of the document.
+String getTrapped()	This will get the trapped value for the document.
+void setAuthor(String author)	This will set the author of the document.
+void setCreationDate(Calendar date)	This will set the creation date of the document.
+void setCreator(String creator)	This will set the creator of the document.
+void setCustomMetadataValue(String fieldName, String fieldValue)	Set the custom metadata value.
+void setKeywords(String keywords)	This will set the keywords of the document.
+void setModificationDate(Calendar date)	This will set the modification date of the document.
+void setProducer(String producer)	This will set the producer of the document.
+void setSubject(String subject)	This will set the subject of the document.
+void setTitle(String title)	This will set the title of the document.
+void setTrapped(String value)	This will set the trapped of the document.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

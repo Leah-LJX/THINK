@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.Crosshair
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, org.jfree.util.PublicCloneable
+[Constructor Summary]
+Crosshair() Creates a new crosshair with value 0.0.
+[Method Summary]
+void addPropertyChangeListener(PropertyChangeListener l) Adds a property change listener.

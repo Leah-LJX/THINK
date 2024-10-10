@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.cos.COSNull
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class COSNull extends COSBase This class represents a null PDF object.
+Author: Ben Litchfield
+[Field Summary]
+static COSNull NULL	The one null object in the system.
+static byte[] NULL_BYTES	The null token.
+[Method Summary]
+void accept(ICOSVisitor visitor)	Visitor pattern double dispatch method.
+String toString()	
+void writePDF(OutputStream output)	This will output this string as a PDF object.
+[Methods inherited from class org.apache.pdfbox.cos.COSBase]
+getCOSObject, getKey, isDirect, setDirect, setKey
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

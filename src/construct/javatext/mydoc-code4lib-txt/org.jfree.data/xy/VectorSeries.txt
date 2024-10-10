@@ -1,0 +1,16 @@
+[Class] org.jfree.data.xy.VectorSeries
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+VectorSeries(Comparable key)	Creates a new empty series.
+VectorSeries(Comparable key, boolean autoSort, boolean allowDuplicateXValues)	Constructs a new series that contains no data.
+[Method Summary]
+void add(double x, double y, double deltaX, double deltaY)	Adds a data item to the series.
+void add(VectorDataItem item, boolean notify)	Adds a data item to the series and, if requested, sends a SeriesChangeEvent to all registered listeners.
+ComparableObjectItem getDataItem(int index)	Returns the data item at the specified index.
+double getVectorXValue(int index)	Returns the x-component of the vector for an item in the series.
+double getVectorYValue(int index)	Returns the y-component of the vector for an item in the series.
+double getXValue(int index)	Returns the x-value for the specified item.
+double getYValue(int index)	Returns the y-value for the specified item.
+ComparableObjectItem remove(int index)	Removes the item at the specified index and sends a SeriesChangeEvent to all registered listeners.

@@ -1,0 +1,14 @@
+[API Name] org.apache.pdfbox.pdmodel.font.PDPanose
+[Type] Class
+[Info]
+public class PDPanose extends Object Represents the "Panose" entry of a FontDescriptor's Style dictionary. This is a sequence of 12  bytes which contain both the TTF sFamilyClass and PANOSE classification bytes.
+Author: John Hewson
+[Constructor Summary]
+PDPanose(byte[] bytes)	
+[Field Summary]
+static int LENGTH	Length.
+[Method Summary]
+int getFamilyClass()	The font family class and subclass ID bytes, given in the sFamilyClass field of the “OS/2” table in a TrueType font.
+PDPanoseClassification getPanose()	Ten bytes for the PANOSE classification number for the font.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

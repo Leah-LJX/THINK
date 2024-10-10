@@ -1,0 +1,33 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.measurement.PDRectlinearMeasureDictionary
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDRectlinearMeasureDictionary extends PDMeasureDictionary This class represents a rectlinear measure dictionary.
+[Constructor Summary]
+PDRectlinearMeasureDictionary()	Constructor.
+PDRectlinearMeasureDictionary(COSDictionary dictionary)	Constructor.
+[Field Summary]
+static String SUBTYPE	The subtype of the rectlinear measure dictionary.
+[Method Summary]
+PDNumberFormatDictionary[] getAngles()	This will return the angles.
+PDNumberFormatDictionary[] getAreas()	This will return the areas.
+PDNumberFormatDictionary[] getChangeXs()	This will return the changes along the x-axis.
+PDNumberFormatDictionary[] getChangeYs()	This will return the changes along the y-axis.
+float[] getCoordSystemOrigin()	This will return the origin of the coordinate system.
+float getCYX()	This will return the CYX factor.
+PDNumberFormatDictionary[] getDistances()	This will return the distances.
+PDNumberFormatDictionary[] getLineSloaps()	This will return the sloaps of a line.
+String getScaleRatio()	This will return the scale ration.
+void setAngles(PDNumberFormatDictionary[] angles)	This will set the angles.
+void setAreas(PDNumberFormatDictionary[] areas)	This will set the areas.
+void setChangeXs(PDNumberFormatDictionary[] changeXs)	This will set the changes along the x-axis.
+void setChangeYs(PDNumberFormatDictionary[] changeYs)	This will set the changes along the y-axis.
+void setCoordSystemOrigin(float[] coordSystemOrigin)	This will set the origin of the coordinate system.
+void setCYX(float cyx)	This will set the CYX factor.
+void setDistances(PDNumberFormatDictionary[] distances)	This will set the distances.
+void setLineSloaps(PDNumberFormatDictionary[] lineSloaps)	This will set the sloaps of a line.
+void setScaleRatio(String scaleRatio)	This will set the scale ration.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.measurement.PDMeasureDictionary]
+getCOSObject, getSubtype, getType, setSubtype
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.parser.lang.es.AncoraSpanishHeadRules.HeadRulesSerializer
+[Type] Class
+[Info]
+All Implemented Interfaces: ArtifactSerializer<AncoraSpanishHeadRules>
+Enclosing class: AncoraSpanishHeadRules
+public static class AncoraSpanishHeadRules.HeadRulesSerializer extends Object implements ArtifactSerializer<AncoraSpanishHeadRules>
+[Constructor Summary]
+HeadRulesSerializer()	
+[Method Summary]
+AncoraSpanishHeadRules create(InputStream in)	Creates an artifact from the provided InputStream.
+void serialize(AncoraSpanishHeadRules artifact, OutputStream out)	Serializes an artifact to the provided OutputStream.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

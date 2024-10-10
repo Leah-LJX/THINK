@@ -1,0 +1,9 @@
+[Class] org.joda.time.chrono.IslamicChronology.LeapYearPatternType
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+Enclosing class: IslamicChronology
+[Constructor Summary]
+
+[Method Summary]
+boolean equals(Object obj) int hashCode()

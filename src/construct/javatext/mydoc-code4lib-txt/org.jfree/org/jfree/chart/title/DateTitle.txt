@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.title.DateTitle
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Block, org.jfree.ui.Drawable, org.jfree.util.PublicCloneable
+[Constructor Summary]
+DateTitle() Creates a new chart title that displays the current date in the default (LONG) format for the locale, positioned to the bottom right of the chart.
+[Method Summary]
+void setDateFormat(int style, Locale locale) Set the format of the date.

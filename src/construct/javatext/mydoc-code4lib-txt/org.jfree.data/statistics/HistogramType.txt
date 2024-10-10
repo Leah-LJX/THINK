@@ -1,0 +1,10 @@
+[Class] org.jfree.data.statistics.HistogramType
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+
+[Method Summary]
+boolean equals(Object obj)	Tests this type for equality with an arbitrary object.
+int hashCode()	Returns a hash code value for the object.
+String toString()	Returns a string representing the object.

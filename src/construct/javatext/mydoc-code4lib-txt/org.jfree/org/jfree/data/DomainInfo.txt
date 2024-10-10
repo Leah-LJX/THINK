@@ -1,0 +1,10 @@
+[Class] org.jfree.data.DomainInfo
+[Flag] Interface
+[Info]
+All Known Implementing Classes: CategoryTableXYDataset, DefaultTableXYDataset, DynamicTimeSeriesCollection, IntervalXYDelegate, TimePeriodValuesCollection, TimeSeriesCollection, TimeTableXYDataset, XYSeriesCollection
+[Constructor Summary]
+
+[Method Summary]
+Range getDomainBounds(boolean includeInterval)	Returns the range of the values in this dataset's domain.
+double getDomainLowerBound(boolean includeInterval)	Returns the minimum x-value in the dataset.
+double getDomainUpperBound(boolean includeInterval)	Returns the maximum x-value in the dataset.

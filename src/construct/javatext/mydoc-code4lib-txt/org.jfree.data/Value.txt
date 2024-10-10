@@ -1,0 +1,9 @@
+[Class] org.jfree.data.Value
+[Flag] Interface
+[Info]
+All Known Subinterfaces: KeyedValue<K>, KeyedValueDataset, ValueDataset
+All Known Implementing Classes: DefaultKeyedValue, DefaultKeyedValueDataset, DefaultValueDataset
+[Constructor Summary]
+
+[Method Summary]
+Number getValue()	Returns the value.

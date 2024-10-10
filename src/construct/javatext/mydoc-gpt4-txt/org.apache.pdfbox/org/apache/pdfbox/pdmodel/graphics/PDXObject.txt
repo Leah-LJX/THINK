@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.PDXObject
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDFormXObject, PDImageXObject, PDPostScriptXObject
+public class PDXObject extends Object implements COSObjectable An external object, or "XObject".
+Author: Ben Litchfield, John Hewson
+[Constructor Summary]
+protected PDXObject(COSStream stream, COSName subtype)	Creates a new XObject from the given stream and subtype.
+protected PDXObject(PDDocument document, COSName subtype)	Creates a new XObject of the given subtype for writing.
+protected PDXObject(PDStream stream, COSName subtype)	Creates a new XObject from the given stream and subtype.
+[Method Summary]
+static PDXObject createXObject(COSBase base, PDResources resources)	Creates a new XObject instance of the appropriate type for the COS stream.
+COSStream getCOSObject()	Returns the stream.
+PDStream getStream()	Returns the stream.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

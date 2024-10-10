@@ -1,0 +1,21 @@
+[API Name] opennlp.tools.ml.AbstractEventModelSequenceTrainer
+[Type] Class
+[Info]
+All Implemented Interfaces: Trainer, EventModelSequenceTrainer<Event>
+Direct Known Subclasses: SimplePerceptronSequenceTrainer
+public abstract class AbstractEventModelSequenceTrainer extends AbstractTrainer implements EventModelSequenceTrainer<Event> A basic EventModelSequenceTrainer implementation that processes events.
+[Constructor Summary]
+AbstractEventModelSequenceTrainer()	
+[Method Summary]
+abstract MaxentModel doTrain(SequenceStream<Event> events)	
+final MaxentModel train(SequenceStream<Event> events)	Trains a MaxentModel for given events.
+[Fields inherited from class opennlp.tools.ml.AbstractTrainer]
+ALGORITHM_PARAM, CUTOFF_DEFAULT, CUTOFF_PARAM, ITERATIONS_DEFAULT, ITERATIONS_PARAM, TRAINER_TYPE_PARAM
+[Fields inherited from interface opennlp.tools.ml.EventModelSequenceTrainer]
+SEQUENCE_VALUE
+[Methods inherited from class opennlp.tools.ml.AbstractTrainer]
+getAlgorithm, getCutoff, getIterations, init, validate
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface opennlp.tools.commons.Trainer]
+init

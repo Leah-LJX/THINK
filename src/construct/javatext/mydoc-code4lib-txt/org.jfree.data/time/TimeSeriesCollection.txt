@@ -1,0 +1,44 @@
+[Class] org.jfree.data.time.TimeSeriesCollection
+[Flag] Class
+[Info]
+All Implemented Interfaces: VetoableChangeListener, ObjectInputValidation, Serializable, Cloneable, EventListener, DomainInfo, Dataset, SeriesChangeListener, SeriesDataset, IntervalXYDataset, XYDataset, XYDomainInfo, XYRangeInfo
+[Constructor Summary]
+TimeSeriesCollection()	Constructs an empty dataset, tied to the default timezone.
+TimeSeriesCollection(TimeZone zone)	Constructs an empty dataset, tied to a specific timezone.
+TimeSeriesCollection(TimeSeries series)	Constructs a dataset containing a single series (more can be added), tied to the default timezone.
+TimeSeriesCollection(TimeSeries series, TimeZone zone)	Constructs a dataset containing a single series (more can be added), tied to a specific timezone.
+[Method Summary]
+void addSeries(TimeSeries series)	Adds a series to the collection and sends a DatasetChangeEvent to all registered listeners.
+Object clone()	Returns a clone of this time series collection.
+boolean equals(Object obj)	Tests this time series collection for equality with another object.
+Range getDomainBounds(boolean includeInterval)	Returns the range of the values in this dataset's domain.
+Range getDomainBounds(List visibleSeriesKeys, boolean includeInterval)	Returns the bounds of the domain values for the specified series.
+double getDomainLowerBound(boolean includeInterval)	Returns the minimum x-value in the dataset.
+DomainOrder getDomainOrder()	Returns the order of the domain values in this dataset.
+double getDomainUpperBound(boolean includeInterval)	Returns the maximum x-value in the dataset.
+Number getEndX(int series, int item)	Returns the ending X value for the specified series and item.
+Number getEndY(int series, int item)	Returns the ending Y value for the specified series and item.
+int getItemCount(int series)	Returns the number of items in the specified series.
+Range getRangeBounds(boolean includeInterval)	Returns the bounds for the y-values in the dataset.
+Range getRangeBounds(List visibleSeriesKeys, Range xRange, boolean includeInterval)	Returns the bounds for the y-values in the dataset.
+List getSeries()	Returns a list of all the series in the collection.
+TimeSeries getSeries(int series)	Returns a series.
+TimeSeries getSeries(Comparable key)	Returns the series with the specified key, or null if there is no such series.
+int getSeriesCount()	Returns the number of series in the collection.
+int getSeriesIndex(Comparable key)	Returns the index of the series with the specified key, or -1 if no series has that key.
+Comparable getSeriesKey(int series)	Returns the key for a series.
+Number getStartX(int series, int item)	Returns the starting X value for the specified series and item.
+Number getStartY(int series, int item)	Returns the starting Y value for the specified series and item.
+int[] getSurroundingItems(int series, long milliseconds)	Returns the indices of the two data items surrounding a particular millisecond value.
+Number getX(int series, int item)	Returns the x-value for the specified series and item.
+protected long getX(RegularTimePeriod period)	Returns the x-value for a time period.
+TimePeriodAnchor getXPosition()	Returns the position within each time period that is used for the X value when the collection is used as an XYDataset.
+double getXValue(int series, int item)	Returns the x-value (as a double primitive) for an item within a series.
+Number getY(int series, int item)	Returns the y-value for the specified series and item.
+int hashCode()	Returns a hash code value for the object.
+int indexOf(TimeSeries series)	Returns the index of the specified series, or -1 if that series is not present in the dataset.
+void removeAllSeries()	Removes all the series from the collection and sends a DatasetChangeEvent to all registered listeners.
+void removeSeries(int index)	Removes a series from the collection.
+void removeSeries(TimeSeries series)	Removes the specified series from the collection and sends a DatasetChangeEvent to all registered listeners.
+void setXPosition(TimePeriodAnchor anchor)	Sets the position within each time period that is used for the X values when the collection is used as an XYDataset, then sends a DatasetChangeEvent is sent to all registered listeners.
+void vetoableChange(PropertyChangeEvent e)	Receives notification that the key for one of the series in the collection has changed, and vetos it if the key is already present in the collection.

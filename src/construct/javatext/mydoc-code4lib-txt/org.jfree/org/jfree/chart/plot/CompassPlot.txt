@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.CompassPlot
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, AnnotationChangeListener, AxisChangeListener, MarkerChangeListener, LegendItemSource, DatasetChangeListener, org.jfree.util.PublicCloneable
+[Constructor Summary]
+CompassPlot() Default constructor.
+[Method Summary]
+void addDataset(ValueDataset dataset) Adds a dataset to the compass.

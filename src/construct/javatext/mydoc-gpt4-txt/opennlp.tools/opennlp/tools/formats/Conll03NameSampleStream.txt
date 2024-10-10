@@ -1,0 +1,17 @@
+[API Name] opennlp.tools.formats.Conll03NameSampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<NameSample>
+public class Conll03NameSampleStream extends Object implements ObjectStream<NameSample> An import stream which can parse the CONLL03 data.
+[Constructor Summary]
+Conll03NameSampleStream(Conll03NameSampleStream.LANGUAGE lang, InputStreamFactory in, int types)	Initializes a Conll03NameSampleStream.
+Conll03NameSampleStream(Conll03NameSampleStream.LANGUAGE lang, ObjectStream<String> lineStream, int types)	Initializes a Conll03NameSampleStream.
+[Nested Class Summary]
+Nested Class Summary
+static enum 
+[Method Summary]
+void close()	Closes the ObjectStream and releases all allocated resources.
+NameSample read()	Returns the next ObjectStream object.
+void reset()	Repositions the stream at the beginning and the previously seen object sequence will be repeated exactly.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

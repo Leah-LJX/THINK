@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.LogTick
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+LogTick(TickType type, double value, AttributedString label, org.jfree.ui.TextAnchor textAnchor) Creates a new instance.
+[Method Summary]
+AttributedString getAttributedLabel() Returns the attributed string for the tick label, or null if there is no label.

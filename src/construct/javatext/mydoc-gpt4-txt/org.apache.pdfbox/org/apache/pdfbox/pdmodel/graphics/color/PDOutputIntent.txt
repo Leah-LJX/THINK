@@ -1,0 +1,22 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.color.PDOutputIntent
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class PDOutputIntent extends Object implements COSObjectable An Output Intent describes the colour reproduction characteristics of a possible output  device or production condition.  Output intents provide a means for matching the colour characteristics of a PDF document with  those of a target output device or production environment in which the document will be printed.
+Author: Guillaume Bailleul
+[Constructor Summary]
+PDOutputIntent(COSDictionary dictionary)	
+PDOutputIntent(PDDocument doc, InputStream colorProfile)	
+[Method Summary]
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+COSStream getDestOutputIntent()	
+String getInfo()	
+String getOutputCondition()	
+String getOutputConditionIdentifier()	
+String getRegistryName()	
+void setInfo(String value)	
+void setOutputCondition(String value)	
+void setOutputConditionIdentifier(String value)	
+void setRegistryName(String value)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

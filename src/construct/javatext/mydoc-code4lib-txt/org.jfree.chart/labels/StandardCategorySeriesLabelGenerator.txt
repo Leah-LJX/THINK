@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.labels.StandardCategorySeriesLabelGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, CategorySeriesLabelGenerator, org.jfree.util.PublicCloneable
+[Constructor Summary]
+StandardCategorySeriesLabelGenerator() Creates a default series label generator (uses DEFAULT_LABEL_FORMAT).
+[Method Summary]
+Object clone() Returns an independent copy of the generator.

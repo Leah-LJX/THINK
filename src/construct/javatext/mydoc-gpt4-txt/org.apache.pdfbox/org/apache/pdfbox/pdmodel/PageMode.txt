@@ -1,0 +1,15 @@
+[API Name] org.apache.pdfbox.pdmodel.PageMode
+[Type] Enum
+[Info]
+All Implemented Interfaces: Serializable, Comparable<PageMode>
+public enum PageMode extends Enum<PageMode> A name object specifying how the document shall be displayed when opened.
+Author: John Hewson
+[Method Summary]
+static PageMode fromString(String value)	
+String stringValue()	Returns the string value, as used in a PDF file.
+static PageMode valueOf(String name)	Returns the enum constant of this type with the specified name.
+static PageMode[] values()	Returns an array containing the constants of this enum type, in the order they are declared.
+[Methods inherited from class java.lang.Enum]
+clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, toString, valueOf
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

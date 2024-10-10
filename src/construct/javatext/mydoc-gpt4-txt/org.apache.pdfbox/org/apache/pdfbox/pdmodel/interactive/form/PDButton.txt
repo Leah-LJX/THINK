@@ -1,0 +1,25 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.form.PDButton
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDCheckBox, PDPushButton, PDRadioButton
+public abstract class PDButton extends PDTerminalField A button field represents an interactive control on the screen  that the user can manipulate with the mouse.
+Author: sug
+[Method Summary]
+String getDefaultValue()	Returns the default value, if any.
+List<String> getExportValues()	This will get the (optional) export values.
+Set<String> getOnValues()	Get the values to set individual buttons within a group to the on state.
+String getValue()	Returns the selected value.
+String getValueAsString()	Returns a string representation of the "V" entry, or an empty string.
+boolean isPushButton()	Determines if push button bit is set.
+boolean isRadioButton()	Determines if radio button bit is set.
+void setDefaultValue(String value)	Sets the default value.
+void setExportValues(List<String> values)	This will set the export values.
+void setValue(int index)	Set the selected option given its index, and try to update the visual appearance.
+void setValue(String value)	Set the selected option given its name, and try to update the visual appearance.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDTerminalField]
+applyChange, getFieldFlags, getFieldType, getWidgets, importFDF, setActions, setWidgets
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDField]
+getAcroForm, getActions, getAlternateFieldName, getCOSObject, getFullyQualifiedName, getInheritableAttribute, getMappingName, getParent, getPartialName, isNoExport, isReadOnly, isRequired, setAlternateFieldName, setFieldFlags, setMappingName, setNoExport, setPartialName, setReadOnly, setRequired, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

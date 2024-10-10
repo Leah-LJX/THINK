@@ -1,0 +1,10 @@
+[Class] org.joda.time.field.LenientDateTimeField
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+protected 	LenientDateTimeField(DateTimeField field,	Chronology base)
+[Method Summary]
+static DateTimeField getInstance(DateTimeField field, Chronology base) Returns a lenient version of the given field.
+boolean isLenient() Returns true if the set method is lenient.
+long set(long instant, int value) Set values which may be out of bounds by adding the difference between the new value and the current value.

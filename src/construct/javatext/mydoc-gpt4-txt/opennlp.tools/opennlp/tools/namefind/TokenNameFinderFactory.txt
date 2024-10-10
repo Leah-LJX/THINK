@@ -1,0 +1,18 @@
+[API Name] opennlp.tools.namefind.TokenNameFinderFactory
+[Type] Class
+[Info]
+public class TokenNameFinderFactory extends BaseToolFactory The factory that provides TokenNameFinder default implementations and  resources. That only works if that's the central class used for training/runtime.
+[Constructor Summary]
+TokenNameFinderFactory()	Initializes a TokenNameFinderFactory that provides the default implementation of the resources.
+TokenNameFinderFactory(byte[] featureGeneratorBytes, Map<String,Object> resources, SequenceCodec<String> seqCodec)	Initializes a TokenNameFinderFactory instance via given parameters.
+[Method Summary]
+static TokenNameFinderFactory create(String subclassName, byte[] featureGeneratorBytes, Map<String,Object> resources, SequenceCodec<String> seqCodec)	Initializes a TokenNameFinderFactory instance via given parameters.
+NameContextGenerator createContextGenerator()	Creates and configures a new NameContextGenerator in a default combination.
+AdaptiveFeatureGenerator createFeatureGenerators()	Creates the AdaptiveFeatureGenerator.
+SequenceCodec<String> createSequenceCodec()	
+static SequenceCodec<String> instantiateSequenceCodec(String sequenceCodecImplName)	Initializes a SequenceCodec instance via given parameters.
+void validateArtifactMap()	Validates the parsed artifacts.
+[Methods inherited from class opennlp.tools.util.BaseToolFactory]
+create, create, createArtifactMap, createArtifactSerializersMap, createManifestEntries
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

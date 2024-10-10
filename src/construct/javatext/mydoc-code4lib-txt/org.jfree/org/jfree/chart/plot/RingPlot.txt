@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.RingPlot
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, AnnotationChangeListener, AxisChangeListener, MarkerChangeListener, LegendItemSource, DatasetChangeListener, org.jfree.util.PublicCloneable
+[Constructor Summary]
+RingPlot() Creates a new plot with a null dataset.
+[Method Summary]
+protected void drawItem(Graphics2D g2, int section, Rectangle2D dataArea, PiePlotState state, int currentPass) Draws a single data item.

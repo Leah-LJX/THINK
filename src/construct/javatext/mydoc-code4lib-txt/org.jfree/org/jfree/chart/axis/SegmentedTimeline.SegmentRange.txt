@@ -1,0 +1,10 @@
+[Class] org.jfree.chart.axis.SegmentedTimeline.SegmentRange
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Comparable
+Direct Known Subclasses: SegmentedTimeline.BaseTimelineSegmentRange
+Enclosing class: SegmentedTimeline
+[Constructor Summary]
+SegmentRange(long fromMillisecond, long toMillisecond) Creates a SegmentRange between a start and end domain values.
+[Method Summary]
+long getSegmentCount() Returns the number of segments contained in this range.

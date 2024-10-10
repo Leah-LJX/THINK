@@ -1,0 +1,10 @@
+[API Name] opennlp.tools.chunker.ChunkerContextGenerator
+[Type] Interface
+[Info]
+All Superinterfaces: BeamSearchContextGenerator<TokenTag>
+All Known Implementing Classes: ChunkContextGenerator, DefaultChunkerContextGenerator
+public interface ChunkerContextGenerator extends BeamSearchContextGenerator<TokenTag> Interface for a BeamSearchContextGenerator used in syntactic chunking.
+[Method Summary]
+String[] getContext(int idx, String[] toks, String[] tags, String[] preds)	Retrieves the contexts for chunking of the specified idx.
+[Methods inherited from interface opennlp.tools.util.BeamSearchContextGenerator]
+getContext

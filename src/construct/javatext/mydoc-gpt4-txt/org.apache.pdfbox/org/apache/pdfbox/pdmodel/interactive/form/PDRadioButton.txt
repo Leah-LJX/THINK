@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.form.PDRadioButton
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class PDRadioButton extends PDButton Radio button fields contain a set of related buttons that can each be on or off.
+Author: sug
+[Constructor Summary]
+PDRadioButton(PDAcroForm acroForm)	
+[Method Summary]
+List<String> getSelectedExportValues()	This will get the selected export values.
+int getSelectedIndex()	This will get the selected index.
+boolean isRadiosInUnison()	
+void setRadiosInUnison(boolean radiosInUnison)	From the PDF Spec If set, a group of radio buttons within a radio button field that use the same value for the on state will turn on and off in unison; that is if one is checked, they are all checked.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDButton]
+getDefaultValue, getExportValues, getOnValues, getValue, getValueAsString, isPushButton, isRadioButton, setDefaultValue, setExportValues, setValue, setValue
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDTerminalField]
+applyChange, getFieldFlags, getFieldType, getWidgets, importFDF, setActions, setWidgets
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDField]
+getAcroForm, getActions, getAlternateFieldName, getCOSObject, getFullyQualifiedName, getInheritableAttribute, getMappingName, getParent, getPartialName, isNoExport, isReadOnly, isRequired, setAlternateFieldName, setFieldFlags, setMappingName, setNoExport, setPartialName, setReadOnly, setRequired, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

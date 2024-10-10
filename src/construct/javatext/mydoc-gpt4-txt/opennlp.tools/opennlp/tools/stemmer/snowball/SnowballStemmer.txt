@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.stemmer.snowball.SnowballStemmer
+[Type] Class
+[Info]
+All Implemented Interfaces: Stemmer
+public class SnowballStemmer extends Object implements Stemmer
+[Constructor Summary]
+SnowballStemmer(SnowballStemmer.ALGORITHM algorithm)	
+SnowballStemmer(SnowballStemmer.ALGORITHM algorithm, int repeat)	
+[Nested Class Summary]
+Nested Class Summary
+static enum 
+[Method Summary]
+CharSequence stem(CharSequence word)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

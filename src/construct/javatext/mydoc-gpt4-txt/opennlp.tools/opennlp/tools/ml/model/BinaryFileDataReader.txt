@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.ml.model.BinaryFileDataReader
+[Type] Class
+[Info]
+All Implemented Interfaces: DataReader
+public class BinaryFileDataReader extends Object implements DataReader A DataReader that reads files from a binary format.
+[Constructor Summary]
+BinaryFileDataReader(DataInputStream in)	Instantiates BinaryFileDataReader via an DataInputStream.
+BinaryFileDataReader(File f)	Instantiates BinaryFileDataReader via a File and creates a DataInputStream for it.
+BinaryFileDataReader(InputStream in)	Instantiates BinaryFileDataReader via an InputStream and creates a DataInputStream for it.
+[Method Summary]
+double readDouble()	
+int readInt()	
+String readUTF()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

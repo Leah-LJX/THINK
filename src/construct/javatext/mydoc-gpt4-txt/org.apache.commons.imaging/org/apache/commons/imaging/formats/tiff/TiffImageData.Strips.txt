@@ -1,0 +1,17 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.TiffImageData.Strips
+[Type] Class
+[Info]
+Enclosing class: TiffImageData
+public static class TiffImageData.Strips extends TiffImageData
+[Constructor Summary]
+Strips​(TiffElement.DataElement[] strips, int rowsPerStrip)	
+[Field Summary]
+int rowsPerStrip	
+[Method Summary]
+ImageDataReader getDataReader​(TiffDirectory directory, PhotometricInterpreter photometricInterpreter, int bitsPerPixel, int[] bitsPerSample, int predictor, int samplesPerPixel, int width, int height, int compression, TiffPlanarConfiguration planarConfiguration, ByteOrder byteorder)	
+TiffElement.DataElement[] getImageData()	
+TiffElement.DataElement getImageData​(int offset)	
+int getImageDataLength()	
+boolean stripsNotTiles()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

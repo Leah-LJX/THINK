@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.needle.WindNeedle
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+WindNeedle() Default constructor.
+[Method Summary]
+protected void drawNeedle(Graphics2D g2, Rectangle2D plotArea, Point2D rotate, double angle) Draws the needle.

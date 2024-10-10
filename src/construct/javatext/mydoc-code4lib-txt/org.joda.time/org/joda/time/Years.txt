@@ -1,0 +1,25 @@
+[Class] org.joda.time.Years
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<BaseSingleFieldPeriod>, ReadablePeriod
+[Constructor Summary]
+
+[Method Summary]
+Years dividedBy(int divisor) Returns a new instance with the years divided by the specified divisor.
+DurationFieldType getFieldType() Gets the duration field type, which is years.
+PeriodType getPeriodType() Gets the period type, which is years.
+int getYears() Gets the number of years that this period represents.
+boolean isGreaterThan(Years other) Is this years instance greater than the specified number of years.
+boolean isLessThan(Years other) Is this years instance less than the specified number of years.
+Years minus(int years) Returns a new instance with the specified number of years taken away.
+Years minus(Years years) Returns a new instance with the specified number of years taken away.
+Years multipliedBy(int scalar) Returns a new instance with the years multiplied by the specified scalar.
+Years negated() Returns a new instance with the years value negated.
+static Years parseYears(String periodStr) Creates a new Years by parsing a string in the ISO8601 format 'PnY'.
+Years plus(int years) Returns a new instance with the specified number of years added.
+Years plus(Years years) Returns a new instance with the specified number of years added.
+String toString() Gets this instance as a String in the ISO8601 duration format.
+static Years years(int years) Obtains an instance of Years that may be cached.
+static Years yearsBetween(ReadableInstant start, ReadableInstant end) Creates a Years representing the number of whole years between the two specified datetimes.
+static Years yearsBetween(ReadablePartial start, ReadablePartial end) Creates a Years representing the number of whole years between the two specified partial datetimes.
+static Years yearsIn(ReadableInterval interval) Creates a Years representing the number of whole years in the specified interval.

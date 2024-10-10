@@ -1,0 +1,19 @@
+[API Name] opennlp.tools.ml.model.RealValueFileEventStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<Event>
+public class RealValueFileEventStream extends FileEventStream Class for using a file of real-valued events as an  event stream.  The format of the file is one event per line with  each line consisting of outcome followed by contexts (space delimited).
+See Also:
+Event FileEventStream
+[Constructor Summary]
+RealValueFileEventStream(File file)	Instantiates a RealValueFileEventStream via a File.
+RealValueFileEventStream(Reader reader)	Instantiates a RealValueFileEventStream via a Reader.
+RealValueFileEventStream(String fileName)	Instantiates a RealValueFileEventStream from the specified file name.
+RealValueFileEventStream(String fileName, String encoding)	Instantiates a RealValueFileEventStream from the specified file name.
+[Method Summary]
+static float[] parseContexts(String[] contexts)	Parses the specified contexts and re-populates context array with features and returns the values for these features.
+Event read()	Returns the next Event object.
+[Methods inherited from class opennlp.tools.ml.model.FileEventStream]
+close, reset, toLine
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,26 @@
+[Class] org.jfree.data.time.Second
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable, MonthConstants, TimePeriod
+[Constructor Summary]
+Second()	Constructs a new Second, based on the system date/time.
+Second(int second, int minute, int hour, int day, int month, int year)	Creates a new second.
+Second(int second, Minute minute)	Constructs a new Second.
+Second(Date time)	Constructs a new instance from the specified date/time.
+Second(Date time, Calendar calendar)	Constructs a new instance, based on a particular date/time.
+Second(Date time, TimeZone zone, Locale locale)	Creates a new second based on the supplied time and time zone.
+[Method Summary]
+int compareTo(Object o1)	Returns an integer indicating the order of this Second object relative to the specified object: negative == before, zero == same, positive == after.
+boolean equals(Object obj)	Tests the equality of this object against an arbitrary Object.
+long getFirstMillisecond()	Returns the first millisecond of the second.
+long getFirstMillisecond(Calendar calendar)	Returns the first millisecond of the minute.
+long getLastMillisecond()	Returns the last millisecond of the second.
+long getLastMillisecond(Calendar calendar)	Returns the last millisecond of the second.
+Minute getMinute()	Returns the minute.
+int getSecond()	Returns the second within the minute.
+long getSerialIndex()	Returns a serial index number for the minute.
+int hashCode()	Returns a hash code for this object instance.
+RegularTimePeriod next()	Returns the second following this one.
+static Second parseSecond(String s)	Creates a new instance by parsing a string.
+void peg(Calendar calendar)	Recalculates the start date/time and end date/time for this time period relative to the supplied calendar (which incorporates a time zone).
+RegularTimePeriod previous()	Returns the second preceding this one.

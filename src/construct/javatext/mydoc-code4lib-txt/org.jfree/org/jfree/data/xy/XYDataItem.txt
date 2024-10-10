@@ -1,0 +1,19 @@
+[Class] org.jfree.data.xy.XYDataItem
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Comparable
+[Constructor Summary]
+XYDataItem(double x, double y)	Constructs a new data item.
+XYDataItem(Number x, Number y)	Constructs a new data item.
+[Method Summary]
+Object clone()	Returns a clone of this object.
+int compareTo(Object o1)	Returns an integer indicating the order of this object relative to another object.
+boolean equals(Object obj)	Tests if this object is equal to another.
+Number getX()	Returns the x-value.
+double getXValue()	Returns the x-value as a double primitive.
+Number getY()	Returns the y-value.
+double getYValue()	Returns the y-value as a double primitive.
+int hashCode()	Returns a hash code.
+void setY(double y)	Sets the y-value for this data item.
+void setY(Number y)	Sets the y-value for this data item.
+String toString()	Returns a string representing this instance, primarily for debugging use.

@@ -1,0 +1,8 @@
+[API Name] Package org.apache.commons.imaging.common.XmpEmbeddable
+[Type] Interface
+[Info]
+All Known Implementing Classes: GifImageParser, JpegImageParser, PngImageParser, PsdImageParser, TiffImageParser
+public interface XmpEmbeddable Implementations support embedding the Extensible Metadata Platform  tags.
+Since: 1.0 See Also: https://en.wikipedia.org/wiki/Extensible_Metadata_Platform
+[Method Summary]
+String getXmpXml​(ByteSource byteSource, XmpImagingParameters params)	Get a string containing XML-formatted text conforming to the Extensible Metadata Platform (EXP) standard for representing information about image content.

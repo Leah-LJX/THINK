@@ -1,0 +1,28 @@
+[Class] org.joda.time.DateTimeUtils
+[Flag] Class
+[Info]
+Since: 1.0
+[Constructor Summary]
+protected 	DateTimeUtils()	Restrictive constructor
+[Method Summary]
+static long currentTimeMillis() Gets the current time in milliseconds.
+static long fromJulianDay(double julianDay) Creates a date-time from a Julian Day.
+static Chronology getChronology(Chronology chrono) Gets the chronology handling null.
+static DateFormatSymbols getDateFormatSymbols(Locale locale) Gets the DateFormatSymbols based on the given locale.
+static Map<String,DateTimeZone> getDefaultTimeZoneNames() Gets the default map of time zone names.
+static long getDurationMillis(ReadableDuration duration) Gets the millisecond duration from the specified duration object handling null.
+static Chronology getInstantChronology(ReadableInstant instant) Gets the chronology from the specified instant object handling null.
+static long getInstantMillis(ReadableInstant instant) Gets the millisecond instant from the specified instant object handling null.
+static Chronology getIntervalChronology(ReadableInstant start, ReadableInstant end) Gets the chronology from the specified instant based interval handling null.
+static Chronology getIntervalChronology(ReadableInterval interval) Gets the chronology from the specified interval object handling null.
+static PeriodType getPeriodType(PeriodType type) Gets the period type handling null.
+static ReadableInterval getReadableInterval(ReadableInterval interval) Gets the interval handling null.
+static DateTimeZone getZone(DateTimeZone zone) Gets the zone handling null.
+static boolean isContiguous(ReadablePartial partial) Checks whether the partial is contiguous.
+static void setCurrentMillisFixed(long fixedMillis) Sets the current time to return a fixed millisecond time.
+static void setCurrentMillisOffset(long offsetMillis) Sets the current time to return the system time plus an offset.
+static void setCurrentMillisProvider(DateTimeUtils.MillisProvider millisProvider) Sets the provider of the current time to class specified.
+static void setCurrentMillisSystem() Resets the current time to return the system time.
+static void setDefaultTimeZoneNames(Map<String,DateTimeZone> names) Sets the default map of time zone names.
+static double toJulianDay(long epochMillis) Calculates the astronomical Julian Day for an instant.
+static long toJulianDayNumber(long epochMillis) Calculates the astronomical Julian Day Number for an instant.

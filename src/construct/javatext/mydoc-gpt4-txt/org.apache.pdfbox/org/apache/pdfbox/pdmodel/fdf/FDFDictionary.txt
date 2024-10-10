@@ -1,0 +1,37 @@
+[API Name] org.apache.pdfbox.pdmodel.fdf.FDFDictionary
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class FDFDictionary extends Object implements COSObjectable This represents an FDF dictionary that is part of the FDF document.
+Author: Ben Litchfield
+[Constructor Summary]
+FDFDictionary()	Default constructor.
+FDFDictionary(COSDictionary fdfDictionary)	Constructor.
+FDFDictionary(Element fdfXML)	This will create an FDF dictionary from an XFDF XML document.
+[Method Summary]
+List<FDFAnnotation> getAnnotations()	This will get the list of FDF Annotations.
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+COSStream getDifferences()	This will get the incremental updates since the PDF was last opened.
+List<PDFileSpecification> getEmbeddedFDFs()	This will get the list of embedded FDF entries, or null if the entry is null.
+String getEncoding()	The encoding to be used for a FDF field.
+List<FDFField> getFields()	This will get the list of FDF Fields.
+PDFileSpecification getFile()	The source file or target file: the PDF document file that this FDF file was exported from or is intended to be imported into.
+COSArray getID()	This is the FDF id.
+FDFJavaScript getJavaScript()	This will get the java script entry.
+List<FDFPage> getPages()	This will get the list of FDF Pages.
+String getStatus()	This will get the status string to be displayed as the result of an action.
+String getTarget()	This will get the target frame in the browser to open this document.
+void setAnnotations(List<FDFAnnotation> annots)	This will set the list of annotations.
+void setDifferences(COSStream diff)	This will set the differences stream.
+void setEmbeddedFDFs(List<PDFileSpecification> embedded)	This will set the list of embedded FDFs.
+void setEncoding(String encoding)	This will set the encoding.
+void setFields(List<FDFField> fields)	This will set the list of fields.
+void setFile(PDFileSpecification fs)	This will set the file specification.
+void setID(COSArray id)	This will set the FDF id.
+void setJavaScript(FDFJavaScript js)	This will set the JavaScript entry.
+void setPages(List<FDFPage> pages)	This will set the list of pages.
+void setStatus(String status)	This will set the status string.
+void setTarget(String target)	This will set the target frame in the browser to open this document.
+void writeXML(Writer output)	This will write this element as an XML document.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,8 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.digitalsignature.ExternalSigningSupport
+[Type] Interface
+[Info]
+All Known Implementing Classes: SigningSupport
+public interface ExternalSigningSupport Interface for external signature creation scenarios. It contains method for retrieving PDF data  to be sign and setting created CMS signature to the PDF.
+[Method Summary]
+InputStream getContent()	Get PDF content to be signed.
+void setSignature(byte[] signature)	Set CMS signature bytes to PDF.

@@ -1,0 +1,14 @@
+[API Name] org.apache.pdfbox.pdfparser.PDFXRefStream
+[Type] Class
+[Info]
+public class PDFXRefStream extends Object
+Author: Alexander Funk
+[Constructor Summary]
+PDFXRefStream(COSDocument cosDocument)	Create a fresh XRef stream like for a fresh file or an incremental update.
+[Method Summary]
+void addEntry(XReferenceEntry entry)	Add an new entry to the XRef stream.
+void addTrailerInfo(COSDictionary trailerDict)	Copy all Trailer Information to this file.
+COSStream getStream()	Returns the stream of the XRef.
+void setSize(long streamSize)	Set the size of the XRef stream.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

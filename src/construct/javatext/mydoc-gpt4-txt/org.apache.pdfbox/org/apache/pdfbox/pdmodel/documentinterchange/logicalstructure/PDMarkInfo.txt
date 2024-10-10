@@ -1,0 +1,19 @@
+[API Name] org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDMarkInfo
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDMarkInfo extends Object implements COSObjectable The MarkInfo provides additional information relevant to specialized  uses of structured documents.
+Author: Ben Litchfield
+[Constructor Summary]
+PDMarkInfo()	Default Constructor.
+PDMarkInfo(COSDictionary dic)	Constructor for an existing MarkInfo element.
+[Method Summary]
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+boolean isMarked()	Tells if this is a tagged PDF.
+boolean isSuspect()	Tells if this PDF contain 'suspect' tags.
+void setMarked(boolean value)	Set if this is a tagged PDF.
+void setSuspect(boolean suspect)	Set the value of the suspects property.
+void setUserProperties(boolean userProps)	Set if the structure elements contain user properties.
+boolean usesUserProperties()	Tells if structure elements use user properties.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

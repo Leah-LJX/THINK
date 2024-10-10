@@ -1,0 +1,56 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.JpegConstants
+[Type] Class
+[Info]
+public final class JpegConstants extends Object
+[Field Summary]
+static int COM_MARKER	
+static int CONST_8BIM	
+static int DAC_MARKER	
+static int DHT_MARKER	
+static int DNL_MARKER	
+static int DQT_MARKER	
+static int DRI_MARKER	
+static BinaryConstant EOI	
+static int EOI_MARKER	
+static BinaryConstant EXIF_IDENTIFIER_CODE	
+static BinaryConstant ICC_PROFILE_LABEL	
+static int JFIF_MARKER	
+static BinaryConstant JFIF0_SIGNATURE	
+static BinaryConstant JFIF0_SIGNATURE_ALTERNATIVE	
+static int JPEG_APP0	
+static int JPEG_APP0_MARKER	
+static int JPEG_APP1_MARKER	
+static int JPEG_APP13_MARKER	
+static int JPEG_APP14_MARKER	
+static int JPEG_APP15_MARKER	
+static int JPEG_APP2_MARKER	
+static List<Integer> MARKERS	
+static int MAX_SEGMENT_SIZE	
+static BinaryConstant PHOTOSHOP_IDENTIFICATION_STRING	
+static int RST0_MARKER	
+static int RST1_MARKER	
+static int RST2_MARKER	
+static int RST3_MARKER	
+static int RST4_MARKER	
+static int RST5_MARKER	
+static int RST6_MARKER	
+static int RST7_MARKER	
+static int SOF0_MARKER	
+static int SOF1_MARKER	
+static int SOF10_MARKER	
+static int SOF11_MARKER	
+static int SOF13_MARKER	
+static int SOF14_MARKER	
+static int SOF15_MARKER	
+static int SOF2_MARKER	
+static int SOF3_MARKER	
+static int SOF5_MARKER	
+static int SOF6_MARKER	
+static int SOF7_MARKER	
+static int SOF8_MARKER	
+static int SOF9_MARKER	
+static BinaryConstant SOI	
+static int SOS_MARKER	
+static BinaryConstant XMP_IDENTIFIER	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

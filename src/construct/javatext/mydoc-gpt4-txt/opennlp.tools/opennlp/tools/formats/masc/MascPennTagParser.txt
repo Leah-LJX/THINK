@@ -1,0 +1,19 @@
+[API Name] opennlp.tools.formats.masc.MascPennTagParser
+[Type] Class
+[Info]
+All Implemented Interfaces: ContentHandler, DTDHandler, EntityResolver, ErrorHandler
+public class MascPennTagParser extends DefaultHandler A class for parsing MASC's Penn tagging/tokenization stand-off annotation
+[Constructor Summary]
+MascPennTagParser()	
+[Method Summary]
+void endElement(String uri, String localName, String qName)	
+Map<Integer,String> getBases()	
+Map<Integer,String> getTags()	
+Map<Integer,int[]> getTokenToQuarks()	
+void startElement(String uri, String localName, String qName, Attributes attributes)	
+[Methods inherited from class org.xml.sax.helpers.DefaultHandler]
+characters, endDocument, endPrefixMapping, error, fatalError, ignorableWhitespace, notationDecl, processingInstruction, resolveEntity, setDocumentLocator, skippedEntity, startDocument, startPrefixMapping, unparsedEntityDecl, warning
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface org.xml.sax.ContentHandler]
+declaration

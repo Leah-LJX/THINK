@@ -1,0 +1,12 @@
+[API Name] org.apache.pdfbox.pdmodel.encryption.StandardDecryptionMaterial
+[Type] Class
+[Info]
+public class StandardDecryptionMaterial extends DecryptionMaterial Represents the necessary information to decrypt a document protected by  the standard security handler (password protection).
+ This is only composed of a password.
+Author: Benoit Guillon
+[Constructor Summary]
+StandardDecryptionMaterial(String pwd)	Create a new standard decryption material with the given password.
+[Method Summary]
+String getPassword()	Returns the password.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

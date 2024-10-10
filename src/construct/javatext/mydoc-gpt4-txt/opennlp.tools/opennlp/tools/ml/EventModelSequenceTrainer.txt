@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.ml.EventModelSequenceTrainer<T>
+[Type] Interface
+[Info]
+Type Parameters: T - The generic type of elements to process via a SequenceStream.
+All Superinterfaces: Trainer
+All Known Implementing Classes: AbstractEventModelSequenceTrainer, SimplePerceptronSequenceTrainer
+public interface EventModelSequenceTrainer<T> extends Trainer A specialized Trainer that is based on a 'EventModelSequence' approach.
+[Field Summary]
+static final String SEQUENCE_VALUE	
+[Method Summary]
+MaxentModel train(SequenceStream<T> events)	Trains a MaxentModel for given events.
+[Methods inherited from interface opennlp.tools.commons.Trainer]
+init

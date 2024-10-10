@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.RainbowPalette
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+RainbowPalette() Deprecated. Default constructor.
+[Method Summary]
+void initialize() Deprecated. Intializes the palettes indexes

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.editor.DefaultChartEditorFactory
+[Flag] Class
+[Info]
+All Implemented Interfaces: ChartEditorFactory
+[Constructor Summary]
+DefaultChartEditorFactory() Creates a new instance.
+[Method Summary]
+ChartEditor createEditor(JFreeChart chart) Returns a new instance of a ChartEditor.

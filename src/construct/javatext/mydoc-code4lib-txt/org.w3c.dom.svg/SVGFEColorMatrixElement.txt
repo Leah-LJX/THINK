@@ -1,0 +1,10 @@
+[Class] org.w3c.dom.svg.SVGFEColorMatrixElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGFilterPrimitiveStandardAttributes, SVGStylable
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedString getIn1()	 
+ SVGAnimatedEnumeration getType()	 
+ SVGAnimatedNumberList getValues()

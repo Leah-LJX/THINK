@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.util.normalizer.UrlCharSequenceNormalizer
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, CharSequenceNormalizer
+public class UrlCharSequenceNormalizer extends Object implements CharSequenceNormalizer A UrlCharSequenceNormalizer implementation that normalizes text  in terms of URls and email addresses. Every encounter will be replaced by a whitespace.
+See Also:
+Serialized Form
+[Constructor Summary]
+UrlCharSequenceNormalizer()	
+[Method Summary]
+static UrlCharSequenceNormalizer getInstance()	
+CharSequence normalize(CharSequence text)	Normalizes a sequence of characters.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

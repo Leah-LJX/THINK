@@ -1,0 +1,9 @@
+[API Name] opennlp.tools.postag.TagDictionary
+[Type] Interface
+[Info]
+All Known Subinterfaces: MutableTagDictionary
+All Known Implementing Classes: POSDictionary
+public interface TagDictionary Interface to determine which tags are valid for a particular word  based on a tag dictionary.
+[Method Summary]
+String[] getTags(String word)	Retrieves a list of valid tags for the specified word.
+boolean isCaseSensitive()	Whether the dictionary is case-sensitive or not.

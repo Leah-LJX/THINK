@@ -1,0 +1,21 @@
+[Class] org.joda.time.chrono.IslamicChronology
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+
+[Method Summary]
+protected void assemble(AssembledChronology.Fields fields) Invoked by the constructor and after deserialization to allow subclasses to define all of its supported fields.
+boolean equals(Object obj) Checks if this chronology instance equals another.
+long getDateTimeMillis(int year, int monthOfYear, int dayOfMonth, int millisOfDay) Returns a datetime millisecond instant, formed from the given year, month, day, and millisecond values.
+long getDateTimeMillis(int year, int monthOfYear, int dayOfMonth, int hourOfDay, int minuteOfHour, int secondOfMinute, int millisOfSecond) Returns a datetime millisecond instant, formed from the given year, month, day, hour, minute, second, and millisecond values.
+static IslamicChronology getInstance() Gets an instance of the IslamicChronology in the default time zone.
+static IslamicChronology getInstance(DateTimeZone zone) Gets an instance of the IslamicChronology in the given time zone.
+static IslamicChronology getInstance(DateTimeZone zone, IslamicChronology.LeapYearPatternType leapYears) Gets an instance of the IslamicChronology in the given time zone.
+static IslamicChronology getInstanceUTC() Gets an instance of the IslamicChronology.
+IslamicChronology.LeapYearPatternType getLeapYearPatternType() Gets the leap year pattern type.
+int getMinimumDaysInFirstWeek() DateTimeZone getZone() Returns the DateTimeZone that this Chronology operates in, or null if unspecified.
+int hashCode() A suitable hash code for the chronology.
+String toString() Gets a debugging toString.
+Chronology withUTC() Gets the Chronology in the UTC time zone.
+Chronology withZone(DateTimeZone zone) Gets the Chronology in a specific time zone.

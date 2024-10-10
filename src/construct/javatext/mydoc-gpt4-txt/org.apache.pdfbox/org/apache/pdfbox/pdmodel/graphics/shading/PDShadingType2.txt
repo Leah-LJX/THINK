@@ -1,0 +1,23 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.shading.PDShadingType2
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDShadingType3
+public class PDShadingType2 extends PDShading Resources for an axial shading.
+[Constructor Summary]
+PDShadingType2(COSDictionary shadingDictionary)	Constructor using the given shading dictionary.
+[Field Summary]
+PDShadingType2(COSDictionary shadingDictionary)	Constructor using the given shading dictionary.
+[Method Summary]
+COSArray getCoords()	This will get the Coords values for this shading.
+COSArray getDomain()	This will get the optional Domain values for this shading.
+COSArray getExtend()	This will get the optional Extend values for this shading.
+int getShadingType()	This will return the shading type.
+void setCoords(COSArray newCoords)	Sets the Coords entry for this shading.
+void setDomain(COSArray newDomain)	Sets the optional Domain entry for this shading.
+void setExtend(COSArray newExtend)	Sets the optional Extend entry for this shading.
+Paint toPaint(Matrix matrix)	Returns an AWT paint which corresponds to this shading
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.shading.PDShading]
+create, evalFunction, evalFunction, getAntiAlias, getBackground, getBBox, getBounds, getColorSpace, getCOSObject, getFunction, getType, setAntiAlias, setBackground, setBBox, setColorSpace, setFunction, setFunction, setShadingType
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

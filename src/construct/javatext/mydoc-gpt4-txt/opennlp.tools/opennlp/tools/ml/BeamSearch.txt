@@ -1,0 +1,19 @@
+[API Name] opennlp.tools.ml.BeamSearch<T>
+[Type] Class
+[Info]
+All Implemented Interfaces: SequenceClassificationModel<T>
+public class BeamSearch<T> extends Object implements SequenceClassificationModel<T> Performs k-best search over a sequence.    This is based on the description in Ratnaparkhi (1998),  PhD diss, Univ. of Pennsylvania.
+See Also:
+Sequence SequenceValidator BeamSearchContextGenerator
+[Constructor Summary]
+BeamSearch(int size, MaxentModel model)	Initializes a BeamSearch instance.
+BeamSearch(int size, MaxentModel model, int cacheSize)	Initializes a BeamSearch instance.
+[Field Summary]
+static final String BEAM_SIZE_PARAMETER	
+[Method Summary]
+Sequence bestSequence(T[] sequence, Object[] additionalContext, BeamSearchContextGenerator<T> cg, SequenceValidator<T> validator)	Computes the best sequence of outcomes based on the MaxentModel.
+Sequence[] bestSequences(int numSequences, T[] sequence, Object[] additionalContext, double minSequenceScore, BeamSearchContextGenerator<T> cg, SequenceValidator<T> validator)	Computes the best sequence of outcomes based on the MaxentModel.
+Sequence[] bestSequences(int numSequences, T[] sequence, Object[] additionalContext, BeamSearchContextGenerator<T> cg, SequenceValidator<T> validator)	Computes the best sequence of outcomes based on the MaxentModel.
+String[] getOutcomes()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

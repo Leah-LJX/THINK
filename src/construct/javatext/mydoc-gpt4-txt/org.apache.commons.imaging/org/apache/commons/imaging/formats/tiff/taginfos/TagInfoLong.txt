@@ -1,0 +1,20 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.taginfos.TagInfoLong
+[Type] Class
+[Info]
+Direct Known Subclasses: TagInfoDirectory
+public class TagInfoLong extends TagInfo
+[Constructor Summary]
+TagInfoLong​(String name, int tag, List<FieldType> dataTypes, int length, TiffDirectoryType exifDirectory, boolean isOffset)	
+TagInfoLong​(String name, int tag, TiffDirectoryType directoryType)	
+TagInfoLong​(String name, int tag, TiffDirectoryType directoryType, boolean isOffset)	
+[Field Summary]
+TagInfoLong​(String name, int tag, List<FieldType> dataTypes, int length, TiffDirectoryType exifDirectory, boolean isOffset)	
+TagInfoLong​(String name, int tag, TiffDirectoryType directoryType)	
+TagInfoLong​(String name, int tag, TiffDirectoryType directoryType, boolean isOffset)	
+[Method Summary]
+byte[] encodeValue​(ByteOrder byteOrder, int value)	
+int getValue​(ByteOrder byteOrder, byte[] bytes)	
+[Methods inherited from class org.apache.commons.imaging.formats.tiff.taginfos.TagInfo]
+encodeValue, getDescription, getValue, isOffset, isText, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

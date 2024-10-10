@@ -1,0 +1,23 @@
+[API Name] org.apache.pdfbox.io.RandomAccessRead
+[Type] Interface
+[Info]
+All Superinterfaces: AutoCloseable, Closeable
+All Known Subinterfaces: RandomAccess
+All Known Implementing Classes: RandomAccessReadBuffer, RandomAccessReadBufferedFile, RandomAccessReadMemoryMappedFile, RandomAccessReadView, RandomAccessReadWriteBuffer, SequenceRandomAccessRead
+public interface RandomAccessRead extends Closeable An interface allowing random access read operations.
+[Method Summary]
+default int available()	Returns an estimate of the number of bytes that can be read.
+RandomAccessReadView createView(long startPosition, long streamLength)	Creates a random access read view starting at the given position with the given length.
+long getPosition()	Returns offset of next byte to be returned by a read method.
+boolean isClosed()	Returns true if this source has been closed.
+boolean isEOF()	A simple test to see if we are at the end of the data.
+long length()	The total number of bytes that are available.
+default int peek()	This will peek at the next byte.
+int read()	Read a single byte of data.
+default int read(byte[] b)	Read a buffer of data.
+int read(byte[] b, int offset, int length)	Read a buffer of data.
+default void rewind(int bytes)	Seek backwards the given number of bytes.
+void seek(long position)	Seek to a position in the data.
+default void skip(int length)	Skips a given number of bytes.
+[Methods inherited from interface java.io.Closeable]
+close

@@ -1,0 +1,63 @@
+[API Name] org.apache.pdfbox.pdmodel.encryption.PDEncryption
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDEncryption extends Object implements COSObjectable This class is a specialized view of the encryption dictionary of a PDF document.  It contains a low level dictionary (COSDictionary) and provides the methods to  manage its fields.
+ The available fields are the ones who are involved by standard security handler  and public key security handler.
+Author: Ben Litchfield, Benoit Guillon
+[Constructor Summary]
+PDEncryption()	creates a new empty encryption dictionary.
+PDEncryption(COSDictionary dictionary)	creates a new encryption dictionary from the low level dictionary provided.
+[Field Summary]
+static int DEFAULT_LENGTH	The default length for the encryption key.
+static String DEFAULT_NAME	The default security handler.
+static int DEFAULT_VERSION	The default version, according to the PDF Reference.
+static int VERSION0_UNDOCUMENTED_UNSUPPORTED	See PDF Reference 1.4 Table 3.13.
+static int VERSION1_40_BIT_ALGORITHM	See PDF Reference 1.4 Table 3.13.
+static int VERSION2_VARIABLE_LENGTH_ALGORITHM	See PDF Reference 1.4 Table 3.13.
+static int VERSION3_UNPUBLISHED_ALGORITHM	See PDF Reference 1.4 Table 3.13.
+static int VERSION4_SECURITY_HANDLER	See PDF Reference 1.4 Table 3.13.
+[Method Summary]
+COSDictionary getCOSObject()	This will get the dictionary associated with this encryption dictionary.
+PDCryptFilterDictionary getCryptFilterDictionary(COSName cryptFilterName)	Returns the crypt filter with the given name.
+PDCryptFilterDictionary getDefaultCryptFilterDictionary()	Returns the default crypt filter (for public-key security handler).
+String getFilter()	Get the name of the filter.
+int getLength()	This will return the Length entry of the encryption dictionary. The length in bits for the encryption algorithm.
+byte[] getOwnerEncryptionKey()	This will get the OE entry in the standard encryption dictionary.
+byte[] getOwnerKey()	This will get the O entry in the standard encryption dictionary.
+int getPermissions()	This will get the permissions bit mask.
+byte[] getPerms()	Get the Perms entry in the encryption dictionary.
+int getRecipientsLength()	Returns the number of recipients contained in the Recipients field of the dictionary.
+COSString getRecipientStringAt(int i)	returns the COSString contained in the Recipients field at position i.
+int getRevision()	This will return the R entry of the encryption dictionary. See PDF Reference 1.4 Table 3.14.
+SecurityHandler<ProtectionPolicy> getSecurityHandler()	Returns the security handler specified in the dictionary's Filter entry.
+PDCryptFilterDictionary getStdCryptFilterDictionary()	Returns the standard crypt filter.
+COSName getStreamFilterName()	Returns the name of the filter which is used for de/encrypting streams.
+COSName getStringFilterName()	Returns the name of the filter which is used for de/encrypting strings.
+String getSubFilter()	Get the name of the subfilter.
+byte[] getUserEncryptionKey()	This will get the UE entry in the standard encryption dictionary.
+byte[] getUserKey()	This will get the U entry in the standard encryption dictionary.
+int getVersion()	This will return the V entry of the encryption dictionary. See PDF Reference 1.4 Table 3.13.
+boolean hasSecurityHandler()	Returns true if the security handler specified in the dictionary's Filter is available.
+boolean isEncryptMetaData()	Will get the EncryptMetaData dictionary info.
+void removeV45filters()	remove CF, StmF, and StrF entries.
+void setCryptFilterDictionary(COSName cryptFilterName, PDCryptFilterDictionary cryptFilterDictionary)	Sets the crypt filter with the given name.
+void setDefaultCryptFilterDictionary(PDCryptFilterDictionary defaultFilterDictionary)	Sets the default crypt filter (for public-key security handler).
+void setFilter(String filter)	Sets the filter entry of the encryption dictionary.
+void setLength(int length)	This will set the number of bits to use for the encryption algorithm.
+void setOwnerEncryptionKey(byte[] oe)	This will set the OE entry in the standard encryption dictionary.
+void setOwnerKey(byte[] o)	This will set the O entry in the standard encryption dictionary.
+void setPermissions(int permissions)	This will set the permissions bit mask.
+void setPerms(byte[] perms)	Set the Perms entry in the encryption dictionary.
+void setRecipients(byte[][] recipients)	This will set the Recipients field of the dictionary.
+void setRevision(int revision)	This will set the R entry of the encryption dictionary. See PDF Reference 1.4 Table 3.14.
+void setSecurityHandler(SecurityHandler<ProtectionPolicy> securityHandler)	Sets the security handler used in this encryption dictionary
+void setStdCryptFilterDictionary(PDCryptFilterDictionary cryptFilterDictionary)	Sets the standard crypt filter.
+void setStreamFilterName(COSName streamFilterName)	Sets the name of the filter which is used for de/encrypting streams.
+void setStringFilterName(COSName stringFilterName)	Sets the name of the filter which is used for de/encrypting strings.
+void setSubFilter(String subfilter)	Set the subfilter entry of the encryption dictionary.
+void setUserEncryptionKey(byte[] ue)	This will set the UE entry in the standard encryption dictionary.
+void setUserKey(byte[] u)	This will set the U entry in the standard encryption dictionary.
+void setVersion(int version)	This will set the V entry of the encryption dictionary. See PDF Reference 1.4 Table 3.13.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

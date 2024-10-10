@@ -1,0 +1,14 @@
+[API Name] org.apache.pdfbox.pdmodel.font.CIDSystemInfo
+[Type] Class
+[Info]
+public final class CIDSystemInfo extends Object Represents a CIDSystemInfo for the FontMapper API.
+Author: John Hewson
+[Constructor Summary]
+CIDSystemInfo(String registry, String ordering, int supplement)	
+[Method Summary]
+String getOrdering()	
+String getRegistry()	
+int getSupplement()	
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

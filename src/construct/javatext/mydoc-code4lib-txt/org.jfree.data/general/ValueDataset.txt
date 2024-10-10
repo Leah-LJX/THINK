@@ -1,0 +1,8 @@
+[Class] org.jfree.data.general.ValueDataset
+[Flag] Interface
+[Info]
+All Superinterfaces: Dataset, Value
+All Known Implementing Classes: DefaultValueDataset
+[Constructor Summary]
+
+[Method Summary]

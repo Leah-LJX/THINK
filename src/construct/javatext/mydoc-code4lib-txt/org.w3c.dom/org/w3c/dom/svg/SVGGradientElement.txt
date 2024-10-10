@@ -1,0 +1,11 @@
+[Class] org.w3c.dom.svg.SVGGradientElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGExternalResourcesRequired, SVGStylable, SVGUnitTypes, SVGURIReference
+All Known Subinterfaces: SVGLinearGradientElement, SVGRadialGradientElement
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedTransformList getGradientTransform()	 
+ SVGAnimatedEnumeration getGradientUnits()	 
+ SVGAnimatedEnumeration getSpreadMethod()

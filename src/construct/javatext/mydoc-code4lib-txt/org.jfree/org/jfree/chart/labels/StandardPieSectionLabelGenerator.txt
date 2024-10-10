@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.labels.StandardPieSectionLabelGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, PieSectionLabelGenerator, org.jfree.util.PublicCloneable
+[Constructor Summary]
+StandardPieSectionLabelGenerator() Creates a new section label generator using DEFAULT_SECTION_LABEL_FORMAT as the label format string, and platform default number and percentage formatters.
+[Method Summary]
+Object clone() Returns an independent copy of the generator.

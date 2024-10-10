@@ -1,0 +1,11 @@
+[API Name] Package org.apache.commons.imaging.common.mylzw.MyLzwCompressor
+[Type] Class
+[Info]
+public class MyLzwCompressor extends Object
+[Constructor Summary]
+MyLzwCompressor​(int initialCodeSize, ByteOrder byteOrder, boolean earlyLimit)	
+MyLzwCompressor​(int initialCodeSize, ByteOrder byteOrder, boolean earlyLimit, MyLzwCompressor.Listener listener)	
+[Method Summary]
+byte[] compress​(byte[] bytes)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

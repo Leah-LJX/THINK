@@ -1,0 +1,49 @@
+[API Name] org.apache.pdfbox.pdmodel.common.COSArrayList<E>
+[Type] Class
+[Info]
+Type Parameters: E - Element type.
+All Implemented Interfaces: Iterable<E>, Collection<E>, List<E>
+public class COSArrayList<E> extends Object implements List<E> This is an implementation of a List that will sync its contents to a COSArray.
+Author: Ben Litchfield
+[Constructor Summary]
+COSArrayList()	Default constructor.
+COSArrayList(COSDictionary dictionary, COSName dictionaryKey)	This constructor is to be used if the array doesn't exist, but is to be created and added to the parent dictionary as soon as the first element is added to the array.
+COSArrayList(E actualObject, COSBase item, COSDictionary dictionary, COSName dictionaryKey)	This is a really special constructor.
+COSArrayList(List<E> actualList, COSArray cosArray)	Create the COSArrayList specifying the List and the backing COSArray.
+[Method Summary]
+boolean add(E o)	
+void add(int index, E element)	
+boolean addAll(Collection<? extends E> c)	
+boolean addAll(int index, Collection<? extends E> c)	
+void clear()	
+boolean contains(Object o)	
+boolean containsAll(Collection<?> c)	
+static COSArray converterToCOSArray(List<?> cosObjectableList)	This will convert a list of COSObjectables to an array list of COSBase objects.
+boolean equals(Object o)	
+E get(int index)	
+int hashCode()	
+int indexOf(Object o)	
+boolean isEmpty()	
+Iterator<E> iterator()	
+int lastIndexOf(Object o)	
+ListIterator<E> listIterator()	
+ListIterator<E> listIterator(int index)	
+E remove(int index)	
+boolean remove(Object o)	
+boolean removeAll(Collection<?> c)	
+boolean retainAll(Collection<?> c)	
+E set(int index, E element)	
+int size()	
+List<E> subList(int fromIndex, int toIndex)	
+Object[] toArray()	
+<X> X[] toArray(X[] a)	
+COSArray toList()	This will return then underlying COSArray.
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait
+[Methods inherited from interface java.util.List]
+replaceAll, sort, spliterator
+[Methods inherited from interface java.util.Collection]
+parallelStream, removeIf, stream
+[Methods inherited from interface java.lang.Iterable]
+forEach

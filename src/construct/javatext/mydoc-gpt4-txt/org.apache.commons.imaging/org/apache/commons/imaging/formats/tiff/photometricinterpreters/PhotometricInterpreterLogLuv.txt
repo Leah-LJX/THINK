@@ -1,0 +1,15 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.photometricinterpreters.PhotometricInterpreterLogLuv
+[Type] Class
+[Info]
+public class PhotometricInterpreterLogLuv extends PhotometricInterpreter Photometric interpretation Logluv support. Logluv is an encoding for storing  data inside TIFF images.
+See Also: Logluv TIFF
+[Constructor Summary]
+PhotometricInterpreterLogLuv​(int samplesPerPixel, int[] bitsPerSample, int predictor, int width, int height)	
+[Field Summary]
+PhotometricInterpreterLogLuv​(int samplesPerPixel, int[] bitsPerSample, int predictor, int width, int height)	
+[Method Summary]
+void interpretPixel​(ImageBuilder imageBuilder, int[] samples, int x, int y)	
+[Methods inherited from class org.apache.commons.imaging.formats.tiff.photometricinterpreters.PhotometricInterpreter]
+getBitsPerSample
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

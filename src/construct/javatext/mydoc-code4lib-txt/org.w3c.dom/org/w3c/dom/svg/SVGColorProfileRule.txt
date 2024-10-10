@@ -1,0 +1,13 @@
+[Class] org.w3c.dom.svg.SVGColorProfileRule
+[Flag] Interface
+[Info]
+All Superinterfaces: CSSRule, SVGCSSRule, SVGRenderingIntent
+[Constructor Summary]
+
+[Method Summary]
+java.lang.String getName()	 
+ short getRenderingIntent()	 
+ java.lang.String getSrc()	 
+ void setName(java.lang.String name)	 
+ void setRenderingIntent(short renderingIntent)	 
+ void setSrc(java.lang.String src)

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.block.LineBorder
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, BlockFrame
+[Constructor Summary]
+LineBorder() Creates a default border.
+[Method Summary]
+void draw(Graphics2D g2, Rectangle2D area) Draws the border by filling in the reserved space (in black).

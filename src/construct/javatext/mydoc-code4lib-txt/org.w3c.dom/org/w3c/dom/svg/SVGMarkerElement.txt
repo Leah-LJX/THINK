@@ -1,0 +1,16 @@
+[Class] org.w3c.dom.svg.SVGMarkerElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGExternalResourcesRequired, SVGFitToViewBox, SVGLangSpace, SVGStylable
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedLength getMarkerHeight()	 
+ SVGAnimatedEnumeration getMarkerUnits()	 
+ SVGAnimatedLength getMarkerWidth()	 
+ SVGAnimatedAngle getOrientAngle()	 
+ SVGAnimatedEnumeration getOrientType()	 
+ SVGAnimatedLength getRefX()	 
+ SVGAnimatedLength getRefY()	 
+ void setOrientToAngle(SVGAngle angle)	 
+ void setOrientToAuto()

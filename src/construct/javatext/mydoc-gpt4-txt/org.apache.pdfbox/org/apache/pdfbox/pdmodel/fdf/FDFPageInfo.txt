@@ -1,0 +1,13 @@
+[API Name] org.apache.pdfbox.pdmodel.fdf.FDFPageInfo
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class FDFPageInfo extends Object implements COSObjectable This represents an FDF page info that is part of the FDF page.
+Author: Ben Litchfield
+[Constructor Summary]
+FDFPageInfo()	Default constructor.
+FDFPageInfo(COSDictionary p)	Constructor.
+[Method Summary]
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,10 @@
+[API Name] opennlp.tools.lemmatizer.LemmatizerContextGenerator
+[Type] Interface
+[Info]
+All Superinterfaces: BeamSearchContextGenerator<String>
+All Known Implementing Classes: DefaultLemmatizerContextGenerator
+public interface LemmatizerContextGenerator extends BeamSearchContextGenerator<String> Interface for the context generator used for probabilistic Lemmatizer.
+[Method Summary]
+String[] getContext(int i, String[] toks, String[] tags, String[] lemmas)	Returns the contexts for lemmatizing of the specified index.
+[Methods inherited from interface opennlp.tools.util.BeamSearchContextGenerator]
+getContext

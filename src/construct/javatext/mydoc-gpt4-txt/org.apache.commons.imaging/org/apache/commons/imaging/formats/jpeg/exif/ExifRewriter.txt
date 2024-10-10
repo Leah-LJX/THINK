@@ -1,0 +1,26 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.exif.ExifRewriter
+[Type] Class
+[Info]
+public class ExifRewriter extends BinaryFileParser Interface for Exif write/update/remove functionality for Jpeg/JFIF images.
+ See the source of the ExifMetadataUpdateExample class for example usage.
+See Also: org.apache.commons.imaging.examples.WriteExifMetadataExample
+[Constructor Summary]
+ExifRewriter()	Constructor.
+ExifRewriter​(ByteOrder byteOrder)	Constructor.
+[Method Summary]
+void removeExifMetadata​(byte[] src, OutputStream os)	Reads a Jpeg image, removes all EXIF metadata (by removing the APP1 segment), and writes the result to a stream.
+void removeExifMetadata​(File src, OutputStream os)	Reads a Jpeg image, removes all EXIF metadata (by removing the APP1 segment), and writes the result to a stream.
+void removeExifMetadata​(InputStream src, OutputStream os)	Reads a Jpeg image, removes all EXIF metadata (by removing the APP1 segment), and writes the result to a stream.
+void removeExifMetadata​(ByteSource byteSource, OutputStream os)	Reads a Jpeg image, removes all EXIF metadata (by removing the APP1 segment), and writes the result to a stream.
+void updateExifMetadataLossless​(byte[] src, OutputStream os, TiffOutputSet outputSet)	Reads a Jpeg image, replaces the EXIF metadata and writes the result to a stream.
+void updateExifMetadataLossless​(File src, OutputStream os, TiffOutputSet outputSet)	Reads a Jpeg image, replaces the EXIF metadata and writes the result to a stream.
+void updateExifMetadataLossless​(InputStream src, OutputStream os, TiffOutputSet outputSet)	Reads a Jpeg image, replaces the EXIF metadata and writes the result to a stream.
+void updateExifMetadataLossless​(ByteSource byteSource, OutputStream os, TiffOutputSet outputSet)	Reads a Jpeg image, replaces the EXIF metadata and writes the result to a stream.
+void updateExifMetadataLossy​(byte[] src, OutputStream os, TiffOutputSet outputSet)	Reads a Jpeg image, replaces the EXIF metadata and writes the result to a stream.
+void updateExifMetadataLossy​(File src, OutputStream os, TiffOutputSet outputSet)	Reads a Jpeg image, replaces the EXIF metadata and writes the result to a stream.
+void updateExifMetadataLossy​(InputStream src, OutputStream os, TiffOutputSet outputSet)	Reads a Jpeg image, replaces the EXIF metadata and writes the result to a stream.
+void updateExifMetadataLossy​(ByteSource byteSource, OutputStream os, TiffOutputSet outputSet)	Reads a Jpeg image, replaces the EXIF metadata and writes the result to a stream.
+[Methods inherited from class org.apache.commons.imaging.common.BinaryFileParser]
+debugNumber, debugNumber, getByteOrder, setByteOrder
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

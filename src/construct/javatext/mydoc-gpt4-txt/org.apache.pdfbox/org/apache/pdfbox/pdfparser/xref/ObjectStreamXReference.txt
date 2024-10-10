@@ -1,0 +1,20 @@
+[API Name] org.apache.pdfbox.pdfparser.xref.ObjectStreamXReference
+[Type] Class
+[Info]
+All Implemented Interfaces: Comparable<XReferenceEntry>, XReferenceEntry
+public class ObjectStreamXReference extends AbstractXReference A class representing a reference to an object stream entry in a PDF's crossreference stream (PDFXRefStream).
+Author: Christian Appl
+[Constructor Summary]
+ObjectStreamXReference(int objectStreamIndex, COSObjectKey key, COSBase object, COSObjectKey parentKey)	Prepares a object stream entry reference for the given COSObject in a PDF's crossreference stream (PDFXRefStream).
+[Method Summary]
+COSBase getObject()	Returns the COSObject, that is described by this crossreference stream entry.
+int getObjectStreamIndex()	Returns the index of the COSObject in it's containing object stream.
+COSObjectKey getParentKey()	Returns the COSObjectKey of the object stream, that is containing the object.
+COSObjectKey getReferencedKey()	Returns the COSObjectKey of the object, that is described by this crossreference stream entry.
+long getSecondColumnValue()	Returns the value for the second column of the crossreference stream entry.
+long getThirdColumnValue()	Returns the value for the third column of the crossreference stream entry.
+String toString()	Returns a string representation of this crossreference stream entry.
+[Methods inherited from class org.apache.pdfbox.pdfparser.xref.AbstractXReference]
+compareTo, getFirstColumnValue, getType
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

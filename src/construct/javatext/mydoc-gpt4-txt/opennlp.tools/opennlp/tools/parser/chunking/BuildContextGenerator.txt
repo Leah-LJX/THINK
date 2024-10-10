@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.parser.chunking.BuildContextGenerator
+[Type] Class
+[Info]
+public class BuildContextGenerator extends AbstractContextGenerator Generates predictive contexts for deciding how constituents should be combined.
+See Also:
+AbstractContextGenerator
+[Constructor Summary]
+BuildContextGenerator()	Instantiates a BuildContextGenerator for making decisions about combining constituents.
+BuildContextGenerator(Dictionary dict)	Instantiates a BuildContextGenerator for making decisions about combining constituents using a Dictionary.
+[Method Summary]
+String[] getContext(Object o)	
+String[] getContext(Parse[] constituents, int index)	Finds the predictive context used to determine how constituent at the specified index should be combined with other constituents.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.util.PaintAlpha
+[Flag] Class
+[Info]
+Since: 1.0.15
+Author: DaveLaw
+[Constructor Summary]
+PaintAlpha()
+[Method Summary]
+static BufferedImage cloneImage(BufferedImage image) Clone a BufferedImage.

@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.axis.TickUnit
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable
+Direct Known Subclasses: DateTickUnit, NumberTickUnit
+[Constructor Summary]
+TickUnit(double size) Constructs a new tick unit.
+[Method Summary]
+int compareTo(Object object) Compares this tick unit to an arbitrary object.

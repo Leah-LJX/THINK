@@ -1,0 +1,10 @@
+[API Name] opennlp.tools.cmdline.tokenizer.TokenizerModelLoader
+[Type] Class
+[Info]
+@Internal public final class TokenizerModelLoader extends opennlp.tools.cmdline.ModelLoader<TokenizerModel> Loads a TokenizerModel for the command line tools.   Note: Do not use this class, internal use only!
+[Constructor Summary]
+TokenizerModelLoader()	
+[Methods inherited from class opennlp.tools.cmdline.ModelLoader]
+load
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

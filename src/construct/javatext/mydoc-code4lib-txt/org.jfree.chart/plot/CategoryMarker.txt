@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.CategoryMarker
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+CategoryMarker(Comparable key) Creates a new category marker for the specified category.
+[Method Summary]
+boolean equals(Object obj) Tests the marker for equality with an arbitrary object.

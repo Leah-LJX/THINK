@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.block.LabelBlock
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Block, org.jfree.ui.Drawable, org.jfree.util.PublicCloneable
+[Constructor Summary]
+LabelBlock(String label) Creates a new label block.
+[Method Summary]
+org.jfree.ui.Size2D arrange(Graphics2D g2, RectangleConstraint constraint) Arranges the contents of the block, within the given constraints, and returns the block size.

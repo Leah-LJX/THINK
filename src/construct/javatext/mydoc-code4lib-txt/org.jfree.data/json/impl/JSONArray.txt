@@ -1,0 +1,12 @@
+[Class] org.jfree.data.json.impl.JSONArray
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Iterable, Collection, List, RandomAccess, JSONAware, JSONStreamAware
+[Constructor Summary]
+JSONArray()
+[Method Summary]
+String toJSONString()	Returns a JSON string representation of this list.
+static String toJSONString(List list)	Convert a list to JSON text.
+String toString()	Returns a string representation of this list.
+void writeJSONString(Writer out)	Writes this array to the specified output writer.
+static void writeJSONString(List list, Writer out)	Encode a list into JSON text and write it to out.

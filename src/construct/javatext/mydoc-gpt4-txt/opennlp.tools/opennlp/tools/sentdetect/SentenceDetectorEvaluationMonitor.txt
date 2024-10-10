@@ -1,0 +1,8 @@
+[API Name] opennlp.tools.sentdetect.SentenceDetectorEvaluationMonitor
+[Type] Interface
+[Info]
+All Superinterfaces: EvaluationMonitor<SentenceSample>
+All Known Implementing Classes: SentenceEvaluationErrorListener
+public interface SentenceDetectorEvaluationMonitor extends EvaluationMonitor<SentenceSample>
+[Methods inherited from interface opennlp.tools.util.eval.EvaluationMonitor]
+correctlyClassified, misclassified

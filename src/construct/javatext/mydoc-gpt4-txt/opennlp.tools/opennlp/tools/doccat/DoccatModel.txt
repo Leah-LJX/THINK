@@ -1,0 +1,22 @@
+[API Name] opennlp.tools.doccat.DoccatModel
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, ArtifactProvider
+public class DoccatModel extends BaseModel A model for document categorization
+See Also:
+Serialized Form
+[Constructor Summary]
+DoccatModel(File modelFile)	Initializes a DoccatModel instance via a valid File.
+DoccatModel(InputStream in)	Initializes a DoccatModel instance via a valid InputStream.
+DoccatModel(String languageCode, MaxentModel doccatModel, Map<String,String> manifestInfoEntries, DoccatFactory factory)	Initializes a DoccatModel instance via given parameters.
+DoccatModel(URL modelURL)	Initializes a DoccatModel instance via a valid URL.
+DoccatModel(Path modelPath)	Initializes a DoccatModel instance via a valid Path.
+[Method Summary]
+DoccatFactory getFactory()	
+MaxentModel getMaxentModel()	
+[Fields inherited from class opennlp.tools.util.model.BaseModel]
+TRAINING_CUTOFF_PROPERTY, TRAINING_EVENTHASH_PROPERTY, TRAINING_ITERATIONS_PROPERTY
+[Methods inherited from class opennlp.tools.util.model.BaseModel]
+getArtifact, getLanguage, getManifestProperty, getVersion, isLoadedFromSerialized, serialize, serialize, serialize
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

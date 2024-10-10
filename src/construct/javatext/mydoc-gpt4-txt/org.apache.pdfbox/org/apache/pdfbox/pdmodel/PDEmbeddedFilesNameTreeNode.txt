@@ -1,0 +1,16 @@
+[API Name] org.apache.pdfbox.pdmodel.PDEmbeddedFilesNameTreeNode
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDEmbeddedFilesNameTreeNode extends PDNameTreeNode<PDComplexFileSpecification> This class holds all of the name trees that are available at the document level.
+Author: Ben Litchfield
+[Constructor Summary]
+PDEmbeddedFilesNameTreeNode()	Constructor.
+PDEmbeddedFilesNameTreeNode(COSDictionary dic)	Constructor.
+[Method Summary]
+protected PDComplexFileSpecification convertCOSToPD(COSBase base)	Method to convert the COS value in the name tree to the PD Model object.
+protected PDNameTreeNode<PDComplexFileSpecification> createChildNode(COSDictionary dic)	Create a child node object.
+[Methods inherited from class org.apache.pdfbox.pdmodel.common.PDNameTreeNode]
+getCOSObject, getKids, getLowerLimit, getNames, getParent, getUpperLimit, getValue, isRootNode, setKids, setNames, setParent
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

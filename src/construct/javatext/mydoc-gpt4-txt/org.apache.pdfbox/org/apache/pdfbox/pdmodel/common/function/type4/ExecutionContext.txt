@@ -1,0 +1,14 @@
+[API Name] org.apache.pdfbox.pdmodel.common.function.type4.ExecutionContext
+[Type] Class
+[Info]
+public class ExecutionContext extends Object Makes up the execution context, holding the available operators and the execution stack.
+[Constructor Summary]
+ExecutionContext(Operators operatorSet)	Creates a new execution context.
+[Method Summary]
+Operators getOperators()	Returns the operator set used by this execution context.
+Stack<Object> getStack()	Returns the stack used by this execution context.
+int popInt()	Pops a value of type int from the stack.
+Number popNumber()	Pops a number (int or real) from the stack.
+float popReal()	Pops a number from the stack and returns it as a real value.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

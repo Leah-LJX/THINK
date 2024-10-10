@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.category.CategoryStepRenderer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, LegendItemSource, CategoryItemRenderer, org.jfree.util.PublicCloneable
+[Constructor Summary]
+CategoryStepRenderer() Creates a new renderer (stagger defaults to false).
+[Method Summary]
+protected CategoryItemRendererState createState(PlotRenderingInfo info) Creates a new state instance.

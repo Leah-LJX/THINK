@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.pdmodel.common.function.PDFunctionTypeIdentity
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDFunctionTypeIdentity extends PDFunction The identity function.
+Author: Tilman Hausherr
+[Constructor Summary]
+PDFunctionTypeIdentity(COSBase function)	
+[Method Summary]
+float[] eval(float[] input)	Evaluates the function at the given input.
+int getFunctionType()	Returns the function type.
+protected COSArray getRangeValues()	Returns all ranges for the output values as COSArray .
+String toString()	
+[Methods inherited from class org.apache.pdfbox.pdmodel.common.function.PDFunction]
+clipToRange, clipToRange, create, getCOSObject, getDomainForInput, getNumberOfInputParameters, getNumberOfOutputParameters, getPDStream, getRangeForOutput, interpolate, setDomainValues, setRangeValues
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

@@ -1,0 +1,26 @@
+[API Name] org.apache.pdfbox.pdmodel.encryption.StandardSecurityHandler
+[Type] Class
+[Info]
+public final class StandardSecurityHandler extends SecurityHandler<StandardProtectionPolicy> The standard security handler. This security handler protects document with password.
+Author: Ben Litchfield, Benoit Guillon, Manuel Kasper See Also: to see how to protect document with this security handler.
+[Constructor Summary]
+StandardSecurityHandler()	Constructor.
+StandardSecurityHandler(StandardProtectionPolicy standardProtectionPolicy)	Constructor used for encryption.
+[Field Summary]
+static String FILTER	Type of security handler.
+static Class<?> PROTECTION_POLICY_CLASS	Protection policy class for this handler.
+[Method Summary]
+byte[] computeEncryptedKey(byte[] password, byte[] o, byte[] u, byte[] oe, byte[] ue, int permissions, byte[] id, int encRevision, int keyLengthInBytes, boolean encryptMetadata, boolean isOwnerPassword)	Compute the encryption key.
+byte[] computeOwnerPassword(byte[] ownerPassword, byte[] userPassword, int encRevision, int length)	Compute the owner entry in the encryption dictionary.
+byte[] computeUserPassword(byte[] password, byte[] owner, int permissions, byte[] id, int encRevision, int keyLengthInBytes, boolean encryptMetadata)	This will compute the user password hash.
+byte[] getUserPassword(byte[] ownerPassword, byte[] owner, int encRevision, int length)	Get the user password based on the owner password.
+boolean isOwnerPassword(byte[] ownerPassword, byte[] user, byte[] owner, int permissions, byte[] id, int encRevision, int keyLengthInBytes, boolean encryptMetadata)	Check for owner password.
+boolean isOwnerPassword(String password, byte[] user, byte[] owner, int permissions, byte[] id, int encRevision, int keyLengthInBytes, boolean encryptMetadata)	Check for owner password.
+boolean isUserPassword(byte[] password, byte[] user, byte[] owner, int permissions, byte[] id, int encRevision, int keyLengthInBytes, boolean encryptMetadata)	Check if a plaintext password is the user password.
+boolean isUserPassword(String password, byte[] user, byte[] owner, int permissions, byte[] id, int encRevision, int keyLengthInBytes, boolean encryptMetadata)	Check if a plaintext password is the user password.
+void prepareDocumentForEncryption(PDDocument document)	Prepare document for encryption.
+void prepareForDecryption(PDEncryption encryption, COSArray documentIDArray, DecryptionMaterial decryptionMaterial)	Prepares everything to decrypt the document.
+[Methods inherited from class org.apache.pdfbox.pdmodel.encryption.SecurityHandler]
+computeVersionNumber, decrypt, decryptStream, encryptDataRC4, encryptDataRC4, encryptStream, encryptString, getCurrentAccessPermission, getEncryptionKey, getKeyLength, getProtectionPolicy, hasProtectionPolicy, isAES, isDecryptMetadata, setAES, setCurrentAccessPermission, setCustomSecureRandom, setDecryptMetadata, setEncryptionKey, setKeyLength, setProtectionPolicy, setStreamFilterName, setStringFilterName
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

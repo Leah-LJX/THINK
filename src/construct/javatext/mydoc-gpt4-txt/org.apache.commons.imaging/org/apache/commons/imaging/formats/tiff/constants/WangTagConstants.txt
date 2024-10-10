@@ -1,0 +1,9 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.constants.WangTagConstants
+[Type] Class
+[Info]
+public final class WangTagConstants extends Object Wang/Eastman Software/Kodac/eiStream/Imaging for Windows tags,  undocumented and in need of more work.
+[Field Summary]
+static List<TagInfo> ALL_WANG_TAGS	
+static TagInfoBytes EXIF_TAG_WANG_ANNOTATION	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

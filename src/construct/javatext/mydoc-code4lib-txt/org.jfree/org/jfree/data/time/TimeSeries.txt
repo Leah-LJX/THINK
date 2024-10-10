@@ -1,0 +1,58 @@
+[Class] org.jfree.data.time.TimeSeries
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+TimeSeries(Comparable name)	Creates a new (empty) time series.
+TimeSeries(Comparable name, String domain, String range)	Creates a new time series that contains no data.
+[Method Summary]
+void add(RegularTimePeriod period, double value)	Adds a new data item to the series and sends a SeriesChangeEvent to all registered listeners.
+void add(RegularTimePeriod period, double value, boolean notify)	Adds a new data item to the series and sends a SeriesChangeEvent to all registered listeners.
+void add(RegularTimePeriod period, Number value)	Adds a new data item to the series and sends a SeriesChangeEvent to all registered listeners.
+void add(RegularTimePeriod period, Number value, boolean notify)	Adds a new data item to the series and sends a SeriesChangeEvent to all registered listeners.
+void add(TimeSeriesDataItem item)	Adds a data item to the series and sends a SeriesChangeEvent to all registered listeners.
+void add(TimeSeriesDataItem item, boolean notify)	Adds a data item to the series and sends a SeriesChangeEvent to all registered listeners.
+TimeSeries addAndOrUpdate(TimeSeries series)	Adds or updates data from one series to another.
+TimeSeriesDataItem addOrUpdate(RegularTimePeriod period, double value)	Adds or updates an item in the times series and sends a SeriesChangeEvent to all registered listeners.
+TimeSeriesDataItem addOrUpdate(RegularTimePeriod period, Number value)	Adds or updates an item in the times series and sends a SeriesChangeEvent to all registered listeners.
+TimeSeriesDataItem addOrUpdate(TimeSeriesDataItem item)	Adds or updates an item in the times series and sends a SeriesChangeEvent to all registered listeners.
+void clear()	Removes all data items from the series and sends a SeriesChangeEvent to all registered listeners.
+Object clone()	Returns a clone of the time series.
+TimeSeries createCopy(int start, int end)	Creates a new timeseries by copying a subset of the data in this time series.
+TimeSeries createCopy(RegularTimePeriod start, RegularTimePeriod end)	Creates a new timeseries by copying a subset of the data in this time series.
+void delete(int start, int end)	Deletes data from start until end index (end inclusive).
+void delete(int start, int end, boolean notify)	Deletes data from start until end index (end inclusive).
+void delete(RegularTimePeriod period)	Deletes the data item for the given time period and sends a SeriesChangeEvent to all registered listeners.
+boolean equals(Object obj)	Tests the series for equality with an arbitrary object.
+Range findValueRange()	Returns the range of y-values in the time series.
+Range findValueRange(Range xRange, TimeZone timeZone)	Returns the range of y-values in the time series that fall within the specified range of x-values.
+Range findValueRange(Range xRange, TimePeriodAnchor xAnchor, Calendar calendar)	Finds the range of y-values that fall within the specified range of x-values (where the x-values are interpreted as milliseconds since the epoch and converted to time periods using the specified calendar).
+Range findValueRange(Range xRange, TimePeriodAnchor xAnchor, TimeZone zone)	Finds the range of y-values that fall within the specified range of x-values (where the x-values are interpreted as milliseconds since the epoch and converted to time periods using the specified timezone).
+TimeSeriesDataItem getDataItem(int index)	Returns a data item from the dataset.
+TimeSeriesDataItem getDataItem(RegularTimePeriod period)	Returns the data item for a specific period.
+String getDomainDescription()	Returns the domain description.
+int getIndex(RegularTimePeriod period)	Returns the index for the item (if any) that corresponds to a time period.
+int getItemCount()	Returns the number of items in the series.
+List getItems()	Returns the list of data items for the series (the list contains TimeSeriesDataItem objects and is unmodifiable).
+long getMaximumItemAge()	Returns the maximum item age (in time periods) for the series.
+int getMaximumItemCount()	Returns the maximum number of items that will be retained in the series.
+double getMaxY()	Returns the largest y-value in the series, ignoring any null and Double.NaN values.
+double getMinY()	Returns the smallest y-value in the series, ignoring any null and Double.NaN values.
+RegularTimePeriod getNextTimePeriod()	Returns a time period that would be the next in sequence on the end of the time series.
+String getRangeDescription()	Returns the range description.
+RegularTimePeriod getTimePeriod(int index)	Returns the time period at the specified index.
+Class getTimePeriodClass()	Returns the time period class for this series.
+Collection getTimePeriods()	Returns a collection of all the time periods in the time series.
+Collection getTimePeriodsUniqueToOtherSeries(TimeSeries series)	Returns a collection of time periods in the specified series, but not in this series, and therefore unique to the specified series.
+Number getValue(int index)	Returns the value at the specified index.
+Number getValue(RegularTimePeriod period)	Returns the value for a time period.
+int hashCode()	Returns a hash code value for the object.
+void removeAgedItems(boolean notify)	Age items in the series.
+void removeAgedItems(long latest, boolean notify)	Age items in the series.
+void setDomainDescription(String description)	Sets the domain description and sends a PropertyChangeEvent (with the property name Domain) to all registered property change listeners.
+void setMaximumItemAge(long periods)	Sets the number of time units in the 'history' for the series.
+void setMaximumItemCount(int maximum)	Sets the maximum number of items that will be retained in the series.
+void setRangeDescription(String description)	Sets the range description and sends a PropertyChangeEvent (with the property name Range) to all registered listeners.
+void update(int index, Number value)	Updates (changes) the value of a data item.
+void update(RegularTimePeriod period, double value)	Updates (changes) the value for a time period.
+void update(RegularTimePeriod period, Number value)	Updates (changes) the value for a time period.

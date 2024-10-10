@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.doccat.BagOfWordsFeatureGenerator
+[Type] Class
+[Info]
+All Implemented Interfaces: FeatureGenerator
+public class BagOfWordsFeatureGenerator extends Object implements FeatureGenerator Generates a feature for each word in a document.
+[Constructor Summary]
+BagOfWordsFeatureGenerator()	Instantiates a default BagOfWordsFeatureGenerator instance.
+[Method Summary]
+Collection<String> extractFeatures(String[] text, Map<String,Object> extraInformation)	Extracts features from given text fragments.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

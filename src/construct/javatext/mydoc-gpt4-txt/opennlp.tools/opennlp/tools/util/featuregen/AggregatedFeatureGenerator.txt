@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.util.featuregen.AggregatedFeatureGenerator
+[Type] Class
+[Info]
+All Implemented Interfaces: AdaptiveFeatureGenerator
+public class AggregatedFeatureGenerator extends Object implements AdaptiveFeatureGenerator The AggregatedFeatureGenerator aggregates a set of  AdaptiveFeatureGenerators and calls them to generate the features.
+[Constructor Summary]
+AggregatedFeatureGenerator(Collection<AdaptiveFeatureGenerator> generators)	
+AggregatedFeatureGenerator(AdaptiveFeatureGenerator... generators)	Initializes the current instance.
+[Method Summary]
+void clearAdaptiveData()	Calls the AdaptiveFeatureGenerator.clearAdaptiveData() method on all aggregated AdaptiveFeatureGenerators.
+void createFeatures(List<String> features, String[] tokens, int index, String[] previousOutcomes)	Calls the AdaptiveFeatureGenerator.createFeatures(List, String[], int, String[]) method on all aggregated AdaptiveFeatureGenerators.
+Collection<AdaptiveFeatureGenerator> getGenerators()	Retrieves a Collections of all aggregated AdaptiveFeatureGenerators.
+void updateAdaptiveData(String[] tokens, String[] outcomes)	Calls the AdaptiveFeatureGenerator.updateAdaptiveData(String[], String[]) method on all aggregated AdaptiveFeatureGenerators.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

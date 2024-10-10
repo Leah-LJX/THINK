@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.xy.XYLine3DRenderer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, Effect3D, AnnotationChangeListener, LegendItemSource, XYItemRenderer, org.jfree.util.PublicCloneable
+[Constructor Summary]
+XYLine3DRenderer() Creates a new renderer.
+[Method Summary]
+protected void drawFirstPassShape(Graphics2D g2, int pass, int series, int item, Shape shape) Overrides the method in the subclass to draw a shadow in the first pass.

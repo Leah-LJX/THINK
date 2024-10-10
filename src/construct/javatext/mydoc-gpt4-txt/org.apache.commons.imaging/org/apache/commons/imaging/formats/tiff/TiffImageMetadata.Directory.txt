@@ -1,0 +1,25 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.TiffImageMetadata.Directory
+[Type] Class
+[Info]
+All Implemented Interfaces: ImageMetadata, ImageMetadata.ImageMetadataItem
+Enclosing class: TiffImageMetadata
+public static class TiffImageMetadata.Directory extends GenericImageMetadata implements ImageMetadata.ImageMetadataItem
+[Constructor Summary]
+Directory​(ByteOrder byteOrder, TiffDirectory directory)	
+[Field Summary]
+int type	
+[Method Summary]
+void add​(TiffField entry)	
+TiffField findField​(TagInfo tagInfo)	
+List<TiffField> getAllFields()	
+JpegImageData getJpegImageData()	
+TiffOutputDirectory getOutputDirectory​(ByteOrder byteOrder)	
+BufferedImage getThumbnail()	
+TiffImageData getTiffImageData()	
+String toString​(String prefix)	
+[Methods inherited from class org.apache.commons.imaging.common.GenericImageMetadata]
+add, add, getItems, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait
+[Methods inherited from interface org.apache.commons.imaging.common.ImageMetadata.ImageMetadataItem]
+toString

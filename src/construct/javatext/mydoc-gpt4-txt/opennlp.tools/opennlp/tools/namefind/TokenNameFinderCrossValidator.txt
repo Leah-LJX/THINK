@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.namefind.TokenNameFinderCrossValidator
+[Type] Class
+[Info]
+public class TokenNameFinderCrossValidator extends Object Cross validator for TokenNameFinder.
+[Constructor Summary]
+TokenNameFinderCrossValidator(String languageCode, String type, TrainingParameters trainParams, byte[] featureGeneratorBytes, Map<String,Object> resources, TokenNameFinderEvaluationMonitor... listeners)	Initializes a TokenNameFinderCrossValidator with the given parameters.
+TokenNameFinderCrossValidator(String languageCode, String type, TrainingParameters params, byte[] featureGeneratorBytes, Map<String,Object> resources, SequenceCodec<String> codec, TokenNameFinderEvaluationMonitor... listeners)	Initializes a TokenNameFinderCrossValidator with the given parameters.
+TokenNameFinderCrossValidator(String languageCode, String type, TrainingParameters params, TokenNameFinderFactory factory, TokenNameFinderEvaluationMonitor... listeners)	Initializes a TokenNameFinderCrossValidator with the given parameters.
+[Method Summary]
+void evaluate(ObjectStream<NameSample> samples, int nFolds)	Starts the evaluation.
+FMeasure getFMeasure()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

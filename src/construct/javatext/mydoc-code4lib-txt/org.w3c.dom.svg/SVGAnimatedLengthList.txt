@@ -1,0 +1,9 @@
+[Class] org.w3c.dom.svg.SVGAnimatedLengthList
+[Flag] Interface
+[Info]
+public interface SVGAnimatedLengthList
+[Constructor Summary]
+
+[Method Summary]
+SVGLengthList getAnimVal()	 
+ SVGLengthList getBaseVal()

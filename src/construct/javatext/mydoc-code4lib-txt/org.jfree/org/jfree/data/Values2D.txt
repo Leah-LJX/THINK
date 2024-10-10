@@ -1,0 +1,11 @@
+[Class] org.jfree.data.Values2D
+[Flag] Interface
+[Info]
+All Known Subinterfaces: BoxAndWhiskerCategoryDataset, CategoryDataset, GanttCategoryDataset, IntervalCategoryDataset, KeyedValues2D, KeyedValues2DDataset, MultiValueCategoryDataset, StatisticalCategoryDataset
+All Known Implementing Classes: DefaultBoxAndWhiskerCategoryDataset, DefaultCategoryDataset, DefaultIntervalCategoryDataset, DefaultKeyedValues2D, DefaultKeyedValues2DDataset, DefaultMultiValueCategoryDataset, DefaultStatisticalCategoryDataset, JDBCCategoryDataset, SlidingCategoryDataset, SlidingGanttCategoryDataset, TaskSeriesCollection
+[Constructor Summary]
+
+[Method Summary]
+int getColumnCount()	Returns the number of columns in the table.
+int getRowCount()	Returns the number of rows in the table.
+Number getValue(int row, int column)	Returns a value from the table.

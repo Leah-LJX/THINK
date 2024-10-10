@@ -1,0 +1,31 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.TiffImageParser
+[Type] Class
+[Info]
+All Implemented Interfaces: XmpEmbeddable
+public class TiffImageParser extends ImageParser<TiffImagingParameters> implements XmpEmbeddable
+[Constructor Summary]
+TiffImageParser()	
+[Method Summary]
+List<byte[]> collectRawImageData​(ByteSource byteSource, TiffImagingParameters params)	
+boolean dumpImageFile​(PrintWriter pw, ByteSource byteSource)	Write the ImageInfo and format-specific information for the image content of the specified byte source to a PrintWriter
+protected String[] getAcceptedExtensions()	Get an array of all accepted extensions
+protected ImageFormat[] getAcceptedTypes()	Get an array of ImageFormat objects describing all accepted types
+List<BufferedImage> getAllBufferedImages​(ByteSource byteSource)	Gets all images specified by the byte source (some formats may include multiple images within a single data source).
+BufferedImage getBufferedImage​(ByteSource byteSource, TiffImagingParameters params)	Gets a buffered image specified by the byte source.
+protected BufferedImage getBufferedImage​(TiffDirectory directory, ByteOrder byteOrder, TiffImagingParameters params)	
+String getDefaultExtension()	Get the default extension for the format specified by an implementation of ImageParser.
+TiffImagingParameters getDefaultParameters()	Get a default parameters instance for this parser.
+FormatCompliance getFormatCompliance​(ByteSource byteSource)	Determines the format compliance of the content of the supplied byte source based on rules provided by a specific implementation.
+byte[] getICCProfileBytes​(ByteSource byteSource, TiffImagingParameters params)	Get an array of bytes describing the International Color Consortium (ICC) specification for the color space of the image contained in the input byteSource.
+ImageInfo getImageInfo​(ByteSource byteSource, TiffImagingParameters params)	Get image information from the specified ByteSource.
+Dimension getImageSize​(ByteSource byteSource, TiffImagingParameters params)	Get the size of the image described by the specified ByteSource.
+ImageMetadata getMetadata​(ByteSource byteSource, TiffImagingParameters params)	Get image metadata from the specified byte source.
+String getName()	Get a descriptive name for the implementation of an ImageParser.
+String getXmpXml​(ByteSource byteSource, XmpImagingParameters params)	Get a string containing XML-formatted text conforming to the Extensible Metadata Platform (EXP) standard for representing information about image content.
+void writeImage​(BufferedImage src, OutputStream os, TiffImagingParameters params)	Writes the content of a BufferedImage to the specified output stream.
+[Methods inherited from class org.apache.commons.imaging.ImageParser]
+canAcceptExtension, canAcceptExtension, canAcceptType, dumpImageFile, dumpImageFile, dumpImageFile, getAllBufferedImages, getAllBufferedImages, getAllImageParsers, getBufferedImage, getBufferedImage, getBufferedImageFactory, getFormatCompliance, getFormatCompliance, getICCProfileBytes, getICCProfileBytes, getICCProfileBytes, getICCProfileBytes, getImageInfo, getImageInfo, getImageInfo, getImageSize, getImageSize, getImageSize, getImageSize, getMetadata, getMetadata, getMetadata, getMetadata, getMetadata
+[Methods inherited from class org.apache.commons.imaging.common.BinaryFileParser]
+debugNumber, debugNumber, getByteOrder, setByteOrder
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

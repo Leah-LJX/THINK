@@ -1,0 +1,9 @@
+[API Name] opennlp.tools.ml.model.DataReader
+[Type] Interface
+[Info]
+All Known Implementing Classes: BinaryFileDataReader, ObjectDataReader, PlainTextFileDataReader
+public interface DataReader Describes generic ways to read data from a DataInputStream.
+[Method Summary]
+double readDouble()	
+int readInt()	
+String readUTF()	

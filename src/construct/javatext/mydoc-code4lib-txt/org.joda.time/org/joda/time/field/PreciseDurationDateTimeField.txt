@@ -1,0 +1,15 @@
+[Class] org.joda.time.field.PreciseDurationDateTimeField
+[Flag] Class
+[Info]
+Direct Known Subclasses: PreciseDateTimeField
+[Constructor Summary]
+PreciseDurationDateTimeField(DateTimeFieldType type,	DurationField unit)	Constructor.
+[Method Summary]
+DurationField getDurationField() Returns the duration per unit value of this field.
+protected int getMaximumValueForSet(long instant, int value) Called by the set method to get the maximum allowed value.
+int getMinimumValue() Get the minimum value for the field.
+long getUnitMillis() boolean isLenient() Returns false by default.
+long remainder(long instant) This method assumes that this field is properly rounded on 1970-01-01T00:00:00.
+long roundCeiling(long instant) This method assumes that this field is properly rounded on 1970-01-01T00:00:00.
+long roundFloor(long instant) This method assumes that this field is properly rounded on 1970-01-01T00:00:00.
+long set(long instant, int value) Set the specified amount of units to the specified time instant.

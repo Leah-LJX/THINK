@@ -1,0 +1,21 @@
+[Class] org.joda.time.ReadableInstant
+[Flag] Interface
+[Info]
+All Superinterfaces: Comparable<ReadableInstant>
+All Known Subinterfaces: ReadableDateTime, ReadWritableDateTime, ReadWritableInstant
+All Known Implementing Classes: AbstractDateTime, AbstractInstant, BaseDateTime, DateMidnight, DateTime, Instant, MutableDateTime
+[Constructor Summary]
+
+[Method Summary]
+boolean equals(Object readableInstant) Compares this object with the specified object for equality based on the millisecond instant and the Chronology.
+int get(DateTimeFieldType type) Get the value of one of the fields of a datetime.
+Chronology getChronology() Gets the chronology of the instant.
+long getMillis() Get the value as the number of milliseconds since the epoch, 1970-01-01T00:00:00Z.
+DateTimeZone getZone() Gets the time zone of the instant from the chronology.
+int hashCode() Gets a hash code for the instant that is compatible with the equals method.
+boolean isAfter(ReadableInstant instant) Is this instant after the instant passed in comparing solely by millisecond.
+boolean isBefore(ReadableInstant instant) Is this instant before the instant passed in comparing solely by millisecond.
+boolean isEqual(ReadableInstant instant) Is this instant equal to the instant passed in comparing solely by millisecond.
+boolean isSupported(DateTimeFieldType field) Checks whether the field type specified is supported by this implementation.
+Instant toInstant() Get the value as a simple immutable Instant object.
+String toString() Get the value as a String in a recognisable ISO8601 format.

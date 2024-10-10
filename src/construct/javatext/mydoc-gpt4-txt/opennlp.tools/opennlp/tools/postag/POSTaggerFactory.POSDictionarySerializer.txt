@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.postag.POSTaggerFactory.POSDictionarySerializer
+[Type] Class
+[Info]
+All Implemented Interfaces: ArtifactSerializer<POSDictionary>
+Enclosing class: POSTaggerFactory
+public static class POSTaggerFactory.POSDictionarySerializer extends Object implements ArtifactSerializer<POSDictionary>
+[Constructor Summary]
+POSDictionarySerializer()	
+[Method Summary]
+POSDictionary create(InputStream in)	Creates an artifact from the provided InputStream.
+void serialize(POSDictionary artifact, OutputStream out)	Serializes an artifact to the provided OutputStream.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

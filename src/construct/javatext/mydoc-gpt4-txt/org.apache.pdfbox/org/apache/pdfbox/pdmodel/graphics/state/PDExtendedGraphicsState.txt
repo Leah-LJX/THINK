@@ -1,0 +1,55 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.state.PDExtendedGraphicsState
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDExtendedGraphicsState extends Object implements COSObjectable An extended graphics state dictionary.
+Author: Ben Litchfield
+[Constructor Summary]
+PDExtendedGraphicsState()	Default constructor, creates blank graphics state.
+PDExtendedGraphicsState(COSDictionary dictionary)	Create a graphics state from an existing dictionary.
+[Method Summary]
+void copyIntoGraphicsState(PDGraphicsState gs)	This will implement the gs operator.
+boolean getAlphaSourceFlag()	This will get the alpha source flag (“alpha is shape”), that specifies whether the current soft mask and alpha constant shall be interpreted as shape values (true) or opacity values (false).
+boolean getAutomaticStrokeAdjustment()	This will get the automatic stroke adjustment flag.
+BlendMode getBlendMode()	Returns the blending mode stored in the COS dictionary
+COSDictionary getCOSObject()	This will get the underlying dictionary that this class acts on.
+Float getFlatnessTolerance()	This will get the flatness tolerance.
+PDFontSetting getFontSetting()	This will get the font setting of the graphics state.
+int getLineCapStyle()	This will get the line cap style.
+PDLineDashPattern getLineDashPattern()	This will get the dash pattern.
+int getLineJoinStyle()	This will get the line join style.
+Float getLineWidth()	This will get the line width.
+Float getMiterLimit()	This will get the miter limit.
+Float getNonStrokingAlphaConstant()	This will get the non stroking alpha constant.
+boolean getNonStrokingOverprintControl()	This will get the overprint control for non stroking operations.
+Integer getOverprintMode()	This will get the overprint control mode.
+RenderingIntent getRenderingIntent()	This will get the rendering intent.
+Float getSmoothnessTolerance()	This will get the smothness tolerance.
+PDSoftMask getSoftMask()	Returns the soft mask stored in the COS dictionary
+Float getStrokingAlphaConstant()	This will get the stroking alpha constant.
+boolean getStrokingOverprintControl()	This will get the overprint control.
+boolean getTextKnockoutFlag()	/** This will get the text knockout flag.
+COSBase getTransfer()	This will get the transfer function of the /TR dictionary.
+COSBase getTransfer2()	This will get the transfer function of the /TR2 dictionary.
+void setAlphaSourceFlag(boolean alpha)	This will set the alpha source flag (“alpha is shape”), that specifies whether the current soft mask and alpha constant shall be interpreted as shape values (true) or opacity values (false).
+void setAutomaticStrokeAdjustment(boolean sa)	This will set the automatic stroke adjustment flag.
+void setBlendMode(BlendMode bm)	Set the blending mode.
+void setFlatnessTolerance(Float flatness)	This will set the flatness tolerance.
+void setFontSetting(PDFontSetting fs)	This will set the font setting for this graphics state.
+void setLineCapStyle(int style)	This will set the line cap style for the graphics state.
+void setLineDashPattern(PDLineDashPattern dashPattern)	This will set the dash pattern for the graphics state.
+void setLineJoinStyle(int style)	This will set the line join style.
+void setLineWidth(Float width)	This will set the line width.
+void setMiterLimit(Float miterLimit)	This will set the miter limit for the graphics state.
+void setNonStrokingAlphaConstant(Float alpha)	This will set the non stroking alpha constant.
+void setNonStrokingOverprintControl(boolean op)	This will set the overprint control(OP).
+void setOverprintMode(Integer overprintMode)	This will set the overprint mode(OPM).
+void setRenderingIntent(String ri)	This will set the rendering intent for the graphics state.
+void setSmoothnessTolerance(Float smoothness)	This will set the smoothness tolerance.
+void setStrokingAlphaConstant(Float alpha)	This will set the stroking alpha constant.
+void setStrokingOverprintControl(boolean op)	This will set the overprint control(OP).
+void setTextKnockoutFlag(boolean tk)	This will set the text knockout flag.
+void setTransfer(COSBase transfer)	This will set the transfer function of the /TR dictionary.
+void setTransfer2(COSBase transfer2)	This will set the transfer function of the /TR2 dictionary.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

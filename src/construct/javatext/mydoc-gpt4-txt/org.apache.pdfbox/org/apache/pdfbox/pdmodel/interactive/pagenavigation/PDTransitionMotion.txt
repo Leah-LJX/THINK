@@ -1,0 +1,13 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDTransitionMotion
+[Type] Enum
+[Info]
+All Implemented Interfaces: Serializable, Comparable<PDTransitionMotion>
+public enum PDTransitionMotion extends Enum<PDTransitionMotion> The direction of motion for the specified transition effect. Only for PDTransitionStyle.Split,  PDTransitionStyle.Blinds and PDTransitionStyle.Fly.
+Author: Andrea Vacondio
+[Method Summary]
+static PDTransitionMotion valueOf(String name)	Returns the enum constant of this type with the specified name.
+static PDTransitionMotion[] values()	Returns an array containing the constants of this enum type, in the order they are declared.
+[Methods inherited from class java.lang.Enum]
+clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, toString, valueOf
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

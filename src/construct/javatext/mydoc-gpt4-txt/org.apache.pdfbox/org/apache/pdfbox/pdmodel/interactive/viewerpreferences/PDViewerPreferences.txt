@@ -1,0 +1,46 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.viewerpreferences.PDViewerPreferences
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDViewerPreferences extends Object implements COSObjectable This is the document viewing preferences.
+Author: Ben Litchfield
+[Constructor Summary]
+PDViewerPreferences(COSDictionary dic)	Constructor that is used for a preexisting dictionary.
+[Nested Class Summary]
+static class PDViewerPreferences.BOUNDARY	Enumeration containing all valid values for boundaries.
+static class PDViewerPreferences.DUPLEX	Enumeration containing all valid values for duplex.
+static class PDViewerPreferences.NON_FULL_SCREEN_PAGE_MODE	Enumeration containing all valid values for NonFullScreenPageMode.
+static class PDViewerPreferences.PRINT_SCALING	Enumeration containing all valid values for printscaling.
+static class PDViewerPreferences.READING_DIRECTION	Enumeration containing all valid values for ReadingDirection.
+[Method Summary]
+boolean centerWindow()	Get the center window preference.
+boolean displayDocTitle()	Get the display doc title preference.
+boolean fitWindow()	Get the fit window preference.
+COSDictionary getCOSObject()	This will get the underlying dictionary that this object wraps.
+String getDuplex()	Get the Duplex preference.
+String getNonFullScreenPageMode()	Get the non full screen page mode preference.
+String getPrintArea()	Get the PrintArea preference.
+String getPrintClip()	Get the PrintClip preference.
+String getPrintScaling()	Get the PrintScaling preference.
+String getReadingDirection()	Get the reading direction preference.
+String getViewArea()	Get the ViewArea preference.
+String getViewClip()	Get the ViewClip preference.
+boolean hideMenubar()	Get the menubar preference.
+boolean hideToolbar()	Get the toolbar preference.
+boolean hideWindowUI()	Get the window UI preference.
+void setCenterWindow(boolean value)	Set the center window preference.
+void setDisplayDocTitle(boolean value)	Set the display doc title preference.
+void setDuplex(PDViewerPreferences.DUPLEX value)	Set the Duplex preference.
+void setFitWindow(boolean value)	Set the fit window preference.
+void setHideMenubar(boolean value)	Set the menubar preference.
+void setHideToolbar(boolean value)	Set the toolbar preference.
+void setHideWindowUI(boolean value)	Set the window UI preference.
+void setNonFullScreenPageMode(PDViewerPreferences.NON_FULL_SCREEN_PAGE_MODE value)	Set the non full screen page mode preference.
+void setPrintArea(PDViewerPreferences.BOUNDARY value)	Set the PrintArea preference.
+void setPrintClip(PDViewerPreferences.BOUNDARY value)	Set the PrintClip preference.
+void setPrintScaling(PDViewerPreferences.PRINT_SCALING value)	Set the PrintScaling preference.
+void setReadingDirection(PDViewerPreferences.READING_DIRECTION value)	Set the reading direction preference.
+void setViewArea(PDViewerPreferences.BOUNDARY value)	Set the ViewArea preference.
+void setViewClip(PDViewerPreferences.BOUNDARY value)	Set the ViewClip preference.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

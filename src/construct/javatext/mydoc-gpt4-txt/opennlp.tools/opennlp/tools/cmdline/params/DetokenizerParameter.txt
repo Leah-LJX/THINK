@@ -1,0 +1,6 @@
+[API Name] opennlp.tools.cmdline.params.DetokenizerParameter
+[Type] Interface
+[Info]
+public interface DetokenizerParameter
+[Method Summary]
+String getDetokenizer()	

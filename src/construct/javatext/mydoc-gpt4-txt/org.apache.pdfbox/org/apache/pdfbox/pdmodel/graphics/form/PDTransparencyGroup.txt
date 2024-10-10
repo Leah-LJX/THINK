@@ -1,0 +1,16 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.form.PDTransparencyGroup
+[Type] Class
+[Info]
+All Implemented Interfaces: PDContentStream, COSObjectable
+public class PDTransparencyGroup extends PDFormXObject A transparency group.
+Author: John Hewson
+[Constructor Summary]
+PDTransparencyGroup(COSStream stream, ResourceCache cache)	Creates a Transparency Group for reading.
+PDTransparencyGroup(PDDocument document)	Creates a Transparency Group for writing, in the given document.
+PDTransparencyGroup(PDStream stream)	Creates a Transparency Group for reading.
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.form.PDFormXObject]
+getBBox, getContents, getContentsForRandomAccess, getContentStream, getFormType, getGroup, getMatrix, getOptionalContent, getResources, getStructParents, setBBox, setFormType, setMatrix, setOptionalContent, setResources, setStructParents
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.PDXObject]
+createXObject, getCOSObject, getStream
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

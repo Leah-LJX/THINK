@@ -1,0 +1,8 @@
+[Class] org.w3c.dom.Comment
+[Flag] Interface
+[Info]
+All Superinterfaces:
+CharacterData, Node
+[Constructor Summary]
+
+[Method Summary]

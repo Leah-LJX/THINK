@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.util.eval.Evaluator<T>
+[Type] Class
+[Info]
+Direct Known Subclasses: ChunkerEvaluator, DetokenizerEvaluator, DocumentCategorizerEvaluator, LanguageDetectorEvaluator, LemmatizerEvaluator, ParserEvaluator, POSEvaluator, SentenceDetectorEvaluator, TokenizerEvaluator, TokenNameFinderEvaluator
+public abstract class Evaluator<T> extends Object An abstract base class for evaluators.  Evaluation results are the arithmetic mean of the  scores calculated for each reference sample.
+[Constructor Summary]
+Evaluator(EvaluationMonitor<T>... aListeners)	
+[Method Summary]
+void evaluate(ObjectStream<T> samples)	Reads all sample objects and evaluates each instance via the evaluateSample(Object) method.
+void evaluateSample(T sample)	Evaluates the given reference object.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

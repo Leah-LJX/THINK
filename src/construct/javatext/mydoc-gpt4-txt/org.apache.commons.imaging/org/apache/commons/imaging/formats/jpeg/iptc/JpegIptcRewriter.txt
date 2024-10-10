@@ -1,0 +1,25 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.iptc.JpegIptcRewriter
+[Type] Class
+[Info]
+public class JpegIptcRewriter extends JpegRewriter Interface for Exif write/update/remove functionality for Jpeg/JFIF images.
+[Constructor Summary]
+JpegIptcRewriter()	
+[Method Summary]
+void removeIPTC​(byte[] src, OutputStream os)	Reads a Jpeg image, removes all IPTC data from the App13 segment but leaves the other data in that segment (if present) unchanged and writes the result to a stream.
+void removeIPTC​(byte[] src, OutputStream os, boolean removeSegment)	Reads a Jpeg image, removes all IPTC data from the App13 segment but leaves the other data in that segment (if present) unchanged (unless removeSegment is true) and writes the result to a stream.
+void removeIPTC​(File src, OutputStream os)	Reads a Jpeg image, removes all IPTC data from the App13 segment but leaves the other data in that segment (if present) unchanged and writes the result to a stream.
+void removeIPTC​(File src, OutputStream os, boolean removeSegment)	Reads a Jpeg image, removes all IPTC data from the App13 segment but leaves the other data in that segment (if present) unchanged (unless removeSegment is true) and writes the result to a stream.
+void removeIPTC​(InputStream src, OutputStream os)	Reads a Jpeg image, removes all IPTC data from the App13 segment but leaves the other data in that segment (if present) unchanged and writes the result to a stream.
+void removeIPTC​(InputStream src, OutputStream os, boolean removeSegment)	Reads a Jpeg image, removes all IPTC data from the App13 segment but leaves the other data in that segment (if present) unchanged (unless removeSegment is true) and writes the result to a stream.
+void removeIPTC​(ByteSource byteSource, OutputStream os)	Reads a Jpeg image, removes all IPTC data from the App13 segment but leaves the other data in that segment (if present) unchanged and writes the result to a stream.
+void removeIPTC​(ByteSource byteSource, OutputStream os, boolean removeSegment)	Reads a Jpeg image, removes all IPTC data from the App13 segment but leaves the other data in that segment (if present) unchanged (unless removeSegment is true) and writes the result to a stream.
+void writeIPTC​(byte[] src, OutputStream os, PhotoshopApp13Data newData)	Reads a Jpeg image, replaces the IPTC data in the App13 segment but leaves the other data in that segment (if present) unchanged and writes the result to a stream.
+void writeIPTC​(File src, OutputStream os, PhotoshopApp13Data newData)	Reads a Jpeg image, replaces the IPTC data in the App13 segment but leaves the other data in that segment (if present) unchanged and writes the result to a stream.
+void writeIPTC​(InputStream src, OutputStream os, PhotoshopApp13Data newData)	Reads a Jpeg image, replaces the IPTC data in the App13 segment but leaves the other data in that segment (if present) unchanged and writes the result to a stream.
+void writeIPTC​(ByteSource byteSource, OutputStream os, PhotoshopApp13Data newData)	Reads a Jpeg image, replaces the IPTC data in the App13 segment but leaves the other data in that segment (if present) unchanged and writes the result to a stream.
+[Methods inherited from class org.apache.commons.imaging.formats.jpeg.xmp.JpegRewriter]
+analyzeJFIF, filterSegments, filterSegments, findPhotoshopApp13Segments, insertAfterLastAppSegments, insertBeforeFirstAppSegments, removeExifSegments, removePhotoshopApp13Segments, removeXmpSegments, writeSegments
+[Methods inherited from class org.apache.commons.imaging.common.BinaryFileParser]
+debugNumber, debugNumber, getByteOrder, setByteOrder
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

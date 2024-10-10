@@ -1,0 +1,8 @@
+[Class] org.w3c.dom.svg.SVGURIReference
+[Flag] Interface
+[Info]
+All Known Subinterfaces: SVGAElement, SVGAltGlyphElement, SVGColorProfileElement, SVGCursorElement, SVGFEImageElement, SVGFilterElement, SVGGlyphRefElement, SVGGradientElement, SVGImageElement, SVGLinearGradientElement, SVGMPathElement, SVGPatternElement, SVGRadialGradientElement, SVGScriptElement, SVGTextPathElement, SVGTRefElement, SVGUseElement
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedString getHref()

@@ -1,0 +1,12 @@
+[Class] org.jfree.data.general.AbstractSeriesDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, Dataset, SeriesChangeListener, SeriesDataset
+Direct Known Subclasses: AbstractXYDataset, DefaultIntervalCategoryDataset, TaskSeriesCollection
+[Constructor Summary]
+protected AbstractSeriesDataset()	Creates a new dataset.
+[Method Summary]
+abstract int getSeriesCount()	Returns the number of series in the dataset.
+abstract Comparable getSeriesKey(int series)	Returns the key for a series.
+int indexOf(Comparable seriesKey)	Returns the index of the named series, or -1.
+void seriesChanged(SeriesChangeEvent event)	Called when a series belonging to the dataset changes.

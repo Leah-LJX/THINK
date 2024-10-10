@@ -1,0 +1,18 @@
+[API Name] opennlp.tools.ml.model.OnePassDataIndexer
+[Type] Class
+[Info]
+All Implemented Interfaces: DataIndexer
+Direct Known Subclasses: OnePassRealValueDataIndexer
+public class OnePassDataIndexer extends AbstractDataIndexer A DataIndexer for maxent model data which handles cutoffs for uncommon  contextual predicates and provides a unique integer index for each of the  predicates.
+See Also:
+DataIndexer AbstractDataIndexer
+[Constructor Summary]
+OnePassDataIndexer()	
+[Method Summary]
+void index(ObjectStream<Event> eventStream)	Performs the data indexing.
+[Fields inherited from class opennlp.tools.ml.model.AbstractDataIndexer]
+CUTOFF_DEFAULT, CUTOFF_PARAM, SORT_DEFAULT, SORT_PARAM
+[Methods inherited from class opennlp.tools.ml.model.AbstractDataIndexer]
+getContexts, getNumEvents, getNumTimesEventsSeen, getOutcomeLabels, getOutcomeList, getPredCounts, getPredLabels, getValues, init
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

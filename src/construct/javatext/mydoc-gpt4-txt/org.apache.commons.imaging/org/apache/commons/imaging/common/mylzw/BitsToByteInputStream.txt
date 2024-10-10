@@ -1,0 +1,15 @@
+[API Name] Package org.apache.commons.imaging.common.mylzw.BitsToByteInputStream
+[Type] Class
+[Info]
+All Implemented Interfaces: Closeable, AutoCloseable
+public class BitsToByteInputStream extends InputStream
+[Constructor Summary]
+BitsToByteInputStream​(MyBitInputStream is, int desiredDepth)	
+[Method Summary]
+int read()	
+int readBits​(int bitCount)	
+int[] readBitsArray​(int sampleBits, int length)	
+[Methods inherited from class java.io.InputStream]
+available, close, mark, markSupported, nullInputStream, read, read, readAllBytes, readNBytes, readNBytes, reset, skip, transferTo
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

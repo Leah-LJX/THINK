@@ -1,0 +1,23 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.color.PDJPXColorSpace
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class PDJPXColorSpace extends PDColorSpace A color space embedded in a JPX file.  This wraps the AWT ColorSpace which is obtained after JAI Image I/O reads a JPX stream.
+Author: John Hewson
+[Constructor Summary]
+PDJPXColorSpace(ColorSpace colorSpace)	Creates a new JPX color space from the given AWT color space.
+[Field Summary]
+PDJPXColorSpace(ColorSpace colorSpace)	Creates a new JPX color space from the given AWT color space.
+[Method Summary]
+COSBase getCOSObject()	Convert this standard java object to a COS object.
+float[] getDefaultDecode(int bitsPerComponent)	Returns the default decode array for this color space.
+PDColor getInitialColor()	Returns the initial color value for this color space.
+String getName()	Returns the name of the color space.
+int getNumberOfComponents()	Returns the number of components in this color space
+BufferedImage toRawImage(WritableRaster raster)	Returns the image in this colorspace or null.
+float[] toRGB(float[] value)	Returns the RGB equivalent of the given color value.
+BufferedImage toRGBImage(WritableRaster raster)	Returns the (A)RGB equivalent of the given raster.
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace]
+create, create, create, toRawImage, toRGBImageAWT
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

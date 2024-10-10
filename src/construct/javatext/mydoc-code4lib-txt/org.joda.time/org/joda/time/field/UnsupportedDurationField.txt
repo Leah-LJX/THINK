@@ -1,0 +1,29 @@
+[Class] org.joda.time.field.UnsupportedDurationField
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<DurationField>
+[Constructor Summary]
+
+[Method Summary]
+long add(long instant, int value) Always throws UnsupportedOperationException
+long add(long instant, long value) Always throws UnsupportedOperationException
+int compareTo(DurationField durationField) Always returns zero, indicating that sort order is not relevant.
+boolean equals(Object obj) Compares this duration field to another.
+int getDifference(long minuendInstant, long subtrahendInstant) Always throws UnsupportedOperationException
+long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) Always throws UnsupportedOperationException
+static UnsupportedDurationField getInstance(DurationFieldType type) Gets an instance of UnsupportedDurationField for a specific named field.
+long getMillis(int value) Always throws UnsupportedOperationException
+long getMillis(int value, long instant) Always throws UnsupportedOperationException
+long getMillis(long value) Always throws UnsupportedOperationException
+long getMillis(long value, long instant) Always throws UnsupportedOperationException
+String getName() Get the name of the field.
+DurationFieldType getType() Get the type of the field.
+long getUnitMillis() Always returns zero.
+int getValue(long duration) Always throws UnsupportedOperationException
+int getValue(long duration, long instant) Always throws UnsupportedOperationException
+long getValueAsLong(long duration) Always throws UnsupportedOperationException
+long getValueAsLong(long duration, long instant) Always throws UnsupportedOperationException
+int hashCode() Gets a suitable hashcode.
+boolean isPrecise() This field is precise.
+boolean isSupported() This field is not supported.
+String toString() Get a suitable debug string.

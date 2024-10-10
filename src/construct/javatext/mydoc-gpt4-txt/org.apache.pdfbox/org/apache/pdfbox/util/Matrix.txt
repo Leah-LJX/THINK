@@ -1,0 +1,46 @@
+[API Name] org.apache.pdfbox.util.Matrix
+[Type] Class
+[Info]
+All Implemented Interfaces: Cloneable
+public final class Matrix extends Object implements Cloneable This class will be used for matrix manipulation.
+Author: Ben Litchfield
+[Constructor Summary]
+Matrix()	Constructor.
+Matrix(AffineTransform at)	Creates a matrix with the same elements as the given AffineTransform.
+Matrix(float a, float b, float c, float d, float e, float f)	Creates a transformation matrix with the given 6 elements.
+[Field Summary]
+static int SIZE	
+[Method Summary]
+Matrix clone()	Clones this object.
+void concatenate(Matrix matrix)	Concatenates (premultiplies) the given matrix to this matrix.
+static Matrix concatenate(Matrix a, Matrix b)	Produces a copy of the first matrix, with the second matrix concatenated.
+AffineTransform createAffineTransform()	Create an affine transform from this matrix's values.
+static Matrix createMatrix(COSBase base)	Convenience method to be used when creating a matrix from unverified data.
+boolean equals(Object obj)	
+static Matrix getRotateInstance(double theta, float tx, float ty)	Convenience method to create a rotated instance.
+static Matrix getScaleInstance(float x, float y)	Convenience method to create a scaled instance.
+float getScaleX()	Returns the x-scaling element of this matrix.
+float getScaleY()	Returns the y-scaling element of this matrix.
+float getScalingFactorX()	Returns the x-scaling factor of this matrix.
+float getScalingFactorY()	Returns the y-scaling factor of this matrix.
+float getShearX()	Returns the x-shear element of this matrix.
+float getShearY()	Returns the y-shear element of this matrix.
+static Matrix getTranslateInstance(float x, float y)	Convenience method to create a translating instance.
+float getTranslateX()	Returns the x-translation element of this matrix.
+float getTranslateY()	Returns the y-translation element of this matrix.
+float getValue(int row, int column)	This will get a matrix value at some point.
+float[][] getValues()	Return a single dimension array of all values in the matrix.
+int hashCode()	
+Matrix multiply(Matrix other)	This method multiplies this Matrix with the specified other Matrix, storing the product in a new instance.
+void rotate(double theta)	Rotates this matrix by the given factors.
+void scale(float sx, float sy)	Scales this matrix by the given factors.
+void setValue(int row, int column, float value)	This will set a value at a position.
+COSArray toCOSArray()	Returns a COS array which represent the geometric relevant components of the matrix.
+String toString()	
+void transform(Point2D point)	Transforms the given point by this matrix.
+Vector transform(Vector vector)	Transforms the given vector by this matrix.
+Point2D.Float transformPoint(float x, float y)	Transforms the given point by this matrix.
+void translate(float tx, float ty)	Translates this matrix by the given amount.
+void translate(Vector vector)	Translates this matrix by the given vector.
+[Methods inherited from class java.lang.Object]
+finalize, getClass, notify, notifyAll, wait, wait, wait

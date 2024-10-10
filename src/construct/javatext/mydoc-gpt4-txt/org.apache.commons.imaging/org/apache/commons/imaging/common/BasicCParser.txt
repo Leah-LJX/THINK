@@ -1,0 +1,14 @@
+[API Name] Package org.apache.commons.imaging.common.BasicCParser
+[Type] Class
+[Info]
+public class BasicCParser extends Object A rudimentary preprocessor and parser for the C programming  language.
+ FIXME replace this by a parser generated via ANTLR (if we really need it?!)
+[Constructor Summary]
+BasicCParser​(ByteArrayInputStream is)	
+[Method Summary]
+String nextToken()	
+static ByteArrayOutputStream preprocess​(InputStream is, StringBuilder firstComment, Map<String,​String> defines)	
+static String[] tokenizeRow​(String row)	
+static void unescapeString​(StringBuilder stringBuilder, String string)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

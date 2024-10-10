@@ -1,0 +1,11 @@
+[API Name] org.apache.pdfbox.util.XMLUtil
+[Type] Class
+[Info]
+public final class XMLUtil extends Object This class with handle some simple XML operations.
+Author: Ben Litchfield
+[Method Summary]
+static String getNodeValue(Element node)	This will get the text value of an element.
+static Document parse(InputStream is)	This will parse an XML stream and create a DOM document.
+static Document parse(InputStream is, boolean nsAware)	This will parse an XML stream and create a DOM document.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

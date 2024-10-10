@@ -1,0 +1,10 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.annotation.layout.PlainTextFormatter
+[Type] Class
+[Info]
+public class PlainTextFormatter extends Object TextFormatter to handle plain text formatting for annotation rectangles.    The text formatter will take a single value or an array of values which  are treated as paragraphs.
+[Nested Class Summary]
+static class PlainTextFormatter.Builder	
+[Method Summary]
+void format()	Format the text block.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

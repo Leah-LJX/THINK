@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.dial.StandardDialRange
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, DialLayer, org.jfree.util.PublicCloneable
+[Constructor Summary]
+StandardDialRange() Creates a new instance of StandardDialRange.
+[Method Summary]
+Object clone() Returns a clone of this instance.

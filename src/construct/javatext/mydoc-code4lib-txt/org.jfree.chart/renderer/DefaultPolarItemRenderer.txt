@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.DefaultPolarItemRenderer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, PolarItemRenderer
+[Constructor Summary]
+DefaultPolarItemRenderer() Creates a new instance of DefaultPolarItemRenderer
+[Method Summary]
+protected void addEntity(EntityCollection entities, Shape area, XYDataset dataset, int series, int item, double entityX, double entityY) Adds an entity to the collection.

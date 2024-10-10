@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.dial.ArcDialFrame
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, DialFrame, DialLayer, org.jfree.util.PublicCloneable
+[Constructor Summary]
+ArcDialFrame() Creates a new instance of ArcDialFrame that spans 180 degrees.
+[Method Summary]
+Object clone() Returns a clone of this instance.

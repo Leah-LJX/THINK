@@ -1,0 +1,11 @@
+[Class] org.w3c.dom.DOMStringList
+[Flag] Interface
+[Info]
+Since:
+DOM Level 3
+[Constructor Summary]
+
+[Method Summary]
+boolean contains(String str) Test if a string is part of this DOMStringList.
+int getLength() The number of DOMStrings in the list.
+String item(int index) Returns the indexth item in the collection.

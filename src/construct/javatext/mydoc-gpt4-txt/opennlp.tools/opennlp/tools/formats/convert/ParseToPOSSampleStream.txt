@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.formats.convert.ParseToPOSSampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<POSSample>
+@Internal public class ParseToPOSSampleStream extends FilterObjectStream<Parse,POSSample> Note:  Do not use this class, internal use only!
+[Constructor Summary]
+ParseToPOSSampleStream(ObjectStream<Parse> samples)	Initializes a ParseToPOSSampleStream.
+[Method Summary]
+POSSample read()	Returns the next ObjectStream object.
+[Methods inherited from class opennlp.tools.util.FilterObjectStream]
+close, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

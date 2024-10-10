@@ -1,0 +1,26 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.annotation.PDAppearanceCharacteristicsDictionary
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDAppearanceCharacteristicsDictionary extends Object implements COSObjectable This class represents an appearance characteristics dictionary.
+[Constructor Summary]
+PDAppearanceCharacteristicsDictionary(COSDictionary dict)	Constructor.
+[Method Summary]
+String getAlternateCaption()	This will retrieve the alternate caption.
+PDFormXObject getAlternateIcon()	This will retrieve the alternate icon.
+PDColor getBackground()	This will retrieve the background color.
+PDColor getBorderColour()	This will retrieve the border color.
+COSDictionary getCOSObject()	returns the dictionary.
+String getNormalCaption()	This will retrieve the normal caption.
+PDFormXObject getNormalIcon()	This will retrieve the normal icon.
+String getRolloverCaption()	This will retrieve the rollover caption.
+PDFormXObject getRolloverIcon()	This will retrieve the rollover icon.
+int getRotation()	This will retrieve the rotation of the annotation widget.
+void setAlternateCaption(String caption)	This will set the alternate caption.
+void setBackground(PDColor c)	This will set the background color.
+void setBorderColour(PDColor c)	This will set the border color.
+void setNormalCaption(String caption)	This will set the normal caption.
+void setRolloverCaption(String caption)	This will set the rollover caption.
+void setRotation(int rotation)	This will set the rotation.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

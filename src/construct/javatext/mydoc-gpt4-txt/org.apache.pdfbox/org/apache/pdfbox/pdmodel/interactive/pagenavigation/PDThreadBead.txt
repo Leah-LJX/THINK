@@ -1,0 +1,24 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.pagenavigation.PDThreadBead
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDThreadBead extends Object implements COSObjectable This a single bead in a thread in a PDF document.
+Author: Ben Litchfield
+[Constructor Summary]
+PDThreadBead()	Default constructor.
+PDThreadBead(COSDictionary b)	Constructor that is used for a preexisting dictionary.
+[Method Summary]
+void appendBead(PDThreadBead append)	Append a bead after this bead.
+COSDictionary getCOSObject()	This will get the underlying dictionary that this object wraps.
+PDThreadBead getNextBead()	This will get the next bead.
+PDPage getPage()	Get the page that this bead is part of.
+PDThreadBead getPreviousBead()	This will get the previous bead.
+PDRectangle getRectangle()	The rectangle on the page that this bead is part of.
+PDThread getThread()	This will get the thread that this bead is part of.
+protected void setNextBead(PDThreadBead next)	Set the next bead in the thread.
+void setPage(PDPage page)	Set the page that this bead is part of.
+protected void setPreviousBead(PDThreadBead previous)	Set the previous bead in the thread.
+void setRectangle(PDRectangle rect)	Set the rectangle on the page that this bead covers.
+void setThread(PDThread thread)	Set the thread that this bead is part of.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,13 @@
+[API Name] Package org.apache.commons.imaging.ImageReadException
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable
+public class ImageReadException extends ImagingException A custom exception thrown when an ImageParser or other utility  encounters a format-violation, non-supported element, or other  condition that renders image data unaccessible.
+See Also: Serialized Form
+[Constructor Summary]
+ImageReadException​(String message)	
+ImageReadException​(String message, Throwable cause)	
+[Methods inherited from class java.lang.Throwable]
+addSuppressed, fillInStackTrace, getCause, getLocalizedMessage, getMessage, getStackTrace, getSuppressed, initCause, printStackTrace, printStackTrace, printStackTrace, setStackTrace, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

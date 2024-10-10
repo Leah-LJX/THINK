@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.formats.masc.MascTokenSampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<TokenSample>
+public class MascTokenSampleStream extends FilterObjectStream<MascDocument,TokenSample>
+[Constructor Summary]
+MascTokenSampleStream(ObjectStream<MascDocument> samples)	Initializes a MascTokenSampleStream.
+[Method Summary]
+void close()	Closes the ObjectStream and releases all allocated resources.
+TokenSample read()	Returns the next ObjectStream object.
+void reset()	Repositions the stream at the beginning and the previously seen object sequence will be repeated exactly.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

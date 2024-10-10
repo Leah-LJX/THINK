@@ -1,0 +1,12 @@
+[Class] org.jfree.data.function.PowerFunction2D
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Function2D
+[Constructor Summary]
+PowerFunction2D(double a, double b)	Creates a new power function.
+[Method Summary]
+boolean equals(Object obj)	Tests this function for equality with an arbitrary object.
+double getA()	Returns the 'a' coefficient that was specified in the constructor.
+double getB()	Returns the 'b' coefficient that was specified in the constructor.
+double getValue(double x)	Returns the value of the function for a given input ('x').
+int hashCode()	Returns a hash code for this instance.

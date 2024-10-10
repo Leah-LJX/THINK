@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.formats.ad.ADSentenceStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<ADSentenceStream.Sentence>
+@Internal public class ADSentenceStream extends FilterObjectStream<String,ADSentenceStream.Sentence> Stream filter which merges text lines into sentences, following the Arvores  Deitadas syntax.    Information about the format:  Susana Afonso.      "Árvores deitadas: Descrição do formato e das opções de análise na Floresta Sintáctica".    12 de Fevereiro de 2006.   Note:  Do not use this class, internal use only!
+[Constructor Summary]
+ADSentenceStream(ObjectStream<String> lineStream)	
+[Nested Class Summary]
+Nested Class Summary
+static class 
+[Method Summary]
+ADSentenceStream.Sentence read()	Returns the next ObjectStream object.
+[Methods inherited from class opennlp.tools.util.FilterObjectStream]
+close, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

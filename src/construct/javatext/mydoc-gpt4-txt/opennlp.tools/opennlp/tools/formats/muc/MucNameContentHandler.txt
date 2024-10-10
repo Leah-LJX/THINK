@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.formats.muc.MucNameContentHandler
+[Type] Class
+[Info]
+public class MucNameContentHandler extends SgmlParser.ContentHandler
+[Constructor Summary]
+MucNameContentHandler(Tokenizer tokenizer, List<NameSample> storedSamples)	Initializes a MucNameContentHandler.
+[Method Summary]
+void characters(CharSequence chars)	
+void endElement(String name)	
+void startElement(String name, Map<String,String> attributes)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

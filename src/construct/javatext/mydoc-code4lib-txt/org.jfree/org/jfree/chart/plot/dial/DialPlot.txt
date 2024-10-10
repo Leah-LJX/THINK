@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.dial.DialPlot
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, AnnotationChangeListener, AxisChangeListener, MarkerChangeListener, LegendItemSource, DialLayerChangeListener, DatasetChangeListener, org.jfree.util.PublicCloneable
+[Constructor Summary]
+DialPlot() Creates a new instance of DialPlot.
+[Method Summary]
+void addLayer(DialLayer layer) Adds a layer to the plot and sends a PlotChangeEvent to all registered listeners.

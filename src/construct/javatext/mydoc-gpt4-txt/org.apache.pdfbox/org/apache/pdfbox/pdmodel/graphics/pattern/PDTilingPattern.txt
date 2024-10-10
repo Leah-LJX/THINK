@@ -1,0 +1,38 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.pattern.PDTilingPattern
+[Type] Class
+[Info]
+All Implemented Interfaces: PDContentStream, COSObjectable
+public class PDTilingPattern extends PDAbstractPattern implements PDContentStream A tiling pattern dictionary.
+[Constructor Summary]
+PDTilingPattern()	Creates a new tiling pattern.
+PDTilingPattern(COSDictionary dictionary)	Creates a new tiling pattern from the given COS dictionary.
+PDTilingPattern(COSDictionary dictionary, ResourceCache resourceCache)	Creates a new tiling pattern from the given COS dictionary.
+[Field Summary]
+static int PAINT_COLORED	paint type 1 = colored tiling pattern.
+static int PAINT_UNCOLORED	paint type 2 = uncolored tiling pattern.
+static int TILING_CONSTANT_SPACING	tiling type 1 = constant spacing.
+static int TILING_CONSTANT_SPACING_FASTER_TILING	tiling type 3 = constant spacing and faster tiling.
+static int TILING_NO_DISTORTION	tiling type 2 = no distortion.
+[Method Summary]
+PDRectangle getBBox()	An array of four numbers in the form coordinate system (see below), giving the coordinates of the left, bottom, right, and top edges, respectively, of the pattern's bounding box.
+InputStream getContents()	Returns this stream's content, if any.
+org.apache.pdfbox.io.RandomAccessRead getContentsForRandomAccess()	Returns this stream's content, if any.
+PDStream getContentStream()	
+int getPaintType()	This will return the paint type.
+int getPatternType()	This will return the pattern type.
+PDResources getResources()	This will get the resources for this pattern.
+int getTilingType()	This will return the tiling type.
+float getXStep()	This will return the XStep value.
+float getYStep()	This will return the YStep value.
+void setBBox(PDRectangle bbox)	This will set the BBox (bounding box) for this Pattern.
+void setPaintType(int paintType)	This will set the paint type.
+void setResources(PDResources resources)	This will set the resources for this pattern.
+void setTilingType(int tilingType)	This will set the tiling type.
+void setXStep(float xStep)	This will set the XStep value.
+void setYStep(float yStep)	This will set the YStep value.
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.pattern.PDAbstractPattern]
+create, getCOSObject, getMatrix, getType, setMatrix, setPatternType
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface org.apache.pdfbox.contentstream.PDContentStream]
+getMatrix

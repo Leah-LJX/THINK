@@ -1,0 +1,8 @@
+[API Name] opennlp.tools.chunker.ChunkerEvaluationMonitor
+[Type] Interface
+[Info]
+All Superinterfaces: EvaluationMonitor<ChunkSample>
+All Known Implementing Classes: ChunkerDetailedFMeasureListener, ChunkEvaluationErrorListener
+public interface ChunkerEvaluationMonitor extends EvaluationMonitor<ChunkSample> A marker interface for evaluating chunkers.
+[Methods inherited from interface opennlp.tools.util.eval.EvaluationMonitor]
+correctlyClassified, misclassified

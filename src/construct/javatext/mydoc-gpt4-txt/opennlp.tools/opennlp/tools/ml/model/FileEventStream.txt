@@ -1,0 +1,20 @@
+[API Name] opennlp.tools.ml.model.FileEventStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<Event>
+Direct Known Subclasses: RealValueFileEventStream
+public class FileEventStream extends Object implements ObjectStream<Event> Class for using a file of events as an event stream.  The format of the file is one event per line with  each line consisting of outcome followed by contexts (space delimited).
+See Also:
+Event ObjectStream
+[Constructor Summary]
+FileEventStream(File file)	Instantiates a FileEventStream via a File.
+FileEventStream(Reader reader)	Instantiates a FileEventStream via a Reader.
+FileEventStream(String fileName)	Instantiates a FileEventStream from the specified file name.
+FileEventStream(String fileName, String encoding)	Instantiates a FileEventStream from the specified file name.
+[Method Summary]
+void close()	Closes the ObjectStream and releases all allocated resources.
+Event read()	Returns the next Event object.
+void reset()	Repositions the stream at the beginning and the previously seen object sequence will be repeated exactly.
+static String toLine(Event event)	Generates a string representing the specified event.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

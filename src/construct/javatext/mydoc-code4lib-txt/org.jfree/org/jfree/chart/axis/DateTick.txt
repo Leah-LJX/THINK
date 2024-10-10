@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.DateTick
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+DateTick(Date date, String label, org.jfree.ui.TextAnchor textAnchor, org.jfree.ui.TextAnchor rotationAnchor, double angle) Creates a new date tick.
+[Method Summary]
+boolean equals(Object obj) Tests this tick for equality with an arbitrary object.

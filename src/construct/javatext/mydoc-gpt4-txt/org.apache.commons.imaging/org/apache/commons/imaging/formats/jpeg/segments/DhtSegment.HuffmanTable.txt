@@ -1,0 +1,15 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.segments.DhtSegment.HuffmanTable
+[Type] Class
+[Info]
+Enclosing class: DhtSegment
+public static class DhtSegment.HuffmanTable extends Object
+[Field Summary]
+int destinationIdentifier	
+int tableClass	
+[Method Summary]
+int getHuffVal​(int i)	
+int getMaxCode​(int i)	
+int getMinCode​(int i)	
+int getValPtr​(int i)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

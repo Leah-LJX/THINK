@@ -1,0 +1,9 @@
+[Class] org.w3c.dom.svg.SVGPathSegLinetoHorizontalRel
+[Flag] Interface
+[Info]
+All Superinterfaces: SVGPathSeg
+[Constructor Summary]
+
+[Method Summary]
+float getX()	 
+ void setX(float x)

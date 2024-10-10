@@ -1,0 +1,28 @@
+[API Name] org.apache.pdfbox.pdfparser.XrefTrailerResolver
+[Type] Class
+[Info]
+public class XrefTrailerResolver extends Object This class will collect all XRef/trailer objects and creates correct  xref/trailer information after all objects are read using startxref  and 'Prev' information (unused XRef/trailer objects are discarded).
+ In case of missing startxref or wrong startxref pointer all  XRef/trailer objects are used to create xref table / trailer dictionary  in order they occur.
+ For each new xref object/XRef stream method nextXrefObj(long, XRefType)  must be called with start byte position. All following calls to  setXRef(COSObjectKey, long) or setTrailer(COSDictionary)  will add the data for this byte position.
+ After all objects are parsed the startxref position must be provided  using setStartxref(long). This is used to build the chain of  active xref/trailer objects used for creating document trailer and xref table.
+Author: Timo Böhme
+[Constructor Summary]
+XrefTrailerResolver()	
+[Nested Class Summary]
+static class XrefTrailerResolver.XRefType	The XRefType of a trailer.
+[Method Summary]
+Set<Long> getContainedObjectNumbers(int objstmObjNr)	Returns object numbers which are referenced as contained in object stream with specified object number.
+COSDictionary getCurrentTrailer()	Returns the trailer last set by setTrailer(COSDictionary).
+COSDictionary getFirstTrailer()	Returns the first trailer if at least one exists.
+COSDictionary getLastTrailer()	Returns the last trailer if at least one exists.
+COSDictionary getTrailer()	Gets the resolved trailer.
+int getTrailerCount()	Returns the count of trailers.
+Map<COSObjectKey,Long> getXrefTable()	Gets the resolved xref table.
+XrefTrailerResolver.XRefType getXrefType()	Returns the XRefTxpe of the resolved trailer.
+void nextXrefObj(long startBytePos, XrefTrailerResolver.XRefType type)	Signals that a new XRef object (table or stream) starts.
+protected void reset()	Reset all data so that it can be used to rebuild the trailer.
+void setStartxref(long startxrefBytePosValue)	Sets the byte position of the first XRef (has to be called after very last startxref was read).
+void setTrailer(COSDictionary trailer)	Adds trailer information for current XRef object.
+void setXRef(COSObjectKey objKey, long offset)	Populate XRef HashMap of current XRef object.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

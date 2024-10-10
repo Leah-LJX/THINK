@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.formats.ad.ADChunkSampleStreamFactory<P>
+[Type] Class
+[Info]
+All Implemented Interfaces: opennlp.tools.cmdline.ObjectStreamFactory<ChunkSample,P>
+@Internal public class ADChunkSampleStreamFactory<P> extends LanguageSampleStreamFactory<ChunkSample,P> A Factory to create a Arvores Deitadas ChunkStream from the command line  utility.   Note:  Do not use this class, internal use only!
+[Method Summary]
+ObjectStream<ChunkSample> create(String[] args)	Creates an ObjectStream of the template type T.
+static void registerFactory()	
+[Methods inherited from class opennlp.tools.formats.LanguageSampleStreamFactory]
+getLang
+[Methods inherited from class opennlp.tools.formats.AbstractSampleStreamFactory]
+getParameters
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

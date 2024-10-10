@@ -1,0 +1,13 @@
+[Class] org.jfree.data.time.ohlc.OHLC
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+OHLC(double open, double high, double low, double close)	Creates a new instance of OHLC.
+[Method Summary]
+boolean equals(Object obj)	Tests this instance for equality with an arbitrary object.
+double getClose()	Returns the close value.
+double getHigh()	Returns the high value.
+double getLow()	Returns the low value.
+double getOpen()	Returns the open value.
+int hashCode()	Returns a hash code for this instance.

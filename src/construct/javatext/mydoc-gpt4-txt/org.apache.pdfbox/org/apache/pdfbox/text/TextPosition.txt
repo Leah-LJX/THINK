@@ -1,0 +1,41 @@
+[API Name] org.apache.pdfbox.text.TextPosition
+[Type] Class
+[Info]
+public final class TextPosition extends Object This represents a string and a position on the screen of those characters.
+Author: Ben Litchfield
+[Constructor Summary]
+TextPosition(int pageRotation, float pageWidth, float pageHeight, Matrix textMatrix, float endX, float endY, float maxHeight, float individualWidth, float spaceWidth, String unicode, int[] charCodes, PDFont font, float fontSize, int fontSizeInPt)	Constructor.
+[Method Summary]
+boolean contains(TextPosition tp2)	Determine if this TextPosition logically contains another (i.e.
+boolean equals(Object o)	
+int[] getCharacterCodes()	Return the internal PDF character codes of the glyphs in this text.
+float getDir()	Return the direction/orientation of the string in this object based on its text matrix.
+float getEndX()	This will get the x coordinate of the end position.
+float getEndY()	This will get the y coordinate of the end position.
+PDFont getFont()	This will get the font for the text being drawn.
+float getFontSize()	This will get the font size that has been set with the "Tf" operator (Set text font and size).
+float getFontSizeInPt()	This will get the font size in pt.
+float getHeight()	This will get the maximum height of all characters in this string.
+float getHeightDir()	This will get the maximum height of all characters in this string.
+float[] getIndividualWidths()	Get the widths of each individual character.
+float getPageHeight()	This will get the height of the page that the text is located in.
+float getPageWidth()	This will get the width of the page that the text is located in.
+int getRotation()	This will get the rotation of the page that the text is located in.
+Matrix getTextMatrix()	The matrix containing the starting text position and scaling.
+String getUnicode()	Return the string of characters stored in this object.
+String getVisuallyOrderedUnicode()	Same as getUnicode() except that returned text is ensured to be visually ordered (i.e.
+float getWidth()	This will get the width of the string when page rotation adjusted coordinates are used.
+float getWidthDirAdj()	This will get the width of the string when text direction adjusted coordinates are used.
+float getWidthOfSpace()	This will get the width of a space character.
+float getX()	This will get the page rotation adjusted x position of the character.
+float getXDirAdj()	This will get the text direction adjusted x position of the character.
+float getXScale()	This will get the X scaling factor.
+float getY()	This will get the page rotation adjusted x position of the character.
+float getYDirAdj()	This will get the y position of the text, adjusted so that 0,0 is upper left and it is adjusted based on the text direction.
+float getYScale()	This will get the Y scaling factor.
+int hashCode()	
+boolean isDiacritic()	
+void mergeDiacritic(TextPosition diacritic)	Merge a single character TextPosition into the current object.
+String toString()	Show the string data for this text position.
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

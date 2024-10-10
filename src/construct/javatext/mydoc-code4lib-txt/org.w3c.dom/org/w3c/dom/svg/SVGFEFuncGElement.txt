@@ -1,0 +1,7 @@
+[Class] org.w3c.dom.svg.SVGFEFuncGElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGComponentTransferFunctionElement, SVGElement
+[Constructor Summary]
+
+[Method Summary]

@@ -1,0 +1,9 @@
+[API Name] opennlp.tools.namefind.RegexNameFinderFactory.RegexAble
+[Type] Interface
+[Info]
+All Known Implementing Classes: RegexNameFinderFactory.DEFAULT_REGEX_NAME_FINDER
+Enclosing class: RegexNameFinderFactory
+public static interface RegexNameFinderFactory.RegexAble
+[Method Summary]
+Map<String,Pattern[]> getRegexMap()	
+String getType()	

@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.chunker.ChunkerCrossValidator
+[Type] Class
+[Info]
+public class ChunkerCrossValidator extends Object Cross validator for Chunker.
+[Constructor Summary]
+ChunkerCrossValidator(String languageCode, TrainingParameters params, ChunkerFactory factory, ChunkerEvaluationMonitor... listeners)	Initializes a ChunkerCrossValidator instance via given parameters.
+[Method Summary]
+void evaluate(ObjectStream<ChunkSample> samples, int nFolds)	Starts the evaluation.
+FMeasure getFMeasure()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

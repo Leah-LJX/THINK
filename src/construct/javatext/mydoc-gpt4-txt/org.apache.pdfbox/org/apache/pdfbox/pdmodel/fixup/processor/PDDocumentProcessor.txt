@@ -1,0 +1,7 @@
+[API Name] org.apache.pdfbox.pdmodel.fixup.processor.PDDocumentProcessor
+[Type] Interface
+[Info]
+All Known Implementing Classes: AbstractProcessor, AcroFormDefaultsProcessor, AcroFormGenerateAppearancesProcessor, AcroFormOrphanWidgetsProcessor
+public interface PDDocumentProcessor
+[Method Summary]
+void process()	

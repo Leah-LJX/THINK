@@ -1,0 +1,11 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.TiffReader.Listener
+[Type] Interface
+[Info]
+Enclosing class: TiffReader
+public static interface TiffReader.Listener
+[Method Summary]
+boolean addDirectory​(TiffDirectory directory)	
+boolean addField​(TiffField field)	
+boolean readImageData()	
+boolean readOffsetDirectories()	
+boolean setTiffHeader​(TiffHeader tiffHeader)	

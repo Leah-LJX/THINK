@@ -1,0 +1,30 @@
+[Class] org.joda.time.field.AbstractPartialFieldProperty
+[Flag] Class
+[Info]
+Direct Known Subclasses: MonthDay.Property, Partial.Property, TimeOfDay.Property, YearMonth.Property, YearMonthDay.Property
+[Constructor Summary]
+protected 	AbstractPartialFieldProperty()	Constructor.
+[Method Summary]
+int compareTo(ReadableInstant instant) Compare this field to the same field on another instant.
+int compareTo(ReadablePartial partial) Compare this field to the same field on another partial instant.
+boolean equals(Object object) Compares this property to another.
+abstract int get() Gets the value of this property from the instant.
+String getAsShortText() Gets the short textual value of this property from the instant as a string in the default locale.
+String getAsShortText(Locale locale) Gets the short textual value of this property from the instant as a string in the specified locale.
+String getAsString() Gets the value of this property from the instant as a string.
+String getAsText() Gets the textual value of this property from the instant as a string in the default locale.
+String getAsText(Locale locale) Gets the textual value of this property from the instant as a string in the specified locale.
+DurationField getDurationField() Returns the duration per unit value of this field.
+abstract DateTimeField getField() Gets the field being used.
+DateTimeFieldType getFieldType() Gets the field type being used.
+int getMaximumShortTextLength(Locale locale) Gets the maximum short text length for the field.
+int getMaximumTextLength(Locale locale) Gets the maximum text length for the field.
+int getMaximumValue() Gets the maximum value for this field given the current field values.
+int getMaximumValueOverall() Gets the maximum value for the field ignoring the current time.
+int getMinimumValue() Gets the minimum value for this field given the current field values.
+int getMinimumValueOverall() Gets the minimum value for the field ignoring the current time.
+String getName() Gets the name of the field.
+DurationField getRangeDurationField() Returns the range duration of this field.
+protected abstract ReadablePartial getReadablePartial() Gets the partial instant being used.
+int hashCode() Gets a suitable hashcode for the object.
+String toString() Output a debugging string.

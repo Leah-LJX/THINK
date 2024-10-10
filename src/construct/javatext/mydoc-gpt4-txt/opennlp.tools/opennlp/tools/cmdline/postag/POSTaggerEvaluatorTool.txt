@@ -1,0 +1,19 @@
+[API Name] opennlp.tools.cmdline.postag.POSTaggerEvaluatorTool
+[Type] Class
+[Info]
+public final class POSTaggerEvaluatorTool extends opennlp.tools.cmdline.AbstractEvaluatorTool<POSSample,opennlp.tools.cmdline.postag.POSTaggerEvaluatorTool.EvalToolParams> A default POSSample-centric implementation of AbstractEvaluatorTool  that prints to an output stream.
+See Also:
+AbstractEvaluatorTool POSTaggerEvaluatorTool.EvalToolParams
+[Constructor Summary]
+POSTaggerEvaluatorTool()	
+[Method Summary]
+String getShortDescription()	
+void run(String format, String[] args)	Executes the tool with the given parameters.
+[Methods inherited from class opennlp.tools.cmdline.AbstractTypedParamTool]
+getHelp
+[Methods inherited from class opennlp.tools.cmdline.TypedCmdLineTool]
+getHelp
+[Methods inherited from class opennlp.tools.cmdline.CmdLineTool]
+getName, hasParams
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

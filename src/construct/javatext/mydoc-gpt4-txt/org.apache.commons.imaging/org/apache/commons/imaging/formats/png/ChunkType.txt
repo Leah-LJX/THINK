@@ -1,0 +1,33 @@
+[API Name] Package org.apache.commons.imaging.formats.png.ChunkType
+[Type] Enum
+[Info]
+All Implemented Interfaces: Serializable, Comparable<ChunkType>
+public enum ChunkType extends Enum<ChunkType> Type of a PNG chunk.
+See Also: Portable Network Graphics Specification - Chunk specifications
+[Enum Constant Summary]
+bKGD	Background colour
+cHRM	Primary chromaticities and white point
+gAMA	Image gamma
+hIST	Image histogram
+iCCP	Embedded ICC profile
+IDAT	Image data
+IEND	Image trailer
+IHDR	Image header
+iTXt	International textual data
+pHYs	Physical pixel dimensions
+PLTE	Palette
+sBIT	Significant bits
+sCAL	Physical scale
+sPLT	Suggested palette
+sRGB	Standard RGB colour space
+tEXt	Textual data
+tIME	Image last-modification time
+tRNS	Transparency
+zTXt	Compressed textual data
+[Method Summary]
+static ChunkType valueOf​(String name)	Returns the enum constant of this type with the specified name.
+static ChunkType[] values()	Returns an array containing the constants of this enum type, in the order they are declared.
+[Methods inherited from class java.lang.Enum]
+clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, toString, valueOf
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

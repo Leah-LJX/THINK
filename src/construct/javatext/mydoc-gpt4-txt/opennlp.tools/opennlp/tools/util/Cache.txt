@@ -1,0 +1,22 @@
+[API Name] opennlp.tools.util.Cache<K,V>
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Map<K,V>
+public class Cache<K,V> extends LinkedHashMap<K,V> Provides fixed size, pre-allocated, least recently used replacement cache.
+See Also:
+Serialized Form
+[Constructor Summary]
+Cache(int capacity)	
+[Nested Class Summary]
+Nested Class Summary
+AbstractMap.SimpleEntry<K extends Object,V extends Object>, AbstractMap.SimpleImmutableEntry<K extends Object,V extends Object>
+[Methods inherited from class java.util.LinkedHashMap]
+clear, containsValue, entrySet, forEach, get, getOrDefault, keySet, replaceAll, values
+[Methods inherited from class java.util.HashMap]
+clone, compute, computeIfAbsent, computeIfPresent, containsKey, isEmpty, merge, put, putAll, putIfAbsent, remove, remove, replace, replace, size
+[Methods inherited from class java.util.AbstractMap]
+equals, hashCode, toString
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait
+[Methods inherited from interface java.util.Map]
+compute, computeIfAbsent, computeIfPresent, containsKey, equals, hashCode, isEmpty, merge, put, putAll, putIfAbsent, remove, remove, replace, replace, size

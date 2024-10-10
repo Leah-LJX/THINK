@@ -1,0 +1,9 @@
+[API Name] Package org.apache.commons.imaging.common.ImageMetadata.ImageMetadataItem
+[Type] Interface
+[Info]
+All Known Implementing Classes: GenericImageMetadata.GenericImageMetadataItem, GifImageMetadataItem, TiffImageMetadata.Directory, TiffImageMetadata.TiffMetadataItem
+Enclosing interface: ImageMetadata
+public static interface ImageMetadata.ImageMetadataItem
+[Method Summary]
+String toString()	
+String toString​(String prefix)	

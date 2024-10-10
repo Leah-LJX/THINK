@@ -1,0 +1,15 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.optionalcontent.PDOptionalContentProperties.BaseState
+[Type] Enum
+[Info]
+All Implemented Interfaces: Serializable, Comparable<PDOptionalContentProperties.BaseState>
+Enclosing class: PDOptionalContentProperties
+public static enum PDOptionalContentProperties.BaseState extends Enum<PDOptionalContentProperties.BaseState> Enumeration for the BaseState dictionary entry on the "D" dictionary.
+[Method Summary]
+COSName getName()	Returns the PDF name for the state.
+static PDOptionalContentProperties.BaseState valueOf(COSName state)	Returns the base state represented by the given COSName.
+static PDOptionalContentProperties.BaseState valueOf(String name)	Returns the enum constant of this type with the specified name.
+static PDOptionalContentProperties.BaseState[] values()	Returns an array containing the constants of this enum type, in the order they are declared.
+[Methods inherited from class java.lang.Enum]
+clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, toString, valueOf
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

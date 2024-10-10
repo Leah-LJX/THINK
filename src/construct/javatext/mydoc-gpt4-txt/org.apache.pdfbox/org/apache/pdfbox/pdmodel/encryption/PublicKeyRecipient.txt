@@ -1,0 +1,14 @@
+[API Name] org.apache.pdfbox.pdmodel.encryption.PublicKeyRecipient
+[Type] Class
+[Info]
+public class PublicKeyRecipient extends Object Represents a recipient in the public key protection policy.
+Author: Benoit Guillon See Also: PublicKeyProtectionPolicy
+[Constructor Summary]
+PublicKeyRecipient()	
+[Method Summary]
+AccessPermission getPermission()	Returns the access permission granted to the recipient.
+X509Certificate getX509()	Returns the X509 certificate of the recipient.
+void setPermission(AccessPermission permissions)	Set the access permission granted to the recipient.
+void setX509(X509Certificate aX509)	Set the X509 certificate of the recipient.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.servlet.ServletUtilities
+[Flag] Class
+[Info]
+Returns: The prefix (never null).
+[Constructor Summary]
+ServletUtilities()
+[Method Summary]
+protected static void createTempDir() Creates the temporary directory if it does not exist.

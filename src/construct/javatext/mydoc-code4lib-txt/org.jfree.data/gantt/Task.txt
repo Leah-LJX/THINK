@@ -1,0 +1,21 @@
+[Class] org.jfree.data.gantt.Task
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, PublicCloneable
+[Constructor Summary]
+Task(String description, Date start, Date end)	Creates a new task.
+Task(String description, TimePeriod duration)	Creates a new task.
+[Method Summary]
+void addSubtask(Task subtask)	Adds a sub-task to the task.
+Object clone()	Returns a clone of the task.
+boolean equals(Object object)	Tests this object for equality with an arbitrary object.
+String getDescription()	Returns the task description.
+TimePeriod getDuration()	Returns the duration (actual or estimated) of the task.
+Double getPercentComplete()	Returns the percentage complete for this task.
+Task getSubtask(int index)	Returns a sub-task.
+int getSubtaskCount()	Returns the sub-task count.
+void removeSubtask(Task subtask)	Removes a sub-task from the task.
+void setDescription(String description)	Sets the task description.
+void setDuration(TimePeriod duration)	Sets the task duration (actual or estimated).
+void setPercentComplete(double percent)	Sets the percentage complete for the task.
+void setPercentComplete(Double percent)	Sets the percentage complete for the task.

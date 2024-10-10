@@ -1,0 +1,20 @@
+[API Name] opennlp.tools.languagemodel.NGramLanguageModel
+[Type] Class
+[Info]
+All Implemented Interfaces: Iterable<StringList>, LanguageModel
+public class NGramLanguageModel extends NGramModel implements LanguageModel A LanguageModel based on a NGramModel using Stupid Backoff to get  the probabilities of the ngrams.
+[Constructor Summary]
+NGramLanguageModel()	Initializes an NGramLanguageModel with DEFAULT_N.
+NGramLanguageModel(int n)	Initializes an NGramLanguageModel with the given n for the ngram size.
+NGramLanguageModel(InputStream in)	Initializes a NGramLanguageModel instance via a valid InputStream.
+NGramLanguageModel(InputStream in, int n)	Initializes a NGramLanguageModel instance via a valid InputStream.
+[Method Summary]
+void add(String... tokens)	Adds further tokens.
+double calculateProbability(String... tokens)	Calculate the probability of a series of tokens (e.g. a sentence), given a vocabulary.
+String[] predictNextTokens(String... tokens)	Predict the most probable output sequence of tokens, given an input sequence of tokens.
+[Methods inherited from class opennlp.tools.ngram.NGramModel]
+add, add, add, contains, cutoff, equals, getCount, hashCode, iterator, numberOfGrams, remove, serialize, setCount, size, toDictionary, toDictionary, toString
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait
+[Methods inherited from interface java.lang.Iterable]
+forEach, spliterator

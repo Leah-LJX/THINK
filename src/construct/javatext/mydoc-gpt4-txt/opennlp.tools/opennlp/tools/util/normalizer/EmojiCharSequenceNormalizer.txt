@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.util.normalizer.EmojiCharSequenceNormalizer
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, CharSequenceNormalizer
+public class EmojiCharSequenceNormalizer extends Object implements CharSequenceNormalizer A EmojiCharSequenceNormalizer implementation that normalizes text  in terms of emojis. Every encounter will be replaced by a whitespace.
+See Also:
+Serialized Form
+[Constructor Summary]
+EmojiCharSequenceNormalizer()	
+[Method Summary]
+static EmojiCharSequenceNormalizer getInstance()	
+CharSequence normalize(CharSequence text)	Normalizes a sequence of characters.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

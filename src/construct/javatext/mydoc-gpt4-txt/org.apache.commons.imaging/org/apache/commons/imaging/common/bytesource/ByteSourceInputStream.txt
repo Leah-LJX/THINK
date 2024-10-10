@@ -1,0 +1,16 @@
+[API Name] Package org.apache.commons.imaging.common.bytesource.ByteSourceInputStream
+[Type] Class
+[Info]
+public class ByteSourceInputStream extends ByteSource
+[Constructor Summary]
+ByteSourceInputStream​(InputStream is, String fileName)	
+[Method Summary]
+byte[] getAll()	
+byte[] getBlock​(long blockStart, int blockLength)	
+String getDescription()	
+InputStream getInputStream()	
+long getLength()	This operation can be VERY expensive; for inputstream byte sources, the entire stream must be drained to determine its length.
+[Methods inherited from class org.apache.commons.imaging.common.bytesource.ByteSource]
+getBlock, getFileName, getInputStream
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

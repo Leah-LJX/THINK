@@ -1,0 +1,36 @@
+[API Name] opennlp.tools.ml.perceptron.PerceptronTrainer
+[Type] Class
+[Info]
+All Implemented Interfaces: Trainer, EventTrainer
+public class PerceptronTrainer extends AbstractEventTrainer Trains models using the perceptron algorithm.    Each outcome is represented as a binary perceptron classifier.  This supports standard (integer) weighting as well average weighting as described in:    Discriminative Training Methods for Hidden Markov Models: Theory and Experiments  with the Perceptron Algorithm. Michael Collins, EMNLP 2002.
+See Also:
+PerceptronModel AbstractEventTrainer
+[Constructor Summary]
+PerceptronTrainer()	Instantiates a PerceptronTrainer with default training parameters.
+PerceptronTrainer(TrainingParameters parameters)	Instantiates a PerceptronTrainer with specific TrainingParameters.
+[Field Summary]
+static final String PERCEPTRON_VALUE	
+static final double TOLERANCE_DEFAULT	
+[Method Summary]
+AbstractModel doTrain(DataIndexer indexer)	
+boolean isSortAndMerge()	
+void setSkippedAveraging(boolean averaging)	Enables skipped averaging, this flag changes the standard averaging to special averaging instead.
+void setStepSizeDecrease(double decrease)	Enables and sets step size decrease.
+void setTolerance(double tolerance)	Specifies the tolerance.
+AbstractModel trainModel(int iterations, DataIndexer di, int cutoff)	Trains a PerceptronModel with given parameters.
+AbstractModel trainModel(int iterations, DataIndexer di, int cutoff, boolean useAverage)	Trains a PerceptronModel with given parameters.
+void validate()	Checks the configured parameters.
+[Fields inherited from class opennlp.tools.ml.AbstractEventTrainer]
+DATA_INDEXER_ONE_PASS_REAL_VALUE, DATA_INDEXER_ONE_PASS_VALUE, DATA_INDEXER_PARAM, DATA_INDEXER_TWO_PASS_VALUE
+[Fields inherited from class opennlp.tools.ml.AbstractTrainer]
+ALGORITHM_PARAM, CUTOFF_DEFAULT, CUTOFF_PARAM, ITERATIONS_DEFAULT, ITERATIONS_PARAM, TRAINER_TYPE_PARAM
+[Fields inherited from interface opennlp.tools.ml.EventTrainer]
+EVENT_VALUE
+[Methods inherited from class opennlp.tools.ml.AbstractEventTrainer]
+getDataIndexer, train, train
+[Methods inherited from class opennlp.tools.ml.AbstractTrainer]
+getAlgorithm, getCutoff, getIterations, init
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface opennlp.tools.commons.Trainer]
+init

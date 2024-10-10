@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.pdmodel.fdf.FDFAnnotationCaret
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class FDFAnnotationCaret extends FDFAnnotation This represents a Caret FDF annotation.
+Author: Ben Litchfield
+[Constructor Summary]
+FDFAnnotationCaret()	Default constructor.
+FDFAnnotationCaret(COSDictionary a)	Constructor.
+FDFAnnotationCaret(Element element)	Constructor.
+[Field Summary]
+static String SUBTYPE	COS Model value for SubType entry.
+[Method Summary]
+PDRectangle getFringe()	This will retrieve the fringe.
+String getSymbol()	This will retrieve the symbol that shall be associated with the caret.
+void setFringe(PDRectangle fringe)	This will set the fringe rectangle.
+void setSymbol(String symbol)	This will set the symbol that shall be associated with the caret.
+[Methods inherited from class org.apache.pdfbox.pdmodel.fdf.FDFAnnotation]
+create, getBorderEffect, getBorderStyle, getColor, getContents, getCOSObject, getCreationDate, getDate, getIntent, getName, getOpacity, getPage, getRectangle, getRichContents, getStringOrStream, getSubject, getTitle, isHidden, isInvisible, isLocked, isLockedContents, isNoRotate, isNoView, isNoZoom, isPrinted, isReadOnly, isToggleNoView, setBorderEffect, setBorderStyle, setColor, setContents, setCreationDate, setDate, setHidden, setIntent, setInvisible, setLocked, setLockedContents, setName, setNoRotate, setNoView, setNoZoom, setOpacity, setPage, setPrinted, setReadOnly, setRectangle, setRichContents, setSubject, setTitle, setToggleNoView
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.xy.XYBarRenderer.XYBarRendererState
+[Flag] Class
+[Info]
+Enclosing class: XYBarRenderer
+[Constructor Summary]
+XYBarRendererState(PlotRenderingInfo info) Creates a new state object.
+[Method Summary]
+double getG2Base() Returns the base (range) value in Java 2D space.

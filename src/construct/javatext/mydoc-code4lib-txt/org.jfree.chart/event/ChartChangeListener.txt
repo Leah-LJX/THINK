@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.event.ChartChangeListener
+[Flag] Interface
+[Info]
+All Superinterfaces: EventListener
+All Known Implementing Classes: ChartPanel, PolarChartPanel
+[Constructor Summary]
+
+[Method Summary]
+void chartChanged(ChartChangeEvent event) Receives notification of a chart change event.

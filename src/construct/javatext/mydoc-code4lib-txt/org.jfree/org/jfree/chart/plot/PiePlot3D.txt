@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.PiePlot3D
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, AnnotationChangeListener, AxisChangeListener, MarkerChangeListener, LegendItemSource, DatasetChangeListener, org.jfree.util.PublicCloneable
+[Constructor Summary]
+PiePlot3D() Creates a new instance with no dataset.
+[Method Summary]
+void draw(Graphics2D g2, Rectangle2D plotArea, Point2D anchor, PlotState parentState, PlotRenderingInfo info) Draws the plot on a Java 2D graphics device (such as the screen or a printer).

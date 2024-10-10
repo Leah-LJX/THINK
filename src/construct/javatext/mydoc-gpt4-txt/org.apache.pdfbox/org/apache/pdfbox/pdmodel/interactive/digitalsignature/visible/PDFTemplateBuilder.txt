@@ -1,0 +1,36 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDFTemplateBuilder
+[Type] Interface
+[Info]
+All Known Implementing Classes: PDVisibleSigBuilder
+public interface PDFTemplateBuilder That class builds visible signature template which will be added in our PDF document.
+Author: Vakhtang Koroghlishvili
+[Method Summary]
+void closeTemplate(PDDocument template)	Closes template
+void createAcroForm(PDDocument template)	Creates Acro forms in the template.
+void createAcroFormDictionary(PDAcroForm acroForm, PDSignatureField signatureField)	Create AcroForm Dictionary.
+void createAffineTransform(AffineTransform affineTransform)	In order to create Affine Transform, using parameters.
+void createAppearanceDictionary(PDFormXObject holderForml, PDSignatureField signatureField)	Creates appearance dictionary
+void createBackgroundLayerForm(PDResources innerFormResource, PDRectangle bbox)	Creates the background layer form (n0).
+void createFormatterRectangle(int[] params)	An array of four numbers in the form coordinate system, giving the coordinates of the left, bottom, right, and top edges, respectively, of the form XObject’s bounding box.
+void createHolderForm(PDResources holderFormResources, PDStream holderFormStream, PDRectangle bbox)	Creates Form
+void createHolderFormResources()	Creates resources of form
+void createHolderFormStream(PDDocument template)	Create a holder for the form stream.
+void createImageForm(PDResources imageFormResources, PDResources innerFormResource, PDStream imageFormStream, PDRectangle bbox, AffineTransform affineTransform, PDImageXObject img)	Creates Image form
+void createImageFormResources()	Create resource of image form
+void createImageFormStream(PDDocument template)	Create image form stream.
+void createInnerForm(PDResources innerFormResources, PDStream innerFormStream, PDRectangle bbox)	Creates InnerForm.
+void createInnerFormResource()	Creates InnerForm
+void createInnerFormStream(PDDocument template)	Create a holder for the inner form stream.
+void createPage(PDVisibleSignDesigner properties)	Creates specified size page.
+void createProcSetArray()	Creates procSetArray of PDF,Text,ImageB,ImageC,ImageI.
+void createSignature(PDSignatureField pdSignatureField, PDPage page, String signerName)	Creates the signature with the given name and assign it to the signature field parameter and assign the page parameter to the widget.
+void createSignatureField(PDAcroForm acroForm)	Creates signature fields.
+void createSignatureImage(PDDocument template, BufferedImage image)	Creates signature image.
+void createSignatureRectangle(PDSignatureField signatureField, PDVisibleSignDesigner properties)	Creates SignatureRectangle.
+void createTemplate(PDPage page)	Creates template using page.
+void createVisualSignature(PDDocument template)	just to create visible signature
+void createWidgetDictionary(PDSignatureField signatureField, PDResources holderFormResources)	adds Widget Dictionary
+PDFTemplateStructure getStructure()	Resturns the PDF template Structure
+void injectAppearanceStreams(PDStream holderFormStream, PDStream innerFormStream, PDStream imageFormStream, COSName imageFormName, COSName imageName, COSName innerFormName, PDVisibleSignDesigner properties)	injects appearance streams
+void injectProcSetArray(PDFormXObject innerForm, PDPage page, PDResources innerFormResources, PDResources imageFormResources, PDResources holderFormResources, COSArray procSet)	Inject procSetArray
+void insertInnerFormToHolderResources(PDFormXObject innerForm, PDResources holderFormResources)	Insert given from as inner form.

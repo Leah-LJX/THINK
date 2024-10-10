@@ -1,0 +1,22 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.color.PDDeviceRGB
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class PDDeviceRGB extends PDDeviceColorSpace Colours in the DeviceRGB colour space are specified according to the additive  RGB (red-green-blue) colour model.
+Author: Ben Litchfield, John Hewson
+[Field Summary]
+static PDDeviceRGB INSTANCE	This is the single instance of this class.
+[Method Summary]
+float[] getDefaultDecode(int bitsPerComponent)	Returns the default decode array for this color space.
+PDColor getInitialColor()	Returns the initial color value for this color space.
+String getName()	Returns the name of the color space.
+int getNumberOfComponents()	Returns the number of components in this color space
+BufferedImage toRawImage(WritableRaster raster)	Returns the image in this colorspace or null.
+float[] toRGB(float[] value)	Returns the RGB equivalent of the given color value.
+BufferedImage toRGBImage(WritableRaster raster)	Returns the (A)RGB equivalent of the given raster.
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.color.PDDeviceColorSpace]
+getCOSObject, toString
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace]
+create, create, create, toRawImage, toRGBImageAWT
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

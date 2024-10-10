@@ -1,0 +1,15 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.action.PDActionMovie
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable, PDDestinationOrAction
+public class PDActionMovie extends PDAction
+Author: Timur Kamalov
+[Constructor Summary]
+PDActionMovie()	Default constructor.
+PDActionMovie(COSDictionary a)	Constructor.
+[Field Summary]
+static String SUB_TYPE	This type of action this object represents.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.action.PDAction]
+getCOSObject, getNext, getSubType, getType, setNext, setSubType, setType
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

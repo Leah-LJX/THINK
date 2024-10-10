@@ -1,0 +1,28 @@
+[API Name] org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureNode
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDStructureElement, PDStructureTreeRoot
+public abstract class PDStructureNode extends Object implements COSObjectable A node in the structure tree.
+Author: Johannes Koch
+[Constructor Summary]
+protected PDStructureNode(COSDictionary dictionary)	Constructor for an existing structure node.
+protected PDStructureNode(String type)	Constructor.
+[Method Summary]
+protected void appendKid(COSBase object)	Appends a COS base kid.
+void appendKid(PDStructureElement structureElement)	Appends a structure element kid.
+protected void appendObjectableKid(COSObjectable objectable)	Appends an objectable kid.
+static PDStructureNode create(COSDictionary node)	Creates a node in the structure tree.
+protected Object createObject(COSBase kid)	Creates an object for a kid of this structure node.
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+List<Object> getKids()	Returns a list of objects for the kids (K).
+String getType()	Returns the type.
+protected void insertBefore(COSBase newKid, Object refKid)	Inserts an COS base kid before a reference kid.
+void insertBefore(PDStructureElement newKid, Object refKid)	Inserts a structure element kid before a reference kid.
+protected void insertObjectableBefore(COSObjectable newKid, Object refKid)	Inserts an objectable kid before a reference kid.
+protected boolean removeKid(COSBase object)	Removes a COS base kid.
+boolean removeKid(PDStructureElement structureElement)	Removes a structure element kid.
+protected boolean removeObjectableKid(COSObjectable objectable)	Removes an objectable kid.
+void setKids(List<Object> kids)	Sets the kids (K).
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,9 @@
+[Class] org.jfree.data.resources.DataPackageResources_pl
+[Flag] Class
+[Info]
+Specified by: getContents in class ListResourceBundle
+Returns: The localised resources.
+[Constructor Summary]
+DataPackageResources_pl()
+[Method Summary]
+Object[][] getContents()	Returns the array of strings in the resource bundle.

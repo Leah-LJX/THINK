@@ -1,0 +1,17 @@
+[API Name] opennlp.tools.namefind.NameSampleDataStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<NameSample>
+public class NameSampleDataStream extends FilterObjectStream<String,NameSample> The NameSampleDataStream class converts tagged strings  provided by a DataStream to NameSample objects.  It uses text that is one-sentence per line and tokenized  with names identified by:   &lt;START&gt; and &lt;END&gt; tags.
+[Constructor Summary]
+NameSampleDataStream(ObjectStream<String> in)	Initializes a NameSampleDataStream with given psi samples.
+[Field Summary]
+static final String END_TAG	
+static final String START_TAG	
+static final String START_TAG_PREFIX	
+[Method Summary]
+NameSample read()	Returns the next ObjectStream object.
+[Methods inherited from class opennlp.tools.util.FilterObjectStream]
+close, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

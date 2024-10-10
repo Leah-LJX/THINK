@@ -1,0 +1,11 @@
+[Class] org.joda.time.convert.PartialConverter
+[Flag] Interface
+[Info]
+All Superinterfaces: Converter
+[Constructor Summary]
+
+[Method Summary]
+Chronology getChronology(Object object, Chronology chrono) Extracts the chronology from an object of this converter's type where the chronology is specified.
+Chronology getChronology(Object object, DateTimeZone zone) Extracts the chronology from an object of this converter's type where the time zone is specified.
+int[] getPartialValues(ReadablePartial fieldSource, Object object, Chronology chrono) Extracts the values of the partial from an object of this converter's type.
+int[] getPartialValues(ReadablePartial fieldSource, Object object, Chronology chrono, DateTimeFormatter parser) Extracts the values of the partial from an object of this converter's type.

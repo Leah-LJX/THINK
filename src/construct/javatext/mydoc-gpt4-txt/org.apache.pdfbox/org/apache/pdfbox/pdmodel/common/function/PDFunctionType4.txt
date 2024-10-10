@@ -1,0 +1,14 @@
+[API Name] org.apache.pdfbox.pdmodel.common.function.PDFunctionType4
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDFunctionType4 extends PDFunction This class represents a Type 4 (PostScript calculator) function in a PDF document.    See section 3.9.4 of the PDF 1.4 Reference.
+[Constructor Summary]
+PDFunctionType4(COSBase functionStream)	Constructor.
+[Method Summary]
+float[] eval(float[] input)	Evaluates the function at the given input.
+int getFunctionType()	Returns the function type.
+[Methods inherited from class org.apache.pdfbox.pdmodel.common.function.PDFunction]
+clipToRange, clipToRange, create, getCOSObject, getDomainForInput, getNumberOfInputParameters, getNumberOfOutputParameters, getPDStream, getRangeForOutput, getRangeValues, interpolate, setDomainValues, setRangeValues, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

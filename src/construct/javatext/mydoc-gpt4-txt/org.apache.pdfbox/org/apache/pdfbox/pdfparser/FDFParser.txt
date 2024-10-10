@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.pdfparser.FDFParser
+[Type] Class
+[Info]
+All Implemented Interfaces: ICOSParser
+public class FDFParser extends COSParser
+[Constructor Summary]
+FDFParser(org.apache.pdfbox.io.RandomAccessRead source)	Constructs parser for given file using memory buffer.
+[Field Summary]
+FDFParser(org.apache.pdfbox.io.RandomAccessRead source)	Constructs parser for given file using memory buffer.
+[Method Summary]
+FDFDocument parse()	This will parse the stream and populate the FDFDocument object.
+[Methods inherited from class org.apache.pdfbox.pdfparser.COSParser]
+checkPages, createRandomAccessReadView, dereferenceCOSObject, getAccessPermission, getEncryption, isLenient, isString, lastIndexOf, parseCOSStream, parseFDFHeader, parseObjectDynamically, parseObjectStreamObject, parsePDFHeader, parseXrefTable, prepareDecryption, resetTrailerResolver, retrieveTrailer, setEOFLookupRange, setLenient
+[Methods inherited from class org.apache.pdfbox.pdfparser.BaseParser]
+getObjectKey, isClosing, isClosing, isDigit, isDigit, isEndOfName, isEOF, isEOL, isEOL, isSpace, isSpace, isWhitespace, isWhitespace, parseCOSArray, parseCOSDictionary, parseCOSName, parseCOSString, parseDirObject, readExpectedChar, readExpectedString, readGenerationNumber, readInt, readLine, readLong, readObjectNumber, readString, readString, readStringNumber, skipSpaces, skipWhiteSpaces
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

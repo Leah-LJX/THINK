@@ -1,0 +1,12 @@
+{"description": "Demonstrates the use of the chunking feature in Apache OpenNLP.", "package": "opennlp.tools", "method_declaration": "public List<String> chunkTokens(String[] tokens)"}
+{"description": "Shows lemmatization using a dictionary in Apache OpenNLP.", "package": "opennlp.tools", "method_declaration": "public String[] lemmatizeTokens(String[] tokens, String[] posTags)"}
+{"description": "Implements text categorization using a Maximum Entropy model in Apache OpenNLP.", "package": "opennlp.tools", "method_declaration": "public String categorizeText(String text)"}
+{"description": "Utilizes a Naive Bayes model for document categorization in Apache OpenNLP.", "package": "opennlp.tools", "method_declaration": "public String categorizeText(String text)"}
+{"description": "Applies n-gram features in document categorization in Apache OpenNLP.", "package": "opennlp.tools", "method_declaration": "public String categorizeText(String text)"}
+{"description": "Uses models to detect the language of text in Apache OpenNLP.", "package": "opennlp.tools", "method_declaration": "public String detectLanguage(String text)"}
+{"description": "Implements named entity recognition using the NameFinderME class in Apache OpenNLP.", "package": "opennlp.tools", "method_declaration": "public List<String> findNames(String[] tokens)"}
+{"description": "Demonstrates how to train a model for named entity recognition in Apache OpenNLP.", "package": "opennlp.tools", "method_declaration": "public TokenNameFinderModel trainNERModel(InputStream dataIn)"}
+{"description": "Tags parts of speech in text using a POS tagging model in Apache OpenNLP.", "package": "opennlp.tools", "method_declaration": "public String[] tagPOS(String[] tokens)"}
+{"description": "Detects sentences in the provided text using a sentence detection model in Apache OpenNLP.", "package": "opennlp.tools", "method_declaration": "public String[] detectSentences(String text)"}
+{"description": "Trains a sentence detection model using provided training data in Apache OpenNLP.", "package": "opennlp.tools", "method_declaration": "public SentenceModel trainSentenceModel(InputStream dataIn)"}
+{"description": "Tokenizes the provided text into words using a tokenizer model in Apache OpenNLP.", "package": "opennlp.tools", "method_declaration": "public String[] tokenizeText(String text)"}

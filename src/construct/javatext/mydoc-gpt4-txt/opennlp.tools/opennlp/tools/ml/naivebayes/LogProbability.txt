@@ -1,0 +1,21 @@
+[API Name] opennlp.tools.ml.naivebayes.LogProbability<T>
+[Type] Class
+[Info]
+Type Parameters: T - The label (category) class.
+public class LogProbability<T> extends Probability<T> A class implementing the logarithmic Probability for a label.
+[Constructor Summary]
+LogProbability(T label)	
+[Method Summary]
+void addIn(double probability)	Compounds the existing probability mass on the label with the new probability passed in to the method.
+Double get()	
+T getLabel()	
+Double getLog()	
+boolean isLarger(Probability<T> probability)	Checks if a probability is greater than the old one.
+void set(double probability)	Assigns a probability to a label, discarding any previously assigned probability.
+void set(Probability<T> probability)	Assigns a probability to a label, discarding any previously assigned probability.
+void setIfLarger(double probability)	Assigns a probability to a label, discarding any previously assigned probability, if the new probability is greater than the old one.
+void setIfLarger(Probability<T> probability)	Assigns a probability to a label, discarding any previously assigned probability, if the new probability is greater than the old one.
+void setLog(double probability)	Assigns a log probability to a label, discarding any previously assigned probability.
+String toString()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, wait, wait, wait

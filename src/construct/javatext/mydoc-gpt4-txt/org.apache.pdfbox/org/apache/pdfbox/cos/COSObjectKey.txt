@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.cos.COSObjectKey
+[Type] Class
+[Info]
+All Implemented Interfaces: Comparable<COSObjectKey>
+public final class COSObjectKey extends Object implements Comparable<COSObjectKey> Object representing the physical reference to an indirect pdf object.
+Author: Michael Traut
+[Constructor Summary]
+COSObjectKey(long num, int gen)	Constructor.
+COSObjectKey(long num, int gen, int index)	Constructor.
+[Method Summary]
+int compareTo(COSObjectKey other)	
+static long computeInternalHash(long num, int gen)	Calculate the internal hash value for the given object number and generation number.
+boolean equals(Object obj)	
+int getGeneration()	This will get the object generation number.
+long getInternalHash()	Return the internal hash value which is based on the number and the generation.
+long getNumber()	This will get the object number.
+int getStreamIndex()	The index within a compressed object stream.
+int hashCode()	
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

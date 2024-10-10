@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.ChartTransferable
+[Flag] Class
+[Info]
+All Implemented Interfaces: Transferable
+[Constructor Summary]
+ChartTransferable(JFreeChart chart, int width, int height) Creates a new chart selection.
+[Method Summary]
+Object getTransferData(DataFlavor flavor) Returns the content for the requested flavor, if it is supported.

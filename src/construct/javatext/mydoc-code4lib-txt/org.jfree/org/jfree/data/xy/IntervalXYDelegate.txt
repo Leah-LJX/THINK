@@ -1,0 +1,26 @@
+[Class] org.jfree.data.xy.IntervalXYDelegate
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, PublicCloneable, DomainInfo, DatasetChangeListener
+[Constructor Summary]
+IntervalXYDelegate(XYDataset dataset)	Creates a new delegate that.
+IntervalXYDelegate(XYDataset dataset, boolean autoWidth)	Creates a new delegate for the specified dataset.
+[Method Summary]
+Object clone()	Returns a clone of the object.
+void datasetChanged(DatasetChangeEvent e)	Handles events from the dataset by recalculating the interval if necessary.
+boolean equals(Object obj)	Tests the delegate for equality with an arbitrary object.
+Range getDomainBounds(boolean includeInterval)	Returns the range of the values in the dataset's domain, including or excluding the interval around each x-value as specified.
+double getDomainLowerBound(boolean includeInterval)	Returns the minimum x-value in the dataset.
+double getDomainUpperBound(boolean includeInterval)	Returns the maximum x-value in the dataset.
+Number getEndX(int series, int item)	Returns the end value of the x-interval for an item within a series.
+double getEndXValue(int series, int item)	Returns the end value of the x-interval for an item within a series.
+double getFixedIntervalWidth()	Returns the fixed interval width.
+double getIntervalPositionFactor()	Returns the interval position factor.
+double getIntervalWidth()	Returns the interval width.
+Number getStartX(int series, int item)	Returns the start value of the x-interval for an item within a series.
+double getStartXValue(int series, int item)	Returns the start value of the x-interval for an item within a series.
+int hashCode()	Returns a hash code for this instance.
+boolean isAutoWidth()	Returns true if the interval width is automatically calculated, and false otherwise.
+void setAutoWidth(boolean b)	Sets the flag that indicates whether the interval width is automatically calculated.
+void setFixedIntervalWidth(double w)	Sets the fixed interval width and, as a side effect, sets the autoWidth flag to false.
+void setIntervalPositionFactor(double d)	Sets the interval position factor.

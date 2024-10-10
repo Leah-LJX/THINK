@@ -1,0 +1,35 @@
+[API Name] opennlp.tools.parser.ParserModel
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, ArtifactProvider
+public class ParserModel extends BaseModel This is the default ParserModel implementation.
+See Also:
+Serialized Form
+[Constructor Summary]
+ParserModel(File modelFile)	Initializes a ParserModel instance via a valid File.
+ParserModel(InputStream in)	Initializes a ParserModel instance via a valid InputStream.
+ParserModel(String languageCode, MaxentModel buildModel, MaxentModel checkModel, MaxentModel attachModel, POSModel parserTagger, ChunkerModel chunkerTagger, HeadRules headRules, ParserType modelType)	Initializes a ParserModel instance via given parameters.
+ParserModel(String languageCode, MaxentModel buildModel, MaxentModel checkModel, MaxentModel attachModel, POSModel parserTagger, ChunkerModel chunkerTagger, HeadRules headRules, ParserType modelType, Map<String,String> manifestInfoEntries)	Initializes a ParserModel instance via given parameters.
+ParserModel(String languageCode, MaxentModel buildModel, MaxentModel checkModel, POSModel parserTagger, ChunkerModel chunkerTagger, HeadRules headRules, ParserType type, Map<String,String> manifestInfoEntries)	Initializes a ParserModel instance via given parameters.
+ParserModel(URL modelURL)	Initializes a ParserModel instance via a valid URL.
+ParserModel(Path modelPath)	Initializes a ParserModel instance via a valid Path.
+[Method Summary]
+boolean equals(Object obj)	
+MaxentModel getAttachModel()	
+MaxentModel getBuildModel()	
+MaxentModel getCheckModel()	
+HeadRules getHeadRules()	
+ChunkerModel getParserChunkerModel()	
+POSModel getParserTaggerModel()	
+ParserType getParserType()	
+int hashCode()	
+ParserModel updateBuildModel(MaxentModel buildModel)	Instantiates a new ParserModel instance from the existing configuration with the specified buildModel for exchange.
+ParserModel updateCheckModel(MaxentModel checkModel)	Instantiates a new ParserModel instance from the existing configuration with the specified checkModel for exchange.
+ParserModel updateChunkerModel(ChunkerModel chunkModel)	Instantiates a new ParserModel instance from the existing configuration with the specified chunkModel for exchange.
+ParserModel updateTaggerModel(POSModel taggerModel)	Instantiates a new ParserModel instance from the existing configuration with the specified taggerModel for exchange.
+[Fields inherited from class opennlp.tools.util.model.BaseModel]
+TRAINING_CUTOFF_PROPERTY, TRAINING_EVENTHASH_PROPERTY, TRAINING_ITERATIONS_PROPERTY
+[Methods inherited from class opennlp.tools.util.model.BaseModel]
+getArtifact, getLanguage, getManifestProperty, getVersion, isLoadedFromSerialized, serialize, serialize, serialize
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, toString, wait, wait, wait

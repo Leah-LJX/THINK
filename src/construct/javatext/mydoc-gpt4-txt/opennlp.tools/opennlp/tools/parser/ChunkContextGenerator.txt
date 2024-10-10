@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.parser.ChunkContextGenerator
+[Type] Class
+[Info]
+All Implemented Interfaces: ChunkerContextGenerator, BeamSearchContextGenerator<TokenTag>
+public class ChunkContextGenerator extends Object implements ChunkerContextGenerator Creates predictive context for the pre-chunking phases of parsing.
+[Constructor Summary]
+ChunkContextGenerator()	Initializes a ChunkContextGenerator instance.
+ChunkContextGenerator(int cacheSize)	Initializes a ChunkContextGenerator instance with a custom cacheSize.
+[Method Summary]
+String[] getContext(int i, String[] words, String[] tags, String[] preds)	Retrieves the contexts for chunking of the specified idx.
+String[] getContext(int index, TokenTag[] sequence, String[] priorDecisions, Object[] additionalContext)	Returns the context for the specified position in the specified sequence (list).
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

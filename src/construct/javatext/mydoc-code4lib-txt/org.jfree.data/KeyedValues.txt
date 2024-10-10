@@ -1,0 +1,14 @@
+[Class] org.jfree.data.KeyedValues
+[Flag] Interface
+[Info]
+Type Parameters: K - the key type (String is a good default).
+All Superinterfaces: Values
+All Known Subinterfaces: KeyedValuesDataset, PieDataset<K>
+All Known Implementing Classes: CategoryToPieDataset, DefaultKeyedValues, DefaultKeyedValuesDataset, DefaultPieDataset, JDBCPieDataset
+[Constructor Summary]
+
+[Method Summary]
+int getIndex(K key)	Returns the index for a given key.
+K getKey(int index)	Returns the key associated with the item at a given position.
+List<K> getKeys()	Returns the keys for the values in the collection.
+Number getValue(K key)	Returns the value for a given key.

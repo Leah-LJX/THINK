@@ -1,0 +1,24 @@
+[Class] org.joda.time.LocalDate.Property
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+Enclosing class: LocalDate
+[Constructor Summary]
+
+[Method Summary]
+LocalDate addToCopy(int value) Adds to this field in a copy of this LocalDate.
+LocalDate addWrapFieldToCopy(int value) Adds to this field, possibly wrapped, in a copy of this LocalDate.
+protected Chronology getChronology() Gets the chronology of the datetime that this property is linked to.
+DateTimeField getField() Gets the field being used.
+LocalDate getLocalDate() Gets the LocalDate object linked to this property.
+protected long getMillis() Gets the milliseconds of the date that this property is linked to.
+LocalDate roundCeilingCopy() Rounds to the highest whole unit of this field on a copy of this LocalDate.
+LocalDate roundFloorCopy() Rounds to the lowest whole unit of this field on a copy of this LocalDate.
+LocalDate roundHalfCeilingCopy() Rounds to the nearest whole unit of this field on a copy of this LocalDate, favoring the ceiling if halfway.
+LocalDate roundHalfEvenCopy() Rounds to the nearest whole unit of this field on a copy of this LocalDate.
+LocalDate roundHalfFloorCopy() Rounds to the nearest whole unit of this field on a copy of this LocalDate, favoring the floor if halfway.
+LocalDate setCopy(int value) Sets this field in a copy of the LocalDate.
+LocalDate setCopy(String text) Sets this field in a copy of the LocalDate to a parsed text value.
+LocalDate setCopy(String text, Locale locale) Sets this field in a copy of the LocalDate to a parsed text value.
+LocalDate withMaximumValue() Returns a new LocalDate with this field set to the maximum value for this field.
+LocalDate withMinimumValue() Returns a new LocalDate with this field set to the minimum value for this field.

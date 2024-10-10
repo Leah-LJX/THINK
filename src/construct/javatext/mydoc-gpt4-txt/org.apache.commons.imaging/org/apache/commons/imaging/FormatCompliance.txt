@@ -1,0 +1,20 @@
+[API Name] Package org.apache.commons.imaging.FormatCompliance
+[Type] Class
+[Info]
+public class FormatCompliance extends Object Provides information about the compliance of a specified data  source (byte array, file, etc.) to an image format.
+[Constructor Summary]
+FormatCompliance​(String description)	
+FormatCompliance​(String description, boolean failOnError)	
+[Method Summary]
+void addComment​(String comment)	
+void addComment​(String comment, int value)	
+boolean checkBounds​(String name, int min, int max, int actual)	
+boolean compare​(String name, int[] valid, int actual)	
+boolean compare​(String name, int valid, int actual)	
+boolean compareBytes​(String name, byte[] expected, byte[] actual)	
+void dump()	
+void dump​(PrintWriter pw)	
+static FormatCompliance getDefault()	
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.category.StatisticalBarRenderer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, LegendItemSource, CategoryItemRenderer, org.jfree.util.PublicCloneable
+[Constructor Summary]
+StatisticalBarRenderer() Default constructor.
+[Method Summary]
+protected void drawHorizontalItem(Graphics2D g2, CategoryItemRendererState state, Rectangle2D dataArea, CategoryPlot plot, CategoryAxis domainAxis, ValueAxis rangeAxis, StatisticalCategoryDataset dataset, int visibleRow, int row, int column) Draws an item for a plot with a horizontal orientation.

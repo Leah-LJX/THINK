@@ -1,0 +1,18 @@
+[API Name] opennlp.tools.formats.masc.MascToken
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<Span>
+public class MascToken extends Span A specialized Span to express tokens in documents.
+See Also:
+Serialized Form
+[Constructor Summary]
+MascToken(int s, int e, int pennId, String pos, String base, MascWord[] quarks)	Initializes a MascToken which may combine multiple quarks.
+[Method Summary]
+String getBase()	
+String getPos()	
+MascWord[] getQuarks()	
+int getTokenId()	
+[Methods inherited from class opennlp.tools.util.Span]
+compareTo, contains, contains, crosses, equals, getCoveredText, getEnd, getProb, getStart, getType, hashCode, intersects, length, spansToStrings, spansToStrings, startsWith, toString, trim
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

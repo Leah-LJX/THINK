@@ -1,0 +1,28 @@
+[API Name] org.apache.pdfbox.pdmodel.font.encoding.Encoding
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: BuiltInEncoding, DictionaryEncoding, MacExpertEncoding, MacRomanEncoding, StandardEncoding, SymbolEncoding, Type1Encoding, WinAnsiEncoding, ZapfDingbatsEncoding
+public abstract class Encoding extends Object implements COSObjectable A PostScript encoding vector, maps character codes to glyph names.
+Author: Ben Litchfield
+[Constructor Summary]
+Encoding()	
+[Field Summary]
+protected static int CHAR_CODE	
+protected static int CHAR_NAME	
+protected Map<Integer,String> codeToName	code-to-name map.
+protected Map<String,Integer> inverted	name-to-code map.
+[Method Summary]
+protected void add(int code, String name)	This will add a character encoding.
+boolean contains(int code)	Determines if the encoding has a mapping for the given code value.
+boolean contains(String name)	Determines if the encoding has a mapping for the given name value.
+Map<Integer,String> getCodeToNameMap()	Returns an unmodifiable view of the code -> name mapping.
+abstract String getEncodingName()	Returns the name of this encoding.
+static Encoding getInstance(COSName name)	This will get an encoding by name.
+String getName(int code)	This will take a character code and get the name from the code.
+Map<String,Integer> getNameToCodeMap()	Returns an unmodifiable view of the name -> code mapping.
+protected void overwrite(int code, String name)	This will add a character encoding.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface org.apache.pdfbox.pdmodel.common.COSObjectable]
+getCOSObject

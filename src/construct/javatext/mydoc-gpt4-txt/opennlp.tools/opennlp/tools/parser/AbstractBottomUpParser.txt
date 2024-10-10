@@ -1,0 +1,29 @@
+[API Name] opennlp.tools.parser.AbstractBottomUpParser
+[Type] Class
+[Info]
+All Implemented Interfaces: Parser
+Direct Known Subclasses: Parser, Parser
+public abstract class AbstractBottomUpParser extends Object implements Parser Abstract class which contains code to tag and chunk parses for bottom up parsing and  leaves implementation of advancing parses and completing parses to extend class.   Note:  The nodes within the returned parses are shared with other parses  and therefore their parent node references will not be consistent with their child  node reference.  setParents can be used to make the parents consistent  with a particular parse, but subsequent calls to setParents can invalidate  the results of earlier calls.
+[Constructor Summary]
+AbstractBottomUpParser(POSTagger tagger, Chunker chunker, HeadRules headRules, int beamSize, double advancePercentage)	
+[Field Summary]
+static final String COMPLETE	Outcome used when a constituent is complete.
+static final String CONT	Prefix for outcomes continuing a constituent.
+static final double defaultAdvancePercentage	The default amount of probability mass required of advanced outcomes.
+static final int defaultBeamSize	The default beam size used if no beam size is given.
+static final String INC_NODE	The label for the top if an incomplete node.
+static final String INCOMPLETE	Outcome used when a constituent is incomplete.
+static final String OTHER	Outcome for token which is not contained in a basal constituent.
+static final String START	Prefix for outcomes starting a constituent.
+static final String TOK_NODE	The label for a token node.
+static final String TOP_NODE	The label for the top node.
+[Method Summary]
+static Dictionary buildDictionary(ObjectStream<Parse> data, HeadRules rules, int cutoff)	Creates a n-gram Dictionary from the specified data stream using HeadRules and specified cut-off.
+static Dictionary buildDictionary(ObjectStream<Parse> data, HeadRules rules, TrainingParameters params)	Creates a n-gram Dictionary from the specified data stream using the specified head rule and specified cut-off.
+static Parse[] collapsePunctuation(Parse[] chunks, Set<String> punctSet)	Removes the punctuation from the specified set of chunks, adds it to the parses adjacent to the punctuation is specified, and returns a new array of parses with the punctuation removed.
+Parse parse(Parse tokens)	Returns a Parse for the specified Parse of tokens.
+Parse[] parse(Parse tokens, int numParses)	Returns the specified number of parses or fewer for the specified tokens.
+void setErrorReporting(boolean errorReporting)	Specifies whether the parser should report when it was unable to find a parse for a particular sentence.
+static void setParents(Parse p)	Assigns parent references for the specified parse so that they are consistent with the children references.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

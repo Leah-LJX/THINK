@@ -1,0 +1,19 @@
+[API Name] opennlp.tools.sentdetect.SentenceDetectorME
+[Type] Class
+[Info]
+All Implemented Interfaces: SentenceDetector
+public class SentenceDetectorME extends Object implements SentenceDetector A sentence detector for splitting up raw text into sentences.    A maximum entropy model is used to evaluate end-of-sentence characters in a  string to determine if they signify the end of a sentence.
+[Constructor Summary]
+SentenceDetectorME(String language)	Initializes the sentence detector by downloading a default model.
+SentenceDetectorME(SentenceModel model)	Initializes the current instance.
+SentenceDetectorME(SentenceModel model, Factory factory)	Deprecated. Use a SentenceDetectorFactory to extend SentenceDetector functionality.
+[Field Summary]
+static final String NO_SPLIT	Constant indicates no sentence split.
+static final String SPLIT	Constant indicates a sentence split.
+[Method Summary]
+double[] getSentenceProbabilities()	Returns the probabilities associated with the most recent calls to sentDetect(CharSequence).
+String[] sentDetect(CharSequence s)	Detects sentences in given input CharSequence..
+Span[] sentPosDetect(CharSequence s)	Detects the position of the first words of sentences in a CharSequence.
+static SentenceModel train(String languageCode, ObjectStream<SentenceSample> samples, SentenceDetectorFactory sdFactory, TrainingParameters mlParams)	Starts a training of a SentenceModel with the given parameters.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

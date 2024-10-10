@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.labels.AbstractXYItemLabelGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+Direct Known Subclasses: BubbleXYItemLabelGenerator, IntervalXYItemLabelGenerator, StandardXYItemLabelGenerator, StandardXYToolTipGenerator
+[Constructor Summary]
+protected AbstractXYItemLabelGenerator() Creates an item label generator using default number formatters.
+[Method Summary]
+Object clone() Returns an independent copy of the generator.

@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.doccat.NGramFeatureGenerator
+[Type] Class
+[Info]
+All Implemented Interfaces: FeatureGenerator
+public class NGramFeatureGenerator extends Object implements FeatureGenerator Generates ngram features for a document.
+See Also:
+FeatureGenerator
+[Constructor Summary]
+NGramFeatureGenerator()	Instantiates an NGramFeatureGenerator instance with a Bi grams config.
+NGramFeatureGenerator(int minGram, int maxGram)	Instantiates an NGramFeatureGenerator instance with configurable ngram parameters.
+[Method Summary]
+Collection<String> extractFeatures(String[] text, Map<String,Object> extraInfo)	Extracts features from given text fragments.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

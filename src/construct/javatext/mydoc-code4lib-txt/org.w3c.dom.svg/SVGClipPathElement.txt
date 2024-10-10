@@ -1,0 +1,8 @@
+[Class] org.w3c.dom.svg.SVGClipPathElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGExternalResourcesRequired, SVGLangSpace, SVGLocatable, SVGStylable, SVGTests, SVGTransformable, SVGUnitTypes
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedEnumeration getClipPathUnits()

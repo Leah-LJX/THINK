@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.cmdline.namefind.NameEvaluationErrorListener
+[Type] Class
+[Info]
+All Implemented Interfaces: TokenNameFinderEvaluationMonitor, EvaluationMonitor<NameSample>
+public class NameEvaluationErrorListener extends opennlp.tools.cmdline.EvaluationErrorPrinter<NameSample> implements TokenNameFinderEvaluationMonitor A default implementation of EvaluationMonitor that prints  to an output stream.
+[Constructor Summary]
+NameEvaluationErrorListener()	Creates a listener that will print to the configured logger.
+NameEvaluationErrorListener(OutputStream outputStream)	Creates a listener that will print to a given OutputStream.
+[Method Summary]
+void misclassified(NameSample reference, NameSample prediction)	
+[Methods inherited from class opennlp.tools.cmdline.EvaluationErrorPrinter]
+correctlyClassified
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface opennlp.tools.util.eval.EvaluationMonitor]
+correctlyClassified

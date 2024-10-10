@@ -1,0 +1,9 @@
+[Class] org.jfree.data.category.CategoryDataset
+[Flag] Interface
+[Info]
+All Superinterfaces: Dataset, KeyedValues2D, Values2D
+All Known Subinterfaces: BoxAndWhiskerCategoryDataset, GanttCategoryDataset, IntervalCategoryDataset, KeyedValues2DDataset, MultiValueCategoryDataset, StatisticalCategoryDataset
+All Known Implementing Classes: DefaultBoxAndWhiskerCategoryDataset, DefaultCategoryDataset, DefaultIntervalCategoryDataset, DefaultKeyedValues2DDataset, DefaultMultiValueCategoryDataset, DefaultStatisticalCategoryDataset, JDBCCategoryDataset, SlidingCategoryDataset, SlidingGanttCategoryDataset, TaskSeriesCollection
+[Constructor Summary]
+
+[Method Summary]

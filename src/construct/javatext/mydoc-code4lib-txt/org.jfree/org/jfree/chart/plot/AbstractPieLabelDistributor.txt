@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.plot.AbstractPieLabelDistributor
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+Direct Known Subclasses: PieLabelDistributor
+[Constructor Summary]
+AbstractPieLabelDistributor() Creates a new instance.
+[Method Summary]
+void addPieLabelRecord(PieLabelRecord record) Adds a label record.

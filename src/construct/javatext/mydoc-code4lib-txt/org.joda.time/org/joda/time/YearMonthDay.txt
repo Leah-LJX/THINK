@@ -1,0 +1,55 @@
+[Class] org.joda.time.YearMonthDay
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<ReadablePartial>, ReadablePartial
+[Constructor Summary]
+YearMonthDay()	Deprecated. 	Constructs a YearMonthDay with the current date, using ISOChronology in	 the default zone to extract the fields.
+YearMonthDay(Chronology chronology)	Deprecated. 	Constructs a YearMonthDay with the current date, using the specified chronology	 and zone to extract the fields.
+YearMonthDay(DateTimeZone zone)	Deprecated. 	Constructs a YearMonthDay with the current date, using ISOChronology in	 the specified zone to extract the fields.
+YearMonthDay(int year,	int monthOfYear,	int dayOfMonth)	Deprecated. 	Constructs a YearMonthDay with specified time field values	 using ISOChronology in the default zone.
+YearMonthDay(int year,	int monthOfYear,	int dayOfMonth,	Chronology chronology)	Deprecated. 	Constructs a YearMonthDay with specified time field values.
+YearMonthDay(long instant)	Deprecated. 	Constructs a YearMonthDay extracting the partial fields from the specified	 milliseconds using the ISOChronology in the default zone.
+YearMonthDay(long instant,	Chronology chronology)	Deprecated. 	Constructs a YearMonthDay extracting the partial fields from the specified	 milliseconds using the chronology provided.
+YearMonthDay(Object instant)	Deprecated. 	Constructs a YearMonthDay from an Object that represents a time.
+YearMonthDay(Object instant,	Chronology chronology)	Deprecated. 	Constructs a YearMonthDay from an Object that represents a time, using the	 specified chronology.
+[Method Summary]
+YearMonthDay.Property dayOfMonth() Deprecated. Get the day of month field property which provides access to advanced functionality.
+static YearMonthDay fromCalendarFields(Calendar calendar) Deprecated. Constructs a YearMonthDay from a java.util.Calendar using exactly the same field values avoiding any time zone effects.
+static YearMonthDay fromDateFields(Date date) Deprecated. Constructs a YearMonthDay from a java.util.Date using exactly the same field values avoiding any time zone effects.
+int getDayOfMonth() Deprecated. Get the day of month field value.
+protected DateTimeField getField(int index, Chronology chrono) Deprecated. Gets the field for a specific index in the chronology specified.
+DateTimeFieldType getFieldType(int index) Deprecated. Gets the field type at the specified index.
+DateTimeFieldType[] getFieldTypes() Deprecated. Gets an array of the field type of each of the fields that this partial supports.
+int getMonthOfYear() Deprecated. Get the month of year field value.
+int getYear() Deprecated. Get the year field value.
+YearMonthDay minus(ReadablePeriod period) Deprecated. Returns a copy of this date with the specified period taken away.
+YearMonthDay minusDays(int days) Deprecated. Returns a copy of this date minus the specified number of days.
+YearMonthDay minusMonths(int months) Deprecated. Returns a copy of this date minus the specified number of months.
+YearMonthDay minusYears(int years) Deprecated. Returns a copy of this date minus the specified number of years.
+YearMonthDay.Property monthOfYear() Deprecated. Get the month of year field property which provides access to advanced functionality.
+YearMonthDay plus(ReadablePeriod period) Deprecated. Returns a copy of this date with the specified period added.
+YearMonthDay plusDays(int days) Deprecated. Returns a copy of this date plus the specified number of days.
+YearMonthDay plusMonths(int months) Deprecated. Returns a copy of this date plus the specified number of months.
+YearMonthDay plusYears(int years) Deprecated. Returns a copy of this date plus the specified number of years.
+YearMonthDay.Property property(DateTimeFieldType type) Deprecated. Gets the property object for the specified type, which contains many useful methods.
+int size() Deprecated. Gets the number of fields in this partial.
+DateMidnight toDateMidnight() Deprecated. Converts this object to a DateMidnight in the default time zone.
+DateMidnight toDateMidnight(DateTimeZone zone) Deprecated. Converts this object to a DateMidnight.
+DateTime toDateTime(TimeOfDay time) Deprecated. Converts this object to a DateTime using a TimeOfDay to fill in the missing fields and using the default time zone.
+DateTime toDateTime(TimeOfDay time, DateTimeZone zone) Deprecated. Converts this object to a DateTime using a TimeOfDay to fill in the missing fields.
+DateTime toDateTimeAtCurrentTime() Deprecated. Converts this partial to a full datetime using the default time zone setting the date fields from this instance and the time fields from the current time.
+DateTime toDateTimeAtCurrentTime(DateTimeZone zone) Deprecated. Converts this partial to a full datetime using the specified time zone setting the date fields from this instance and the time fields from the current time.
+DateTime toDateTimeAtMidnight() Deprecated. Converts this YearMonthDay to a full datetime at midnight using the default time zone.
+DateTime toDateTimeAtMidnight(DateTimeZone zone) Deprecated. Converts this YearMonthDay to a full datetime at midnight using the specified time zone.
+Interval toInterval() Deprecated. Converts this object to an Interval representing the whole day in the default time zone.
+Interval toInterval(DateTimeZone zone) Deprecated. Converts this object to an Interval representing the whole day.
+LocalDate toLocalDate() Deprecated. Converts this object to a LocalDate with the same date and chronology.
+String toString() Deprecated. Output the date in the ISO8601 format YYYY-MM-DD.
+YearMonthDay withChronologyRetainFields(Chronology newChronology) Deprecated. Returns a copy of this date with the specified chronology.
+YearMonthDay withDayOfMonth(int dayOfMonth) Deprecated. Returns a copy of this date with the day of month field updated.
+YearMonthDay withField(DateTimeFieldType fieldType, int value) Deprecated. Returns a copy of this date with the specified field set to a new value.
+YearMonthDay withFieldAdded(DurationFieldType fieldType, int amount) Deprecated. Returns a copy of this date with the value of the specified field increased.
+YearMonthDay withMonthOfYear(int monthOfYear) Deprecated. Returns a copy of this date with the month of year field updated.
+YearMonthDay withPeriodAdded(ReadablePeriod period, int scalar) Deprecated. Returns a copy of this date with the specified period added.
+YearMonthDay withYear(int year) Deprecated. Returns a copy of this date with the year field updated.
+YearMonthDay.Property year() Deprecated. Get the year field property which provides access to advanced functionality.

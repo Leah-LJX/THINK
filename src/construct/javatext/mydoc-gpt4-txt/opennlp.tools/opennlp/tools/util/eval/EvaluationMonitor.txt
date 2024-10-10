@@ -1,0 +1,9 @@
+[API Name] opennlp.tools.util.eval.EvaluationMonitor<T>
+[Type] Interface
+[Info]
+All Known Subinterfaces: ChunkerEvaluationMonitor, DoccatEvaluationMonitor, LanguageDetectorEvaluationMonitor, LemmatizerEvaluationMonitor, ParserEvaluationMonitor, POSTaggerEvaluationMonitor, SentenceDetectorEvaluationMonitor, TokenizerEvaluationMonitor, TokenNameFinderEvaluationMonitor
+All Known Implementing Classes: ChunkerDetailedFMeasureListener, ChunkEvaluationErrorListener, opennlp.tools.cmdline.DetailedFMeasureListener, DetokenEvaluationErrorListener, DoccatEvaluationErrorListener, DoccatFineGrainedReportListener, opennlp.tools.cmdline.EvaluationErrorPrinter, LanguageDetectorEvaluationErrorListener, LanguageDetectorFineGrainedReportListener, LemmaEvaluationErrorListener, LemmatizerFineGrainedReportListener, NameEvaluationErrorListener, POSEvaluationErrorListener, POSTaggerFineGrainedReportListener, SentenceEvaluationErrorListener, TokenEvaluationErrorListener, TokenNameFinderDetailedFMeasureListener, TokenNameFinderFineGrainedReportListener
+public interface EvaluationMonitor<T>
+[Method Summary]
+void correctlyClassified(T reference, T prediction)	
+void misclassified(T reference, T prediction)	

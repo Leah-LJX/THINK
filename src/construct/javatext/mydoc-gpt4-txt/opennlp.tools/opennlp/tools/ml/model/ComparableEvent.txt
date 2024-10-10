@@ -1,0 +1,20 @@
+[API Name] opennlp.tools.ml.model.ComparableEvent
+[Type] Class
+[Info]
+All Implemented Interfaces: Comparable<ComparableEvent>
+public class ComparableEvent extends Object implements Comparable<ComparableEvent> A maxent event representation which we can use to sort based on the  predicates indexes contained in the events.
+[Constructor Summary]
+ComparableEvent(int oc, int[] pids)	
+ComparableEvent(int oc, int[] pids, float[] values)	
+[Field Summary]
+final int outcome	
+final int[] predIndexes	
+int seen	
+final float[] values	
+[Method Summary]
+int compareTo(ComparableEvent ce)	
+boolean equals(Object obj)	
+int hashCode()	
+String toString()	
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

@@ -1,0 +1,16 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.taginfos.TagInfoShortOrLongOrRational
+[Type] Class
+[Info]
+public class TagInfoShortOrLongOrRational extends TagInfo
+[Constructor Summary]
+TagInfoShortOrLongOrRational​(String name, int tag, int length, TiffDirectoryType directoryType)	
+[Field Summary]
+TagInfoShortOrLongOrRational​(String name, int tag, int length, TiffDirectoryType directoryType)	
+[Method Summary]
+byte[] encodeValue​(ByteOrder byteOrder, int... values)	
+byte[] encodeValue​(ByteOrder byteOrder, short... values)	
+byte[] encodeValue​(ByteOrder byteOrder, RationalNumber... values)	
+[Methods inherited from class org.apache.commons.imaging.formats.tiff.taginfos.TagInfo]
+encodeValue, getDescription, getValue, isOffset, isText, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

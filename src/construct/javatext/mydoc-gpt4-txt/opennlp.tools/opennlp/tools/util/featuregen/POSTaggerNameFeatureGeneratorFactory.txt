@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.util.featuregen.POSTaggerNameFeatureGeneratorFactory
+[Type] Class
+[Info]
+public class POSTaggerNameFeatureGeneratorFactory extends GeneratorFactory.AbstractXmlFeatureGeneratorFactory
+See Also:
+POSTaggerNameFeatureGenerator
+[Constructor Summary]
+POSTaggerNameFeatureGeneratorFactory()	
+[Method Summary]
+AdaptiveFeatureGenerator create()	
+Map<String,ArtifactSerializer<?>> getArtifactSerializerMapping()	
+[Methods inherited from class opennlp.tools.util.featuregen.GeneratorFactory.AbstractXmlFeatureGeneratorFactory]
+getBool, getBool, getDouble, getDouble, getFloat, getFloat, getInt, getInt, getLong, getLong, getStr, getStr
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

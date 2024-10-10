@@ -1,0 +1,18 @@
+[API Name] org.apache.pdfbox.util.Hex
+[Type] Class
+[Info]
+public final class Hex extends Object Utility functions for hex encoding.
+Author: John Hewson
+[Method Summary]
+static byte[] decodeBase64(String base64Value)	Decode a base64 String.
+static byte[] decodeHex(String s)	Decodes a hex String into a byte array.
+static byte[] getBytes(byte b)	Returns the bytes corresponding to the ASCII hex encoding of the given byte.
+static byte[] getBytes(byte[] bytes)	Returns the bytes corresponding to the ASCII hex encoding of the given bytes.
+static char[] getChars(short num)	Returns the characters corresponding to the ASCII hex encoding of the given short.
+static char[] getCharsUTF16BE(String text)	Takes the characters in the given string, convert it to bytes in UTF16-BE format and build a char array that corresponds to the ASCII hex encoding of the resulting bytes.
+static String getString(byte b)	Returns a hex string of the given byte.
+static String getString(byte[] bytes)	Returns a hex string of the given byte array.
+static void writeHexByte(byte b, OutputStream output)	Writes the given byte as hex value to the given output stream.
+static void writeHexBytes(byte[] bytes, OutputStream output)	Writes the given byte array as hex value to the given output stream.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

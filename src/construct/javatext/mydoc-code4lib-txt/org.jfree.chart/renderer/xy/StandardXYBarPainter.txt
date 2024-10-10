@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.xy.StandardXYBarPainter
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, XYBarPainter
+[Constructor Summary]
+StandardXYBarPainter() Creates a new instance.
+[Method Summary]
+boolean equals(Object obj) Tests this instance for equality with an arbitrary object.

@@ -1,0 +1,28 @@
+[Class] org.jfree.data.time.Week
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable, MonthConstants, TimePeriod
+[Constructor Summary]
+Week()	Creates a new time period for the week in which the current system date/time falls.
+Week(int week, int year)	Creates a time period representing the week in the specified year.
+Week(int week, Year year)	Creates a time period representing the week in the specified year.
+Week(Date time)	Creates a time period for the week in which the specified date/time falls.
+Week(Date time, Calendar calendar)	Constructs a new instance, based on a particular date/time.
+Week(Date time, TimeZone zone, Locale locale)	Creates a time period for the week in which the specified date/time falls, calculated relative to the specified time zone.
+[Method Summary]
+int compareTo(Object o1)	Returns an integer indicating the order of this Week object relative to the specified object:	 negative == before, zero == same, positive == after.
+boolean equals(Object obj)	Tests the equality of this Week object to an arbitrary object.
+long getFirstMillisecond()	Returns the first millisecond of the week.
+long getFirstMillisecond(Calendar calendar)	Returns the first millisecond of the week, evaluated using the supplied calendar (which determines the time zone).
+long getLastMillisecond()	Returns the last millisecond of the week.
+long getLastMillisecond(Calendar calendar)	Returns the last millisecond of the week, evaluated using the supplied calendar (which determines the time zone).
+long getSerialIndex()	Returns a serial index number for the week.
+int getWeek()	Returns the week.
+Year getYear()	Returns the year in which the week falls.
+int getYearValue()	Returns the year in which the week falls, as an integer value.
+int hashCode()	Returns a hash code for this object instance.
+RegularTimePeriod next()	Returns the week following this one.
+static Week parseWeek(String s)	Parses the string argument as a week.
+void peg(Calendar calendar)	Recalculates the start date/time and end date/time for this time period relative to the supplied calendar (which incorporates a time zone and information about what day is the first day of the week).
+RegularTimePeriod previous()	Returns the week preceding this one.
+String toString()	Returns a string representing the week (e.g.

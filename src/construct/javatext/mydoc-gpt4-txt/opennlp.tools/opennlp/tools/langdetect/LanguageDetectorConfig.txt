@@ -1,0 +1,23 @@
+[API Name] opennlp.tools.langdetect.LanguageDetectorConfig
+[Type] Class
+[Info]
+public class LanguageDetectorConfig extends Object
+[Constructor Summary]
+LanguageDetectorConfig()	
+[Field Summary]
+static final int DEFAULT_CHUNK_SIZE	
+static final LanguageDetectorConfig DEFAULT_LANGUAGE_DETECTOR_CONFIG	
+static final int DEFAULT_MAX_LENGTH	
+static final int DEFAULT_MIN_CONSEC_IMPROVEMENTS	
+static final double DEFAULT_MIN_DIFF	
+[Method Summary]
+int getChunkSize()	After processing a chunk of this size, the probing detection will compute probabilities and determine if there is enough confidence to stop.
+int getMaxLength()	
+int getMinConsecImprovements()	If this value equals 0, probing detection will rely solely on getMinDiff()
+double getMinDiff()	If this value equals 0, probing detection will rely solely on getMinConsecImprovements()
+void setChunkSize(int chunkSize)	
+void setMaxLength(int maxLength)	
+void setMinConsecImprovements(int minConsecImprovements)	
+void setMinDiff(double minDiff)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

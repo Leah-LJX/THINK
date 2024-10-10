@@ -1,0 +1,21 @@
+[API Name] opennlp.tools.formats.ad.ADChunkSampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<ChunkSample>
+@Internal public class ADChunkSampleStream extends Object implements ObjectStream<ChunkSample> Parser for Floresta Sita(c)tica Arvores Deitadas corpus, output to for the  Portuguese Chunker training.    The heuristic to extract chunks where based o paper 'A Machine Learning  Approach to Portuguese Clause Identification', (Eraldo Fernandes, Cicero  Santos and Ruy Milidiú).
+ Data can be found on  this web site.
+   Information about the format:  Susana Afonso.      "Árvores deitadas: Descrição do formato e das opções de análise na Floresta Sintáctica".    12 de Fevereiro de 2006.    Detailed info about the  NER tagset.   Note: Do not use this class, internal use only!
+[Constructor Summary]
+ADChunkSampleStream(InputStreamFactory in, String charsetName)	Instantiates a ADChunkSampleStream stream from an InputStreamFactory.
+ADChunkSampleStream(ObjectStream<String> lineStream)	Instantiates a ADChunkSampleStream stream from ObjectStream<String>, that could be a PlainTextByLineStream object.
+[Field Summary]
+static final String OTHER	
+[Method Summary]
+void close()	Closes the ObjectStream and releases all allocated resources.
+static String convertFuncTag(String t, boolean useCGTags)	
+ChunkSample read()	Returns the next ObjectStream object.
+void reset()	Repositions the stream at the beginning and the previously seen object sequence will be repeated exactly.
+void setEnd(int aEnd)	
+void setStart(int aStart)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

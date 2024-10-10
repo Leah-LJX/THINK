@@ -1,0 +1,90 @@
+[Class] org.joda.time.Period
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, ReadablePeriod
+[Constructor Summary]
+Period()	Creates a new empty period with the standard set of fields.
+Period(int hours,	int minutes,	int seconds,	int millis)	Create a period from a set of field values using the standard set of fields.
+Period(int years,	int months,	int weeks,	int days,	int hours,	int minutes,	int seconds,	int millis)	Create a period from a set of field values using the standard set of fields.
+Period(int years,	int months,	int weeks,	int days,	int hours,	int minutes,	int seconds,	int millis,	PeriodType type)	Create a period from a set of field values.
+Period(long duration)	Creates a period from the given millisecond duration using the standard	 set of fields.
+Period(long duration,	Chronology chronology)	Creates a period from the given millisecond duration using the standard	 set of fields.
+Period(long startInstant,	long endInstant)	Creates a period from the given interval endpoints using the standard	 set of fields.
+Period(long startInstant,	long endInstant,	Chronology chrono)	Creates a period from the given interval endpoints using the standard	 set of fields.
+Period(long startInstant,	long endInstant,	PeriodType type)	Creates a period from the given interval endpoints.
+Period(long startInstant,	long endInstant,	PeriodType type,	Chronology chrono)	Creates a period from the given interval endpoints.
+Period(long duration,	PeriodType type)	Creates a period from the given millisecond duration.
+Period(long duration,	PeriodType type,	Chronology chronology)	Creates a period from the given millisecond duration.
+Period(Object period)	Creates a period by converting or copying from another object.
+Period(Object period,	Chronology chrono)	Creates a period by converting or copying from another object.
+Period(Object period,	PeriodType type)	Creates a period by converting or copying from another object.
+Period(Object period,	PeriodType type,	Chronology chrono)	Creates a period by converting or copying from another object.
+Period(ReadableDuration duration,	ReadableInstant endInstant)	Creates a period from the given duration and end point.
+Period(ReadableDuration duration,	ReadableInstant endInstant,	PeriodType type)	Creates a period from the given duration and end point.
+Period(ReadableInstant startInstant,	ReadableDuration duration)	Creates a period from the given start point and the duration.
+Period(ReadableInstant startInstant,	ReadableDuration duration,	PeriodType type)	Creates a period from the given start point and the duration.
+Period(ReadableInstant startInstant,	ReadableInstant endInstant)	Creates a period between the given instants using the standard set of fields.
+Period(ReadableInstant startInstant,	ReadableInstant endInstant,	PeriodType type)	Creates a period between the given instants.
+Period(ReadablePartial start,	ReadablePartial end)	Creates a period from two partially specified times.
+Period(ReadablePartial start,	ReadablePartial end,	PeriodType type)	Creates a period from two partially specified times.
+[Method Summary]
+static Period days(int days) Create a period with a specified number of days.
+static Period fieldDifference(ReadablePartial start, ReadablePartial end) Creates a period from two partially specified times, calculating by field difference.
+int getDays() Gets the days field part of the period.
+int getHours() Gets the hours field part of the period.
+int getMillis() Gets the millis field part of the period.
+int getMinutes() Gets the minutes field part of the period.
+int getMonths() Gets the months field part of the period.
+int getSeconds() Gets the seconds field part of the period.
+int getWeeks() Gets the weeks field part of the period.
+int getYears() Gets the years field part of the period.
+static Period hours(int hours) Create a period with a specified number of hours.
+static Period millis(int millis) Create a period with a specified number of millis.
+Period minus(ReadablePeriod period) Returns a new period with the specified period subtracted.
+Period minusDays(int days) Returns a new period minus the specified number of days taken away.
+Period minusHours(int hours) Returns a new period minus the specified number of hours taken away.
+Period minusMillis(int millis) Returns a new period minus the specified number of millis taken away.
+Period minusMinutes(int minutes) Returns a new period minus the specified number of minutes taken away.
+Period minusMonths(int months) Returns a new period minus the specified number of months taken away.
+Period minusSeconds(int seconds) Returns a new period minus the specified number of seconds taken away.
+Period minusWeeks(int weeks) Returns a new period minus the specified number of weeks taken away.
+Period minusYears(int years) Returns a new period with the specified number of years taken away.
+static Period minutes(int minutes) Create a period with a specified number of minutes.
+static Period months(int months) Create a period with a specified number of months.
+Period multipliedBy(int scalar) Returns a new instance with each element in this period multiplied by the specified scalar.
+Period negated() Returns a new instance with each amount in this period negated.
+Period normalizedStandard() Normalizes this period using standard rules, assuming a 12 month year, 7 day week, 24 hour day, 60 minute hour and 60 second minute.
+Period normalizedStandard(PeriodType type) Normalizes this period using standard rules, assuming a 12 month year, 7 day week, 24 hour day, 60 minute hour and 60 second minute, providing control over how the result is split into fields.
+static Period parse(String str) Parses a Period from the specified string.
+static Period parse(String str, PeriodFormatter formatter) Parses a Period from the specified string using a formatter.
+Period plus(ReadablePeriod period) Returns a new period with the specified period added.
+Period plusDays(int days) Returns a new period plus the specified number of days added.
+Period plusHours(int hours) Returns a new period plus the specified number of hours added.
+Period plusMillis(int millis) Returns a new period plus the specified number of millis added.
+Period plusMinutes(int minutes) Returns a new period plus the specified number of minutes added.
+Period plusMonths(int months) Returns a new period plus the specified number of months added.
+Period plusSeconds(int seconds) Returns a new period plus the specified number of seconds added.
+Period plusWeeks(int weeks) Returns a new period plus the specified number of weeks added.
+Period plusYears(int years) Returns a new period with the specified number of years added.
+static Period seconds(int seconds) Create a period with a specified number of seconds.
+Period toPeriod() Get this period as an immutable Period object by returning this.
+Days toStandardDays() Converts this period to a period in days assuming a 7 day week, 24 hour day, 60 minute hour and 60 second minute.
+Duration toStandardDuration() Converts this period to a duration assuming a 7 day week, 24 hour day, 60 minute hour and 60 second minute.
+Hours toStandardHours() Converts this period to a period in hours assuming a 7 day week, 24 hour day, 60 minute hour and 60 second minute.
+Minutes toStandardMinutes() Converts this period to a period in minutes assuming a 7 day week, 24 hour day, 60 minute hour and 60 second minute.
+Seconds toStandardSeconds() Converts this period to a period in seconds assuming a 7 day week, 24 hour day, 60 minute hour and 60 second minute.
+Weeks toStandardWeeks() Converts this period to a period in weeks assuming a 7 day week, 24 hour day, 60 minute hour and 60 second minute.
+static Period weeks(int weeks) Create a period with a specified number of weeks.
+Period withDays(int days) Returns a new period with the specified number of days.
+Period withField(DurationFieldType field, int value) Creates a new Period instance with the specified field set to a new value.
+Period withFieldAdded(DurationFieldType field, int value) Creates a new Period instance with the valueToAdd added to the specified field.
+Period withFields(ReadablePeriod period) Creates a new Period instance with the fields from the specified period copied on top of those from this period.
+Period withHours(int hours) Returns a new period with the specified number of hours.
+Period withMillis(int millis) Returns a new period with the specified number of millis.
+Period withMinutes(int minutes) Returns a new period with the specified number of minutes.
+Period withMonths(int months) Returns a new period with the specified number of months.
+Period withPeriodType(PeriodType type) Creates a new Period instance with the same field values but different PeriodType.
+Period withSeconds(int seconds) Returns a new period with the specified number of seconds.
+Period withWeeks(int weeks) Returns a new period with the specified number of weeks.
+Period withYears(int years) Returns a new period with the specified number of years.
+static Period years(int years) Create a period with a specified number of years.

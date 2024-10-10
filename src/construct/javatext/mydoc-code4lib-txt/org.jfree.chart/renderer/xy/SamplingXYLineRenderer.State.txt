@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.xy.SamplingXYLineRenderer.State
+[Flag] Class
+[Info]
+Enclosing class: SamplingXYLineRenderer
+[Constructor Summary]
+State(PlotRenderingInfo info) Creates a new state instance.
+[Method Summary]
+void startSeriesPass(XYDataset dataset, int series, int firstItem, int lastItem, int pass, int passCount) This method is called by the XYPlot at the start of each series pass.

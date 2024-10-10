@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.axis.NumberAxis
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, org.jfree.util.PublicCloneable
+Direct Known Subclasses: CyclicNumberAxis, LogarithmicAxis, ModuloAxis, NumberAxis3D, SymbolAxis
+[Constructor Summary]
+NumberAxis() Default constructor.
+[Method Summary]
+protected void autoAdjustRange() Rescales the axis to ensure that all data is visible.

@@ -1,0 +1,37 @@
+[Class] org.jfree.data.time.TimeTableXYDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, PublicCloneable, DomainInfo, Dataset, SeriesChangeListener, SeriesDataset, IntervalXYDataset, TableXYDataset, XYDataset
+[Constructor Summary]
+TimeTableXYDataset()	Creates a new dataset.
+TimeTableXYDataset(TimeZone zone)	Creates a new dataset with the given time zone.
+TimeTableXYDataset(TimeZone zone, Locale locale)	Creates a new dataset with the given time zone and locale.
+[Method Summary]
+void add(TimePeriod period, double y, Comparable seriesName)	Adds a new data item to the dataset and sends a DatasetChangeEvent to all registered listeners.
+void add(TimePeriod period, Number y, Comparable seriesName, boolean notify)	Adds a new data item to the dataset and, if requested, sends a DatasetChangeEvent to all registered listeners.
+void clear()	Removes all data items from the dataset and sends a DatasetChangeEvent to all registered listeners.
+Object clone()	Returns a clone of this dataset.
+boolean equals(Object obj)	Tests this dataset for equality with an arbitrary object.
+Range getDomainBounds(boolean includeInterval)	Returns the range of the values in this dataset's domain.
+boolean getDomainIsPointsInTime()	Returns a flag that controls whether the domain is treated as 'points in time'.
+double getDomainLowerBound(boolean includeInterval)	Returns the minimum x-value in the dataset.
+double getDomainUpperBound(boolean includeInterval)	Returns the maximum x-value in the dataset.
+Number getEndX(int series, int item)	Returns the ending X value for the specified series and item.
+double getEndXValue(int series, int item)	Returns the end x-value (as a double primitive) for an item within a series.
+Number getEndY(int series, int item)	Returns the ending Y value for the specified series and item.
+int getItemCount()	Returns the number of items in ALL series.
+int getItemCount(int series)	Returns the number of items in a series.
+int getSeriesCount()	Returns the number of series in the dataset.
+Comparable getSeriesKey(int series)	Returns the key for a series.
+Number getStartX(int series, int item)	Returns the starting X value for the specified series and item.
+double getStartXValue(int series, int item)	Returns the start x-value (as a double primitive) for an item within a series.
+Number getStartY(int series, int item)	Returns the starting Y value for the specified series and item.
+TimePeriod getTimePeriod(int item)	Returns the time period for the specified item.
+Number getX(int series, int item)	Returns the x-value for an item within a series.
+TimePeriodAnchor getXPosition()	Returns the position within each time period that is used for the X value.
+double getXValue(int series, int item)	Returns the x-value (as a double primitive) for an item within a series.
+Number getY(int series, int item)	Returns the y-value for an item within a series.
+void remove(TimePeriod period, Comparable seriesName)	Removes an existing data item from the dataset.
+void remove(TimePeriod period, Comparable seriesName, boolean notify)	Removes an existing data item from the dataset and, if requested, sends a DatasetChangeEvent to all registered listeners.
+void setDomainIsPointsInTime(boolean flag)	Sets a flag that controls whether the domain is treated as 'points in time', or time periods.
+void setXPosition(TimePeriodAnchor anchor)	Sets the position within each time period that is used for the X values, then sends a DatasetChangeEvent to all registered listeners.

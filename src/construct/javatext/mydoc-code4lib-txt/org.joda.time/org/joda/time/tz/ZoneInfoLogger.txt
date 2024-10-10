@@ -1,0 +1,8 @@
+[Class] org.joda.time.tz.ZoneInfoLogger
+[Flag] Class
+[Info]
+Returns: true to log verbosely
+[Constructor Summary]
+ZoneInfoLogger()
+[Method Summary]
+static void set(boolean verbose) static boolean verbose() Gets a flag indicating that verbose logging is required.

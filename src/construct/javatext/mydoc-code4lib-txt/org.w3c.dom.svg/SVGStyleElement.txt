@@ -1,0 +1,15 @@
+[Class] org.w3c.dom.svg.SVGStyleElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement
+[Constructor Summary]
+
+[Method Summary]
+java.lang.String getMedia()	 
+ java.lang.String getTitle()	 
+ java.lang.String getType()	 
+ java.lang.String getXMLspace()	 
+ void setMedia(java.lang.String media)	 
+ void setTitle(java.lang.String title)	 
+ void setType(java.lang.String type)	 
+ void setXMLspace(java.lang.String xmlspace)

@@ -1,0 +1,13 @@
+[API Name] Package org.apache.commons.imaging.formats.png.PngConstants
+[Type] Class
+[Info]
+public final class PngConstants extends Object
+[Field Summary]
+static int COMPRESSION_DEFLATE_INFLATE	
+static byte COMPRESSION_TYPE_INFLATE_DEFLATE	
+static byte FILTER_METHOD_ADAPTIVE	
+static String PARAM_KEY_PNG_COMPRESSION_LEVEL	Parameter key.
+static BinaryConstant PNG_SIGNATURE	
+static String XMP_KEYWORD	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

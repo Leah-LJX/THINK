@@ -1,0 +1,55 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationLine
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDAnnotationLine extends PDAnnotationMarkup This is the class that represents a line annotation. Introduced in PDF 1.3 specification
+Author: Paul King
+[Constructor Summary]
+PDAnnotationLine()	Constructor.
+PDAnnotationLine(COSDictionary field)	Creates a Line annotation from a COSDictionary, expected to be a correct object definition.
+[Field Summary]
+static String IT_LINE_ARROW	Constant for annotation intent of Arrow.
+static String IT_LINE_DIMENSION	Constant for annotation intent of a dimension line.
+static String LE_BUTT	Constant for a butt line ending.
+static String LE_CIRCLE	Constant for a circle line ending.
+static String LE_CLOSED_ARROW	Constant for a closed arrow line ending.
+static String LE_DIAMOND	Constant for a diamond line ending.
+static String LE_NONE	Constant for no line ending.
+static String LE_OPEN_ARROW	Constant for a open arrow line ending.
+static String LE_R_CLOSED_ARROW	Constant for a reversed closed arrow line ending.
+static String LE_R_OPEN_ARROW	Constant for a reversed open arrow line ending.
+static String LE_SLASH	Constant for a slash line ending.
+static String LE_SQUARE	Constant for a square line ending.
+static String SUB_TYPE	The type of annotation.
+[Method Summary]
+void constructAppearances()	Create the appearance entry for this annotation.
+void constructAppearances(PDDocument document)	Create the appearance entry for this annotation.
+float getCaptionHorizontalOffset()	This will retrieve the horizontal offset of the caption.
+String getCaptionPositioning()	This will retrieve the caption positioning.
+float getCaptionVerticalOffset()	This will retrieve the vertical offset of the caption.
+String getEndPointEndingStyle()	This will retrieve the line ending style for the end point, possible values shown in the LE_ constants section.
+PDColor getInteriorColor()	This will retrieve the interior color of the line endings defined in the LE entry.
+float getLeaderLineExtensionLength()	This will retrieve the length of the leader line extensions.
+float getLeaderLineLength()	This will retrieve the length of the leader line.
+float getLeaderLineOffsetLength()	This will retrieve the length of the leader line offset.
+float[] getLine()	This will retrieve the start and end coordinates of the line (or leader line if LL entry is set).
+String getStartPointEndingStyle()	This will retrieve the line ending style for the start point, possible values shown in the LE_ constants section.
+boolean hasCaption()	This will retrieve whether the text specified by the /Contents or /RC entries shall be shown as a caption in the appearance of the line.
+void setCaption(boolean cap)	This will set if the contents are shown as a caption to the line.
+void setCaptionHorizontalOffset(float offset)	This will set the horizontal offset of the caption.
+void setCaptionPositioning(String captionPositioning)	This will set the caption positioning.
+void setCaptionVerticalOffset(float offset)	This will set the vertical offset of the caption.
+void setCustomAppearanceHandler(PDAppearanceHandler appearanceHandler)	Set a custom appearance handler for generating the annotations appearance streams.
+void setEndPointEndingStyle(String style)	This will set the line ending style for the end point, see the LE_ constants for the possible values.
+void setInteriorColor(PDColor ic)	This will set interior color of the line endings defined in the LE entry.
+void setLeaderLineExtensionLength(float leaderLineExtensionLength)	This will set the length of the leader line extensions.
+void setLeaderLineLength(float leaderLineLength)	This will set the length of the leader line.
+void setLeaderLineOffsetLength(float leaderLineOffsetLength)	This will set the length of the leader line offset.
+void setLine(float[] l)	This will set start and end coordinates of the line (or leader line if LL entry is set).
+void setStartPointEndingStyle(String style)	This will set the line ending style for the start point, see the LE_ constants for the possible values.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationMarkup]
+getBorderStyle, getConstantOpacity, getCreationDate, getExternalData, getInReplyTo, getIntent, getPopup, getReplyType, getRichContents, getSubject, getTitlePopup, setBorderStyle, setConstantOpacity, setCreationDate, setExternalData, setInReplyTo, setIntent, setPopup, setReplyType, setRichContents, setSubject, setTitlePopup
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation]
+createAnnotation, equals, getAnnotationFlags, getAnnotationName, getAppearance, getAppearanceState, getBorder, getColor, getColor, getContents, getCOSObject, getModifiedDate, getNormalAppearanceStream, getOptionalContent, getPage, getRectangle, getStructParent, getSubtype, hashCode, isHidden, isInvisible, isLocked, isLockedContents, isNoRotate, isNoView, isNoZoom, isPrinted, isReadOnly, isToggleNoView, setAnnotationFlags, setAnnotationName, setAppearance, setAppearanceState, setBorder, setColor, setContents, setHidden, setInvisible, setLocked, setLockedContents, setModifiedDate, setModifiedDate, setNoRotate, setNoView, setNoZoom, setOptionalContent, setPage, setPrinted, setReadOnly, setRectangle, setStructParent, setSubtype, setToggleNoView
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, toString, wait, wait, wait

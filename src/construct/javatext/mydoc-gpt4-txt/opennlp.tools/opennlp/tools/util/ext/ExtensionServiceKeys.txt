@@ -1,0 +1,10 @@
+[API Name] opennlp.tools.util.ext.ExtensionServiceKeys
+[Type] Class
+[Info]
+public final class ExtensionServiceKeys extends Object
+[Constructor Summary]
+ExtensionServiceKeys()	
+[Field Summary]
+static final String ID	Property key for the unique id which identifies an OpenNLP extension service.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,27 @@
+[Class] org.jfree.data.time.TimePeriodValuesCollection
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, DomainInfo, Dataset, SeriesChangeListener, SeriesDataset, IntervalXYDataset, XYDataset
+[Constructor Summary]
+TimePeriodValuesCollection()	Constructs an empty dataset.
+TimePeriodValuesCollection(TimePeriodValues series)	Constructs a dataset containing a single series.
+[Method Summary]
+void addSeries(TimePeriodValues series)	Adds a series to the collection.
+boolean equals(Object obj)	Tests this instance for equality with an arbitrary object.
+Range getDomainBounds(boolean includeInterval)	Returns the range of the values in this dataset's domain.
+double getDomainLowerBound(boolean includeInterval)	Returns the minimum x-value in the dataset.
+double getDomainUpperBound(boolean includeInterval)	Returns the maximum x-value in the dataset.
+Number getEndX(int series, int item)	Returns the ending X value for the specified series and item.
+Number getEndY(int series, int item)	Returns the ending Y value for the specified series and item.
+int getItemCount(int series)	Returns the number of items in the specified series.
+TimePeriodValues getSeries(int series)	Returns a series.
+int getSeriesCount()	Returns the number of series in the collection.
+Comparable getSeriesKey(int series)	Returns the key for a series.
+Number getStartX(int series, int item)	Returns the starting X value for the specified series and item.
+Number getStartY(int series, int item)	Returns the starting Y value for the specified series and item.
+Number getX(int series, int item)	Returns the x-value for the specified series and item.
+TimePeriodAnchor getXPosition()	Returns the position of the X value within each time period.
+Number getY(int series, int item)	Returns the y-value for the specified series and item.
+void removeSeries(int index)	Removes a series from the collection.
+void removeSeries(TimePeriodValues series)	Removes the specified series from the collection.
+void setXPosition(TimePeriodAnchor position)	Sets the position of the x axis within each time period.

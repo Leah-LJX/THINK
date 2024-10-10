@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.sentdetect.SentenceDetectorEvaluator
+[Type] Class
+[Info]
+public class SentenceDetectorEvaluator extends Evaluator<SentenceSample> The SentenceDetectorEvaluator measures the performance of  the given SentenceDetector with the provided reference  SentenceSamples.
+See Also:
+Evaluator SentenceDetector SentenceSample
+[Constructor Summary]
+SentenceDetectorEvaluator(SentenceDetector sentenceDetector, SentenceDetectorEvaluationMonitor... listeners)	Initializes the current instance.
+[Method Summary]
+FMeasure getFMeasure()	
+[Methods inherited from class opennlp.tools.util.eval.Evaluator]
+evaluate, evaluateSample
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

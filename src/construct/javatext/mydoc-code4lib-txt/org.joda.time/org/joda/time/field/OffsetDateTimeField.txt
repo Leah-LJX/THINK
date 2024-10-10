@@ -1,0 +1,26 @@
+[Class] org.joda.time.field.OffsetDateTimeField
+[Flag] Class
+[Info]
+Since: 1.0
+[Constructor Summary]
+OffsetDateTimeField(DateTimeField field,	DateTimeFieldType type,	int offset)	Constructor.
+OffsetDateTimeField(DateTimeField field,	DateTimeFieldType type,	int offset,	int minValue,	int maxValue)	Constructor.
+OffsetDateTimeField(DateTimeField field,	int offset)	Constructor.
+[Method Summary]
+long add(long instant, int amount) Add the specified amount of offset units to the specified time instant.
+long add(long instant, long amount) Add the specified amount of offset units to the specified time instant.
+long addWrapField(long instant, int amount) Add to the offset component of the specified time instant, wrapping around within that component if necessary.
+int get(long instant) Get the amount of offset units from the specified time instant.
+int getLeapAmount(long instant) Gets the amount by which this field is 'leap' for the specified instant.
+DurationField getLeapDurationField() If this field were to leap, then it would be in units described by the returned duration.
+int getMaximumValue() Get the maximum value for the field.
+int getMinimumValue() Get the minimum value for the field.
+int getOffset() Returns the offset added to the field values.
+boolean isLeap(long instant) Returns whether this field is 'leap' for the specified instant.
+long remainder(long instant) Returns the fractional duration milliseconds of this field.
+long roundCeiling(long instant) Round to the highest whole unit of this field.
+long roundFloor(long instant) Round to the lowest whole unit of this field.
+long roundHalfCeiling(long instant) Round to the nearest whole unit of this field.
+long roundHalfEven(long instant) Round to the nearest whole unit of this field.
+long roundHalfFloor(long instant) Round to the nearest whole unit of this field.
+long set(long instant, int value) Set the specified amount of offset units to the specified time instant.

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.annotations.XYPolygonAnnotation
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Annotation, XYAnnotation, org.jfree.util.PublicCloneable
+[Constructor Summary]
+XYPolygonAnnotation(double[] polygon) Creates a new annotation (where, by default, the polygon is drawn with a black outline).
+[Method Summary]
+Object clone() Returns a clone.

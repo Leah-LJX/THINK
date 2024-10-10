@@ -1,0 +1,7 @@
+[Class] org.jfree.chart.renderer.xy.XYSplineRenderer.XYSplineState
+[Flag] Class
+[Info]
+Enclosing class: XYSplineRenderer
+[Constructor Summary]
+XYSplineState(PlotRenderingInfo info) Creates a new state instance.
+[Method Summary]

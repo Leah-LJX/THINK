@@ -1,0 +1,12 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.taginfos.TagInfoAsciiOrRational
+[Type] Class
+[Info]
+public class TagInfoAsciiOrRational extends TagInfo
+[Constructor Summary]
+TagInfoAsciiOrRational​(String name, int tag, int length, TiffDirectoryType directoryType)	
+[Field Summary]
+TagInfoAsciiOrRational​(String name, int tag, int length, TiffDirectoryType directoryType)	
+[Methods inherited from class org.apache.commons.imaging.formats.tiff.taginfos.TagInfo]
+encodeValue, getDescription, getValue, isOffset, isText, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

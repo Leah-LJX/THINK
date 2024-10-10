@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.namefind.RegexNameFinderFactory
+[Type] Class
+[Info]
+public class RegexNameFinderFactory extends Object Returns a RegexNameFinder based on a selection of  defaults or a configuration and a selection of defaults.
+[Constructor Summary]
+RegexNameFinderFactory()	
+[Nested Class Summary]
+Nested Class Summary
+static enum 
+[Method Summary]
+static RegexNameFinder getDefaultRegexNameFinders(Map<String,Pattern[]> config, RegexNameFinderFactory.DEFAULT_REGEX_NAME_FINDER... defaults)	Allows for use of selected Defaults as well as regexes from external configuration.
+static RegexNameFinder getDefaultRegexNameFinders(RegexNameFinderFactory.DEFAULT_REGEX_NAME_FINDER... defaults)	Retrieves a RegexNameFinder that will utilize specified default regexes.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

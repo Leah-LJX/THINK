@@ -1,0 +1,8 @@
+[API Name] opennlp.tools.doccat.DoccatEvaluationMonitor
+[Type] Interface
+[Info]
+All Superinterfaces: EvaluationMonitor<DocumentSample>
+All Known Implementing Classes: DoccatEvaluationErrorListener, DoccatFineGrainedReportListener
+public interface DoccatEvaluationMonitor extends EvaluationMonitor<DocumentSample> A marker interface for evaluating doccat.
+[Methods inherited from interface opennlp.tools.util.eval.EvaluationMonitor]
+correctlyClassified, misclassified

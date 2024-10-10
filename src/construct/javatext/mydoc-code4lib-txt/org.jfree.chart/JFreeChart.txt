@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.JFreeChart
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, PlotChangeListener, TitleChangeListener, org.jfree.ui.Drawable
+[Constructor Summary]
+JFreeChart(Plot plot) Creates a new chart based on the supplied plot.
+[Method Summary]
+void addChangeListener(ChartChangeListener listener) Registers an object for notification of changes to the chart.

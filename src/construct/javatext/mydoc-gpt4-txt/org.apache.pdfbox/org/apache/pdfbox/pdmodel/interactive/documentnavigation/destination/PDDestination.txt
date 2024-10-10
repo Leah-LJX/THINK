@@ -1,0 +1,15 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.documentnavigation.destination.PDDestination
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable, PDDestinationOrAction
+Direct Known Subclasses: PDNamedDestination, PDPageDestination
+public abstract class PDDestination extends Object implements PDDestinationOrAction This represents a destination in a PDF document.
+Author: Ben Litchfield
+[Constructor Summary]
+PDDestination()	
+[Method Summary]
+static PDDestination create(COSBase base)	This will create a new destination depending on the type of COSBase that is passed in.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface org.apache.pdfbox.pdmodel.common.COSObjectable]
+getCOSObject

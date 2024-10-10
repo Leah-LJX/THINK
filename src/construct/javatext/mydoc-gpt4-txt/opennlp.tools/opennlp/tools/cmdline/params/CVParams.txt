@@ -1,0 +1,7 @@
+[API Name] opennlp.tools.cmdline.params.CVParams
+[Type] Interface
+[Info]
+@Internal public interface CVParams Common cross validator parameters.   Note: Do not use this class, internal use only!
+[Method Summary]
+Integer getFolds()	
+Boolean getMisclassified()	

@@ -1,0 +1,7 @@
+[Class] org.w3c.dom.svg.SVGEvent
+[Flag] Interface
+[Info]
+All Superinterfaces: Event
+[Constructor Summary]
+
+[Method Summary]

@@ -1,0 +1,18 @@
+[Class] org.jfree.data.category.CategoryToPieDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, Dataset, DatasetChangeListener, PieDataset, KeyedValues, Values
+[Constructor Summary]
+CategoryToPieDataset(CategoryDataset source, TableOrder extract, int index)	An adaptor class that converts any CategoryDataset into a PieDataset, by taking the values from a single row or column.
+[Method Summary]
+void datasetChanged(DatasetChangeEvent event)	Sends a DatasetChangeEvent to all registered listeners, with this (not the underlying) dataset as the source.
+boolean equals(Object obj)	Tests this dataset for equality with an arbitrary object, returning true if obj is a dataset containing the same keys and values in the same order as this dataset.
+int getExtractIndex()	Returns the index of the row or column from which to extract the data.
+TableOrder getExtractType()	Returns the extract type, which determines whether data is read from one row or one column of the underlying dataset.
+int getIndex(Comparable key)	Returns the index for a given key, or -1 if there is no such key.
+int getItemCount()	Returns the number of items (values) in the collection.
+Comparable getKey(int index)	Returns the key at the specified index.
+List getKeys()	Returns the keys for the dataset.
+CategoryDataset getUnderlyingDataset()	Returns the underlying dataset.
+Number getValue(int item)	Returns a value from the dataset.
+Number getValue(Comparable key)	Returns the value for a given key.

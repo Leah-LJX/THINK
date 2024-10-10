@@ -1,0 +1,25 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.annotation.PDBorderStyleDictionary
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDBorderStyleDictionary extends Object implements COSObjectable This class represents a PDF /BS entry the border style dictionary.
+Author: Paul King
+[Constructor Summary]
+PDBorderStyleDictionary()	Constructor.
+PDBorderStyleDictionary(COSDictionary dict)	Constructor.
+[Field Summary]
+static String STYLE_BEVELED	Constant for the name of a beveled style.
+static String STYLE_DASHED	Constant for the name of a dashed style.
+static String STYLE_INSET	Constant for the name of a inset style.
+static String STYLE_SOLID	Constant for the name of a solid style.
+static String STYLE_UNDERLINE	Constant for the name of a underline style.
+[Method Summary]
+COSDictionary getCOSObject()	returns the dictionary.
+PDLineDashPattern getDashStyle()	This will retrieve the dash style used for drawing the border.
+String getStyle()	This will retrieve the border style, see the STYLE_* constants for valid values.
+float getWidth()	This will retrieve the border width in points, 0 = no border.
+void setDashStyle(COSArray dashArray)	This will set the dash style used for drawing the border.
+void setStyle(String s)	This will set the border style, see the STYLE_* constants for valid values.
+void setWidth(float w)	This will set the border width in points, 0 = no border.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.ModuloAxis
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, org.jfree.util.PublicCloneable
+[Constructor Summary]
+ModuloAxis(String label, Range fixedRange) Creates a new axis.
+[Method Summary]
+protected void autoAdjustRange() This method should calculate a range that will show all the data values.

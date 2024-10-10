@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.color.PDDeviceNAttributes
+[Type] Class
+[Info]
+public final class PDDeviceNAttributes extends Object Contains additional information about the components of colour space.  Instead of using the alternate color space and tint transform, conforming readers may use custom  blending algorithms, along with other information provided in the attributes dictionary.
+Author: Ben Litchfield
+[Constructor Summary]
+PDDeviceNAttributes()	Creates a new DeviceN colour space attributes dictionary.
+PDDeviceNAttributes(COSDictionary attributes)	Creates a new DeviceN colour space attributes dictionary from the given dictionary.
+[Method Summary]
+Map<String,PDSeparation> getColorants()	Returns a map of colorants and their associated Separation color space.
+COSDictionary getCOSDictionary()	Returns the underlying COS dictionary.
+PDDeviceNProcess getProcess()	Returns the DeviceN Process Dictionary, or null if it is missing.
+boolean isNChannel()	Returns true if this is an NChannel (PDF 1.6) color space.
+void setColorants(Map<String,PDColorSpace> colorants)	Sets the colorant map.
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

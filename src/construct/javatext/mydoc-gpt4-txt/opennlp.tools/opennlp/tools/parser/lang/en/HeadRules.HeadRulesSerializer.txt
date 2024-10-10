@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.parser.lang.en.HeadRules.HeadRulesSerializer
+[Type] Class
+[Info]
+All Implemented Interfaces: ArtifactSerializer<HeadRules>
+Enclosing class: HeadRules
+public static class HeadRules.HeadRulesSerializer extends Object implements ArtifactSerializer<HeadRules>
+[Constructor Summary]
+HeadRulesSerializer()	
+[Method Summary]
+HeadRules create(InputStream in)	Creates an artifact from the provided InputStream.
+void serialize(HeadRules artifact, OutputStream out)	Serializes an artifact to the provided OutputStream.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

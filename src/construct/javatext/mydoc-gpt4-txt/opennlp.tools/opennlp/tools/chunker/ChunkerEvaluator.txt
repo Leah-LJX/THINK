@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.chunker.ChunkerEvaluator
+[Type] Class
+[Info]
+public class ChunkerEvaluator extends Evaluator<ChunkSample> The ChunkerEvaluator measures the performance of the given Chunker with the provided  reference samples.
+See Also:
+Evaluator Chunker ChunkSample
+[Constructor Summary]
+ChunkerEvaluator(Chunker chunker, ChunkerEvaluationMonitor... listeners)	Initializes a ChunkerEvaluator instance with the given Chunker.
+[Method Summary]
+FMeasure getFMeasure()	
+[Methods inherited from class opennlp.tools.util.eval.Evaluator]
+evaluate, evaluateSample
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

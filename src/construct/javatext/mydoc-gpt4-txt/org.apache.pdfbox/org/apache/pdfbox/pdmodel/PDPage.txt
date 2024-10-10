@@ -1,0 +1,57 @@
+[API Name] org.apache.pdfbox.pdmodel.PDPage
+[Type] Class
+[Info]
+All Implemented Interfaces: PDContentStream, COSObjectable
+public class PDPage extends Object implements COSObjectable, PDContentStream A page in a PDF document.
+Author: Ben Litchfield
+[Constructor Summary]
+PDPage()	Creates a new PDPage instance for embedding, with a size of U.S.
+PDPage(COSDictionary pageDictionary)	Creates a new instance of PDPage for reading.
+PDPage(PDRectangle mediaBox)	Creates a new instance of PDPage for embedding.
+[Method Summary]
+boolean equals(Object other)	
+PDPageAdditionalActions getActions()	Get the page actions.
+List<PDAnnotation> getAnnotations()	This will return a list of the annotations for this page.
+List<PDAnnotation> getAnnotations(AnnotationFilter annotationFilter)	This will return a list of the annotations for this page.
+PDRectangle getArtBox()	A rectangle, expressed in default user space units, defining the extent of the page's meaningful content (including potential white space) as intended by the page's creator The default is the CropBox.
+PDRectangle getBBox()	Returns the bounding box of the contents.
+PDRectangle getBleedBox()	A rectangle, expressed in default user space units, defining the region to which the contents of the page should be clipped when output in a production environment.
+InputStream getContents()	Returns the content stream(s) of this page as a single input stream.
+org.apache.pdfbox.io.RandomAccessRead getContentsForRandomAccess()	Returns this stream's content, if any.
+Iterator<PDStream> getContentStreams()	Returns the content streams which make up this page.
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+PDRectangle getCropBox()	A rectangle, expressed in default user space units, defining the visible region of default user space.
+Matrix getMatrix()	Returns the matrix which transforms from the stream's space to user space.
+PDRectangle getMediaBox()	A rectangle, expressed in default user space units, defining the boundaries of the physical medium on which the page is intended to be displayed or printed.
+PDMetadata getMetadata()	Get the metadata that is part of the document catalog.
+ResourceCache getResourceCache()	Returns the resource cache associated with this page, or null if there is none.
+PDResources getResources()	A dictionary containing any resources required by the page.
+int getRotation()	Returns the rotation angle in degrees by which the page should be rotated clockwise when displayed or printed.
+int getStructParents()	This will get the key of this Page in the structural parent tree.
+List<PDThreadBead> getThreadBeads()	This will get a list of PDThreadBead objects, which are article threads in the document.
+PDTransition getTransition()	
+PDRectangle getTrimBox()	A rectangle, expressed in default user space units, defining the intended dimensions of the finished page after trimming.
+float getUserUnit()	Get the user unit.
+List<PDViewportDictionary> getViewports()	Get the viewports.
+boolean hasContents()	Returns true if this page has one or more content streams.
+int hashCode()	
+void setActions(PDPageAdditionalActions actions)	Set the page actions.
+void setAnnotations(List<PDAnnotation> annotations)	This will set the list of annotations.
+void setArtBox(PDRectangle artBox)	This will set the ArtBox for this page.
+void setBleedBox(PDRectangle bleedBox)	This will set the BleedBox for this page.
+void setContents(List<PDStream> contents)	This will set the contents of this page.
+void setContents(PDStream contents)	This will set the contents of this page.
+void setCropBox(PDRectangle cropBox)	This will set the CropBox for this page.
+void setMediaBox(PDRectangle mediaBox)	This will set the mediaBox for this page.
+void setMetadata(PDMetadata meta)	Set the metadata for this object.
+void setResources(PDResources resources)	This will set the resources for this page.
+void setRotation(int rotation)	This will set the rotation for this page.
+void setStructParents(int structParents)	This will set the key for this page in the structural parent tree.
+void setThreadBeads(List<PDThreadBead> beads)	This will set the list of thread beads.
+void setTransition(PDTransition transition)	
+void setTransition(PDTransition transition, float duration)	Convenient method to set a transition and the display duration
+void setTrimBox(PDRectangle trimBox)	This will set the TrimBox for this page.
+void setUserUnit(float userUnit)	Get the user unit.
+void setViewports(List<PDViewportDictionary> viewports)	Set the viewports.
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, toString, wait, wait, wait

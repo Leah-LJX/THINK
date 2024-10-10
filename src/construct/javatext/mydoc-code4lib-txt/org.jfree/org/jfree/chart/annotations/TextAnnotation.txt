@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.annotations.TextAnnotation
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Annotation
+Direct Known Subclasses: CategoryTextAnnotation
+[Constructor Summary]
+protected TextAnnotation(String text) Creates a text annotation with default settings.
+[Method Summary]
+boolean equals(Object obj) Tests this object for equality with an arbitrary object.

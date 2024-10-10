@@ -1,0 +1,12 @@
+[Class] org.jfree.data.statistics.StatisticalCategoryDataset
+[Flag] Interface
+[Info]
+All Superinterfaces: CategoryDataset, Dataset, KeyedValues2D, Values2D
+All Known Implementing Classes: DefaultStatisticalCategoryDataset
+[Constructor Summary]
+
+[Method Summary]
+Number getMeanValue(int row, int column)	Returns the mean value for an item.
+Number getMeanValue(Comparable rowKey, Comparable columnKey)	Returns the mean value for an item.
+Number getStdDevValue(int row, int column)	Returns the standard deviation value for an item.
+Number getStdDevValue(Comparable rowKey, Comparable columnKey)	Returns the standard deviation value for an item.

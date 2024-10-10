@@ -1,0 +1,25 @@
+[Class] org.joda.time.field.DividedDateTimeField
+[Flag] Class
+[Info]
+Since: 1.0
+See Also: RemainderDateTimeField
+[Constructor Summary]
+DividedDateTimeField(DateTimeField field,	DateTimeFieldType type,	int divisor)	Constructor.
+DividedDateTimeField(DateTimeField field,	DurationField rangeField,	DateTimeFieldType type,	int divisor)	Constructor.
+DividedDateTimeField(RemainderDateTimeField remainderField,	DateTimeFieldType type)	Construct a DividedDateTimeField that compliments the given	 RemainderDateTimeField.
+DividedDateTimeField(RemainderDateTimeField remainderField,	DurationField rangeField,	DateTimeFieldType type)	Construct a DividedDateTimeField that compliments the given	 RemainderDateTimeField.
+[Method Summary]
+long add(long instant, int amount) Add the specified amount of scaled units to the specified time instant.
+long add(long instant, long amount) Add the specified amount of scaled units to the specified time instant.
+long addWrapField(long instant, int amount) Add to the scaled component of the specified time instant, wrapping around within that component if necessary.
+int get(long instant) Get the amount of scaled units from the specified time instant.
+int getDifference(long minuendInstant, long subtrahendInstant) Computes the difference between two instants, as measured in the units of this field.
+long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) Computes the difference between two instants, as measured in the units of this field.
+int getDivisor() Returns the divisor applied, in the field's units.
+DurationField getDurationField() Returns a scaled version of the wrapped field's unit duration field.
+int getMaximumValue() Get the maximum value for the field.
+int getMinimumValue() Get the minimum value for the field.
+DurationField getRangeDurationField() Returns the range duration of this field.
+long remainder(long instant) Returns the fractional duration milliseconds of this field.
+long roundFloor(long instant) Round to the lowest whole unit of this field.
+long set(long instant, int value) Set the specified amount of scaled units to the specified time instant.

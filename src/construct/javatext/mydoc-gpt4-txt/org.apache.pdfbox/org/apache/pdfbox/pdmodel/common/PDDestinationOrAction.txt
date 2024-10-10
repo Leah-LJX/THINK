@@ -1,0 +1,9 @@
+[API Name] org.apache.pdfbox.pdmodel.common.PDDestinationOrAction
+[Type] Interface
+[Info]
+All Superinterfaces: COSObjectable
+All Known Implementing Classes: PDAction, PDActionEmbeddedGoTo, PDActionGoTo, PDActionHide, PDActionImportData, PDActionJavaScript, PDActionLaunch, PDActionMovie, PDActionNamed, PDActionRemoteGoTo, PDActionResetForm, PDActionSound, PDActionSubmitForm, PDActionThread, PDActionURI, PDDestination, PDNamedDestination, PDPageDestination, PDPageFitDestination, PDPageFitHeightDestination, PDPageFitRectangleDestination, PDPageFitWidthDestination, PDPageXYZDestination
+public interface PDDestinationOrAction extends COSObjectable This is an interface used for some elements such as the document  OpenAction that can be either a Destination or an Action.
+Author: Ben Litchfield
+[Methods inherited from interface org.apache.pdfbox.pdmodel.common.COSObjectable]
+getCOSObject

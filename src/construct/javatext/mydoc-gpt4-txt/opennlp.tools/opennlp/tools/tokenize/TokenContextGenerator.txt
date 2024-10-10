@@ -1,0 +1,7 @@
+[API Name] opennlp.tools.tokenize.TokenContextGenerator
+[Type] Interface
+[Info]
+All Known Implementing Classes: DefaultTokenContextGenerator
+public interface TokenContextGenerator Interface for context generators required for TokenizerME.
+[Method Summary]
+String[] getContext(String sentence, int index)	

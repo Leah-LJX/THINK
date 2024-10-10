@@ -1,0 +1,25 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.write.TiffOutputField
+[Type] Class
+[Info]
+public class TiffOutputField extends Object
+[Constructor Summary]
+TiffOutputField​(int tag, TagInfo tagInfo, FieldType fieldType, int count, byte[] bytes)	
+TiffOutputField​(TagInfo tagInfo, FieldType fieldType, int count, byte[] bytes)	
+[Field Summary]
+int count	
+FieldType fieldType	
+int tag	
+TagInfo tagInfo	
+[Method Summary]
+boolean bytesEqual​(byte[] data)	
+protected static TiffOutputField createOffsetField​(TagInfo tagInfo, ByteOrder byteOrder)	
+protected org.apache.commons.imaging.formats.tiff.write.TiffOutputItem getSeperateValue()	
+int getSortHint()	
+protected boolean isLocalValue()	
+protected void setData​(byte[] bytes)	
+void setSortHint​(int sortHint)	
+String toString()	
+String toString​(String prefix)	
+protected void writeField​(BinaryOutputStream bos)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

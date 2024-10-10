@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.renderer.category.AreaRenderer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, LegendItemSource, CategoryItemRenderer, org.jfree.util.PublicCloneable
+Direct Known Subclasses: StackedAreaRenderer
+[Constructor Summary]
+AreaRenderer() Creates a new renderer.
+[Method Summary]
+Object clone() Returns an independent copy of the renderer.

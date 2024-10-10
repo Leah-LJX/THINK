@@ -1,0 +1,28 @@
+[API Name] opennlp.tools.postag.POSModel
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, ArtifactProvider, SerializableArtifact
+public final class POSModel extends BaseModel implements SerializableArtifact The POSModel is the model used by a learnable POSTagger.
+See Also:
+POSTaggerME Serialized Form
+[Constructor Summary]
+POSModel(File modelFile)	Initializes a POSModel instance via a valid File.
+POSModel(InputStream in)	Initializes a POSModel instance via a valid InputStream.
+POSModel(String languageCode, MaxentModel posModel, int beamSize, Map<String,String> manifestInfoEntries, POSTaggerFactory posFactory)	Initializes a POSModel instance via given parameters.
+POSModel(String languageCode, MaxentModel posModel, Map<String,String> manifestInfoEntries, POSTaggerFactory posFactory)	Initializes a POSModel instance via given parameters.
+POSModel(String languageCode, SequenceClassificationModel<String> posModel, Map<String,String> manifestInfoEntries, POSTaggerFactory posFactory)	Initializes a POSModel instance via given parameters.
+POSModel(URL modelURL)	Initializes a POSModel instance via a valid URL.
+POSModel(Path modelPath)	Initializes a POSModel instance via a valid Path.
+[Method Summary]
+boolean equals(Object obj)	
+Class<POSModelSerializer> getArtifactSerializerClass()	Retrieves the class which can serialize and recreate this artifact.
+POSTaggerFactory getFactory()	
+MaxentModel getPosModel()	Deprecated. use getPosSequenceModel() instead.
+SequenceClassificationModel<String> getPosSequenceModel()	
+int hashCode()	
+[Fields inherited from class opennlp.tools.util.model.BaseModel]
+TRAINING_CUTOFF_PROPERTY, TRAINING_EVENTHASH_PROPERTY, TRAINING_ITERATIONS_PROPERTY
+[Methods inherited from class opennlp.tools.util.model.BaseModel]
+getArtifact, getLanguage, getManifestProperty, getVersion, isLoadedFromSerialized, serialize, serialize, serialize
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, toString, wait, wait, wait

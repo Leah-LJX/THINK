@@ -1,0 +1,15 @@
+[Class] org.joda.time.convert.AbstractConverter
+[Flag] Class
+[Info]
+All Implemented Interfaces: Converter
+[Constructor Summary]
+protected 	AbstractConverter()	Restricted constructor.
+[Method Summary]
+Chronology getChronology(Object object, Chronology chrono) Extracts the chronology from an object of this converter's type where the chronology is specified.
+Chronology getChronology(Object object, DateTimeZone zone) Extracts the chronology from an object of this converter's type where the time zone is specified.
+long getInstantMillis(Object object, Chronology chrono) Extracts the millis from an object of this converter's type.
+int[] getPartialValues(ReadablePartial fieldSource, Object object, Chronology chrono) Extracts the values of the partial from an object of this converter's type.
+int[] getPartialValues(ReadablePartial fieldSource, Object object, Chronology chrono, DateTimeFormatter parser) Extracts the values of the partial from an object of this converter's type.
+PeriodType getPeriodType(Object object) Selects a suitable period type for the given object.
+boolean isReadableInterval(Object object, Chronology chrono) Checks if the input is a ReadableInterval.
+String toString() Gets a debugging string version of this converter.

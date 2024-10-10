@@ -1,0 +1,18 @@
+[Class] org.joda.time.base.BaseInterval
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, ReadableInterval
+Direct Known Subclasses: Interval, MutableInterval
+[Constructor Summary]
+protected 	BaseInterval(long startInstant,	long endInstant,	Chronology chrono)	Constructs an interval from a start and end instant.
+protected 	BaseInterval(Object interval,	Chronology chrono)	Constructs a time interval converting or copying from another object	 that describes an interval.
+protected 	BaseInterval(ReadableDuration duration,	ReadableInstant end)	Constructs an interval from a millisecond duration and an end instant.
+protected 	BaseInterval(ReadableInstant start,	ReadableDuration duration)	Constructs an interval from a start instant and a duration.
+protected 	BaseInterval(ReadableInstant start,	ReadableInstant end)	Constructs an interval from a start and end instant.
+protected 	BaseInterval(ReadableInstant start,	ReadablePeriod period)	Constructs an interval from a start instant and a time period.
+protected 	BaseInterval(ReadablePeriod period,	ReadableInstant end)	Constructs an interval from a time period and an end instant.
+[Method Summary]
+Chronology getChronology() Gets the chronology of this interval.
+long getEndMillis() Gets the end of this time interval which is exclusive.
+long getStartMillis() Gets the start of this time interval which is inclusive.
+protected void setInterval(long startInstant, long endInstant, Chronology chrono) Sets this interval from two millisecond instants and a chronology.

@@ -1,0 +1,9 @@
+[API Name] opennlp.tools.ml.maxent.quasinewton.Function
+[Type] Interface
+[Info]
+All Known Implementing Classes: NegLogLikelihood, ParallelNegLogLikelihood, QNMinimizer.L2RegFunction
+public interface Function Interface for a function.
+[Method Summary]
+int getDimension()	
+double[] gradientAt(double[] x)	
+double valueAt(double[] x)	

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.JThermometer
+[Flag] Class
+[Info]
+All Implemented Interfaces: ImageObserver, MenuContainer, Serializable, Accessible
+[Constructor Summary]
+JThermometer() Default constructor.
+[Method Summary]
+void addSubtitle(String subtitle) Adds a subtitle to the chart.

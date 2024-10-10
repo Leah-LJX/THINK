@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.ml.maxent.quasinewton.ParallelNegLogLikelihood
+[Type] Class
+[Info]
+All Implemented Interfaces: Function
+public class ParallelNegLogLikelihood extends NegLogLikelihood Evaluate negative log-likelihood and its gradient in parallel
+[Constructor Summary]
+ParallelNegLogLikelihood(DataIndexer indexer, int threads)	
+[Method Summary]
+double[] gradientAt(double[] x)	Computes the gradient.
+double valueAt(double[] x)	Computes the negative log-likelihood.
+[Methods inherited from class opennlp.tools.ml.maxent.quasinewton.NegLogLikelihood]
+getDimension, getInitialPoint
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

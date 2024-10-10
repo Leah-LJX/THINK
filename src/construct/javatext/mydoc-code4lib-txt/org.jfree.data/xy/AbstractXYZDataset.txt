@@ -1,0 +1,9 @@
+[Class] org.jfree.data.xy.AbstractXYZDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, Dataset, SeriesChangeListener, SeriesDataset, XYDataset, XYZDataset
+Direct Known Subclasses: DefaultXYZDataset, MatrixSeriesCollection
+[Constructor Summary]
+AbstractXYZDataset()
+[Method Summary]
+double getZValue(int series, int item)	Returns the z-value (as a double primitive) for an item within a series.

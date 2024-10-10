@@ -1,0 +1,9 @@
+[Class] org.w3c.dom.DOMErrorHandler
+[Flag] Interface
+[Info]
+Since:
+DOM Level 3
+[Constructor Summary]
+
+[Method Summary]
+boolean handleError(DOMError error) This method is called on the error handler when an error occurs.

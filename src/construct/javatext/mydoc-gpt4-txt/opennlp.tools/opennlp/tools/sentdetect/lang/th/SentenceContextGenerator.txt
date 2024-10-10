@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.sentdetect.lang.th.SentenceContextGenerator
+[Type] Class
+[Info]
+All Implemented Interfaces: SDContextGenerator
+public class SentenceContextGenerator extends DefaultSDContextGenerator Creates contexts/features for end-of-sentence detection in Thai text.
+[Constructor Summary]
+SentenceContextGenerator()	
+[Field Summary]
+static final char[] eosCharacters	
+[Methods inherited from class opennlp.tools.sentdetect.DefaultSDContextGenerator]
+getContext
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

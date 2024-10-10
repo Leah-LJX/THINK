@@ -1,0 +1,31 @@
+[Class] org.jfree.data.time.TimePeriodValues
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+TimePeriodValues(String name)	Creates a new (empty) collection of time period values.
+TimePeriodValues(String name, String domain, String range)	Creates a new time series that contains no data.
+[Method Summary]
+void add(TimePeriod period, double value)	Adds a new data item to the series and sends a SeriesChangeEvent to all registered listeners.
+void add(TimePeriod period, Number value)	Adds a new data item to the series and sends a SeriesChangeEvent to all registered listeners.
+void add(TimePeriodValue item)	Adds a data item to the series and sends a SeriesChangeEvent to all registered listeners.
+Object clone()	Returns a clone of the collection.
+TimePeriodValues createCopy(int start, int end)	Creates a new instance by copying a subset of the data in this collection.
+void delete(int start, int end)	Deletes data from start until end index (end inclusive) and sends a SeriesChangeEvent to all registered listeners.
+boolean equals(Object obj)	Tests the series for equality with another object.
+TimePeriodValue getDataItem(int index)	Returns one data item for the series.
+String getDomainDescription()	Returns the domain description.
+int getItemCount()	Returns the number of items in the series.
+int getMaxEndIndex()	Returns the index of the time period with the maximum end milliseconds.
+int getMaxMiddleIndex()	Returns the index of the time period with the maximum middle milliseconds.
+int getMaxStartIndex()	Returns the index of the time period with the maximum start milliseconds.
+int getMinEndIndex()	Returns the index of the time period with the minimum end milliseconds.
+int getMinMiddleIndex()	Returns the index of the time period with the minimum middle milliseconds.
+int getMinStartIndex()	Returns the index of the time period with the minimum start milliseconds.
+String getRangeDescription()	Returns the range description.
+TimePeriod getTimePeriod(int index)	Returns the time period at the specified index.
+Number getValue(int index)	Returns the value at the specified index.
+int hashCode()	Returns a hash code value for the object.
+void setDomainDescription(String description)	Sets the domain description and fires a property change event (with the property name Domain if the description changes).
+void setRangeDescription(String description)	Sets the range description and fires a property change event with the name Range.
+void update(int index, Number value)	Updates (changes) the value of a data item and sends a SeriesChangeEvent to all registered listeners.

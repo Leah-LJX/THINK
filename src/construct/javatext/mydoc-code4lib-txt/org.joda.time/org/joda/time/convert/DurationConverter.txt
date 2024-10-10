@@ -1,0 +1,8 @@
+[Class] org.joda.time.convert.DurationConverter
+[Flag] Interface
+[Info]
+All Superinterfaces: Converter
+[Constructor Summary]
+
+[Method Summary]
+long getDurationMillis(Object object) Extracts the millis from an object of this converter's type.

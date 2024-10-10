@@ -1,0 +1,8 @@
+[Class] org.w3c.dom.EntityReference
+[Flag] Interface
+[Info]
+All Superinterfaces:
+Node
+[Constructor Summary]
+
+[Method Summary]

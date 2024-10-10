@@ -1,0 +1,20 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.action.PDActionHide
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable, PDDestinationOrAction
+public class PDActionHide extends PDAction This represents a thread action that can be executed in a PDF document.
+Author: Evgeniy Muravitskiy
+[Constructor Summary]
+PDActionHide()	Default Constructor
+PDActionHide(COSDictionary a)	Constructor
+[Field Summary]
+static String SUB_TYPE	This type of action this object represents.
+[Method Summary]
+boolean getH()	A flag indicating whether to hide the annotation or show it
+COSBase getT()	The annotation or annotations to be hidden or shown
+void setH(boolean h)	
+void setT(COSBase t)	
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.action.PDAction]
+getCOSObject, getNext, getSubType, getType, setNext, setSubType, setType
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

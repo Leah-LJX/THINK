@@ -1,0 +1,10 @@
+[Class] org.jfree.data.time.TimePeriod
+[Flag] Interface
+[Info]
+All Superinterfaces: Comparable
+All Known Implementing Classes: Day, FixedMillisecond, Hour, Millisecond, Minute, Month, Quarter, RegularTimePeriod, Second, SimpleTimePeriod, Week, Year
+[Constructor Summary]
+
+[Method Summary]
+Date getEnd()	Returns the end date/time.
+Date getStart()	Returns the start date/time.

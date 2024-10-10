@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.parser.treeinsert.ParserEventStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<Event>
+public class ParserEventStream extends AbstractParserEventStream Wrapper class for one of four built-attach parser event streams.  The particular event type is specified at construction.
+[Constructor Summary]
+ParserEventStream(ObjectStream<Parse> d, HeadRules rules, ParserEventTypeEnum etype)	Instantiates a ParserEventStream based on the specified data stream of the type using head rules.
+ParserEventStream(ObjectStream<Parse> d, HeadRules rules, ParserEventTypeEnum etype, Dictionary dict)	Instantiates a ParserEventStream based on the specified data stream of the type using head rules.
+[Method Summary]
+void init()	
+[Methods inherited from class opennlp.tools.parser.AbstractParserEventStream]
+getInitialChunks
+[Methods inherited from class opennlp.tools.util.AbstractEventStream]
+close, read, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

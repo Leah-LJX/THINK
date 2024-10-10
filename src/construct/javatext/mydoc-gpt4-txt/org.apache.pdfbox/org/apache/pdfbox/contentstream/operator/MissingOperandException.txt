@@ -1,0 +1,12 @@
+[API Name] org.apache.pdfbox.contentstream.operator.MissingOperandException
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable
+public final class MissingOperandException extends IOException Throw when a PDF operator is missing required operands.
+See Also: Serialized Form
+[Constructor Summary]
+MissingOperandException(Operator operator, List<COSBase> operands)	
+[Methods inherited from class java.lang.Throwable]
+addSuppressed, fillInStackTrace, getCause, getLocalizedMessage, getMessage, getStackTrace, getSuppressed, initCause, printStackTrace, printStackTrace, printStackTrace, setStackTrace, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

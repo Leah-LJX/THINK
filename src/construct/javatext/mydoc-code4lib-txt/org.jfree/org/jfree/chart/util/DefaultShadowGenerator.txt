@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.util.DefaultShadowGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, ShadowGenerator
+[Constructor Summary]
+DefaultShadowGenerator() Creates a new instance with default attributes.
+[Method Summary]
+protected void applyShadow(BufferedImage image) Applies a shadow to the image.

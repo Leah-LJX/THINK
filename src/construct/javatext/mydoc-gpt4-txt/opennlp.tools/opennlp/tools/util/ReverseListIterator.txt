@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.util.ReverseListIterator<T>
+[Type] Class
+[Info]
+All Implemented Interfaces: Iterator<T>
+public class ReverseListIterator<T> extends Object implements Iterator<T> An iterator for a list which returns values in the opposite order as the typical list iterator.
+[Constructor Summary]
+ReverseListIterator(List<T> list)	
+[Method Summary]
+boolean hasNext()	
+T next()	
+void remove()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface java.util.Iterator]
+forEachRemaining

@@ -1,0 +1,10 @@
+[API Name] opennlp.tools.util.jvm.StringInterners
+[Type] Class
+[Info]
+public class StringInterners extends Object Provides string interning utility methods. Interning mechanism can be configured via the  system property opennlp.interner.class by specifying an implementation via its  fully qualified classname. It needs to implement StringInterner.    If not specified by the user, the default interner is CHMStringInterner.
+[Constructor Summary]
+StringInterners()	
+[Method Summary]
+static String intern(String sample)	Interns and returns a reference to the representative instance for any collection of string instances that are equal to each other.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

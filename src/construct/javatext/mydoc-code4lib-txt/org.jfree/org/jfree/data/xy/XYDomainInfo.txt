@@ -1,0 +1,8 @@
+[Class] org.jfree.data.xy.XYDomainInfo
+[Flag] Interface
+[Info]
+All Known Implementing Classes: TimeSeriesCollection
+[Constructor Summary]
+
+[Method Summary]
+Range getDomainBounds(List visibleSeriesKeys, boolean includeInterval)	Returns the range of the values in this dataset's domain.

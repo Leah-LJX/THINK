@@ -1,0 +1,18 @@
+[Class] org.w3c.dom.svg.SVGFEConvolveMatrixElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGFilterPrimitiveStandardAttributes, SVGStylable
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedNumber getBias()	 
+ SVGAnimatedNumber getDivisor()	 
+ SVGAnimatedEnumeration getEdgeMode()	 
+ SVGAnimatedNumberList getKernelMatrix()	 
+ SVGAnimatedNumber getKernelUnitLengthX()	 
+ SVGAnimatedNumber getKernelUnitLengthY()	 
+ SVGAnimatedInteger getOrderX()	 
+ SVGAnimatedInteger getOrderY()	 
+ SVGAnimatedBoolean getPreserveAlpha()	 
+ SVGAnimatedInteger getTargetX()	 
+ SVGAnimatedInteger getTargetY()

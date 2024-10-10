@@ -1,0 +1,23 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.segments.GenericSegment
+[Type] Class
+[Info]
+Direct Known Subclasses: AppnSegment, ComSegment, UnknownSegment
+public abstract class GenericSegment extends Segment
+[Constructor Summary]
+GenericSegment​(int marker, byte[] bytes)	
+GenericSegment​(int marker, int markerLength, InputStream is)	
+[Field Summary]
+GenericSegment​(int marker, byte[] bytes)	
+GenericSegment​(int marker, int markerLength, InputStream is)	
+[Method Summary]
+void dump​(PrintWriter pw)	
+void dump​(PrintWriter pw, int start)	
+byte[] getSegmentData()	Returns a copy of the segment's contents, excluding the marker and length bytes at the beginning.
+protected byte getSegmentData​(int offset)	Returns a specific byte of the segment's contents, excluding the marker and length bytes at the beginning.
+String getSegmentDataAsString​(String encoding)	Convert the bytes to a String
+[Methods inherited from class org.apache.commons.imaging.formats.jpeg.segments.Segment]
+getDescription, getSegmentType, toString
+[Methods inherited from class org.apache.commons.imaging.common.BinaryFileParser]
+debugNumber, debugNumber, getByteOrder, setByteOrder
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

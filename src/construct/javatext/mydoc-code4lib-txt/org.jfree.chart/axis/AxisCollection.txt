@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.AxisCollection
+[Flag] Class
+[Info]
+Returns: A list of axes.
+[Constructor Summary]
+AxisCollection() Creates a new empty collection.
+[Method Summary]
+void add(Axis axis, org.jfree.ui.RectangleEdge edge) Adds an axis to the collection.

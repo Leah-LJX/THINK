@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.block.AbstractBlock
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+Direct Known Subclasses: BlockContainer, ColorBlock, EmptyBlock, LabelBlock, LegendGraphic, Title
+[Constructor Summary]
+protected AbstractBlock() Creates a new block.
+[Method Summary]
+org.jfree.ui.Size2D arrange(Graphics2D g2) Arranges the contents of the block, with no constraints, and returns the block size.

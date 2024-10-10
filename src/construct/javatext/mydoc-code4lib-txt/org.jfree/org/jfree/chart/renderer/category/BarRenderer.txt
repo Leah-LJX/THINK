@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.renderer.category.BarRenderer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, LegendItemSource, CategoryItemRenderer, org.jfree.util.PublicCloneable
+Direct Known Subclasses: BarRenderer3D, IntervalBarRenderer, LayeredBarRenderer, StackedBarRenderer, StatisticalBarRenderer, WaterfallBarRenderer
+[Constructor Summary]
+BarRenderer() Creates a new bar renderer with default settings.
+[Method Summary]
+protected double[] calculateBarL0L1(double value) Calculates the coordinates for the length of a single bar.

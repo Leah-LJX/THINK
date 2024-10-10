@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.langdetect.LanguageDetectorSampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<LanguageSample>
+public class LanguageDetectorSampleStream extends FilterObjectStream<String,LanguageSample> This class reads in string encoded training samples, parses them  and outputs LanguageSample objects.    Format:  Each line contains one sample document.  The language is the first string in the line followed by a tab and the document content.  Sample line: category-string tab-char document line-break-char(s)
+[Constructor Summary]
+LanguageDetectorSampleStream(ObjectStream<String> samples)	Initializes a instance.
+[Method Summary]
+LanguageSample read()	Returns the next ObjectStream object.
+[Methods inherited from class opennlp.tools.util.FilterObjectStream]
+close, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

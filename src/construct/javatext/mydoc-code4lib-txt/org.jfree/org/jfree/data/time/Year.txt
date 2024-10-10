@@ -1,0 +1,25 @@
+[Class] org.jfree.data.time.Year
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable, MonthConstants, TimePeriod
+[Constructor Summary]
+Year()	Creates a new Year, based on the current system date/time.
+Year(int year)	Creates a time period representing a single year.
+Year(Date time)	Creates a new Year, based on a particular instant in time.
+Year(Date time, Calendar calendar)	Constructs a new instance, based on a particular date/time.
+Year(Date time, TimeZone zone, Locale locale)	Creates a new Year instance, for the specified time zone and locale.
+[Method Summary]
+int compareTo(Object o1)	Returns an integer indicating the order of this Year object relative to the specified object:	 negative == before, zero == same, positive == after.
+boolean equals(Object obj)	Tests the equality of this Year object to an arbitrary object.
+long getFirstMillisecond()	Returns the first millisecond of the year.
+long getFirstMillisecond(Calendar calendar)	Returns the first millisecond of the year, evaluated using the supplied calendar (which determines the time zone).
+long getLastMillisecond()	Returns the last millisecond of the year.
+long getLastMillisecond(Calendar calendar)	Returns the last millisecond of the year, evaluated using the supplied calendar (which determines the time zone).
+long getSerialIndex()	Returns a serial index number for the year.
+int getYear()	Returns the year.
+int hashCode()	Returns a hash code for this object instance.
+RegularTimePeriod next()	Returns the year following this one.
+static Year parseYear(String s)	Parses the string argument as a year.
+void peg(Calendar calendar)	Recalculates the start date/time and end date/time for this time period relative to the supplied calendar (which incorporates a time zone).
+RegularTimePeriod previous()	Returns the year preceding this one.
+String toString()	Returns a string representing the year..

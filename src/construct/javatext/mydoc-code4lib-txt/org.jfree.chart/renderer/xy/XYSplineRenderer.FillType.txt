@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.renderer.xy.XYSplineRenderer.FillType
+[Flag] Enum
+[Info]
+All Implemented Interfaces: Serializable, Comparable<XYSplineRenderer.FillType>
+Enclosing class: XYSplineRenderer
+[Constructor Summary]
+
+[Method Summary]
+static XYSplineRenderer.FillType valueOf(String name) Returns the enum constant of this type with the specified name.

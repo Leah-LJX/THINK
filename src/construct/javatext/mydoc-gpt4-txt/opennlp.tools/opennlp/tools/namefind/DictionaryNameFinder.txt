@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.namefind.DictionaryNameFinder
+[Type] Class
+[Info]
+All Implemented Interfaces: TokenNameFinder
+public class DictionaryNameFinder extends Object implements TokenNameFinder This is a Dictionary based name finder.  It scans text for names inside a provided dictionary.
+[Constructor Summary]
+DictionaryNameFinder(Dictionary dictionary)	Initializes a DictionaryNameFinder with the provided Dictionary and DEFAULT_TYPE.
+DictionaryNameFinder(Dictionary dictionary, String type)	Initializes a DictionaryNameFinder with the provided Dictionary and a type.
+[Method Summary]
+void clearAdaptiveData()	Forgets all adaptive data which was collected during previous calls to one of the find methods.
+Span[] find(String[] textTokenized)	Generates name tags for the given sequence, typically a sentence, returning token spans for any identified names.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

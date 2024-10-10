@@ -1,0 +1,40 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.form.PDTextField
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class PDTextField extends PDVariableText A text field is a box or space for text fill-in data typically entered from a keyboard.  The text may be restricted to a single line or may be permitted to span multiple lines
+Author: sug
+[Constructor Summary]
+PDTextField(PDAcroForm acroForm)	
+[Field Summary]
+PDTextField(PDAcroForm acroForm)	
+[Method Summary]
+boolean doNotScroll()	
+boolean doNotSpellCheck()	
+String getDefaultValue()	Returns the default value of this field, or an empty string.
+int getMaxLen()	Returns the maximum number of characters of the text field.
+String getValue()	Returns the value of this field, or an empty string.
+String getValueAsString()	Returns a string representation of the "V" entry, or an empty string.
+boolean isComb()	
+boolean isFileSelect()	
+boolean isMultiline()	
+boolean isPassword()	
+boolean isRichText()	
+void setComb(boolean comb)	Set the comb bit.
+void setDefaultValue(String value)	Sets the default value of this field.
+void setDoNotScroll(boolean doNotScroll)	Set the doNotScroll bit.
+void setDoNotSpellCheck(boolean doNotSpellCheck)	Set the doNotSpellCheck bit.
+void setFileSelect(boolean fileSelect)	Set the file select bit.
+void setMaxLen(int maxLen)	Sets the maximum number of characters of the text field.
+void setMultiline(boolean multiline)	Set the multiline bit.
+void setPassword(boolean password)	Set the password bit.
+void setRichText(boolean richText)	Set the richText bit.
+void setValue(String value)	Set the plain text value of this field, and try to update the visual appearance.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDVariableText]
+getDefaultAppearance, getDefaultStyleString, getQ, getRichTextValue, getStringOrStream, setDefaultAppearance, setDefaultStyleString, setQ, setRichTextValue
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDTerminalField]
+applyChange, getFieldFlags, getFieldType, getWidgets, importFDF, setActions, setWidgets
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDField]
+getAcroForm, getActions, getAlternateFieldName, getCOSObject, getFullyQualifiedName, getInheritableAttribute, getMappingName, getParent, getPartialName, isNoExport, isReadOnly, isRequired, setAlternateFieldName, setFieldFlags, setMappingName, setNoExport, setPartialName, setReadOnly, setRequired, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

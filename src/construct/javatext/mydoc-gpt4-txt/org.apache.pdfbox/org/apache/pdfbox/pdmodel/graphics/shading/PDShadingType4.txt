@@ -1,0 +1,29 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.shading.PDShadingType4
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDShadingType6, PDShadingType7
+public class PDShadingType4 extends PDShading Resources for a shading type 4 (Free-Form Gouraud-Shaded Triangle Mesh).
+[Constructor Summary]
+PDShadingType4(COSDictionary shadingDictionary)	Constructor using the given shading dictionary.
+[Field Summary]
+PDShadingType4(COSDictionary shadingDictionary)	Constructor using the given shading dictionary.
+[Method Summary]
+int getBitsPerComponent()	The bits per component of this shading.
+int getBitsPerCoordinate()	The bits per coordinate of this shading.
+int getBitsPerFlag()	The bits per flag of this shading.
+Rectangle2D getBounds(AffineTransform xform, Matrix matrix)	Calculate a bounding rectangle around the areas of this shading context.
+PDRange getDecodeForParameter(int paramNum)	Get the decode for the input parameter.
+int getNumberOfColorComponents()	The number of color components of this shading.
+int getShadingType()	This will return the shading type.
+protected float interpolate(float src, long srcMax, float dstMin, float dstMax)	Calculate the interpolation, see p.345 pdf spec 1.7.
+protected org.apache.pdfbox.pdmodel.graphics.shading.Vertex readVertex(ImageInputStream input, long maxSrcCoord, long maxSrcColor, PDRange rangeX, PDRange rangeY, PDRange[] colRangeTab, Matrix matrix, AffineTransform xform)	Read a vertex from the bit input stream performs interpolations.
+void setBitsPerComponent(int bitsPerComponent)	Set the number of bits per component.
+void setBitsPerCoordinate(int bitsPerCoordinate)	Set the number of bits per coordinate.
+void setBitsPerFlag(int bitsPerFlag)	Set the number of bits per flag.
+void setDecodeValues(COSArray decodeValues)	This will set the decode values.
+Paint toPaint(Matrix matrix)	Returns an AWT paint which corresponds to this shading
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.shading.PDShading]
+create, evalFunction, evalFunction, getAntiAlias, getBackground, getBBox, getColorSpace, getCOSObject, getFunction, getType, setAntiAlias, setBackground, setBBox, setColorSpace, setFunction, setFunction, setShadingType
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

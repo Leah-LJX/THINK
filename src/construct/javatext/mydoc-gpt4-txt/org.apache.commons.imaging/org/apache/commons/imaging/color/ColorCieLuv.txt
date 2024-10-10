@@ -1,0 +1,23 @@
+[API Name] Package org.apache.commons.imaging.color.ColorCieLuv
+[Type] Class
+[Info]
+public final class ColorCieLuv extends Object Represents a color in the CIELUV color space..
+ Contains the constant values for black, white, red,  green, and blue.
+Since: 1.0-alpha1 See Also: https://en.wikipedia.org/wiki/CIELUV
+[Constructor Summary]
+ColorCieLuv​(double L, double u, double v)	
+[Field Summary]
+static ColorCieLuv BLACK	A constant for color black.
+static ColorCieLuv BLUE	A constant for color blue.
+static ColorCieLuv GREEN	A constant for color green.
+double L	
+static ColorCieLuv RED	A constant for color red.
+double u	
+double v	
+static ColorCieLuv WHITE	A constant for color white.
+[Method Summary]
+boolean equals​(Object o)	
+int hashCode()	
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

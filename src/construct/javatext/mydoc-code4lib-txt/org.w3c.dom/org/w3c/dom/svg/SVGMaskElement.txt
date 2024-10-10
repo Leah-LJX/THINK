@@ -1,0 +1,13 @@
+[Class] org.w3c.dom.svg.SVGMaskElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGExternalResourcesRequired, SVGLangSpace, SVGStylable, SVGTests, SVGUnitTypes
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedLength getHeight()	 
+ SVGAnimatedEnumeration getMaskContentUnits()	 
+ SVGAnimatedEnumeration getMaskUnits()	 
+ SVGAnimatedLength getWidth()	 
+ SVGAnimatedLength getX()	 
+ SVGAnimatedLength getY()

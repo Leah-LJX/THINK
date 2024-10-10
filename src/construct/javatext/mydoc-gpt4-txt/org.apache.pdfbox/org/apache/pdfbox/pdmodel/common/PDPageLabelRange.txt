@@ -1,0 +1,25 @@
+[API Name] org.apache.pdfbox.pdmodel.common.PDPageLabelRange
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDPageLabelRange extends Object implements COSObjectable Contains information for a page label range.
+Author: Igor Podolskiy See Also: PDPageLabels
+[Constructor Summary]
+PDPageLabelRange()	Creates a new empty page label range object.
+PDPageLabelRange(COSDictionary dict)	Creates a new page label range object from the given dictionary.
+[Field Summary]
+static String STYLE_DECIMAL	Decimal page numbering style (1, 2, 3, ...).
+static String STYLE_LETTERS_LOWER	Letter (lower case) numbering style (a, b, ..., z, aa, bb, ..., zz, aaa, ...).
+static String STYLE_LETTERS_UPPER	Letter (upper case) numbering style (A, B, ..., Z, AA, BB, ..., ZZ, AAA, ...).
+static String STYLE_ROMAN_LOWER	Roman numbers (lower case) numbering style (i, ii, iii, iv, ...).
+static String STYLE_ROMAN_UPPER	Roman numbers (upper case) numbering style (I, II, III, IV, ...).
+[Method Summary]
+COSDictionary getCOSObject()	Returns the underlying dictionary.
+String getPrefix()	Returns the page label prefix for this page range.
+int getStart()	Returns the start value for page numbering in this page range.
+String getStyle()	Returns the numbering style for this page range.
+void setPrefix(String prefix)	Sets the page label prefix for this page range.
+void setStart(int start)	Sets the start value for page numbering in this page range.
+void setStyle(String style)	Sets the numbering style for this page range.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

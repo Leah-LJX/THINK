@@ -1,0 +1,25 @@
+[API Name] org.apache.pdfbox.pdmodel.PDPageTree
+[Type] Class
+[Info]
+All Implemented Interfaces: Iterable<PDPage>, COSObjectable
+public class PDPageTree extends Object implements COSObjectable, Iterable<PDPage> The page tree, which defines the ordering of pages in the document in an efficient manner.
+Author: John Hewson
+[Constructor Summary]
+PDPageTree()	Constructor for embedding.
+PDPageTree(COSDictionary root)	Constructor for reading.
+[Method Summary]
+void add(PDPage page)	Adds the given page to this page tree.
+PDPage get(int index)	Returns the page at the given index.
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+int getCount()	Returns the number of leaf nodes (page objects) that are descendants of this root within the page tree.
+static COSBase getInheritableAttribute(COSDictionary node, COSName key)	Returns the given attribute, inheriting from parent tree nodes if necessary.
+int indexOf(PDPage page)	Returns the index of the given page, or -1 if it does not exist.
+void insertAfter(PDPage newPage, PDPage prevPage)	Insert a page after another page within a page tree.
+void insertBefore(PDPage newPage, PDPage nextPage)	Insert a page before another page within a page tree.
+Iterator<PDPage> iterator()	Returns an iterator which walks all pages in the tree, in order.
+void remove(int index)	Removes the page with the given index from the page tree.
+void remove(PDPage page)	Removes the given page from the page tree.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface java.lang.Iterable]
+forEach, spliterator

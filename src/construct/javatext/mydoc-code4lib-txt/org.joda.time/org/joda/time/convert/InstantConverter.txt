@@ -1,0 +1,10 @@
+[Class] org.joda.time.convert.InstantConverter
+[Flag] Interface
+[Info]
+All Superinterfaces: Converter
+[Constructor Summary]
+
+[Method Summary]
+Chronology getChronology(Object object, Chronology chrono) Extracts the chronology from an object of this converter's type where the chronology may be specified.
+Chronology getChronology(Object object, DateTimeZone zone) Extracts the chronology from an object of this converter's type where the time zone is specified.
+long getInstantMillis(Object object, Chronology chrono) Extracts the millis from an object of this converter's type.

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.ExtendedCategoryAxis
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+ExtendedCategoryAxis(String label) Creates a new axis.
+[Method Summary]
+void addSubLabel(Comparable category, String label) Adds a sublabel for a category.

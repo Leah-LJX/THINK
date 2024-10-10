@@ -1,0 +1,23 @@
+[API Name] org.apache.pdfbox.cos.COSBoolean
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class COSBoolean extends COSBase This class represents a boolean value in the PDF document.
+Author: Ben Litchfield
+[Field Summary]
+static COSBoolean FALSE	The PDF false value.
+static COSBoolean TRUE	The PDF true value.
+[Method Summary]
+void accept(ICOSVisitor visitor)	visitor pattern double dispatch method.
+boolean equals(Object obj)	
+static COSBoolean getBoolean(boolean value)	This will get the boolean value.
+static COSBoolean getBoolean(Boolean value)	This will get the boolean value.
+boolean getValue()	This will get the value that this object wraps.
+Boolean getValueAsObject()	This will get the value that this object wraps.
+int hashCode()	
+String toString()	Return a string representation of this object.
+void writePDF(OutputStream output)	This will write this object out to a PDF stream.
+[Methods inherited from class org.apache.pdfbox.cos.COSBase]
+getCOSObject, getKey, isDirect, setDirect, setKey
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

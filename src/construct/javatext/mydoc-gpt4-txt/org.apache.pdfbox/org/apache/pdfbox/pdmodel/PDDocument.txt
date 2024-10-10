@@ -1,0 +1,57 @@
+[API Name] org.apache.pdfbox.pdmodel.PDDocument
+[Type] Class
+[Info]
+All Implemented Interfaces: Closeable, AutoCloseable
+public class PDDocument extends Object implements Closeable This is the in-memory representation of the PDF document.  The #close() method must be called once the document is no longer needed.
+Author: Ben Litchfield
+[Constructor Summary]
+PDDocument()	Creates an empty PDF document.
+PDDocument(COSDocument doc)	Constructor that uses an existing document.
+PDDocument(COSDocument doc, org.apache.pdfbox.io.RandomAccessRead source)	Constructor that uses an existing document.
+PDDocument(COSDocument doc, org.apache.pdfbox.io.RandomAccessRead source, AccessPermission permission)	Constructor that uses an existing document.
+PDDocument(org.apache.pdfbox.io.RandomAccessStreamCache.StreamCacheCreateFunction streamCacheCreateFunction)	Creates an empty PDF document.
+[Method Summary]
+void addPage(PDPage page)	This will add a page to the document.
+void addSignature(PDSignature sigObject)	Add parameters of signature to be created externally using default signature options.
+void addSignature(PDSignature sigObject, SignatureInterface signatureInterface)	Add a signature to be created using the instance of given interface.
+void addSignature(PDSignature sigObject, SignatureInterface signatureInterface, SignatureOptions options)	This will add a signature to the document.
+void addSignature(PDSignature sigObject, SignatureOptions options)	Add parameters of signature to be created externally.
+void close()	This will close the underlying COSDocument object.
+AccessPermission getCurrentAccessPermission()	Returns the access permissions granted when the document was decrypted.
+COSDocument getDocument()	This will get the low level document.
+PDDocumentCatalog getDocumentCatalog()	This will get the document CATALOG.
+Long getDocumentId()	Provides the document ID.
+PDDocumentInformation getDocumentInformation()	This will get the document info dictionary.
+PDEncryption getEncryption()	This will get the encryption dictionary for this document.
+PDSignature getLastSignatureDictionary()	This will return the last signature from the field tree.
+int getNumberOfPages()	This will return the total page count of the PDF document.
+PDPage getPage(int pageIndex)	Returns the page at the given 0-based index.
+PDPageTree getPages()	Returns the page tree.
+ResourceCache getResourceCache()	Returns the resource cache associated with this document, or null if there is none.
+List<PDSignature> getSignatureDictionaries()	Retrieve all signature dictionaries from the document.
+List<PDSignatureField> getSignatureFields()	Retrieve all signature fields from the document.
+float getVersion()	Returns the PDF specification version this document conforms to.
+PDPage importPage(PDPage page)	This will import and copy the contents from another location.
+boolean isAllSecurityToBeRemoved()	Indicates if all security is removed or not when writing the pdf.
+boolean isEncrypted()	This will tell if this document is encrypted or not.
+void protect(ProtectionPolicy policy)	Protects the document with a protection policy.
+void registerTrueTypeFontForClosing(org.apache.fontbox.ttf.TrueTypeFont ttf)	For internal PDFBox use when creating PDF documents: register a TrueTypeFont to make sure it is closed when the PDDocument is closed to avoid memory leaks.
+void removePage(int pageNumber)	Remove the page from the document.
+void removePage(PDPage page)	Remove the page from the document.
+void save(File file)	Save the document to a file using default compression.
+void save(File file, CompressParameters compressParameters)	Save the document using the given compression.
+void save(OutputStream output)	This will save the document to an output stream.
+void save(OutputStream output, CompressParameters compressParameters)	Save the document using the given compression.
+void save(String fileName)	Save the document to a file using default compression.
+void save(String fileName, CompressParameters compressParameters)	Save the document to a file using the given compression.
+void saveIncremental(OutputStream output)	Save the PDF as an incremental update.
+void saveIncremental(OutputStream output, Set<COSDictionary> objectsToWrite)	Save the PDF as an incremental update.
+ExternalSigningSupport saveIncrementalForExternalSigning(OutputStream output)	Save PDF incrementally without closing for external signature creation scenario.
+void setAllSecurityToBeRemoved(boolean removeAllSecurity)	Activates/Deactivates the removal of all security when writing the pdf.
+void setDocumentId(Long docId)	Sets the document ID to the given value.
+void setDocumentInformation(PDDocumentInformation info)	This will set the document information for this document.
+void setEncryptionDictionary(PDEncryption encryption)	This will set the encryption dictionary for this document.
+void setResourceCache(ResourceCache resourceCache)	Sets the resource cache associated with this document.
+void setVersion(float newVersion)	Sets the PDF specification version for this document.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

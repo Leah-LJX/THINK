@@ -1,0 +1,8 @@
+[API Name] Package org.apache.commons.imaging.palette.Dithering
+[Type] Class
+[Info]
+public final class Dithering extends Object Dithering algorithms to use when quantizing an image to palette form.
+[Method Summary]
+static void applyFloydSteinbergDithering​(BufferedImage image, Palette palette)	Changes the given image to only use colors from the given palette, applying Floyd-Steinberg dithering in the process.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

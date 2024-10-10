@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.xy.XYBoxAndWhiskerRenderer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, AnnotationChangeListener, LegendItemSource, XYItemRenderer, org.jfree.util.PublicCloneable
+[Constructor Summary]
+XYBoxAndWhiskerRenderer() Creates a new renderer for box and whisker charts.
+[Method Summary]
+Object clone() Returns a clone of the renderer.

@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.pdfparser.PDFObjectStreamParser
+[Type] Class
+[Info]
+public class PDFObjectStreamParser extends BaseParser This will parse a PDF 1.5 object stream and extract the object with given object number from the stream.
+Author: Ben Litchfield
+[Constructor Summary]
+PDFObjectStreamParser(COSStream stream, COSDocument document)	Constructor.
+[Field Summary]
+PDFObjectStreamParser(COSStream stream, COSDocument document)	Constructor.
+[Method Summary]
+Map<COSObjectKey,COSBase> parseAllObjects()	Parse all compressed objects.
+COSBase parseObject(long objectNumber)	Search for/parse the object with the given object number.
+Map<Long,Integer> readObjectNumbers()	Read all object numbers from the compressed object stream.
+[Methods inherited from class org.apache.pdfbox.pdfparser.BaseParser]
+getObjectKey, isClosing, isClosing, isDigit, isDigit, isEndOfName, isEOF, isEOL, isEOL, isSpace, isSpace, isWhitespace, isWhitespace, parseCOSArray, parseCOSDictionary, parseCOSName, parseCOSString, parseDirObject, readExpectedChar, readExpectedString, readGenerationNumber, readInt, readLine, readLong, readObjectNumber, readString, readString, readStringNumber, skipSpaces, skipWhiteSpaces
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

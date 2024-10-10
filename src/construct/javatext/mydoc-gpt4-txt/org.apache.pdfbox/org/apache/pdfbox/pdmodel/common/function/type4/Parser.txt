@@ -1,0 +1,11 @@
+[API Name] org.apache.pdfbox.pdmodel.common.function.type4.Parser
+[Type] Class
+[Info]
+public final class Parser extends Object Parser for PDF Type 4 functions. This implements a small subset of the PostScript  language but is no full PostScript interpreter.
+[Nested Class Summary]
+static class Parser.AbstractSyntaxHandler	Abstract base class for a Parser.SyntaxHandler.
+static interface Parser.SyntaxHandler	This interface defines all possible syntactic elements of a Type 4 function.
+[Method Summary]
+static void parse(CharSequence input, Parser.SyntaxHandler handler)	Parses a Type 4 function and sends the syntactic elements to the given syntax handler.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

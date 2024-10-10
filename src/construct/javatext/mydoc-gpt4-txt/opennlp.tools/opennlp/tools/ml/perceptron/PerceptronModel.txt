@@ -1,0 +1,22 @@
+[API Name] opennlp.tools.ml.perceptron.PerceptronModel
+[Type] Class
+[Info]
+All Implemented Interfaces: MaxentModel
+public class PerceptronModel extends AbstractModel A model implementation based one the perceptron algorithm.    Each outcome is represented as a binary perceptron classifier.  This supports standard (integer) weighting as well average weighting as described in:  Discriminative Training Methods for Hidden Markov Models: Theory and Experiments  with the Perceptron Algorithm. Michael Collins, EMNLP 2002.
+[Constructor Summary]
+PerceptronModel(Context[] params, String[] predLabels, String[] outcomeNames)	Initializes a PerceptronModel.
+[Nested Class Summary]
+Nested Class Summary
+AbstractModel.ModelType
+[Method Summary]
+boolean equals(Object obj)	
+static double[] eval(int[] context, double[] prior, EvalParameters model)	Evaluates a PerceptronModel.
+double[] eval(String[] context)	Evaluates a context.
+double[] eval(String[] context, double[] probs)	Evaluates a context.
+double[] eval(String[] context, float[] values)	Evaluates a context with the specified context values.
+double[] eval(String[] context, float[] values, double[] outsums)	
+int hashCode()	
+[Methods inherited from class opennlp.tools.ml.model.AbstractModel]
+getAllOutcomes, getBestOutcome, getDataStructures, getIndex, getModelType, getNumOutcomes, getOutcome
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, toString, wait, wait, wait

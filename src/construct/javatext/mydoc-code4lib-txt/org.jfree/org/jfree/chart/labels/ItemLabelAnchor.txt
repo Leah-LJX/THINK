@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.labels.ItemLabelAnchor
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+
+[Method Summary]
+boolean equals(Object obj) Returns true if this object is equal to the specified object, and false otherwise.

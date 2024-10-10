@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.LegendItemSource
+[Flag] Interface
+[Info]
+All Known Subinterfaces: CategoryItemRenderer, XYItemRenderer
+All Known Implementing Classes: AbstractCategoryItemRenderer, AbstractXYItemRenderer, AreaRenderer, BarRenderer, BarRenderer3D, BoxAndWhiskerRenderer, CandlestickRenderer, CategoryPlot, CategoryStepRenderer, ClusteredXYBarRenderer, CombinedDomainCategoryPlot, CombinedDomainXYPlot, CombinedRangeCategoryPlot, CombinedRangeXYPlot, CompassPlot, ContourPlot, CyclicXYItemRenderer, DefaultCategoryItemRenderer, DefaultXYItemRenderer, DeviationRenderer, DialPlot, FastScatterPlot, GanttRenderer, GroupedStackedBarRenderer, HighLowRenderer, IntervalBarRenderer, LayeredBarRenderer, LevelRenderer, LineAndShapeRenderer, LineRenderer3D, MeterPlot, MinMaxCategoryRenderer, MultiplePiePlot, PiePlot, PiePlot3D, Plot, PolarPlot, RingPlot, SamplingXYLineRenderer, ScatterRenderer, SpiderWebPlot, StackedAreaRenderer, StackedBarRenderer, StackedBarRenderer3D, StackedXYAreaRenderer, StackedXYAreaRenderer2, StackedXYBarRenderer, StandardXYItemRenderer, StatisticalBarRenderer, StatisticalLineAndShapeRenderer, ThermometerPlot, VectorRenderer, WaferMapPlot, WaterfallBarRenderer, WindItemRenderer, XYAreaRenderer, XYAreaRenderer2, XYBarRenderer, XYBlockRenderer, XYBoxAndWhiskerRenderer, XYBubbleRenderer, XYDifferenceRenderer, XYDotRenderer, XYErrorRenderer, XYLine3DRenderer, XYLineAndShapeRenderer, XYPlot, XYShapeRenderer, XYSplineRenderer, XYStepAreaRenderer, XYStepRenderer, YIntervalRenderer
+[Constructor Summary]
+
+[Method Summary]
+LegendItemCollection getLegendItems() Returns a (possibly empty) collection of legend items.

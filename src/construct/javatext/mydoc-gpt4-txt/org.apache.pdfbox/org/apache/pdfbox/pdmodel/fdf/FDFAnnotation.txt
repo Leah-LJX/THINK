@@ -1,0 +1,67 @@
+[API Name] org.apache.pdfbox.pdmodel.fdf.FDFAnnotation
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: FDFAnnotationCaret, FDFAnnotationCircle, FDFAnnotationFileAttachment, FDFAnnotationFreeText, FDFAnnotationInk, FDFAnnotationLine, FDFAnnotationLink, FDFAnnotationPolygon, FDFAnnotationPolyline, FDFAnnotationSound, FDFAnnotationSquare, FDFAnnotationStamp, FDFAnnotationText, FDFAnnotationTextMarkup
+public abstract class FDFAnnotation extends Object implements COSObjectable This represents an FDF annotation that is part of the FDF document.
+Author: Ben Litchfield, Johanneke Lamberink
+[Constructor Summary]
+FDFAnnotation()	Default constructor.
+FDFAnnotation(COSDictionary a)	Constructor.
+FDFAnnotation(Element element)	Constructor.
+[Field Summary]
+protected COSDictionary annot	Annotation dictionary.
+[Method Summary]
+static FDFAnnotation create(COSDictionary fdfDic)	Create the correct FDFAnnotation.
+PDBorderEffectDictionary getBorderEffect()	This will retrieve the border style dictionary, describing the effect applied to the border described by the BS entry.
+PDBorderStyleDictionary getBorderStyle()	This will retrieve the border style dictionary, specifying the width and dash pattern used in drawing the annotation.
+Color getColor()	Get the annotation color.
+String getContents()	Get the text, or a description, of the annotation.
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+Calendar getCreationDate()	The annotation create date.
+String getDate()	Modification date.
+String getIntent()	Get the intent of the annotation.
+String getName()	Get the annotation name.
+float getOpacity()	Get the opacity value.
+Integer getPage()	This will get the page number or null if it does not exist.
+PDRectangle getRectangle()	The rectangle associated with this annotation.
+String getRichContents()	This will retrieve the rich text stream which is displayed in the popup window.
+protected String getStringOrStream(COSBase base)	Get a text or text stream.
+String getSubject()	Get the description of the annotation.
+String getTitle()	Get the annotation title.
+boolean isHidden()	Get the hidden flag.
+boolean isInvisible()	Get the invisible flag.
+boolean isLocked()	Get the locked flag.
+boolean isLockedContents()	Get the LockedContents flag.
+boolean isNoRotate()	Get the noRotate flag.
+boolean isNoView()	Get the noView flag.
+boolean isNoZoom()	Get the noZoom flag.
+boolean isPrinted()	Get the printed flag.
+boolean isReadOnly()	Get the readOnly flag.
+boolean isToggleNoView()	Get the toggleNoView flag.
+void setBorderEffect(PDBorderEffectDictionary be)	This will set the border effect dictionary, describing the effect applied to the border described by the BS entry.
+void setBorderStyle(PDBorderStyleDictionary bs)	This will set the border style dictionary, specifying the width and dash pattern used in drawing the annotation.
+void setColor(Color c)	Set the annotation color.
+void setContents(String contents)	Set the contents, or a description, for an annotation.
+void setCreationDate(Calendar date)	Set the creation date.
+void setDate(String date)	The annotation modification date.
+void setHidden(boolean hidden)	Set the hidden flag.
+void setIntent(String intent)	The intent of the annotation.
+void setInvisible(boolean invisible)	Set the invisible flag.
+void setLocked(boolean locked)	Set the locked flag.
+void setLockedContents(boolean lockedContents)	Set the LockedContents flag.
+void setName(String name)	Set a unique name for an annotation.
+void setNoRotate(boolean noRotate)	Set the noRotate flag.
+void setNoView(boolean noView)	Set the noView flag.
+void setNoZoom(boolean noZoom)	Set the noZoom flag.
+void setOpacity(float opacity)	Set the annotation opacity.
+void setPage(int page)	This will set the page.
+void setPrinted(boolean printed)	Set the printed flag.
+void setReadOnly(boolean readOnly)	Set the readOnly flag.
+void setRectangle(PDRectangle rectangle)	Set the rectangle associated with this annotation.
+void setRichContents(String rc)	This will set the rich text stream which is displayed in the popup window.
+void setSubject(String subject)	A short description of the annotation.
+void setTitle(String title)	Set a unique title for an annotation.
+void setToggleNoView(boolean toggleNoView)	Set the toggleNoView flag.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

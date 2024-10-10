@@ -1,0 +1,13 @@
+[Class] org.jfree.data.xy.Vector
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+Vector(double x, double y)	Creates a new instance of Vector.
+[Method Summary]
+boolean equals(Object obj)	Tests this vector for equality with an arbitrary object.
+double getAngle()	Returns the angle of the vector.
+double getLength()	Returns the length of the vector.
+double getX()	Returns the x-value.
+double getY()	Returns the y-value.
+int hashCode()	Returns a hash code for this instance.

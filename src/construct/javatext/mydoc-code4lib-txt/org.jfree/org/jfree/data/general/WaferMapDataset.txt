@@ -1,0 +1,25 @@
+[Class] org.jfree.data.general.WaferMapDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, Dataset
+[Constructor Summary]
+WaferMapDataset(int maxChipX, int maxChipY)	Creates a new dataset using the default chipspace.
+WaferMapDataset(int maxChipX, int maxChipY, Number chipSpace)	Creates a new dataset.
+[Method Summary]
+void addValue(int v, int x, int y)	Adds a value to the dataset.
+void addValue(Number value, Comparable chipx, Comparable chipy)	Sets a value in the dataset.
+double getChipSpace()	Returns the space to draw between chips.
+Number getChipValue(int chipx, int chipy)	Returns the data value for a chip.
+Number getChipValue(Comparable chipx, Comparable chipy)	Returns the value for a given chip x and y or null.
+int getMaxChipX()	Returns the wafer x-dimension.
+int getMaxChipY()	Returns the number of chips in the y-dimension.
+Number getMaxValue()	Returns the maximum value stored in the dataset.
+Number getMinValue()	Returns the minimum value stored in the dataset.
+int getUniqueValueCount()	Returns the number of unique values.
+Set getUniqueValues()	Returns the set of unique values.
+boolean isMaxValue(Number check)	Tests to see if the passed value is larger than the stored maxvalue.
+boolean isMinValue(Number check)	Tests to see if the passed value is smaller than the stored minvalue.
+void setChipSpace(double space)	Sets the space to draw between chips.
+void setMaxChipX(int maxChipX)	Sets wafer x dimension.
+void setMaxChipY(int maxChipY)	Sets the number of chips in the y-dimension.
+void setValue(Number value, Comparable chipx, Comparable chipy)	Sets a value in the dataset and updates min and max value entries.

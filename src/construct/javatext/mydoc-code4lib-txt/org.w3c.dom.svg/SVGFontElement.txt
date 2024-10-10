@@ -1,0 +1,7 @@
+[Class] org.w3c.dom.svg.SVGFontElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGExternalResourcesRequired, SVGStylable
+[Constructor Summary]
+
+[Method Summary]

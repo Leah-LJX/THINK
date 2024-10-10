@@ -1,0 +1,21 @@
+[API Name] opennlp.tools.util.Class
+[Type] Record
+[Info]
+public record TokenTag(String token, String tag, String[] additionalData) extends Record
+[Constructor Summary]
+TokenTag(String token, String tag, String[] additionalData)	Creates an instance of a TokenTag record class.
+[Method Summary]
+String[] additionalData()	Returns the value of the additionalData record component.
+static TokenTag[] create(String[] toks, String[] tags)	
+final boolean equals(Object o)	Indicates whether some other object is "equal to" this one.
+static String[] extractTags(TokenTag[] tuples)	
+static String[] extractTokens(TokenTag[] tuples)	
+String[] getAdditionalData()	Deprecated, for removal: This API element is subject to removal in a future version.
+String getTag()	Deprecated, for removal: This API element is subject to removal in a future version.
+String getToken()	Deprecated, for removal: This API element is subject to removal in a future version.
+final int hashCode()	Returns a hash code value for this object.
+String tag()	Returns the value of the tag record component.
+String token()	Returns the value of the token record component.
+String toString()	Returns a string representation of this record class.
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

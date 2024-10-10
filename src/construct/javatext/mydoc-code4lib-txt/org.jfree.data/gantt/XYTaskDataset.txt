@@ -1,0 +1,30 @@
+[Class] org.jfree.data.gantt.XYTaskDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, Dataset, DatasetChangeListener, SeriesChangeListener, SeriesDataset, IntervalXYDataset, XYDataset
+[Constructor Summary]
+XYTaskDataset(TaskSeriesCollection tasks)	Creates a new dataset based on the supplied collection of tasks.
+[Method Summary]
+Object clone()	Returns a clone of this dataset.
+void datasetChanged(DatasetChangeEvent event)	Receives a change event from the underlying dataset and responds by firing a change event for this dataset.
+boolean equals(Object obj)	Tests this dataset for equality with an arbitrary object.
+Number getEndX(int series, int item)	Returns the ending date/time for the specified item (task) in the given series, measured in milliseconds since 1-Jan-1970 (as in java.util.Date).
+double getEndXValue(int series, int item)	Returns the ending date/time for the specified item (task) in the given series, measured in milliseconds since 1-Jan-1970 (as in java.util.Date).
+Number getEndY(int series, int item)	Returns the ending value of the y-interval for an item in the given series.
+double getEndYValue(int series, int item)	Returns the ending value of the y-interval for an item in the given series.
+int getItemCount(int series)	Returns the number of items (tasks) in the specified series.
+int getSeriesCount()	Returns the number of series in the dataset.
+Comparable getSeriesKey(int series)	Returns the name of a series.
+double getSeriesWidth()	Returns the width of the interval for each series this dataset.
+Number getStartX(int series, int item)	Returns the starting date/time for the specified item (task) in the given series, measured in milliseconds since 1-Jan-1970 (as in java.util.Date).
+double getStartXValue(int series, int item)	Returns the starting date/time for the specified item (task) in the given series, measured in milliseconds since 1-Jan-1970 (as in java.util.Date).
+Number getStartY(int series, int item)	Returns the starting value of the y-interval for an item in the given series.
+double getStartYValue(int series, int item)	Returns the starting value of the y-interval for an item in the given series.
+TaskSeriesCollection getTasks()	Returns the underlying task series collection that was supplied to the constructor.
+Number getX(int series, int item)	Returns the x-value for the specified series.
+double getXValue(int series, int item)	Returns the x-value (as a double primitive) for an item within a series.
+Number getY(int series, int item)	Returns the y-value for the specified series/item.
+double getYValue(int series, int item)	Returns the y-value (as a double primitive) for an item within a series.
+boolean isTransposed()	Returns a flag that indicates whether or not the dataset is transposed.
+void setSeriesWidth(double w)	Sets the series interval width and sends a DatasetChangeEvent to all registered listeners.
+void setTransposed(boolean transposed)	Sets the flag that controls whether or not the dataset is transposed and sends a DatasetChangeEvent to all registered listeners.

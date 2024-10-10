@@ -1,0 +1,10 @@
+[Class] org.w3c.dom.svg.SVGTextPathElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, EventTarget, Node, SVGElement, SVGExternalResourcesRequired, SVGLangSpace, SVGStylable, SVGTests, SVGTextContentElement, SVGURIReference
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedEnumeration getMethod()	 
+ SVGAnimatedEnumeration getSpacing()	 
+ SVGAnimatedLength getStartOffset()

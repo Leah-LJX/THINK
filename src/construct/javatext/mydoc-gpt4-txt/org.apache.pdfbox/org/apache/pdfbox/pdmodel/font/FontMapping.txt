@@ -1,0 +1,13 @@
+[API Name] org.apache.pdfbox.pdmodel.font.FontMapping<T
+[Type] Class
+[Info]
+Direct Known Subclasses: CIDFontMapping
+public class FontMapping<T extends org.apache.fontbox.FontBoxFont> extends Object A font mapping from a PDF font to a FontBox font.
+Author: John Hewson
+[Constructor Summary]
+FontMapping(T font, boolean isFallback)	
+[Method Summary]
+T getFont()	Returns the mapped, FontBox font.
+boolean isFallback()	Returns true if the mapped font is a fallback, i.e.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

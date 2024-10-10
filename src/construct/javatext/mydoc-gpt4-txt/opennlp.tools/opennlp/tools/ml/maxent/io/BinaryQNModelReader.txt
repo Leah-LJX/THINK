@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.ml.maxent.io.BinaryQNModelReader
+[Type] Class
+[Info]
+public class BinaryQNModelReader extends QNModelReader A QNModelReader that reads models from a binary format.
+[Constructor Summary]
+BinaryQNModelReader(DataInputStream dis)	Instantiates BinaryQNModelReader via a DataInputStream containing the model contents.
+[Methods inherited from class opennlp.tools.ml.maxent.io.QNModelReader]
+checkModelType, constructModel
+[Methods inherited from class opennlp.tools.ml.model.AbstractModelReader]
+getModel, readDouble, readInt, readUTF
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

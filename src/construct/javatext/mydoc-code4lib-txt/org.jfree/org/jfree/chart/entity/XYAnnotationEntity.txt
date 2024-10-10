@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.entity.XYAnnotationEntity
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, org.jfree.util.PublicCloneable
+[Constructor Summary]
+XYAnnotationEntity(Shape hotspot, int rendererIndex, String toolTipText, String urlText) Creates a new entity.
+[Method Summary]
+boolean equals(Object obj) Tests the entity for equality with an arbitrary object.

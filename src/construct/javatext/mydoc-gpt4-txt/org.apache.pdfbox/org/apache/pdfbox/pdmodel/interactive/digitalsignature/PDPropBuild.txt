@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.digitalsignature.PDPropBuild
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDPropBuild extends Object implements COSObjectable A signature build dictionary as specified in the PDF Signature Build Dictionary Specification.
+ The signature build properties dictionary provides signature properties for the software  application that was used to create the signature.
+Author: Thomas Chojecki See Also:
+ http://partners.adobe.com/public/developer/en/acrobat/Acrobat_Signature_BuiladDict.pdf
+[Constructor Summary]
+PDPropBuild()	Default constructor.
+PDPropBuild(COSDictionary dict)	Constructor.
+[Method Summary]
+PDPropBuildDataDict getApp()	A build data dictionary for the viewing application software module that was used to create the parent signature.
+COSDictionary getCOSObject()	Convert this standard java object to a COS dictionary.
+PDPropBuildDataDict getFilter()	A build data dictionary for the signature handler that was used to create the parent signature.
+PDPropBuildDataDict getPubSec()	A build data dictionary for the PubSec software module that was used to create the parent signature.
+void setPDPropBuildApp(PDPropBuildDataDict app)	Set the build data dictionary for the viewing application software module.
+void setPDPropBuildFilter(PDPropBuildDataDict filter)	Set the build data dictionary for the signature handler.
+void setPDPropBuildPubSec(PDPropBuildDataDict pubSec)	Set the build data dictionary for the PubSec Software module.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,9 @@
+[Class] org.jfree.data.xy.TableXYDataset
+[Flag] Interface
+[Info]
+All Superinterfaces: Dataset, SeriesDataset, XYDataset
+All Known Implementing Classes: CategoryTableXYDataset, DefaultTableXYDataset, JDBCXYDataset, TimeTableXYDataset
+[Constructor Summary]
+
+[Method Summary]
+int getItemCount()	Returns the number of items every series.

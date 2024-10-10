@@ -1,0 +1,90 @@
+[Class] org.joda.time.MutableDateTime
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Comparable<ReadableInstant>, ReadableDateTime, ReadableInstant, ReadWritableDateTime, ReadWritableInstant
+[Constructor Summary]
+MutableDateTime()	Constructs an instance set to the current system millisecond time	 using ISOChronology in the default time zone.
+MutableDateTime(Chronology chronology)	Constructs an instance set to the current system millisecond time	 using the specified chronology.
+MutableDateTime(DateTimeZone zone)	Constructs an instance set to the current system millisecond time	 using ISOChronology in the specified time zone.
+MutableDateTime(int year,	int monthOfYear,	int dayOfMonth,	int hourOfDay,	int minuteOfHour,	int secondOfMinute,	int millisOfSecond)	Constructs an instance from datetime field values	 using ISOChronology in the default time zone.
+MutableDateTime(int year,	int monthOfYear,	int dayOfMonth,	int hourOfDay,	int minuteOfHour,	int secondOfMinute,	int millisOfSecond,	Chronology chronology)	Constructs an instance from datetime field values	 using the specified chronology.
+MutableDateTime(int year,	int monthOfYear,	int dayOfMonth,	int hourOfDay,	int minuteOfHour,	int secondOfMinute,	int millisOfSecond,	DateTimeZone zone)	Constructs an instance from datetime field values	 using ISOChronology in the specified time zone.
+MutableDateTime(long instant)	Constructs an instance set to the milliseconds from 1970-01-01T00:00:00Z	 using ISOChronology in the default time zone.
+MutableDateTime(long instant,	Chronology chronology)	Constructs an instance set to the milliseconds from 1970-01-01T00:00:00Z	 using the specified chronology.
+MutableDateTime(long instant,	DateTimeZone zone)	Constructs an instance set to the milliseconds from 1970-01-01T00:00:00Z	 using ISOChronology in the specified time zone.
+MutableDateTime(Object instant)	Constructs an instance from an Object that represents a datetime.
+MutableDateTime(Object instant,	Chronology chronology)	Constructs an instance from an Object that represents a datetime,	 using the specified chronology.
+MutableDateTime(Object instant,	DateTimeZone zone)	Constructs an instance from an Object that represents a datetime,	 forcing the time zone to that specified.
+[Method Summary]
+void add(DurationFieldType type, int amount) Adds to the instant specifying the duration and multiple to add.
+void add(long duration) Add an amount of time to the datetime.
+void add(ReadableDuration duration) Adds a duration to this instant.
+void add(ReadableDuration duration, int scalar) Adds a duration to this instant specifying how many times to add.
+void add(ReadablePeriod period) Adds a period to this instant.
+void add(ReadablePeriod period, int scalar) Adds a period to this instant specifying how many times to add.
+void addDays(int days) Add a number of days to the date.
+void addHours(int hours) Add a number of hours to the date.
+void addMillis(int millis) Add a number of milliseconds to the date.
+void addMinutes(int minutes) Add a number of minutes to the date.
+void addMonths(int months) Add a number of months to the date.
+void addSeconds(int seconds) Add a number of seconds to the date.
+void addWeeks(int weeks) Add a number of weeks to the date.
+void addWeekyears(int weekyears) Add a number of weekyears to the date.
+void addYears(int years) Add a number of years to the date.
+MutableDateTime.Property centuryOfEra() Get the century of era property.
+Object clone() Clone this object.
+MutableDateTime copy() Clone this object without having to cast the returned object.
+MutableDateTime.Property dayOfMonth() Get the day of month property.
+MutableDateTime.Property dayOfWeek() Get the day of week property.
+MutableDateTime.Property dayOfYear() Get the day of year property.
+MutableDateTime.Property era() Get the era property.
+DateTimeField getRoundingField() Gets the field used for rounding this instant, returning null if rounding is not enabled.
+int getRoundingMode() Gets the rounding mode for this instant, returning ROUND_NONE if rounding is not enabled.
+MutableDateTime.Property hourOfDay() Get the hour of day field property
+MutableDateTime.Property millisOfDay() Get the millis of day property
+MutableDateTime.Property millisOfSecond() Get the millis of second property
+MutableDateTime.Property minuteOfDay() Get the minute of day property
+MutableDateTime.Property minuteOfHour() Get the minute of hour field property
+MutableDateTime.Property monthOfYear() Get the month of year property.
+static MutableDateTime now() Obtains a MutableDateTime set to the current system millisecond time using ISOChronology in the default time zone.
+static MutableDateTime now(Chronology chronology) Obtains a MutableDateTime set to the current system millisecond time using the specified chronology.
+static MutableDateTime now(DateTimeZone zone) Obtains a MutableDateTime set to the current system millisecond time using ISOChronology in the specified time zone.
+static MutableDateTime parse(String str) Parses a MutableDateTime from the specified string.
+static MutableDateTime parse(String str, DateTimeFormatter formatter) Parses a MutableDateTime from the specified string using a formatter.
+MutableDateTime.Property property(DateTimeFieldType type) Gets the property object for the specified type, which contains many useful methods.
+MutableDateTime.Property secondOfDay() Get the second of day property
+MutableDateTime.Property secondOfMinute() Get the second of minute field property
+void set(DateTimeFieldType type, int value) Sets the value of one of the fields of the instant, such as hourOfDay.
+void setChronology(Chronology chronology) Set the chronology of the datetime.
+void setDate(int year, int monthOfYear, int dayOfMonth) Set the date from fields.
+void setDate(long instant) Set the date from milliseconds.
+void setDate(ReadableInstant instant) Set the date from another instant.
+void setDateTime(int year, int monthOfYear, int dayOfMonth, int hourOfDay, int minuteOfHour, int secondOfMinute, int millisOfSecond) Set the date and time from fields.
+void setDayOfMonth(int dayOfMonth) Set the day of the month to the specified value.
+void setDayOfWeek(int dayOfWeek) Set the day of week to the specified value.
+void setDayOfYear(int dayOfYear) Set the day of year to the specified value.
+void setHourOfDay(int hourOfDay) Set the hour of the day to the specified value.
+void setMillis(long instant) Set the milliseconds of the datetime.
+void setMillis(ReadableInstant instant) Sets the millisecond instant of this instant from another.
+void setMillisOfDay(int millisOfDay) Set the millis of the day to the specified value.
+void setMillisOfSecond(int millisOfSecond) Set the millis of the second to the specified value.
+void setMinuteOfDay(int minuteOfDay) Set the minute of the day to the specified value.
+void setMinuteOfHour(int minuteOfHour) Set the minute of the hour to the specified value.
+void setMonthOfYear(int monthOfYear) Set the month of the year to the specified value.
+void setRounding(DateTimeField field) Sets the status of rounding to use the specified field and ROUND_FLOOR mode.
+void setRounding(DateTimeField field, int mode) Sets the status of rounding to use the specified field and mode.
+void setSecondOfDay(int secondOfDay) Set the second of the day to the specified value.
+void setSecondOfMinute(int secondOfMinute) Set the second of the minute to the specified value.
+void setTime(int hour, int minuteOfHour, int secondOfMinute, int millisOfSecond) Set the time from fields.
+void setTime(long millis) Set the time from milliseconds.
+void setTime(ReadableInstant instant) Set the time from another instant.
+void setWeekOfWeekyear(int weekOfWeekyear) Set the week of weekyear to the specified value.
+void setWeekyear(int weekyear) Set the weekyear to the specified value.
+void setYear(int year) Set the year to the specified value.
+void setZone(DateTimeZone newZone) Sets the time zone of the datetime, changing the chronology and field values.
+void setZoneRetainFields(DateTimeZone newZone) Sets the time zone of the datetime, changing the chronology and millisecond.
+MutableDateTime.Property weekOfWeekyear() Get the week of a week based year property.
+MutableDateTime.Property weekyear() Get the year of a week based year property.
+MutableDateTime.Property year() Get the year property.
+MutableDateTime.Property yearOfCentury() Get the year of century property.
+MutableDateTime.Property yearOfEra() Get the year of era property.

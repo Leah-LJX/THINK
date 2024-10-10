@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.encoders.ImageEncoder
+[Flag] Interface
+[Info]
+All Known Implementing Classes: KeypointPNGEncoderAdapter, SunJPEGEncoderAdapter, SunPNGEncoderAdapter
+[Constructor Summary]
+
+[Method Summary]
+byte[] encode(BufferedImage bufferedImage) Encodes an image in a particular format.

@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.formats.irishsentencebank.IrishSentenceBankSentenceStreamFactory<P>
+[Type] Class
+[Info]
+All Implemented Interfaces: opennlp.tools.cmdline.ObjectStreamFactory<SentenceSample,P>
+public class IrishSentenceBankSentenceStreamFactory<P> extends AbstractSampleStreamFactory<SentenceSample,P>
+See Also:
+IrishSentenceBankSentenceStream
+[Method Summary]
+ObjectStream<SentenceSample> create(String[] args)	Creates an ObjectStream of the template type T.
+static void registerFactory()	
+[Methods inherited from class opennlp.tools.formats.AbstractSampleStreamFactory]
+getLang, getParameters
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

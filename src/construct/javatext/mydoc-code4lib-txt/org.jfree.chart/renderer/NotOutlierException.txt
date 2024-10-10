@@ -1,0 +1,7 @@
+[Class] org.jfree.chart.renderer.NotOutlierException
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+NotOutlierException(String message) Creates a new exception.
+[Method Summary]

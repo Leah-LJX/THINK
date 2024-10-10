@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.util.featuregen.BrownCluster.BrownClusterSerializer
+[Type] Class
+[Info]
+All Implemented Interfaces: ArtifactSerializer<BrownCluster>
+Enclosing class: BrownCluster
+public static class BrownCluster.BrownClusterSerializer extends Object implements ArtifactSerializer<BrownCluster>
+[Constructor Summary]
+BrownClusterSerializer()	
+[Method Summary]
+BrownCluster create(InputStream in)	Creates an artifact from the provided InputStream.
+void serialize(BrownCluster artifact, OutputStream out)	Serializes an artifact to the provided OutputStream.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

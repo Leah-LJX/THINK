@@ -1,0 +1,34 @@
+[API Name] org.apache.pdfbox.multipdf.PDFMergerUtility
+[Type] Class
+[Info]
+public class PDFMergerUtility extends Object This class will take a list of pdf documents and merge them, saving the  result in a new document.
+Author: Ben Litchfield
+[Constructor Summary]
+PDFMergerUtility()	Instantiate a new PDFMergerUtility.
+[Nested Class Summary]
+static class PDFMergerUtility.AcroFormMergeMode	The mode to use when merging AcroForm between documents: PDFMergerUtility.AcroFormMergeMode.JOIN_FORM_FIELDS_MODE fields with the same fully qualified name will be merged into one with the widget annotations of the merged fields becoming part of the same field.
+static class PDFMergerUtility.DocumentMergeMode	The mode to use when merging documents: PDFMergerUtility.DocumentMergeMode.OPTIMIZE_RESOURCES_MODE Optimizes resource handling such as closing documents early.
+[Method Summary]
+void addSource(File source)	Add a source file to the list of files to merge.
+void addSource(org.apache.pdfbox.io.RandomAccessRead source)	Add a source to the list of documents to merge.
+void addSource(String source)	Add a source file to the list of files to merge.
+void addSources(List<org.apache.pdfbox.io.RandomAccessRead> sourcesList)	Add a list of sources to the list of documents to merge.
+void appendDocument(PDDocument destination, PDDocument source)	append all pages from source to destination.
+PDFMergerUtility.AcroFormMergeMode getAcroFormMergeMode()	Get the merge mode to be used for merging AcroForms between documents PDFMergerUtility.AcroFormMergeMode
+PDDocumentInformation getDestinationDocumentInformation()	Get the destination document information that is to be set in mergeDocuments(org.apache.pdfbox.io.RandomAccessStreamCache.StreamCacheCreateFunction).
+String getDestinationFileName()	Get the name of the destination file.
+PDMetadata getDestinationMetadata()	Set the destination metadata that is to be set in mergeDocuments(org.apache.pdfbox.io.RandomAccessStreamCache.StreamCacheCreateFunction).
+OutputStream getDestinationStream()	Get the destination OutputStream.
+PDFMergerUtility.DocumentMergeMode getDocumentMergeMode()	Get the merge mode to be used for merging documents PDFMergerUtility.DocumentMergeMode
+boolean isIgnoreAcroFormErrors()	Indicates if acroform errors are ignored or not.
+void mergeDocuments(org.apache.pdfbox.io.RandomAccessStreamCache.StreamCacheCreateFunction streamCacheCreateFunction)	Merge the list of source documents, saving the result in the destination file.
+void mergeDocuments(org.apache.pdfbox.io.RandomAccessStreamCache.StreamCacheCreateFunction streamCacheCreateFunction, CompressParameters compressParameters)	Merge the list of source documents, saving the result in the destination file.
+void setAcroFormMergeMode(PDFMergerUtility.AcroFormMergeMode theAcroFormMergeMode)	Set the merge mode to be used for merging AcroForms between documents PDFMergerUtility.AcroFormMergeMode
+void setDestinationDocumentInformation(PDDocumentInformation info)	Set the destination document information that is to be set in mergeDocuments(org.apache.pdfbox.io.RandomAccessStreamCache.StreamCacheCreateFunction).
+void setDestinationFileName(String destination)	Set the name of the destination file.
+void setDestinationMetadata(PDMetadata meta)	Set the destination metadata that is to be set in mergeDocuments(org.apache.pdfbox.io.RandomAccessStreamCache.StreamCacheCreateFunction).
+void setDestinationStream(OutputStream destStream)	Set the destination OutputStream.
+void setDocumentMergeMode(PDFMergerUtility.DocumentMergeMode theDocumentMergeMode)	Set the merge mode to be used for merging documents PDFMergerUtility.DocumentMergeMode
+void setIgnoreAcroFormErrors(boolean ignoreAcroFormErrorsValue)	Set to true to ignore acroform errors.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

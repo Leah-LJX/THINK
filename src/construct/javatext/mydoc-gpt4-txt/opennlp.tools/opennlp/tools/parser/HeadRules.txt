@@ -1,0 +1,8 @@
+[API Name] opennlp.tools.parser.HeadRules
+[Type] Interface
+[Info]
+All Known Implementing Classes: AncoraSpanishHeadRules, HeadRules
+public interface HeadRules Encoder for head rules associated with parsing.
+[Method Summary]
+Parse getHead(Parse[] constituents, String type)	Retrieves the head constituent for the specified constituents of given type.
+Set<String> getPunctuationTags()	

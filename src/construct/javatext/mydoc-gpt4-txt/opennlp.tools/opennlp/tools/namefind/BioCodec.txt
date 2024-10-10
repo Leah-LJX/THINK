@@ -1,0 +1,21 @@
+[API Name] opennlp.tools.namefind.BioCodec
+[Type] Class
+[Info]
+All Implemented Interfaces: SequenceCodec<String>
+public class BioCodec extends Object implements SequenceCodec<String> The default SequenceCodec implementation according to the BIO scheme:   B: 'beginning' of a NE I: 'inside', the word is inside a NE O: 'outside', the word is a regular word outside a NE
+ See also the paper by Roth D. and Ratinov L.:     Design Challenges and Misconceptions in Named Entity Recognition.
+See Also:
+SequenceCodec BilouCodec
+[Constructor Summary]
+BioCodec()	
+[Field Summary]
+static final String CONTINUE	
+static final String OTHER	
+static final String START	
+[Method Summary]
+boolean areOutcomesCompatible(String[] outcomes)	Checks if the outcomes of a model are compatible with this SequenceCodec.
+NameFinderSequenceValidator createSequenceValidator()	
+Span[] decode(List<String> c)	Decodes a sequence of objects into Span objects.
+String[] encode(Span[] names, int length)	Encodes Span objects into a sequence of objects.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.urls.URLUtilities
+[Flag] Class
+[Info]
+Since: 1.0.6
+[Constructor Summary]
+URLUtilities()
+[Method Summary]
+static String encode(String s, String encoding) Calls java.net.URLEncoder.encode(String, String) via reflection, if we are running on JRE 1.4 or later, otherwise reverts to the deprecated URLEncoder.encode(String) method.

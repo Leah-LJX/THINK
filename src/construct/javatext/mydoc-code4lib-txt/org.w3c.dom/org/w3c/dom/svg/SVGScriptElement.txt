@@ -1,0 +1,9 @@
+[Class] org.w3c.dom.svg.SVGScriptElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGExternalResourcesRequired, SVGURIReference
+[Constructor Summary]
+
+[Method Summary]
+java.lang.String getType()	 
+ void setType(java.lang.String type)

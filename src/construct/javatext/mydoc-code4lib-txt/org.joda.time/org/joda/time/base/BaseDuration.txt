@@ -1,0 +1,22 @@
+[Class] org.joda.time.base.BaseDuration
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<ReadableDuration>, ReadableDuration
+Direct Known Subclasses: Duration
+[Constructor Summary]
+protected 	BaseDuration(long duration)	Creates a duration from the given millisecond duration.
+protected 	BaseDuration(long startInstant,	long endInstant)	Creates a duration from the given interval endpoints.
+protected 	BaseDuration(Object duration)	Creates a duration from the specified object using the	 ConverterManager.
+protected 	BaseDuration(ReadableInstant start,	ReadableInstant end)	Creates a duration from the given interval endpoints.
+[Method Summary]
+long getMillis() Gets the length of this duration in milliseconds.
+protected void setMillis(long duration) Sets the length of this duration in milliseconds.
+Interval toIntervalFrom(ReadableInstant startInstant) Converts this duration to an Interval starting at the specified instant.
+Interval toIntervalTo(ReadableInstant endInstant) Converts this duration to an Interval ending at the specified instant.
+Period toPeriod(Chronology chrono) Converts this duration to a Period instance using the standard period type and the specified chronology.
+Period toPeriod(PeriodType type) Converts this duration to a Period instance using the specified period type and the ISO chronology.
+Period toPeriod(PeriodType type, Chronology chrono) Converts this duration to a Period instance using the specified period type and chronology.
+Period toPeriodFrom(ReadableInstant startInstant) Converts this duration to a Period instance by adding the duration to a start instant to obtain an interval using the standard period type.
+Period toPeriodFrom(ReadableInstant startInstant, PeriodType type) Converts this duration to a Period instance by adding the duration to a start instant to obtain an interval.
+Period toPeriodTo(ReadableInstant endInstant) Converts this duration to a Period instance by subtracting the duration from an end instant to obtain an interval using the standard period type.
+Period toPeriodTo(ReadableInstant endInstant, PeriodType type) Converts this duration to a Period instance by subtracting the duration from an end instant to obtain an interval using the standard period type.

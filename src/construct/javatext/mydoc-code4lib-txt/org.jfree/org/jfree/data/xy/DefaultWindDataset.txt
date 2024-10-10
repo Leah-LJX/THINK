@@ -1,0 +1,19 @@
+[Class] org.jfree.data.xy.DefaultWindDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, PublicCloneable, Dataset, SeriesChangeListener, SeriesDataset, WindDataset, XYDataset
+[Constructor Summary]
+DefaultWindDataset()	Constructs a new, empty, dataset.
+DefaultWindDataset(Object[][][] data)	Constructs a dataset based on the specified data array.
+DefaultWindDataset(String[] seriesNames, Object[][][] data)	Constructs a dataset based on the specified data array.
+DefaultWindDataset(List seriesKeys, Object[][][] data)	Constructs a dataset based on the specified data array.
+[Method Summary]
+boolean equals(Object obj)	Checks this WindDataset for equality with an arbitrary object.
+int getItemCount(int series)	Returns the number of items in a series.
+int getSeriesCount()	Returns the number of series in the dataset.
+Comparable getSeriesKey(int series)	Returns the key for a series.
+Number getWindDirection(int series, int item)	Returns the wind direction for one item within a series.
+Number getWindForce(int series, int item)	Returns the wind force for one item within a series.
+Number getX(int series, int item)	Returns the x-value for one item within a series.
+Number getY(int series, int item)	Returns the y-value for one item within a series.
+static List seriesNameListFromDataArray(Object[][] data)	Utility method for automatically generating series names.

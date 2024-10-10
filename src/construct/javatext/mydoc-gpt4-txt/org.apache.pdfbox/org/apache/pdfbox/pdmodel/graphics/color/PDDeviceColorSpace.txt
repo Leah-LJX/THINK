@@ -1,0 +1,18 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.color.PDDeviceColorSpace
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDDeviceCMYK, PDDeviceGray, PDDeviceRGB
+public abstract class PDDeviceColorSpace extends PDColorSpace Device colour spaces directly specify colours or shades of gray produced by an output device.
+Author: John Hewson
+[Constructor Summary]
+PDDeviceColorSpace()	
+[Field Summary]
+PDDeviceColorSpace()	
+[Method Summary]
+COSBase getCOSObject()	Convert this standard java object to a COS object.
+String toString()	
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace]
+create, create, create, getDefaultDecode, getInitialColor, getName, getNumberOfComponents, toRawImage, toRawImage, toRGB, toRGBImage, toRGBImageAWT
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

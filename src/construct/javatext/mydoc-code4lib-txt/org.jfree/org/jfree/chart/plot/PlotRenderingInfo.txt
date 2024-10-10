@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.PlotRenderingInfo
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+PlotRenderingInfo(ChartRenderingInfo owner) Creates a new instance.
+[Method Summary]
+void addSubplotInfo(PlotRenderingInfo info) Adds the info for a subplot.

@@ -1,0 +1,11 @@
+[API Name] Package org.apache.commons.imaging.common.PackBits
+[Type] Class
+[Info]
+public class PackBits extends Object
+[Constructor Summary]
+PackBits()	
+[Method Summary]
+byte[] compress​(byte[] bytes)	
+byte[] decompress​(byte[] bytes, int expected)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

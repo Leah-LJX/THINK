@@ -1,0 +1,43 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.form.PDChoice
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDComboBox, PDListBox
+public abstract class PDChoice extends PDVariableText A choice field contains several text items, one or more of which shall be selected as the field  value.
+Author: sug, John Hewson
+[Constructor Summary]
+PDChoice(PDAcroForm acroForm)	
+[Field Summary]
+PDChoice(PDAcroForm acroForm)	
+[Method Summary]
+List<String> getDefaultValue()	Returns the default values, or an empty List.
+List<String> getOptions()	This will get the option values "Opt".
+List<String> getOptionsDisplayValues()	This will get the display values from the options.
+List<String> getOptionsExportValues()	This will get the export values from the options.
+List<Integer> getSelectedOptionsIndex()	This will get the indices of the selected options - the 'I' key.
+List<String> getValue()	Returns the selected values, or an empty List.
+String getValueAsString()	Returns a string representation of the "V" entry, or an empty string.
+boolean isCombo()	Determines if Combo is set.
+boolean isCommitOnSelChange()	Determines if CommitOnSelChange is set.
+boolean isDoNotSpellCheck()	Determines if DoNotSpellCheck is set.
+boolean isMultiSelect()	Determines if MultiSelect is set.
+boolean isSort()	Determines if Sort is set.
+void setCombo(boolean combo)	Set the Combo bit.
+void setCommitOnSelChange(boolean commitOnSelChange)	Set the CommitOnSelChange bit.
+void setDefaultValue(String value)	Sets the default value of this field.
+void setDoNotSpellCheck(boolean doNotSpellCheck)	Set the DoNotSpellCheck bit.
+void setMultiSelect(boolean multiSelect)	Set the MultiSelect bit.
+void setOptions(List<String> displayValues)	This will set the display values - the 'Opt' key.
+void setOptions(List<String> exportValues, List<String> displayValues)	This will set the display and export values - the 'Opt' key.
+void setSelectedOptionsIndex(List<Integer> values)	This will set the indices of the selected options - the 'I' key.
+void setSort(boolean sort)	Set the Sort bit.
+void setValue(List<String> values)	Sets the entry "V" to the given values.
+void setValue(String value)	Set the selected value of this field, and try to update the visual appearance.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDVariableText]
+getDefaultAppearance, getDefaultStyleString, getQ, getRichTextValue, getStringOrStream, setDefaultAppearance, setDefaultStyleString, setQ, setRichTextValue
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDTerminalField]
+applyChange, getFieldFlags, getFieldType, getWidgets, importFDF, setActions, setWidgets
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDField]
+getAcroForm, getActions, getAlternateFieldName, getCOSObject, getFullyQualifiedName, getInheritableAttribute, getMappingName, getParent, getPartialName, isNoExport, isReadOnly, isRequired, setAlternateFieldName, setFieldFlags, setMappingName, setNoExport, setPartialName, setReadOnly, setRequired, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

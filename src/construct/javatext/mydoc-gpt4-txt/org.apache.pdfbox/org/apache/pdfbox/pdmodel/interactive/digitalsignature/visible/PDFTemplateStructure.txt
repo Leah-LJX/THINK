@@ -1,0 +1,64 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDFTemplateStructure
+[Type] Class
+[Info]
+public class PDFTemplateStructure extends Object Structure of PDF document with visible signature.
+Author: Vakhtang Koroghlishvili
+[Constructor Summary]
+PDFTemplateStructure()	
+[Method Summary]
+PDAcroForm getAcroForm()	Gets AcroForm
+COSDictionary getAcroFormDictionary()	Gets Dictionary of AcroForm.
+List<PDField> getAcroFormFields()	Gets acroFormFields
+AffineTransform getAffineTransform()	Gets AffineTransform
+PDAppearanceDictionary getAppearanceDictionary()	Gets AppearanceDictionary That is /AP entry the appearance dictionary.
+PDRectangle getFormatterRectangle()	Gets formatter rectangle
+PDFormXObject getHolderForm()	Gets Holder form.
+PDResources getHolderFormResources()	Gets Holder form resources
+PDStream getHolderFormStream()	Sets HolderFormStream
+PDImageXObject getImage()	Gets the image of visible signature
+PDFormXObject getImageForm()	Gets Image form.
+COSName getImageFormName()	Gets image form name
+PDResources getImageFormResources()	Gets image form resources
+PDStream getImageFormStream()	Gets Image form stream
+COSName getImageName()	Gets visible signature image name
+PDFormXObject getInnerForm()	Gets inner form that is in this location: AcroForm/DR/XObject/{holder form name}/Resources/XObject/{inner name} By default inner form name starts with "n".
+COSName getInnerFormName()	Gets name of inner form
+PDResources getInnerFormResources()	Gets inner form Resource
+PDStream getInnerFormStream()	Gets Inner form Stream.
+PDPage getPage()	Returns document page.
+PDSignature getPdSignature()	Gets PDSignature
+COSArray getProcSet()	Gets ProcSet Array
+PDSignatureField getSignatureField()	Gets Signature field
+PDRectangle getSignatureRectangle()	Gets SignatureRectangle
+PDDocument getTemplate()	Gets PDDocument template.
+COSDocument getVisualSignature()	Gets COSDocument of visible Signature.
+COSDictionary getWidgetDictionary()	Gets Widget Dictionary.
+void setAcroForm(PDAcroForm acroForm)	Sets AcroForm
+void setAcroFormDictionary(COSDictionary acroFormDictionary)	Acroform have its Dictionary, so we here set the Dictionary which is in this location: AcroForm/DR
+void setAcroFormFields(List<PDField> acroFormFields)	Sets acroFormFields
+void setAffineTransform(AffineTransform affineTransform)	Sets AffineTransform
+void setAppearanceDictionary(PDAppearanceDictionary appearanceDictionary)	Sets AppearanceDictionary That is /AP entry the appearance dictionary.
+void setFormatterRectangle(PDRectangle formatterRectangle)	Sets formatter rectangle
+void setHolderForm(PDFormXObject holderForm)	In the structure, form will be contained by XObject in the AcroForm/DR/
+void setHolderFormResources(PDResources holderFormResources)	Sets holder form resources
+void setHolderFormStream(PDStream holderFormStream)	Sets stream of holder form Stream
+void setImage(PDImageXObject image)	Sets the image of visible signature
+void setImageForm(PDFormXObject imageForm)	Sets Image form.
+void setImageFormName(COSName imageFormName)	Sets image form name
+void setImageFormResources(PDResources imageFormResources)	Sets image form resource
+void setImageFormStream(PDStream imageFormStream)	Sets image form stream
+void setImageName(COSName imageName)	Sets visible signature image name
+void setInnerForm(PDFormXObject innerForm)	sets inner form to this location: AcroForm/DR/XObject/{holder form name}/Resources/XObject/{destination}
+void setInnerFormName(COSName innerFormName)	Sets inner form name
+void setInnerFormResources(PDResources innerFormResources)	Sets inner form resource
+void setInnterFormStream(PDStream innerFormStream)	Sets inner form stream
+void setPage(PDPage page)	Sets document page
+void setPdSignature(PDSignature pdSignature)	Sets PDSignatureField
+void setProcSet(COSArray procSet)	Sets ProcSet Array
+void setSignatureField(PDSignatureField signatureField)	Sets signature field
+void setSignatureRectangle(PDRectangle signatureRectangle)	Sets SignatureRectangle
+void setTemplate(PDDocument template)	Wets PDDocument template.
+void setVisualSignature(COSDocument visualSignature)	Sets COSDocument of visible Signature.
+void setWidgetDictionary(COSDictionary widgetDictionary)	Sets Widget Dictionary.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

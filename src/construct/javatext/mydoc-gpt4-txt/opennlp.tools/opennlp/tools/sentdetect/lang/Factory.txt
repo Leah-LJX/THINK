@@ -1,0 +1,20 @@
+[API Name] opennlp.tools.sentdetect.lang.Factory
+[Type] Class
+[Info]
+public class Factory extends Object
+[Constructor Summary]
+Factory()	
+[Field Summary]
+static final char[] defaultEosCharacters	
+static final char[] jpnEosCharacters	
+static final char[] ptEosCharacters	
+static final char[] thEosCharacters	
+[Method Summary]
+EndOfSentenceScanner createEndOfSentenceScanner(char[] customEOSCharacters)	
+EndOfSentenceScanner createEndOfSentenceScanner(String languageCode)	
+SDContextGenerator createSentenceContextGenerator(String languageCode)	
+SDContextGenerator createSentenceContextGenerator(String languageCode, Set<String> abbreviations)	
+SDContextGenerator createSentenceContextGenerator(Set<String> abbreviations, char[] customEOSCharacters)	
+char[] getEOSCharacters(String languageCode)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

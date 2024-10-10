@@ -1,0 +1,58 @@
+[API Name] org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.StandardStructureTypes
+[Type] Class
+[Info]
+public class StandardStructureTypes extends Object The standard structure types.
+Author: Johannes Koch
+[Field Summary]
+static String ANNOT	Annot
+static String ART	Art
+static String BIB_ENTRY	BibEntry
+static String BLOCK_QUOTE	BlockQuote
+static String CAPTION	Caption
+static String CODE	Code
+static String DIV	Div
+static String DOCUMENT	Document
+static String Figure	Figure
+static String FORM	Form
+static String FORMULA	Formula
+static String H	H
+static String H1	H1
+static String H2	H2
+static String H3	H3
+static String H4	H4
+static String H5	H5
+static String H6	H6
+static String INDEX	Index
+static String L	L
+static String L_BODY	LBody
+static String LBL	Lbl
+static String LI	LI
+static String LINK	Link
+static String NON_STRUCT	NonStruct
+static String NOTE	Note
+static String P	P
+static String PART	Part
+static String PRIVATE	Private
+static String QUOTE	Quote
+static String RB	RB
+static String REFERENCE	Reference
+static String RP	RP
+static String RT	RT
+static String RUBY	Ruby
+static String SECT	Sect
+static String SPAN	Span
+static String T_BODY	TBody
+static String T_FOOT	TFoot
+static String T_HEAD	THead
+static String TABLE	Table
+static String TD	TD
+static String TH	TH
+static String TOC	TOC
+static String TOCI	TOCI
+static String TR	TR
+static List<String> types	All standard structure types.
+static String WARICHU	Warichu
+static String WP	WP
+static String WT	WT
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

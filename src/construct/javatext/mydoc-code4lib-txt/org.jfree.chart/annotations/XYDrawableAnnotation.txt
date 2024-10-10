@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.annotations.XYDrawableAnnotation
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Annotation, XYAnnotation, org.jfree.util.PublicCloneable
+[Constructor Summary]
+XYDrawableAnnotation(double x, double y, double displayWidth, double displayHeight, double drawScaleFactor, org.jfree.ui.Drawable drawable) Creates a new annotation to be displayed within the given area.
+[Method Summary]
+Object clone() Returns a clone of the annotation.

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.DateAxis
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, org.jfree.util.PublicCloneable
+[Constructor Summary]
+DateAxis() Creates a date axis with no label.
+[Method Summary]
+protected void autoAdjustRange() Rescales the axis to ensure that all data is visible.

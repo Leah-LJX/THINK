@@ -1,0 +1,8 @@
+[Class] org.jfree.data.ItemKey
+[Flag] Interface
+[Info]
+All Known Implementing Classes: KeyedValues2DItemKey, KeyedValuesItemKey, XYItemKey
+[Constructor Summary]
+
+[Method Summary]
+String toJSONString()	Returns a JSON formatted string representing the key.

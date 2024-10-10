@@ -1,0 +1,19 @@
+[Class] org.w3c.dom.svg.SVGGlyphRefElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGStylable, SVGURIReference
+[Constructor Summary]
+
+[Method Summary]
+float getDx()	 
+ float getDy()	 
+ java.lang.String getFormat()	 
+ java.lang.String getGlyphRef()	 
+ float getX()	 
+ float getY()	 
+ void setDx(float dx)	 
+ void setDy(float dy)	 
+ void setFormat(java.lang.String format)	 
+ void setGlyphRef(java.lang.String glyphRef)	 
+ void setX(float x)	 
+ void setY(float y)

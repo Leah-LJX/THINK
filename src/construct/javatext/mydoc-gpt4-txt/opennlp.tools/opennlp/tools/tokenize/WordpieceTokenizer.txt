@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.tokenize.WordpieceTokenizer
+[Type] Class
+[Info]
+All Implemented Interfaces: Tokenizer
+public class WordpieceTokenizer extends Object implements Tokenizer A Tokenizer implementation which performs tokenization  using word pieces.    Adapted under MIT license from  https://github.com/robrua/easy-bert.    For reference see:  
+    https://www.tensorflow.org/text/guide/subwords_tokenizer#applying_wordpiece
+    https://cran.r-project.org/web/packages/wordpiece/vignettes/basic_usage.html
+[Constructor Summary]
+WordpieceTokenizer(Set<String> vocabulary)	Initializes a WordpieceTokenizer with a vocabulary and a default maxTokenLength of 50.
+WordpieceTokenizer(Set<String> vocabulary, int maxTokenLength)	Initializes a WordpieceTokenizer with a vocabulary and a custom maxTokenLength.
+[Method Summary]
+int getMaxTokenLength()	
+String[] tokenize(String text)	Splits a string into its atomic parts.
+Span[] tokenizePos(String text)	Finds the boundaries of atomic parts in a string.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,14 @@
+[API Name] org.apache.pdfbox.pdmodel.fixup.AbstractFixup
+[Type] Class
+[Info]
+All Implemented Interfaces: PDDocumentFixup
+Direct Known Subclasses: AcroFormDefaultFixup
+public abstract class AbstractFixup extends Object implements PDDocumentFixup
+[Constructor Summary]
+protected AbstractFixup(PDDocument document)	
+[Field Summary]
+protected PDDocument document	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface org.apache.pdfbox.pdmodel.fixup.PDDocumentFixup]
+apply

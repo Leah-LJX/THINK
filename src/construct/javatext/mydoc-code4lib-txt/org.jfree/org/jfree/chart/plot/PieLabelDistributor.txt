@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.PieLabelDistributor
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+PieLabelDistributor(int labelCount) Creates a new distributor.
+[Method Summary]
+protected void adjustDownwards(double minY, double height) Any labels that are overlapping are moved down in an attempt to eliminate the overlaps.

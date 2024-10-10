@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.labels.BubbleXYItemLabelGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, XYItemLabelGenerator, org.jfree.util.PublicCloneable
+[Constructor Summary]
+BubbleXYItemLabelGenerator() Creates a new tool tip generator using default number formatters for the x, y and z-values.
+[Method Summary]
+protected Object[] createItemArray(XYZDataset dataset, int series, int item) Creates the array of items that can be passed to the MessageFormat class for creating labels.

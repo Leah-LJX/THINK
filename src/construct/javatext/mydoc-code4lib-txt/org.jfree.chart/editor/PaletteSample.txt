@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.editor.PaletteSample
+[Flag] Class
+[Info]
+All Implemented Interfaces: ImageObserver, MenuContainer, Serializable, ListCellRenderer
+[Constructor Summary]
+PaletteSample(ColorPalette palette) Deprecated. Creates a new sample.
+[Method Summary]
+Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) Deprecated. Returns a list cell renderer for the stroke, so the sample can be displayed in a list or combo.

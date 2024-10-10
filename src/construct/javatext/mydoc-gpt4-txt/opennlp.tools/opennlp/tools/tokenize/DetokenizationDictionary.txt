@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.tokenize.DetokenizationDictionary
+[Type] Class
+[Info]
+public class DetokenizationDictionary extends Object
+[Constructor Summary]
+DetokenizationDictionary(File file)	Initializes a DetokenizationDictionary instance via a valid File.
+DetokenizationDictionary(InputStream in)	Initializes a DetokenizationDictionary instance via a valid InputStream.
+DetokenizationDictionary(String[] tokens, DetokenizationDictionary.Operation[] operations)	Initializes a DetokenizationDictionary instance.
+DetokenizationDictionary(Path path)	Initializes a DetokenizationDictionary instance via a valid Path.
+[Nested Class Summary]
+Nested Class Summary
+static enum 
+[Method Summary]
+void serialize(OutputStream out)	Serializes the current state of a DetokenizationDictionary via an output stream.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

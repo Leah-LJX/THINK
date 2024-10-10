@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.OutlierListCollection
+[Flag] Class
+[Info]
+See Also: OutlierList
+[Constructor Summary]
+OutlierListCollection() Creates a new empty collection.
+[Method Summary]
+boolean add(Outlier outlier) Appends the specified element as a new OutlierList to the end of this list if it does not overlap an outlier in an existing list.

@@ -1,0 +1,19 @@
+[Class] org.joda.time.ReadablePartial
+[Flag] Interface
+[Info]
+All Superinterfaces: Comparable<ReadablePartial>
+All Known Implementing Classes: AbstractPartial, BaseLocal, BasePartial, LocalDate, LocalDateTime, LocalTime, MonthDay, Partial, TimeOfDay, YearMonth, YearMonthDay
+[Constructor Summary]
+
+[Method Summary]
+boolean equals(Object partial) Compares this partial with the specified object for equality based on the supported fields, chronology and values.
+int get(DateTimeFieldType field) Gets the value of one of the fields.
+Chronology getChronology() Gets the chronology of the partial which is never null.
+DateTimeField getField(int index) Gets the field at the specified index.
+DateTimeFieldType getFieldType(int index) Gets the field type at the specified index.
+int getValue(int index) Gets the value at the specified index.
+int hashCode() Gets a hash code for the partial that is compatible with the equals method.
+boolean isSupported(DateTimeFieldType field) Checks whether the field type specified is supported by this partial.
+int size() Gets the number of fields that this partial supports.
+DateTime toDateTime(ReadableInstant baseInstant) Converts this partial to a full datetime by resolving it against another datetime.
+String toString() Get the value as a String in a recognisable ISO8601 format, only displaying supported fields.

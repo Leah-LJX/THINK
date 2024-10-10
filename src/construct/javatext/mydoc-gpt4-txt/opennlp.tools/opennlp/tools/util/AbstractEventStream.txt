@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.util.AbstractEventStream<T>
+[Type] Class
+[Info]
+Type Parameters: T - The generic type representing samples.
+All Implemented Interfaces: AutoCloseable, ObjectStream<Event>
+Direct Known Subclasses: AbstractParserEventStream, ChunkerEventStream, DocumentCategorizerEventStream, LanguageDetectorEventStream, LemmaSampleEventStream, NameFinderEventStream, POSSampleEventStream, SDEventStream, TokSpanEventStream
+public abstract class AbstractEventStream<T> extends Object implements ObjectStream<Event> A base ObjectStream implementation for events.
+[Constructor Summary]
+AbstractEventStream(ObjectStream<T> samples)	Initializes an AbstractEventStream with a sample Iterator.
+[Method Summary]
+void close()	Closes the ObjectStream and releases all allocated resources.
+final Event read()	Returns the next ObjectStream object.
+void reset()	Repositions the stream at the beginning and the previously seen object sequence will be repeated exactly.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

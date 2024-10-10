@@ -1,0 +1,27 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDCIEBasedColorSpace, PDDeviceColorSpace, PDJPXColorSpace, PDSpecialColorSpace
+public abstract class PDColorSpace extends Object implements COSObjectable A color space specifies how the colours of graphics objects will be painted on the page.
+Author: John Hewson, Ben Litchfield
+[Constructor Summary]
+PDColorSpace()	
+[Field Summary]
+protected COSArray array	
+[Method Summary]
+static PDColorSpace create(COSBase colorSpace)	Creates a color space given a name or array.
+static PDColorSpace create(COSBase colorSpace, PDResources resources)	Creates a color space given a name or array.
+static PDColorSpace create(COSBase colorSpace, PDResources resources, boolean wasDefault)	Creates a color space given a name or array.
+COSBase getCOSObject()	Convert this standard java object to a COS object.
+abstract float[] getDefaultDecode(int bitsPerComponent)	Returns the default decode array for this color space.
+abstract PDColor getInitialColor()	Returns the initial color value for this color space.
+abstract String getName()	Returns the name of the color space.
+abstract int getNumberOfComponents()	Returns the number of components in this color space
+abstract BufferedImage toRawImage(WritableRaster raster)	Returns the image in this colorspace or null.
+protected BufferedImage toRawImage(WritableRaster raster, ColorSpace awtColorSpace)	Returns the given raster as BufferedImage with the given awtColorSpace using a ComponentColorModel.
+abstract float[] toRGB(float[] value)	Returns the RGB equivalent of the given color value.
+abstract BufferedImage toRGBImage(WritableRaster raster)	Returns the (A)RGB equivalent of the given raster.
+protected BufferedImage toRGBImageAWT(WritableRaster raster, ColorSpace colorSpace)	Returns the (A)RGB equivalent of the given raster, using the given AWT color space to perform the conversion.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

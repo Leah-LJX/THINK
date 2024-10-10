@@ -1,0 +1,13 @@
+[Class] org.w3c.dom.svg.SVGFETurbulenceElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGFilterPrimitiveStandardAttributes, SVGStylable
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedNumber getBaseFrequencyX()	 
+ SVGAnimatedNumber getBaseFrequencyY()	 
+ SVGAnimatedInteger getNumOctaves()	 
+ SVGAnimatedNumber getSeed()	 
+ SVGAnimatedEnumeration getStitchTiles()	 
+ SVGAnimatedEnumeration getType()

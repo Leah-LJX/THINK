@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.cmdline.sentdetect.SentenceEvaluationErrorListener
+[Type] Class
+[Info]
+All Implemented Interfaces: SentenceDetectorEvaluationMonitor, EvaluationMonitor<SentenceSample>
+public class SentenceEvaluationErrorListener extends opennlp.tools.cmdline.EvaluationErrorPrinter<SentenceSample> implements SentenceDetectorEvaluationMonitor A default implementation of EvaluationMonitor that prints  to an output stream.
+[Constructor Summary]
+SentenceEvaluationErrorListener()	Creates a listener that will print to the configured logger.
+SentenceEvaluationErrorListener(OutputStream outputStream)	Creates a listener that will print to a given OutputStream.
+[Method Summary]
+void misclassified(SentenceSample reference, SentenceSample prediction)	
+[Methods inherited from class opennlp.tools.cmdline.EvaluationErrorPrinter]
+correctlyClassified
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface opennlp.tools.util.eval.EvaluationMonitor]
+correctlyClassified

@@ -1,0 +1,20 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.action.PDActionURI
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable, PDDestinationOrAction
+public class PDActionURI extends PDAction This represents a URI action that can be executed in a PDF document.
+Author: Ben Litchfield, Panagiotis Toumasis
+[Constructor Summary]
+PDActionURI()	Default constructor.
+PDActionURI(COSDictionary a)	Constructor.
+[Field Summary]
+static String SUB_TYPE	This type of action this object represents.
+[Method Summary]
+String getURI()	This will get the uniform resource identifier to resolve.
+void setTrackMousePosition(boolean value)	This will specify whether to track the mouse position when the URI is resolved.
+void setURI(String uri)	This will set the uniform resource identifier to resolve, encoded in 7-bit ASCII.
+boolean shouldTrackMousePosition()	This will specify whether to track the mouse position when the URI is resolved.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.action.PDAction]
+getCOSObject, getNext, getSubType, getType, setNext, setSubType, setType
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

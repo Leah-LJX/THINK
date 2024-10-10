@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.demo.PieChartDemo1
+[Flag] Class
+[Info]
+All Implemented Interfaces: WindowListener, ImageObserver, MenuContainer, Serializable, EventListener, Accessible, RootPaneContainer, WindowConstants
+[Constructor Summary]
+PieChartDemo1(String title) Default constructor.
+[Method Summary]
+static JPanel createDemoPanel() Creates a panel for the demo (used by SuperDemo.java).

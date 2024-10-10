@@ -1,0 +1,11 @@
+[Class] org.w3c.dom.svg.SVGAnimatedPathData
+[Flag] Interface
+[Info]
+All Known Subinterfaces: SVGPathElement
+[Constructor Summary]
+
+[Method Summary]
+SVGPathSegList getAnimatedNormalizedPathSegList()	 
+ SVGPathSegList getAnimatedPathSegList()	 
+ SVGPathSegList getNormalizedPathSegList()	 
+ SVGPathSegList getPathSegList()

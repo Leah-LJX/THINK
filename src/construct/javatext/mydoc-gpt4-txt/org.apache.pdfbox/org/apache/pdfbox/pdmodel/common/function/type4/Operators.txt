@@ -1,0 +1,10 @@
+[API Name] org.apache.pdfbox.pdmodel.common.function.type4.Operators
+[Type] Class
+[Info]
+public class Operators extends Object This class provides all the supported operators.
+[Constructor Summary]
+Operators()	Creates a new Operators object with the default set of operators.
+[Method Summary]
+Operator getOperator(String operatorName)	Returns the operator for the given operator name.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

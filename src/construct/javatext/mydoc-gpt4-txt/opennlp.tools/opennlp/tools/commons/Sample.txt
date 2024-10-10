@@ -1,0 +1,6 @@
+[API Name] opennlp.tools.commons.Sample
+[Type] Interface
+[Info]
+All Superinterfaces: Serializable
+All Known Implementing Classes: ChunkSample, DocumentSample, LemmaSample, NameSample, POSSample, SentenceSample, TokenSample
+public interface Sample extends Serializable Represents a generic type of processable elements.

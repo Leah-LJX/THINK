@@ -1,0 +1,14 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.TiffRasterStatistics
+[Type] Class
+[Info]
+public class TiffRasterStatistics extends Object Collects and stores a set of simple statistics from the input raster.
+[Method Summary]
+int getCountOfNulls()	Get the count of the number of null samples in the collection.
+int getCountOfSamples()	Get the count of the number of non-null and non-excluded samples in the collection.
+float getExcludedValue()	Get the value that was set for exclusion, or a Float.NaN if not was set.
+float getMaxValue()	Get the maximum value found in the source data
+float getMeanValue()	Get the mean value for all sample values in the raster.
+float getMinValue()	Get the minimum value found in the source data
+boolean isAnExcludedValueSet()	Indicates if a sample value was set to be deliberately excluded from the statistics.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

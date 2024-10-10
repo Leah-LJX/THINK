@@ -1,0 +1,14 @@
+[Class] org.joda.time.field.PreciseDateTimeField
+[Flag] Class
+[Info]
+Since: 1.0
+See Also: ImpreciseDateTimeField
+[Constructor Summary]
+PreciseDateTimeField(DateTimeFieldType type,	DurationField unit,	DurationField range)	Constructor.
+[Method Summary]
+long addWrapField(long instant, int amount) Add to the component of the specified time instant, wrapping around within that component if necessary.
+int get(long instant) Get the amount of fractional units from the specified time instant.
+int getMaximumValue() Get the maximum value for the field.
+int getRange() Returns the range of the field in the field's units.
+DurationField getRangeDurationField() Returns the range duration of this field.
+long set(long instant, int value) Set the specified amount of units to the specified time instant.

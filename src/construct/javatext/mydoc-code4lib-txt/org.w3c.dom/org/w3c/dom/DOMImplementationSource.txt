@@ -1,0 +1,10 @@
+[Class] org.w3c.dom.DOMImplementationSource
+[Flag] Interface
+[Info]
+Since:
+DOM Level 3
+[Constructor Summary]
+
+[Method Summary]
+DOMImplementation getDOMImplementation(String features) A method to request the first DOM implementation that supports the specified features.
+DOMImplementationList getDOMImplementationList(String features) A method to request a list of DOM implementations that support the specified features and versions, as specified in .

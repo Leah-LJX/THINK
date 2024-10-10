@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.PaintMap
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+PaintMap() Creates a new (empty) map.
+[Method Summary]
+void clear() Resets the map to empty.

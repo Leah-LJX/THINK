@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.ContourValuePlot
+[Flag] Interface
+[Info]
+All Known Implementing Classes: ContourPlot
+[Constructor Summary]
+
+[Method Summary]
+Range getContourDataRange() Deprecated. Returns the range of data values to be plotted.

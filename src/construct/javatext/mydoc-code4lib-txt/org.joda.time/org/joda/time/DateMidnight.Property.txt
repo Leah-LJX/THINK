@@ -1,0 +1,25 @@
+[Class] org.joda.time.DateMidnight.Property
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+Enclosing class: DateMidnight
+[Constructor Summary]
+
+[Method Summary]
+DateMidnight addToCopy(int value) Adds to this field in a copy of this DateMidnight.
+DateMidnight addToCopy(long value) Adds to this field in a copy of this DateMidnight.
+DateMidnight addWrapFieldToCopy(int value) Adds to this field, possibly wrapped, in a copy of this DateMidnight.
+protected Chronology getChronology() Gets the chronology of the datetime that this property is linked to.
+DateMidnight getDateMidnight() Gets the datetime being used.
+DateTimeField getField() Gets the field being used.
+protected long getMillis() Gets the milliseconds of the datetime that this property is linked to.
+DateMidnight roundCeilingCopy() Rounds to the highest whole unit of this field on a copy of this DateMidnight.
+DateMidnight roundFloorCopy() Rounds to the lowest whole unit of this field on a copy of this DateMidnight.
+DateMidnight roundHalfCeilingCopy() Rounds to the nearest whole unit of this field on a copy of this DateMidnight, favoring the ceiling if halfway.
+DateMidnight roundHalfEvenCopy() Rounds to the nearest whole unit of this field on a copy of this DateMidnight.
+DateMidnight roundHalfFloorCopy() Rounds to the nearest whole unit of this field on a copy of this DateMidnight, favoring the floor if halfway.
+DateMidnight setCopy(int value) Sets this field in a copy of the DateMidnight.
+DateMidnight setCopy(String text) Sets this field in a copy of the DateMidnight to a parsed text value.
+DateMidnight setCopy(String text, Locale locale) Sets this field in a copy of the DateMidnight to a parsed text value.
+DateMidnight withMaximumValue() Returns a new DateMidnight with this field set to the maximum value for this field.
+DateMidnight withMinimumValue() Returns a new DateMidnight with this field set to the minimum value for this field.

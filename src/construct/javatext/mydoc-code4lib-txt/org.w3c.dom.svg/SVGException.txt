@@ -1,0 +1,7 @@
+[Class] org.w3c.dom.svg.SVGException
+[Flag] Class
+[Info]
+All Implemented Interfaces: java.io.Serializable
+[Constructor Summary]
+SVGException(short code, java.lang.String message)
+[Method Summary]

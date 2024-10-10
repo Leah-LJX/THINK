@@ -1,0 +1,77 @@
+[API Name] org.apache.pdfbox.pdmodel.font.PDFontDescriptor
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class PDFontDescriptor extends Object implements COSObjectable A font descriptor.
+Author: Ben Litchfield
+[Constructor Summary]
+PDFontDescriptor(COSDictionary desc)	Creates a PDFontDescriptor from a COS dictionary.
+[Method Summary]
+float getAscent()	This will get the ascent for the font.
+float getAverageWidth()	This will get the average width for the font.
+float getCapHeight()	This will get the CapHeight for the font.
+String getCharSet()	This will get the character set for the font.
+PDStream getCIDSet()	Get the CIDSet stream.
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+float getDescent()	This will get the descent for the font.
+int getFlags()	This will get the font flags.
+PDRectangle getFontBoundingBox()	This will get the fonts bounding box.
+String getFontFamily()	A string representing the preferred font family.
+PDStream getFontFile()	A stream containing a Type 1 font program.
+PDStream getFontFile2()	A stream containing a true type font program.
+PDStream getFontFile3()	A stream containing a font program that is not true type or type 1.
+String getFontName()	Get the font name.
+String getFontStretch()	A string representing the preferred font stretch.
+float getFontWeight()	The weight of the font.
+float getItalicAngle()	This will get the italic angle for the font.
+float getLeading()	This will get the leading for the font.
+float getMaxWidth()	This will get the max width for the font.
+float getMissingWidth()	This will get the missing width for the font from the /MissingWidth dictionary entry.
+PDPanose getPanose()	Returns the Panose entry of the Style dictionary, if any.
+float getStemH()	This will get the stemH for the font.
+float getStemV()	This will get the stemV for the font.
+float getXHeight()	This will get the x height for the font.
+boolean hasMissingWidth()	Returns true if the missing widths entry is present in the font descriptor.
+boolean hasWidths()	Returns true if widths are present in the font descriptor.
+boolean isAllCap()	A convenience method that checks the flag bit.
+boolean isFixedPitch()	A convenience method that checks the flag bit.
+boolean isForceBold()	A convenience method that checks the flag bit.
+boolean isItalic()	A convenience method that checks the flag bit.
+boolean isNonSymbolic()	A convenience method that checks the flag bit.
+boolean isScript()	A convenience method that checks the flag bit.
+boolean isSerif()	A convenience method that checks the flag bit.
+boolean isSmallCap()	A convenience method that checks the flag bit.
+boolean isSymbolic()	A convenience method that checks the flag bit.
+void setAllCap(boolean flag)	A convenience method that sets the flag bit.
+void setAscent(float ascent)	This will set the ascent for the font.
+void setAverageWidth(float averageWidth)	This will set the average width for the font.
+void setCapHeight(float capHeight)	This will set the cap height for the font.
+void setCharacterSet(String charSet)	This will set the character set for the font.
+void setCIDSet(PDStream stream)	Set a stream containing a CIDSet.
+void setDescent(float descent)	This will set the descent for the font.
+void setFixedPitch(boolean flag)	A convenience method that sets the flag bit.
+void setFlags(int flags)	This will set the font flags.
+void setFontBoundingBox(PDRectangle rect)	Set the fonts bounding box.
+void setFontFamily(String fontFamily)	This will set the font family.
+void setFontFile(PDStream type1Stream)	Set the type 1 font program.
+void setFontFile2(PDStream ttfStream)	Set the true type font program.
+void setFontFile3(PDStream stream)	Set a stream containing a font program that is not true type or type 1.
+void setFontName(String fontName)	This will set the font name.
+void setFontStretch(String fontStretch)	This will set the font stretch.
+void setFontWeight(float fontWeight)	Set the weight of the font.
+void setForceBold(boolean flag)	A convenience method that sets the flag bit.
+void setItalic(boolean flag)	A convenience method that sets the flag bit.
+void setItalicAngle(float angle)	This will set the italic angle for the font.
+void setLeading(float leading)	This will set the leading for the font.
+void setMaxWidth(float maxWidth)	This will set the max width for the font.
+void setMissingWidth(float missingWidth)	This will set the missing width for the font.
+void setNonSymbolic(boolean flag)	A convenience method that sets the flag bit.
+void setScript(boolean flag)	A convenience method that sets the flag bit.
+void setSerif(boolean flag)	A convenience method that sets the flag bit.
+void setSmallCap(boolean flag)	A convenience method that sets the flag bit.
+void setStemH(float stemH)	This will set the stem H for the font.
+void setStemV(float stemV)	This will set the stem V for the font.
+void setSymbolic(boolean flag)	A convenience method that sets the flag bit.
+void setXHeight(float xHeight)	This will set the x height for the font.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.urls.StandardXYURLGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, XYURLGenerator
+Direct Known Subclasses: StandardXYZURLGenerator
+[Constructor Summary]
+StandardXYURLGenerator() Creates a new default generator.
+[Method Summary]
+boolean equals(Object obj) Tests this generator for equality with an arbitrary object.

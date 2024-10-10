@@ -1,0 +1,12 @@
+[Class] org.w3c.dom.svg.SVGAnimationElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, ElementTimeControl, EventTarget, Node, SVGElement, SVGExternalResourcesRequired, SVGTests
+All Known Subinterfaces: SVGAnimateColorElement, SVGAnimateElement, SVGAnimateMotionElement, SVGAnimateTransformElement, SVGSetElement
+[Constructor Summary]
+
+[Method Summary]
+float getCurrentTime()	 
+ float getSimpleDuration()	 
+ float getStartTime()	 
+ SVGElement getTargetElement()

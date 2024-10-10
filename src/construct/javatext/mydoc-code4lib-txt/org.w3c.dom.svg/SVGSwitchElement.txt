@@ -1,0 +1,7 @@
+[Class] org.w3c.dom.svg.SVGSwitchElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, EventTarget, Node, SVGElement, SVGExternalResourcesRequired, SVGLangSpace, SVGLocatable, SVGStylable, SVGTests, SVGTransformable
+[Constructor Summary]
+
+[Method Summary]

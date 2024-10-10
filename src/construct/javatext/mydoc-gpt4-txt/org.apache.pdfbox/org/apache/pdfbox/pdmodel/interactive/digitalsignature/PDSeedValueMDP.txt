@@ -1,0 +1,14 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.digitalsignature.PDSeedValueMDP
+[Type] Class
+[Info]
+public class PDSeedValueMDP extends Object This MDP dictionary is a part of the seed value dictionary and define  if a author signature or a certification signature should be use.
+Author: Thomas Chojecki
+[Constructor Summary]
+PDSeedValueMDP()	Default constructor.
+PDSeedValueMDP(COSDictionary dict)	Constructor.
+[Method Summary]
+COSDictionary getCOSObject()	Convert this standard java object to a COS dictionary.
+int getP()	Return the P value.
+void setP(int p)	Set the P value.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,27 @@
+[API Name] Package org.apache.commons.imaging.ImageInfo.CompressionAlgorithm
+[Type] Enum
+[Info]
+All Implemented Interfaces: Serializable, Comparable<ImageInfo.CompressionAlgorithm>
+Enclosing class: ImageInfo
+public static enum ImageInfo.CompressionAlgorithm extends Enum<ImageInfo.CompressionAlgorithm>
+[Enum Constant Summary]
+ADAPTIVE_RLE	
+CCITT_1D	
+CCITT_GROUP_3	
+CCITT_GROUP_4	
+JPEG	
+LZW	
+NONE	
+PACKBITS	
+PNG_FILTER	
+PSD	
+RLE	
+UNKNOWN	
+[Method Summary]
+String toString()	
+static ImageInfo.CompressionAlgorithm valueOf​(String name)	Returns the enum constant of this type with the specified name.
+static ImageInfo.CompressionAlgorithm[] values()	Returns an array containing the constants of this enum type, in the order they are declared.
+[Methods inherited from class java.lang.Enum]
+clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, valueOf
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

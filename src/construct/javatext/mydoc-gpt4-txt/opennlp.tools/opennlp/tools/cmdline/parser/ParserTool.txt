@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.cmdline.parser.ParserTool
+[Type] Class
+[Info]
+public final class ParserTool extends opennlp.tools.cmdline.BasicCmdLineTool
+[Constructor Summary]
+ParserTool()	
+[Method Summary]
+String getHelp()	
+String getShortDescription()	
+static Parse[] parseLine(String line, Parser parser, int numParses)	
+static Parse[] parseLine(String line, Parser parser, Tokenizer tokenizer, int numParses)	
+void run(String[] args)	Executes the tool with the given parameters.
+[Methods inherited from class opennlp.tools.cmdline.CmdLineTool]
+getName, hasParams
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.formats.LemmatizerSampleStreamFactory<P>
+[Type] Class
+[Info]
+All Implemented Interfaces: opennlp.tools.cmdline.ObjectStreamFactory<LemmaSample,P>
+public class LemmatizerSampleStreamFactory<P> extends AbstractSampleStreamFactory<LemmaSample,P> Factory producing OpenNLP LemmaSampleStreams.
+[Method Summary]
+ObjectStream<LemmaSample> create(String[] args)	Creates an ObjectStream of the template type T.
+static void registerFactory()	
+[Methods inherited from class opennlp.tools.formats.AbstractSampleStreamFactory]
+getLang, getParameters
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

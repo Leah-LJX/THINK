@@ -1,0 +1,12 @@
+[API Name] org.apache.pdfbox.util.StringUtil
+[Type] Class
+[Info]
+public final class StringUtil extends Object
+[Constructor Summary]
+StringUtil()	
+[Field Summary]
+static Pattern PATTERN_SPACE	
+[Method Summary]
+static String[] splitOnSpace(String s)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

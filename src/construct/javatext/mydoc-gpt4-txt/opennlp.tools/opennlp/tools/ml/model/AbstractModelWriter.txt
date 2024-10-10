@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.ml.model.AbstractModelWriter
+[Type] Class
+[Info]
+Direct Known Subclasses: AbstractMLModelWriter, GenericModelWriter
+public abstract class AbstractModelWriter extends Object An abstract, basic implementation of a model writer.
+[Constructor Summary]
+AbstractModelWriter()	
+[Method Summary]
+abstract void close()	Closes the underlying DataOutputStream.
+abstract void persist()	Serializes the model using the writeUTF(String), writeDouble(double), or writeInt(int)} methods implemented by extending classes.
+abstract void writeDouble(double d)	Writes a single double to the underlying DataOutputStream.
+abstract void writeInt(int i)	Writes a single int to the underlying DataOutputStream.
+abstract void writeUTF(String s)	Writes a String to the underlying DataOutputStream.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

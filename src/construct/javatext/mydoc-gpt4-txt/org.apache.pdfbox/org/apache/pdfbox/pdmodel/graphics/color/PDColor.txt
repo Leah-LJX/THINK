@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.color.PDColor
+[Type] Class
+[Info]
+public final class PDColor extends Object A color value, consisting of one or more color components, or for pattern color spaces,  a name and optional color components.  Color values are not associated with any given color space.
+ Instances of PDColor are immutable.
+Author: John Hewson
+[Constructor Summary]
+PDColor(COSArray array, PDColorSpace colorSpace)	Creates a PDColor containing the given color value.
+PDColor(COSName patternName, PDColorSpace colorSpace)	Creates a PDColor containing the given pattern name.
+PDColor(float[] components, COSName patternName, PDColorSpace colorSpace)	Creates a PDColor containing the given color component values and pattern name.
+PDColor(float[] components, PDColorSpace colorSpace)	Creates a PDColor containing the given color component values.
+[Method Summary]
+PDColorSpace getColorSpace()	Returns the color space in which this color value is defined.
+float[] getComponents()	Returns the components of this color value.
+COSName getPatternName()	Returns the pattern name from this color value.
+boolean isPattern()	Returns true if this color value is a pattern.
+COSArray toCOSArray()	Returns the color component values as a COS array
+int toRGB()	Returns the packed RGB value for this color, if any.
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

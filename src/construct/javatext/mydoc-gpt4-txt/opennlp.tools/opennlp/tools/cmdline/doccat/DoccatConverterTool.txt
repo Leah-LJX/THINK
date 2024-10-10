@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.cmdline.doccat.DoccatConverterTool
+[Type] Class
+[Info]
+public class DoccatConverterTool extends opennlp.tools.cmdline.AbstractConverterTool<DocumentSample,BasicFormatParams> Tool to convert multiple data formats into native OpenNLP doccat training  format.
+See Also:
+AbstractConverterTool DocumentSample
+[Constructor Summary]
+DoccatConverterTool()	
+[Methods inherited from class opennlp.tools.cmdline.AbstractConverterTool]
+getHelp, getHelp, getShortDescription, run
+[Methods inherited from class opennlp.tools.cmdline.CmdLineTool]
+getName, hasParams
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,12 @@
+[API Name] org.apache.pdfbox.util.DateConverter
+[Type] Class
+[Info]
+public final class DateConverter extends Object Converts dates to strings and back using the PDF date standard  in section 3.8.2 of PDF Reference 1.7.
+Author: Ben Litchfield, Fred Hansen    TODO Move members of this class elsewhere for shared use in pdfbox and xmpbox.
+[Method Summary]
+static Calendar toCalendar(COSString text)	Returns the Calendar for a given COS string containing a date, or null if it cannot be parsed.
+static Calendar toCalendar(String text)	Returns the Calendar for a given string containing a date, or null if it cannot be parsed.
+static String toISO8601(Calendar cal)	Converts the date to ISO 8601 string format: yyyy-mm-ddThh:MM:ss#hh:mm (where '#" is '+' or '-').
+static String toString(Calendar cal)	Converts a Calendar to a string formatted as: D:yyyyMMddHHmmss#hh'mm' where # is Z, +, or -.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

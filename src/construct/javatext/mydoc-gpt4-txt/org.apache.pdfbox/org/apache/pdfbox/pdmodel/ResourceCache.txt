@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.pdmodel.ResourceCache
+[Type] Interface
+[Info]
+All Known Implementing Classes: DefaultResourceCache
+public interface ResourceCache A document-wide cache for page resources.
+Author: John Hewson
+[Method Summary]
+PDColorSpace getColorSpace(COSObject indirect)	Returns the color space resource for the given indirect object, if it is in the cache.
+PDExtendedGraphicsState getExtGState(COSObject indirect)	Returns the extended graphics state resource for the given indirect object, if it is in the cache.
+PDFont getFont(COSObject indirect)	Returns the font resource for the given indirect object, if it is in the cache.
+PDAbstractPattern getPattern(COSObject indirect)	Returns the pattern resource for the given indirect object, if it is in the cache.
+PDPropertyList getProperties(COSObject indirect)	Returns the property list resource for the given indirect object, if it is in the cache.
+PDShading getShading(COSObject indirect)	Returns the shading resource for the given indirect object, if it is in the cache.
+PDXObject getXObject(COSObject indirect)	Returns the XObject resource for the given indirect object, if it is in the cache.
+void put(COSObject indirect, PDAbstractPattern pattern)	Puts the given indirect pattern resource in the cache.
+void put(COSObject indirect, PDColorSpace colorSpace)	Puts the given indirect color space resource in the cache.
+void put(COSObject indirect, PDExtendedGraphicsState extGState)	Puts the given indirect extended graphics state resource in the cache.
+void put(COSObject indirect, PDFont font)	Puts the given indirect font resource in the cache.
+void put(COSObject indirect, PDPropertyList propertyList)	Puts the given indirect property list resource in the cache.
+void put(COSObject indirect, PDShading shading)	Puts the given indirect shading resource in the cache.
+void put(COSObject indirect, PDXObject xobject)	Puts the given indirect XObject resource in the cache.

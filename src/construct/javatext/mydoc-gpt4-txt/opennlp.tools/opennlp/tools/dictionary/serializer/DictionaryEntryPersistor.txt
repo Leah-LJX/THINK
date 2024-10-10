@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.dictionary.serializer.DictionaryEntryPersistor
+[Type] Class
+[Info]
+public class DictionaryEntryPersistor extends Object A persistor used by for reading and writing dictionaries  of all kinds.
+See Also:
+Dictionary
+[Constructor Summary]
+DictionaryEntryPersistor()	
+[Method Summary]
+static boolean create(InputStream in, EntryInserter inserter)	Creates Entrys from the given InputStream and forwards these Entrys to the EntryInserter.
+static void serialize(OutputStream out, Iterator<Entry> entries, boolean casesensitive)	Serializes the given entries to the given OutputStream.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

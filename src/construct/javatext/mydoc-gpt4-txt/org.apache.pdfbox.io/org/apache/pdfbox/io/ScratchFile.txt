@@ -1,0 +1,18 @@
+[API Name] org.apache.pdfbox.io.ScratchFile
+[Type] Class
+[Info]
+All Implemented Interfaces: Closeable, AutoCloseable, RandomAccessStreamCache
+public class ScratchFile extends Object implements RandomAccessStreamCache Implements a memory page handling mechanism as base for creating (multiple)  RandomAccess buffers each having its set of pages (implemented by  ScratchFileBuffer). A buffer is created calling createBuffer().    Pages can be stored in main memory or in a temporary file. A mixed mode  is supported storing a certain amount of pages in memory and only the  additional ones in temporary file (defined by maximum main memory to  be used). Pages can be marked as 'free' in order to re-use them. For in-memory pages  this will release the used memory while for pages in temporary file this  simply marks the area as free to re-use. If a temporary file was created (done with the first page to be stored  in temporary file) it is deleted when close() is called. Using this class for RandomAccess buffers allows for a direct control  on the maximum memory usage and allows processing large files for which we  otherwise would get an OutOfMemoryError in case of using RandomAccessReadBuffer. This base class for providing pages is thread safe (the buffer implementations are not).
+[Constructor Summary]
+ScratchFile(File scratchFileDirectory)	Initializes page handler.
+ScratchFile(MemoryUsageSetting memUsageSetting)	Initializes page handler.
+[Nested Class Summary]
+ScratchFile(File scratchFileDirectory)	Initializes page handler.
+ScratchFile(MemoryUsageSetting memUsageSetting)	Initializes page handler.
+[Method Summary]
+void close()	Closes and deletes the temporary file.
+RandomAccess createBuffer()	Creates a new buffer using this page handler.
+static ScratchFile getMainMemoryOnlyInstance()	Getter for an instance using only unrestricted main memory for buffering (same as new ScratchFile(MemoryUsageSetting.setupMainMemoryOnly())).
+static ScratchFile getMainMemoryOnlyInstance(long maxMainMemoryBytes)	Getter for an instance to only use main-memory with the defined maximum.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,12 @@
+[Class] org.w3c.dom.svg.SVGDocument
+[Flag] Interface
+[Info]
+All Superinterfaces: Document, DocumentEvent, Node
+[Constructor Summary]
+
+[Method Summary]
+java.lang.String getDomain()	 
+ java.lang.String getReferrer()	 
+ SVGSVGElement getRootElement()	 
+ java.lang.String getTitle()	 
+ java.lang.String getURL()

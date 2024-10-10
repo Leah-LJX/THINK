@@ -1,0 +1,28 @@
+[Class] org.jfree.data.time.Month
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable, MonthConstants, TimePeriod
+[Constructor Summary]
+Month()	Constructs a new Month, based on the current system time.
+Month(int month, int year)	Constructs a new month instance.
+Month(int month, Year year)	Constructs a new month instance.
+Month(Date time)	Constructs a new Month instance, based on a date/time.
+Month(Date time, Calendar calendar)	Constructs a new instance, based on a particular date/time.
+Month(Date time, TimeZone zone, Locale locale)	Creates a new Month instance, based on the specified time, zone and locale.
+[Method Summary]
+int compareTo(Object o1)	Returns an integer indicating the order of this Month object relative to the specified object: negative == before, zero == same, positive == after.
+boolean equals(Object obj)	Tests the equality of this Month object to an arbitrary object.
+long getFirstMillisecond()	Returns the first millisecond of the month.
+long getFirstMillisecond(Calendar calendar)	Returns the first millisecond of the month, evaluated using the supplied calendar (which determines the time zone).
+long getLastMillisecond()	Returns the last millisecond of the month.
+long getLastMillisecond(Calendar calendar)	Returns the last millisecond of the month, evaluated using the supplied calendar (which determines the time zone).
+int getMonth()	Returns the month.
+long getSerialIndex()	Returns a serial index number for the month.
+Year getYear()	Returns the year in which the month falls.
+int getYearValue()	Returns the year in which the month falls.
+int hashCode()	Returns a hash code for this object instance.
+RegularTimePeriod next()	Returns the month following this one.
+static Month parseMonth(String s)	Parses the string argument as a month.
+void peg(Calendar calendar)	Recalculates the start date/time and end date/time for this time period relative to the supplied calendar (which incorporates a time zone).
+RegularTimePeriod previous()	Returns the month preceding this one.
+String toString()	Returns a string representing the month (e.g.

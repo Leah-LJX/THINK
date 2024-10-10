@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.annotations.XYPointerAnnotation
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Annotation, XYAnnotation, org.jfree.util.PublicCloneable
+[Constructor Summary]
+XYPointerAnnotation(String label, double x, double y, double angle) Creates a new label and arrow annotation.
+[Method Summary]
+Object clone() Returns a clone of the annotation.

@@ -1,0 +1,6 @@
+[API Name] opennlp.tools.util.featuregen.FeatureGeneratorResourceProvider
+[Type] Interface
+[Info]
+public interface FeatureGeneratorResourceProvider The FeatureGeneratorResourceProvider provides access to the resources  available in the model. Inside the model resources are identified by a name.   Note:  This class is not be intended to be implemented by users.  All implementing classes must be thread safe.
+[Method Summary]
+Object getResource(String resourceIdentifier)	

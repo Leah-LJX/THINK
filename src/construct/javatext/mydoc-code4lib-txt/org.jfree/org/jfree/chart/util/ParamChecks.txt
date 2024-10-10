@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.util.ParamChecks
+[Flag] Class
+[Info]
+Since: 1.0.14
+[Constructor Summary]
+ParamChecks()
+[Method Summary]
+static void nullNotPermitted(Object param, String name) Throws an IllegalArgumentException if the supplied param is null.

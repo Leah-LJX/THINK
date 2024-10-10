@@ -1,0 +1,8 @@
+[Class] org.w3c.dom.svg.SVGStopElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGStylable
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedNumber getOffset()

@@ -1,0 +1,7 @@
+[API Name] org.apache.pdfbox.pdmodel.fixup.PDDocumentFixup
+[Type] Interface
+[Info]
+All Known Implementing Classes: AbstractFixup, AcroFormDefaultFixup
+public interface PDDocumentFixup
+[Method Summary]
+void apply()	

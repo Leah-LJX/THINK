@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.formats.brat.BratAnnotationStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<BratAnnotation>
+public class BratAnnotationStream extends Object implements ObjectStream<BratAnnotation> Reads the annotations from the brat .ann annotation file.
+[Method Summary]
+void close()	Closes the ObjectStream and releases all allocated resources.
+BratAnnotation read()	Returns the next ObjectStream object.
+void reset()	Repositions the stream at the beginning and the previously seen object sequence will be repeated exactly.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

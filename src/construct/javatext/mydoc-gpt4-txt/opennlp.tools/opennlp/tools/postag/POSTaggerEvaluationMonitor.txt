@@ -1,0 +1,8 @@
+[API Name] opennlp.tools.postag.POSTaggerEvaluationMonitor
+[Type] Interface
+[Info]
+All Superinterfaces: EvaluationMonitor<POSSample>
+All Known Implementing Classes: POSEvaluationErrorListener, POSTaggerFineGrainedReportListener
+public interface POSTaggerEvaluationMonitor extends EvaluationMonitor<POSSample> A marker interface for evaluating pos taggers.
+[Methods inherited from interface opennlp.tools.util.eval.EvaluationMonitor]
+correctlyClassified, misclassified

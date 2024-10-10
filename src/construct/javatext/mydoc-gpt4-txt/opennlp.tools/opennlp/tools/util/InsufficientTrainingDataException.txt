@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.util.InsufficientTrainingDataException
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable
+public class InsufficientTrainingDataException extends IOException This exception indicates that the provided training data is  insufficient to train a desired model.
+See Also:
+Serialized Form
+[Constructor Summary]
+InsufficientTrainingDataException(String message)	
+InsufficientTrainingDataException(String message, Throwable t)	
+InsufficientTrainingDataException(Throwable t)	
+[Methods inherited from class java.lang.Throwable]
+addSuppressed, fillInStackTrace, getCause, getLocalizedMessage, getMessage, getStackTrace, getSuppressed, initCause, printStackTrace, printStackTrace, printStackTrace, setStackTrace, toString
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, wait, wait, wait

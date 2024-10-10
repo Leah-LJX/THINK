@@ -1,0 +1,17 @@
+[API Name] Package org.apache.commons.imaging.color.ColorDin99Lab
+[Type] Class
+[Info]
+public final class ColorDin99Lab extends Object Represents a color in the DIN99 color space, a derivation of the CIE LAB color space.
+Since: 1.0-alpha3 See Also: de.wikipedia.org/wiki/DIN99-Farbraum,  Comparison of the metrics between the CIELAB and the DIN99 uniform       color spaces,  DIN99b P.284:       Uniform_colour_spaces_based_on_the_DIN99_colour-difference_formula
+[Constructor Summary]
+ColorDin99Lab​(double L99, double a99, double b99)	
+[Field Summary]
+double a99	
+double b99	
+double L99	
+[Method Summary]
+boolean equals​(Object o)	
+int hashCode()	
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

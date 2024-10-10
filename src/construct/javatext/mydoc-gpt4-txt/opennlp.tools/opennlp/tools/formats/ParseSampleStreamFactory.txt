@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.formats.ParseSampleStreamFactory<P>
+[Type] Class
+[Info]
+All Implemented Interfaces: opennlp.tools.cmdline.ObjectStreamFactory<Parse,P>
+public class ParseSampleStreamFactory<P> extends AbstractSampleStreamFactory<Parse,P> Factory producing OpenNLP ParseSampleStreams.
+[Nested Class Summary]
+Nested Class Summary
+static interface 
+[Method Summary]
+ObjectStream<Parse> create(String[] args)	Creates an ObjectStream of the template type T.
+static void registerFactory()	
+[Methods inherited from class opennlp.tools.formats.AbstractSampleStreamFactory]
+getLang, getParameters
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

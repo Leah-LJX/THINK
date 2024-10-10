@@ -1,0 +1,43 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSignDesigner
+[Type] Class
+[Info]
+public class PDVisibleSignDesigner extends Object Class for visible signature design properties. Setters use param() instead of setParam() to allow  chaining.
+Author: Vakhtang Koroghlishvili
+[Constructor Summary]
+PDVisibleSignDesigner(InputStream imageStream)	Constructor usable for signing existing signature fields.
+PDVisibleSignDesigner(PDDocument document, BufferedImage image, int page)	Constructor.
+PDVisibleSignDesigner(PDDocument document, InputStream imageStream, int page)	Constructor.
+PDVisibleSignDesigner(org.apache.pdfbox.io.RandomAccessRead documentSource, BufferedImage image, int page)	Constructor.
+PDVisibleSignDesigner(org.apache.pdfbox.io.RandomAccessRead documentSource, InputStream imageStream, int page)	Constructor.
+PDVisibleSignDesigner(String filename, BufferedImage image, int page)	Constructor.
+PDVisibleSignDesigner(String filename, InputStream imageStream, int page)	Constructor.
+[Method Summary]
+PDVisibleSignDesigner adjustForRotation()	Adjust signature for page rotation.
+PDVisibleSignDesigner coordinates(float x, float y)	
+PDVisibleSignDesigner formatterRectangleParameters(int[] formatterRectangleParameters)	Sets formatter PDRectangle
+int[] getFormatterRectangleParameters()	
+float getHeight()	
+BufferedImage getImage()	
+float getImageSizeInPercents()	get image size in percents
+float getPageHeight()	
+float getPageWidth()	
+String getSignatureFieldName()	
+String getSignatureText()	returns visible signature text
+protected float getTemplateHeight()	
+AffineTransform getTransform()	
+float getWidth()	
+float getxAxis()	
+float getyAxis()	
+PDVisibleSignDesigner height(float height)	
+void imageSizeInPercents(float imageSizeInPercents)	
+PDVisibleSignDesigner pageWidth(float pageWidth)	
+PDVisibleSignDesigner signatureFieldName(String signatureFieldName)	
+PDVisibleSignDesigner signatureImage(String path)	Set the image for the signature.
+PDVisibleSignDesigner signatureText(String signatureText)	
+PDVisibleSignDesigner transform(AffineTransform affineTransform)	
+PDVisibleSignDesigner width(float width)	
+PDVisibleSignDesigner xAxis(float xAxis)	
+PDVisibleSignDesigner yAxis(float yAxis)	
+PDVisibleSignDesigner zoom(float percent)	Zoom signature image with some percent.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,7 @@
+[Class] org.jfree.chart.plot.XYCrosshairState
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, AnnotationChangeListener, AxisChangeListener, MarkerChangeListener, RendererChangeListener, LegendItemSource, DatasetChangeListener, org.jfree.util.PublicCloneable
+[Constructor Summary]
+XYCrosshairState() Creates a new instance.
+[Method Summary]

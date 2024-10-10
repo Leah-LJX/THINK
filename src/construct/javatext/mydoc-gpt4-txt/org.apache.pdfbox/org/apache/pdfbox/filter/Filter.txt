@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.filter.Filter
+[Type] Class
+[Info]
+Direct Known Subclasses: JPXFilter, LZWFilter
+public abstract class Filter extends Object A filter for stream data.
+Author: Ben Litchfield, John Hewson
+[Constructor Summary]
+protected Filter()	Constructor.
+[Field Summary]
+static String SYSPROP_DEFLATELEVEL	Compression Level System Property.
+[Method Summary]
+static org.apache.pdfbox.io.RandomAccessRead decode(InputStream encoded, List<Filter> filterList, COSDictionary parameters, DecodeOptions options, List<DecodeResult> results)	Decodes data, with optional DecodeOptions.
+abstract DecodeResult decode(InputStream encoded, OutputStream decoded, COSDictionary parameters, int index)	Decodes data, producing the original non-encoded data.
+DecodeResult decode(InputStream encoded, OutputStream decoded, COSDictionary parameters, int index, DecodeOptions options)	Decodes data, with optional DecodeOptions.
+protected abstract void encode(InputStream input, OutputStream encoded, COSDictionary parameters)	
+void encode(InputStream input, OutputStream encoded, COSDictionary parameters, int index)	Encodes data.
+static ImageReader findImageReader(String formatName, String errorCause)	Finds a suitable image raster reader for an image format.
+static int getCompressionLevel()	
+protected COSDictionary getDecodeParams(COSDictionary dictionary, int index)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

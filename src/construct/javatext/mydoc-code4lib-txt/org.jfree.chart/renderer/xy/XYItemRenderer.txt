@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.renderer.xy.XYItemRenderer
+[Flag] Interface
+[Info]
+All Superinterfaces: LegendItemSource
+All Known Implementing Classes: AbstractXYItemRenderer, CandlestickRenderer, ClusteredXYBarRenderer, CyclicXYItemRenderer, DefaultXYItemRenderer, DeviationRenderer, HighLowRenderer, SamplingXYLineRenderer, StackedXYAreaRenderer, StackedXYAreaRenderer2, StackedXYBarRenderer, StandardXYItemRenderer, VectorRenderer, WindItemRenderer, XYAreaRenderer, XYAreaRenderer2, XYBarRenderer, XYBlockRenderer, XYBoxAndWhiskerRenderer, XYBubbleRenderer, XYDifferenceRenderer, XYDotRenderer, XYErrorRenderer, XYLine3DRenderer, XYLineAndShapeRenderer, XYShapeRenderer, XYSplineRenderer, XYStepAreaRenderer, XYStepRenderer, YIntervalRenderer
+[Constructor Summary]
+
+[Method Summary]
+void addAnnotation(XYAnnotation annotation) Adds an annotation and sends a RendererChangeEvent to all registered listeners.

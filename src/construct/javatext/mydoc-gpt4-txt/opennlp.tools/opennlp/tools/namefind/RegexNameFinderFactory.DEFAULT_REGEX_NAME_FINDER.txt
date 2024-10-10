@@ -1,0 +1,18 @@
+[API Name] opennlp.tools.namefind.Class
+[Type] Enum
+[Info]
+All Implemented Interfaces: Serializable, Comparable<RegexNameFinderFactory.DEFAULT_REGEX_NAME_FINDER>, Constable, RegexNameFinderFactory.RegexAble
+Enclosing class: RegexNameFinderFactory
+public static enum RegexNameFinderFactory.DEFAULT_REGEX_NAME_FINDER extends Enum<RegexNameFinderFactory.DEFAULT_REGEX_NAME_FINDER> implements RegexNameFinderFactory.RegexAble Enumeration of typical regex expressions available in OpenNLP.
+[Nested Class Summary]
+Nested Class Summary
+Enum.EnumDesc<E extends Enum<E>>
+[Method Summary]
+static RegexNameFinderFactory.DEFAULT_REGEX_NAME_FINDER valueOf(String name)	Returns the enum constant of this class with the specified name.
+static RegexNameFinderFactory.DEFAULT_REGEX_NAME_FINDER[] values()	Returns an array containing the constants of this enum class, in the order they are declared.
+[Methods inherited from class java.lang.Enum]
+compareTo, describeConstable, equals, getDeclaringClass, hashCode, name, ordinal, toString, valueOf
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait
+[Methods inherited from interface opennlp.tools.namefind.RegexNameFinderFactory.RegexAble]
+getRegexMap, getType

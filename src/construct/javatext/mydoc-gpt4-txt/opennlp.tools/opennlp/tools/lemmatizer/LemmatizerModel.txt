@@ -1,0 +1,25 @@
+[API Name] opennlp.tools.lemmatizer.LemmatizerModel
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, ArtifactProvider
+public class LemmatizerModel extends BaseModel The LemmatizerModel is the model used by a learnable Lemmatizer.
+See Also:
+LemmatizerME Serialized Form
+[Constructor Summary]
+LemmatizerModel(File modelFile)	Initializes a LemmatizerModel instance via a valid File.
+LemmatizerModel(InputStream in)	Initializes a LemmatizerModel instance via a valid InputStream.
+LemmatizerModel(String languageCode, MaxentModel lemmatizerModel, int beamSize, Map<String,String> manifestInfoEntries, LemmatizerFactory factory)	Initializes a LemmatizerModel instance via given parameters.
+LemmatizerModel(String languageCode, MaxentModel lemmatizerModel, Map<String,String> manifestInfoEntries, LemmatizerFactory factory)	Initializes a LemmatizerModel instance via given parameters.
+LemmatizerModel(String languageCode, MaxentModel lemmatizerModel, LemmatizerFactory factory)	Initializes a LemmatizerModel instance via given parameters.
+LemmatizerModel(String languageCode, SequenceClassificationModel<String> lemmatizerModel, Map<String,String> manifestInfoEntries, LemmatizerFactory factory)	Initializes a LemmatizerModel instance via given parameters.
+LemmatizerModel(URL modelURL)	Initializes a LemmatizerModel instance via a valid URL.
+LemmatizerModel(Path modelPath)	Initializes a LemmatizerModel instance via a valid Path.
+[Method Summary]
+LemmatizerFactory getFactory()	
+SequenceClassificationModel<String> getLemmatizerSequenceModel()	
+[Fields inherited from class opennlp.tools.util.model.BaseModel]
+TRAINING_CUTOFF_PROPERTY, TRAINING_EVENTHASH_PROPERTY, TRAINING_ITERATIONS_PROPERTY
+[Methods inherited from class opennlp.tools.util.model.BaseModel]
+getArtifact, getLanguage, getManifestProperty, getVersion, isLoadedFromSerialized, serialize, serialize, serialize
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

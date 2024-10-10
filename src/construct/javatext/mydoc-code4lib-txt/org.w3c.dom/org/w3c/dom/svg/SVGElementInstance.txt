@@ -1,0 +1,15 @@
+[Class] org.w3c.dom.svg.SVGElementInstance
+[Flag] Interface
+[Info]
+All Superinterfaces: EventTarget
+[Constructor Summary]
+
+[Method Summary]
+SVGElementInstanceList getChildNodes()	 
+ SVGElement getCorrespondingElement()	 
+ SVGUseElement getCorrespondingUseElement()	 
+ SVGElementInstance getFirstChild()	 
+ SVGElementInstance getLastChild()	 
+ SVGElementInstance getNextSibling()	 
+ SVGElementInstance getParentNode()	 
+ SVGElementInstance getPreviousSibling()

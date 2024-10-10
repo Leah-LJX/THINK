@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.ml.naivebayes.PlainTextNaiveBayesModelReader
+[Type] Class
+[Info]
+public class PlainTextNaiveBayesModelReader extends NaiveBayesModelReader A NaiveBayesModelReader that reads models from a plain text format.
+See Also:
+NaiveBayesModelReader
+[Constructor Summary]
+PlainTextNaiveBayesModelReader(BufferedReader br)	Instantiates PlainTextNaiveBayesModelReader via a BufferedReader containing the model contents.
+PlainTextNaiveBayesModelReader(File f)	Instantiates PlainTextNaiveBayesModelReader via a File and creates a reader for it.
+[Methods inherited from class opennlp.tools.ml.naivebayes.NaiveBayesModelReader]
+checkModelType, constructModel
+[Methods inherited from class opennlp.tools.ml.model.AbstractModelReader]
+getModel, readDouble, readInt, readUTF
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.chunker.DefaultChunkerContextGenerator
+[Type] Class
+[Info]
+All Implemented Interfaces: ChunkerContextGenerator, BeamSearchContextGenerator<TokenTag>
+public class DefaultChunkerContextGenerator extends Object implements ChunkerContextGenerator Features based on chunking model described in Fei Sha and Fernando Pereira. Shallow  parsing with conditional random fields. In Proceedings of HLT-NAACL 2003. Association  for Computational Linguistics, 2003.
+[Constructor Summary]
+DefaultChunkerContextGenerator()	Initializes a DefaultChunkerContextGenerator instance.
+[Method Summary]
+String[] getContext(int i, String[] toks, String[] tags, String[] preds)	Retrieves the contexts for chunking of the specified idx.
+String[] getContext(int index, TokenTag[] sequence, String[] priorDecisions, Object[] additionalContext)	Returns the context for the specified position in the specified sequence (list).
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

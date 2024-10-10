@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.util.model.DictionarySerializer
+[Type] Class
+[Info]
+All Implemented Interfaces: ArtifactSerializer<Dictionary>
+public class DictionarySerializer extends Object implements ArtifactSerializer<Dictionary> An ArtifactSerializer implementation for dictionaries.
+[Constructor Summary]
+DictionarySerializer()	
+[Method Summary]
+Dictionary create(InputStream in)	Creates an artifact from the provided InputStream.
+void serialize(Dictionary dictionary, OutputStream out)	Serializes an artifact to the provided OutputStream.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

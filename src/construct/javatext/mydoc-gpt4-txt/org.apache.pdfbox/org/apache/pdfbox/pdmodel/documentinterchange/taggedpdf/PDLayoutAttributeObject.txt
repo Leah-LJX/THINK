@@ -1,0 +1,167 @@
+[API Name] org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.PDLayoutAttributeObject
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDExportFormatAttributeObject
+public class PDLayoutAttributeObject extends PDStandardAttributeObject A Layout attribute object.
+Author: Johannes Koch
+[Constructor Summary]
+PDLayoutAttributeObject()	Default constructor.
+PDLayoutAttributeObject(COSDictionary dictionary)	Creates a new Layout attribute object with a given dictionary.
+[Field Summary]
+static String BLOCK_ALIGN_AFTER	BlockAlign: After: After edge of the last child’s allocation rectangle aligned with that of the table cell’s content rectangle.
+static String BLOCK_ALIGN_BEFORE	BlockAlign: Before: Before edge of the first child’s allocation rectangle aligned with that of the table cell’s content rectangle.
+static String BLOCK_ALIGN_JUSTIFY	BlockAlign: Justify: Children aligned with both the before and after edges of the table cell’s content rectangle.
+static String BLOCK_ALIGN_MIDDLE	BlockAlign: Middle: Children centered within the table cell.
+static String BORDER_STYLE_DASHED	BorderStyle: Dashed: The border is a series of short line segments.
+static String BORDER_STYLE_DOTTED	BorderStyle: Dotted: The border is a series of dots.
+static String BORDER_STYLE_DOUBLE	BorderStyle: Double: The border is two solid lines.
+static String BORDER_STYLE_GROOVE	BorderStyle: Groove: The border looks as though it were carved into the canvas.
+static String BORDER_STYLE_HIDDEN	BorderStyle: Hidden: Same as BORDER_STYLE_NONE, except in terms of border conflict resolution for table elements.
+static String BORDER_STYLE_INSET	BorderStyle: Inset: The border makes the entire box look as though it were embedded in the canvas.
+static String BORDER_STYLE_NONE	BorderStyle: None: No border.
+static String BORDER_STYLE_OUTSET	BorderStyle: Outset: The border makes the entire box look as though it were coming out of the canvas (the opposite of BORDER_STYLE_INSET.
+static String BORDER_STYLE_RIDGE	BorderStyle: Ridge: The border looks as though it were coming out of the canvas (the opposite of BORDER_STYLE_GROOVE).
+static String BORDER_STYLE_SOLID	BorderStyle: Solid: The border is a single line segment.
+static String GLYPH_ORIENTATION_VERTICAL_180_DEGREES	GlyphOrientationVertical: 180°
+static String GLYPH_ORIENTATION_VERTICAL_270_DEGREES	GlyphOrientationVertical: 270°
+static String GLYPH_ORIENTATION_VERTICAL_360_DEGREES	GlyphOrientationVertical: 360°
+static String GLYPH_ORIENTATION_VERTICAL_90_DEGREES	GlyphOrientationVertical: 90°
+static String GLYPH_ORIENTATION_VERTICAL_AUTO	GlyphOrientationVertical: Auto
+static String GLYPH_ORIENTATION_VERTICAL_MINUS_180_DEGREES	GlyphOrientationVertical: -180°
+static String GLYPH_ORIENTATION_VERTICAL_MINUS_90_DEGREES	GlyphOrientationVertical: -90°
+static String GLYPH_ORIENTATION_VERTICAL_ZERO_DEGREES	GlyphOrientationVertical: 0°
+static String HEIGHT_AUTO	Height: Auto
+static String INLINE_ALIGN_CENTER	InlineAlign: Center: Each child centered within the table cell.
+static String INLINE_ALIGN_END	InlineAlign: End: End edge of each child’s allocation rectangle aligned with that of the table cell’s content rectangle.
+static String INLINE_ALIGN_START	InlineAlign: Start: Start edge of each child’s allocation rectangle aligned with that of the table cell’s content rectangle.
+static String LINE_HEIGHT_AUTO	LineHeight: Auto: Adjustment for the value of BaselineShift shall not be made.
+static String LINE_HEIGHT_NORMAL	LineHeight: NormalAdjust the line height to include any nonzero value specified for BaselineShift.
+static String OWNER_LAYOUT	standard attribute owner: Layout
+static String PLACEMENT_BEFORE	Placement: Before: Placed so that the before edge of the element’s allocation rectangle coincides with that of the nearest enclosing reference area.
+static String PLACEMENT_BLOCK	Placement: Block: Stacked in the block-progression direction within an enclosing reference area or parent BLSE.
+static String PLACEMENT_END	Placement: End: Placed so that the end edge of the element’s allocation rectangle coincides with that of the nearest enclosing reference area.
+static String PLACEMENT_INLINE	Placement: Inline: Packed in the inline-progression direction within an enclosing BLSE.
+static String PLACEMENT_START	Placement: Start: Placed so that the start edge of the element’s allocation rectangle coincides with that of the nearest enclosing reference area.
+static String RUBY_ALIGN_CENTER	RubyAlign: Center: The content shall be centered in the inline-progression direction.
+static String RUBY_ALIGN_DISTRIBUTE	RubyAlign: Distribute: The content shall be expanded to fill the available width in the inline-progression direction.
+static String RUBY_ALIGN_END	RubyAlign: End: The content shall be aligned on the end edge in the inline-progression direction.
+static String RUBY_ALIGN_JUSTIFY	RubyAlign: Justify: The content shall be expanded to fill the available width in the inline-progression direction.
+static String RUBY_ALIGN_START	RubyAlign: Start: The content shall be aligned on the start edge in the inline-progression direction.
+static String RUBY_POSITION_AFTER	RubyPosition: After: The RT content shall be aligned along the after edge of the element.
+static String RUBY_POSITION_BEFORE	RubyPosition: Before: The RT content shall be aligned along the before edge of the element.
+static String RUBY_POSITION_INLINE	RubyPosition: Inline: The RT and associated RP elements shall be formatted as a parenthesis comment, following the RB element.
+static String RUBY_POSITION_WARICHU	RubyPosition: Warichu: The RT and associated RP elements shall be formatted as a warichu, following the RB element.
+static String TEXT_ALIGN_CENTER	TextAlign: Center: Centered between the start and end edges.
+static String TEXT_ALIGN_END	TextAlign: End: Aligned with the end edge.
+static String TEXT_ALIGN_JUSTIFY	TextAlign: Justify: Aligned with both the start and end edges, with internal spacing within each line expanded, if necessary, to achieve such alignment.
+static String TEXT_ALIGN_START	TextAlign: Start: Aligned with the start edge.
+static String TEXT_DECORATION_TYPE_LINE_THROUGH	TextDecorationType: LineThrough: A line through the middle of the text
+static String TEXT_DECORATION_TYPE_NONE	TextDecorationType: None: No text decoration
+static String TEXT_DECORATION_TYPE_OVERLINE	TextDecorationType: Overline: A line above the text
+static String TEXT_DECORATION_TYPE_UNDERLINE	TextDecorationType: Underline: A line below the text
+static String WIDTH_AUTO	Width: Auto
+static String WRITING_MODE_LRTB	WritingMode: LrTb: Inline progression from left to right; block progression from top to bottom.
+static String WRITING_MODE_RLTB	WritingMode: RlTb: Inline progression from right to left; block progression from top to bottom.
+static String WRITING_MODE_TBRL	WritingMode: TbRl: Inline progression from top to bottom; block progression from right to left.
+[Method Summary]
+PDGamma getBackgroundColor()	Gets the background colour (BackgroundColor).
+float getBaselineShift()	Gets the distance by which the element’s baseline shall be shifted relative to that of its parent element (BaselineShift).
+PDRectangle getBBox()	Gets the bounding box.
+String getBlockAlign()	Gets the alignment, in the block-progression direction, of content within the table cell (BlockAlign).
+Object getBorderColors()	Gets the border colour (BorderColor).
+Object getBorderStyle()	Gets the border style (BorderStyle).
+Object getBorderThickness()	Gets the border thickness (BorderThickness).
+PDGamma getColor()	Gets the color to be used for drawing text and the default value for the colour of table borders and text decorations (Color).
+int getColumnCount()	Gets the number of columns in the content of the grouping element (ColumnCount).
+Object getColumnGap()	Gets the desired space between adjacent columns in the inline-progression direction (ColumnGap).
+Object getColumnWidths()	Gets the desired width of the columns, measured in default user space units in the inline-progression direction (ColumnWidths).
+float getEndIndent()	Gets the distance from the end edge of the BLSE to that of the reference area in the inline-progression direction (EndIndent).
+String getGlyphOrientationVertical()	Gets the orientation of glyphs when the inline-progression direction is top to bottom or bottom to top (GlyphOrientationVertical).
+Object getHeight()	Gets the height of the element’s content rectangle in the block-progression direction (Height).
+String getInlineAlign()	Gets the alignment, in the inline-progression direction, of content within the table cell (InlineAlign).
+Object getLineHeight()	Gets the element’s preferred height in the block-progression direction (LineHeight).
+Object getPadding()	Gets the padding (Padding).
+String getPlacement()	Gets the positioning of the element with respect to the enclosing reference area and other content (Placement).
+String getRubyAlign()	Gets the justification of the lines within a ruby assembly (RubyAlign).
+String getRubyPosition()	Gets the placement of the RT structure element relative to the RB element in a ruby assembly (RubyPosition).
+float getSpaceAfter()	Gets the amount of extra space following the after edge of the BLSE in the block-progression direction (SpaceAfter).
+float getSpaceBefore()	Gets the amount of extra space preceding the before edge of the BLSE in the block-progression direction (SpaceBefore).
+float getStartIndent()	Gets the distance from the start edge of the reference area to that of the BLSE in the inline-progression direction (StartIndent).
+Object getTBorderStyle()	Gets the style of the border drawn on each edge of a table cell (TBorderStyle).
+String getTextAlign()	Gets the alignment, in the inline-progression direction, of text and other content within lines of the BLSE (TextAlign).
+PDGamma getTextDecorationColor()	Gets the colour to be used for drawing text decorations (TextDecorationColor).
+float getTextDecorationThickness()	Gets the thickness of each line drawn as part of the text decoration (TextDecorationThickness).
+String getTextDecorationType()	Gets the type of text decoration (TextDecorationType).
+float getTextIndent()	Gets the additional distance in the inline-progression direction from the start edge of the BLSE, as specified by StartIndent, to that of the first line of text (TextIndent).
+Object getTPadding()	Gets the offset to account for the separation between the table cell’s content rectangle and the surrounding border (TPadding).
+Object getWidth()	Gets the width of the element’s content rectangle in the inline-progression direction (Width).
+String getWritingMode()	Gets the writing mode (WritingMode).
+void setAllBorderColors(PDGamma borderColor)	Sets the same border colour for all four sides (BorderColor).
+void setAllBorderStyles(String borderStyle)	Sets the same border style for all four sides (BorderStyle).
+void setAllBorderThicknesses(float borderThickness)	Sets the same border thickness for all four sides (BorderThickness).
+void setAllBorderThicknesses(int borderThickness)	Sets the same border thickness for all four sides (BorderThickness).
+void setAllColumnWidths(float columnWidth)	Sets the same column width for all columns (ColumnWidths).
+void setAllColumnWidths(int columnWidth)	Sets the same column width for all columns (ColumnWidths).
+void setAllPaddings(float padding)	Sets the same padding for all four sides (Padding).
+void setAllPaddings(int padding)	Sets the same padding for all four sides (Padding).
+void setAllTBorderStyles(String tBorderStyle)	Sets the same table border style for all four sides (TBorderStyle).
+void setAllTPaddings(float tPadding)	Sets the same table padding for all four sides (TPadding).
+void setAllTPaddings(int tPadding)	Sets the same table padding for all four sides (TPadding).
+void setBackgroundColor(PDGamma backgroundColor)	Sets the background colour (BackgroundColor).
+void setBaselineShift(float baselineShift)	Sets the distance by which the element’s baseline shall be shifted relative to that of its parent element (BaselineShift).
+void setBaselineShift(int baselineShift)	Sets the distance by which the element’s baseline shall be shifted relative to that of its parent element (BaselineShift).
+void setBBox(PDRectangle bbox)	Sets the bounding box.
+void setBlockAlign(String blockAlign)	Sets the alignment, in the block-progression direction, of content within the table cell (BlockAlign).
+void setBorderColors(PDFourColours borderColors)	Sets the border colours for four sides separately (BorderColor).
+void setBorderStyles(String[] borderStyles)	Sets the border styles for four sides separately (BorderStyle).
+void setBorderThicknesses(float[] borderThicknesses)	Sets the border thicknesses for four sides separately (BorderThickness).
+void setColor(PDGamma color)	Sets the color to be used for drawing text and the default value for the colour of table borders and text decorations (Color).
+void setColumnCount(int columnCount)	Sets the number of columns in the content of the grouping element (ColumnCount).
+void setColumnGap(float columnGap)	Sets the desired space between all columns in the inline-progression direction (ColumnGap).
+void setColumnGap(int columnGap)	Sets the desired space between all columns in the inline-progression direction (ColumnGap).
+void setColumnGaps(float[] columnGaps)	Sets the desired space between adjacent columns in the inline-progression direction (ColumnGap), the first element specifying the space between the first and second columns, the second specifying the space between the second and third columns, and so on.
+void setColumnWidths(float[] columnWidths)	Sets the column widths for the columns separately (ColumnWidths).
+void setEndIndent(float endIndent)	Sets the distance from the end edge of the BLSE to that of the reference area in the inline-progression direction (EndIndent).
+void setEndIndent(int endIndent)	Sets the distance from the end edge of the BLSE to that of the reference area in the inline-progression direction (EndIndent).
+void setGlyphOrientationVertical(String glyphOrientationVertical)	Sets the orientation of glyphs when the inline-progression direction is top to bottom or bottom to top (GlyphOrientationVertical).
+void setHeight(float height)	Sets the height of the element’s content rectangle in the block-progression direction (Height).
+void setHeight(int height)	Sets the height of the element’s content rectangle in the block-progression direction (Height).
+void setHeightAuto()	Sets the height of the element’s content rectangle in the block-progression direction (Height) to HEIGHT_AUTO.
+void setInlineAlign(String inlineAlign)	Sets the alignment, in the inline-progression direction, of content within the table cell (InlineAlign).
+void setLineHeight(float lineHeight)	Sets the element’s preferred height in the block-progression direction (LineHeight).
+void setLineHeight(int lineHeight)	Sets the element’s preferred height in the block-progression direction (LineHeight).
+void setLineHeightAuto()	Sets the element’s preferred height in the block-progression direction (LineHeight) to LINE_HEIGHT_AUTO.
+void setLineHeightNormal()	Sets the element’s preferred height in the block-progression direction (LineHeight) to LINE_HEIGHT_NORMAL.
+void setPaddings(float[] paddings)	Sets the paddings for four sides separately (Padding).
+void setPlacement(String placement)	Sets the positioning of the element with respect to the enclosing reference area and other content (Placement).
+void setRubyAlign(String rubyAlign)	Sets the justification of the lines within a ruby assembly (RubyAlign).
+void setRubyPosition(String rubyPosition)	Sets the placement of the RT structure element relative to the RB element in a ruby assembly (RubyPosition).
+void setSpaceAfter(float spaceAfter)	Sets the amount of extra space following the after edge of the BLSE in the block-progression direction (SpaceAfter).
+void setSpaceAfter(int spaceAfter)	Sets the amount of extra space following the after edge of the BLSE in the block-progression direction (SpaceAfter).
+void setSpaceBefore(float spaceBefore)	Sets the amount of extra space preceding the before edge of the BLSE in the block-progression direction (SpaceBefore).
+void setSpaceBefore(int spaceBefore)	Sets the amount of extra space preceding the before edge of the BLSE in the block-progression direction (SpaceBefore).
+void setStartIndent(float startIndent)	Sets the distance from the start edge of the reference area to that of the BLSE in the inline-progression direction (StartIndent).
+void setStartIndent(int startIndent)	Sets the distance from the start edge of the reference area to that of the BLSE in the inline-progression direction (StartIndent).
+void setTBorderStyles(String[] tBorderStyles)	Sets the style of the border drawn on each edge of a table cell (TBorderStyle).
+void setTextAlign(String textIndent)	Sets the alignment, in the inline-progression direction, of text and other content within lines of the BLSE (TextAlign).
+void setTextDecorationColor(PDGamma textDecorationColor)	Sets the colour to be used for drawing text decorations (TextDecorationColor).
+void setTextDecorationThickness(float textDecorationThickness)	Sets the thickness of each line drawn as part of the text decoration (TextDecorationThickness).
+void setTextDecorationThickness(int textDecorationThickness)	Sets the thickness of each line drawn as part of the text decoration (TextDecorationThickness).
+void setTextDecorationType(String textDecorationType)	Sets the type of text decoration (TextDecorationType).
+void setTextIndent(float textIndent)	Sets the additional distance in the inline-progression direction from the start edge of the BLSE, as specified by StartIndent, to that of the first line of text (TextIndent).
+void setTextIndent(int textIndent)	Sets the additional distance in the inline-progression direction from the start edge of the BLSE, as specified by StartIndent, to that of the first line of text (TextIndent).
+void setTPaddings(float[] tPaddings)	Sets the table paddings for four sides separately (TPadding).
+void setWidth(float width)	Sets the width of the element’s content rectangle in the inline-progression direction (Width).
+void setWidth(int width)	Sets the width of the element’s content rectangle in the inline-progression direction (Width).
+void setWidthAuto()	Sets the width of the element’s content rectangle in the inline-progression direction (Width) to WIDTH_AUTO.
+void setWritingMode(String writingMode)	Sets the writing mode (WritingMode).
+String toString()	
+[Methods inherited from class org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.PDStandardAttributeObject]
+getArrayOfString, getColor, getColorOrFourColors, getInteger, getName, getName, getNameOrArrayOfName, getNumber, getNumber, getNumberOrArrayOfNumber, getNumberOrName, getString, isSpecified, setArrayOfName, setArrayOfNumber, setArrayOfString, setColor, setFourColors, setInteger, setName, setNumber, setNumber, setString
+[Methods inherited from class org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDAttributeObject]
+arrayToString, arrayToString, create, getOwner, isEmpty, notifyChanged, potentiallyNotifyChanged, setOwner, setStructureElement
+[Methods inherited from class org.apache.pdfbox.pdmodel.common.PDDictionaryWrapper]
+equals, getCOSObject, hashCode
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

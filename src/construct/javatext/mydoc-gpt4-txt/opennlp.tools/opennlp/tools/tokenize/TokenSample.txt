@@ -1,0 +1,21 @@
+[API Name] opennlp.tools.tokenize.TokenSample
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, Sample
+public class TokenSample extends Object implements Sample A TokenSample is text with token spans.
+See Also:
+Serialized Form
+[Constructor Summary]
+TokenSample(String text, Span[] tokenSpans)	Initializes a instance.
+TokenSample(Detokenizer detokenizer, String[] tokens)	Initializes a instance via a Detokenizer.
+[Field Summary]
+static final String DEFAULT_SEPARATOR_CHARS	
+[Method Summary]
+boolean equals(Object obj)	
+String getText()	
+Span[] getTokenSpans()	
+int hashCode()	
+static TokenSample parse(String sampleString, String separatorChars)	Parses a string sample.
+String toString()	
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

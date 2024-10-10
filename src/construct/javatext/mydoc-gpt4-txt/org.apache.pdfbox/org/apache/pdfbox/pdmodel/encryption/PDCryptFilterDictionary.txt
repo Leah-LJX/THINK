@@ -1,0 +1,20 @@
+[API Name] org.apache.pdfbox.pdmodel.encryption.PDCryptFilterDictionary
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDCryptFilterDictionary extends Object implements COSObjectable This class is a specialized view of the crypt filter dictionary of a PDF document.  It contains a low level dictionary (COSDictionary) and provides the methods to  manage its fields.
+[Constructor Summary]
+PDCryptFilterDictionary()	creates a new empty crypt filter dictionary.
+PDCryptFilterDictionary(COSDictionary d)	creates a new crypt filter dictionary from the low level dictionary provided.
+[Field Summary]
+protected COSDictionary cryptFilterDictionary	COS crypt filter dictionary.
+[Method Summary]
+COSDictionary getCOSObject()	This will get the dictionary associated with this crypt filter dictionary.
+COSName getCryptFilterMethod()	This will return the crypt filter method.
+int getLength()	This will return the Length entry of the crypt filter dictionary. The length in bits for the crypt filter algorithm.
+boolean isEncryptMetaData()	Will get the EncryptMetaData dictionary info.
+void setCryptFilterMethod(COSName cfm)	This will set the crypt filter method.
+void setEncryptMetaData(boolean encryptMetaData)	Set the EncryptMetaData dictionary info.
+void setLength(int length)	This will set the number of bits to use for the crypt filter algorithm.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

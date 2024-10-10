@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.chunker.ChunkerFactory
+[Type] Class
+[Info]
+Direct Known Subclasses: ParserChunkerFactory
+public class ChunkerFactory extends BaseToolFactory
+[Constructor Summary]
+ChunkerFactory()	Creates a ChunkerFactory that provides the default implementation of the resources.
+[Method Summary]
+static ChunkerFactory create(String subclassName)	Instantiates a ChunkerFactory via a given subclassName.
+ChunkerContextGenerator getContextGenerator()	
+SequenceValidator<TokenTag> getSequenceValidator()	
+void validateArtifactMap()	Validates the parsed artifacts.
+[Methods inherited from class opennlp.tools.util.BaseToolFactory]
+create, create, createArtifactMap, createArtifactSerializersMap, createManifestEntries
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

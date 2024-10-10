@@ -1,0 +1,18 @@
+[API Name] opennlp.tools.langdetect.Language
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable
+public class Language extends Object implements Serializable Class for holding the document language and its confidence
+See Also:
+Serialized Form
+[Constructor Summary]
+Language(String lang)	
+Language(String lang, double confidence)	
+[Method Summary]
+boolean equals(Object obj)	
+double getConfidence()	
+String getLang()	
+int hashCode()	
+String toString()	
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

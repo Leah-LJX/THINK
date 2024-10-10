@@ -1,0 +1,17 @@
+[API Name] Package org.apache.commons.imaging.icc.IccTag
+[Type] Class
+[Info]
+public class IccTag extends Object
+[Constructor Summary]
+IccTag​(int signature, int offset, int length, org.apache.commons.imaging.icc.IccTagType fIccTagType)	
+[Field Summary]
+org.apache.commons.imaging.icc.IccTagType fIccTagType	
+int length	
+int offset	
+int signature	
+[Method Summary]
+void dump​(PrintWriter pw, String prefix)	
+void dump​(String prefix)	
+void setData​(byte[] bytes)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

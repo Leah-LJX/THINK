@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.formats.letsmt.LetsmtDocument.LetsmtSentence
+[Type] Class
+[Info]
+Enclosing class: LetsmtDocument
+public static class LetsmtDocument.LetsmtSentence extends Object
+[Constructor Summary]
+LetsmtSentence()	
+[Method Summary]
+String getNonTokenizedText()	
+String[] getTokens()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

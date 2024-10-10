@@ -1,0 +1,21 @@
+[Class] org.jfree.data.statistics.Statistics
+[Flag] Class
+[Info]
+Parameters: values - the values (null not permitted).
+Returns: The mean.
+[Constructor Summary]
+Statistics()
+[Method Summary]
+static double calculateMean(Number[] values)	Returns the mean of an array of numbers.
+static double calculateMean(Number[] values, boolean includeNullAndNaN)	Returns the mean of an array of numbers.
+static double calculateMean(Collection values)	Returns the mean of a collection of Number objects.
+static double calculateMean(Collection values, boolean includeNullAndNaN)	Returns the mean of a collection of Number objects.
+static double calculateMedian(List values)	Calculates the median for a list of values (Number objects).
+static double calculateMedian(List values, boolean copyAndSort)	Calculates the median for a list of values (Number objects).
+static double calculateMedian(List values, int start, int end)	Calculates the median for a sublist within a list of values (Number objects).
+static double calculateMedian(List values, int start, int end, boolean copyAndSort)	Calculates the median for a sublist within a list of values (Number objects).
+static double getCorrelation(Number[] data1, Number[] data2)	Calculates the correlation between two datasets.
+static double[] getLinearFit(Number[] xData, Number[] yData)	Fits a straight line to a set of (x, y) data, returning the slope and intercept.
+static double[][] getMovingAverage(Number[] xData, Number[] yData, int period)	Returns a data set for a moving average on the data set passed in.
+static double getSlope(Number[] xData, Number[] yData)	Finds the slope of a regression line using least squares.
+static double getStdDev(Number[] data)	Returns the standard deviation of a set of numbers.

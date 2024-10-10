@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.chunker.ChunkSampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<ChunkSample>
+public class ChunkSampleStream extends FilterObjectStream<String,ChunkSample> Parses the conll 2000 shared task shallow parser training data.    Data format is specified on the conll page:
+ http://www.cnts.ua.ac.be/conll2000/chunking/
+[Constructor Summary]
+ChunkSampleStream(ObjectStream<String> samples)	Initializes a instance.
+[Method Summary]
+ChunkSample read()	Returns the next ObjectStream object.
+[Methods inherited from class opennlp.tools.util.FilterObjectStream]
+close, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

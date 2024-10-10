@@ -1,0 +1,22 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.action.PDActionThread
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable, PDDestinationOrAction
+public class PDActionThread extends PDAction This represents a thread action that can be executed in a PDF document.
+Author: Evgeniy Muravitskiy
+[Constructor Summary]
+PDActionThread()	Default constructor.
+PDActionThread(COSDictionary a)	Constructor.
+[Field Summary]
+static String SUB_TYPE	This type of action this object represents.
+[Method Summary]
+COSBase getB()	
+COSBase getD()	
+PDFileSpecification getFile()	This will get the file in which the destination is located.
+void setB(COSBase b)	
+void setD(COSBase d)	
+void setFile(PDFileSpecification fs)	This will set the file in which the destination is located.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.action.PDAction]
+getCOSObject, getNext, getSubType, getType, setNext, setSubType, setType
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

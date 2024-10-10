@@ -1,0 +1,12 @@
+[API Name] org.apache.pdfbox.pdmodel.font.FontProvider
+[Type] Class
+[Info]
+public abstract class FontProvider extends Object External font service provider interface.
+Author: John Hewson
+[Constructor Summary]
+FontProvider()	
+[Method Summary]
+abstract List<? extends FontInfo> getFontInfo()	Returns a list of information about fonts on the system.
+abstract String toDebugString()	Returns a string containing debugging information.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

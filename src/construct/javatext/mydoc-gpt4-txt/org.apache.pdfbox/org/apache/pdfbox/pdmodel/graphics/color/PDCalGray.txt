@@ -1,0 +1,28 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.color.PDCalGray
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class PDCalGray extends PDCIEDictionaryBasedColorSpace A CalGray colour space is a special case of a single-component CIE-based  colour space.
+Author: John Hewson, Ben Litchfield
+[Constructor Summary]
+PDCalGray()	Create a new CalGray color space.
+PDCalGray(COSArray array)	Creates a new CalGray color space using the given COS array.
+[Field Summary]
+PDCalGray()	Create a new CalGray color space.
+PDCalGray(COSArray array)	Creates a new CalGray color space using the given COS array.
+[Method Summary]
+float[] getDefaultDecode(int bitsPerComponent)	Returns the default decode array for this color space.
+float getGamma()	This will get the gamma value.
+PDColor getInitialColor()	Returns the initial color value for this color space.
+String getName()	Returns the name of the color space.
+int getNumberOfComponents()	Returns the number of components in this color space
+void setGamma(float value)	Set the gamma value.
+float[] toRGB(float[] value)	Returns the RGB equivalent of the given color value.
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.color.PDCIEDictionaryBasedColorSpace]
+convXYZtoRGB, getBlackPoint, getWhitepoint, isWhitePoint, setBlackPoint, setWhitePoint
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.color.PDCIEBasedColorSpace]
+toRawImage, toRGBImage, toString
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace]
+create, create, create, getCOSObject, toRawImage, toRGBImageAWT
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

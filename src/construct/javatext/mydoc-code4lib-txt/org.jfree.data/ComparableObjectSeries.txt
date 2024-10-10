@@ -1,0 +1,27 @@
+[Class] org.jfree.data.ComparableObjectSeries
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+Direct Known Subclasses: OHLCSeries, VectorSeries, XIntervalSeries, XYIntervalSeries, YIntervalSeries
+[Constructor Summary]
+ComparableObjectSeries(Comparable key)	Creates a new empty series.
+ComparableObjectSeries(Comparable key, boolean autoSort, boolean allowDuplicateXValues)	Constructs a new series that contains no data.
+[Method Summary]
+protected void add(Comparable x, Object y)	Adds new data to the series and sends a SeriesChangeEvent to all registered listeners.
+protected void add(Comparable x, Object y, boolean notify)	Adds new data to the series and, if requested, sends a SeriesChangeEvent to all registered listeners.
+protected void add(ComparableObjectItem item, boolean notify)	Adds a data item to the series and, if requested, sends a SeriesChangeEvent to all registered listeners.
+void clear()	Removes all data items from the series and, unless the series is already empty, sends a SeriesChangeEvent to all registered listeners.
+protected void delete(int start, int end)	Deletes a range of items from the series and sends a SeriesChangeEvent to all registered listeners.
+boolean equals(Object obj)	Tests this series for equality with an arbitrary object.
+boolean getAllowDuplicateXValues()	Returns a flag that controls whether duplicate x-values are allowed.
+boolean getAutoSort()	Returns the flag that controls whether the items in the series are automatically sorted.
+protected ComparableObjectItem getDataItem(int index)	Return the data item with the specified index.
+int getItemCount()	Returns the number of items in the series.
+int getMaximumItemCount()	Returns the maximum number of items that will be retained in the series.
+int hashCode()	Returns a hash code.
+int indexOf(Comparable x)	Returns the index of the item with the specified x-value, or a negative index if the series does not contain an item with that x-value.
+protected ComparableObjectItem remove(int index)	Removes the item at the specified index and sends a SeriesChangeEvent to all registered listeners.
+ComparableObjectItem remove(Comparable x)	Removes the item with the specified x-value and sends a SeriesChangeEvent to all registered listeners.
+void setMaximumItemCount(int maximum)	Sets the maximum number of items that will be retained in the series.
+protected void update(Comparable x, Object y)	Updates an item in the series.
+protected void updateByIndex(int index, Object y)	Updates the value of an item in the series and sends a SeriesChangeEvent to all registered listeners.

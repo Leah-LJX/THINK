@@ -1,0 +1,17 @@
+[Class] org.joda.time.YearMonth.Property
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+Enclosing class: YearMonth
+[Constructor Summary]
+
+[Method Summary]
+YearMonth addToCopy(int valueToAdd) Adds to the value of this field in a copy of this YearMonth.
+YearMonth addWrapFieldToCopy(int valueToAdd) Adds to the value of this field in a copy of this YearMonth wrapping within this field if the maximum value is reached.
+int get() Gets the value of this field.
+DateTimeField getField() Gets the field that this property uses.
+protected ReadablePartial getReadablePartial() Gets the partial that this property belongs to.
+YearMonth getYearMonth() Gets the partial that this property belongs to.
+YearMonth setCopy(int value) Sets this field in a copy of the YearMonth.
+YearMonth setCopy(String text) Sets this field in a copy of the YearMonth to a parsed text value.
+YearMonth setCopy(String text, Locale locale) Sets this field in a copy of the YearMonth to a parsed text value.

@@ -1,0 +1,14 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.constants.Tiff4TagConstants
+[Type] Class
+[Info]
+public final class Tiff4TagConstants extends Object Tags in TIFF4 but NOT in TIFF6.    http://cool.conservation-us.org/bytopic/imaging/std/tiff4.html
+[Field Summary]
+static List<TagInfo> ALL_TIFF_4_TAGS	
+static int COLOR_RESPONSE_UNIT_VALUE_0_00001	
+static int COLOR_RESPONSE_UNIT_VALUE_0_0001	
+static int COLOR_RESPONSE_UNIT_VALUE_0_001	
+static int COLOR_RESPONSE_UNIT_VALUE_0_01	
+static int COLOR_RESPONSE_UNIT_VALUE_0_1	
+static TagInfoShort TIFF_TAG_COLOR_RESPONSE_UNIT	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

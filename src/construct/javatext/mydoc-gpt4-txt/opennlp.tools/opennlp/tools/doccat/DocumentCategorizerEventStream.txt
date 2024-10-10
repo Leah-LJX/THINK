@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.doccat.DocumentCategorizerEventStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<Event>
+public class DocumentCategorizerEventStream extends AbstractEventStream<DocumentSample> Iterator-like class for modeling document classification events.
+[Constructor Summary]
+DocumentCategorizerEventStream(ObjectStream<DocumentSample> samples)	Initializes a DocumentCategorizerEventStream via samples.
+DocumentCategorizerEventStream(ObjectStream<DocumentSample> samples, FeatureGenerator... featureGenerators)	Initializes a DocumentCategorizerEventStream via samples and feature generators.
+[Methods inherited from class opennlp.tools.util.AbstractEventStream]
+close, read, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

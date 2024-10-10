@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.util.DownloadUtil
+[Type] Class
+[Info]
+public class DownloadUtil extends Object This class facilitates the downloading of pretrained OpenNLP models.
+[Constructor Summary]
+DownloadUtil()	
+[Field Summary]
+static final Map<String,Map<DownloadUtil.ModelType,String>> available_models	
+[Nested Class Summary]
+Nested Class Summary
+static enum 
+[Method Summary]
+static <T extends BaseModel>T downloadModel(String language, DownloadUtil.ModelType modelType, Class<T> type)	Triggers a download for the specified DownloadUtil.ModelType.
+static <T extends BaseModel>T downloadModel(URL url, Class<T> type)	Downloads a model from a URL.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,16 @@
+[API Name] Package org.apache.commons.imaging.common.GenericImageMetadata
+[Type] Class
+[Info]
+All Implemented Interfaces: ImageMetadata
+Direct Known Subclasses: JpegPhotoshopMetadata, TiffImageMetadata, TiffImageMetadata.Directory
+public class GenericImageMetadata extends Object implements ImageMetadata
+[Constructor Summary]
+GenericImageMetadata()	
+[Method Summary]
+void add​(String keyword, String text)	
+void add​(ImageMetadata.ImageMetadataItem item)	
+List<? extends ImageMetadata.ImageMetadataItem> getItems()	
+String toString()	
+String toString​(String prefix)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

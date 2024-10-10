@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.DateTickUnit
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable
+[Constructor Summary]
+DateTickUnit(DateTickUnitType unitType, int multiple) Creates a new date tick unit.
+[Method Summary]
+Date addToDate(Date base) Deprecated. As of JFreeChart 1.0.10, this method is deprecated - you should use addToDate(Date, TimeZone) instead.

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.CrosshairState
+[Flag] Class
+[Info]
+Direct Known Subclasses: CategoryCrosshairState, XYCrosshairState
+[Constructor Summary]
+CrosshairState() Creates a new CrosshairState instance that calculates distance in Java2D space.
+[Method Summary]
+Point2D getAnchor() Returns the anchor point.

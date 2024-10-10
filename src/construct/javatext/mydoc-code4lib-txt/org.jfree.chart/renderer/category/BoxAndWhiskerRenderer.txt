@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.category.BoxAndWhiskerRenderer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, LegendItemSource, CategoryItemRenderer, org.jfree.util.PublicCloneable
+[Constructor Summary]
+BoxAndWhiskerRenderer() Default constructor.
+[Method Summary]
+void drawHorizontalItem(Graphics2D g2, CategoryItemRendererState state, Rectangle2D dataArea, CategoryPlot plot, CategoryAxis domainAxis, ValueAxis rangeAxis, CategoryDataset dataset, int row, int column) Draws the visual representation of a single data item when the plot has a horizontal orientation.

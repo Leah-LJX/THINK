@@ -1,0 +1,18 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.shading.PDShadingType3
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDShadingType3 extends PDShadingType2 Resources for a radial shading.
+[Constructor Summary]
+PDShadingType3(COSDictionary shadingDictionary)	Constructor using the given shading dictionary.
+[Field Summary]
+PDShadingType3(COSDictionary shadingDictionary)	Constructor using the given shading dictionary.
+[Method Summary]
+int getShadingType()	This will return the shading type.
+Paint toPaint(Matrix matrix)	Returns an AWT paint which corresponds to this shading
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.shading.PDShadingType2]
+getCoords, getDomain, getExtend, setCoords, setDomain, setExtend
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.shading.PDShading]
+create, evalFunction, evalFunction, getAntiAlias, getBackground, getBBox, getBounds, getColorSpace, getCOSObject, getFunction, getType, setAntiAlias, setBackground, setBBox, setColorSpace, setFunction, setFunction, setShadingType
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

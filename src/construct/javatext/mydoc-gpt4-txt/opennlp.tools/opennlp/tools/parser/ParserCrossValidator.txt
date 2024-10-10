@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.parser.ParserCrossValidator
+[Type] Class
+[Info]
+public class ParserCrossValidator extends Object Cross validator for a Parser.
+[Constructor Summary]
+ParserCrossValidator(String languageCode, TrainingParameters params, HeadRules rules, ParserType parserType, ParserEvaluationMonitor... monitors)	Initializes a ParserCrossValidator instance via given parameters.
+[Method Summary]
+void evaluate(ObjectStream<Parse> samples, int nFolds)	Starts the evaluation.
+FMeasure getFMeasure()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

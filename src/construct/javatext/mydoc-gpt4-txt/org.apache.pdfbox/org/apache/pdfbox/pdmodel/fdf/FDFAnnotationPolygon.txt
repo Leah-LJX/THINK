@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.pdmodel.fdf.FDFAnnotationPolygon
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class FDFAnnotationPolygon extends FDFAnnotation This represents a Polygon FDF annotation.
+Author: Ben Litchfield, Johanneke Lamberink
+[Constructor Summary]
+FDFAnnotationPolygon()	Default constructor.
+FDFAnnotationPolygon(COSDictionary a)	Constructor.
+FDFAnnotationPolygon(Element element)	Constructor.
+[Field Summary]
+static String SUBTYPE	COS Model value for SubType entry.
+[Method Summary]
+Color getInteriorColor()	This will get interior color of the drawn area.
+float[] getVertices()	This will get the coordinates of the vertices.
+void setInteriorColor(Color color)	This will set interior color of the drawn area.
+void setVertices(float[] vertices)	This will set the coordinates of the vertices.
+[Methods inherited from class org.apache.pdfbox.pdmodel.fdf.FDFAnnotation]
+create, getBorderEffect, getBorderStyle, getColor, getContents, getCOSObject, getCreationDate, getDate, getIntent, getName, getOpacity, getPage, getRectangle, getRichContents, getStringOrStream, getSubject, getTitle, isHidden, isInvisible, isLocked, isLockedContents, isNoRotate, isNoView, isNoZoom, isPrinted, isReadOnly, isToggleNoView, setBorderEffect, setBorderStyle, setColor, setContents, setCreationDate, setDate, setHidden, setIntent, setInvisible, setLocked, setLockedContents, setName, setNoRotate, setNoView, setNoZoom, setOpacity, setPage, setPrinted, setReadOnly, setRectangle, setRichContents, setSubject, setTitle, setToggleNoView
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

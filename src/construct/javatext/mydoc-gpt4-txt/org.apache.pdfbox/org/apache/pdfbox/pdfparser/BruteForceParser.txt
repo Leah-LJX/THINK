@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.pdfparser.BruteForceParser
+[Type] Class
+[Info]
+All Implemented Interfaces: ICOSParser
+public class BruteForceParser extends COSParser Brute force parser to be used as last resort if a malformed pdf can't be read.
+[Constructor Summary]
+BruteForceParser(org.apache.pdfbox.io.RandomAccessRead source, COSDocument document)	Constructor.
+[Field Summary]
+BruteForceParser(org.apache.pdfbox.io.RandomAccessRead source, COSDocument document)	Constructor.
+[Method Summary]
+protected void bfSearchForObjStreams(XrefTrailerResolver trailerResolver, SecurityHandler<? extends ProtectionPolicy> securityHandler)	Brute force search for all objects streams of a pdf.
+protected long bfSearchForXRef(long xrefOffset)	Search for the offset of the given xref table/stream among those found by a brute force search.
+boolean bfSearchTriggered()	Indicates wether the brute force search for objects was triggered.
+protected Map<COSObjectKey,Long> getBFCOSObjectOffsets()	Returns all found objects of a brute force search.
+protected COSDictionary rebuildTrailer(XrefTrailerResolver trailerResolver, SecurityHandler<? extends ProtectionPolicy> securityHandler)	Rebuild the trailer dictionary if startxref can't be found.
+[Methods inherited from class org.apache.pdfbox.pdfparser.COSParser]
+checkPages, createRandomAccessReadView, dereferenceCOSObject, getAccessPermission, getEncryption, isLenient, isString, lastIndexOf, parseCOSStream, parseFDFHeader, parseObjectDynamically, parseObjectStreamObject, parsePDFHeader, parseXrefTable, prepareDecryption, resetTrailerResolver, retrieveTrailer, setEOFLookupRange, setLenient
+[Methods inherited from class org.apache.pdfbox.pdfparser.BaseParser]
+getObjectKey, isClosing, isClosing, isDigit, isDigit, isEndOfName, isEOF, isEOL, isEOL, isSpace, isSpace, isWhitespace, isWhitespace, parseCOSArray, parseCOSDictionary, parseCOSName, parseCOSString, parseDirObject, readExpectedChar, readExpectedString, readGenerationNumber, readInt, readLine, readLong, readObjectNumber, readString, readString, readStringNumber, skipSpaces, skipWhiteSpaces
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

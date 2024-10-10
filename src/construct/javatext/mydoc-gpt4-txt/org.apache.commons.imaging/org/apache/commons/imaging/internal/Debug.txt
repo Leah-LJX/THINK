@@ -1,0 +1,12 @@
+[API Name] Package org.apache.commons.imaging.internal.Debug
+[Type] Class
+[Info]
+public final class Debug extends Object Internal-only debug class. Used for collecting extra information when parsing or  modifying images or metadata. These methods are useful for troubleshooting and  issue analysis, but this should not be used directly by end-users, nor extended  in any way. This may change or be removed at any time.
+[Method Summary]
+static void debug()	
+static void debug​(String message)	
+static void debug​(String message, Object value)	
+static void debug​(Throwable e)	
+static void debug​(Throwable e, int value)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

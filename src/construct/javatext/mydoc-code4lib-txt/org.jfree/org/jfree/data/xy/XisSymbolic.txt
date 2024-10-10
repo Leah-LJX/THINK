@@ -1,0 +1,10 @@
+[Class] org.jfree.data.xy.XisSymbolic
+[Flag] Interface
+[Info]
+Returns: An array of symbolic values.
+[Constructor Summary]
+
+[Method Summary]
+String getXSymbolicValue(int series, int item)	Returns the symbolic value of the data set specified by series and item parameters.
+String getXSymbolicValue(Integer val)	Returns the symbolic value linked with the specified Integer.
+String[] getXSymbolicValues()	Returns the list of symbolic values.

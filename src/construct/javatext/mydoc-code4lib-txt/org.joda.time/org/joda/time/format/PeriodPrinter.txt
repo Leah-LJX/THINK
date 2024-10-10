@@ -1,0 +1,14 @@
+[Class] org.joda.time.format.PeriodPrinter
+[Flag] Interface
+[Info]
+Since: 1.0
+See Also: PeriodFormatter, 
+PeriodFormatterBuilder, 
+PeriodFormat
+[Constructor Summary]
+
+[Method Summary]
+int calculatePrintedLength(ReadablePeriod period, Locale locale) Returns the exact number of characters produced for the given period.
+int countFieldsToPrint(ReadablePeriod period, int stopAt, Locale locale) Returns the amount of fields from the given period that this printer will print.
+void printTo(StringBuffer buf, ReadablePeriod period, Locale locale) Prints a ReadablePeriod to a StringBuffer.
+void printTo(Writer out, ReadablePeriod period, Locale locale) Prints a ReadablePeriod to a Writer.

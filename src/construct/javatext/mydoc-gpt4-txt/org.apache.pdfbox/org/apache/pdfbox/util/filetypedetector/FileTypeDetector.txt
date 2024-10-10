@@ -1,0 +1,14 @@
+[API Name] org.apache.pdfbox.util.filetypedetector.FileTypeDetector
+[Type] Class
+[Info]
+public final class FileTypeDetector extends Object
+Author: Drew Noakes
+ code taken from https://github.com/drewnoakes/metadata-extractor
+ 2016-01-04
+ latest commit number 73f1a48
+ Examines the a file's first bytes and estimates the file's type.
+[Method Summary]
+static FileType detectFileType(BufferedInputStream inputStream)	Examines the a file's first bytes and estimates the file's type.
+static FileType detectFileType(byte[] fileBytes)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.category.LevelRenderer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, LegendItemSource, CategoryItemRenderer, org.jfree.util.PublicCloneable
+[Constructor Summary]
+LevelRenderer() Creates a new renderer with default settings.
+[Method Summary]
+protected double calculateBarW0(CategoryPlot plot, PlotOrientation orientation, Rectangle2D dataArea, CategoryAxis domainAxis, CategoryItemRendererState state, int row, int column) Calculates the coordinate of the first "side" of a bar.

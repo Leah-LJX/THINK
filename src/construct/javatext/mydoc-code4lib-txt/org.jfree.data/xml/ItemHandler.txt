@@ -1,0 +1,13 @@
+[Class] org.jfree.data.xml.ItemHandler
+[Flag] Class
+[Info]
+All Implemented Interfaces: DatasetTags, ContentHandler, DTDHandler, EntityResolver, ErrorHandler
+[Constructor Summary]
+ItemHandler(RootHandler root, DefaultHandler parent)	Creates a new item handler.
+[Method Summary]
+void endElement(String namespaceURI, String localName, String qName)	The end of an element.
+Comparable getKey()	Returns the key that has been read by the handler, or null.
+Number getValue()	Returns the key that has been read by the handler, or null.
+void setKey(Comparable key)	Sets the key.
+void setValue(Number value)	Sets the value.
+void startElement(String namespaceURI, String localName, String qName, Attributes atts)	The start of an element.

@@ -1,0 +1,34 @@
+[API Name] org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.PDPrintFieldAttributeObject
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDPrintFieldAttributeObject extends PDStandardAttributeObject A PrintField attribute object.
+Author: Johannes Koch
+[Constructor Summary]
+PDPrintFieldAttributeObject()	Default constructor.
+PDPrintFieldAttributeObject(COSDictionary dictionary)	Creates a new PrintField attribute object with a given dictionary.
+[Field Summary]
+static String CHECKED_STATE_NEUTRAL	checked state: neutral
+static String CHECKED_STATE_OFF	checked state: off
+static String CHECKED_STATE_ON	checked state: on
+static String OWNER_PRINT_FIELD	standard attribute owner: PrintField
+static String ROLE_CB	role: cb: Check box
+static String ROLE_PB	role: pb: Push button
+static String ROLE_RB	role: rb: Radio button
+static String ROLE_TV	role: tv: Text-value field
+[Method Summary]
+String getAlternateName()	Gets the alternate name of the field (Desc).
+String getCheckedState()	Gets the checked state.
+String getRole()	Gets the role.
+void setAlternateName(String alternateName)	Sets the alternate name of the field (Desc).
+void setCheckedState(String checkedState)	Sets the checked state.
+void setRole(String role)	Sets the role.
+String toString()	
+[Methods inherited from class org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.PDStandardAttributeObject]
+getArrayOfString, getColor, getColorOrFourColors, getInteger, getName, getName, getNameOrArrayOfName, getNumber, getNumber, getNumberOrArrayOfNumber, getNumberOrName, getString, isSpecified, setArrayOfName, setArrayOfNumber, setArrayOfString, setColor, setFourColors, setInteger, setName, setNumber, setNumber, setString
+[Methods inherited from class org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDAttributeObject]
+arrayToString, arrayToString, create, getOwner, isEmpty, notifyChanged, potentiallyNotifyChanged, setOwner, setStructureElement
+[Methods inherited from class org.apache.pdfbox.pdmodel.common.PDDictionaryWrapper]
+equals, getCOSObject, hashCode
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

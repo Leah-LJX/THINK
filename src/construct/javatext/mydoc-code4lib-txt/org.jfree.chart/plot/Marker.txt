@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.plot.Marker
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+Direct Known Subclasses: CategoryMarker, IntervalMarker, ValueMarker
+[Constructor Summary]
+protected Marker() Creates a new marker with default attributes.
+[Method Summary]
+void addChangeListener(MarkerChangeListener listener) Registers an object for notification of changes to the marker.

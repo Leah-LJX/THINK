@@ -1,0 +1,33 @@
+[Class] org.joda.time.MutableInterval
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, ReadableInterval, ReadWritableInterval
+[Constructor Summary]
+MutableInterval()	Constructs a zero length time interval from 1970-01-01 to 1970-01-01.
+MutableInterval(long startInstant,	long endInstant)	Constructs an interval from a start and end instant with the ISO default chronology.
+MutableInterval(long startInstant,	long endInstant,	Chronology chronology)	Constructs an interval from a start and end instant with a chronology.
+MutableInterval(Object interval)	Constructs a time interval by converting or copying from another object.
+MutableInterval(Object interval,	Chronology chronology)	Constructs a time interval by converting or copying from another object,	 overriding the chronology.
+MutableInterval(ReadableDuration duration,	ReadableInstant end)	Constructs an interval from a millisecond duration and an end instant.
+MutableInterval(ReadableInstant start,	ReadableDuration duration)	Constructs an interval from a start instant and a duration.
+MutableInterval(ReadableInstant start,	ReadableInstant end)	Constructs an interval from a start and end instant.
+MutableInterval(ReadableInstant start,	ReadablePeriod period)	Constructs an interval from a start instant and a time period.
+MutableInterval(ReadablePeriod period,	ReadableInstant end)	Constructs an interval from a time period and an end instant.
+[Method Summary]
+Object clone() Clone this object.
+MutableInterval copy() Clone this object without having to cast the returned object.
+static MutableInterval parse(String str) Parses a MutableInterval from the specified string.
+void setChronology(Chronology chrono) Sets the chronology of this time interval.
+void setDurationAfterStart(long duration) Sets the duration of this time interval, preserving the start instant.
+void setDurationAfterStart(ReadableDuration duration) Sets the duration of this time interval, preserving the start instant.
+void setDurationBeforeEnd(long duration) Sets the duration of this time interval, preserving the end instant.
+void setDurationBeforeEnd(ReadableDuration duration) Sets the duration of this time interval, preserving the end instant.
+void setEnd(ReadableInstant end) Sets the end of this time interval as an Instant.
+void setEndMillis(long endInstant) Sets the end of this time interval.
+void setInterval(long startInstant, long endInstant) Sets this interval from two millisecond instants retaining the chronology.
+void setInterval(ReadableInstant start, ReadableInstant end) Sets this interval from two instants, replacing the chronology with that from the start instant.
+void setInterval(ReadableInterval interval) Sets this interval to be the same as another.
+void setPeriodAfterStart(ReadablePeriod period) Sets the period of this time interval, preserving the start instant and using the ISOChronology in the default zone for calculations.
+void setPeriodBeforeEnd(ReadablePeriod period) Sets the period of this time interval, preserving the end instant and using the ISOChronology in the default zone for calculations.
+void setStart(ReadableInstant start) Sets the start of this time interval as an Instant.
+void setStartMillis(long startInstant) Sets the start of this time interval.

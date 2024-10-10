@@ -1,0 +1,26 @@
+[API Name] org.apache.pdfbox.pdfwriter.COSStandardOutputStream
+[Type] Class
+[Info]
+All Implemented Interfaces: Closeable, Flushable, AutoCloseable
+public class COSStandardOutputStream extends FilterOutputStream simple output stream with some minor features for generating "pretty" PDF files.
+Author: Michael Traut
+[Constructor Summary]
+COSStandardOutputStream(OutputStream out)	Constructor.
+COSStandardOutputStream(OutputStream out, long position)	Constructor.
+[Field Summary]
+static byte[] CRLF	To be used when 2 byte sequence is enforced.
+static byte[] EOL	standard line separator.
+static byte[] LF	Line feed character.
+[Method Summary]
+long getPos()	This will get the current position in the stream.
+boolean isOnNewLine()	This will tell if we are on a newline.
+void setOnNewLine(boolean newOnNewLine)	This will set a flag telling if we are on a newline.
+void write(byte[] b, int off, int len)	This will write some byte to the stream.
+void write(int b)	This will write a single byte to the stream.
+void writeCRLF()	This will write a CRLF to the stream.
+void writeEOL()	This will write an EOL to the stream.
+void writeLF()	This will write a Linefeed to the stream.
+[Methods inherited from class java.io.FilterOutputStream]
+close, flush, write
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

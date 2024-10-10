@@ -1,0 +1,22 @@
+[API Name] opennlp.tools.chunker.ChunkSample
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, Sample
+public class ChunkSample extends Object implements Sample Class for holding chunks for a single unit of text.
+See Also:
+Serialized Form
+[Constructor Summary]
+ChunkSample(String[] sentence, String[] tags, String[] preds)	Initializes a ChunkSample instance.
+ChunkSample(List<String> sentence, List<String> tags, List<String> preds)	Initializes a ChunkSample instance.
+[Method Summary]
+boolean equals(Object obj)	
+Span[] getPhrasesAsSpanList()	
+String[] getPreds()	
+String[] getSentence()	
+String[] getTags()	
+int hashCode()	
+String nicePrint()	Creates a nice to read string for the phrases formatted as following: [NP Rockwell_NNP ] [VP said_VBD ] [NP the_DT agreement_NN ] [VP calls_VBZ ] [SBAR for_IN ] [NP it_PRP ] [VP to_TO supply_VB ] [NP 200_CD additional_JJ so-called_JJ shipsets_NNS ] [PP for_IN ] [NP the_DT planes_NNS ] ._.
+static Span[] phrasesAsSpanList(String[] aSentence, String[] aTags, String[] aPreds)	Create arrays of spans of phrases.
+String toString()	
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

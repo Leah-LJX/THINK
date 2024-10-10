@@ -1,0 +1,8 @@
+[Class] org.w3c.dom.svg.SVGCSSRule
+[Flag] Interface
+[Info]
+All Superinterfaces: CSSRule
+All Known Subinterfaces: SVGColorProfileRule
+[Constructor Summary]
+
+[Method Summary]

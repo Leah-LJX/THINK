@@ -1,0 +1,23 @@
+[API Name] opennlp.tools.namefind.NameFinderME
+[Type] Class
+[Info]
+All Implemented Interfaces: TokenNameFinder
+public class NameFinderME extends Object implements TokenNameFinder A maximum-entropy-based name finder implementation.
+[Constructor Summary]
+NameFinderME(TokenNameFinderModel model)	Initializes a NameFinderME with a TokenNameFinderModel.
+[Field Summary]
+static final String CONTINUE	
+static final int DEFAULT_BEAM_SIZE	
+static final String OTHER	
+static final String START	
+[Method Summary]
+void clearAdaptiveData()	Forgets all adaptive data which was collected during previous calls to one of the find methods.
+static Span[] dropOverlappingSpans(Span[] spans)	Removes spans with are intersecting or crossing in any way.
+Span[] find(String[] tokens)	Generates name tags for the given sequence, typically a sentence, returning token spans for any identified names.
+Span[] find(String[] tokens, String[][] additionalContext)	Generates name tags for the given sequence, typically a sentence, returning token spans for any identified names.
+double[] probs()	Retrieves the probabilities of the last decoded sequence.
+void probs(double[] probs)	Populates the specified array with the probabilities of the last decoded sequence.
+double[] probs(Span[] spans)	Retrieves an array of probabilities for each of the specified spans which is the arithmetic mean of the probabilities for each of the outcomes which make up the span.
+static TokenNameFinderModel train(String languageCode, String type, ObjectStream<NameSample> samples, TrainingParameters params, TokenNameFinderFactory factory)	Starts a training of a TokenNameFinderModel with the given parameters.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

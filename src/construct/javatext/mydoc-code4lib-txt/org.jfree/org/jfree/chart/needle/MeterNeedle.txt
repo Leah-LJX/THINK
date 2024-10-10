@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.needle.MeterNeedle
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+Direct Known Subclasses: ArrowNeedle, LineNeedle, LongNeedle, MiddlePinNeedle, PinNeedle, PlumNeedle, PointerNeedle, ShipNeedle
+[Constructor Summary]
+MeterNeedle() Creates a new needle.
+[Method Summary]
+protected void defaultDisplay(Graphics2D g2, Shape shape) Displays a shape.

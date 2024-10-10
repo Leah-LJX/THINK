@@ -1,0 +1,14 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.segments.SofnSegment.Component
+[Type] Class
+[Info]
+Enclosing class: SofnSegment
+public static class SofnSegment.Component extends Object
+[Constructor Summary]
+Component​(int componentIdentifier, int horizontalSamplingFactor, int veritcalSamplingFactor, int quantTabDestSelector)	
+[Field Summary]
+int componentIdentifier	
+int horizontalSamplingFactor	
+int quantTabDestSelector	
+int verticalSamplingFactor	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

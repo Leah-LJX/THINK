@@ -1,0 +1,10 @@
+[API Name] opennlp.tools.cmdline.params.BasicTrainingParams
+[Type] Interface
+[Info]
+All Superinterfaces: LanguageParams
+All Known Subinterfaces: TrainingToolParams
+@Internal public interface BasicTrainingParams extends LanguageParams Common training parameters.   Note: Do not use this class, internal use only!
+[Method Summary]
+String getParams()	
+[Methods inherited from interface opennlp.tools.cmdline.params.LanguageParams]
+getLang

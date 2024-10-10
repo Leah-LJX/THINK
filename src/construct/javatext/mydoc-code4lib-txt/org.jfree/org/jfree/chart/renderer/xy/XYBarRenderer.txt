@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.renderer.xy.XYBarRenderer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, AnnotationChangeListener, LegendItemSource, XYItemRenderer, org.jfree.util.PublicCloneable
+Direct Known Subclasses: ClusteredXYBarRenderer, StackedXYBarRenderer
+[Constructor Summary]
+XYBarRenderer() The default constructor.
+[Method Summary]
+Object clone() Returns a clone of the renderer.

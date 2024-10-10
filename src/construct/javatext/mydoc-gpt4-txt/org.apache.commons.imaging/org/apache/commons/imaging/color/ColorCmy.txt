@@ -1,0 +1,26 @@
+[API Name] Package org.apache.commons.imaging.color.ColorCmy
+[Type] Class
+[Info]
+public final class ColorCmy extends Object Represents a color in the CMY color space.
+ Contains the constant values for black, white, red,  green, blue, cyan, magenta, and yellow.
+Since: 1.0-alpha1 See Also: https://en.wikipedia.org/wiki/CMY_color_model
+[Constructor Summary]
+ColorCmy​(double C, double M, double Y)	
+[Field Summary]
+static ColorCmy BLACK	A constant for color black.
+static ColorCmy BLUE	A constant for color blue.
+double C	
+static ColorCmy CYAN	A constant for color cyan.
+static ColorCmy GREEN	A constant for color green.
+double M	
+static ColorCmy MAGENTA	A constant for color magenta.
+static ColorCmy RED	A constant for color red.
+static ColorCmy WHITE	A constant for color white.
+double Y	
+static ColorCmy YELLOW	A constant for color yellow.
+[Method Summary]
+boolean equals​(Object o)	
+int hashCode()	
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

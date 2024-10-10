@@ -1,0 +1,12 @@
+[API Name] Package org.apache.commons.imaging.formats.png.PngText
+[Type] Class
+[Info]
+Direct Known Subclasses: PngText.Itxt, PngText.Text, PngText.Ztxt
+public abstract class PngText extends Object
+[Constructor Summary]
+PngText​(String keyword, String text)	
+[Field Summary]
+String keyword	
+String text	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

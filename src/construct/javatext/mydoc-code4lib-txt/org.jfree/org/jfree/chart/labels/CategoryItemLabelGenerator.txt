@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.labels.CategoryItemLabelGenerator
+[Flag] Interface
+[Info]
+All Known Implementing Classes: IntervalCategoryItemLabelGenerator, StandardCategoryItemLabelGenerator
+[Constructor Summary]
+
+[Method Summary]
+String generateColumnLabel(CategoryDataset dataset, int column) Generates a label for the specified row.

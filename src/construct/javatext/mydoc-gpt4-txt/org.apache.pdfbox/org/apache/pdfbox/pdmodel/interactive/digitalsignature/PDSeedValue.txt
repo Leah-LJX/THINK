@@ -1,0 +1,53 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.digitalsignature.PDSeedValue
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDSeedValue extends Object implements COSObjectable This represents a pdf signature seed value dictionary.
+Author: Thomas Chojecki
+[Constructor Summary]
+PDSeedValue()	Default constructor.
+PDSeedValue(COSDictionary dict)	Constructor.
+[Field Summary]
+static int FLAG_ADD_REV_INFO	A Ff flag.
+static int FLAG_DIGEST_METHOD	A Ff flag.
+static int FLAG_FILTER	A Ff flag.
+static int FLAG_LEGAL_ATTESTATION	A Ff flag.
+static int FLAG_REASON	A Ff flag.
+static int FLAG_SUBFILTER	A Ff flag.
+static int FLAG_V	A Ff flag.
+[Method Summary]
+COSDictionary getCOSObject()	Convert this standard java object to a COS dictionary.
+List<String> getDigestMethod()	An array of names indicating acceptable digest algorithms to use when signing.
+String getFilter()	If Filter is not null and the isFilterRequired() indicates this entry is a required constraint, then the signature handler specified by this entry shall be used when signing; otherwise, signing shall not take place.
+List<String> getLegalAttestation()	(Optional, PDF 1.6) An array of text strings that specifying possible legal attestations.
+PDSeedValueMDP getMDP()	(Optional; PDF 1.6) A dictionary containing a single entry whose key is P and whose value is an integer between 0 and 3.
+List<String> getReasons()	If the Reasons array is provided and isReasonRequired() indicates that Reasons is a required constraint, one of the reasons in the array shall be used for the signature dictionary; otherwise signing shall not take place.
+PDSeedValueCertificate getSeedValueCertificate()	(Optional) A certificate seed value dictionary containing information about the certificate to be used when signing.
+List<String> getSubFilter()	If SubFilter is not null and the isSubFilterRequired() indicates this entry is a required constraint, then the first matching encodings shall be used when signing; otherwise, signing shall not take place.
+PDSeedValueTimeStamp getTimeStamp()	(Optional; PDF 1.6) A time stamp dictionary containing two entries.
+float getV()	The minimum required capability of the signature field seed value dictionary parser.
+boolean isAddRevInfoRequired()	
+boolean isDigestMethodRequired()	
+boolean isFilterRequired()	
+boolean isLegalAttestationRequired()	
+boolean isReasonRequired()	
+boolean isSubFilterRequired()	
+boolean isVRequired()	
+void setAddRevInfoRequired(boolean flag)	set true if the AddRevInfo shall be required.
+void setDigestMethod(List<String> digestMethod)	(Optional, PDF 1.7) An array of names indicating acceptable digest algorithms to use when signing.
+void setDigestMethodRequired(boolean flag)	set true if the DigestMethod shall be required.
+void setFilter(COSName filter)	(Optional) The signature handler that shall be used to sign the signature field.
+void setFilterRequired(boolean flag)	set true if the filter shall be required.
+void setLegalAttestation(List<String> legalAttestation)	(Optional, PDF 1.6) An array of text strings that specifying possible legal attestations.
+void setLegalAttestationRequired(boolean flag)	set true if the LegalAttestation shall be required.
+void setMPD(PDSeedValueMDP mdp)	(Optional; PDF 1.6) A dictionary containing a single entry whose key is P and whose value is an integer between 0 and 3.
+void setReasonRequired(boolean flag)	set true if the Reason shall be required.
+void setReasons(List<String> reasons)	(Optional) An array of text strings that specifying possible reasons for signing a document.
+void setSeedValueCertificate(PDSeedValueCertificate certificate)	(Optional) A certificate seed value dictionary containing information about the certificate to be used when signing.
+void setSubFilter(List<String> subfilter)	(Optional) An array of names indicating encodings to use when signing.
+void setSubFilterRequired(boolean flag)	set true if the subfilter shall be required.
+void setTimeStamp(PDSeedValueTimeStamp timestamp)	(Optional; PDF 1.6) A time stamp dictionary containing two entries.
+void setV(float minimumRequiredCapability)	(Optional) The minimum required capability of the signature field seed value dictionary parser.
+void setVRequired(boolean flag)	set true if the V entry shall be required.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

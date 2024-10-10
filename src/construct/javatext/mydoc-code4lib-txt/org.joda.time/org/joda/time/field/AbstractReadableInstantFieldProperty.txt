@@ -1,0 +1,39 @@
+[Class] org.joda.time.field.AbstractReadableInstantFieldProperty
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+Direct Known Subclasses: DateMidnight.Property, DateTime.Property, LocalDate.Property, LocalDateTime.Property, LocalTime.Property, MutableDateTime.Property
+[Constructor Summary]
+AbstractReadableInstantFieldProperty()	Constructor.
+[Method Summary]
+int compareTo(ReadableInstant instant) Compare this field to the same field on another instant.
+int compareTo(ReadablePartial partial) Compare this field to the same field on another partial instant.
+boolean equals(Object object) Compares this property to another.
+int get() Gets the value of this property from the instant.
+String getAsShortText() Gets the short textual value of this property from the instant as a string in the default locale.
+String getAsShortText(Locale locale) Gets the short textual value of this property from the instant as a string in the specified locale.
+String getAsString() Gets the value of this property from the instant as a string.
+String getAsText() Gets the textual value of this property from the instant as a string in the default locale.
+String getAsText(Locale locale) Gets the textual value of this property from the instant as a string in the specified locale.
+protected Chronology getChronology() Gets the chronology of the datetime that this property is linked to.
+int getDifference(ReadableInstant instant) Returns the difference between this field property instant and the one passed in, in the units of this field.
+long getDifferenceAsLong(ReadableInstant instant) Returns the difference between this field property instant and the one passed in, in the units of this field.
+DurationField getDurationField() Returns the duration per unit value of this field.
+abstract DateTimeField getField() Gets the field being used.
+DateTimeFieldType getFieldType() Gets the field type being used.
+int getLeapAmount() Gets the amount by which this field is leap.
+DurationField getLeapDurationField() If this field were to leap, then it would be in units described by the returned duration.
+int getMaximumShortTextLength(Locale locale) Gets the maximum short text length for the field.
+int getMaximumTextLength(Locale locale) Gets the maximum text length for the field.
+int getMaximumValue() Gets the maximum value for the field.
+int getMaximumValueOverall() Gets the maximum value for the field ignoring the current time.
+protected abstract long getMillis() Gets the milliseconds of the datetime that this property is linked to.
+int getMinimumValue() Gets the minimum value for the field.
+int getMinimumValueOverall() Gets the minimum value for the field ignoring the current time.
+String getName() Gets the name of the field.
+DurationField getRangeDurationField() Returns the range duration of this field.
+int hashCode() Returns a hashcode compatible with the equals method.
+boolean isLeap() Gets whether this field is leap.
+long remainder() Returns the fractional duration milliseconds of this field.
+Interval toInterval() Returns the interval that represents the range of the minimum and maximum values of this field.
+String toString() Output a debugging string.

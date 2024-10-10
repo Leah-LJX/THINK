@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.ml.naivebayes.NaiveBayesEvalParameters
+[Type] Class
+[Info]
+public class NaiveBayesEvalParameters extends EvalParameters Specialized parameters for the evaluation of a naive bayes classifier
+See Also:
+EvalParameters
+[Constructor Summary]
+NaiveBayesEvalParameters(Context[] params, int numOutcomes, double[] outcomeTotals, long vocabulary)	
+[Method Summary]
+double[] getOutcomeTotals()	
+long getVocabulary()	
+[Methods inherited from class opennlp.tools.ml.model.EvalParameters]
+equals, getNumOutcomes, getParams, hashCode
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.digitalsignature.SignatureOptions
+[Type] Class
+[Info]
+All Implemented Interfaces: Closeable, AutoCloseable
+public class SignatureOptions extends Object implements Closeable This contains the visual signature as a COSDocument, its preferred size and the page.
+[Constructor Summary]
+SignatureOptions()	Creates the default signature options.
+[Field Summary]
+static int DEFAULT_SIGNATURE_SIZE	
+[Method Summary]
+void close()	Closes the visual signature COSDocument, if any.
+int getPage()	Get the 0-based page number.
+int getPreferredSignatureSize()	Get the preferred size of the signature.
+COSDocument getVisualSignature()	Get the visual signature.
+void setPage(int pageNo)	Set the 0-based page number.
+void setPreferredSignatureSize(int size)	Set the preferred size of the signature.
+void setVisualSignature(File file)	Reads the visual signature from the given file.
+void setVisualSignature(InputStream is)	Reads the visual signature from the given input stream.
+void setVisualSignature(PDVisibleSigProperties visSignatureProperties)	Reads the visual signature from the given visual signature properties
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

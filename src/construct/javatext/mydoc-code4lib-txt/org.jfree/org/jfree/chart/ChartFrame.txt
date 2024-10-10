@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.ChartFrame
+[Flag] Class
+[Info]
+All Implemented Interfaces: ImageObserver, MenuContainer, Serializable, Accessible, RootPaneContainer, WindowConstants
+[Constructor Summary]
+ChartFrame(String title, JFreeChart chart) Constructs a frame for a chart.
+[Method Summary]
+ChartPanel getChartPanel() Returns the chart panel for the frame.

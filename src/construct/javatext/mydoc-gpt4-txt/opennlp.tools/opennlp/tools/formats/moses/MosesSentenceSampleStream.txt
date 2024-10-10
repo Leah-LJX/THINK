@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.formats.moses.MosesSentenceSampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<SentenceSample>
+public class MosesSentenceSampleStream extends FilterObjectStream<String,SentenceSample>
+[Constructor Summary]
+MosesSentenceSampleStream(ObjectStream<String> sentences)	Initializes a MosesSentenceSampleStream.
+[Method Summary]
+SentenceSample read()	Returns the next ObjectStream object.
+[Methods inherited from class opennlp.tools.util.FilterObjectStream]
+close, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,23 @@
+[API Name] org.apache.pdfbox.pdmodel.font.encoding.DictionaryEncoding
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class DictionaryEncoding extends Encoding This will perform the encoding from a dictionary.
+Author: Ben Litchfield
+[Constructor Summary]
+DictionaryEncoding(COSDictionary fontEncoding)	Creates a new DictionaryEncoding for a Type 3 font from a PDF.
+DictionaryEncoding(COSDictionary fontEncoding, boolean isNonSymbolic, Encoding builtIn)	Creates a new DictionaryEncoding from a PDF.
+DictionaryEncoding(COSName baseEncoding, COSArray differences)	Creates a new DictionaryEncoding for embedding.
+[Field Summary]
+DictionaryEncoding(COSDictionary fontEncoding)	Creates a new DictionaryEncoding for a Type 3 font from a PDF.
+DictionaryEncoding(COSDictionary fontEncoding, boolean isNonSymbolic, Encoding builtIn)	Creates a new DictionaryEncoding from a PDF.
+DictionaryEncoding(COSName baseEncoding, COSArray differences)	Creates a new DictionaryEncoding for embedding.
+[Method Summary]
+Encoding getBaseEncoding()	Returns the base encoding.
+COSBase getCOSObject()	Convert this standard java object to a COS object.
+Map<Integer,String> getDifferences()	Returns the Differences array.
+String getEncodingName()	Returns the name of this encoding.
+[Methods inherited from class org.apache.pdfbox.pdmodel.font.encoding.Encoding]
+add, contains, contains, getCodeToNameMap, getInstance, getName, getNameToCodeMap, overwrite
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

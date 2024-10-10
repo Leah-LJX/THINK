@@ -1,0 +1,14 @@
+[Class] org.joda.time.format.ISOPeriodFormat
+[Flag] Class
+[Info]
+Since: 1.0
+See Also: PeriodFormat, 
+PeriodFormatterBuilder
+[Constructor Summary]
+protected 	ISOPeriodFormat()	Constructor.
+[Method Summary]
+static PeriodFormatter alternate() The alternate ISO format, PyyyymmddThhmmss, which excludes weeks.
+static PeriodFormatter alternateExtended() The alternate ISO format, Pyyyy-mm-ddThh:mm:ss, which excludes weeks.
+static PeriodFormatter alternateExtendedWithWeeks() The alternate ISO format, Pyyyy-Www-ddThh:mm:ss, which excludes months.
+static PeriodFormatter alternateWithWeeks() The alternate ISO format, PyyyyWwwddThhmmss, which excludes months.
+static PeriodFormatter standard() The standard ISO format - PyYmMwWdDThHmMsS.

@@ -1,0 +1,27 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.color.PDDeviceCMYK
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDDeviceCMYK extends PDDeviceColorSpace Allows colors to be specified according to the subtractive CMYK (cyan, magenta, yellow, black)  model typical of printers and other paper-based output devices.
+Author: John Hewson, Ben Litchfield
+[Constructor Summary]
+protected PDDeviceCMYK()	
+[Field Summary]
+static PDDeviceCMYK INSTANCE	The single instance of this class.
+[Method Summary]
+float[] getDefaultDecode(int bitsPerComponent)	Returns the default decode array for this color space.
+protected ICC_Profile getICCProfile()	
+PDColor getInitialColor()	Returns the initial color value for this color space.
+String getName()	Returns the name of the color space.
+int getNumberOfComponents()	Returns the number of components in this color space
+protected void init()	Lazy load the ICC profile, because it's slow.
+BufferedImage toRawImage(WritableRaster raster)	Returns the image in this colorspace or null.
+float[] toRGB(float[] value)	Returns the RGB equivalent of the given color value.
+BufferedImage toRGBImage(WritableRaster raster)	Returns the (A)RGB equivalent of the given raster.
+protected BufferedImage toRGBImageAWT(WritableRaster raster, ColorSpace colorSpace)	Returns the (A)RGB equivalent of the given raster, using the given AWT color space to perform the conversion.
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.color.PDDeviceColorSpace]
+getCOSObject, toString
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace]
+create, create, create, toRawImage
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

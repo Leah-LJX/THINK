@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.cmdline.tokenizer.TokenizerConverterTool
+[Type] Class
+[Info]
+public class TokenizerConverterTool extends opennlp.tools.cmdline.AbstractConverterTool<TokenSample,BasicFormatParams> Tool to convert multiple data formats into native OpenNLP sentence detector  training format.
+See Also:
+AbstractConverterTool TokenSample
+[Constructor Summary]
+TokenizerConverterTool()	
+[Methods inherited from class opennlp.tools.cmdline.AbstractConverterTool]
+getHelp, getHelp, getShortDescription, run
+[Methods inherited from class opennlp.tools.cmdline.CmdLineTool]
+getName, hasParams
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

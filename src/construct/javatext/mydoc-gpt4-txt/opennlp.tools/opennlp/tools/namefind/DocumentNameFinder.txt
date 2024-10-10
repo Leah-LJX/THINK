@@ -1,0 +1,6 @@
+[API Name] opennlp.tools.namefind.DocumentNameFinder
+[Type] Interface
+[Info]
+public interface DocumentNameFinder Interface for processing an entire document allowing a TokenNameFinder to use context  from the entire document.   EXPERIMENTAL:  This interface has been added as part of a work in progress and might change without notice.
+[Method Summary]
+Span[][] find(String[][] document)	Finds tokens spans for the specified document of sentences and their tokens.

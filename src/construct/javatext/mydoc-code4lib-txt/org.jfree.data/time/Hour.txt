@@ -1,0 +1,30 @@
+[Class] org.jfree.data.time.Hour
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable, MonthConstants, TimePeriod
+[Constructor Summary]
+Hour()	Constructs a new Hour, based on the system date/time.
+Hour(int hour, int day, int month, int year)	Creates a new hour.
+Hour(int hour, Day day)	Constructs a new Hour.
+Hour(Date time)	Constructs a new instance, based on the supplied date/time.
+Hour(Date time, Calendar calendar)	Constructs a new instance, based on a particular date/time.
+Hour(Date time, TimeZone zone, Locale locale)	Constructs a new instance, based on the supplied date/time evaluated in the specified time zone.
+[Method Summary]
+int compareTo(Object o1)	Returns an integer indicating the order of this Hour object relative to the specified object:	 negative == before, zero == same, positive == after.
+boolean equals(Object obj)	Tests the equality of this object against an arbitrary Object.
+Day getDay()	Returns the day in which this hour falls.
+int getDayOfMonth()	Returns the day-of-the-month in which this hour falls.
+long getFirstMillisecond()	Returns the first millisecond of the hour.
+long getFirstMillisecond(Calendar calendar)	Returns the first millisecond of the hour.
+int getHour()	Returns the hour.
+long getLastMillisecond()	Returns the last millisecond of the hour.
+long getLastMillisecond(Calendar calendar)	Returns the last millisecond of the hour.
+int getMonth()	Returns the month in which this hour falls.
+long getSerialIndex()	Returns a serial index number for the hour.
+int getYear()	Returns the year in which this hour falls.
+int hashCode()	Returns a hash code for this object instance.
+RegularTimePeriod next()	Returns the hour following this one.
+static Hour parseHour(String s)	Creates an Hour instance by parsing a string.
+void peg(Calendar calendar)	Recalculates the start date/time and end date/time for this time period relative to the supplied calendar (which incorporates a time zone).
+RegularTimePeriod previous()	Returns the hour preceding this one.
+String toString()	Returns a string representation of this instance, for debugging purposes.

@@ -1,0 +1,20 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.shading.RadialShadingContext
+[Type] Class
+[Info]
+All Implemented Interfaces: PaintContext
+public class RadialShadingContext extends ShadingContext AWT PaintContext for radial shading.
+ Performance improvement done as part of GSoC2014, Tilman Hausherr is the mentor.
+Author: Shaola Ren
+[Constructor Summary]
+RadialShadingContext(PDShadingType3 shading, ColorModel colorModel, AffineTransform xform, Matrix matrix, Rectangle deviceBounds)	Constructor creates an instance to be used for fill operations.
+[Method Summary]
+void dispose()	
+float[] getCoords()	Returns the coords values.
+float[] getDomain()	Returns the domain values.
+boolean[] getExtend()	Returns the extend values.
+PDFunction getFunction()	Returns the function.
+Raster getRaster(int x, int y, int w, int h)	
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.shading.ShadingContext]
+getColorModel
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

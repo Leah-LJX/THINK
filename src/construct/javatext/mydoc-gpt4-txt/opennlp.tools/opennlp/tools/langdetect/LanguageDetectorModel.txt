@@ -1,0 +1,21 @@
+[API Name] opennlp.tools.langdetect.LanguageDetectorModel
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, ArtifactProvider
+public class LanguageDetectorModel extends BaseModel The LanguageDetectorModel is the model used by a learnable LanguageDetector.
+See Also:
+LanguageDetectorME Serialized Form
+[Constructor Summary]
+LanguageDetectorModel(File modelFile)	Initializes a LanguageDetectorModel instance via a valid File.
+LanguageDetectorModel(InputStream in)	Initializes a LanguageDetectorModel instance via a valid InputStream.
+LanguageDetectorModel(URL modelURL)	Initializes a LanguageDetectorModel instance via a valid URL.
+LanguageDetectorModel(MaxentModel langdetectModel, Map<String,String> manifestInfoEntries, LanguageDetectorFactory factory)	Initializes a LanguageDetectorModel instance via given parameters.
+[Method Summary]
+LanguageDetectorFactory getFactory()	
+MaxentModel getMaxentModel()	
+[Fields inherited from class opennlp.tools.util.model.BaseModel]
+TRAINING_CUTOFF_PROPERTY, TRAINING_EVENTHASH_PROPERTY, TRAINING_ITERATIONS_PROPERTY
+[Methods inherited from class opennlp.tools.util.model.BaseModel]
+getArtifact, getLanguage, getManifestProperty, getVersion, isLoadedFromSerialized, serialize, serialize, serialize
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

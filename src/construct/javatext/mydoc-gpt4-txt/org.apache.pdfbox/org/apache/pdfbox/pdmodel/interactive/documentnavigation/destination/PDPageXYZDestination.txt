@@ -1,0 +1,24 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.documentnavigation.destination.PDPageXYZDestination
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable, PDDestinationOrAction
+public class PDPageXYZDestination extends PDPageDestination This represents a destination to a page at an x,y coordinate with a zoom setting.  The default x,y,z will be whatever is the current value in the viewer application and  are not required.
+Author: Ben Litchfield
+[Constructor Summary]
+PDPageXYZDestination()	Default constructor.
+PDPageXYZDestination(COSArray arr)	Constructor from an existing destination array.
+[Field Summary]
+protected static String TYPE	The type of this destination.
+[Method Summary]
+int getLeft()	Get the left x coordinate.
+int getTop()	Get the top y coordinate.
+float getZoom()	Get the zoom value.
+void setLeft(int x)	Set the left x-coordinate, values 0 or -1 imply that the current x-coordinate will be used.
+void setTop(int y)	Set the top y-coordinate, values 0 or -1 imply that the current y-coordinate will be used.
+void setZoom(float zoom)	Set the zoom value for the page, values 0 or -1 imply that the current zoom will be used.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.documentnavigation.destination.PDPageDestination]
+getCOSObject, getPage, getPageNumber, retrievePageNumber, setPage, setPageNumber
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.documentnavigation.destination.PDDestination]
+create
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,16 @@
+[API Name] org.apache.pdfbox.contentstream.operator.graphics.FillEvenOddRule
+[Type] Class
+[Info]
+public final class FillEvenOddRule extends GraphicsOperatorProcessor f* Fill path using even odd rule.
+Author: Ben Litchfield
+[Constructor Summary]
+FillEvenOddRule(PDFGraphicsStreamEngine context)	
+[Method Summary]
+String getName()	Returns the name of this operator, e.g.
+void process(Operator operator, List<COSBase> operands)	Process the operator.
+[Methods inherited from class org.apache.pdfbox.contentstream.operator.graphics.GraphicsOperatorProcessor]
+getGraphicsContext
+[Methods inherited from class org.apache.pdfbox.contentstream.operator.OperatorProcessor]
+checkArrayTypesClass, getContext
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

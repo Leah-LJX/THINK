@@ -1,0 +1,26 @@
+[Class] org.jfree.data.xy.YIntervalSeriesCollection
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, PublicCloneable, Dataset, SeriesChangeListener, SeriesDataset, IntervalXYDataset, XYDataset
+[Constructor Summary]
+YIntervalSeriesCollection()	Creates a new instance of YIntervalSeriesCollection.
+[Method Summary]
+void addSeries(YIntervalSeries series)	Adds a series to the collection and sends a DatasetChangeEvent to all registered listeners.
+Object clone()	Returns a clone of this instance.
+boolean equals(Object obj)	Tests this instance for equality with an arbitrary object.
+Number getEndX(int series, int item)	Returns the end x-value for an item within a series.
+Number getEndY(int series, int item)	Returns the end y-value for an item within a series.
+double getEndYValue(int series, int item)	Returns the end y-value (as a double primitive) for an item within a series.
+int getItemCount(int series)	Returns the number of items in the specified series.
+YIntervalSeries getSeries(int series)	Returns a series from the collection.
+int getSeriesCount()	Returns the number of series in the collection.
+Comparable getSeriesKey(int series)	Returns the key for a series.
+Number getStartX(int series, int item)	Returns the start x-value for an item within a series.
+Number getStartY(int series, int item)	Returns the start y-value for an item within a series.
+double getStartYValue(int series, int item)	Returns the start y-value (as a double primitive) for an item within a series.
+Number getX(int series, int item)	Returns the x-value for an item within a series.
+Number getY(int series, int item)	Returns the y-value for an item within a series.
+double getYValue(int series, int item)	Returns the y-value (as a double primitive) for an item within a series.
+void removeAllSeries()	Removes all the series from the collection and sends a DatasetChangeEvent to all registered listeners.
+void removeSeries(int series)	Removes a series from the collection and sends a DatasetChangeEvent to all registered listeners.
+void removeSeries(YIntervalSeries series)	Removes a series from the collection and sends a DatasetChangeEvent to all registered listeners.

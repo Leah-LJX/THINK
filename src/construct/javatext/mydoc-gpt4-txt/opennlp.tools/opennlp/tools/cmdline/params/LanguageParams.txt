@@ -1,0 +1,7 @@
+[API Name] opennlp.tools.cmdline.params.LanguageParams
+[Type] Interface
+[Info]
+All Known Subinterfaces: BasicTrainingParams, TrainingToolParams
+public interface LanguageParams
+[Method Summary]
+String getLang()	

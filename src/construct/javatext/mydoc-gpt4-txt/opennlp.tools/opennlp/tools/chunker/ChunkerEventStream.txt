@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.chunker.ChunkerEventStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<Event>
+public class ChunkerEventStream extends AbstractEventStream<ChunkSample> Class for creating an event stream out of data files for training a Chunker.
+[Constructor Summary]
+ChunkerEventStream(ObjectStream<ChunkSample> d, ChunkerContextGenerator cg)	Creates a new event stream based on the specified data stream using the given context generator.
+[Methods inherited from class opennlp.tools.util.AbstractEventStream]
+close, read, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

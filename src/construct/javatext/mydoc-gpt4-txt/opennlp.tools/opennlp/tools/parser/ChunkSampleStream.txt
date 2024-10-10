@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.parser.ChunkSampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<ChunkSample>
+public class ChunkSampleStream extends FilterObjectStream<Parse,ChunkSample>
+[Constructor Summary]
+ChunkSampleStream(ObjectStream<Parse> in)	Initializes a instance.
+[Method Summary]
+static Parse[] getInitialChunks(Parse p)	
+ChunkSample read()	Returns the next ObjectStream object.
+[Methods inherited from class opennlp.tools.util.FilterObjectStream]
+close, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

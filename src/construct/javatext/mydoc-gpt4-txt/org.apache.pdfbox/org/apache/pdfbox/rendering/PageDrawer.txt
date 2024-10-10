@@ -1,0 +1,49 @@
+[API Name] org.apache.pdfbox.rendering.PageDrawer
+[Type] Class
+[Info]
+public class PageDrawer extends PDFGraphicsStreamEngine Paints a page in a PDF document to a Graphics context. May be subclassed to provide custom  rendering.
+   If you want to do custom graphics processing rather than Graphics2D rendering, then you should  subclass PDFGraphicsStreamEngine instead. Subclassing PageDrawer is only suitable for  cases where the goal is to render onto a Graphics2D surface. In that case you'll also  have to subclass PDFRenderer and override  PDFRenderer.createPageDrawer(PageDrawerParameters). See the OpaquePDFRenderer.java  example in the source code download on how to do this.
+Author: Ben Litchfield
+[Constructor Summary]
+PageDrawer(PageDrawerParameters parameters)	Constructor.
+[Method Summary]
+void appendRectangle(Point2D p0, Point2D p1, Point2D p2, Point2D p3)	Append a rectangle to the current path.
+void beginMarkedContentSequence(COSName tag, COSDictionary properties)	Called when a marked content group begins
+void beginText()	Called when the BT operator is encountered.
+void clip(int windingRule)	Modify the current clipping path by intersecting it with the current path.
+void closePath()	Closes the current path.
+void curveTo(float x1, float y1, float x2, float y2, float x3, float y3)	Draws a curve from the current point to (x3,y3) using (x1,y1) and (x2,y2) as control points.
+void drawImage(PDImage pdImage)	Draw the image.
+void drawPage(Graphics2D g, PDRectangle pageSize)	Draws the page to the requested context.
+void endMarkedContentSequence()	Called when a marked content group ends
+void endPath()	Ends the current path without filling or stroking it.
+void endText()	Called when the ET operator is encountered.
+void fillAndStrokePath(int windingRule)	Fills and then strokes the path.
+void fillPath(int windingRule)	Fill the path.
+AnnotationFilter getAnnotationFilter()	Return the AnnotationFilter.
+Point2D getCurrentPoint()	Returns the current point of the current path.
+protected Graphics2D getGraphics()	Returns the underlying Graphics2D.
+protected GeneralPath getLinePath()	Returns the current line path.
+protected Paint getNonStrokingPaint()	Returns the non-stroking AWT Paint.
+protected Paint getPaint(PDColor color)	Returns an AWT paint for the given PDColor.
+PDFRenderer getRenderer()	Returns the parent renderer.
+protected int getSubsampling(PDImage pdImage, AffineTransform at)	Calculates the subsampling frequency for a given PDImage based on the current transformation and its calculated transform.
+void lineTo(float x, float y)	Draws a line from the current point to (x,y).
+void moveTo(float x, float y)	Starts a new path at (x,y).
+void setAnnotationFilter(AnnotationFilter annotationFilter)	Set the AnnotationFilter.
+protected void setClip()	Sets the clipping path using caching for performance.
+void shadingFill(COSName shadingName)	Fill with Shading.
+void showAnnotation(PDAnnotation annotation)	Shows the given annotation.
+protected void showFontGlyph(Matrix textRenderingMatrix, PDFont font, int code, Vector displacement)	Called when a glyph is to be processed.
+void showForm(PDFormXObject form)	Shows a form from the content stream.
+void showTransparencyGroup(PDTransparencyGroup form)	Shows a transparency group from the content stream.
+protected void showTransparencyGroupOnGraphics(PDTransparencyGroup form, Graphics2D graphics)	For advanced users, to extract the transparency group into a separate graphics device.
+protected void showType3Glyph(Matrix textRenderingMatrix, PDType3Font font, int code, Vector displacement)	Called when a glyph is to be processed.
+void strokePath()	Stroke the path.
+protected void transferClip(Graphics2D graphics)	Transfer clip to the destination device.
+[Methods inherited from class org.apache.pdfbox.contentstream.PDFGraphicsStreamEngine]
+getPage
+[Methods inherited from class org.apache.pdfbox.contentstream.PDFStreamEngine]
+addOperator, applyTextAdjustment, decreaseLevel, getAppearance, getCurrentPage, getGraphicsStackSize, getGraphicsState, getInitialMatrix, getLevel, getResources, getTextLineMatrix, getTextMatrix, increaseLevel, operatorException, processAnnotation, processChildStream, processOperator, processOperator, processPage, processSoftMask, processTilingPattern, processTilingPattern, processTransparencyGroup, processType3Stream, restoreGraphicsStack, restoreGraphicsState, saveGraphicsStack, saveGraphicsState, setLineDashPattern, setTextLineMatrix, setTextMatrix, showGlyph, showText, showTextString, showTextStrings, transformedPoint, transformWidth, unsupportedOperator
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

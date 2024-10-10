@@ -1,0 +1,12 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.PDPostScriptXObject
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDPostScriptXObject extends PDXObject A PostScript XObject.  Conforming readers may not be able to interpret the PostScript fragments.
+Author: John Hewson
+[Constructor Summary]
+PDPostScriptXObject(COSStream stream)	Creates a PostScript XObject.
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.PDXObject]
+createXObject, getCOSObject, getStream
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

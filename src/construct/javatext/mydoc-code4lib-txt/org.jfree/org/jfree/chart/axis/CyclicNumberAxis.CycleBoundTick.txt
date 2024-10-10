@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.CyclicNumberAxis.CycleBoundTick
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+Enclosing class: CyclicNumberAxis
+[Constructor Summary]
+CycleBoundTick(boolean mapToLastCycle, Number number, String label, org.jfree.ui.TextAnchor textAnchor, org.jfree.ui.TextAnchor rotationAnchor, double angle) Creates a new tick.
+[Method Summary]

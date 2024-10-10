@@ -1,0 +1,38 @@
+[API Name] Package org.apache.commons.imaging.ImageFormats
+[Type] Enum
+[Info]
+All Implemented Interfaces: Serializable, Comparable<ImageFormats>, ImageFormat
+public enum ImageFormats extends Enum<ImageFormats> implements ImageFormat Enum of known image formats.
+[Enum Constant Summary]
+BMP	
+DCX	
+GIF	
+ICNS	
+ICO	
+JBIG2	
+JPEG	
+PAM	
+PBM	
+PCX	
+PGM	
+PNG	
+PNM	
+PPM	
+PSD	
+RGBE	
+TGA	
+TIFF	
+UNKNOWN	
+WBMP	
+XBM	
+XPM	
+[Method Summary]
+String getDefaultExtension()	
+String[] getExtensions()	Get the file extension associated with this ImageFormat.
+String getName()	Get the name of this ImageFormat.
+static ImageFormats valueOf​(String name)	Returns the enum constant of this type with the specified name.
+static ImageFormats[] values()	Returns an array containing the constants of this enum type, in the order they are declared.
+[Methods inherited from class java.lang.Enum]
+clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, toString, valueOf
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

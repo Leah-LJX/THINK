@@ -1,0 +1,28 @@
+[API Name] opennlp.tools.ml.perceptron.SimplePerceptronSequenceTrainer
+[Type] Class
+[Info]
+All Implemented Interfaces: Trainer, EventModelSequenceTrainer<Event>
+public class SimplePerceptronSequenceTrainer extends AbstractEventModelSequenceTrainer Trains models with sequences using the perceptron algorithm.    Each outcome is represented as a binary perceptron classifier.  This supports standard (integer) weighting as well average weighting.    Sequence information is used in a simplified was to that described in:  Discriminative Training Methods for Hidden Markov Models: Theory and Experiments  with the Perceptron Algorithm. Michael Collins, EMNLP 2002.    Specifically only updates are applied to tokens which were incorrectly tagged by a sequence tagger  rather than to all feature across the sequence which differ from the training sequence.
+See Also:
+PerceptronModel AbstractEventModelSequenceTrainer
+[Constructor Summary]
+SimplePerceptronSequenceTrainer()	Instantiates a SimplePerceptronSequenceTrainer with a default configuration of training parameters.
+[Field Summary]
+static final String PERCEPTRON_SEQUENCE_VALUE	
+[Method Summary]
+AbstractModel doTrain(SequenceStream<Event> events)	
+void nextIteration(int iteration)	
+AbstractModel trainModel(int iterations, SequenceStream<Event> sequenceStream, int cutoff, boolean useAverage)	Trains a PerceptronModel with given parameters.
+void validate()	Checks the configured parameters.
+[Fields inherited from class opennlp.tools.ml.AbstractTrainer]
+ALGORITHM_PARAM, CUTOFF_DEFAULT, CUTOFF_PARAM, ITERATIONS_DEFAULT, ITERATIONS_PARAM, TRAINER_TYPE_PARAM
+[Fields inherited from interface opennlp.tools.ml.EventModelSequenceTrainer]
+SEQUENCE_VALUE
+[Methods inherited from class opennlp.tools.ml.AbstractEventModelSequenceTrainer]
+train
+[Methods inherited from class opennlp.tools.ml.AbstractTrainer]
+getAlgorithm, getCutoff, getIterations, init
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface opennlp.tools.commons.Trainer]
+init

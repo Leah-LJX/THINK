@@ -1,0 +1,9 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.annotation.layout.PlainText
+[Type] Class
+[Info]
+public class PlainText extends Object A block of text.    A block of text can contain multiple paragraphs which will  be treated individually within the block placement.
+[Constructor Summary]
+PlainText(List<String> listValue)	Construct the text block from a list of values.
+PlainText(String textValue)	Construct the text block from a single value.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

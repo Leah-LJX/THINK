@@ -1,0 +1,16 @@
+[Class] org.jfree.data.flow.FlowKey
+[Flag] Class
+[Info]
+Type Parameters: K - the type for the keys used to identify sources and destinations 
+     (String is a good default choice).
+All Implemented Interfaces: Serializable, Cloneable, PublicCloneable
+[Constructor Summary]
+FlowKey(int stage, K source, K destination)	Creates a new instance.
+[Method Summary]
+Object clone()	Returns a clone of the object.
+boolean equals(Object obj)	Tests this instance for equality with an arbitrary object.
+K getDestination()	Returns the destination identifier.
+K getSource()	Returns the source identifier.
+int getStage()	Returns the stage number for the flow.
+int hashCode()	Returns a hashcode for this instance.
+String toString()	Returns a string representation of this instance, primarily for debugging purposes.

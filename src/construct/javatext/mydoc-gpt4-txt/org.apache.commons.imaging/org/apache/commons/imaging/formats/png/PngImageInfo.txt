@@ -1,0 +1,11 @@
+[API Name] Package org.apache.commons.imaging.formats.png.PngImageInfo
+[Type] Class
+[Info]
+public class PngImageInfo extends ImageInfo
+[Method Summary]
+PhysicalScale getPhysicalScale()	Physical scale of Image.
+List<PngText> getTextChunks()	
+[Methods inherited from class org.apache.commons.imaging.ImageInfo]
+dump, getBitsPerPixel, getColorType, getComments, getCompressionAlgorithm, getFormat, getFormatDetails, getFormatName, getHeight, getMimeType, getNumberOfImages, getPhysicalHeightDpi, getPhysicalHeightInch, getPhysicalWidthDpi, getPhysicalWidthInch, getWidth, isProgressive, isTransparent, toString, toString, usesPalette
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

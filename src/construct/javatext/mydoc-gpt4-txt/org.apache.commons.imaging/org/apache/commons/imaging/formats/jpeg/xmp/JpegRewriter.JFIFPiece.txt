@@ -1,0 +1,13 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.xmp.JpegRewriter.JFIFPiece
+[Type] Class
+[Info]
+Direct Known Subclasses: JpegRewriter.JFIFPieceSegment
+Enclosing class: JpegRewriter
+protected abstract static class JpegRewriter.JFIFPiece extends Object
+[Constructor Summary]
+protected JFIFPiece()	
+[Method Summary]
+String toString()	
+protected abstract void write​(OutputStream os)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

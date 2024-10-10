@@ -1,0 +1,30 @@
+[API Name] Package org.apache.commons.imaging.icc.IccProfileInfo
+[Type] Class
+[Info]
+public class IccProfileInfo extends Object
+[Constructor Summary]
+IccProfileInfo​(byte[] data, int profileSize, int cmmTypeSignature, int profileVersion, int profileDeviceClassSignature, int colorSpace, int profileConnectionSpace, int profileFileSignature, int primaryPlatformSignature, int variousFlags, int deviceManufacturer, int deviceModel, int renderingIntent, int profileCreatorSignature, byte[] profileId, IccTag[] tags)	
+[Field Summary]
+int cmmTypeSignature	
+int colorSpace	
+int deviceManufacturer	
+int deviceModel	
+int primaryPlatformSignature	
+int profileConnectionSpace	
+int profileCreatorSignature	
+int profileDeviceClassSignature	
+int profileFileSignature	
+int profileSize	
+int profileVersion	
+int renderingIntent	
+int variousFlags	
+[Method Summary]
+void dump​(String prefix)	
+byte[] getData()	
+byte[] getProfileId()	
+IccTag[] getTags()	
+boolean issRGB()	
+String toString()	
+String toString​(String prefix)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

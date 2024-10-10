@@ -1,0 +1,15 @@
+[Class] org.w3c.dom.svg.SVGPointList
+[Flag] Interface
+[Info]
+public interface SVGPointList
+[Constructor Summary]
+
+[Method Summary]
+SVGPoint appendItem(SVGPoint newItem)	 
+ void clear()	 
+ SVGPoint getItem(int index)	 
+ int getNumberOfItems()	 
+ SVGPoint initialize(SVGPoint newItem)	 
+ SVGPoint insertItemBefore(SVGPoint newItem, int index)	 
+ SVGPoint removeItem(int index)	 
+ SVGPoint replaceItem(SVGPoint newItem, int index)

@@ -1,0 +1,18 @@
+[Class] org.jfree.data.flow.FlowDataset
+[Flag] Interface
+[Info]
+Type Parameters: K - the type for the keys used to identify sources and destinations 
+     (instances should be immutable, String is a good default choice).
+All Superinterfaces: Dataset
+All Known Implementing Classes: DefaultFlowDataset
+[Constructor Summary]
+
+[Method Summary]
+Set<FlowKey<K>> getAllFlows()	Returns a set of keys for all the flows in the dataset.
+Set<NodeKey<K>> getAllNodes()	Returns the set of keys for all the nodes in the dataset.
+List<K> getDestinations(int stage)	Returns a list of the destinations at the specified stage.
+Number getFlow(int stage, K source, K destination)	Returns the flow between a source node and a destination node at a specified stage.
+Object getFlowProperty(FlowKey<K> flowKey, String propertyKey)	Returns the value of a property, if specified, for the specified flow.
+Object getNodeProperty(NodeKey<K> nodeKey, String propertyKey)	Returns the value of a property, if specified, for the specified node.
+List<K> getSources(int stage)	Returns a list of the sources at the specified stage.
+int getStageCount()	Returns the number of flow stages (never less than one).

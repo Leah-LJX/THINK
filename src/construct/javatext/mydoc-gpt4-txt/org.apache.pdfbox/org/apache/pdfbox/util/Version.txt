@@ -1,0 +1,8 @@
+[API Name] org.apache.pdfbox.util.Version
+[Type] Class
+[Info]
+public final class Version extends Object Exposes PDFBox version.
+[Method Summary]
+static String getVersion()	Returns the version of PDFBox.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

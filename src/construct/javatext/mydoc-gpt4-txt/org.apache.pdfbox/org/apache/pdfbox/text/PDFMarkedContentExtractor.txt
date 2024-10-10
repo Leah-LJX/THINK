@@ -1,0 +1,23 @@
+[API Name] org.apache.pdfbox.text.PDFMarkedContentExtractor
+[Type] Class
+[Info]
+public class PDFMarkedContentExtractor extends PDFStreamEngine This is an stream engine to extract the marked content of a pdf.
+Author: Johannes Koch
+[Constructor Summary]
+PDFMarkedContentExtractor()	Instantiate a new PDFTextStripper object.
+PDFMarkedContentExtractor(String encoding)	Constructor.
+[Method Summary]
+void beginMarkedContentSequence(COSName tag, COSDictionary properties)	Called when a marked content group begins
+protected float computeFontHeight(PDFont font)	Compute the font height.
+void endMarkedContentSequence()	Called when a marked content group ends
+List<PDMarkedContent> getMarkedContents()	
+boolean isSuppressDuplicateOverlappingText()	
+void processPage(PDPage page)	This will initialize and process the contents of the stream.
+protected void processTextPosition(TextPosition text)	This will process a TextPosition object and add the text to the list of characters on a page.
+void setSuppressDuplicateOverlappingText(boolean suppressDuplicateOverlappingText)	By default the class will attempt to remove text that overlaps each other.
+protected void showGlyph(Matrix textRenderingMatrix, PDFont font, int code, Vector displacement)	Called when a glyph is to be processed.
+void xobject(PDXObject xobject)	
+[Methods inherited from class org.apache.pdfbox.contentstream.PDFStreamEngine]
+addOperator, applyTextAdjustment, beginText, decreaseLevel, endText, getAppearance, getCurrentPage, getGraphicsStackSize, getGraphicsState, getInitialMatrix, getLevel, getResources, getTextLineMatrix, getTextMatrix, increaseLevel, operatorException, processAnnotation, processChildStream, processOperator, processOperator, processSoftMask, processTilingPattern, processTilingPattern, processTransparencyGroup, processType3Stream, restoreGraphicsStack, restoreGraphicsState, saveGraphicsStack, saveGraphicsState, setLineDashPattern, setTextLineMatrix, setTextMatrix, showAnnotation, showFontGlyph, showForm, showText, showTextString, showTextStrings, showTransparencyGroup, showType3Glyph, transformedPoint, transformWidth, unsupportedOperator
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.renderer.category.IntervalBarRenderer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, LegendItemSource, CategoryItemRenderer, org.jfree.util.PublicCloneable
+Direct Known Subclasses: GanttRenderer
+[Constructor Summary]
+IntervalBarRenderer() Constructs a new renderer.
+[Method Summary]
+protected void drawInterval(Graphics2D g2, CategoryItemRendererState state, Rectangle2D dataArea, CategoryPlot plot, CategoryAxis domainAxis, ValueAxis rangeAxis, IntervalCategoryDataset dataset, int row, int column) Draws a single interval.

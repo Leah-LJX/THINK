@@ -1,0 +1,33 @@
+[API Name] opennlp.tools.ngram.NGramModel
+[Type] Class
+[Info]
+All Implemented Interfaces: Iterable<StringList>
+Direct Known Subclasses: NGramLanguageModel
+public class NGramModel extends Object implements Iterable<StringList> The NGramModel can be used to crate ngrams and character ngrams.
+See Also:
+StringList
+[Constructor Summary]
+NGramModel()	Initializes an empty instance.
+NGramModel(InputStream in)	Initializes the current instance.
+[Method Summary]
+void add(CharSequence chars, int minLength, int maxLength)	Adds character NGrams to the current instance.
+void add(StringList ngram)	Adds one NGram, if it already exists the count increase by one.
+void add(StringList ngram, int minLength, int maxLength)	Adds NGrams up to the specified length to the current instance.
+boolean contains(StringList tokens)	Checks fit he given tokens are contained by the current instance.
+void cutoff(int cutoffUnder, int cutoffOver)	Deletes all ngram which do appear less than the cutoffUnder value and more often than the cutoffOver value.
+boolean equals(Object obj)	
+int getCount(StringList ngram)	Retrieves the count of the given ngram.
+int hashCode()	
+Iterator<StringList> iterator()	Retrieves an Iterator over all StringList entries.
+int numberOfGrams()	Retrieves the total count of all Ngrams.
+void remove(StringList tokens)	Removes the specified tokens form the NGram model, they are just dropped.
+void serialize(OutputStream out)	Writes the ngram instance to the given OutputStream.
+void setCount(StringList ngram, int count)	Sets the count of an existing ngram.
+int size()	Retrieves the number of StringList entries in the current instance.
+Dictionary toDictionary()	Creates a dictionary which contain all StringList which are in the current NGramModel.
+Dictionary toDictionary(boolean caseSensitive)	Creates a dictionary which contains all StringLists which are in the current NGramModel.
+String toString()	
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait
+[Methods inherited from interface java.lang.Iterable]
+forEach, spliterator

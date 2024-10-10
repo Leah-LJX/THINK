@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.MeterPlot
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, AnnotationChangeListener, AxisChangeListener, MarkerChangeListener, LegendItemSource, DatasetChangeListener, org.jfree.util.PublicCloneable
+[Constructor Summary]
+MeterPlot() Creates a new plot with a default range of 0 to 100 and no value to display.
+[Method Summary]
+void addInterval(MeterInterval interval) Adds an interval and sends a PlotChangeEvent to all registered listeners.

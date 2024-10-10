@@ -1,0 +1,26 @@
+[Class] org.jfree.data.xy.DefaultIntervalXYDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, PublicCloneable, Dataset, SeriesChangeListener, SeriesDataset, IntervalXYDataset, XYDataset
+[Constructor Summary]
+DefaultIntervalXYDataset()	Creates a new DefaultIntervalXYDataset instance, initially containing no data.
+[Method Summary]
+void addSeries(Comparable seriesKey, double[][] data)	Adds a series or if a series with the same key already exists replaces the data for that series, then sends a DatasetChangeEvent to all registered listeners.
+Object clone()	Returns a clone of this dataset.
+boolean equals(Object obj)	Tests this DefaultIntervalXYDataset instance for equality with an arbitrary object.
+Number getEndX(int series, int item)	Returns the ending x-value for an item within a series.
+double getEndXValue(int series, int item)	Returns the ending x-value for an item within a series.
+Number getEndY(int series, int item)	Returns the ending y-value for an item within a series.
+double getEndYValue(int series, int item)	Returns the ending y-value for an item within a series.
+int getItemCount(int series)	Returns the number of items in the specified series.
+int getSeriesCount()	Returns the number of series in the dataset.
+Comparable getSeriesKey(int series)	Returns the key for a series.
+Number getStartX(int series, int item)	Returns the starting x-value for an item within a series.
+double getStartXValue(int series, int item)	Returns the starting x-value for an item within a series.
+Number getStartY(int series, int item)	Returns the starting y-value for an item within a series.
+double getStartYValue(int series, int item)	Returns the starting y-value for an item within a series.
+Number getX(int series, int item)	Returns the x-value for an item within a series.
+double getXValue(int series, int item)	Returns the x-value for an item within a series.
+Number getY(int series, int item)	Returns the y-value for an item within a series.
+double getYValue(int series, int item)	Returns the y-value for an item within a series.
+int hashCode()	Returns a hash code for this instance.

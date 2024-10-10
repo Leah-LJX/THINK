@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.event.RendererChangeListener
+[Flag] Interface
+[Info]
+All Superinterfaces: EventListener
+All Known Implementing Classes: CategoryPlot, CombinedDomainCategoryPlot, CombinedDomainXYPlot, CombinedRangeCategoryPlot, CombinedRangeXYPlot, PolarPlot, WaferMapPlot, XYPlot
+[Constructor Summary]
+
+[Method Summary]
+void rendererChanged(RendererChangeEvent event) Receives notification of a renderer change event.

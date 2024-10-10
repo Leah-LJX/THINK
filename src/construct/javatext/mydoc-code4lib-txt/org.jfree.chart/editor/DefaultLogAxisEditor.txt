@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.editor.DefaultLogAxisEditor
+[Flag] Class
+[Info]
+All Implemented Interfaces: ActionListener, FocusListener, ImageObserver, MenuContainer, Serializable, EventListener, Accessible
+[Constructor Summary]
+DefaultLogAxisEditor(LogAxis axis) Standard constructor: builds a property panel for the specified axis.
+[Method Summary]
+void actionPerformed(ActionEvent event) Handles actions from within the property panel.

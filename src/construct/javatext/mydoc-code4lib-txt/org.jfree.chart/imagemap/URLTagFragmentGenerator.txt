@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.imagemap.URLTagFragmentGenerator
+[Flag] Interface
+[Info]
+All Known Implementing Classes: StandardURLTagFragmentGenerator
+[Constructor Summary]
+
+[Method Summary]
+String generateURLFragment(String urlText) Generates a URL string to go in an HTML image map.

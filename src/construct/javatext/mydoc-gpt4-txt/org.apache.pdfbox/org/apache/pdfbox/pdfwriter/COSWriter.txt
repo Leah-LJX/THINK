@@ -1,0 +1,66 @@
+[API Name] org.apache.pdfbox.pdfwriter.COSWriter
+[Type] Class
+[Info]
+All Implemented Interfaces: ICOSVisitor
+public class COSWriter extends Object implements ICOSVisitor This class acts on a in-memory representation of a PDF document.
+Author: Michael Traut, Ben Litchfield
+[Constructor Summary]
+COSWriter(OutputStream outputStream)	COSWriter constructor.
+COSWriter(OutputStream outputStream, CompressParameters compressParameters)	COSWriter constructor.
+COSWriter(OutputStream outputStream, org.apache.pdfbox.io.RandomAccessRead inputData)	COSWriter constructor for incremental updates.
+COSWriter(OutputStream outputStream, org.apache.pdfbox.io.RandomAccessRead inputData, Set<COSDictionary> objectsToWrite)	Constructor for incremental updates with a list of objects to write.
+[Field Summary]
+static byte[] ARRAY_CLOSE	The array close token.
+static byte[] ARRAY_OPEN	The array open token.
+static byte[] COMMENT	The start to a PDF comment.
+static byte[] DICT_CLOSE	The dictionary close token.
+static byte[] DICT_OPEN	The dictionary open token.
+static byte[] ENDOBJ	The end object token.
+static byte[] ENDSTREAM	The close stream token.
+static byte[] EOF	The EOF constant.
+static byte[] GARBAGE	Garbage bytes used to create the PDF header.
+static byte[] OBJ	The starting object token.
+static byte[] REFERENCE	The reference token.
+static byte[] SPACE	space character.
+static byte[] STARTXREF	The start xref token.
+static byte[] STREAM	The open stream token.
+static byte[] TRAILER	The trailer token.
+static byte[] VERSION	The output version of the PDF.
+static byte[] XREF	The XREF token.
+static byte[] XREF_FREE	The xref free token.
+static byte[] XREF_USED	The xref used token.
+[Method Summary]
+protected void addXRefEntry(XReferenceEntry entry)	add an entry in the x ref table for later dump.
+protected void doWriteBody(COSDocument doc)	This will write the body of the document.
+protected void doWriteHeader(COSDocument doc)	This will write the header to the PDF document.
+void doWriteObject(COSBase obj)	This will write a COS object.
+void doWriteObject(COSObjectKey key, COSBase obj)	This will write a COS object for a predefined key.
+protected void doWriteTrailer(COSDocument doc)	This will write the trailer to the PDF document.
+InputStream getDataToSign()	Return the stream of PDF data to be signed.
+protected OutputStream getOutput()	This will get the output stream.
+protected COSStandardOutputStream getStandardOutput()	This will get the standard output stream.
+protected long getStartxref()	This will get the current start xref.
+protected List<XReferenceEntry> getXRefEntries()	This will get the xref entries.
+protected Long[] getXRefRanges(List<XReferenceEntry> xRefEntriesList)	check the xref entries and write out the ranges.
+boolean isCompress()	Returns true, if the resulting document shall be compressed.
+protected void setStartxref(long newStartxref)	This will set the start xref.
+void visitFromArray(COSArray array)	Notification of visit to Array object.
+void visitFromBoolean(COSBoolean obj)	Notification of visit to boolean object.
+void visitFromDictionary(COSDictionary obj)	Notification of visit to dictionary object.
+void visitFromDocument(COSDocument doc)	Notification of visit to document object.
+void visitFromFloat(COSFloat obj)	Notification of visit to float object.
+void visitFromInt(COSInteger obj)	Notification of visit to integer object.
+void visitFromName(COSName obj)	Notification of visit to name object.
+void visitFromNull(COSNull obj)	Notification of visit to null object.
+void visitFromStream(COSStream obj)	Notification of visit to stream object.
+void visitFromString(COSString obj)	Notification of visit to string object.
+void write(COSDocument doc)	This will write the pdf document.
+void write(FDFDocument doc)	This will write the fdf document.
+void write(PDDocument doc)	This will write the pdf document.
+void write(PDDocument doc, SignatureInterface signInterface)	This will write the pdf document.
+void writeExternalSignature(byte[] cmsSignature)	Write externally created signature of PDF data obtained via getDataToSign() method.
+void writeReference(COSBase obj)	visitFromObjRef method comment.
+static void writeString(byte[] bytes, OutputStream output)	This will output the given text/byte getString as a PDF object.
+static void writeString(COSString string, OutputStream output)	This will output the given byte getString as a PDF object.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.PlotUtilities
+[Flag] Class
+[Info]
+Since: 1.0.7
+[Constructor Summary]
+PlotUtilities()
+[Method Summary]
+static boolean isEmptyOrNull(XYPlot plot) Returns true if all the datasets belonging to the specified plot are empty or null, and false otherwise.

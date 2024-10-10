@@ -1,0 +1,13 @@
+[API Name] org.apache.pdfbox.pdmodel.font.FontFormat
+[Type] Enum
+[Info]
+All Implemented Interfaces: Serializable, Comparable<FontFormat>
+public enum FontFormat extends Enum<FontFormat> Font file format.
+Author: John Hewson
+[Method Summary]
+static FontFormat valueOf(String name)	Returns the enum constant of this type with the specified name.
+static FontFormat[] values()	Returns an array containing the constants of this enum type, in the order they are declared.
+[Methods inherited from class java.lang.Enum]
+clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, toString, valueOf
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

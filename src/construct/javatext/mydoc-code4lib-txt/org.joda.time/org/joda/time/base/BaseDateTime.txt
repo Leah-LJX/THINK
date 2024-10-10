@@ -1,0 +1,24 @@
+[Class] org.joda.time.base.BaseDateTime
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<ReadableInstant>, ReadableDateTime, ReadableInstant
+Direct Known Subclasses: DateMidnight, DateTime, MutableDateTime
+[Constructor Summary]
+BaseDateTime()	Constructs an instance set to the current system millisecond time	 using ISOChronology in the default time zone.
+BaseDateTime(Chronology chronology)	Constructs an instance set to the current system millisecond time	 using the specified chronology.
+BaseDateTime(DateTimeZone zone)	Constructs an instance set to the current system millisecond time	 using ISOChronology in the specified time zone.
+BaseDateTime(int year,	int monthOfYear,	int dayOfMonth,	int hourOfDay,	int minuteOfHour,	int secondOfMinute,	int millisOfSecond)	Constructs an instance from datetime field values	 using ISOChronology in the default time zone.
+BaseDateTime(int year,	int monthOfYear,	int dayOfMonth,	int hourOfDay,	int minuteOfHour,	int secondOfMinute,	int millisOfSecond,	Chronology chronology)	Constructs an instance from datetime field values	 using the specified chronology.
+BaseDateTime(int year,	int monthOfYear,	int dayOfMonth,	int hourOfDay,	int minuteOfHour,	int secondOfMinute,	int millisOfSecond,	DateTimeZone zone)	Constructs an instance from datetime field values	 using ISOChronology in the specified time zone.
+BaseDateTime(long instant)	Constructs an instance set to the milliseconds from 1970-01-01T00:00:00Z	 using ISOChronology in the default time zone.
+BaseDateTime(long instant,	Chronology chronology)	Constructs an instance set to the milliseconds from 1970-01-01T00:00:00Z	 using the specified chronology.
+BaseDateTime(long instant,	DateTimeZone zone)	Constructs an instance set to the milliseconds from 1970-01-01T00:00:00Z	 using ISOChronology in the specified time zone.
+BaseDateTime(Object instant,	Chronology chronology)	Constructs an instance from an Object that represents a datetime,	 using the specified chronology.
+BaseDateTime(Object instant,	DateTimeZone zone)	Constructs an instance from an Object that represents a datetime,	 forcing the time zone to that specified.
+[Method Summary]
+protected Chronology checkChronology(Chronology chronology) Checks the specified chronology before storing it, potentially altering it.
+protected long checkInstant(long instant, Chronology chronology) Checks the specified instant before storing it, potentially altering it.
+Chronology getChronology() Gets the chronology of the datetime.
+long getMillis() Gets the milliseconds of the datetime instant from the Java epoch of 1970-01-01T00:00:00Z.
+protected void setChronology(Chronology chronology) Sets the chronology of the datetime.
+protected void setMillis(long instant) Sets the milliseconds of the datetime.

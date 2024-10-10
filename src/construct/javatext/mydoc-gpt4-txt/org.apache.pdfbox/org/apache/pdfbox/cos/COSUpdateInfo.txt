@@ -1,0 +1,13 @@
+[API Name] org.apache.pdfbox.cos.COSUpdateInfo
+[Type] Interface
+[Info]
+All Superinterfaces: COSObjectable
+All Known Implementing Classes: COSArray, COSDictionary, COSObject, COSStream
+public interface COSUpdateInfo extends COSObjectable
+[Method Summary]
+COSUpdateState getUpdateState()	Returns the current COSUpdateState of this COSUpdateInfo.
+default boolean isNeedToBeUpdated()	Get the update state for the COSWriter.
+default void setNeedToBeUpdated(boolean flag)	Set the update state of the dictionary for the COSWriter.
+default COSIncrement toIncrement()	Uses this COSUpdateInfo as the base object of a new COSIncrement.
+[Methods inherited from interface org.apache.pdfbox.pdmodel.common.COSObjectable]
+getCOSObject

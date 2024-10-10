@@ -1,0 +1,15 @@
+[Class] org.jfree.data.time.DateRange
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+DateRange()	Default constructor.
+DateRange(double lower, double upper)	Constructs a new range using two values that will be interpreted as "milliseconds since midnight GMT, 1-Jan-1970".
+DateRange(Date lower, Date upper)	Constructs a new range.
+DateRange(Range other)	Constructs a new range that is based on another Range.
+[Method Summary]
+Date getLowerDate()	Returns the lower (earlier) date for the range.
+long getLowerMillis()	Returns the lower bound of the range in milliseconds.
+Date getUpperDate()	Returns the upper (later) date for the range.
+long getUpperMillis()	Returns the upper bound of the range in milliseconds.
+String toString()	Returns a string representing the date range (useful for debugging).

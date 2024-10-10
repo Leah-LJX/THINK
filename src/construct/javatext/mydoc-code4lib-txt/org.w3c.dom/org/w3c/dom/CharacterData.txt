@@ -1,0 +1,18 @@
+[Class] org.w3c.dom.CharacterData
+[Flag] Interface
+[Info]
+All Superinterfaces:
+Node
+All Known Subinterfaces:
+CDATASection, Comment, Text, Text
+[Constructor Summary]
+
+[Method Summary]
+void appendData(String arg) Append the string to the end of the character data of the node.
+void deleteData(int offset, int count) Remove a range of 16-bit units from the node.
+String getData() The character data of the node that implements this interface.
+int getLength() The number of 16-bit units that are available through data and the substringData method below.
+void insertData(int offset, String arg) Insert a string at the specified 16-bit unit offset.
+void replaceData(int offset, int count, String arg) Replace the characters starting at the specified 16-bit unit offset with the specified string.
+void setData(String data) The character data of the node that implements this interface.
+String substringData(int offset, int count) Extracts a range of data from the node.

@@ -1,0 +1,7 @@
+[API Name] opennlp.tools.cmdline.params.EvaluatorParams
+[Type] Interface
+[Info]
+@Internal public interface EvaluatorParams Common evaluation parameters.   Note: Do not use this class, internal use only!
+[Method Summary]
+Boolean getMisclassified()	
+File getModel()	

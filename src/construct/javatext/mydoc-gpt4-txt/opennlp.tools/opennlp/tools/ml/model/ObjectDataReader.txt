@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.ml.model.ObjectDataReader
+[Type] Class
+[Info]
+All Implemented Interfaces: DataReader
+public class ObjectDataReader extends Object implements DataReader A DataReader implementation based on ObjectInputStream.
+[Constructor Summary]
+ObjectDataReader(ObjectInputStream ois)	Instantiates an ObjectDataReader.
+[Method Summary]
+double readDouble()	
+int readInt()	
+String readUTF()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

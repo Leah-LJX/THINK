@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.axis.NumberTick
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+Direct Known Subclasses: CyclicNumberAxis.CycleBoundTick
+[Constructor Summary]
+NumberTick(Number number, String label, org.jfree.ui.TextAnchor textAnchor, org.jfree.ui.TextAnchor rotationAnchor, double angle) Creates a new tick.
+[Method Summary]
+Number getNumber() Returns the number.

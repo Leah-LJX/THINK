@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.namefind.NameContextGenerator
+[Type] Interface
+[Info]
+All Superinterfaces: BeamSearchContextGenerator<String>
+All Known Implementing Classes: DefaultNameContextGenerator
+public interface NameContextGenerator extends BeamSearchContextGenerator<String> Interface for generating the context for a name finder by  specifying a set of feature generators.
+See Also:
+BeamSearchContextGenerator AdaptiveFeatureGenerator
+[Method Summary]
+void addFeatureGenerator(AdaptiveFeatureGenerator generator)	Adds a feature generator.
+void clearAdaptiveData()	Informs all the feature generators that the context of the adaptive data (typically a document) is no longer valid and should be cleared.
+void updateAdaptiveData(String[] tokens, String[] outcomes)	Informs all the feature generators that the specified tokens have been classified with the corresponds set of specified outcomes.
+[Methods inherited from interface opennlp.tools.util.BeamSearchContextGenerator]
+getContext

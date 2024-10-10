@@ -1,0 +1,25 @@
+[API Name] opennlp.tools.ml.maxent.GISModel
+[Type] Class
+[Info]
+All Implemented Interfaces: MaxentModel
+public final class GISModel extends AbstractModel A maximum entropy model which has been trained using the Generalized  Iterative Scaling (GIS) procedure.
+See Also:
+AbstractModel
+[Constructor Summary]
+GISModel(Context[] params, String[] predLabels, String[] outcomeNames)	Initializes a GISModel with the specified parameters, outcome names, and predicate/feature labels.
+GISModel(Context[] params, String[] predLabels, String[] outcomeNames, Prior prior)	Initializes a GISModel with the specified parameters, outcome names, and predicate/feature labels.
+[Nested Class Summary]
+Nested Class Summary
+AbstractModel.ModelType
+[Method Summary]
+boolean equals(Object obj)	
+static double[] eval(int[] context, double[] prior, EvalParameters model)	Evaluates a context and return an array of the likelihood of each outcome given the specified context and the specified parameters.
+double[] eval(String[] context)	Evaluates a context and return an array of the likelihood of each outcome given that context.
+double[] eval(String[] context, double[] outsums)	Evaluates a context.
+double[] eval(String[] context, float[] values)	Evaluates a context with the specified context values.
+double[] eval(String[] context, float[] values, double[] outsums)	Evaluates a context and return an array of the likelihood of each outcome given that context.
+int hashCode()	
+[Methods inherited from class opennlp.tools.ml.model.AbstractModel]
+getAllOutcomes, getBestOutcome, getDataStructures, getIndex, getModelType, getNumOutcomes, getOutcome
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, toString, wait, wait, wait

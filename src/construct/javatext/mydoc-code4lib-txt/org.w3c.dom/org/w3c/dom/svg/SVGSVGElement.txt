@@ -1,0 +1,49 @@
+[Class] org.w3c.dom.svg.SVGSVGElement
+[Flag] Interface
+[Info]
+All Superinterfaces: AbstractView, DocumentCSS, DocumentEvent, DocumentStyle, Element, EventTarget, Node, SVGElement, SVGExternalResourcesRequired, SVGFitToViewBox, SVGLangSpace, SVGLocatable, SVGStylable, SVGTests, SVGZoomAndPan, ViewCSS
+[Constructor Summary]
+
+[Method Summary]
+boolean animationsPaused()	 
+ boolean checkEnclosure(SVGElement element, SVGRect rect)	 
+ boolean checkIntersection(SVGElement element, SVGRect rect)	 
+ SVGAngle createSVGAngle()	 
+ SVGLength createSVGLength()	 
+ SVGMatrix createSVGMatrix()	 
+ SVGNumber createSVGNumber()	 
+ SVGPoint createSVGPoint()	 
+ SVGRect createSVGRect()	 
+ SVGTransform createSVGTransform()	 
+ SVGTransform createSVGTransformFromMatrix(SVGMatrix matrix)	 
+ void deselectAll()	 
+ void forceRedraw()	 
+ java.lang.String getContentScriptType()	 
+ java.lang.String getContentStyleType()	 
+ float getCurrentScale()	 
+ float getCurrentTime()	 
+ SVGPoint getCurrentTranslate()	 
+ SVGViewSpec getCurrentView()	 
+ Element getElementById(java.lang.String elementId)	 
+ NodeList getEnclosureList(SVGRect rect, SVGElement referenceElement)	 
+ SVGAnimatedLength getHeight()	 
+ NodeList getIntersectionList(SVGRect rect, SVGElement referenceElement)	 
+ float getPixelUnitToMillimeterX()	 
+ float getPixelUnitToMillimeterY()	 
+ float getScreenPixelToMillimeterX()	 
+ float getScreenPixelToMillimeterY()	 
+ boolean getUseCurrentView()	 
+ SVGRect getViewport()	 
+ SVGAnimatedLength getWidth()	 
+ SVGAnimatedLength getX()	 
+ SVGAnimatedLength getY()	 
+ void pauseAnimations()	 
+ void setContentScriptType(java.lang.String contentScriptType)	 
+ void setContentStyleType(java.lang.String contentStyleType)	 
+ void setCurrentScale(float currentScale)	 
+ void setCurrentTime(float seconds)	 
+ void setUseCurrentView(boolean useCurrentView)	 
+ int suspendRedraw(int max_wait_milliseconds)	 
+ void unpauseAnimations()	 
+ void unsuspendRedraw(int suspend_handle_id)	 
+ void unsuspendRedrawAll()

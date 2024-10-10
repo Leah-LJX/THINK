@@ -1,0 +1,10 @@
+[API Name] opennlp.tools.parser.Cons
+[Type] Class
+[Info]
+public class Cons extends Object Holds feature information about a specific Parse node.
+See Also:
+Parse
+[Constructor Summary]
+Cons(String cons, String consbo, int index, boolean unigram)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

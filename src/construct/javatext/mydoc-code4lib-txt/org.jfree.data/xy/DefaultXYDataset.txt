@@ -1,0 +1,21 @@
+[Class] org.jfree.data.xy.DefaultXYDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, PublicCloneable, Dataset, SeriesChangeListener, SeriesDataset, XYDataset
+[Constructor Summary]
+DefaultXYDataset()	Creates a new DefaultXYDataset instance, initially containing no data.
+[Method Summary]
+void addSeries(Comparable seriesKey, double[][] data)	Adds a series or if a series with the same key already exists replaces the data for that series, then sends a DatasetChangeEvent to all registered listeners.
+Object clone()	Creates an independent copy of this dataset.
+boolean equals(Object obj)	Tests this DefaultXYDataset instance for equality with an arbitrary object.
+DomainOrder getDomainOrder()	Returns the order of the domain (x-) values in the dataset.
+int getItemCount(int series)	Returns the number of items in the specified series.
+int getSeriesCount()	Returns the number of series in the dataset.
+Comparable getSeriesKey(int series)	Returns the key for a series.
+Number getX(int series, int item)	Returns the x-value for an item within a series.
+double getXValue(int series, int item)	Returns the x-value for an item within a series.
+Number getY(int series, int item)	Returns the y-value for an item within a series.
+double getYValue(int series, int item)	Returns the y-value for an item within a series.
+int hashCode()	Returns a hash code for this instance.
+int indexOf(Comparable seriesKey)	Returns the index of the series with the specified key, or -1 if there is no such series in the dataset.
+void removeSeries(Comparable seriesKey)	Removes a series from the dataset, then sends a DatasetChangeEvent to all registered listeners.

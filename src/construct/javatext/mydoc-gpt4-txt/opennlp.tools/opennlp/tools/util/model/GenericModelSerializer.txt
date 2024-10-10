@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.util.model.GenericModelSerializer
+[Type] Class
+[Info]
+All Implemented Interfaces: ArtifactSerializer<AbstractModel>
+public class GenericModelSerializer extends Object implements ArtifactSerializer<AbstractModel> An ArtifactSerializer implementation for models.
+[Constructor Summary]
+GenericModelSerializer()	
+[Method Summary]
+AbstractModel create(InputStream in)	Creates an artifact from the provided InputStream.
+static void register(Map<String,ArtifactSerializer<?>> factories)	Registers a new GenericModelSerializer in the given factories mapping.
+void serialize(AbstractModel artifact, OutputStream out)	Serializes an artifact to the provided OutputStream.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

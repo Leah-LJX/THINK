@@ -1,0 +1,10 @@
+[API Name] opennlp.tools.langdetect.LanguageDetector
+[Type] Interface
+[Info]
+All Superinterfaces: Serializable
+All Known Implementing Classes: LanguageDetectorME
+public interface LanguageDetector extends Serializable The interface for LanguageDetector which predicts the Language for a context.
+[Method Summary]
+String[] getSupportedLanguages()	
+Language predictLanguage(CharSequence content)	Predicts the Language for the full content length.
+Language[] predictLanguages(CharSequence content)	Predicts the languages for the full content length.

@@ -1,0 +1,15 @@
+[API Name] org.apache.pdfbox.pdmodel.common.function.type4.InstructionSequence
+[Type] Class
+[Info]
+public class InstructionSequence extends Object Represents an instruction sequence, a combination of values, operands and nested procedures.
+[Constructor Summary]
+InstructionSequence()	
+[Method Summary]
+void addBoolean(boolean value)	Adds a bool value.
+void addInteger(int value)	Adds an int value.
+void addName(String name)	Add a name (ex.
+void addProc(InstructionSequence child)	Adds a proc (sub-sequence of instructions).
+void addReal(float value)	Adds a real value.
+void execute(ExecutionContext context)	Executes the instruction sequence.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

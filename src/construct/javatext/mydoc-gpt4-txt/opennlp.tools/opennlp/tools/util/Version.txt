@@ -1,0 +1,21 @@
+[API Name] opennlp.tools.util.Version
+[Type] Class
+[Info]
+public class Version extends Object The Version class represents the OpenNLP Tools library version.    The version has three parts:   Major: OpenNLP Tools libraries with a different major version are not interchangeable. Minor: OpenNLP Tools libraries with an identical major version, but different      minor version may be interchangeable. See release notes for further details. Revision: OpenNLP Tools libraries with same major and minor version, but a different      revision, are fully interchangeable.
+[Constructor Summary]
+Version(int major, int minor, int revision)	Initializes a Version instance with the provided version elements.
+Version(int major, int minor, int revision, boolean snapshot)	Initializes a Version instance with the provided version elements.
+[Field Summary]
+static final Version DEV_VERSION	
+[Method Summary]
+static Version currentVersion()	
+boolean equals(Object obj)	
+int getMajor()	
+int getMinor()	
+int getRevision()	
+int hashCode()	
+boolean isSnapshot()	
+static Version parse(String version)	Return a new Version initialized to the value represented by the specified String
+String toString()	The parse(String) method can create an instance of Version with the returned version value string.
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

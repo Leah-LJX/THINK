@@ -1,0 +1,42 @@
+[API Name] org.apache.pdfbox.pdfparser.COSParser
+[Type] Class
+[Info]
+All Implemented Interfaces: ICOSParser
+Direct Known Subclasses: BruteForceParser, FDFParser, PDFParser
+public class COSParser extends BaseParser implements ICOSParser COS-Parser which first reads startxref and xref tables in order to know valid objects and parse only these objects.    This class is a much enhanced version of QuickParser presented in  PDFBOX-1104 by Jeremy Villalobos.
+[Constructor Summary]
+COSParser(org.apache.pdfbox.io.RandomAccessRead source)	Default constructor.
+COSParser(org.apache.pdfbox.io.RandomAccessRead source, String password, InputStream keyStore, String keyAlias)	Constructor for encrypted pdfs.
+COSParser(org.apache.pdfbox.io.RandomAccessRead source, String password, InputStream keyStore, String keyAlias, org.apache.pdfbox.io.RandomAccessStreamCache.StreamCacheCreateFunction streamCacheCreateFunction)	Constructor for encrypted pdfs.
+[Field Summary]
+protected static char[] EOF_MARKER	EOF-marker.
+protected long fileLen	file length.
+protected boolean initialParseDone	
+protected static char[] OBJ_MARKER	obj-marker.
+protected SecurityHandler<? extends ProtectionPolicy> securityHandler	The security handler.
+static String SYSPROP_EOFLOOKUPRANGE	The range within the %%EOF marker will be searched.
+protected XrefTrailerResolver xrefTrailerResolver	Collects all Xref/trailer objects and resolves them into single object using startxref reference.
+[Method Summary]
+protected void checkPages(COSDictionary root)	Check if all entries of the pages dictionary are present.
+org.apache.pdfbox.io.RandomAccessReadView createRandomAccessReadView(long startPosition, long streamLength)	Creates a random access read view starting at the given position with the given length.
+COSBase dereferenceCOSObject(COSObject obj)	Dereference the COSBase object which is referenced by the given COSObject.
+protected AccessPermission getAccessPermission()	This will get the AccessPermission.
+protected PDEncryption getEncryption()	This will get the encryption dictionary.
+boolean isLenient()	Return true if parser is lenient.
+protected boolean isString(char[] string)	Checks if the given string can be found at the current offset.
+protected int lastIndexOf(char[] pattern, byte[] buf, int endOff)	Searches last appearance of pattern within buffer.
+protected COSStream parseCOSStream(COSDictionary dic)	This will read a COSStream from the input stream using length attribute within dictionary.
+protected boolean parseFDFHeader()	Parse the header of a fdf.
+protected COSBase parseObjectDynamically(COSObjectKey objKey, boolean requireExistingNotCompressedObj)	Parse the object for the given object key.
+protected COSBase parseObjectStreamObject(long objstmObjNr, COSObjectKey key)	Parse the object with the given key from the object stream with the given number.
+protected boolean parsePDFHeader()	Parse the header of a pdf.
+protected boolean parseXrefTable(long startByteOffset)	This will parse the xref table from the stream and add it to the state The XrefTable contents are ignored.
+protected void prepareDecryption()	Prepare for decryption.
+protected boolean resetTrailerResolver()	Indicates whether the xref trailer resolver should be reset or not.
+protected COSDictionary retrieveTrailer()	Read the trailer information and provide a COSDictionary containing the trailer information.
+void setEOFLookupRange(int byteCount)	Sets how many trailing bytes of PDF file are searched for EOF marker and 'startxref' marker.
+protected void setLenient(boolean lenient)	Change the parser leniency flag.
+[Methods inherited from class org.apache.pdfbox.pdfparser.BaseParser]
+getObjectKey, isClosing, isClosing, isDigit, isDigit, isEndOfName, isEOF, isEOL, isEOL, isSpace, isSpace, isWhitespace, isWhitespace, parseCOSArray, parseCOSDictionary, parseCOSName, parseCOSString, parseDirObject, readExpectedChar, readExpectedString, readGenerationNumber, readInt, readLine, readLong, readObjectNumber, readString, readString, readStringNumber, skipSpaces, skipWhiteSpaces
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.renderer.category.LineAndShapeRenderer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, LegendItemSource, CategoryItemRenderer, org.jfree.util.PublicCloneable
+Direct Known Subclasses: DefaultCategoryItemRenderer, LineRenderer3D, StatisticalLineAndShapeRenderer
+[Constructor Summary]
+LineAndShapeRenderer() Creates a renderer with both lines and shapes visible by default.
+[Method Summary]
+Object clone() Returns an independent copy of the renderer.

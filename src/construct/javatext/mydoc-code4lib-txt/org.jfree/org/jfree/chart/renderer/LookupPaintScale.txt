@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.LookupPaintScale
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, PaintScale, org.jfree.util.PublicCloneable
+[Constructor Summary]
+LookupPaintScale() Creates a new paint scale.
+[Method Summary]
+void add(double value, Paint paint) Adds an entry to the lookup table.

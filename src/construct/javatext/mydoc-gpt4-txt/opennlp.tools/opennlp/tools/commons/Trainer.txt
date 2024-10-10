@@ -1,0 +1,8 @@
+[API Name] opennlp.tools.commons.Trainer
+[Type] Interface
+[Info]
+All Known Subinterfaces: EventModelSequenceTrainer<T>, EventTrainer, SequenceTrainer
+All Known Implementing Classes: AbstractEventModelSequenceTrainer, AbstractEventTrainer, AbstractTrainer, GISTrainer, NaiveBayesTrainer, PerceptronTrainer, QNTrainer, SimplePerceptronSequenceTrainer
+public interface Trainer Represents a common base for training implementations.
+[Method Summary]
+void init(TrainingParameters trainParams, Map<String,String> reportMap)	Conducts the initialization of an Trainer via TrainingParameters and a report map.

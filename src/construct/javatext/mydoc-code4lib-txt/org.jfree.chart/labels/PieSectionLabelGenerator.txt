@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.labels.PieSectionLabelGenerator
+[Flag] Interface
+[Info]
+All Known Implementing Classes: StandardPieSectionLabelGenerator
+[Constructor Summary]
+
+[Method Summary]
+AttributedString generateAttributedSectionLabel(PieDataset dataset, Comparable key) Generates an attributed label for the specified series, or null if no attributed label is available (in which case, the string returned by generateSectionLabel(PieDataset, Comparable) will provide the fallback).

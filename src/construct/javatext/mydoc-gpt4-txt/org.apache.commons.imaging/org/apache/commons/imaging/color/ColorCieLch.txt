@@ -1,0 +1,23 @@
+[API Name] Package org.apache.commons.imaging.color.ColorCieLch
+[Type] Class
+[Info]
+public final class ColorCieLch extends Object Represents a color in the CIELCH color space.
+   Contains the constant values for black, white, red,  green, and blue.  
+Since: 1.0-alpha1 See Also: https://en.wikipedia.org/wiki/CIELUV#Cylindrical_representation_(CIELCH)
+[Constructor Summary]
+ColorCieLch​(double L, double C, double h)	
+[Field Summary]
+static ColorCieLch BLACK	A constant for color black.
+static ColorCieLch BLUE	A constant for color blue.
+double C	
+static ColorCieLch GREEN	A constant for color green.
+double h	
+double L	
+static ColorCieLch RED	A constant for color red.
+static ColorCieLch WHITE	A constant for color white.
+[Method Summary]
+boolean equals​(Object o)	
+int hashCode()	
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

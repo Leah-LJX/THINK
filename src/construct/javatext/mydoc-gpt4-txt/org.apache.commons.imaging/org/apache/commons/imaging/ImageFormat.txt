@@ -1,0 +1,9 @@
+[API Name] Package org.apache.commons.imaging.ImageFormat
+[Type] Interface
+[Info]
+All Known Implementing Classes: ImageFormats
+public interface ImageFormat Simple image format interface.
+[Method Summary]
+String getDefaultExtension()	
+String[] getExtensions()	Get the file extension associated with this ImageFormat.
+String getName()	Get the name of this ImageFormat.

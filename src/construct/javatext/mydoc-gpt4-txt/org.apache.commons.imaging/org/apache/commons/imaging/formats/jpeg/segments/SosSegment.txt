@@ -1,0 +1,23 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.segments.SosSegment
+[Type] Class
+[Info]
+public class SosSegment extends Segment
+[Constructor Summary]
+SosSegment​(int marker, byte[] segmentData)	
+SosSegment​(int marker, int markerLength, InputStream is)	
+[Field Summary]
+int endOfSpectralSelection	
+int numberOfComponents	
+int startOfSpectralSelection	
+int successiveApproximationBitHigh	
+int successiveApproximationBitLow	
+[Method Summary]
+SosSegment.Component[] getComponents()	Returns a copy of all the components.
+SosSegment.Component getComponents​(int index)	Return a component at the specified index.
+String getDescription()	
+[Methods inherited from class org.apache.commons.imaging.formats.jpeg.segments.Segment]
+dump, getSegmentType, toString
+[Methods inherited from class org.apache.commons.imaging.common.BinaryFileParser]
+debugNumber, debugNumber, getByteOrder, setByteOrder
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.sentdetect.SDEventStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<Event>
+public class SDEventStream extends AbstractEventStream<SentenceSample>
+[Constructor Summary]
+SDEventStream(ObjectStream<SentenceSample> samples, SDContextGenerator cg, EndOfSentenceScanner scanner)	Initializes the current instance.
+[Methods inherited from class opennlp.tools.util.AbstractEventStream]
+close, read, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

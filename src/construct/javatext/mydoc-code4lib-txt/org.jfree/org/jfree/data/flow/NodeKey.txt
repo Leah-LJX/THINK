@@ -1,0 +1,15 @@
+[Class] org.jfree.data.flow.NodeKey
+[Flag] Class
+[Info]
+Type Parameters: K - the type for the keys used to identify sources and destinations 
+     (String is a good default choice).
+All Implemented Interfaces: Serializable, Cloneable, PublicCloneable
+[Constructor Summary]
+NodeKey(int stage, K node)	Creates a new key referencing a node in a FlowDataset.
+[Method Summary]
+Object clone()	Returns a clone of the object.
+boolean equals(Object obj)	Tests this instance for equality with an arbitrary object.
+K getNode()	Returns the identifier for the node.
+int getStage()	Returns the stage number.
+int hashCode()	Returns a hashcode for this instance.
+String toString()	Returns a string representation of this instance, primarily for debugging purposes.

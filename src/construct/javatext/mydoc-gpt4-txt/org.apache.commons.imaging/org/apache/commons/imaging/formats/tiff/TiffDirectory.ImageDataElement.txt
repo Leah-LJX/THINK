@@ -1,0 +1,13 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.TiffDirectory.ImageDataElement
+[Type] Class
+[Info]
+Enclosing class: TiffDirectory
+public static final class TiffDirectory.ImageDataElement extends TiffElement
+[Constructor Summary]
+ImageDataElement​(long offset, int length)	
+[Field Summary]
+ImageDataElement​(long offset, int length)	
+[Method Summary]
+String getElementDescription()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,7 @@
+[Class] org.w3c.dom.svg.SVGGlyphElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGStylable
+[Constructor Summary]
+
+[Method Summary]

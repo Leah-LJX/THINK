@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.annotations.AbstractAnnotation
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Annotation
+Direct Known Subclasses: AbstractXYAnnotation, CategoryLineAnnotation, TextAnnotation
+[Constructor Summary]
+protected AbstractAnnotation() Constructs an annotation.
+[Method Summary]
+void addChangeListener(AnnotationChangeListener listener) Registers an object to receive notification of changes to the annotation.

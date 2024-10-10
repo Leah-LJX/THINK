@@ -1,0 +1,13 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.segments.SosSegment.Component
+[Type] Class
+[Info]
+Enclosing class: SosSegment
+public static class SosSegment.Component extends Object
+[Constructor Summary]
+Component​(int scanComponentSelector, int dcCodingTableSelector, int acCodingTableSelector)	
+[Field Summary]
+int acCodingTableSelector	
+int dcCodingTableSelector	
+int scanComponentSelector	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

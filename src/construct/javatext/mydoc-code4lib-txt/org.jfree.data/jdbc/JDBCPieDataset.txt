@@ -1,0 +1,12 @@
+[Class] org.jfree.data.jdbc.JDBCPieDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, PublicCloneable, Dataset, PieDataset, KeyedValues, Values
+[Constructor Summary]
+JDBCPieDataset(String url, String driverName, String user, String password)	Creates a new JDBCPieDataset and establishes a new database connection.
+JDBCPieDataset(Connection con)	Creates a new JDBCPieDataset using a pre-existing database connection.
+JDBCPieDataset(Connection con, String query)	Creates a new JDBCPieDataset using a pre-existing database connection.
+[Method Summary]
+void close()	Close the database connection
+void executeQuery(String query)	ExecuteQuery will attempt execute the query passed to it against the existing database connection.
+void executeQuery(Connection con, String query)	ExecuteQuery will attempt execute the query passed to it against the existing database connection.

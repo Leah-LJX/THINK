@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.axis.Axis
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+Direct Known Subclasses: CategoryAxis, ValueAxis
+[Constructor Summary]
+protected Axis(String label) Constructs an axis, using default values where necessary.
+[Method Summary]
+void addChangeListener(AxisChangeListener listener) Registers an object for notification of changes to the axis.

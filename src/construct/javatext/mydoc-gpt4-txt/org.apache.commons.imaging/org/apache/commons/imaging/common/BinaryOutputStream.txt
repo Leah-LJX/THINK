@@ -1,0 +1,24 @@
+[API Name] Package org.apache.commons.imaging.common.BinaryOutputStream
+[Type] Class
+[Info]
+All Implemented Interfaces: Closeable, Flushable, AutoCloseable
+public class BinaryOutputStream extends OutputStream
+[Constructor Summary]
+BinaryOutputStream​(OutputStream os)	
+BinaryOutputStream​(OutputStream os, ByteOrder byteOrder)	
+[Method Summary]
+void close()	
+void flush()	
+int getByteCount()	
+ByteOrder getByteOrder()	
+protected void setByteOrder​(ByteOrder byteOrder)	
+void write​(byte[] bytes)	
+void write​(byte[] bytes, int offset, int length)	
+void write​(int i)	
+void write2Bytes​(int value)	
+void write3Bytes​(int value)	
+void write4Bytes​(int value)	
+[Methods inherited from class java.io.OutputStream]
+nullOutputStream
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

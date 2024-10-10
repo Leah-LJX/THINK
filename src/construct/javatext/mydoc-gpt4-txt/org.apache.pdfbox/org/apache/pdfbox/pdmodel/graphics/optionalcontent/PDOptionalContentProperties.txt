@@ -1,0 +1,26 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.optionalcontent.PDOptionalContentProperties
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDOptionalContentProperties extends Object implements COSObjectable This class represents the optional content properties dictionary.
+Since: PDF 1.5
+[Constructor Summary]
+PDOptionalContentProperties()	Creates a new optional content properties dictionary.
+PDOptionalContentProperties(COSDictionary props)	Creates a new instance based on a given COSDictionary.
+[Nested Class Summary]
+static class PDOptionalContentProperties.BaseState	Enumeration for the BaseState dictionary entry on the "D" dictionary.
+[Method Summary]
+void addGroup(PDOptionalContentGroup ocg)	Adds an optional content group (OCG).
+PDOptionalContentProperties.BaseState getBaseState()	Returns the base state for optional content groups.
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+PDOptionalContentGroup getGroup(String name)	Returns the first optional content group of the given name.
+String[] getGroupNames()	Lists all optional content group names.
+Collection<PDOptionalContentGroup> getOptionalContentGroups()	Returns the collection of all optional content groups.
+boolean hasGroup(String groupName)	Indicates whether a particular optional content group is found in the PDF file.
+boolean isGroupEnabled(PDOptionalContentGroup group)	Indicates whether an optional content group is enabled.
+boolean isGroupEnabled(String groupName)	Indicates whether at least one optional content group with this name is enabled.
+void setBaseState(PDOptionalContentProperties.BaseState state)	Sets the base state for optional content groups.
+boolean setGroupEnabled(PDOptionalContentGroup group, boolean enable)	Enables or disables an optional content group.
+boolean setGroupEnabled(String groupName, boolean enable)	Enables or disables all optional content groups with the given name.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

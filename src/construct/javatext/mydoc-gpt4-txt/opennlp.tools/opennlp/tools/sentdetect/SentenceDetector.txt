@@ -1,0 +1,8 @@
+[API Name] opennlp.tools.sentdetect.SentenceDetector
+[Type] Interface
+[Info]
+All Known Implementing Classes: NewlineSentenceDetector, SentenceDetectorME
+public interface SentenceDetector The interface for sentence detectors, which find the sentence boundaries in  a text.
+[Method Summary]
+String[] sentDetect(CharSequence s)	Detects sentences in a character sequence.
+Span[] sentPosDetect(CharSequence s)	Detects sentences in a character sequence.

@@ -1,0 +1,9 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.image.LosslessFactory
+[Type] Class
+[Info]
+public final class LosslessFactory extends Object Factory for creating a PDImageXObject containing a lossless compressed image.
+Author: Tilman Hausherr
+[Method Summary]
+static PDImageXObject createFromImage(PDDocument document, BufferedImage image)	Creates a new lossless encoded image XObject from a BufferedImage.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

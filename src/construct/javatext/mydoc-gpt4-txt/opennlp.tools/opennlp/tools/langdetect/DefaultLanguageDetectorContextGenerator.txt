@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.langdetect.DefaultLanguageDetectorContextGenerator
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, LanguageDetectorContextGenerator
+public class DefaultLanguageDetectorContextGenerator extends Object implements LanguageDetectorContextGenerator A context generator for language detector.
+See Also:
+Serialized Form
+[Constructor Summary]
+DefaultLanguageDetectorContextGenerator(int minLength, int maxLength, CharSequenceNormalizer... normalizers)	Creates a customizable DefaultLanguageDetectorContextGenerator that computes ngrams from text.
+[Method Summary]
+<T extends CharSequence>T[] getContext(CharSequence document)	Retrieves the contexts for a document using character ngrams.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

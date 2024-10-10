@@ -1,0 +1,23 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.documentnavigation.destination.PDPageDestination
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable, PDDestinationOrAction
+Direct Known Subclasses: PDPageFitDestination, PDPageFitHeightDestination, PDPageFitRectangleDestination, PDPageFitWidthDestination, PDPageXYZDestination
+public abstract class PDPageDestination extends PDDestination This represents a destination to a page, see subclasses for specific parameters.
+Author: Ben Litchfield
+[Constructor Summary]
+protected PDPageDestination()	Constructor to create empty page destination.
+protected PDPageDestination(COSArray arr)	Constructor to create empty page destination.
+[Field Summary]
+protected COSArray array	Storage for the page destination.
+[Method Summary]
+COSArray getCOSObject()	Convert this standard java object to a COS object.
+PDPage getPage()	This will get the page for this destination.
+int getPageNumber()	This will get the page number for this destination.
+int retrievePageNumber()	Returns the page number for this destination, regardless of whether this is a page number or a reference to a page.
+void setPage(PDPage page)	Set the page for a local destination.
+void setPageNumber(int pageNumber)	Set the page number for a remote destination.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.documentnavigation.destination.PDDestination]
+create
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

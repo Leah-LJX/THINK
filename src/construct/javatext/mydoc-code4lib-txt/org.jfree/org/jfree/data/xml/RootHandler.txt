@@ -1,0 +1,13 @@
+[Class] org.jfree.data.xml.RootHandler
+[Flag] Class
+[Info]
+All Implemented Interfaces: DatasetTags, ContentHandler, DTDHandler, EntityResolver, ErrorHandler
+Direct Known Subclasses: CategoryDatasetHandler, PieDatasetHandler
+[Constructor Summary]
+RootHandler()	Creates a new handler.
+[Method Summary]
+void characters(char[] ch, int start, int length)	Receives some (or all) of the text in the current element.
+DefaultHandler getCurrentHandler()	Returns the handler at the top of the stack.
+Stack getSubHandlers()	Returns the stack of sub handlers.
+DefaultHandler popSubHandler()	Pops a sub-handler from the stack.
+void pushSubHandler(DefaultHandler subhandler)	Pushes a sub-handler onto the stack.

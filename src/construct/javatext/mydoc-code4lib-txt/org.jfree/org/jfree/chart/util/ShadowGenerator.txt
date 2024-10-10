@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.util.ShadowGenerator
+[Flag] Interface
+[Info]
+All Known Implementing Classes: DefaultShadowGenerator
+[Constructor Summary]
+
+[Method Summary]
+int calculateOffsetX() Calculates the x-offset for drawing the shadow image relative to the source.

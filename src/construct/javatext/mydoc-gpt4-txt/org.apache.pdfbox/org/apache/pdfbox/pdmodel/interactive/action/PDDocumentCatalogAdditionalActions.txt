@@ -1,0 +1,23 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.action.PDDocumentCatalogAdditionalActions
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDDocumentCatalogAdditionalActions extends Object implements COSObjectable This class represents a document catalog's dictionary of actions  that occur due to events.
+Author: Ben Litchfield, Panagiotis Toumasis
+[Constructor Summary]
+PDDocumentCatalogAdditionalActions()	Default constructor.
+PDDocumentCatalogAdditionalActions(COSDictionary a)	Constructor.
+[Method Summary]
+COSDictionary getCOSObject()	Convert this standard java object to a COS object.
+PDAction getDP()	This will get a JavaScript action to be performed after printing a document.
+PDAction getDS()	This will get a JavaScript action to be performed after saving a document.
+PDAction getWC()	This will get a JavaScript action to be performed before closing a document.
+PDAction getWP()	This will get a JavaScript action to be performed before printing a document.
+PDAction getWS()	This will get a JavaScript action to be performed before saving a document.
+void setDP(PDAction dp)	This will set a JavaScript action to be performed after printing a document.
+void setDS(PDAction ds)	This will set a JavaScript action to be performed after saving a document.
+void setWC(PDAction wc)	This will set a JavaScript action to be performed before closing a document.
+void setWP(PDAction wp)	This will set a JavaScript action to be performed before printing a document.
+void setWS(PDAction ws)	This will set a JavaScript action to be performed before saving a document.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

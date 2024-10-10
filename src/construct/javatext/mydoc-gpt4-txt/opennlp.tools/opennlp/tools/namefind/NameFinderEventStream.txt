@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.namefind.NameFinderEventStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<Event>
+public class NameFinderEventStream extends AbstractEventStream<NameSample> Class for creating an event stream out of data files for training an TokenNameFinder.
+[Constructor Summary]
+NameFinderEventStream(ObjectStream<NameSample> dataStream, String type, NameContextGenerator contextGenerator, SequenceCodec<String> codec)	Initializes a NameFinderEventStream using the specified dataStream and NameContextGenerator.
+[Method Summary]
+static String[][] additionalContext(String[] tokens, Map<String,String> prevMap)	Generated previous decision features for each token based on contents of the specified prevMap.
+static List<Event> generateEvents(String[] sentence, String[] outcomes, NameContextGenerator cg)	Generates events for each token in a sentence with the specified outcomes using the specified NameContextGenerator.
+static String[] generateOutcomes(Span[] names, String type, int length)	Deprecated. use the BioCodec implementation of the SequenceValidator instead!
+[Methods inherited from class opennlp.tools.util.AbstractEventStream]
+close, read, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,18 @@
+[API Name] org.apache.pdfbox.cos.COSNumber
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: COSFloat, COSInteger
+public abstract class COSNumber extends COSBase This class represents an abstract number in a PDF document.
+Author: Ben Litchfield
+[Constructor Summary]
+COSNumber()	
+[Method Summary]
+abstract float floatValue()	This will get the float value of this number.
+static COSNumber get(String number)	This factory method will get the appropriate number object.
+abstract int intValue()	This will get the integer value of this number.
+abstract long longValue()	This will get the long value of this number.
+[Methods inherited from class org.apache.pdfbox.cos.COSBase]
+accept, getCOSObject, getKey, isDirect, setDirect, setKey
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

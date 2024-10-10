@@ -1,0 +1,27 @@
+[API Name] org.apache.pdfbox.cos.COSFloat
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class COSFloat extends COSNumber This class represents a floating point number in a PDF document.
+Author: Ben Litchfield
+[Constructor Summary]
+COSFloat(float aFloat)	Constructor.
+COSFloat(String aFloat)	Constructor.
+[Field Summary]
+static COSFloat ONE	
+static COSFloat ZERO	
+[Method Summary]
+void accept(ICOSVisitor visitor)	Visitor pattern double dispatch method.
+boolean equals(Object o)	
+float floatValue()	The value of the float object that this one wraps.
+int hashCode()	
+int intValue()	This will get the integer value of this object.
+long longValue()	This will get the long value of this object.
+String toString()	
+void writePDF(OutputStream output)	This will output this string as a PDF object.
+[Methods inherited from class org.apache.pdfbox.cos.COSNumber]
+get
+[Methods inherited from class org.apache.pdfbox.cos.COSBase]
+getCOSObject, getKey, isDirect, setDirect, setKey
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

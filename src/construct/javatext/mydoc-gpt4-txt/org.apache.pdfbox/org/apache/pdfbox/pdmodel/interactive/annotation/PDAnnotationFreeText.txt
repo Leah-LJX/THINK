@@ -1,0 +1,41 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationFreeText
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDAnnotationFreeText extends PDAnnotationMarkup
+Author: Paul King
+[Constructor Summary]
+PDAnnotationFreeText()	
+PDAnnotationFreeText(COSDictionary field)	Creates a FreeText annotation from a COSDictionary, expected to be a correct object definition.
+[Field Summary]
+static String IT_FREE_TEXT	A plain free-text annotation, also known as a text box comment.
+static String IT_FREE_TEXT_CALLOUT	A callout, associated with an area on the page through the callout line specified.
+static String IT_FREE_TEXT_TYPE_WRITER	The annotation is intended to function as a click-to-type or typewriter object.
+static String SUB_TYPE	The type of annotation.
+[Method Summary]
+void constructAppearances()	Create the appearance entry for this annotation.
+void constructAppearances(PDDocument document)	Create the appearance entry for this annotation.
+PDBorderEffectDictionary getBorderEffect()	This will retrieve the border effect dictionary, specifying effects to be applied used in drawing the line.
+float[] getCallout()	This will get the coordinates of the callout line.
+String getDefaultAppearance()	Get the default appearance.
+String getDefaultStyleString()	Get the default style string.
+String getLineEndingStyle()	This will retrieve the line ending style.
+int getQ()	This will get the 'quadding' or justification of the text to be displayed.
+PDRectangle getRectDifference()	This will get the rectangle difference rectangle.
+float[] getRectDifferences()	This will get the margin between the annotations "outer" rectangle defined by /Rect and the border.
+void setBorderEffect(PDBorderEffectDictionary be)	This will set the border effect dictionary, specifying effects to be applied when drawing the line.
+void setCallout(float[] callout)	This will set the coordinates of the callout line.
+void setCustomAppearanceHandler(PDAppearanceHandler appearanceHandler)	Set a custom appearance handler for generating the annotations appearance streams.
+void setDefaultAppearance(String daValue)	Set the default appearance.
+void setDefaultStyleString(String defaultStyleString)	Set the default style string.
+void setLineEndingStyle(String style)	This will set the line ending style.
+void setQ(int q)	This will set the quadding/justification of the text.
+void setRectDifference(PDRectangle rd)	This will set the rectangle difference rectangle.
+void setRectDifferences(float difference)	This will set the difference between the annotations "outer" rectangle defined by /Rect and the border.
+void setRectDifferences(float differenceLeft, float differenceTop, float differenceRight, float differenceBottom)	This will set the difference between the annotations "outer" rectangle defined by /Rect and the border.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationMarkup]
+getBorderStyle, getConstantOpacity, getCreationDate, getExternalData, getInReplyTo, getIntent, getPopup, getReplyType, getRichContents, getSubject, getTitlePopup, setBorderStyle, setConstantOpacity, setCreationDate, setExternalData, setInReplyTo, setIntent, setPopup, setReplyType, setRichContents, setSubject, setTitlePopup
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation]
+createAnnotation, equals, getAnnotationFlags, getAnnotationName, getAppearance, getAppearanceState, getBorder, getColor, getColor, getContents, getCOSObject, getModifiedDate, getNormalAppearanceStream, getOptionalContent, getPage, getRectangle, getStructParent, getSubtype, hashCode, isHidden, isInvisible, isLocked, isLockedContents, isNoRotate, isNoView, isNoZoom, isPrinted, isReadOnly, isToggleNoView, setAnnotationFlags, setAnnotationName, setAppearance, setAppearanceState, setBorder, setColor, setContents, setHidden, setInvisible, setLocked, setLockedContents, setModifiedDate, setModifiedDate, setNoRotate, setNoView, setNoZoom, setOptionalContent, setPage, setPrinted, setReadOnly, setRectangle, setStructParent, setSubtype, setToggleNoView
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, toString, wait, wait, wait

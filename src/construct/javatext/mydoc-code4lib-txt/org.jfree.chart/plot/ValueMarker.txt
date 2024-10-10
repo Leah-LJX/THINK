@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.ValueMarker
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+ValueMarker(double value) Creates a new marker.
+[Method Summary]
+boolean equals(Object obj) Tests this marker for equality with an arbitrary object.

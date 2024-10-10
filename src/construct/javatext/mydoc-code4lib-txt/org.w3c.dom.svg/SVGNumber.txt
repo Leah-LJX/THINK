@@ -1,0 +1,9 @@
+[Class] org.w3c.dom.svg.SVGNumber
+[Flag] Interface
+[Info]
+public interface SVGNumber
+[Constructor Summary]
+
+[Method Summary]
+float getValue()	 
+ void setValue(float value)

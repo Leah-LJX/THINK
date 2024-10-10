@@ -1,0 +1,14 @@
+[API Name] org.apache.pdfbox.io.RandomAccessWrite
+[Type] Interface
+[Info]
+All Superinterfaces: AutoCloseable, Closeable
+All Known Subinterfaces: RandomAccess
+All Known Implementing Classes: RandomAccessReadWriteBuffer
+public interface RandomAccessWrite extends Closeable An interface allowing random access write operations.
+[Method Summary]
+void clear()	Clears all data of the buffer.
+void write(byte[] b)	Write a buffer of data to the stream.
+void write(byte[] b, int offset, int length)	Write a buffer of data to the stream.
+void write(int b)	Write a byte to the stream.
+[Methods inherited from interface java.io.Closeable]
+close

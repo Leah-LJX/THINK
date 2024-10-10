@@ -1,0 +1,94 @@
+[API Name] org.apache.pdfbox.pdmodel.PDFormContentStream
+[Type] Class
+[Info]
+All Implemented Interfaces: Closeable, AutoCloseable
+public final class PDFormContentStream extends Object
+Author: Tilman Hausherr
+[Constructor Summary]
+PDFormContentStream(PDFormXObject form)	Create a new form XObject content stream.
+[Field Summary]
+protected PDDocument document	
+protected Deque<PDFont> fontStack	
+protected boolean inTextMode	
+protected Deque<PDColorSpace> nonStrokingColorSpaceStack	
+protected OutputStream outputStream	
+protected PDResources resources	
+protected Deque<PDColorSpace> strokingColorSpaceStack	
+[Method Summary]
+void addComment(String comment)	Write a comment line.
+void addRect(float x, float y, float width, float height)	Add a rectangle to the current path.
+void beginMarkedContent(COSName tag)	Begin a marked content sequence.
+void beginMarkedContent(COSName tag, PDPropertyList propertyList)	Begin a marked content sequence with a reference to an entry in the page resources' Properties dictionary.
+void beginText()	Begin some text operations.
+void clip()	Intersects the current clipping path with the current path, using the nonzero rule.
+void clipEvenOdd()	Intersects the current clipping path with the current path, using the even-odd rule.
+void close()	Close the content stream.
+void closeAndFillAndStroke()	Close, fill, and then stroke the path, using the nonzero winding number rule to determine the region to fill.
+void closeAndFillAndStrokeEvenOdd()	Close, fill, and then stroke the path, using the even-odd rule to determine the region to fill.
+void closeAndStroke()	Close and stroke the path.
+void closePath()	Closes the current subpath.
+void curveTo(float x1, float y1, float x2, float y2, float x3, float y3)	Append a cubic Bézier curve to the current path.
+void curveTo1(float x1, float y1, float x3, float y3)	Append a cubic Bézier curve to the current path.
+void curveTo2(float x2, float y2, float x3, float y3)	Append a cubic Bézier curve to the current path.
+void drawForm(PDFormXObject form)	Draws the given Form XObject at the current location.
+void drawImage(PDImageXObject image, float x, float y)	Draw an image at the x,y coordinates, with the default size of the image.
+void drawImage(PDImageXObject image, float x, float y, float width, float height)	Draw an image at the x,y coordinates, with the given size.
+void drawImage(PDImageXObject image, Matrix matrix)	Draw an image at the origin with the given transformation matrix.
+void drawImage(PDInlineImage inlineImage, float x, float y)	Draw an inline image at the x,y coordinates, with the default size of the image.
+void drawImage(PDInlineImage inlineImage, float x, float y, float width, float height)	Draw an inline image at the x,y coordinates and a certain width and height.
+void endMarkedContent()	End a marked content sequence.
+void endText()	End some text operations.
+void fill()	Fills the path using the nonzero winding number rule.
+void fillAndStroke()	Fill and then stroke the path, using the nonzero winding number rule to determine the region to fill.
+void fillAndStrokeEvenOdd()	Fill and then stroke the path, using the even-odd rule to determine the region to fill.
+void fillEvenOdd()	Fills the path using the even-odd winding rule.
+protected COSName getName(PDColorSpace colorSpace)	
+protected boolean isOutside255Interval(int val)	
+void lineTo(float x, float y)	Draw a line from the current position to the given coordinates.
+void moveTo(float x, float y)	Move the current position to the given coordinates.
+void newLine()	Move to the start of the next line of text.
+void newLineAtOffset(float tx, float ty)	The Td operator.
+void restoreGraphicsState()	Q operator.
+void saveGraphicsState()	q operator.
+void setCharacterSpacing(float spacing)	Set the character spacing.
+void setFont(PDFont font, float fontSize)	Set the font and font size to draw text with.
+void setGraphicsStateParameters(PDExtendedGraphicsState state)	Set an extended graphics state.
+void setHorizontalScaling(float scale)	Set the horizontal scaling to scale / 100.
+void setLeading(float leading)	Sets the text leading.
+void setLineCapStyle(int lineCapStyle)	Set the line cap style.
+void setLineDashPattern(float[] pattern, float phase)	Set the line dash pattern.
+void setLineJoinStyle(int lineJoinStyle)	Set the line join style.
+void setLineWidth(float lineWidth)	Set line width to the given value.
+protected void setMaximumFractionDigits(int fractionDigitsNumber)	Sets the maximum number of digits allowed for fractional numbers.
+void setMiterLimit(float miterLimit)	Set the miter limit.
+void setNonStrokingColor(Color color)	Set the non-stroking color using an AWT color.
+void setNonStrokingColor(float g)	Set the non-stroking color in the DeviceGray color space.
+void setNonStrokingColor(float r, float g, float b)	Set the non-stroking color in the DeviceRGB color space.
+void setNonStrokingColor(float c, float m, float y, float k)	Set the non-stroking color in the DeviceCMYK color space.
+void setNonStrokingColor(PDColor color)	Sets the non-stroking color and, if necessary, the non-stroking color space.
+protected void setNonStrokingColorSpaceStack(PDColorSpace colorSpace)	
+void setRenderingMode(RenderingMode rm)	Set the text rendering mode.
+void setStrokingColor(Color color)	Set the stroking color using an AWT color.
+void setStrokingColor(float g)	Set the stroking color in the DeviceGray color space.
+void setStrokingColor(float r, float g, float b)	Set the stroking color in the DeviceRGB color space.
+void setStrokingColor(float c, float m, float y, float k)	Set the stroking color in the DeviceCMYK color space.
+void setStrokingColor(PDColor color)	Sets the stroking color and, if necessary, the stroking color space.
+protected void setStrokingColorSpaceStack(PDColorSpace colorSpace)	
+void setTextMatrix(Matrix matrix)	The Tm operator.
+void setTextRise(float rise)	Set the text rise value, i.e.
+void setWordSpacing(float spacing)	Set the word spacing.
+void shadingFill(PDShading shading)	Fills the clipping area with the given shading.
+void showText(String text)	Shows the given text at the location specified by the current text matrix.
+protected void showTextInternal(String text)	Outputs a string using the correct encoding and subsetting as required.
+void showTextWithPositioning(Object[] textWithPositioningArray)	Shows the given text at the location specified by the current text matrix with the given interspersed positioning.
+void stroke()	Stroke the path.
+void transform(Matrix matrix)	The cm operator.
+protected void write(String text)	Writes a string to the content stream as ASCII.
+protected void writeBytes(byte[] data)	Writes binary data to the content stream.
+protected void writeLine()	Writes a newline to the content stream as ASCII.
+protected void writeOperand(COSName name)	Writes a COSName to the content stream.
+protected void writeOperand(float real)	Writes a real number to the content stream.
+protected void writeOperand(int integer)	Writes an integer number to the content stream.
+protected void writeOperator(String text)	Writes a string to the content stream as ASCII.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

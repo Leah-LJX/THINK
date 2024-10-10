@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.HashUtilities
+[Flag] Class
+[Info]
+Since: 1.0.3
+[Constructor Summary]
+HashUtilities()
+[Method Summary]
+static int hashCode(int pre, boolean b) Returns a hash value based on a seed value and the value of a boolean primitive.

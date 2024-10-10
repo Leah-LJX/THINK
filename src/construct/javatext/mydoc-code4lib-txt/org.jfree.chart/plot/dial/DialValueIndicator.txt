@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.dial.DialValueIndicator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, DialLayer, org.jfree.util.PublicCloneable
+[Constructor Summary]
+DialValueIndicator() Creates a new instance of DialValueIndicator.
+[Method Summary]
+Object clone() Returns a clone of this instance.

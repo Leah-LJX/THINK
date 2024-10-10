@@ -1,0 +1,13 @@
+[Class] org.jfree.data.json.impl.JSONObject
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Map, JSONAware, JSONStreamAware
+[Constructor Summary]
+JSONObject()
+[Method Summary]
+String toJSONString()	Returns a JSON string representing this object.
+static String toJSONString(Map map)	Convert a map to JSON text.
+String toString()	Returns a string representation of this object.
+static String toString(String key, Object value)	Returns a JSON string fragment containing the key and value.
+void writeJSONString(Writer out)	Writes a JSON string representing this object instance to the specified output writer.
+static void writeJSONString(Map map, Writer out)	Encode a map into JSON text and write it to out.

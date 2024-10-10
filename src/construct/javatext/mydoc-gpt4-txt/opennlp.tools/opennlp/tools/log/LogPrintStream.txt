@@ -1,0 +1,17 @@
+[API Name] opennlp.tools.log.LogPrintStream
+[Type] Class
+[Info]
+All Implemented Interfaces: Closeable, Flushable, Appendable, AutoCloseable
+@Internal public class LogPrintStream extends PrintStream This class serves as an adapter for a Logger used within a PrintStream.
+[Constructor Summary]
+LogPrintStream(org.slf4j.Logger logger)	Creates a LogPrintStream for the given Logger.
+LogPrintStream(org.slf4j.Logger logger, org.slf4j.event.Level level)	Creates a LogPrintStream for the given Logger, which logs at the specified level.
+[Method Summary]
+PrintStream printf(String format, Object... args)	
+void println(String msg)	
+[Methods inherited from class java.io.PrintStream]
+append, append, append, checkError, close, flush, format, format, print, print, print, print, print, print, print, print, print, printf, println, println, println, println, println, println, println, println, println, write, write, write, writeBytes
+[Methods inherited from class java.io.OutputStream]
+nullOutputStream
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

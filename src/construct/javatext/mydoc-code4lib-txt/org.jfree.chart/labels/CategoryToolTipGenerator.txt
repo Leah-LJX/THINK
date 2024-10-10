@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.labels.CategoryToolTipGenerator
+[Flag] Interface
+[Info]
+All Known Implementing Classes: BoxAndWhiskerToolTipGenerator, IntervalCategoryToolTipGenerator, StandardCategoryToolTipGenerator
+[Constructor Summary]
+
+[Method Summary]
+String generateToolTip(CategoryDataset dataset, int row, int column) Generates the tool tip text for an item in a dataset.

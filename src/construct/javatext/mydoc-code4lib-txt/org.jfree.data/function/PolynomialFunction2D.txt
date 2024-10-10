@@ -1,0 +1,12 @@
+[Class] org.jfree.data.function.PolynomialFunction2D
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Function2D
+[Constructor Summary]
+PolynomialFunction2D(double[] coefficients)	Constructs a new polynomial function y = a0 + a1 * x + a2 * x^2 + ... + an * x^n
+[Method Summary]
+boolean equals(Object obj)	Tests this function for equality with an arbitrary object.
+double[] getCoefficients()	Returns a copy of the coefficients array that was specified in the constructor.
+int getOrder()	Returns the order of the polynomial.
+double getValue(double x)	Returns the function value.
+int hashCode()	Returns a hash code for this instance.

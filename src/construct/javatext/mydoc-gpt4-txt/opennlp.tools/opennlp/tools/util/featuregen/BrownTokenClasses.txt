@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.util.featuregen.BrownTokenClasses
+[Type] Class
+[Info]
+public class BrownTokenClasses extends Object Obtain the paths listed in the pathLengths array from the Brown class.  This class is not to be instantiated.
+[Constructor Summary]
+BrownTokenClasses()	
+[Field Summary]
+static final int[] pathLengths	
+[Method Summary]
+static List<String> getWordClasses(String token, BrownCluster brownLexicon)	It provides a list containing the pathLengths for a token if found in the Map:token,BrownClass.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

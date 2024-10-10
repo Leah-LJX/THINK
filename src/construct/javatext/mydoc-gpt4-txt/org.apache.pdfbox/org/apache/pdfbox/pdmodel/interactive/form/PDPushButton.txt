@@ -1,0 +1,23 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.form.PDPushButton
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDPushButton extends PDButton A pushbutton is a purely interactive control that responds immediately to user  input without retaining a permanent value.
+Author: sug
+[Constructor Summary]
+PDPushButton(PDAcroForm acroForm)	
+[Method Summary]
+String getDefaultValue()	Returns the default value, if any.
+List<String> getExportValues()	This will get the (optional) export values.
+Set<String> getOnValues()	Get the values to set individual buttons within a group to the on state.
+String getValue()	Returns the selected value.
+String getValueAsString()	Returns a string representation of the "V" entry, or an empty string.
+void setExportValues(List<String> values)	This will set the export values.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDButton]
+isPushButton, isRadioButton, setDefaultValue, setValue, setValue
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDTerminalField]
+applyChange, getFieldFlags, getFieldType, getWidgets, importFDF, setActions, setWidgets
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDField]
+getAcroForm, getActions, getAlternateFieldName, getCOSObject, getFullyQualifiedName, getInheritableAttribute, getMappingName, getParent, getPartialName, isNoExport, isReadOnly, isRequired, setAlternateFieldName, setFieldFlags, setMappingName, setNoExport, setPartialName, setReadOnly, setRequired, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

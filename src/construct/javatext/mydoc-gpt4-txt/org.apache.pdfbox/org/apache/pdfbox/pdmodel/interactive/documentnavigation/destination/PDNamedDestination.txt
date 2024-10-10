@@ -1,0 +1,19 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.documentnavigation.destination.PDNamedDestination
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable, PDDestinationOrAction
+public class PDNamedDestination extends PDDestination This represents a destination to a page by referencing it with a name.
+Author: Ben Litchfield
+[Constructor Summary]
+PDNamedDestination()	Default constructor.
+PDNamedDestination(COSName dest)	Constructor.
+PDNamedDestination(COSString dest)	Constructor.
+PDNamedDestination(String dest)	Default constructor.
+[Method Summary]
+COSBase getCOSObject()	Convert this standard java object to a COS object.
+String getNamedDestination()	This will get the name of the destination.
+void setNamedDestination(String dest)	Set the named destination.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.documentnavigation.destination.PDDestination]
+create
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

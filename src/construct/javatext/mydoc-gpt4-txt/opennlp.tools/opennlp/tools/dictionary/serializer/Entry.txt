@@ -1,0 +1,18 @@
+[API Name] opennlp.tools.dictionary.serializer.Class
+[Type] Record
+[Info]
+public record Entry(StringList tokens, Attributes attributes) extends Record An Entry is a StringList which can  optionally be mapped to attributes.   entries are read and written by the DictionaryEntryPersistor.
+See Also:
+DictionaryEntryPersistor Attributes
+[Constructor Summary]
+Entry(StringList tokens, Attributes attributes)	Creates an instance of a Entry record class.
+[Method Summary]
+Attributes attributes()	Returns the value of the attributes record component.
+final boolean equals(Object o)	Indicates whether some other object is "equal to" this one.
+Attributes getAttributes()	Deprecated, for removal: This API element is subject to removal in a future version.
+StringList getTokens()	Deprecated, for removal: This API element is subject to removal in a future version.
+final int hashCode()	Returns a hash code value for this object.
+StringList tokens()	Returns the value of the tokens record component.
+final String toString()	Returns a string representation of this record class.
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

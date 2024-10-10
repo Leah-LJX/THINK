@@ -1,0 +1,26 @@
+[API Name] opennlp.tools.parser.treeinsert.Parser
+[Type] Class
+[Info]
+All Implemented Interfaces: Parser
+public class Parser extends AbstractBottomUpParser A built-attach Parser implementation.    Nodes are built when their left-most child is encountered.  Subsequent children are attached as daughters.  Attachment is based on node in the right-frontier  of the tree. After each attachment or building, nodes are  assessed as either complete or incomplete. Complete nodes  are no longer eligible for daughter attachment.    Complex modifiers which produce additional node  levels of the same type are attached with sister-adjunction.  Attachment can not take place higher in the right-frontier  than an incomplete node.
+See Also:
+AbstractBottomUpParser Parser
+[Constructor Summary]
+Parser(ParserModel model)	Instantiates a Parser via a given model.
+Parser(ParserModel model, int beamSize, double advancePercentage)	Instantiates a Parser via a given model and other configuration parameters.
+[Field Summary]
+static final String ATTACH_DAUGHTER	Outcome used when a node should be attached as a daughter to another node.
+static final String ATTACH_SISTER	Outcome used when a node should be attached as a sister to another node.
+static final String BUILT	Label used to distinguish build nodes from non-built nodes.
+static final String DONE	Outcome used when a constituent needs an no additional parent node/building.
+static final String NON_ATTACH	Outcome used when a node should not be attached to another node.
+[Method Summary]
+static List<Parse> getRightFrontier(Parse root, Set<String> punctSet)	Returns the right frontier of the specified tree with nodes ordered from deepest to shallowest.
+static ParserModel train(String languageCode, ObjectStream<Parse> parseSamples, HeadRules rules, int iterations, int cutoff)	Starts a training of a ParserModel.
+static ParserModel train(String languageCode, ObjectStream<Parse> parseSamples, HeadRules rules, TrainingParameters mlParams)	Starts a training of a ParserModel.
+[Fields inherited from class opennlp.tools.parser.AbstractBottomUpParser]
+COMPLETE, CONT, defaultAdvancePercentage, defaultBeamSize, INC_NODE, INCOMPLETE, OTHER, START, TOK_NODE, TOP_NODE
+[Methods inherited from class opennlp.tools.parser.AbstractBottomUpParser]
+buildDictionary, buildDictionary, collapsePunctuation, parse, parse, setErrorReporting, setParents
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

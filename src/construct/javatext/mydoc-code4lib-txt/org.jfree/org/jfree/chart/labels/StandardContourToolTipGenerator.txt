@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.labels.StandardContourToolTipGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, ContourToolTipGenerator
+[Constructor Summary]
+StandardContourToolTipGenerator() Deprecated.
+[Method Summary]
+boolean equals(Object obj) Deprecated. Tests if this object is equal to another.

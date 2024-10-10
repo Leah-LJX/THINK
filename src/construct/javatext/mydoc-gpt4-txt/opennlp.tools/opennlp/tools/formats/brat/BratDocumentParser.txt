@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.formats.brat.BratDocumentParser
+[Type] Class
+[Info]
+public class BratDocumentParser extends Object
+[Constructor Summary]
+BratDocumentParser(SentenceDetector sentenceDetector, Tokenizer tokenizer)	
+BratDocumentParser(SentenceDetector sentenceDetector, Tokenizer tokenizer, Set<String> nameTypes)	
+[Method Summary]
+List<NameSample> parse(BratDocument sample)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

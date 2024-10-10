@@ -1,0 +1,37 @@
+[API Name] opennlp.tools.ml.maxent.quasinewton.LineSearch.LineSearchResult
+[Type] Class
+[Info]
+Enclosing class: LineSearch
+public static class LineSearch.LineSearchResult extends Object Represents a LineSearch result.
+[Constructor Summary]
+LineSearchResult(double stepSize, double valueAtCurr, double valueAtNext, double[] gradAtCurr, double[] gradAtNext, double[] pseudoGradAtNext, double[] currPoint, double[] nextPoint, double[] signVector, int fctEvalCount)	Constructor with sign vector
+LineSearchResult(double stepSize, double valueAtCurr, double valueAtNext, double[] gradAtCurr, double[] gradAtNext, double[] currPoint, double[] nextPoint, int fctEvalCount)	Constructor
+[Method Summary]
+double[] getCurrPoint()	
+int getFctEvalCount()	
+double getFuncChangeRate()	
+double[] getGradAtCurr()	
+double[] getGradAtNext()	
+static LineSearch.LineSearchResult getInitialObject(double valueAtX, double[] gradAtX, double[] x)	Initial linear search object.
+static LineSearch.LineSearchResult getInitialObject(double valueAtX, double[] gradAtX, double[] pseudoGradAtX, double[] x, double[] signX, int fctEvalCount)	
+static LineSearch.LineSearchResult getInitialObjectForL1(double valueAtX, double[] gradAtX, double[] pseudoGradAtX, double[] x)	Initial linear search object for L1-regularization.
+double[] getNextPoint()	
+double[] getPseudoGradAtNext()	
+double[] getSignVector()	
+double getStepSize()	
+double getValueAtCurr()	
+double getValueAtNext()	
+void setAll(double stepSize, double valueAtCurr, double valueAtNext, double[] gradAtCurr, double[] gradAtNext, double[] pseudoGradAtNext, double[] currPoint, double[] nextPoint, double[] signVector, int fctEvalCount)	Update line search elements
+void setAll(double stepSize, double valueAtCurr, double valueAtNext, double[] gradAtCurr, double[] gradAtNext, double[] currPoint, double[] nextPoint, int fctEvalCount)	Update line search elements
+void setCurrPoint(double[] currPoint)	
+void setFctEvalCount(int fctEvalCount)	
+void setGradAtCurr(double[] gradAtCurr)	
+void setGradAtNext(double[] gradAtNext)	
+void setNextPoint(double[] nextPoint)	
+void setPseudoGradAtNext(double[] pseudoGradAtNext)	
+void setSignVector(double[] signVector)	
+void setStepSize(double stepSize)	
+void setValueAtCurr(double valueAtCurr)	
+void setValueAtNext(double valueAtNext)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

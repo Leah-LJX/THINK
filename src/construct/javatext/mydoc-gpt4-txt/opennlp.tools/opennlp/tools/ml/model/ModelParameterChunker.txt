@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.ml.model.ModelParameterChunker
+[Type] Class
+[Info]
+public final class ModelParameterChunker extends Object A helper class that handles Strings with more than 64k (65535 bytes) in length.  This is achieved via the signature SIGNATURE_CHUNKED_PARAMS at the beginning of  the String instance to be written to a DataOutputStream.    Background: In OpenNLP, for large(r) corpora, we train models whose (UTF String) parameters will exceed  the MAX_CHUNK_SIZE_BYTES bytes limit set in DataOutputStream.  For writing and reading those models, we have to chunk up those string instances in 64kB blocks and  recombine them correctly upon reading a (binary) model file.    The problem was raised in ticket OPENNLP-1366.    Solution strategy:   If writing parameters to a DataOutputStream blows up with a UTFDataFormatException a  large String instance is chunked up and written as appropriate blocks. To indicate that chunking was conducted, we start with the SIGNATURE_CHUNKED_PARAMS indicator,  directly followed by the number of chunks used. This way, when reading in chunked model parameters,  recombination is achieved transparently.
+ Note: Both, existing (binary) model files and newly trained models which don't require the chunking  technique, will be supported like in previous OpenNLP versions.
+Author: Martin Wiesner, Mark Struberg
+[Field Summary]
+static final String SIGNATURE_CHUNKED_PARAMS	
+[Method Summary]
+static String readUTF(DataInputStream dis)	Reads model parameters from dis.
+static void writeUTF(DataOutputStream dos, String s)	Writes the model parameter s to dos.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

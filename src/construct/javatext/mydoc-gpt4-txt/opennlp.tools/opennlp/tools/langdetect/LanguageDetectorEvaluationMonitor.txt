@@ -1,0 +1,8 @@
+[API Name] opennlp.tools.langdetect.LanguageDetectorEvaluationMonitor
+[Type] Interface
+[Info]
+All Superinterfaces: EvaluationMonitor<LanguageSample>
+All Known Implementing Classes: LanguageDetectorEvaluationErrorListener, LanguageDetectorFineGrainedReportListener
+public interface LanguageDetectorEvaluationMonitor extends EvaluationMonitor<LanguageSample> A marker interface for evaluating language detectors.
+[Methods inherited from interface opennlp.tools.util.eval.EvaluationMonitor]
+correctlyClassified, misclassified

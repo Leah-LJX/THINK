@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.dial.DialCap
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, DialLayer, org.jfree.util.PublicCloneable
+[Constructor Summary]
+DialCap() Creates a new instance of StandardDialBackground.
+[Method Summary]
+Object clone() Returns a clone of this instance.

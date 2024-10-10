@@ -1,0 +1,32 @@
+[Class] org.jfree.data.category.DefaultCategoryDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, PublicCloneable, CategoryDataset, Dataset, KeyedValues2D, Values2D
+Direct Known Subclasses: DefaultKeyedValues2DDataset, JDBCCategoryDataset
+[Constructor Summary]
+DefaultCategoryDataset()	Creates a new (empty) dataset.
+[Method Summary]
+void addValue(double value, Comparable rowKey, Comparable columnKey)	Adds a value to the table.
+void addValue(Number value, Comparable rowKey, Comparable columnKey)	Adds a value to the table.
+void clear()	Clears all data from the dataset and sends a DatasetChangeEvent to all registered listeners.
+Object clone()	Returns a clone of the dataset.
+boolean equals(Object obj)	Tests this dataset for equality with an arbitrary object.
+int getColumnCount()	Returns the number of columns in the table.
+int getColumnIndex(Comparable key)	Returns the column index for a given key.
+Comparable getColumnKey(int column)	Returns a column key.
+List getColumnKeys()	Returns the column keys.
+int getRowCount()	Returns the number of rows in the table.
+int getRowIndex(Comparable key)	Returns the row index for a given key.
+Comparable getRowKey(int row)	Returns the key for the specified row.
+List getRowKeys()	Returns the row keys.
+Number getValue(int row, int column)	Returns a value from the table.
+Number getValue(Comparable rowKey, Comparable columnKey)	Returns the value for a pair of keys.
+int hashCode()	Returns a hash code for the dataset.
+void incrementValue(double value, Comparable rowKey, Comparable columnKey)	Adds the specified value to an existing value in the dataset (if the existing value is null, it is treated as if it were 0.0).
+void removeColumn(int columnIndex)	Removes a column from the dataset and sends a DatasetChangeEvent to all registered listeners.
+void removeColumn(Comparable columnKey)	Removes a column from the dataset and sends a DatasetChangeEvent to all registered listeners.
+void removeRow(int rowIndex)	Removes a row from the dataset and sends a DatasetChangeEvent to all registered listeners.
+void removeRow(Comparable rowKey)	Removes a row from the dataset and sends a DatasetChangeEvent to all registered listeners.
+void removeValue(Comparable rowKey, Comparable columnKey)	Removes a value from the dataset and sends a DatasetChangeEvent to all registered listeners.
+void setValue(double value, Comparable rowKey, Comparable columnKey)	Adds or updates a value in the table and sends a DatasetChangeEvent to all registered listeners.
+void setValue(Number value, Comparable rowKey, Comparable columnKey)	Adds or updates a value in the table and sends a DatasetChangeEvent to all registered listeners.

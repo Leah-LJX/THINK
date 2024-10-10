@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.entity.EntityCollection
+[Flag] Interface
+[Info]
+All Known Implementing Classes: StandardEntityCollection
+[Constructor Summary]
+
+[Method Summary]
+void add(ChartEntity entity) Adds an entity to the collection.

@@ -1,0 +1,15 @@
+[API Name] Package org.apache.commons.imaging.formats.png.PhysicalScale
+[Type] Class
+[Info]
+public class PhysicalScale extends Object Used to specify physical scale when reading or storing image information.
+[Field Summary]
+static PhysicalScale UNDEFINED	
+[Method Summary]
+static PhysicalScale createFromMeters​(double x, double y)	
+static PhysicalScale createFromRadians​(double x, double y)	
+double getHorizontalUnitsPerPixel()	
+double getVerticalUnitsPerPixel()	
+boolean isInMeters()	
+boolean isInRadians()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

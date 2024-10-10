@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.event.AnnotationChangeListener
+[Flag] Interface
+[Info]
+All Superinterfaces: EventListener
+All Known Implementing Classes: AbstractXYItemRenderer, CandlestickRenderer, CategoryPlot, ClusteredXYBarRenderer, CombinedDomainCategoryPlot, CombinedDomainXYPlot, CombinedRangeCategoryPlot, CombinedRangeXYPlot, CompassPlot, ContourPlot, CyclicXYItemRenderer, DefaultXYItemRenderer, DeviationRenderer, DialPlot, FastScatterPlot, HighLowRenderer, MeterPlot, MultiplePiePlot, PiePlot, PiePlot3D, Plot, PolarPlot, RingPlot, SamplingXYLineRenderer, SpiderWebPlot, StackedXYAreaRenderer, StackedXYAreaRenderer2, StackedXYBarRenderer, StandardXYItemRenderer, ThermometerPlot, VectorRenderer, WaferMapPlot, WindItemRenderer, XYAreaRenderer, XYAreaRenderer2, XYBarRenderer, XYBlockRenderer, XYBoxAndWhiskerRenderer, XYBubbleRenderer, XYDifferenceRenderer, XYDotRenderer, XYErrorRenderer, XYLine3DRenderer, XYLineAndShapeRenderer, XYPlot, XYShapeRenderer, XYSplineRenderer, XYStepAreaRenderer, XYStepRenderer, YIntervalRenderer
+[Constructor Summary]
+
+[Method Summary]
+void annotationChanged(AnnotationChangeEvent event) Receives notification of an annotation change event.

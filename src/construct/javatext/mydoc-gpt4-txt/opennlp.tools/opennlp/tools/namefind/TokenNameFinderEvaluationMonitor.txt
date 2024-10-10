@@ -1,0 +1,8 @@
+[API Name] opennlp.tools.namefind.TokenNameFinderEvaluationMonitor
+[Type] Interface
+[Info]
+All Superinterfaces: EvaluationMonitor<NameSample>
+All Known Implementing Classes: NameEvaluationErrorListener, TokenNameFinderDetailedFMeasureListener, TokenNameFinderFineGrainedReportListener
+public interface TokenNameFinderEvaluationMonitor extends EvaluationMonitor<NameSample> A marker interface for evaluating name finders.
+[Methods inherited from interface opennlp.tools.util.eval.EvaluationMonitor]
+correctlyClassified, misclassified

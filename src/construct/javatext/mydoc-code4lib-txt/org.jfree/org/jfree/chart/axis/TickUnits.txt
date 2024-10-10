@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.TickUnits
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, TickUnitSource
+[Constructor Summary]
+TickUnits() Constructs a new collection of tick units.
+[Method Summary]
+void add(TickUnit unit) Adds a tick unit to the collection.

@@ -1,0 +1,19 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.photometricinterpreters.PhotometricInterpreter
+[Type] Class
+[Info]
+Direct Known Subclasses: PhotometricInterpreterBiLevel, PhotometricInterpreterCieLab, PhotometricInterpreterCmyk, PhotometricInterpreterFloat, PhotometricInterpreterLogLuv, PhotometricInterpreterPalette, PhotometricInterpreterRgb, PhotometricInterpreterYCbCr
+public abstract class PhotometricInterpreter extends Object Interpreter for photometric information in TIFF images. The photometric  interpretation tag is a requirement for valid TIFF images, and defines the  color space of the image data.
+See Also:
+      Baseline TIFF Tag PhotometricInterpretation
+[Constructor Summary]
+PhotometricInterpreter​(int samplesPerPixel, int[] bitsPerSample, int predictor, int width, int height)	
+[Field Summary]
+protected int height	
+protected int predictor	
+protected int samplesPerPixel	
+protected int width	
+[Method Summary]
+protected int getBitsPerSample​(int offset)	
+abstract void interpretPixel​(ImageBuilder imageBuilder, int[] samples, int x, int y)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

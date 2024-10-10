@@ -1,0 +1,26 @@
+[API Name] opennlp.tools.lemmatizer.LemmatizerME
+[Type] Class
+[Info]
+All Implemented Interfaces: Lemmatizer
+public class LemmatizerME extends Object implements Lemmatizer A probabilistic Lemmatizer implementation.    Tries to predict the induced permutation class for each word depending on  its surrounding context.    Based on Grzegorz Chrupała. 2008.    Towards a Machine-Learning Architecture for Lexical Functional Grammar Parsing.   PhD dissertation, Dublin City University
+[Constructor Summary]
+LemmatizerME(LemmatizerModel model)	Initializes a LemmatizerME with the provided model and a default beam size of 3.
+[Field Summary]
+static final int DEFAULT_BEAM_SIZE	
+static final int LEMMA_NUMBER	
+[Method Summary]
+static String[] decodeLemmas(String[] toks, String[] preds)	Decodes the lemma from the word and the induced lemma class.
+static String[] encodeLemmas(String[] toks, String[] lemmas)	Encodes the word given its lemmas.
+String[] lemmatize(String[] toks, String[] tags)	Generates lemmas for the word and postag.
+List<List<String>> lemmatize(List<String> toks, List<String> tags)	Generates lemma tags for the word and postag.
+String[][] predictLemmas(int numLemmas, String[] toks, String[] tags)	Predict all possible lemmas (using a default upper bound).
+String[] predictSES(String[] toks, String[] tags)	Predict Short Edit Script (automatically induced lemma class).
+double[] probs()	Returns an array with the probabilities of the last decoded sequence.
+void probs(double[] probs)	Populates the specified array with the probabilities of the last decoded sequence.
+Sequence[] topKLemmaClasses(String[] sentence, String[] tags)	
+Sequence[] topKLemmaClasses(String[] sentence, String[] tags, double minSequenceScore)	
+Sequence[] topKSequences(String[] sentence, String[] tags)	
+Sequence[] topKSequences(String[] sentence, String[] tags, double minSequenceScore)	
+static LemmatizerModel train(String languageCode, ObjectStream<LemmaSample> samples, TrainingParameters params, LemmatizerFactory factory)	Starts a training of a LemmatizerModel with the given parameters.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

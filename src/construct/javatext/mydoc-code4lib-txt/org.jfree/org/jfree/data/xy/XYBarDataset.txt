@@ -1,0 +1,28 @@
+[Class] org.jfree.data.xy.XYBarDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, PublicCloneable, Dataset, DatasetChangeListener, SeriesChangeListener, SeriesDataset, IntervalXYDataset, XYDataset
+[Constructor Summary]
+XYBarDataset(XYDataset underlying, double barWidth)	Creates a new dataset.
+[Method Summary]
+Object clone()	Returns an independent copy of the dataset.
+void datasetChanged(DatasetChangeEvent event)	Receives notification of an dataset change event.
+boolean equals(Object obj)	Tests this dataset for equality with an arbitrary object.
+double getBarWidth()	Returns the bar width.
+Number getEndX(int series, int item)	Returns the ending X value for the specified series and item.
+double getEndXValue(int series, int item)	Returns the ending x-value (as a double primitive) for an item within a series.
+Number getEndY(int series, int item)	Returns the ending Y value for the specified series and item.
+double getEndYValue(int series, int item)	Returns the ending y-value (as a double primitive) for an item within a series.
+int getItemCount(int series)	Returns the number of items in a series.
+int getSeriesCount()	Returns the number of series in the dataset.
+Comparable getSeriesKey(int series)	Returns the key for a series.
+Number getStartX(int series, int item)	Returns the starting X value for the specified series and item.
+double getStartXValue(int series, int item)	Returns the starting x-value (as a double primitive) for an item within a series.
+Number getStartY(int series, int item)	Returns the starting Y value for the specified series and item.
+double getStartYValue(int series, int item)	Returns the starting y-value (as a double primitive) for an item within a series.
+XYDataset getUnderlyingDataset()	Returns the underlying dataset that was specified via the constructor.
+Number getX(int series, int item)	Returns the x-value for an item within a series.
+double getXValue(int series, int item)	Returns the x-value (as a double primitive) for an item within a series.
+Number getY(int series, int item)	Returns the y-value for an item within a series.
+double getYValue(int series, int item)	Returns the y-value (as a double primitive) for an item within a series.
+void setBarWidth(double barWidth)	Sets the bar width and sends a DatasetChangeEvent to all registered listeners.

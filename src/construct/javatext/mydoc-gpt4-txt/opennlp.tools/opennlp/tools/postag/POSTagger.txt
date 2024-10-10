@@ -1,0 +1,10 @@
+[API Name] opennlp.tools.postag.POSTagger
+[Type] Interface
+[Info]
+All Known Implementing Classes: POSTaggerME
+public interface POSTagger The interface for part of speech taggers.
+[Method Summary]
+String[] tag(String[] sentence)	Assigns the sentence of tokens pos tags.
+String[] tag(String[] sentence, Object[] additionalContext)	Assigns the sentence of tokens pos tags.
+Sequence[] topKSequences(String[] sentence)	Assigns the sentence the top-k sequences.
+Sequence[] topKSequences(String[] sentence, Object[] additionalContext)	Assigns the sentence the top-k sequences.

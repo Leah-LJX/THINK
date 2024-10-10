@@ -1,0 +1,20 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.color.PDTristimulus
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class PDTristimulus extends Object implements COSObjectable A tristimulus, or collection of three floating point parameters used for color operations.
+Author: Ben Litchfield
+[Constructor Summary]
+PDTristimulus()	Constructor.
+PDTristimulus(COSArray array)	Constructor from COS object.
+PDTristimulus(float[] array)	Constructor from COS object.
+[Method Summary]
+COSBase getCOSObject()	Convert this standard java object to a COS object.
+float getX()	Returns the x value of the tristimulus.
+float getY()	Returns the y value of the tristimulus.
+float getZ()	Returns the z value of the tristimulus.
+void setX(float x)	Sets the x value of the tristimulus.
+void setY(float y)	Sets the y value of the tristimulus.
+void setZ(float z)	Sets the z value of the tristimulus.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

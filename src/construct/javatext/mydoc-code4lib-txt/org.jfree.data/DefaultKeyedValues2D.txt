@@ -1,0 +1,29 @@
+[Class] org.jfree.data.DefaultKeyedValues2D
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, PublicCloneable, KeyedValues2D, Values2D
+[Constructor Summary]
+DefaultKeyedValues2D()	Creates a new instance (initially empty).
+DefaultKeyedValues2D(boolean sortRowKeys)	Creates a new instance (initially empty).
+[Method Summary]
+void addValue(Number value, Comparable rowKey, Comparable columnKey)	Adds a value to the table.
+void clear()	Clears all the data and associated keys.
+Object clone()	Returns a clone.
+boolean equals(Object o)	Tests if this object is equal to another.
+int getColumnCount()	Returns the column count.
+int getColumnIndex(Comparable key)	Returns the column index for a given key.
+Comparable getColumnKey(int column)	Returns the key for a given column.
+List getColumnKeys()	Returns the column keys in an unmodifiable list.
+int getRowCount()	Returns the row count.
+int getRowIndex(Comparable key)	Returns the row index for a given key.
+Comparable getRowKey(int row)	Returns the key for a given row.
+List getRowKeys()	Returns the row keys in an unmodifiable list.
+Number getValue(int row, int column)	Returns the value for a given row and column.
+Number getValue(Comparable rowKey, Comparable columnKey)	Returns the value for the given row and column keys.
+int hashCode()	Returns a hash code.
+void removeColumn(int columnIndex)	Removes a column.
+void removeColumn(Comparable columnKey)	Removes a column from the table.
+void removeRow(int rowIndex)	Removes a row.
+void removeRow(Comparable rowKey)	Removes a row from the table.
+void removeValue(Comparable rowKey, Comparable columnKey)	Removes a value from the table by setting it to null.
+void setValue(Number value, Comparable rowKey, Comparable columnKey)	Adds or updates a value.

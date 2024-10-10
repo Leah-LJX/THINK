@@ -1,0 +1,26 @@
+[Class] org.joda.time.field.RemainderDateTimeField
+[Flag] Class
+[Info]
+Since: 1.0
+See Also: DividedDateTimeField
+[Constructor Summary]
+RemainderDateTimeField(DateTimeField field,	DateTimeFieldType type,	int divisor)	Constructor.
+RemainderDateTimeField(DateTimeField field,	DurationField rangeField,	DateTimeFieldType type,	int divisor)	Constructor.
+RemainderDateTimeField(DividedDateTimeField dividedField)	Construct a RemainderDateTimeField that compliments the given	 DividedDateTimeField.
+RemainderDateTimeField(DividedDateTimeField dividedField,	DateTimeFieldType type)	Construct a RemainderDateTimeField that compliments the given	 DividedDateTimeField.
+RemainderDateTimeField(DividedDateTimeField dividedField,	DurationField durationField,	DateTimeFieldType type)	Construct a RemainderDateTimeField that compliments the given	 DividedDateTimeField.
+[Method Summary]
+long addWrapField(long instant, int amount) Add the specified amount to the specified time instant, wrapping around within the remainder range if necessary.
+int get(long instant) Get the remainder from the specified time instant.
+int getDivisor() Returns the divisor applied, in the field's units.
+DurationField getDurationField() Returns the duration per unit value of this field.
+int getMaximumValue() Get the maximum value for the field, which is always one less than the divisor.
+int getMinimumValue() Get the minimum value for the field, which is always zero.
+DurationField getRangeDurationField() Returns a scaled version of the wrapped field's unit duration field.
+long remainder(long instant) Returns the fractional duration milliseconds of this field.
+long roundCeiling(long instant) Round to the highest whole unit of this field.
+long roundFloor(long instant) Round to the lowest whole unit of this field.
+long roundHalfCeiling(long instant) Round to the nearest whole unit of this field.
+long roundHalfEven(long instant) Round to the nearest whole unit of this field.
+long roundHalfFloor(long instant) Round to the nearest whole unit of this field.
+long set(long instant, int value) Set the specified amount of remainder units to the specified time instant.

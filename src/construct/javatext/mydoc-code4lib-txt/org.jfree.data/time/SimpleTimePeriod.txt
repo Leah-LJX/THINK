@@ -1,0 +1,15 @@
+[Class] org.jfree.data.time.SimpleTimePeriod
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable, TimePeriod
+[Constructor Summary]
+SimpleTimePeriod(long start, long end)	Creates a new time allocation.
+SimpleTimePeriod(Date start, Date end)	Creates a new time allocation.
+[Method Summary]
+int compareTo(Object obj)	Returns an integer that indicates the relative ordering of two time periods.
+boolean equals(Object obj)	Tests this time period instance for equality with an arbitrary object.
+Date getEnd()	Returns the end date/time.
+long getEndMillis()	Returns the end date/time in milliseconds.
+Date getStart()	Returns the start date/time.
+long getStartMillis()	Returns the start date/time in milliseconds.
+int hashCode()	Returns a hash code for this object instance.

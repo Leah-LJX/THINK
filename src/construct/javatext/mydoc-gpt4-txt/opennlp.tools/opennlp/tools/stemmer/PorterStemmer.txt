@@ -1,0 +1,23 @@
+[API Name] opennlp.tools.stemmer.PorterStemmer
+[Type] Class
+[Info]
+All Implemented Interfaces: Stemmer
+public class PorterStemmer extends Object implements Stemmer A Stemmer, implementing the   Porter Stemming Algorithm
+ The Stemmer implementation transforms a word into its root form. The input  word can be provided a character at time (by calling add(char)),  or at once by calling one of the various stem(..) methods.
+[Constructor Summary]
+PorterStemmer()	
+[Method Summary]
+void add(char ch)	Add a character to the word being stemmed.
+char[] getResultBuffer()	Returns a reference to a character buffer containing the results of the stemming process.
+int getResultLength()	Returns the length of the word resulting from the stemming process.
+void reset()	reset() resets the stemmer so it can stem another word.
+boolean stem()	Stem the word placed into the Stemmer buffer through calls to add().
+boolean stem(char[] word)	Stem a word contained in a char[].
+boolean stem(char[] word, int wordLen)	Stem a word contained in a leading portion of a char[] array.
+boolean stem(char[] wordBuffer, int offset, int wordLen)	Stem a word contained in a portion of a char[] array.
+boolean stem(int i0)	
+CharSequence stem(CharSequence word)	Stem a word provided as a CharSequence.
+String stem(String s)	Stem a word provided as a String.
+String toString()	After a word has been stemmed, it can be retrieved by toString(), or a reference to the internal buffer can be retrieved by getResultBuffer and getResultLength (which is generally more efficient.)
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, wait, wait, wait

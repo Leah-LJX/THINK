@@ -1,0 +1,7 @@
+[API Name] opennlp.tools.util.model.SerializableArtifact
+[Type] Interface
+[Info]
+All Known Implementing Classes: AncoraSpanishHeadRules, BrownCluster, Dictionary, HeadRules, POSDictionary, POSModel, WordClusterDictionary
+public interface SerializableArtifact A marker interface so that implementing classes can refer to  the corresponding ArtifactSerializer implementation.
+[Method Summary]
+Class<?> getArtifactSerializerClass()	Retrieves the class which can serialize and recreate this artifact.

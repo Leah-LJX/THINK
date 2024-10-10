@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.plot.dial.DialPointer.Pin
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, DialLayer, org.jfree.util.PublicCloneable
+Enclosing class: DialPointer
+[Constructor Summary]
+Pin() Creates a new instance.
+[Method Summary]
+void draw(Graphics2D g2, DialPlot plot, Rectangle2D frame, Rectangle2D view) Draws the pointer.

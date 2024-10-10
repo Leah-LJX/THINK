@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.annotations.Annotation
+[Flag] Interface
+[Info]
+All Known Subinterfaces: CategoryAnnotation, XYAnnotation
+All Known Implementing Classes: AbstractAnnotation, AbstractXYAnnotation, CategoryLineAnnotation, CategoryPointerAnnotation, CategoryTextAnnotation, TextAnnotation, XYBoxAnnotation, XYDataImageAnnotation, XYDrawableAnnotation, XYImageAnnotation, XYLineAnnotation, XYPointerAnnotation, XYPolygonAnnotation, XYShapeAnnotation, XYTextAnnotation, XYTitleAnnotation
+[Constructor Summary]
+
+[Method Summary]
+void addChangeListener(AnnotationChangeListener listener) Registers an object for notification of changes to the annotation.

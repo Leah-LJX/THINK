@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.MultiplePiePlot
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, AnnotationChangeListener, AxisChangeListener, MarkerChangeListener, LegendItemSource, DatasetChangeListener, org.jfree.util.PublicCloneable
+[Constructor Summary]
+MultiplePiePlot() Creates a new plot with no data.
+[Method Summary]
+Object clone() Returns a clone of the plot.

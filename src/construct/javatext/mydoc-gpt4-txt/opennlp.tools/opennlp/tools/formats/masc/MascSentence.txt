@@ -1,0 +1,20 @@
+[API Name] opennlp.tools.formats.masc.MascSentence
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<Span>
+public class MascSentence extends Span
+See Also:
+Serialized Form
+[Constructor Summary]
+MascSentence(int s, int e, String text, List<MascWord> sentenceQuarks, List<MascWord> allQuarks)	Initializes a MascSentence containing its associated text and quarks
+[Method Summary]
+List<Span> getNamedEntities()	
+String getSentDetectText()	
+List<String> getTags()	
+List<Span> getTokensSpans()	Retrieves the boundaries of individual tokens.
+List<String> getTokenStrings()	
+String getTokenText()	
+[Methods inherited from class opennlp.tools.util.Span]
+compareTo, contains, contains, crosses, equals, getCoveredText, getEnd, getProb, getStart, getType, hashCode, intersects, length, spansToStrings, spansToStrings, startsWith, toString, trim
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

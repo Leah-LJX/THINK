@@ -1,0 +1,21 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.pattern.PDShadingPattern
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDShadingPattern extends PDAbstractPattern A shading pattern dictionary.
+[Constructor Summary]
+PDShadingPattern()	Creates a new shading pattern.
+PDShadingPattern(COSDictionary resourceDictionary)	Creates a new shading pattern from the given COS dictionary.
+[Field Summary]
+PDShadingPattern()	Creates a new shading pattern.
+PDShadingPattern(COSDictionary resourceDictionary)	Creates a new shading pattern from the given COS dictionary.
+[Method Summary]
+PDExtendedGraphicsState getExtendedGraphicsState()	This will get the external graphics state for this pattern.
+int getPatternType()	This will return the pattern type.
+PDShading getShading()	This will get the shading resources for this pattern.
+void setExtendedGraphicsState(PDExtendedGraphicsState extendedGraphicsState)	This will set the external graphics state for this pattern.
+void setShading(PDShading shadingResources)	This will set the shading resources for this pattern.
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.pattern.PDAbstractPattern]
+create, getCOSObject, getMatrix, getType, setMatrix, setPaintType, setPatternType
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

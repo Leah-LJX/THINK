@@ -1,0 +1,27 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigProperties
+[Type] Class
+[Info]
+public class PDVisibleSigProperties extends Object This builder class is in order to create visible signature properties.
+Author: Vakhtang Koroghlishvili
+[Constructor Summary]
+PDVisibleSigProperties()	
+[Method Summary]
+void buildSignature()	start building of visible signature
+int getPage()	returns your page
+PDVisibleSignDesigner getPdVisibleSignature()	this method gets visible signature configuration object
+int getPreferredSize()	Gets the preferred signature size in bytes.
+String getSignatureReason()	gets reason of signing
+String getSignerLocation()	Gets signer location
+String getSignerName()	
+InputStream getVisibleSignature()	returns visible signature configuration object
+boolean isVisualSignEnabled()	checks if we need to add visible signature
+PDVisibleSigProperties page(int page)	sets page number
+PDVisibleSigProperties preferredSize(int preferredSize)	Sets the preferred signature size in bytes.
+PDVisibleSigProperties setPdVisibleSignature(PDVisibleSignDesigner pdVisibleSignature)	Sets visible signature configuration Object
+void setVisibleSignature(InputStream visibleSignature)	sets configuration object of visible signature
+PDVisibleSigProperties signatureReason(String signatureReason)	sets reason of signing
+PDVisibleSigProperties signerLocation(String signerLocation)	Sets location
+PDVisibleSigProperties signerName(String signerName)	Sets signer name
+PDVisibleSigProperties visualSignEnabled(boolean visualSignEnabled)	sets visible signature to be added or not
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

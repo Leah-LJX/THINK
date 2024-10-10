@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.annotations.CategoryLineAnnotation
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Annotation, CategoryAnnotation, org.jfree.util.PublicCloneable
+[Constructor Summary]
+CategoryLineAnnotation(Comparable category1, double value1, Comparable category2, double value2, Paint paint, Stroke stroke) Creates a new annotation that draws a line between (category1, value1) and (category2, value2).
+[Method Summary]
+Object clone() Returns a clone of the annotation.

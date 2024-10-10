@@ -1,0 +1,8 @@
+[Class] org.jfree.data.function.Function2D
+[Flag] Interface
+[Info]
+All Known Implementing Classes: LineFunction2D, NormalDistributionFunction2D, PolynomialFunction2D, PowerFunction2D
+[Constructor Summary]
+
+[Method Summary]
+double getValue(double x)	Returns the value of the function ('y') for a given input ('x').

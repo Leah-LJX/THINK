@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.urls.CustomXYURLGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, XYURLGenerator, org.jfree.util.PublicCloneable
+[Constructor Summary]
+CustomXYURLGenerator() Default constructor.
+[Method Summary]
+void addURLSeries(List urls) Adds a list of URLs.

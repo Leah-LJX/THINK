@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.labels.XYToolTipGenerator
+[Flag] Interface
+[Info]
+All Known Subinterfaces: XYZToolTipGenerator
+All Known Implementing Classes: BoxAndWhiskerXYToolTipGenerator, CustomXYToolTipGenerator, HighLowItemLabelGenerator, StandardXYToolTipGenerator, StandardXYZToolTipGenerator, SymbolicXYItemLabelGenerator
+[Constructor Summary]
+
+[Method Summary]
+String generateToolTip(XYDataset dataset, int series, int item) Generates the tooltip text for the specified item.

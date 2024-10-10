@@ -1,0 +1,9 @@
+[API Name] opennlp.tools.util.ResetableIterator<E>
+[Type] Interface
+[Info]
+All Superinterfaces: Iterator<E>
+public interface ResetableIterator<E> extends Iterator<E> This interface makes an Iterator resettable.
+[Method Summary]
+void reset()	Sets the Iterator back to the first retrieved element.
+[Methods inherited from interface java.util.Iterator]
+forEachRemaining, hasNext, next, remove

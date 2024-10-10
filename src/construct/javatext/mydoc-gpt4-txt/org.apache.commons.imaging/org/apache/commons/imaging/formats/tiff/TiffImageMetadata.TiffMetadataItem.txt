@@ -1,0 +1,14 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.TiffImageMetadata.TiffMetadataItem
+[Type] Class
+[Info]
+All Implemented Interfaces: ImageMetadata.ImageMetadataItem
+Enclosing class: TiffImageMetadata
+public static class TiffImageMetadata.TiffMetadataItem extends GenericImageMetadata.GenericImageMetadataItem
+[Constructor Summary]
+TiffMetadataItem​(TiffField entry)	
+[Method Summary]
+TiffField getTiffField()	
+[Methods inherited from class org.apache.commons.imaging.common.GenericImageMetadata.GenericImageMetadataItem]
+getKeyword, getText, toString, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

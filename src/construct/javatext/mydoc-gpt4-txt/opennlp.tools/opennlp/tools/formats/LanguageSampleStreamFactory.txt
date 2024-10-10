@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.formats.LanguageSampleStreamFactory<T,P>
+[Type] Class
+[Info]
+All Implemented Interfaces: opennlp.tools.cmdline.ObjectStreamFactory<T,P>
+Direct Known Subclasses: ADChunkSampleStreamFactory, ADNameSampleStreamFactory, ADPOSSampleStreamFactory, ADSentenceSampleStreamFactory, Conll02NameSampleStreamFactory, Conll03NameSampleStreamFactory, EvalitaNameSampleStreamFactory, ParseToPOSSampleStreamFactory, TokenSampleStreamFactory
+public abstract class LanguageSampleStreamFactory<T,P> extends AbstractSampleStreamFactory<T,P> Stream factory for those streams which carry language.
+[Method Summary]
+String getLang()	
+[Methods inherited from class opennlp.tools.formats.AbstractSampleStreamFactory]
+getParameters
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface opennlp.tools.cmdline.ObjectStreamFactory]
+create

@@ -1,0 +1,18 @@
+[API Name] opennlp.tools.util.featuregen.DictionaryFeatureGenerator
+[Type] Class
+[Info]
+All Implemented Interfaces: AdaptiveFeatureGenerator
+public class DictionaryFeatureGenerator extends Object implements AdaptiveFeatureGenerator The DictionaryFeatureGenerator uses the DictionaryNameFinder  to generated features for detected names based on the InSpanGenerator.
+See Also:
+Dictionary DictionaryNameFinder InSpanGenerator
+[Constructor Summary]
+DictionaryFeatureGenerator(String prefix, Dictionary dict)	
+DictionaryFeatureGenerator(Dictionary dict)	
+[Method Summary]
+void createFeatures(List<String> features, String[] tokens, int index, String[] previousOutcomes)	Adds the appropriate features for the token at the specified index with the specified array of previousOutcomes to the specified list of features.
+void setDictionary(String name, Dictionary dict)	
+void setDictionary(Dictionary dict)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface opennlp.tools.util.featuregen.AdaptiveFeatureGenerator]
+clearAdaptiveData, updateAdaptiveData

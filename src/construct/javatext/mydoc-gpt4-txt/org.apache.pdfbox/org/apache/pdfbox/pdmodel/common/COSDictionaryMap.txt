@@ -1,0 +1,32 @@
+[API Name] org.apache.pdfbox.pdmodel.common.COSDictionaryMap<K,V>
+[Type] Class
+[Info]
+All Implemented Interfaces: Map<K,V>
+public class COSDictionaryMap<K,V> extends Object implements Map<K,V> This is a Map that will automatically sync the contents to a COSDictionary.
+Author: Ben Litchfield
+[Constructor Summary]
+COSDictionaryMap(Map<K,V> actualsMap, COSDictionary dicMap)	Constructor for this map.
+[Nested Class Summary]
+COSDictionaryMap(Map<K,V> actualsMap, COSDictionary dicMap)	Constructor for this map.
+[Method Summary]
+void clear()	
+boolean containsKey(Object key)	
+boolean containsValue(Object value)	
+static COSDictionary convert(Map<String,?> someMap)	This will take a map<java.lang.String,org.apache.pdfbox.pdmodel.COSObjectable> and convert it into a COSDictionary.
+static COSDictionaryMap<String,Object> convertBasicTypesToMap(COSDictionary map)	This will take a COS dictionary and convert it into COSDictionaryMap.
+Set<Map.Entry<K,V>> entrySet()	
+boolean equals(Object o)	
+V get(Object key)	
+int hashCode()	
+boolean isEmpty()	
+Set<K> keySet()	
+V put(K key, V value)	
+void putAll(Map<? extends K,? extends V> t)	
+V remove(Object key)	
+int size()	
+String toString()	
+Collection<V> values()	
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait
+[Methods inherited from interface java.util.Map]
+compute, computeIfAbsent, computeIfPresent, forEach, getOrDefault, merge, putIfAbsent, remove, replace, replace, replaceAll

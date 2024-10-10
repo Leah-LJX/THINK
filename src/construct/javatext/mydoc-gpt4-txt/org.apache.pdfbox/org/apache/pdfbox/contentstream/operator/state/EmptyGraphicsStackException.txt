@@ -1,0 +1,10 @@
+[API Name] org.apache.pdfbox.contentstream.operator.state.EmptyGraphicsStackException
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable
+public final class EmptyGraphicsStackException extends IOException Throw when restore is executed when the graphics stack is empty.
+See Also: Serialized Form
+[Methods inherited from class java.lang.Throwable]
+addSuppressed, fillInStackTrace, getCause, getLocalizedMessage, getMessage, getStackTrace, getSuppressed, initCause, printStackTrace, printStackTrace, printStackTrace, setStackTrace, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

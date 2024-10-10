@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.formats.Class
+[Type] Enum
+[Info]
+All Implemented Interfaces: Serializable, Comparable<Conll03NameSampleStream.LANGUAGE>, Constable
+Enclosing class: Conll03NameSampleStream
+public static enum Conll03NameSampleStream.LANGUAGE extends Enum<Conll03NameSampleStream.LANGUAGE>
+[Nested Class Summary]
+Nested Class Summary
+Enum.EnumDesc<E extends Enum<E>>
+[Method Summary]
+static Conll03NameSampleStream.LANGUAGE valueOf(String name)	Returns the enum constant of this class with the specified name.
+static Conll03NameSampleStream.LANGUAGE[] values()	Returns an array containing the constants of this enum class, in the order they are declared.
+[Methods inherited from class java.lang.Enum]
+compareTo, describeConstable, equals, getDeclaringClass, hashCode, name, ordinal, toString, valueOf
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

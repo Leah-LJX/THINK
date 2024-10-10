@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.event.OverlayChangeListener
+[Flag] Interface
+[Info]
+All Superinterfaces: EventListener
+All Known Implementing Classes: ChartPanel, PolarChartPanel
+[Constructor Summary]
+
+[Method Summary]
+void overlayChanged(OverlayChangeEvent event) This method is called to notify a listener of a change event.

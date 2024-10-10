@@ -1,0 +1,33 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.form.PDFormXObject
+[Type] Class
+[Info]
+All Implemented Interfaces: PDContentStream, COSObjectable
+Direct Known Subclasses: PDAppearanceStream, PDTransparencyGroup
+public class PDFormXObject extends PDXObject implements PDContentStream A Form XObject.
+Author: Ben Litchfield
+[Constructor Summary]
+PDFormXObject(COSStream stream)	Creates a Form XObject for reading.
+PDFormXObject(COSStream stream, ResourceCache cache)	Creates a Form XObject for reading.
+PDFormXObject(PDDocument document)	Creates a Form Image XObject for writing, in the given document.
+PDFormXObject(PDStream stream)	Creates a Form XObject for reading.
+[Method Summary]
+PDRectangle getBBox()	An array of four numbers in the form coordinate system (see below), giving the coordinates of the left, bottom, right, and top edges, respectively, of the form XObject's bounding box.
+InputStream getContents()	Returns this stream's content, if any.
+org.apache.pdfbox.io.RandomAccessRead getContentsForRandomAccess()	Returns this stream's content, if any.
+PDStream getContentStream()	
+int getFormType()	This will get the form type, currently 1 is the only form type.
+PDTransparencyGroupAttributes getGroup()	Returns the group attributes dictionary.
+Matrix getMatrix()	This will get the optional matrix of an XObjectForm.
+PDPropertyList getOptionalContent()	This will get the optional content group or optional content membership dictionary.
+PDResources getResources()	This will get the resources for this Form XObject.
+int getStructParents()	This will get the key of this XObjectForm in the structural parent tree.
+void setBBox(PDRectangle bbox)	This will set the BBox (bounding box) for this form.
+void setFormType(int formType)	Set the form type.
+void setMatrix(AffineTransform transform)	Sets the optional Matrix entry for the form XObject.
+void setOptionalContent(PDPropertyList oc)	Sets the optional content group or optional content membership dictionary.
+void setResources(PDResources resources)	This will set the resources for this page.
+void setStructParents(int structParent)	This will set the key for this XObjectForm in the structural parent tree.
+[Methods inherited from class org.apache.pdfbox.pdmodel.graphics.PDXObject]
+createXObject, getCOSObject, getStream
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

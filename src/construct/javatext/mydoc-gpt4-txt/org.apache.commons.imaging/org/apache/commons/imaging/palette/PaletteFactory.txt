@@ -1,0 +1,20 @@
+[API Name] Package org.apache.commons.imaging.palette.PaletteFactory
+[Type] Class
+[Info]
+public class PaletteFactory extends Object Factory for creating palettes.
+[Constructor Summary]
+PaletteFactory()	
+[Field Summary]
+static int COMPONENTS	
+[Method Summary]
+int countTransparentColors​(BufferedImage src)	
+int countTrasparentColors​(int[] rgbs)	
+boolean hasTransparency​(BufferedImage src)	
+boolean hasTransparency​(BufferedImage src, int threshold)	
+boolean isGrayscale​(BufferedImage src)	
+Palette makeExactRgbPaletteFancy​(BufferedImage src)	Builds an exact complete opaque palette containing all the colors in src, using an algorithm that is faster than makeExactRgbPaletteSimple(java.awt.image.BufferedImage, int) for large images but uses 2 mebibytes of working memory.
+SimplePalette makeExactRgbPaletteSimple​(BufferedImage src, int max)	Builds an exact complete opaque palette containing all the colors in src, and fails by returning null if there are more than max colors necessary to do this.
+Palette makeQuantizedRgbaPalette​(BufferedImage src, boolean transparent, int max)	Builds an inexact possibly translucent palette of at most max colors in src using the traditional Median Cut algorithm.
+Palette makeQuantizedRgbPalette​(BufferedImage src, int max)	Builds an inexact opaque palette of at most max colors in src using a variation of the Median Cut algorithm.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

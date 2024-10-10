@@ -1,0 +1,12 @@
+[Class] org.w3c.dom.svg.SVGZoomEvent
+[Flag] Interface
+[Info]
+All Superinterfaces: Event, UIEvent
+[Constructor Summary]
+
+[Method Summary]
+float getNewScale()	 
+ SVGPoint getNewTranslate()	 
+ float getPreviousScale()	 
+ SVGPoint getPreviousTranslate()	 
+ SVGRect getZoomRectScreen()

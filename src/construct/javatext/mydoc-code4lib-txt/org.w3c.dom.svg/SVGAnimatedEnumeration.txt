@@ -1,0 +1,10 @@
+[Class] org.w3c.dom.svg.SVGAnimatedEnumeration
+[Flag] Interface
+[Info]
+public interface SVGAnimatedEnumeration
+[Constructor Summary]
+
+[Method Summary]
+short getAnimVal()	 
+ short getBaseVal()	 
+ void setBaseVal(short baseVal)

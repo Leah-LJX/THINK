@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.OutlierList
+[Flag] Class
+[Info]
+Parameters: outlier - the outlier.
+[Constructor Summary]
+OutlierList(Outlier outlier) Creates a new list containing a single outlier.
+[Method Summary]
+boolean add(Outlier outlier) Adds an outlier to the list.

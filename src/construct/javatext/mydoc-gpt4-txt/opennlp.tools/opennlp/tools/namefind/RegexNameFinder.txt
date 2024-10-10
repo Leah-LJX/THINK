@@ -1,0 +1,18 @@
+[API Name] opennlp.tools.namefind.RegexNameFinder
+[Type] Class
+[Info]
+All Implemented Interfaces: TokenNameFinder
+public final class RegexNameFinder extends Object implements TokenNameFinder A TokenNameFinder implementation based on a series of regular expressions.
+[Constructor Summary]
+RegexNameFinder(Map<String,Pattern[]> regexMap)	Initializes a RegexNameFinder instance.
+RegexNameFinder(Pattern[] patterns, String type)	Initializes a RegexNameFinder instance.
+[Method Summary]
+void clearAdaptiveData()	Forgets all adaptive data which was collected during previous calls to one of the find methods.
+Span[] find(String text)	Finds spans with character indices, rather than word.
+Span[] find(String[] tokens)	Generates name tags for the given sequence, typically a sentence, returning token spans for any identified names.
+Pattern[] getMatchingPatterns()	
+String getSpanType()	
+void setMatchingPatterns(Pattern[] mPatterns)	
+void setSpanType(String sType)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

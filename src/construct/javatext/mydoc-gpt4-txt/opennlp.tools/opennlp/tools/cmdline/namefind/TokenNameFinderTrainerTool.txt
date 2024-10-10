@@ -1,0 +1,19 @@
+[API Name] opennlp.tools.cmdline.namefind.TokenNameFinderTrainerTool
+[Type] Class
+[Info]
+public final class TokenNameFinderTrainerTool extends opennlp.tools.cmdline.AbstractTrainerTool<NameSample,opennlp.tools.cmdline.namefind.TokenNameFinderTrainerTool.TrainerToolParams>
+[Constructor Summary]
+TokenNameFinderTrainerTool()	
+[Method Summary]
+String getShortDescription()	
+static Map<String,Object> loadResources(File resourcePath, File featureGenDescriptor)	Load the resources, such as dictionaries, by reading the feature xml descriptor and looking into the directory passed as argument.
+static byte[] openFeatureGeneratorBytes(File featureGenDescriptorFile)	
+void run(String format, String[] args)	Executes the tool with the given parameters.
+[Methods inherited from class opennlp.tools.cmdline.AbstractTypedParamTool]
+getHelp
+[Methods inherited from class opennlp.tools.cmdline.TypedCmdLineTool]
+getHelp
+[Methods inherited from class opennlp.tools.cmdline.CmdLineTool]
+getName, hasParams
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

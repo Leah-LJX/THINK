@@ -1,0 +1,14 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.photometricinterpreters.PhotometricInterpreterBiLevel
+[Type] Class
+[Info]
+public class PhotometricInterpreterBiLevel extends PhotometricInterpreter
+[Constructor Summary]
+PhotometricInterpreterBiLevel​(int samplesPerPixel, int[] bitsPerSample, int predictor, int width, int height, boolean invert)	
+[Field Summary]
+PhotometricInterpreterBiLevel​(int samplesPerPixel, int[] bitsPerSample, int predictor, int width, int height, boolean invert)	
+[Method Summary]
+void interpretPixel​(ImageBuilder imageBuilder, int[] samples, int x, int y)	
+[Methods inherited from class org.apache.commons.imaging.formats.tiff.photometricinterpreters.PhotometricInterpreter]
+getBitsPerSample
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

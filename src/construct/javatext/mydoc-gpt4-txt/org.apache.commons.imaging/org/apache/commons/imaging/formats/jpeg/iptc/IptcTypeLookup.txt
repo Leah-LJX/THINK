@@ -1,0 +1,8 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.iptc.IptcTypeLookup
+[Type] Class
+[Info]
+public final class IptcTypeLookup extends Object
+[Method Summary]
+static IptcType getIptcType​(int type)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

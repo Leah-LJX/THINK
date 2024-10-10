@@ -1,0 +1,16 @@
+[API Name] opennlp.tools.formats.Conll03NameSampleStreamFactory<P>
+[Type] Class
+[Info]
+All Implemented Interfaces: opennlp.tools.cmdline.ObjectStreamFactory<NameSample,P>
+public class Conll03NameSampleStreamFactory<P> extends LanguageSampleStreamFactory<NameSample,P>
+See Also:
+Conll03NameSampleStream
+[Method Summary]
+ObjectStream<NameSample> create(String[] args)	Creates an ObjectStream of the template type T.
+static void registerFactory()	
+[Methods inherited from class opennlp.tools.formats.LanguageSampleStreamFactory]
+getLang
+[Methods inherited from class opennlp.tools.formats.AbstractSampleStreamFactory]
+getParameters
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

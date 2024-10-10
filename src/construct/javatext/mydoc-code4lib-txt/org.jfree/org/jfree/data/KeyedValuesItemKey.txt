@@ -1,0 +1,11 @@
+[Class] org.jfree.data.KeyedValuesItemKey
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, ItemKey
+[Constructor Summary]
+KeyedValuesItemKey(Comparable<? extends Object> key)	Creates a new instance.
+[Method Summary]
+boolean equals(Object obj)	Tests this instance for equality with an arbitrary object.
+Comparable<?> getKey()	Returns the key.
+String toJSONString()	Returns a JSON formatted string representing the key.
+String toString()

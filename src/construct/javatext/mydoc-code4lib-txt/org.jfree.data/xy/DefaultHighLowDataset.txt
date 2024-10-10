@@ -1,0 +1,26 @@
+[Class] org.jfree.data.xy.DefaultHighLowDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, EventListener, PublicCloneable, Dataset, SeriesChangeListener, SeriesDataset, OHLCDataset, XYDataset
+[Constructor Summary]
+DefaultHighLowDataset(Comparable seriesKey, Date[] date, double[] high, double[] low, double[] open, double[] close, double[] volume)	Constructs a new high/low/open/close dataset.
+[Method Summary]
+static Number[] createNumberArray(double[] data)	Constructs an array of Number objects from an array of doubles.
+boolean equals(Object obj)	Tests this dataset for equality with an arbitrary instance.
+Number getClose(int series, int item)	Returns the close-value for one item in a series.
+double getCloseValue(int series, int item)	Returns the close-value (as a double primitive) for an item within a series.
+Number getHigh(int series, int item)	Returns the high-value for one item in a series.
+double getHighValue(int series, int item)	Returns the high-value (as a double primitive) for an item within a series.
+int getItemCount(int series)	Returns the number of items in the specified series.
+Number getLow(int series, int item)	Returns the low-value for one item in a series.
+double getLowValue(int series, int item)	Returns the low-value (as a double primitive) for an item within a series.
+Number getOpen(int series, int item)	Returns the open-value for one item in a series.
+double getOpenValue(int series, int item)	Returns the open-value (as a double primitive) for an item within a series.
+int getSeriesCount()	Returns the number of series in the dataset.
+Comparable getSeriesKey(int series)	Returns the key for the series stored in this dataset.
+Number getVolume(int series, int item)	Returns the volume-value for one item in a series.
+double getVolumeValue(int series, int item)	Returns the volume-value (as a double primitive) for an item within a series.
+Number getX(int series, int item)	Returns the x-value for one item in a series.
+Date getXDate(int series, int item)	Returns the x-value for one item in a series, as a Date.
+Number getY(int series, int item)	Returns the y-value for one item in a series.
+int hashCode()

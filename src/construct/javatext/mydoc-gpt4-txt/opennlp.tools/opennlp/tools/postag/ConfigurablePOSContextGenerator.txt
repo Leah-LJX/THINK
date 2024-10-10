@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.postag.ConfigurablePOSContextGenerator
+[Type] Class
+[Info]
+All Implemented Interfaces: POSContextGenerator, BeamSearchContextGenerator<String>
+public class ConfigurablePOSContextGenerator extends Object implements POSContextGenerator A configurable context generator for a POSTagger.  This implementation makes use of AdaptiveFeatureGenerator.
+See Also:
+POSTagger POSTaggerME DefaultPOSContextGenerator
+[Constructor Summary]
+ConfigurablePOSContextGenerator(int cacheSize, AdaptiveFeatureGenerator featureGenerator)	Initializes a ConfigurablePOSContextGenerator instance.
+ConfigurablePOSContextGenerator(AdaptiveFeatureGenerator featureGenerator)	Initializes a ConfigurablePOSContextGenerator instance.
+[Method Summary]
+String[] getContext(int index, String[] tokens, String[] tags, Object[] additionalContext)	Returns the context for making a postag decision at the specified token index given the specified tokens and previous tags.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

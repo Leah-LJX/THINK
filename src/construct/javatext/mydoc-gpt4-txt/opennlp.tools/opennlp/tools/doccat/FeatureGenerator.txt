@@ -1,0 +1,7 @@
+[API Name] opennlp.tools.doccat.FeatureGenerator
+[Type] Interface
+[Info]
+All Known Implementing Classes: BagOfWordsFeatureGenerator, NGramFeatureGenerator
+public interface FeatureGenerator Interface for generating features for document categorization.
+[Method Summary]
+Collection<String> extractFeatures(String[] text, Map<String,Object> extraInformation)	Extracts features from given text fragments.

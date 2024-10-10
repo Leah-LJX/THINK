@@ -1,0 +1,20 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationPopup
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class PDAnnotationPopup extends PDAnnotation This is the class that represents a popup annotation. Introduced in PDF 1.3 specification
+Author: Paul King
+[Constructor Summary]
+PDAnnotationPopup()	Constructor.
+PDAnnotationPopup(COSDictionary field)	Creates a popup annotation from a COSDictionary, expected to be a correct object definition.
+[Field Summary]
+static String SUB_TYPE	The type of annotation.
+[Method Summary]
+boolean getOpen()	This will retrieve the initial state of the annotation, open Or closed (default closed).
+PDAnnotationMarkup getParent()	This will retrieve the markup annotation which this popup relates to.
+void setOpen(boolean open)	This will set the initial state of the annotation, open or closed.
+void setParent(PDAnnotationMarkup annot)	This will set the markup annotation which this popup relates to.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation]
+constructAppearances, constructAppearances, createAnnotation, equals, getAnnotationFlags, getAnnotationName, getAppearance, getAppearanceState, getBorder, getColor, getColor, getContents, getCOSObject, getModifiedDate, getNormalAppearanceStream, getOptionalContent, getPage, getRectangle, getStructParent, getSubtype, hashCode, isHidden, isInvisible, isLocked, isLockedContents, isNoRotate, isNoView, isNoZoom, isPrinted, isReadOnly, isToggleNoView, setAnnotationFlags, setAnnotationName, setAppearance, setAppearanceState, setBorder, setColor, setContents, setHidden, setInvisible, setLocked, setLockedContents, setModifiedDate, setModifiedDate, setNoRotate, setNoView, setNoZoom, setOptionalContent, setPage, setPrinted, setReadOnly, setRectangle, setStructParent, setSubtype, setToggleNoView
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, toString, wait, wait, wait

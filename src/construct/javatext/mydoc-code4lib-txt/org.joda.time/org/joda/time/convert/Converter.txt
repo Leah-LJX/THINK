@@ -1,0 +1,9 @@
+[Class] org.joda.time.convert.Converter
+[Flag] Interface
+[Info]
+All Known Subinterfaces: DurationConverter, InstantConverter, IntervalConverter, PartialConverter, PeriodConverter
+All Known Implementing Classes: AbstractConverter
+[Constructor Summary]
+
+[Method Summary]
+Class<?> getSupportedType() Returns the object type that this converter supports, which may specified by a class, superclass, abstract class, interface, or null.

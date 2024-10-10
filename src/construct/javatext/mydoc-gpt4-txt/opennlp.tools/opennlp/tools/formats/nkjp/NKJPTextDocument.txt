@@ -1,0 +1,8 @@
+[API Name] opennlp.tools.formats.nkjp.NKJPTextDocument
+[Type] Class
+[Info]
+public class NKJPTextDocument extends Object The National corpus of Polish (NKJP) format.    Information about the format are found on this  web site.    A 1-million word corpus can be found on this      web site.    The NKJP schema can be found  here.
+[Method Summary]
+static NKJPTextDocument parse(InputStream is)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

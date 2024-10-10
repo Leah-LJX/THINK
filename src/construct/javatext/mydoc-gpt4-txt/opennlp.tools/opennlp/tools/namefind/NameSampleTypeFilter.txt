@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.namefind.NameSampleTypeFilter
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<NameSample>
+public class NameSampleTypeFilter extends FilterObjectStream<NameSample,NameSample> A stream which removes name samples  which do not have a certain type.
+[Constructor Summary]
+NameSampleTypeFilter(String[] types, ObjectStream<NameSample> samples)	Initializes a NameSampleTypeFilter.
+NameSampleTypeFilter(Set<String> types, ObjectStream<NameSample> samples)	Initializes a NameSampleTypeFilter.
+[Method Summary]
+NameSample read()	Returns the next ObjectStream object.
+[Methods inherited from class opennlp.tools.util.FilterObjectStream]
+close, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

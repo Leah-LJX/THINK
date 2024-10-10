@@ -1,0 +1,15 @@
+[Class] org.w3c.dom.svg.SVGLengthList
+[Flag] Interface
+[Info]
+public interface SVGLengthList
+[Constructor Summary]
+
+[Method Summary]
+SVGLength appendItem(SVGLength newItem)	 
+void clear()
+SVGLength getItem(int index)
+int getNumberOfItems()
+SVGLength initialize(SVGLength newItem)
+SVGLength insertItemBefore(SVGLength newItem, int index)
+SVGLength removeItem(int index)
+SVGLength replaceItem(SVGLength newItem, int index)

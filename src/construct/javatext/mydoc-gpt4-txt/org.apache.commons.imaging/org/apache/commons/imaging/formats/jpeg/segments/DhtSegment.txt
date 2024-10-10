@@ -1,0 +1,17 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.segments.DhtSegment
+[Type] Class
+[Info]
+public class DhtSegment extends Segment
+[Constructor Summary]
+DhtSegment​(int marker, byte[] segmentData)	
+DhtSegment​(int marker, int length, InputStream is)	
+[Field Summary]
+List<DhtSegment.HuffmanTable> huffmanTables	
+[Method Summary]
+String getDescription()	
+[Methods inherited from class org.apache.commons.imaging.formats.jpeg.segments.Segment]
+dump, getSegmentType, toString
+[Methods inherited from class org.apache.commons.imaging.common.BinaryFileParser]
+debugNumber, debugNumber, getByteOrder, setByteOrder
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

@@ -1,0 +1,10 @@
+[Class] org.w3c.dom.svg.SVGFEPointLightElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedNumber getX()	 
+ SVGAnimatedNumber getY()	 
+ SVGAnimatedNumber getZ()

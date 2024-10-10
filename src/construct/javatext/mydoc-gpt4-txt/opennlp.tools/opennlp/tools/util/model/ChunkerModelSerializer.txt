@@ -1,0 +1,12 @@
+[API Name] opennlp.tools.util.model.ChunkerModelSerializer
+[Type] Class
+[Info]
+All Implemented Interfaces: ArtifactSerializer<ChunkerModel>
+public class ChunkerModelSerializer extends Object implements ArtifactSerializer<ChunkerModel> An ArtifactSerializer implementation for models.
+[Constructor Summary]
+ChunkerModelSerializer()	
+[Method Summary]
+ChunkerModel create(InputStream in)	Creates an artifact from the provided InputStream.
+void serialize(ChunkerModel artifact, OutputStream out)	Serializes an artifact to the provided OutputStream.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

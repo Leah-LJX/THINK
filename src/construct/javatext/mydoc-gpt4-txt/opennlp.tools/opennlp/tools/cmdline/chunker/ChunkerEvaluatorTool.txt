@@ -1,0 +1,19 @@
+[API Name] opennlp.tools.cmdline.chunker.ChunkerEvaluatorTool
+[Type] Class
+[Info]
+public final class ChunkerEvaluatorTool extends opennlp.tools.cmdline.AbstractEvaluatorTool<ChunkSample,opennlp.tools.cmdline.chunker.ChunkerEvaluatorTool.EvalToolParams> A default ChunkSample-centric implementation of AbstractEvaluatorTool  that prints to an output stream.
+See Also:
+AbstractEvaluatorTool ChunkerEvaluatorTool.EvalToolParams
+[Constructor Summary]
+ChunkerEvaluatorTool()	
+[Method Summary]
+String getShortDescription()	
+void run(String format, String[] args)	Executes the tool with the given parameters.
+[Methods inherited from class opennlp.tools.cmdline.AbstractTypedParamTool]
+getHelp
+[Methods inherited from class opennlp.tools.cmdline.TypedCmdLineTool]
+getHelp
+[Methods inherited from class opennlp.tools.cmdline.CmdLineTool]
+getName, hasParams
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

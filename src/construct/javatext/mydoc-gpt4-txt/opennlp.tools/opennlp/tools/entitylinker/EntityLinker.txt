@@ -1,0 +1,9 @@
+[API Name] opennlp.tools.entitylinker.EntityLinker<T
+[Type] Interface
+[Info]
+Type Parameters: T - A type that extends Span. LinkedSpan and BaseLink             are available to provide this signature. Use:             EntityLinker<LinkedSpan<BaseLink>> as a default.
+public interface EntityLinker<T extends Span> EntityLinkers establish connections with external data to enrich extracted  entities.    For instance, for Location entities a linker can be developed to  look up each found location in a geonames gazetteer. Another example may be to  find peoples' names and look them up in a database or active directory.  Intended to return n best matches for any given search, but can also be  implemented as deterministic.
+[Method Summary]
+List<T> find(String doctext, Span[] sentences, Span[][] tokensBySentence, Span[][] namesBySentence)	Links an entire document of named entities to an external source.
+List<T> find(String doctext, Span[] sentences, Span[][] tokensBySentence, Span[][] namesBySentence, int sentenceIndex)	Links the names that correspond to the tokens[] spans.
+void init(EntityLinkerProperties initializationData)	Initializes an EntityLinker and allows for passing properties through the EntityLinkerFactory into all impls dynamically.

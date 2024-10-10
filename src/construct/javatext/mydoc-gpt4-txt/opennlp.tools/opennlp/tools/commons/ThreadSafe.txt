@@ -1,0 +1,6 @@
+[API Name] opennlp.tools.commons.Interface
+[Type] Annotation
+[Info]
+@Documented @Retention(RUNTIME) public @interface ThreadSafe Classes, fields, or methods annotated &#64;ThreadSafe are safe to use  in multithreading contexts. In general, classes that adhere to (one of)  the following concepts:   Statelessness: no methods relies on external state or       maintain state at all, Immutability: all attributes are final so that       internal state can't be modified at all, Thread locality: non-final fields are only       accessed via an independently initialized copy, Atomicity: all operations on fields are perform via       atomic data types, or Synchronization: all non-final methods, fields, or       method local variables are manipulated via locks, that is, in a       synchronized manner
+ are safe to use from multiple threads. In addition, thread-safety can be  achieved by using the concepts of either   ReentrantLock, or    ReadWriteLock
+ in which a thread acquires the lock for write operations and protects  the locked object or data element from changes until the lock is released.

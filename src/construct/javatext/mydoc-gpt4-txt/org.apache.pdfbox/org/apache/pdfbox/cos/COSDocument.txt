@@ -1,0 +1,47 @@
+[API Name] org.apache.pdfbox.cos.COSDocument
+[Type] Class
+[Info]
+All Implemented Interfaces: Closeable, AutoCloseable, COSObjectable
+public class COSDocument extends COSBase implements Closeable This is the in-memory representation of the PDF document.  You need to call  close() on this object when you are done using it!!
+Author: Ben Litchfield
+[Constructor Summary]
+COSDocument()	Constructor.
+COSDocument(ICOSParser parser)	Constructor.
+COSDocument(org.apache.pdfbox.io.RandomAccessStreamCache.StreamCacheCreateFunction streamCacheCreateFunction)	Constructor that will use the provided function to create a stream cache for the storage of the PDF streams.
+COSDocument(org.apache.pdfbox.io.RandomAccessStreamCache.StreamCacheCreateFunction streamCacheCreateFunction, ICOSParser parser)	Constructor that will use the provided function to create a stream cache for the storage of the PDF streams.
+[Method Summary]
+void accept(ICOSVisitor visitor)	visitor pattern double dispatch method.
+void addXRefTable(Map<COSObjectKey,Long> xrefTableValues)	Populate XRef HashMap with given values.
+void close()	This will close all storage and delete the tmp files.
+COSStream createCOSStream()	Creates a new COSStream using the current configuration for scratch files.
+COSStream createCOSStream(COSDictionary dictionary, long startPosition, long streamLength)	Creates a new COSStream using the current configuration for scratch files.
+COSArray getDocumentID()	This will get the document ID.
+COSDocumentState getDocumentState()	Returns the COSDocumentState of this COSDocument.
+COSDictionary getEncryptionDictionary()	This will get the encryption dictionary if the document is encrypted or null if the document is not encrypted.
+long getHighestXRefObjectNumber()	Internal PDFBox use only.
+COSDictionary getLinearizedDictionary()	Get the dictionary containing the linearization information if the pdf is linearized.
+COSObject getObjectFromPool(COSObjectKey key)	This will get an object from the pool.
+List<COSObject> getObjectsByType(COSName type)	This will get all dictionaries objects by type.
+List<COSObject> getObjectsByType(COSName type1, COSName type2)	This will get all dictionaries objects by type.
+long getStartXref()	Return the startXref Position of the parsed document.
+COSDictionary getTrailer()	This will get the document trailer.
+float getVersion()	This will get the version extracted from the header of this PDF document.
+Map<COSObjectKey,Long> getXrefTable()	Returns the xrefTable which is a mapping of ObjectKeys to byte offsets in the file.
+boolean hasHybridXRef()	Determines if the pdf has hybrid cross references, both plain tables and streams.
+boolean isClosed()	Returns true if this document has been closed.
+boolean isDecrypted()	Indicates if a encrypted pdf is already decrypted after parsing.
+boolean isEncrypted()	This will tell if this is an encrypted document.
+boolean isXRefStream()	Determines if the trailer is a XRef stream or not.
+void setDecrypted()	Signals that the document is decrypted completely.
+void setDocumentID(COSArray id)	This will set the document ID.
+void setEncryptionDictionary(COSDictionary encDictionary)	This will set the encryption dictionary, this should only be called when encrypting the document.
+void setHasHybridXRef()	Marks the pdf as document using hybrid cross references.
+void setHighestXRefObjectNumber(long highestXRefObjectNumber)	Internal PDFBox use only.
+void setIsXRefStream(boolean isXRefStreamValue)	Sets isXRefStream to the given value.
+void setStartXref(long startXrefValue)	This method set the startxref value of the document.
+void setTrailer(COSDictionary newTrailer)	// MIT added, maybe this should not be supported as trailer is a persistence construct.
+void setVersion(float versionValue)	This will set the header version of this PDF document.
+[Methods inherited from class org.apache.pdfbox.cos.COSBase]
+getCOSObject, getKey, isDirect, setDirect, setKey
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,19 @@
+[API Name] opennlp.tools.doccat.DocumentSample
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, Sample
+public class DocumentSample extends Object implements Sample Class which holds a classified document and its category.
+See Also:
+Serialized Form
+[Constructor Summary]
+DocumentSample(String category, String[] text)	Initializes a instance.
+DocumentSample(String category, String[] text, Map<String,Object> extraInformation)	Initializes a instance.
+[Method Summary]
+boolean equals(Object obj)	
+String getCategory()	
+Map<String,Object> getExtraInformation()	
+String[] getText()	
+int hashCode()	
+String toString()	
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

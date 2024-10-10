@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.urls.StandardCategoryURLGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, CategoryURLGenerator
+[Constructor Summary]
+StandardCategoryURLGenerator() Creates a new generator with default settings.
+[Method Summary]
+Object clone() Returns an independent copy of the URL generator.

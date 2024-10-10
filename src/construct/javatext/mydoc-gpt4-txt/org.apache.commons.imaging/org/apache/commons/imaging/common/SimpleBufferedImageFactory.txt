@@ -1,0 +1,12 @@
+[API Name] Package org.apache.commons.imaging.common.SimpleBufferedImageFactory
+[Type] Class
+[Info]
+All Implemented Interfaces: BufferedImageFactory
+public class SimpleBufferedImageFactory extends Object implements BufferedImageFactory
+[Constructor Summary]
+SimpleBufferedImageFactory()	
+[Method Summary]
+BufferedImage getColorBufferedImage​(int width, int height, boolean hasAlpha)	
+BufferedImage getGrayscaleBufferedImage​(int width, int height, boolean hasAlpha)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

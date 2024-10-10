@@ -1,0 +1,10 @@
+[API Name] opennlp.tools.cmdline.postag.POSModelLoader
+[Type] Class
+[Info]
+@Internal public final class POSModelLoader extends opennlp.tools.cmdline.ModelLoader<POSModel> Loads a POSModel for the command line tools.   Note: Do not use this class, internal use only!
+[Constructor Summary]
+POSModelLoader()	
+[Methods inherited from class opennlp.tools.cmdline.ModelLoader]
+load
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,14 @@
+[API Name] org.apache.pdfbox.contentstream.operator.text.NextLine
+[Type] Class
+[Info]
+public class NextLine extends OperatorProcessor T*: Move to start of next text line.
+Author: Laurent Huault
+[Constructor Summary]
+NextLine(PDFStreamEngine context)	
+[Method Summary]
+String getName()	Returns the name of this operator, e.g.
+void process(Operator operator, List<COSBase> arguments)	Process the operator.
+[Methods inherited from class org.apache.pdfbox.contentstream.operator.OperatorProcessor]
+checkArrayTypesClass, getContext
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

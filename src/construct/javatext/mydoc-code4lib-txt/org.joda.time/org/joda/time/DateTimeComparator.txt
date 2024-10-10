@@ -1,0 +1,18 @@
+[Class] org.joda.time.DateTimeComparator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparator<Object>
+[Constructor Summary]
+protected 	DateTimeComparator(DateTimeFieldType lowerLimit,	DateTimeFieldType upperLimit)	Restricted constructor.
+[Method Summary]
+int compare(Object lhsObj, Object rhsObj) Compare two objects against only the range of date time fields as specified in the constructor.
+boolean equals(Object object) Compares this comparator to another.
+static DateTimeComparator getDateOnlyInstance() Returns a comparator that only considers date fields.
+static DateTimeComparator getInstance() Returns a DateTimeComparator the compares the entire date time value.
+static DateTimeComparator getInstance(DateTimeFieldType lowerLimit) Returns a DateTimeComparator with a lower limit only.
+static DateTimeComparator getInstance(DateTimeFieldType lowerLimit, DateTimeFieldType upperLimit) Returns a DateTimeComparator with a lower and upper limit.
+DateTimeFieldType getLowerLimit() Gets the field type that represents the lower limit of comparison.
+static DateTimeComparator getTimeOnlyInstance() Returns a comparator that only considers time fields.
+DateTimeFieldType getUpperLimit() Gets the field type that represents the upper limit of comparison.
+int hashCode() Gets a suitable hashcode.
+String toString() Gets a debugging string.

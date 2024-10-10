@@ -1,0 +1,12 @@
+[Class] org.jfree.chart.util.ResourceBundleWrapper
+[Flag] Class
+[Info]
+Since: 1.0.12
+See Also: 
+               Bug ID: 4243379, 
+
+               Bug ID: 4668479
+[Constructor Summary]
+
+[Method Summary]
+static ResourceBundle getBundle(String baseName) Finds and returns the specified resource bundle.

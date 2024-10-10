@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.formats.muc.MucNameSampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<NameSample>
+public class MucNameSampleStream extends FilterObjectStream<String,NameSample>
+[Method Summary]
+NameSample read()	Returns the next ObjectStream object.
+[Methods inherited from class opennlp.tools.util.FilterObjectStream]
+close, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

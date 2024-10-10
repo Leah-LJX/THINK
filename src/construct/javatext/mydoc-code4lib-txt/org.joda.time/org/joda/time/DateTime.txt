@@ -1,0 +1,113 @@
+[Class] org.joda.time.DateTime
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<ReadableInstant>, ReadableDateTime, ReadableInstant
+[Constructor Summary]
+DateTime()	Constructs an instance set to the current system millisecond time	 using ISOChronology in the default time zone.
+DateTime(Chronology chronology)	Constructs an instance set to the current system millisecond time	 using the specified chronology.
+DateTime(DateTimeZone zone)	Constructs an instance set to the current system millisecond time	 using ISOChronology in the specified time zone.
+DateTime(int year,	int monthOfYear,	int dayOfMonth,	int hourOfDay,	int minuteOfHour)	Constructs an instance from datetime field values	 using ISOChronology in the default time zone.
+DateTime(int year,	int monthOfYear,	int dayOfMonth,	int hourOfDay,	int minuteOfHour,	Chronology chronology)	Constructs an instance from datetime field values	 using the specified chronology.
+DateTime(int year,	int monthOfYear,	int dayOfMonth,	int hourOfDay,	int minuteOfHour,	DateTimeZone zone)	Constructs an instance from datetime field values	 using ISOChronology in the specified time zone.
+DateTime(int year,	int monthOfYear,	int dayOfMonth,	int hourOfDay,	int minuteOfHour,	int secondOfMinute)	Constructs an instance from datetime field values	 using ISOChronology in the default time zone.
+DateTime(int year,	int monthOfYear,	int dayOfMonth,	int hourOfDay,	int minuteOfHour,	int secondOfMinute,	Chronology chronology)	Constructs an instance from datetime field values	 using the specified chronology.
+DateTime(int year,	int monthOfYear,	int dayOfMonth,	int hourOfDay,	int minuteOfHour,	int secondOfMinute,	DateTimeZone zone)	Constructs an instance from datetime field values	 using ISOChronology in the specified time zone.
+DateTime(int year,	int monthOfYear,	int dayOfMonth,	int hourOfDay,	int minuteOfHour,	int secondOfMinute,	int millisOfSecond)	Constructs an instance from datetime field values	 using ISOChronology in the default time zone.
+DateTime(int year,	int monthOfYear,	int dayOfMonth,	int hourOfDay,	int minuteOfHour,	int secondOfMinute,	int millisOfSecond,	Chronology chronology)	Constructs an instance from datetime field values	 using the specified chronology.
+DateTime(int year,	int monthOfYear,	int dayOfMonth,	int hourOfDay,	int minuteOfHour,	int secondOfMinute,	int millisOfSecond,	DateTimeZone zone)	Constructs an instance from datetime field values	 using ISOChronology in the specified time zone.
+DateTime(long instant)	Constructs an instance set to the milliseconds from 1970-01-01T00:00:00Z	 using ISOChronology in the default time zone.
+DateTime(long instant,	Chronology chronology)	Constructs an instance set to the milliseconds from 1970-01-01T00:00:00Z	 using the specified chronology.
+DateTime(long instant,	DateTimeZone zone)	Constructs an instance set to the milliseconds from 1970-01-01T00:00:00Z	 using ISOChronology in the specified time zone.
+DateTime(Object instant)	Constructs an instance from an Object that represents a datetime.
+DateTime(Object instant,	Chronology chronology)	Constructs an instance from an Object that represents a datetime,	 using the specified chronology.
+DateTime(Object instant,	DateTimeZone zone)	Constructs an instance from an Object that represents a datetime,	 forcing the time zone to that specified.
+[Method Summary]
+DateTime.Property centuryOfEra() Get the century of era property which provides access to advanced functionality.
+DateTime.Property dayOfMonth() Get the day of month property which provides access to advanced functionality.
+DateTime.Property dayOfWeek() Get the day of week property which provides access to advanced functionality.
+DateTime.Property dayOfYear() Get the day of year property which provides access to advanced functionality.
+DateTime.Property era() Get the era property which provides access to advanced functionality.
+DateTime.Property hourOfDay() Get the hour of day field property which provides access to advanced functionality.
+DateTime.Property millisOfDay() Get the millis of day property which provides access to advanced functionality.
+DateTime.Property millisOfSecond() Get the millis of second property which provides access to advanced functionality.
+DateTime minus(long duration) Returns a copy of this datetime with the specified duration taken away.
+DateTime minus(ReadableDuration duration) Returns a copy of this datetime with the specified duration taken away.
+DateTime minus(ReadablePeriod period) Returns a copy of this datetime with the specified period taken away.
+DateTime minusDays(int days) Returns a copy of this datetime minus the specified number of days.
+DateTime minusHours(int hours) Returns a copy of this datetime minus the specified number of hours.
+DateTime minusMillis(int millis) Returns a copy of this datetime minus the specified number of millis.
+DateTime minusMinutes(int minutes) Returns a copy of this datetime minus the specified number of minutes.
+DateTime minusMonths(int months) Returns a copy of this datetime minus the specified number of months.
+DateTime minusSeconds(int seconds) Returns a copy of this datetime minus the specified number of seconds.
+DateTime minusWeeks(int weeks) Returns a copy of this datetime minus the specified number of weeks.
+DateTime minusYears(int years) Returns a copy of this datetime minus the specified number of years.
+DateTime.Property minuteOfDay() Get the minute of day property which provides access to advanced functionality.
+DateTime.Property minuteOfHour() Get the minute of hour field property which provides access to advanced functionality.
+DateTime.Property monthOfYear() Get the month of year property which provides access to advanced functionality.
+static DateTime now() Obtains a DateTime set to the current system millisecond time using ISOChronology in the default time zone.
+static DateTime now(Chronology chronology) Obtains a DateTime set to the current system millisecond time using the specified chronology.
+static DateTime now(DateTimeZone zone) Obtains a DateTime set to the current system millisecond time using ISOChronology in the specified time zone.
+static DateTime parse(String str) Parses a DateTime from the specified string.
+static DateTime parse(String str, DateTimeFormatter formatter) Parses a DateTime from the specified string using a formatter.
+DateTime plus(long duration) Returns a copy of this datetime with the specified duration added.
+DateTime plus(ReadableDuration duration) Returns a copy of this datetime with the specified duration added.
+DateTime plus(ReadablePeriod period) Returns a copy of this datetime with the specified period added.
+DateTime plusDays(int days) Returns a copy of this datetime plus the specified number of days.
+DateTime plusHours(int hours) Returns a copy of this datetime plus the specified number of hours.
+DateTime plusMillis(int millis) Returns a copy of this datetime plus the specified number of millis.
+DateTime plusMinutes(int minutes) Returns a copy of this datetime plus the specified number of minutes.
+DateTime plusMonths(int months) Returns a copy of this datetime plus the specified number of months.
+DateTime plusSeconds(int seconds) Returns a copy of this datetime plus the specified number of seconds.
+DateTime plusWeeks(int weeks) Returns a copy of this datetime plus the specified number of weeks.
+DateTime plusYears(int years) Returns a copy of this datetime plus the specified number of years.
+DateTime.Property property(DateTimeFieldType type) Gets the property object for the specified type, which contains many useful methods.
+DateTime.Property secondOfDay() Get the second of day property which provides access to advanced functionality.
+DateTime.Property secondOfMinute() Get the second of minute field property which provides access to advanced functionality.
+DateMidnight toDateMidnight() Deprecated. DateMidnight is deprecated
+ DateTime toDateTime() Get this object as a DateTime by returning this.
+DateTime toDateTime(Chronology chronology) Get this object as a DateTime, returning this if possible.
+DateTime toDateTime(DateTimeZone zone) Get this object as a DateTime, returning this if possible.
+DateTime toDateTimeISO() Get this object as a DateTime using ISOChronology in the default zone, returning this if possible.
+LocalDate toLocalDate() Converts this object to a LocalDate with the same date and chronology.
+LocalDateTime toLocalDateTime() Converts this object to a LocalDateTime with the same datetime and chronology.
+LocalTime toLocalTime() Converts this object to a LocalTime with the same time and chronology.
+TimeOfDay toTimeOfDay() Deprecated. Use LocalTime instead of TimeOfDay
+ YearMonthDay toYearMonthDay() Deprecated. Use LocalDate instead of YearMonthDay
+ DateTime.Property weekOfWeekyear() Get the week of a week based year property which provides access to advanced functionality.
+DateTime.Property weekyear() Get the year of a week based year property which provides access to advanced functionality.
+DateTime withCenturyOfEra(int centuryOfEra) Returns a copy of this datetime with the century of era field updated.
+DateTime withChronology(Chronology newChronology) Returns a copy of this datetime with a different chronology.
+DateTime withDate(int year, int monthOfYear, int dayOfMonth) Returns a copy of this datetime with the specified date, retaining the time fields.
+DateTime withDate(LocalDate date) Returns a copy of this datetime with the specified date, retaining the time fields.
+DateTime withDayOfMonth(int dayOfMonth) Returns a copy of this datetime with the day of month field updated.
+DateTime withDayOfWeek(int dayOfWeek) Returns a copy of this datetime with the day of week field updated.
+DateTime withDayOfYear(int dayOfYear) Returns a copy of this datetime with the day of year field updated.
+DateTime withDurationAdded(long durationToAdd, int scalar) Returns a copy of this datetime with the specified duration added.
+DateTime withDurationAdded(ReadableDuration durationToAdd, int scalar) Returns a copy of this datetime with the specified duration added.
+DateTime withEarlierOffsetAtOverlap() Returns a copy of this ZonedDateTime changing the zone offset to the earlier of the two valid offsets at a local time-line overlap.
+DateTime withEra(int era) Returns a copy of this datetime with the era field updated.
+DateTime withField(DateTimeFieldType fieldType, int value) Returns a copy of this datetime with the specified field set to a new value.
+DateTime withFieldAdded(DurationFieldType fieldType, int amount) Returns a copy of this datetime with the value of the specified field increased.
+DateTime withFields(ReadablePartial partial) Returns a copy of this datetime with the partial set of fields replacing those from this instance.
+DateTime withHourOfDay(int hour) Returns a copy of this datetime with the hour of day field updated.
+DateTime withLaterOffsetAtOverlap() Returns a copy of this ZonedDateTime changing the zone offset to the later of the two valid offsets at a local time-line overlap.
+DateTime withMillis(long newMillis) Returns a copy of this datetime with different millis.
+DateTime withMillisOfDay(int millis) Returns a copy of this datetime with the millis of day field updated.
+DateTime withMillisOfSecond(int millis) Returns a copy of this datetime with the millis of second field updated.
+DateTime withMinuteOfHour(int minute) Returns a copy of this datetime with the minute of hour updated.
+DateTime withMonthOfYear(int monthOfYear) Returns a copy of this datetime with the month of year field updated.
+DateTime withPeriodAdded(ReadablePeriod period, int scalar) Returns a copy of this datetime with the specified period added.
+DateTime withSecondOfMinute(int second) Returns a copy of this datetime with the second of minute field updated.
+DateTime withTime(int hourOfDay, int minuteOfHour, int secondOfMinute, int millisOfSecond) Returns a copy of this datetime with the specified time, retaining the date fields.
+DateTime withTime(LocalTime time) Returns a copy of this datetime with the specified time, retaining the date fields.
+DateTime withTimeAtStartOfDay() Returns a copy of this datetime with the time set to the start of the day.
+DateTime withWeekOfWeekyear(int weekOfWeekyear) Returns a copy of this datetime with the week of weekyear field updated.
+DateTime withWeekyear(int weekyear) Returns a copy of this datetime with the weekyear field updated.
+DateTime withYear(int year) Returns a copy of this datetime with the year field updated.
+DateTime withYearOfCentury(int yearOfCentury) Returns a copy of this datetime with the year of century field updated.
+DateTime withYearOfEra(int yearOfEra) Returns a copy of this datetime with the year of era field updated.
+DateTime withZone(DateTimeZone newZone) Returns a copy of this datetime with a different time zone, preserving the millisecond instant.
+DateTime withZoneRetainFields(DateTimeZone newZone) Returns a copy of this datetime with a different time zone, preserving the field values.
+DateTime.Property year() Get the year property which provides access to advanced functionality.
+DateTime.Property yearOfCentury() Get the year of century property which provides access to advanced functionality.
+DateTime.Property yearOfEra() Get the year of era property which provides access to advanced functionality.

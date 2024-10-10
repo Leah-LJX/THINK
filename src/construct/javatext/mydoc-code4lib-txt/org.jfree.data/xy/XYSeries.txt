@@ -1,0 +1,45 @@
+[Class] org.jfree.data.xy.XYSeries
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+XYSeries(Comparable key)	Creates a new empty series.
+XYSeries(Comparable key, boolean autoSort)	Constructs a new empty series, with the auto-sort flag set as requested, and duplicate values allowed.
+XYSeries(Comparable key, boolean autoSort, boolean allowDuplicateXValues)	Constructs a new xy-series that contains no data.
+[Method Summary]
+void add(double x, double y)	Adds a data item to the series and sends a SeriesChangeEvent to all registered listeners.
+void add(double x, double y, boolean notify)	Adds a data item to the series and, if requested, sends a SeriesChangeEvent to all registered listeners.
+void add(double x, Number y)	Adds a data item to the series and sends a SeriesChangeEvent to all registered listeners.
+void add(double x, Number y, boolean notify)	Adds a data item to the series and, if requested, sends a SeriesChangeEvent to all registered listeners.
+void add(Number x, Number y)	Adds a new data item to the series (in the correct position if the autoSort flag is set for the series) and sends a SeriesChangeEvent to all registered listeners.
+void add(Number x, Number y, boolean notify)	Adds new data to the series and, if requested, sends a SeriesChangeEvent to all registered listeners.
+void add(XYDataItem item)	Adds a data item to the series and sends a SeriesChangeEvent to all registered listeners.
+void add(XYDataItem item, boolean notify)	Adds a data item to the series and, if requested, sends a SeriesChangeEvent to all registered listeners.
+XYDataItem addOrUpdate(double x, double y)	Adds or updates an item in the series and sends a SeriesChangeEvent to all registered listeners.
+XYDataItem addOrUpdate(Number x, Number y)	Adds or updates an item in the series and sends a SeriesChangeEvent to all registered listeners.
+XYDataItem addOrUpdate(XYDataItem item)	Adds or updates an item in the series and sends a SeriesChangeEvent to all registered listeners.
+void clear()	Removes all data items from the series and sends a SeriesChangeEvent to all registered listeners.
+Object clone()	Returns a clone of the series.
+XYSeries createCopy(int start, int end)	Creates a new series by copying a subset of the data in this time series.
+void delete(int start, int end)	Deletes a range of items from the series and sends a SeriesChangeEvent to all registered listeners.
+boolean equals(Object obj)	Tests this series for equality with an arbitrary object.
+boolean getAllowDuplicateXValues()	Returns a flag that controls whether duplicate x-values are allowed.
+boolean getAutoSort()	Returns the flag that controls whether the items in the series are automatically sorted.
+XYDataItem getDataItem(int index)	Return the data item with the specified index.
+int getItemCount()	Returns the number of items in the series.
+List getItems()	Returns the list of data items for the series (the list contains XYDataItem objects and is unmodifiable).
+int getMaximumItemCount()	Returns the maximum number of items that will be retained in the series.
+double getMaxX()	Returns the largest x-value in the series, ignoring any Double.NaN values.
+double getMaxY()	Returns the largest y-value in the series, ignoring any Double.NaN values.
+double getMinX()	Returns the smallest x-value in the series, ignoring any Double.NaN values.
+double getMinY()	Returns the smallest y-value in the series, ignoring any null and Double.NaN values.
+Number getX(int index)	Returns the x-value at the specified index.
+Number getY(int index)	Returns the y-value at the specified index.
+int hashCode()	Returns a hash code.
+int indexOf(Number x)	Returns the index of the item with the specified x-value, or a negative index if the series does not contain an item with that x-value.
+XYDataItem remove(int index)	Removes the item at the specified index and sends a SeriesChangeEvent to all registered listeners.
+XYDataItem remove(Number x)	Removes an item with the specified x-value and sends a SeriesChangeEvent to all registered listeners.
+void setMaximumItemCount(int maximum)	Sets the maximum number of items that will be retained in the series.
+double[][] toArray()	Returns a new array containing the x and y values from this series.
+void update(Number x, Number y)	Updates an item in the series.
+void updateByIndex(int index, Number y)	Updates the value of an item in the series and sends a SeriesChangeEvent to all registered listeners.

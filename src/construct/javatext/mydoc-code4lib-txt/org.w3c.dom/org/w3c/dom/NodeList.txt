@@ -1,0 +1,10 @@
+[Class] org.w3c.dom.NodeList
+[Flag] Interface
+[Info]
+All Known Implementing Classes:
+IIOMetadataNode
+[Constructor Summary]
+
+[Method Summary]
+int getLength() The number of nodes in the list.
+Node item(int index) Returns the indexth item in the collection.

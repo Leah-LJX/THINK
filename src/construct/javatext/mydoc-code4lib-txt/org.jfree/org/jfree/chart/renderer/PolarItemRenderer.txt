@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.renderer.PolarItemRenderer
+[Flag] Interface
+[Info]
+All Known Implementing Classes: DefaultPolarItemRenderer
+[Constructor Summary]
+
+[Method Summary]
+void addChangeListener(RendererChangeListener listener) Adds a change listener.

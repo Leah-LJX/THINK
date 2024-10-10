@@ -1,0 +1,50 @@
+[API Name] Package org.apache.commons.imaging.color.ColorConversions
+[Type] Class
+[Info]
+public final class ColorConversions extends Object
+[Method Summary]
+static int convertCIELabtoARGBTest​(int cieL, int cieA, int cieB)	
+static ColorCieLch convertCIELabtoCIELCH​(double L, double a, double b)	
+static ColorCieLch convertCIELabtoCIELCH​(ColorCieLab cielab)	
+static ColorDin99Lab convertCIELabToDIN99bLab​(double L, double a, double b)	
+static ColorDin99Lab convertCIELabToDIN99bLab​(ColorCieLab cie)	
+static ColorDin99Lab convertCIELabToDIN99oLab​(double L, double a, double b)	DIN99o.
+static ColorDin99Lab convertCIELabToDIN99oLab​(ColorCieLab cie)	DIN99o.
+static ColorXyz convertCIELabtoXYZ​(double L, double a, double b)	
+static ColorXyz convertCIELabtoXYZ​(ColorCieLab cielab)	
+static ColorCieLab convertCIELCHtoCIELab​(double L, double C, double H)	
+static ColorCieLab convertCIELCHtoCIELab​(ColorCieLch cielch)	
+static ColorXyz convertCIELuvtoXYZ​(double L, double u, double v)	
+static ColorXyz convertCIELuvtoXYZ​(ColorCieLuv cielch)	
+static ColorCmy convertCMYKtoCMY​(double C, double M, double Y, double K)	
+static ColorCmy convertCMYKtoCMY​(ColorCmyk cmyk)	
+static int convertCMYKtoRGB​(int c, int m, int y, int k)	
+static int convertCMYKtoRGB_Adobe​(int sc, int sm, int sy, int sk)	
+static ColorCmyk convertCMYtoCMYK​(ColorCmy cmy)	
+static int convertCMYtoRGB​(ColorCmy cmy)	
+static ColorCieLab convertDIN99bLabToCIELab​(double L99b, double a99b, double b99b)	
+static ColorCieLab convertDIN99bLabToCIELab​(ColorDin99Lab dinb)	
+static ColorCieLab convertDIN99oLabToCIELab​(double L99o, double a99o, double b99o)	DIN99o.
+static ColorCieLab convertDIN99oLabToCIELab​(ColorDin99Lab dino)	DIN99o.
+static int convertHSLtoRGB​(double H, double S, double L)	
+static int convertHSLtoRGB​(ColorHsl hsl)	
+static int convertHSVtoRGB​(double H, double S, double V)	
+static int convertHSVtoRGB​(ColorHsv HSV)	
+static ColorXyz convertHunterLabtoXYZ​(double L, double a, double b)	
+static ColorXyz convertHunterLabtoXYZ​(ColorHunterLab cielab)	
+static ColorCmy convertRGBtoCMY​(int rgb)	
+static ColorHsl convertRGBtoHSL​(int rgb)	
+static ColorHsv convertRGBtoHSV​(int rgb)	
+static ColorXyz convertRGBtoXYZ​(int rgb)	
+static ColorCieLab convertXYZtoCIELab​(double X, double Y, double Z)	
+static ColorCieLab convertXYZtoCIELab​(ColorXyz xyz)	
+static ColorCieLuv convertXYZtoCIELuv​(double X, double Y, double Z)	
+static ColorCieLuv convertXYZtoCIELuv​(ColorXyz xyz)	
+static ColorHunterLab convertXYZtoHunterLab​(double X, double Y, double Z)	
+static ColorHunterLab convertXYZtoHunterLab​(ColorXyz xyz)	
+static int convertXYZtoRGB​(double X, double Y, double Z)	
+static int convertXYZtoRGB​(ColorXyz xyz)	
+static double degree_2_radian​(double degree)	
+static double radian_2_degree​(double radian)	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

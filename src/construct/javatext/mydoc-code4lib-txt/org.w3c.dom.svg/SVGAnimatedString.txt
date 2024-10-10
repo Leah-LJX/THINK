@@ -1,0 +1,10 @@
+[Class] org.w3c.dom.svg.SVGAnimatedString
+[Flag] Interface
+[Info]
+public interface SVGAnimatedString
+[Constructor Summary]
+
+[Method Summary]
+java.lang.String getAnimVal()	 
+ java.lang.String getBaseVal()	 
+ void setBaseVal(java.lang.String baseVal)

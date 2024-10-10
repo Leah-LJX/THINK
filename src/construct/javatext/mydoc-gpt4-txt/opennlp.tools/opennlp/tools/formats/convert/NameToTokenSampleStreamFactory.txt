@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.formats.convert.NameToTokenSampleStreamFactory<P>
+[Type] Class
+[Info]
+All Implemented Interfaces: opennlp.tools.cmdline.ObjectStreamFactory<TokenSample,P>
+@Internal public class NameToTokenSampleStreamFactory<P> extends DetokenizerSampleStreamFactory<TokenSample,P> Note:  Do not use this class, internal use only!
+See Also:
+NameToTokenSampleStream
+[Method Summary]
+ObjectStream<TokenSample> create(String[] args)	Creates an ObjectStream of the template type T.
+static void registerFactory()	
+[Methods inherited from class opennlp.tools.formats.AbstractSampleStreamFactory]
+getLang, getParameters
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

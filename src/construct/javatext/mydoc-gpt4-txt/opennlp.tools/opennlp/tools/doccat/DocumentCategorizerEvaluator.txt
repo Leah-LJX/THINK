@@ -1,0 +1,17 @@
+[API Name] opennlp.tools.doccat.DocumentCategorizerEvaluator
+[Type] Class
+[Info]
+public class DocumentCategorizerEvaluator extends Evaluator<DocumentSample> The DocumentCategorizerEvaluator measures the performance of  the given DocumentCategorizer with the provided reference  samples.
+See Also:
+DocumentCategorizer DocumentSample Evaluator
+[Constructor Summary]
+DocumentCategorizerEvaluator(DocumentCategorizer categorizer, DoccatEvaluationMonitor... listeners)	Initializes a DocumentCategorizerEvaluator instance.
+[Method Summary]
+double getAccuracy()	accuracy = correctly categorized documents / total documents
+long getDocumentCount()	
+DocumentSample processSample(DocumentSample sample)	Evaluates the given reference sample.
+String toString()	Represents this object as human-readable String.
+[Methods inherited from class opennlp.tools.util.eval.Evaluator]
+evaluate, evaluateSample
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, wait, wait, wait

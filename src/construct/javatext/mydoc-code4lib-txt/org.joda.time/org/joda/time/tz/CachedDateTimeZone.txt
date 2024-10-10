@@ -1,0 +1,17 @@
+[Class] org.joda.time.tz.CachedDateTimeZone
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+
+[Method Summary]
+boolean equals(Object obj) Compare this datetime zone with another.
+static CachedDateTimeZone forZone(DateTimeZone zone) Returns a new CachedDateTimeZone unless given zone is already cached.
+String getNameKey(long instant) Returns a non-localized name that is unique to this time zone.
+int getOffset(long instant) Gets the millisecond offset to add to UTC to get local time.
+int getStandardOffset(long instant) Gets the standard millisecond offset to add to UTC to get local time, when standard time is in effect.
+DateTimeZone getUncachedZone() Returns the DateTimeZone being wrapped.
+int hashCode() Gets a hash code compatible with equals.
+boolean isFixed() Returns true if this time zone has no transitions.
+long nextTransition(long instant) Advances the given instant to where the time zone offset or name changes.
+long previousTransition(long instant) Retreats the given instant to where the time zone offset or name changes.

@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.ml.maxent.quasinewton.QNMinimizer.L2RegFunction
+[Type] Class
+[Info]
+All Implemented Interfaces: Function
+Enclosing class: QNMinimizer
+public static class QNMinimizer.L2RegFunction extends Object implements Function L2-regularized objective Function.
+[Constructor Summary]
+L2RegFunction(Function f, double l2Cost)	
+[Method Summary]
+int getDimension()	
+double[] gradientAt(double[] x)	
+double valueAt(double[] x)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

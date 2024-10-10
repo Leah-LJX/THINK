@@ -1,0 +1,7 @@
+[Class] org.jfree.chart.ChartHints
+[Flag] Class
+[Info]
+Since: 1.0.18
+[Constructor Summary]
+
+[Method Summary]

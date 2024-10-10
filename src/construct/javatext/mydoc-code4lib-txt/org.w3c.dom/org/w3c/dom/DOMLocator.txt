@@ -1,0 +1,14 @@
+[Class] org.w3c.dom.DOMLocator
+[Flag] Interface
+[Info]
+Since:
+DOM Level 3
+[Constructor Summary]
+
+[Method Summary]
+int getByteOffset() The byte offset into the input source this locator is pointing to or -1 if there is no byte offset available.
+int getColumnNumber() The column number this locator is pointing to, or -1 if there is no column number available.
+int getLineNumber() The line number this locator is pointing to, or -1 if there is no column number available.
+Node getRelatedNode() The node this locator is pointing to, or null if no node is available.
+String getUri() The URI this locator is pointing to, or null if no URI is available.
+int getUtf16Offset() The UTF-16, as defined in [Unicode] and Amendment 1 of [ISO/IEC 10646], offset into the input source this locator is pointing to or -1 if there is no UTF-16 offset available.

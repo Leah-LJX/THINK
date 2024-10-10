@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.urls.XYURLGenerator
+[Flag] Interface
+[Info]
+All Known Subinterfaces: XYZURLGenerator
+All Known Implementing Classes: CustomXYURLGenerator, StandardXYURLGenerator, StandardXYZURLGenerator, TimeSeriesURLGenerator
+[Constructor Summary]
+
+[Method Summary]
+String generateURL(XYDataset dataset, int series, int item) Generates a URL for a particular item within a series.

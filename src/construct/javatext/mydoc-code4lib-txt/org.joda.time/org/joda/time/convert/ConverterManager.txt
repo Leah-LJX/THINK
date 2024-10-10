@@ -1,0 +1,28 @@
+[Class] org.joda.time.convert.ConverterManager
+[Flag] Class
+[Info]
+Since: 1.0
+[Constructor Summary]
+protected 	ConverterManager()	Restricted constructor.
+[Method Summary]
+DurationConverter addDurationConverter(DurationConverter converter) Adds a converter to the set of converters.
+InstantConverter addInstantConverter(InstantConverter converter) Adds a converter to the set of converters.
+IntervalConverter addIntervalConverter(IntervalConverter converter) Adds a converter to the set of converters.
+PartialConverter addPartialConverter(PartialConverter converter) Adds a converter to the set of converters.
+PeriodConverter addPeriodConverter(PeriodConverter converter) Adds a converter to the set of converters.
+DurationConverter getDurationConverter(Object object) Gets the best converter for the object specified.
+DurationConverter[] getDurationConverters() Gets a copy of the list of converters.
+static ConverterManager getInstance() InstantConverter getInstantConverter(Object object) Gets the best converter for the object specified.
+InstantConverter[] getInstantConverters() Gets a copy of the set of converters.
+IntervalConverter getIntervalConverter(Object object) Gets the best converter for the object specified.
+IntervalConverter[] getIntervalConverters() Gets a copy of the list of converters.
+PartialConverter getPartialConverter(Object object) Gets the best converter for the object specified.
+PartialConverter[] getPartialConverters() Gets a copy of the set of converters.
+PeriodConverter getPeriodConverter(Object object) Gets the best converter for the object specified.
+PeriodConverter[] getPeriodConverters() Gets a copy of the list of converters.
+DurationConverter removeDurationConverter(DurationConverter converter) Removes a converter from the set of converters.
+InstantConverter removeInstantConverter(InstantConverter converter) Removes a converter from the set of converters.
+IntervalConverter removeIntervalConverter(IntervalConverter converter) Removes a converter from the set of converters.
+PartialConverter removePartialConverter(PartialConverter converter) Removes a converter from the set of converters.
+PeriodConverter removePeriodConverter(PeriodConverter converter) Removes a converter from the set of converters.
+String toString() Gets a debug representation of the object.

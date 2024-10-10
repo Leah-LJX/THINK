@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.needle.LineNeedle
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+LineNeedle()
+[Method Summary]
+Object clone() Returns a clone of this needle.

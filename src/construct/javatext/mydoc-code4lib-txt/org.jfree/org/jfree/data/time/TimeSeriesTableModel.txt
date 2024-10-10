@@ -1,0 +1,17 @@
+[Class] org.jfree.data.time.TimeSeriesTableModel
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, EventListener, TableModel, SeriesChangeListener
+[Constructor Summary]
+TimeSeriesTableModel()	Default constructor.
+TimeSeriesTableModel(TimeSeries series)	Constructs a table model for a time series.
+TimeSeriesTableModel(TimeSeries series, boolean editable)	Creates a table model based on a time series.
+[Method Summary]
+Class getColumnClass(int column)	Returns the column class in the table model.
+int getColumnCount()	Returns the number of columns in the table model.
+String getColumnName(int column)	Returns the name of a column
+int getRowCount()	Returns the number of rows in the table model.
+Object getValueAt(int row, int column)	Returns the data value for a cell in the table model.
+boolean isCellEditable(int row, int column)	Returns a flag indicating whether or not the specified cell is editable.
+void seriesChanged(SeriesChangeEvent event)	Receives notification that the time series has been changed.
+void setValueAt(Object value, int row, int column)	Updates the time series.

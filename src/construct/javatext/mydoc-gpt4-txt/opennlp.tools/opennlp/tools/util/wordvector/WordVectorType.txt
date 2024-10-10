@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.util.wordvector.Class
+[Type] Enum
+[Info]
+All Implemented Interfaces: Serializable, Comparable<WordVectorType>, Constable
+@Experimental public enum WordVectorType extends Enum<WordVectorType>
+[Nested Class Summary]
+Nested Class Summary
+Enum.EnumDesc<E extends Enum<E>>
+[Method Summary]
+static WordVectorType valueOf(String name)	Returns the enum constant of this class with the specified name.
+static WordVectorType[] values()	Returns an array containing the constants of this enum class, in the order they are declared.
+[Methods inherited from class java.lang.Enum]
+compareTo, describeConstable, equals, getDeclaringClass, hashCode, name, ordinal, toString, valueOf
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

@@ -1,0 +1,18 @@
+[Class] org.jfree.data.DataUtils
+[Flag] Class
+[Info]
+Parameters: a - the first array (null permitted).
+b - the second array (null permitted).
+Returns: A boolean.
+[Constructor Summary]
+DataUtils()
+[Method Summary]
+static double calculateColumnTotal(Values2D data, int column)	Returns the total of the values in one column of the supplied data table.
+static double calculateColumnTotal(Values2D data, int column, int[] validRows)	Returns the total of the values in one column of the supplied data table by taking only the row numbers in the array into account.
+static double calculateRowTotal(Values2D data, int row)	Returns the total of the values in one row of the supplied data table.
+static double calculateRowTotal(Values2D data, int row, int[] validCols)	Returns the total of the values in one row of the supplied data table by taking only the column numbers in the array into account.
+static double[][] clone(double[][] source)	Returns a clone of the specified array.
+static Number[] createNumberArray(double[] data)	Constructs an array of Number objects from an array of double primitives.
+static Number[][] createNumberArray2D(double[][] data)	Constructs an array of arrays of Number objects from a corresponding structure containing double primitives.
+static boolean equal(double[][] a, double[][] b)	Tests two arrays for equality.
+static KeyedValues getCumulativePercentages(KeyedValues data)	Returns a KeyedValues instance that contains the cumulative percentage values for the data in another KeyedValues instance.

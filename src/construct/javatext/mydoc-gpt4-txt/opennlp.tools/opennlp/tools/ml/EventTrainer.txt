@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.ml.EventTrainer
+[Type] Interface
+[Info]
+All Superinterfaces: Trainer
+All Known Implementing Classes: AbstractEventTrainer, GISTrainer, NaiveBayesTrainer, PerceptronTrainer, QNTrainer
+public interface EventTrainer extends Trainer A specialized Trainer that is based on an Event approach.
+[Field Summary]
+static final String EVENT_VALUE	
+[Method Summary]
+MaxentModel train(DataIndexer indexer)	Trains a MaxentModel for given events.
+MaxentModel train(ObjectStream<Event> events)	Trains a MaxentModel for given events.
+[Methods inherited from interface opennlp.tools.commons.Trainer]
+init

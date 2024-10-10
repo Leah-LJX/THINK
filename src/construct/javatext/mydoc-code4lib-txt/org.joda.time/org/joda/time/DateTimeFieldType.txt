@@ -1,0 +1,36 @@
+[Class] org.joda.time.DateTimeFieldType
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+protected 	DateTimeFieldType(String name)	Constructor.
+[Method Summary]
+static DateTimeFieldType centuryOfEra() Get the century of era field type.
+static DateTimeFieldType clockhourOfDay() Get the hour of day (offset to 1-24) field type.
+static DateTimeFieldType clockhourOfHalfday() Get the hour of am/pm (offset to 1-12) field type.
+static DateTimeFieldType dayOfMonth() Get the day of month field type.
+static DateTimeFieldType dayOfWeek() Get the day of week field type.
+static DateTimeFieldType dayOfYear() Get the day of year field type.
+static DateTimeFieldType era() Get the era field type.
+abstract DurationFieldType getDurationType() Get the duration unit of the field.
+abstract DateTimeField getField(Chronology chronology) Gets a suitable field for this type from the given Chronology.
+String getName() Get the name of the field.
+abstract DurationFieldType getRangeDurationType() Get the duration range of the field.
+static DateTimeFieldType halfdayOfDay() Get the AM(0) PM(1) field type.
+static DateTimeFieldType hourOfDay() Get the hour of day (0-23) field type.
+static DateTimeFieldType hourOfHalfday() Get the hour of am/pm (0-11) field type.
+boolean isSupported(Chronology chronology) Checks whether this field supported in the given Chronology.
+static DateTimeFieldType millisOfDay() Get the millis of day field type.
+static DateTimeFieldType millisOfSecond() Get the millis of second field type.
+static DateTimeFieldType minuteOfDay() Get the minute of day field type.
+static DateTimeFieldType minuteOfHour() Get the minute of hour field type.
+static DateTimeFieldType monthOfYear() Get the month of year field type.
+static DateTimeFieldType secondOfDay() Get the second of day field type.
+static DateTimeFieldType secondOfMinute() Get the second of minute field type.
+String toString() Get a suitable debug string.
+static DateTimeFieldType weekOfWeekyear() Get the week of a week based year field type.
+static DateTimeFieldType weekyear() Get the year of a week based year field type.
+static DateTimeFieldType weekyearOfCentury() Get the year of a week based year within a century field type.
+static DateTimeFieldType year() Get the year field type.
+static DateTimeFieldType yearOfCentury() Get the year of century field type.
+static DateTimeFieldType yearOfEra() Get the year of era field type.

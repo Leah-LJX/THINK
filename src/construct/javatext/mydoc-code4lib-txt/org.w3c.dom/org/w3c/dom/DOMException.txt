@@ -1,0 +1,8 @@
+[Class] org.w3c.dom.DOMException
+[Flag] Class
+[Info]
+All Implemented Interfaces:
+Serializable
+[Constructor Summary]
+DOMException(short code,	String message)
+[Method Summary]

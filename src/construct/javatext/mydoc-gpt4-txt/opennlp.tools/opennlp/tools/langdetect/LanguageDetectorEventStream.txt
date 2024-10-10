@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.langdetect.LanguageDetectorEventStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<Event>
+public class LanguageDetectorEventStream extends AbstractEventStream<LanguageSample> Iterator-like class for modeling an event stream of samples.
+[Constructor Summary]
+LanguageDetectorEventStream(ObjectStream<LanguageSample> data, LanguageDetectorContextGenerator cg)	Initializes an instance via samples and feature generators.
+[Methods inherited from class opennlp.tools.util.AbstractEventStream]
+close, read, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

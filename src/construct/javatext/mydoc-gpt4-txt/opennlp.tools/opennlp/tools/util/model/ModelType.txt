@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.util.model.Class
+[Type] Enum
+[Info]
+All Implemented Interfaces: Serializable, Comparable<ModelType>, Constable
+public enum ModelType extends Enum<ModelType> Enumeration of supported model types.
+[Nested Class Summary]
+Nested Class Summary
+Enum.EnumDesc<E extends Enum<E>>
+[Method Summary]
+static ModelType valueOf(String name)	Returns the enum constant of this class with the specified name.
+static ModelType[] values()	Returns an array containing the constants of this enum class, in the order they are declared.
+[Methods inherited from class java.lang.Enum]
+compareTo, describeConstable, equals, getDeclaringClass, hashCode, name, ordinal, toString, valueOf
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

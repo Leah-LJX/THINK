@@ -1,0 +1,18 @@
+[Class] org.jfree.data.gantt.GanttCategoryDataset
+[Flag] Interface
+[Info]
+All Superinterfaces: CategoryDataset, Dataset, IntervalCategoryDataset, KeyedValues2D, Values2D
+All Known Implementing Classes: SlidingGanttCategoryDataset, TaskSeriesCollection
+[Constructor Summary]
+
+[Method Summary]
+Number getEndValue(int row, int column, int subinterval)	Returns the end value of a sub-interval for a given item.
+Number getEndValue(Comparable rowKey, Comparable columnKey, int subinterval)	Returns the end value of a sub-interval for a given item.
+Number getPercentComplete(int row, int column)	Returns the percent complete for a given item.
+Number getPercentComplete(int row, int column, int subinterval)	Returns the percentage complete value of a sub-interval for a given item.
+Number getPercentComplete(Comparable rowKey, Comparable columnKey)	Returns the percent complete for a given item.
+Number getPercentComplete(Comparable rowKey, Comparable columnKey, int subinterval)	Returns the percentage complete value of a sub-interval for a given item.
+Number getStartValue(int row, int column, int subinterval)	Returns the start value of a sub-interval for a given item.
+Number getStartValue(Comparable rowKey, Comparable columnKey, int subinterval)	Returns the start value of a sub-interval for a given item.
+int getSubIntervalCount(int row, int column)	Returns the number of sub-intervals for a given item.
+int getSubIntervalCount(Comparable rowKey, Comparable columnKey)	Returns the number of sub-intervals for a given item.

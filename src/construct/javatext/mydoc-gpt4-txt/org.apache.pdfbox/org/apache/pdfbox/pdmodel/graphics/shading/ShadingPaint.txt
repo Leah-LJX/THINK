@@ -1,0 +1,19 @@
+[API Name] org.apache.pdfbox.pdmodel.graphics.shading.ShadingPaint<T
+[Type] Class
+[Info]
+Type Parameters: T - the actual PDShading class.
+All Implemented Interfaces: Paint, Transparency
+Direct Known Subclasses: AxialShadingPaint, RadialShadingPaint
+public abstract class ShadingPaint<T extends PDShading> extends Object implements Paint This is base class for all PDShading-Paints to allow other low level libraries access to the  shading source data. One user of this interface is the PdfBoxGraphics2D-adapter.
+[Field Summary]
+protected Matrix matrix	
+protected T shading	
+[Method Summary]
+Matrix getMatrix()	
+T getShading()	
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface java.awt.Paint]
+createContext
+[Methods inherited from interface java.awt.Transparency]
+getTransparency

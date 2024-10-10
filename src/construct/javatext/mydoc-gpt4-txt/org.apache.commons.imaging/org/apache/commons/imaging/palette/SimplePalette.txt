@@ -1,0 +1,13 @@
+[API Name] Package org.apache.commons.imaging.palette.SimplePalette
+[Type] Class
+[Info]
+All Implemented Interfaces: Palette
+public class SimplePalette extends Object implements Palette
+[Constructor Summary]
+SimplePalette​(int[] palette)	
+[Method Summary]
+int getEntry​(int index)	Looks up the color for a given palette index.
+int getPaletteIndex​(int rgb)	Looks up the palette index for a given color.
+int length()	The number of entries in the palette.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

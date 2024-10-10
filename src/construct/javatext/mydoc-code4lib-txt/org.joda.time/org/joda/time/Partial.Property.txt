@@ -1,0 +1,19 @@
+[Class] org.joda.time.Partial.Property
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+Enclosing class: Partial
+[Constructor Summary]
+
+[Method Summary]
+Partial addToCopy(int valueToAdd) Adds to the value of this field in a copy of this Partial.
+Partial addWrapFieldToCopy(int valueToAdd) Adds to the value of this field in a copy of this Partial wrapping within this field if the maximum value is reached.
+int get() Gets the value of this field.
+DateTimeField getField() Gets the field that this property uses.
+Partial getPartial() Gets the partial that this property belongs to.
+protected ReadablePartial getReadablePartial() Gets the partial that this property belongs to.
+Partial setCopy(int value) Sets this field in a copy of the Partial.
+Partial setCopy(String text) Sets this field in a copy of the Partial to a parsed text value.
+Partial setCopy(String text, Locale locale) Sets this field in a copy of the Partial to a parsed text value.
+Partial withMaximumValue() Returns a new Partial with this field set to the maximum value for this field.
+Partial withMinimumValue() Returns a new Partial with this field set to the minimum value for this field.

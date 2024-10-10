@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.block.Block
+[Flag] Interface
+[Info]
+All Superinterfaces: org.jfree.ui.Drawable
+All Known Implementing Classes: BlockContainer, ColorBlock, CompositeTitle, DateTitle, EmptyBlock, ImageTitle, LabelBlock, LegendGraphic, LegendItemBlockContainer, LegendTitle, PaintScaleLegend, ShortTextTitle, TextTitle, Title
+[Constructor Summary]
+
+[Method Summary]
+org.jfree.ui.Size2D arrange(Graphics2D g2) Arranges the contents of the block, with no constraints, and returns the block size.

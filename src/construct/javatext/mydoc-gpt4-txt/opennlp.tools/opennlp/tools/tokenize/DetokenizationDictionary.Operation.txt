@@ -1,0 +1,17 @@
+[API Name] opennlp.tools.tokenize.Class
+[Type] Enum
+[Info]
+All Implemented Interfaces: Serializable, Comparable<DetokenizationDictionary.Operation>, Constable
+Enclosing class: DetokenizationDictionary
+public static enum DetokenizationDictionary.Operation extends Enum<DetokenizationDictionary.Operation>
+[Nested Class Summary]
+Nested Class Summary
+Enum.EnumDesc<E extends Enum<E>>
+[Method Summary]
+static DetokenizationDictionary.Operation parse(String operation)	
+static DetokenizationDictionary.Operation valueOf(String name)	Returns the enum constant of this class with the specified name.
+static DetokenizationDictionary.Operation[] values()	Returns an array containing the constants of this enum class, in the order they are declared.
+[Methods inherited from class java.lang.Enum]
+compareTo, describeConstable, equals, getDeclaringClass, hashCode, name, ordinal, toString, valueOf
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

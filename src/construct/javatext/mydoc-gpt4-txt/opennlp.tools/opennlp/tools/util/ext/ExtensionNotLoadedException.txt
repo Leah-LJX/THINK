@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.util.ext.ExtensionNotLoadedException
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable
+public class ExtensionNotLoadedException extends RuntimeException Exception indicates that an OpenNLP extension could not be loaded.
+See Also:
+Serialized Form
+[Constructor Summary]
+ExtensionNotLoadedException(String message)	
+ExtensionNotLoadedException(Throwable t)	
+[Methods inherited from class java.lang.Throwable]
+addSuppressed, fillInStackTrace, getCause, getLocalizedMessage, getMessage, getStackTrace, getSuppressed, initCause, printStackTrace, printStackTrace, printStackTrace, setStackTrace, toString
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, wait, wait, wait

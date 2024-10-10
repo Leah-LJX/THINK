@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.tokenize.SimpleTokenizer
+[Type] Class
+[Info]
+All Implemented Interfaces: Tokenizer
+public class SimpleTokenizer extends Object A basic Tokenizer implementation which performs tokenization  using character classes.    To obtain an instance of this tokenizer use the static final  INSTANCE field.
+[Field Summary]
+static final SimpleTokenizer INSTANCE	Use this static reference to retrieve an instance of the SimpleTokenizer.
+[Method Summary]
+void setKeepNewLines(boolean keepNewLines)	Switches whether to keep new lines or not.
+String[] tokenize(String s)	Splits a string into its atomic parts.
+Span[] tokenizePos(String s)	Finds the boundaries of atomic parts in a string.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

@@ -1,0 +1,10 @@
+[API Name] opennlp.tools.cmdline.namefind.TokenNameFinderModelLoader
+[Type] Class
+[Info]
+@Internal public final class TokenNameFinderModelLoader extends opennlp.tools.cmdline.ModelLoader<TokenNameFinderModel> Loads a TokenNameFinderModel for the command line tools.   Note: Do not use this class, internal use only!
+[Constructor Summary]
+TokenNameFinderModelLoader()	
+[Methods inherited from class opennlp.tools.cmdline.ModelLoader]
+load
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

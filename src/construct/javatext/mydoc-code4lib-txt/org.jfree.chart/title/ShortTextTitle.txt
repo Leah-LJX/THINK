@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.title.ShortTextTitle
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Block, org.jfree.ui.Drawable, org.jfree.util.PublicCloneable
+[Constructor Summary]
+ShortTextTitle(String text) Creates a new title.
+[Method Summary]
+org.jfree.ui.Size2D arrange(Graphics2D g2, RectangleConstraint constraint) Performs a layout for this title, subject to the supplied constraint, and returns the dimensions required for the title (if the title cannot be displayed in the available space, this method will return zero width and height for the dimensions).

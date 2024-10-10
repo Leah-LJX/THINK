@@ -1,0 +1,17 @@
+[API Name] opennlp.tools.ml.TrainerFactory
+[Type] Class
+[Info]
+public class TrainerFactory extends Object A factory to initialize Trainer instances depending on a trainer type  configured via TrainingParameters.
+[Constructor Summary]
+TrainerFactory()	
+[Nested Class Summary]
+Nested Class Summary
+static enum 
+[Method Summary]
+static <T> EventModelSequenceTrainer<T> getEventModelSequenceTrainer(TrainingParameters trainParams, Map<String,String> reportMap)	Retrieves an EventModelSequenceTrainer that fits the given parameters.
+static EventTrainer getEventTrainer(TrainingParameters trainParams, Map<String,String> reportMap)	Retrieves an EventTrainer that fits the given parameters.
+static SequenceTrainer getSequenceModelTrainer(TrainingParameters trainParams, Map<String,String> reportMap)	Retrieves a SequenceTrainer that fits the given parameters.
+static TrainerFactory.TrainerType getTrainerType(TrainingParameters trainParams)	Determines the TrainerFactory.TrainerType based on the AbstractTrainer.ALGORITHM_PARAM value.
+static boolean isValid(TrainingParameters trainParams)	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

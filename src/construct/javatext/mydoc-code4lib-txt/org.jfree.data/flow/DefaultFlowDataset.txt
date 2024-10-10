@@ -1,0 +1,24 @@
+[Class] org.jfree.data.flow.DefaultFlowDataset
+[Flag] Class
+[Info]
+Type Parameters: K - the type for the keys used to identify sources and destinations 
+     (instances should be immutable, String is a good default choice).
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, PublicCloneable, FlowDataset<K>, Dataset
+[Constructor Summary]
+DefaultFlowDataset()	Creates a new dataset that is initially empty.
+[Method Summary]
+Object clone()	Returns a clone of the dataset.
+boolean equals(Object obj)	Tests this dataset for equality with an arbitrary object.
+Set<FlowKey<K>> getAllFlows()	Returns a set of keys for all the flows in the dataset.
+Set<NodeKey<K>> getAllNodes()	Returns the set of keys for all the nodes in the dataset.
+List<K> getDestinations(int stage)	Returns a list of the destination nodes for the specified stage.
+Number getFlow(int stage, K source, K destination)	Returns the flow between a source node and a destination node at a specified stage.
+Object getFlowProperty(FlowKey<K> flowKey, String propertyKey)	Returns the value of a property, if specified, for the specified flow.
+List<FlowKey<K>> getInFlows(NodeKey nodeKey)	Returns a list of flow keys for all the flows coming into this node.
+Object getNodeProperty(NodeKey<K> nodeKey, String propertyKey)	Returns the value of a property, if specified, for the specified node.
+List<FlowKey> getOutFlows(NodeKey nodeKey)	Returns a list of flow keys for all the flows going out of this node.
+List<K> getSources(int stage)	Returns a list of the source nodes for the specified stage.
+int getStageCount()	Returns the number of flow stages.
+int hashCode() 	 void setFlow(int stage, K source, K destination, double flow)	Sets the flow between a source node and a destination node at the specified stage.
+void setFlowProperty(FlowKey<K> flowKey, String propertyKey, Object value)	Sets a property for the specified flow and notifies registered listeners that the dataset has changed.
+void setNodeProperty(NodeKey<K> nodeKey, String propertyKey, Object value)	Sets a property for the specified node and notifies registered listeners that the dataset has changed.

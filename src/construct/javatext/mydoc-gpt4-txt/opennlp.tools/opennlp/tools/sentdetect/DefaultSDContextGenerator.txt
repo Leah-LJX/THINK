@@ -1,0 +1,13 @@
+[API Name] opennlp.tools.sentdetect.DefaultSDContextGenerator
+[Type] Class
+[Info]
+All Implemented Interfaces: SDContextGenerator
+Direct Known Subclasses: SentenceContextGenerator
+public class DefaultSDContextGenerator extends Object implements SDContextGenerator Generate event contexts for maxent decisions for sentence detection.
+[Constructor Summary]
+DefaultSDContextGenerator(char[] eosCharacters)	Creates a new instance with no induced abbreviations.
+DefaultSDContextGenerator(Set<String> inducedAbbreviations, char[] eosCharacters)	Creates a new SDContextGenerator instance which uses the set of induced abbreviations.
+[Method Summary]
+String[] getContext(CharSequence sb, int position)	Returns an array of contextual features for the potential sentence boundary at the specified position within the specified string buffer.
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

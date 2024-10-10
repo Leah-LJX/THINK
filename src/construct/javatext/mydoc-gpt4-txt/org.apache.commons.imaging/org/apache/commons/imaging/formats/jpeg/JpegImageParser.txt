@@ -1,0 +1,34 @@
+[API Name] Package org.apache.commons.imaging.formats.jpeg.JpegImageParser
+[Type] Class
+[Info]
+All Implemented Interfaces: XmpEmbeddable
+public class JpegImageParser extends ImageParser<JpegImagingParameters> implements XmpEmbeddable
+[Constructor Summary]
+JpegImageParser()	
+[Method Summary]
+boolean dumpImageFile​(PrintWriter pw, ByteSource byteSource)	Write the ImageInfo and format-specific information for the image content of the specified byte source to a PrintWriter
+protected String[] getAcceptedExtensions()	Get an array of all accepted extensions
+protected ImageFormat[] getAcceptedTypes()	Get an array of ImageFormat objects describing all accepted types
+BufferedImage getBufferedImage​(ByteSource byteSource, JpegImagingParameters params)	Gets a buffered image specified by the byte source (for sources that specify multiple images, choice of which image is returned is implementation dependent).
+String getDefaultExtension()	Get the default extension for the format specified by an implementation of ImageParser.
+JpegImagingParameters getDefaultParameters()	Get a default parameters instance for this parser.
+TiffImageMetadata getExifMetadata​(ByteSource byteSource, TiffImagingParameters params)	
+byte[] getExifRawData​(ByteSource byteSource)	
+byte[] getICCProfileBytes​(ByteSource byteSource, JpegImagingParameters params)	Get an array of bytes describing the International Color Consortium (ICC) specification for the color space of the image contained in the input byteSource.
+ImageInfo getImageInfo​(ByteSource byteSource, JpegImagingParameters params)	Get image information from the specified ByteSource.
+Dimension getImageSize​(ByteSource byteSource, JpegImagingParameters params)	Get the size of the image described by the specified ByteSource.
+ImageMetadata getMetadata​(ByteSource byteSource, JpegImagingParameters params)	Get image metadata from the specified byte source.
+String getName()	Get a descriptive name for the implementation of an ImageParser.
+JpegPhotoshopMetadata getPhotoshopMetadata​(ByteSource byteSource, JpegImagingParameters params)	
+String getXmpXml​(ByteSource byteSource, XmpImagingParameters params)	Extracts embedded XML metadata as XML string.
+boolean hasExifSegment​(ByteSource byteSource)	
+boolean hasIptcSegment​(ByteSource byteSource)	
+boolean hasXmpSegment​(ByteSource byteSource)	
+static boolean isExifAPP1Segment​(GenericSegment segment)	
+List<Segment> readSegments​(ByteSource byteSource, int[] markers, boolean returnAfterFirst)	
+[Methods inherited from class org.apache.commons.imaging.ImageParser]
+canAcceptExtension, canAcceptExtension, canAcceptType, dumpImageFile, dumpImageFile, dumpImageFile, getAllBufferedImages, getAllBufferedImages, getAllBufferedImages, getAllImageParsers, getBufferedImage, getBufferedImage, getBufferedImageFactory, getFormatCompliance, getFormatCompliance, getFormatCompliance, getICCProfileBytes, getICCProfileBytes, getICCProfileBytes, getICCProfileBytes, getImageInfo, getImageInfo, getImageInfo, getImageSize, getImageSize, getImageSize, getImageSize, getMetadata, getMetadata, getMetadata, getMetadata, getMetadata, writeImage
+[Methods inherited from class org.apache.commons.imaging.common.BinaryFileParser]
+debugNumber, debugNumber, getByteOrder, setByteOrder
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

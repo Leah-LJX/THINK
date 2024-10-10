@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.TickUnitSource
+[Flag] Interface
+[Info]
+All Known Implementing Classes: NumberTickUnitSource, StandardTickUnitSource, TickUnits
+[Constructor Summary]
+
+[Method Summary]
+TickUnit getCeilingTickUnit(double size) Returns the smallest tick unit available in the source that is greater than or equal to the specified size.

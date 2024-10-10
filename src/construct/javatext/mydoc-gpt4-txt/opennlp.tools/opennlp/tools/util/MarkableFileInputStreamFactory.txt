@@ -1,0 +1,11 @@
+[API Name] opennlp.tools.util.MarkableFileInputStreamFactory
+[Type] Class
+[Info]
+All Implemented Interfaces: InputStreamFactory
+public class MarkableFileInputStreamFactory extends Object implements InputStreamFactory A factory that creates MarkableFileInputStream from a File
+[Constructor Summary]
+MarkableFileInputStreamFactory(File file)	Initializes a MarkableFileInputStreamFactory.
+[Method Summary]
+InputStream createInputStream()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

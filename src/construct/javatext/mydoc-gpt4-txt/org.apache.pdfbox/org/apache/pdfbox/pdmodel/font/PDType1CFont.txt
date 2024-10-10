@@ -1,0 +1,38 @@
+[API Name] org.apache.pdfbox.pdmodel.font.PDType1CFont
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable, PDFontLike, PDVectorFont
+public class PDType1CFont extends PDSimpleFont implements PDVectorFont Type 1-equivalent CFF font.
+Author: Villu Ruusmann, John Hewson
+[Constructor Summary]
+PDType1CFont(COSDictionary fontDictionary)	Constructor.
+[Field Summary]
+PDType1CFont(COSDictionary fontDictionary)	Constructor.
+[Method Summary]
+String codeToName(int code)	
+protected byte[] encode(int unicode)	Encodes the given Unicode code point for use in a PDF content stream.
+float getAverageFontWidth()	This will get the average font width for all characters.
+String getBaseFont()	Returns the PostScript name of the font.
+org.apache.fontbox.util.BoundingBox getBoundingBox()	Returns the font's bounding box.
+org.apache.fontbox.cff.CFFType1Font getCFFType1Font()	Returns the embedded Type 1-equivalent CFF font.
+org.apache.fontbox.FontBoxFont getFontBoxFont()	Returns the embedded or system font used for rendering.
+Matrix getFontMatrix()	Returns the font matrix, which represents the transformation from glyph space to text space.
+float getHeight(int code)	Returns the height of the given character, in glyph space.
+String getName()	Returns the name of this font, either the PostScript "BaseName" or the Type 3 "Name".
+GeneralPath getNormalizedPath(int code)	Returns the normalized glyph path for the given character code in a PDF.
+GeneralPath getPath(int code)	Returns the glyph path for the given character code.
+GeneralPath getPath(String name)	Returns the path for the character with the given name.
+float getStringWidth(String string)	Returns the width of the given Unicode string.
+float getWidthFromFont(int code)	Returns the width of a glyph in the embedded font file.
+boolean hasGlyph(int code)	Returns true if this font contains a glyph for the given character code in a PDF.
+boolean hasGlyph(String name)	Returns true if the font contains the character with the given name.
+boolean isDamaged()	Returns true if the embedded font file is damaged.
+boolean isEmbedded()	Returns true if the font file is embedded in the PDF.
+int readCode(InputStream in)	Reads a character code from a content stream string.
+protected Encoding readEncodingFromFont()	Called by readEncoding() if the encoding needs to be extracted from the font file.
+[Methods inherited from class org.apache.pdfbox.pdmodel.font.PDSimpleFont]
+addToSubset, getEncoding, getGlyphList, getStandard14Width, getSymbolicFlag, hasExplicitWidth, isFontSymbolic, isNonZeroBoundingBox, isStandard14, isSymbolic, isVertical, readEncoding, subset, toUnicode, toUnicode, willBeSubset
+[Methods inherited from class org.apache.pdfbox.pdmodel.font.PDFont]
+encode, equals, getCOSObject, getDisplacement, getFontDescriptor, getPositionVector, getSpaceWidth, getStandard14AFM, getSubType, getToUnicodeCMap, getType, getWidth, getWidths, hashCode, readCMap, setFontDescriptor, toString
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

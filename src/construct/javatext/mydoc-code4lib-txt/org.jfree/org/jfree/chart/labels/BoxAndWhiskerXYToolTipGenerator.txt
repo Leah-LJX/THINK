@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.labels.BoxAndWhiskerXYToolTipGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, XYToolTipGenerator, org.jfree.util.PublicCloneable
+[Constructor Summary]
+BoxAndWhiskerXYToolTipGenerator() Creates a default item label generator.
+[Method Summary]
+protected Object[] createItemArray(XYDataset dataset, int series, int item) Creates the array of items that can be passed to the MessageFormat class for creating labels.

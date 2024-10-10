@@ -1,0 +1,36 @@
+[API Name] Package org.apache.commons.imaging.formats.tiff.TiffImageMetadata
+[Type] Class
+[Info]
+All Implemented Interfaces: ImageMetadata
+public class TiffImageMetadata extends GenericImageMetadata
+[Constructor Summary]
+TiffImageMetadata​(TiffContents contents)	
+[Field Summary]
+TiffContents contents	
+[Method Summary]
+TiffDirectory findDirectory​(int directoryType)	
+TiffField findField​(TagInfo tagInfo)	
+TiffField findField​(TagInfo tagInfo, boolean exactDirectoryMatch)	
+List<TiffField> getAllFields()	
+List<? extends ImageMetadata.ImageMetadataItem> getDirectories()	
+Object getFieldValue​(TagInfo tag)	
+String[] getFieldValue​(TagInfoAscii tag)	
+byte[] getFieldValue​(TagInfoByte tag)	
+double[] getFieldValue​(TagInfoDoubles tag)	
+float[] getFieldValue​(TagInfoFloats tag)	
+String getFieldValue​(TagInfoGpsText tag)	
+int[] getFieldValue​(TagInfoLongs tag)	
+RationalNumber[] getFieldValue​(TagInfoRationals tag)	
+byte[] getFieldValue​(TagInfoSBytes tag)	
+short[] getFieldValue​(TagInfoShorts tag)	
+int[] getFieldValue​(TagInfoSLongs tag)	
+RationalNumber[] getFieldValue​(TagInfoSRationals tag)	
+short[] getFieldValue​(TagInfoSShorts tag)	
+String getFieldValue​(TagInfoXpString tag)	
+TiffImageMetadata.GPSInfo getGPS()	
+List<? extends ImageMetadata.ImageMetadataItem> getItems()	
+TiffOutputSet getOutputSet()	
+[Methods inherited from class org.apache.commons.imaging.common.GenericImageMetadata]
+add, add, toString, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

@@ -1,0 +1,13 @@
+[Class] org.jfree.data.general.DefaultValueDataset
+[Flag] Class
+[Info]
+All Implemented Interfaces: ObjectInputValidation, Serializable, Cloneable, PublicCloneable, Dataset, ValueDataset, Value
+[Constructor Summary]
+DefaultValueDataset()	Constructs a new dataset, initially empty.
+DefaultValueDataset(double value)	Creates a new dataset with the specified value.
+DefaultValueDataset(Number value)	Creates a new dataset with the specified value.
+[Method Summary]
+boolean equals(Object obj)	Tests this dataset for equality with an arbitrary object.
+Number getValue()	Returns the value.
+int hashCode()	Returns a hash code.
+void setValue(Number value)	Sets the value and sends a DatasetChangeEvent to all registered listeners.

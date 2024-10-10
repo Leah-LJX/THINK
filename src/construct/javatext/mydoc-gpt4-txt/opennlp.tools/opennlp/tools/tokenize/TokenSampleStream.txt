@@ -1,0 +1,14 @@
+[API Name] opennlp.tools.tokenize.TokenSampleStream
+[Type] Class
+[Info]
+All Implemented Interfaces: AutoCloseable, ObjectStream<TokenSample>
+public class TokenSampleStream extends FilterObjectStream<String,TokenSample> This class is a stream filter which reads in string encoded  samples and creates samples out of them.  The input string sample is tokenized if a whitespace or the special separator chars occur.    Sample:  "token1 token2 token3<SPLIT>token4"  The tokens token1 and token2 are separated by a whitespace,  token3 and token4 are separated by the special character sequence.  In this case, the default split sequence applies.    Note: The sequence must be unique in the input string and is not escaped.
+[Constructor Summary]
+TokenSampleStream(ObjectStream<String> sentences)	Initializes a instance.
+TokenSampleStream(ObjectStream<String> samples, String separatorChars)	Initializes a instance.
+[Method Summary]
+TokenSample read()	Returns the next ObjectStream object.
+[Methods inherited from class opennlp.tools.util.FilterObjectStream]
+close, reset
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

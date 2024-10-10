@@ -1,0 +1,14 @@
+[Class] org.w3c.dom.svg.SVGPatternElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement, SVGExternalResourcesRequired, SVGFitToViewBox, SVGLangSpace, SVGStylable, SVGTests, SVGUnitTypes, SVGURIReference
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedLength getHeight()	 
+ SVGAnimatedEnumeration getPatternContentUnits()	 
+ SVGAnimatedTransformList getPatternTransform()	 
+ SVGAnimatedEnumeration getPatternUnits()	 
+ SVGAnimatedLength getWidth()	 
+ SVGAnimatedLength getX()	 
+ SVGAnimatedLength getY()

@@ -1,0 +1,23 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.form.PDComboBox
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public final class PDComboBox extends PDChoice A combo box consisting of a drop-down list.  May be accompanied by an editable text box in which non-predefined values may be entered.
+Author: John Hewson
+[Constructor Summary]
+PDComboBox(PDAcroForm acroForm)	
+[Field Summary]
+PDComboBox(PDAcroForm acroForm)	
+[Method Summary]
+boolean isEdit()	Determines if Edit is set.
+void setEdit(boolean edit)	Set the Edit bit.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDChoice]
+getDefaultValue, getOptions, getOptionsDisplayValues, getOptionsExportValues, getSelectedOptionsIndex, getValue, getValueAsString, isCombo, isCommitOnSelChange, isDoNotSpellCheck, isMultiSelect, isSort, setCombo, setCommitOnSelChange, setDefaultValue, setDoNotSpellCheck, setMultiSelect, setOptions, setOptions, setSelectedOptionsIndex, setSort, setValue, setValue
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDVariableText]
+getDefaultAppearance, getDefaultStyleString, getQ, getRichTextValue, getStringOrStream, setDefaultAppearance, setDefaultStyleString, setQ, setRichTextValue
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDTerminalField]
+applyChange, getFieldFlags, getFieldType, getWidgets, importFDF, setActions, setWidgets
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.form.PDField]
+getAcroForm, getActions, getAlternateFieldName, getCOSObject, getFullyQualifiedName, getInheritableAttribute, getMappingName, getParent, getPartialName, isNoExport, isReadOnly, isRequired, setAlternateFieldName, setFieldFlags, setMappingName, setNoExport, setPartialName, setReadOnly, setRequired, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait

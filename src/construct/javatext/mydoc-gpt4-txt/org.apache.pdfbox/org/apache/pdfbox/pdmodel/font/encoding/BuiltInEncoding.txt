@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.pdmodel.font.encoding.BuiltInEncoding
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+public class BuiltInEncoding extends Encoding A font's built-in encoding.
+Author: John Hewson
+[Constructor Summary]
+BuiltInEncoding(Map<Integer,String> codeToName)	Constructor.
+[Field Summary]
+BuiltInEncoding(Map<Integer,String> codeToName)	Constructor.
+[Method Summary]
+COSBase getCOSObject()	Convert this standard java object to a COS object.
+String getEncodingName()	Returns the name of this encoding.
+[Methods inherited from class org.apache.pdfbox.pdmodel.font.encoding.Encoding]
+add, contains, contains, getCodeToNameMap, getInstance, getName, getNameToCodeMap, overwrite
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

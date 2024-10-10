@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.formats.masc.MascWord
+[Type] Class
+[Info]
+All Implemented Interfaces: Serializable, Comparable<Span>
+public class MascWord extends Span
+See Also:
+Serialized Form
+[Constructor Summary]
+MascWord(int s, int e, int id)	Holds one of MASC's quarks, that is: basic-level units (may be sub-word).
+[Method Summary]
+int getId()	
+[Methods inherited from class opennlp.tools.util.Span]
+compareTo, contains, contains, crosses, equals, getCoveredText, getEnd, getProb, getStart, getType, hashCode, intersects, length, spansToStrings, spansToStrings, startsWith, toString, trim
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

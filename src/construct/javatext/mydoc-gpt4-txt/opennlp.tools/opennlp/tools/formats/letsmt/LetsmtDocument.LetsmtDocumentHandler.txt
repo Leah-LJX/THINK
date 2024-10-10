@@ -1,0 +1,17 @@
+[API Name] opennlp.tools.formats.letsmt.LetsmtDocument.LetsmtDocumentHandler
+[Type] Class
+[Info]
+All Implemented Interfaces: ContentHandler, DTDHandler, EntityResolver, ErrorHandler
+Enclosing class: LetsmtDocument
+public static class LetsmtDocument.LetsmtDocumentHandler extends DefaultHandler A content handler to receive and process SAX events.
+[Constructor Summary]
+LetsmtDocumentHandler()	
+[Method Summary]
+void characters(char[] ch, int start, int length)	
+void endElement(String uri, String localName, String qName)	
+[Methods inherited from class org.xml.sax.helpers.DefaultHandler]
+endDocument, endPrefixMapping, error, fatalError, ignorableWhitespace, notationDecl, processingInstruction, resolveEntity, setDocumentLocator, skippedEntity, startDocument, startElement, startPrefixMapping, unparsedEntityDecl, warning
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface org.xml.sax.ContentHandler]
+declaration

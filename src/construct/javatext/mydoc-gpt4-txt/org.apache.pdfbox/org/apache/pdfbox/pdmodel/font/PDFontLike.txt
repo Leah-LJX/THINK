@@ -1,0 +1,19 @@
+[API Name] org.apache.pdfbox.pdmodel.font.PDFontLike
+[Type] Interface
+[Info]
+All Known Implementing Classes: PDCIDFont, PDCIDFontType0, PDCIDFontType2, PDFont, PDMMType1Font, PDSimpleFont, PDTrueTypeFont, PDType0Font, PDType1CFont, PDType1Font, PDType3Font
+public interface PDFontLike A font-like object.
+Author: John Hewson
+[Method Summary]
+float getAverageFontWidth()	This will get the average font width for all characters.
+org.apache.fontbox.util.BoundingBox getBoundingBox()	Returns the font's bounding box.
+PDFontDescriptor getFontDescriptor()	Returns the font descriptor, may be null.
+Matrix getFontMatrix()	Returns the font matrix, which represents the transformation from glyph space to text space.
+float getHeight(int code)	Deprecated. Use getBoundingBox().getHeight() instead.
+String getName()	Returns the name of this font, either the PostScript "BaseName" or the Type 3 "Name".
+Vector getPositionVector(int code)	Returns the position vector (v), in text space, for the given character.
+float getWidth(int code)	Returns the advance width of the given character, in glyph space.
+float getWidthFromFont(int code)	Returns the width of a glyph in the embedded font file.
+boolean hasExplicitWidth(int code)	Returns true if the Font dictionary specifies an explicit width for the given glyph.
+boolean isDamaged()	Returns true if the embedded font file is damaged.
+boolean isEmbedded()	Returns true if the font file is embedded in the PDF.

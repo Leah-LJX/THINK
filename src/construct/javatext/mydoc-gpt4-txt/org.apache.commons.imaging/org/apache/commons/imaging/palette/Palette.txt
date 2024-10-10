@@ -1,0 +1,9 @@
+[API Name] Package org.apache.commons.imaging.palette.Palette
+[Type] Interface
+[Info]
+All Known Implementing Classes: QuantizedPalette, SimplePalette
+public interface Palette Color palette.
+[Method Summary]
+int getEntry​(int index)	Looks up the color for a given palette index.
+int getPaletteIndex​(int rgb)	Looks up the palette index for a given color.
+int length()	The number of entries in the palette.

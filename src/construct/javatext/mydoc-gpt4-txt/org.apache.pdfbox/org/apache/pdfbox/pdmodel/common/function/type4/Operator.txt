@@ -1,0 +1,6 @@
+[API Name] org.apache.pdfbox.pdmodel.common.function.type4.Operator
+[Type] Interface
+[Info]
+public interface Operator Interface for PostScript operators.
+[Method Summary]
+void execute(ExecutionContext context)	Executes the operator.

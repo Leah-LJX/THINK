@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.imagemap.DynamicDriveToolTipTagFragmentGenerator
+[Flag] Class
+[Info]
+All Implemented Interfaces: ToolTipTagFragmentGenerator
+[Constructor Summary]
+DynamicDriveToolTipTagFragmentGenerator() Blank constructor.
+[Method Summary]
+String generateToolTipFragment(String toolTipText) Generates a tooltip string to go in an HTML image map.

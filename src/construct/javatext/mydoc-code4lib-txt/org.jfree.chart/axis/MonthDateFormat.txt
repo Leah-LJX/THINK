@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.axis.MonthDateFormat
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable
+[Constructor Summary]
+MonthDateFormat() Creates a new instance for the default time zone.
+[Method Summary]
+boolean equals(Object obj) Tests this formatter for equality with an arbitrary object.

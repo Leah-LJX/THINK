@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.entity.PieSectionEntity
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, org.jfree.util.PublicCloneable
+[Constructor Summary]
+PieSectionEntity(Shape area, PieDataset dataset, int pieIndex, int sectionIndex, Comparable sectionKey, String toolTipText, String urlText) Creates a new pie section entity.
+[Method Summary]
+boolean equals(Object obj) Tests this entity for equality with an arbitrary object.

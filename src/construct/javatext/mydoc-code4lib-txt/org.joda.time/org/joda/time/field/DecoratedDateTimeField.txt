@@ -1,0 +1,16 @@
+[Class] org.joda.time.field.DecoratedDateTimeField
+[Flag] Class
+[Info]
+Direct Known Subclasses: DividedDateTimeField, OffsetDateTimeField, RemainderDateTimeField, ZeroIsMaxDateTimeField
+[Constructor Summary]
+protected 	DecoratedDateTimeField(DateTimeField field,	DateTimeFieldType type)	Constructor.
+[Method Summary]
+int get(long instant) Get the value of this field from the milliseconds.
+DurationField getDurationField() Returns the duration per unit value of this field.
+int getMaximumValue() Get the maximum allowable value for this field.
+int getMinimumValue() Get the minimum allowable value for this field.
+DurationField getRangeDurationField() Returns the range duration of this field.
+DateTimeField getWrappedField() Gets the wrapped date time field.
+boolean isLenient() Returns true if the set method is lenient.
+long roundFloor(long instant) Round to the lowest whole unit of this field.
+long set(long instant, int value) Sets a value in the milliseconds supplied.

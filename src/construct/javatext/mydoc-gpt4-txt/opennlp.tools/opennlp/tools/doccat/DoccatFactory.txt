@@ -1,0 +1,17 @@
+[API Name] opennlp.tools.doccat.DoccatFactory
+[Type] Class
+[Info]
+public class DoccatFactory extends BaseToolFactory The factory that provides Doccat default implementations and resources.
+[Constructor Summary]
+DoccatFactory()	Instantiates a DoccatFactory that provides the default implementation of the resources.
+DoccatFactory(FeatureGenerator[] featureGenerators)	Instantiates a DoccatFactory that provides the default implementation of the resources.
+[Method Summary]
+static DoccatFactory create(String subclassName, FeatureGenerator[] featureGenerators)	Factory method the framework uses create a new DoccatFactory.
+Map<String,String> createManifestEntries()	
+FeatureGenerator[] getFeatureGenerators()	
+void setFeatureGenerators(FeatureGenerator[] featureGenerators)	
+void validateArtifactMap()	Validates the parsed artifacts.
+[Methods inherited from class opennlp.tools.util.BaseToolFactory]
+create, create, createArtifactMap, createArtifactSerializersMap
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

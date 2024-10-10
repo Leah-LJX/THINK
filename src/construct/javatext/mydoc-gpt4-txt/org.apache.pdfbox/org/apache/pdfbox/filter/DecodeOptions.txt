@@ -1,0 +1,25 @@
+[API Name] org.apache.pdfbox.filter.DecodeOptions
+[Type] Class
+[Info]
+public class DecodeOptions extends Object Options that may be passed to a Filter to request special handling when decoding the stream.  Filters may not honor some or all of the specified options, and so callers should check the  honored flag if further processing relies on the options being used.
+[Constructor Summary]
+DecodeOptions()	Constructs an empty DecodeOptions instance
+DecodeOptions(int subsampling)	Constructs an instance specifying the image should be decoded using subsampling.
+DecodeOptions(int x, int y, int width, int height)	Constructs an instance specifying the region of the image that should be decoded.
+DecodeOptions(Rectangle sourceRegion)	Constructs an instance specifying the region of the image that should be decoded.
+[Field Summary]
+static DecodeOptions DEFAULT	Default decode options.
+[Method Summary]
+Rectangle getSourceRegion()	When decoding an image, the part of the image that should be decoded, or null if the entire image is needed.
+int getSubsamplingOffsetX()	When decoding an image, the horizontal offset for subsampling
+int getSubsamplingOffsetY()	When decoding an image, the vertical offset for subsampling
+int getSubsamplingX()	When decoding an image, the number of columns to advance in the source for every pixel decoded.
+int getSubsamplingY()	When decoding an image, the number of rows to advance in the source for every pixel decoded.
+boolean isFilterSubsampled()	Flag used by the filter to specify if it performed subsampling.
+void setSourceRegion(Rectangle sourceRegion)	Sets the region of the source image that should be decoded.
+void setSubsamplingOffsetX(int ssOffsetX)	Sets the horizontal subsampling offset for decoding images
+void setSubsamplingOffsetY(int ssOffsetY)	Sets the vertical subsampling offset for decoding images
+void setSubsamplingX(int ssX)	Sets the number of columns to advance in the source for every pixel decoded
+void setSubsamplingY(int ssY)	Sets the number of rows to advance in the source for every pixel decoded
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

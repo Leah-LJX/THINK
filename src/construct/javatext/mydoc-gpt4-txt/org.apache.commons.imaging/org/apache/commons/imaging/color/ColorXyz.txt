@@ -1,0 +1,23 @@
+[API Name] Package org.apache.commons.imaging.color.ColorXyz
+[Type] Class
+[Info]
+public final class ColorXyz extends Object Represents a color in the CIE 1931 color space, also  known as XYZ color space.
+ Contains the constant values for black, white, red,  green, and blue.
+Since: 1.0-alpha1 See Also: https://en.wikipedia.org/wiki/CIE_1931_color_space
+[Constructor Summary]
+ColorXyz​(double X, double Y, double Z)	
+[Field Summary]
+static ColorXyz BLACK	A constant for color black.
+static ColorXyz BLUE	A constant for color blue.
+static ColorXyz GREEN	A constant for color green.
+static ColorXyz RED	A constant for color red.
+static ColorXyz WHITE	A constant for color white.
+double X	
+double Y	
+double Z	
+[Method Summary]
+boolean equals​(Object o)	
+int hashCode()	
+String toString()	
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, wait, wait, wait

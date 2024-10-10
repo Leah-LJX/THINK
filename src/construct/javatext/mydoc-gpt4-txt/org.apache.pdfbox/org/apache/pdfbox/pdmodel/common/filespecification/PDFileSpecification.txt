@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.pdmodel.common.filespecification.PDFileSpecification
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDComplexFileSpecification, PDSimpleFileSpecification
+public abstract class PDFileSpecification extends Object implements COSObjectable This represents a file specification.
+Author: Ben Litchfield
+[Constructor Summary]
+PDFileSpecification()	
+[Method Summary]
+static PDFileSpecification createFS(COSBase base)	A file specification can either be a COSString or a COSDictionary.
+abstract String getFile()	This will get the file name.
+abstract void setFile(String file)	This will set the file name.
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+[Methods inherited from interface org.apache.pdfbox.pdmodel.common.COSObjectable]
+getCOSObject

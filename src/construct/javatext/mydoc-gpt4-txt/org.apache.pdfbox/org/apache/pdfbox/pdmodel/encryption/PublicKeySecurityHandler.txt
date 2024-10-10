@@ -1,0 +1,17 @@
+[API Name] org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler
+[Type] Class
+[Info]
+public final class PublicKeySecurityHandler extends SecurityHandler<PublicKeyProtectionPolicy> This class implements the public key security handler described in the PDF specification.
+Author: Benoit Guillon See Also: to see how to protect document with this security handler.
+[Constructor Summary]
+PublicKeySecurityHandler()	Constructor.
+PublicKeySecurityHandler(PublicKeyProtectionPolicy publicKeyProtectionPolicy)	Constructor used for encryption.
+[Field Summary]
+static String FILTER	The filter name.
+[Method Summary]
+void prepareDocumentForEncryption(PDDocument doc)	Prepare the document for encryption.
+void prepareForDecryption(PDEncryption encryption, COSArray documentIDArray, DecryptionMaterial decryptionMaterial)	Prepares everything to decrypt the document.
+[Methods inherited from class org.apache.pdfbox.pdmodel.encryption.SecurityHandler]
+computeVersionNumber, decrypt, decryptStream, encryptDataRC4, encryptDataRC4, encryptStream, encryptString, getCurrentAccessPermission, getEncryptionKey, getKeyLength, getProtectionPolicy, hasProtectionPolicy, isAES, isDecryptMetadata, setAES, setCurrentAccessPermission, setCustomSecureRandom, setDecryptMetadata, setEncryptionKey, setKeyLength, setProtectionPolicy, setStreamFilterName, setStringFilterName
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

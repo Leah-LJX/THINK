@@ -1,0 +1,15 @@
+[Class] org.w3c.dom.svg.SVGComponentTransferFunctionElement
+[Flag] Interface
+[Info]
+All Superinterfaces: Element, Node, SVGElement
+All Known Subinterfaces: SVGFEFuncAElement, SVGFEFuncBElement, SVGFEFuncGElement, SVGFEFuncRElement
+[Constructor Summary]
+
+[Method Summary]
+SVGAnimatedNumber getAmplitude()	 
+ SVGAnimatedNumber getExponent()	 
+ SVGAnimatedNumber getIntercept()	 
+ SVGAnimatedNumber getOffset()	 
+ SVGAnimatedNumber getSlope()	 
+ SVGAnimatedNumberList getTableValues()	 
+ SVGAnimatedEnumeration getType()

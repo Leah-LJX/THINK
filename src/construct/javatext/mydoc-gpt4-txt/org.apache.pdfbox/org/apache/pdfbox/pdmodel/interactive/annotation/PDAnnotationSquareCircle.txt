@@ -1,0 +1,30 @@
+[API Name] org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationSquareCircle
+[Type] Class
+[Info]
+All Implemented Interfaces: COSObjectable
+Direct Known Subclasses: PDAnnotationCircle, PDAnnotationSquare
+public abstract class PDAnnotationSquareCircle extends PDAnnotationMarkup This is the class that represents a rectangular or elliptical annotation introduced in PDF 1.3  specification .
+Author: Paul King
+[Constructor Summary]
+protected PDAnnotationSquareCircle(COSDictionary dict)	Constructor.
+protected PDAnnotationSquareCircle(String subType)	Creates a Circle or Square annotation of the specified sub type.
+[Field Summary]
+protected PDAnnotationSquareCircle(COSDictionary dict)	Constructor.
+protected PDAnnotationSquareCircle(String subType)	Creates a Circle or Square annotation of the specified sub type.
+[Method Summary]
+abstract void constructAppearances()	Create the appearance entry for this annotation.
+PDBorderEffectDictionary getBorderEffect()	This will retrieve the border effect dictionary, specifying effects to be applied used in drawing the line.
+PDColor getInteriorColor()	This will retrieve the interior color of the drawn area color is in DeviceRGB color space.
+PDRectangle getRectDifference()	This will get the rectangle difference rectangle.
+float[] getRectDifferences()	This will get the differences between the annotations "outer" rectangle defined by /Rect and the border.
+void setBorderEffect(PDBorderEffectDictionary be)	This will set the border effect dictionary, specifying effects to be applied when drawing the line.
+void setInteriorColor(PDColor ic)	This will set interior color of the drawn area color is in DeviceRGB colorspace.
+void setRectDifference(PDRectangle rd)	This will set the rectangle difference rectangle.
+void setRectDifferences(float difference)	This will set the difference between the annotations "outer" rectangle defined by /Rect and the border.
+void setRectDifferences(float differenceLeft, float differenceTop, float differenceRight, float differenceBottom)	This will set the difference between the annotations "outer" rectangle defined by /Rect and the border.
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationMarkup]
+getBorderStyle, getConstantOpacity, getCreationDate, getExternalData, getInReplyTo, getIntent, getPopup, getReplyType, getRichContents, getSubject, getTitlePopup, setBorderStyle, setConstantOpacity, setCreationDate, setExternalData, setInReplyTo, setIntent, setPopup, setReplyType, setRichContents, setSubject, setTitlePopup
+[Methods inherited from class org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation]
+constructAppearances, createAnnotation, equals, getAnnotationFlags, getAnnotationName, getAppearance, getAppearanceState, getBorder, getColor, getColor, getContents, getCOSObject, getModifiedDate, getNormalAppearanceStream, getOptionalContent, getPage, getRectangle, getStructParent, getSubtype, hashCode, isHidden, isInvisible, isLocked, isLockedContents, isNoRotate, isNoView, isNoZoom, isPrinted, isReadOnly, isToggleNoView, setAnnotationFlags, setAnnotationName, setAppearance, setAppearanceState, setBorder, setColor, setContents, setHidden, setInvisible, setLocked, setLockedContents, setModifiedDate, setModifiedDate, setNoRotate, setNoView, setNoZoom, setOptionalContent, setPage, setPrinted, setReadOnly, setRectangle, setStructParent, setSubtype, setToggleNoView
+[Methods inherited from class java.lang.Object]
+clone, finalize, getClass, notify, notifyAll, toString, wait, wait, wait

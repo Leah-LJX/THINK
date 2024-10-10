@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.plot.WaferMapPlot
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, EventListener, AnnotationChangeListener, AxisChangeListener, MarkerChangeListener, RendererChangeListener, LegendItemSource, DatasetChangeListener, org.jfree.util.PublicCloneable
+[Constructor Summary]
+WaferMapPlot() Creates a new plot with no dataset.
+[Method Summary]
+void draw(Graphics2D g2, Rectangle2D area, Point2D anchor, PlotState state, PlotRenderingInfo info) Draws the wafermap view.

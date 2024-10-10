@@ -1,0 +1,61 @@
+[Class] org.joda.time.field.DelegatedDateTimeField
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+Direct Known Subclasses: LenientDateTimeField, SkipDateTimeField, SkipUndoDateTimeField, StrictDateTimeField
+[Constructor Summary]
+DelegatedDateTimeField(DateTimeField field)	Constructor.
+DelegatedDateTimeField(DateTimeField field,	DateTimeFieldType type)	Constructor.
+DelegatedDateTimeField(DateTimeField field,	DurationField rangeField,	DateTimeFieldType type)	Constructor.
+[Method Summary]
+long add(long instant, int value) Adds a value (which may be negative) to the millis value, overflowing into larger fields if necessary.
+long add(long instant, long value) Adds a value (which may be negative) to the millis value, overflowing into larger fields if necessary.
+int[] add(ReadablePartial instant, int fieldIndex, int[] values, int valueToAdd) Adds a value (which may be negative) to the partial instant, throwing an exception if the maximum size of the instant is reached.
+long addWrapField(long instant, int value) Adds a value (which may be negative) to the millis value, wrapping within this field.
+int[] addWrapField(ReadablePartial instant, int fieldIndex, int[] values, int valueToAdd) Adds a value (which may be negative) to the partial instant, wrapping within this field.
+int[] addWrapPartial(ReadablePartial instant, int fieldIndex, int[] values, int valueToAdd) Adds a value (which may be negative) to the partial instant, wrapping the whole partial if the maximum size of the partial is reached.
+int get(long instant) Get the value of this field from the milliseconds.
+String getAsShortText(int fieldValue, Locale locale) Get the human-readable, short text value of this field from the field value.
+String getAsShortText(long instant) Get the human-readable, short text value of this field from the milliseconds.
+String getAsShortText(long instant, Locale locale) Get the human-readable, short text value of this field from the milliseconds.
+String getAsShortText(ReadablePartial partial, int fieldValue, Locale locale) Get the human-readable, short text value of this field from a partial instant.
+String getAsShortText(ReadablePartial partial, Locale locale) Get the human-readable, short text value of this field from a partial instant.
+String getAsText(int fieldValue, Locale locale) Get the human-readable, text value of this field from the field value.
+String getAsText(long instant) Get the human-readable, text value of this field from the milliseconds.
+String getAsText(long instant, Locale locale) Get the human-readable, text value of this field from the milliseconds.
+String getAsText(ReadablePartial partial, int fieldValue, Locale locale) Get the human-readable, text value of this field from a partial instant.
+String getAsText(ReadablePartial partial, Locale locale) Get the human-readable, text value of this field from a partial instant.
+int getDifference(long minuendInstant, long subtrahendInstant) Computes the difference between two instants, as measured in the units of this field.
+long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) Computes the difference between two instants, as measured in the units of this field.
+DurationField getDurationField() Returns the duration per unit value of this field.
+int getLeapAmount(long instant) Gets the amount by which this field is 'leap' for the specified instant.
+DurationField getLeapDurationField() If this field were to leap, then it would be in units described by the returned duration.
+int getMaximumShortTextLength(Locale locale) Get the maximum short text value for this field.
+int getMaximumTextLength(Locale locale) Get the maximum text value for this field.
+int getMaximumValue() Get the maximum allowable value for this field.
+int getMaximumValue(long instant) Get the maximum value for this field evaluated at the specified time.
+int getMaximumValue(ReadablePartial instant) Get the maximum value for this field evaluated at the specified time.
+int getMaximumValue(ReadablePartial instant, int[] values) Get the maximum value for this field using the partial instant and the specified values.
+int getMinimumValue() Get the minimum allowable value for this field.
+int getMinimumValue(long instant) Get the minimum value for this field evaluated at the specified time.
+int getMinimumValue(ReadablePartial instant) Get the minimum value for this field evaluated at the specified time.
+int getMinimumValue(ReadablePartial instant, int[] values) Get the minimum value for this field using the partial instant and the specified values.
+String getName() Get the name of the field.
+DurationField getRangeDurationField() Returns the range duration of this field.
+DateTimeFieldType getType() Get the type of the field.
+DateTimeField getWrappedField() Gets the wrapped date time field.
+boolean isLeap(long instant) Returns whether this field is 'leap' for the specified instant.
+boolean isLenient() Returns true if the set method is lenient.
+boolean isSupported() Returns true if this field is supported.
+long remainder(long instant) Returns the fractional duration milliseconds of this field.
+long roundCeiling(long instant) Round to the highest whole unit of this field.
+long roundFloor(long instant) Round to the lowest whole unit of this field.
+long roundHalfCeiling(long instant) Round to the nearest whole unit of this field.
+long roundHalfEven(long instant) Round to the nearest whole unit of this field.
+long roundHalfFloor(long instant) Round to the nearest whole unit of this field.
+long set(long instant, int value) Sets a value in the milliseconds supplied.
+long set(long instant, String text) Sets a value in the milliseconds supplied from a human-readable, text value.
+long set(long instant, String text, Locale locale) Sets a value in the milliseconds supplied from a human-readable, text value.
+int[] set(ReadablePartial instant, int fieldIndex, int[] values, int newValue) Sets a value using the specified partial instant.
+int[] set(ReadablePartial instant, int fieldIndex, int[] values, String text, Locale locale) Sets a value in the milliseconds supplied from a human-readable, text value.
+String toString() Get a suitable debug string.

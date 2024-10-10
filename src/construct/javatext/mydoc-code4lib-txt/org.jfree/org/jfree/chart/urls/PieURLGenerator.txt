@@ -1,0 +1,8 @@
+[Class] org.jfree.chart.urls.PieURLGenerator
+[Flag] Interface
+[Info]
+All Known Implementing Classes: CustomPieURLGenerator, StandardPieURLGenerator
+[Constructor Summary]
+
+[Method Summary]
+String generateURL(PieDataset dataset, Comparable key, int pieIndex) Generates a URL for one item in a PieDataset.

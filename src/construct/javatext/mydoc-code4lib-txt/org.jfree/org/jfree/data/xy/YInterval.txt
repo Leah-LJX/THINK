@@ -1,0 +1,11 @@
+[Class] org.jfree.data.xy.YInterval
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable
+[Constructor Summary]
+YInterval(double y, double yLow, double yHigh)	Creates a new instance of YInterval.
+[Method Summary]
+boolean equals(Object obj)	Tests this instance for equality with an arbitrary object.
+double getY()	Returns the y-value.
+double getYHigh()	Returns the upper bound of the y-interval.
+double getYLow()	Returns the lower bound of the y-interval.

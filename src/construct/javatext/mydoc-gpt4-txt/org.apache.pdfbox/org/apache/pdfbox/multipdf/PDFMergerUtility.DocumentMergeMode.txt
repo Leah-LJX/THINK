@@ -1,0 +1,13 @@
+[API Name] org.apache.pdfbox.multipdf.PDFMergerUtility.DocumentMergeMode
+[Type] Enum
+[Info]
+All Implemented Interfaces: Serializable, Comparable<PDFMergerUtility.DocumentMergeMode>
+Enclosing class: PDFMergerUtility
+public static enum PDFMergerUtility.DocumentMergeMode extends Enum<PDFMergerUtility.DocumentMergeMode> The mode to use when merging documents:     OPTIMIZE_RESOURCES_MODE Optimizes resource handling such as       closing documents early. Not all document elements are merged compared to       the PDFBOX_LEGACY_MODE. Currently supported are:        Page content and resources        PDFBOX_LEGACY_MODE Keeps all files open until the       merge has been completed. This is  currently necessary to merge documents       containing a Structure Tree.
+[Method Summary]
+static PDFMergerUtility.DocumentMergeMode valueOf(String name)	Returns the enum constant of this type with the specified name.
+static PDFMergerUtility.DocumentMergeMode[] values()	Returns an array containing the constants of this enum type, in the order they are declared.
+[Methods inherited from class java.lang.Enum]
+clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, toString, valueOf
+[Methods inherited from class java.lang.Object]
+getClass, notify, notifyAll, wait, wait, wait

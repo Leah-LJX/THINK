@@ -1,0 +1,10 @@
+[API Name] opennlp.tools.cmdline.parser.ParserModelLoader
+[Type] Class
+[Info]
+@Internal public final class ParserModelLoader extends opennlp.tools.cmdline.ModelLoader<ParserModel> Loads a ParserModel for the command line tools.   Note: Do not use this class, internal use only!
+[Constructor Summary]
+ParserModelLoader()	
+[Methods inherited from class opennlp.tools.cmdline.ModelLoader]
+load
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait

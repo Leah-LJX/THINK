@@ -1,0 +1,9 @@
+[Class] org.jfree.chart.block.BlockContainer
+[Flag] Class
+[Info]
+All Implemented Interfaces: Serializable, Cloneable, Block, org.jfree.ui.Drawable, org.jfree.util.PublicCloneable
+Direct Known Subclasses: LegendItemBlockContainer
+[Constructor Summary]
+BlockContainer() Creates a new instance with default settings.
+[Method Summary]
+void add(Block block) Adds a block to the container.

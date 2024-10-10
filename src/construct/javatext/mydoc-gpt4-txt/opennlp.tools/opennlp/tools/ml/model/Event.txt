@@ -1,0 +1,15 @@
+[API Name] opennlp.tools.ml.model.Event
+[Type] Class
+[Info]
+public class Event extends Object The context of a decision point during training.  This includes contextual predicates and an outcome.
+[Constructor Summary]
+Event(String outcome, CharSequence[] context)	Instantiates an Event.
+Event(String outcome, CharSequence[] context, float[] values)	Instantiates an Event.
+Event(String outcome, String[] context, float[] values)	Instantiates an Event.
+[Method Summary]
+String[] getContext()	
+String getOutcome()	
+float[] getValues()	
+String toString()	
+[Methods inherited from class java.lang.Object]
+equals, getClass, hashCode, notify, notifyAll, wait, wait, wait

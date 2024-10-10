@@ -1,0 +1,19 @@
+[API Name] org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.PDArtifactMarkedContent
+[Type] Class
+[Info]
+public class PDArtifactMarkedContent extends PDMarkedContent An artifact marked content.
+Author: Johannes Koch
+[Constructor Summary]
+PDArtifactMarkedContent(COSDictionary properties)	
+[Method Summary]
+PDRectangle getBBox()	Gets the artifact's bounding box (BBox).
+String getSubtype()	Gets the subtype (Subtype).
+String getType()	Gets the type (Type).
+boolean isBottomAttached()	Is the artifact attached to the bottom edge?
+boolean isLeftAttached()	Is the artifact attached to the left edge?
+boolean isRightAttached()	Is the artifact attached to the right edge?
+boolean isTopAttached()	Is the artifact attached to the top edge?
+[Methods inherited from class org.apache.pdfbox.pdmodel.documentinterchange.markedcontent.PDMarkedContent]
+addMarkedContent, addText, addXObject, create, getActualText, getAlternateDescription, getContents, getExpandedForm, getLanguage, getMCID, getProperties, getTag, toString
+[Methods inherited from class java.lang.Object]
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait
