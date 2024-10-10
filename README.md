@@ -66,5 +66,5 @@ The `src` directory contains the core source code for the project, broken down a
     - **Vector Embedding Scripts**: Code to embed API knowledge into a vectorized knowledge base.
     - **Vector Knowledge Base Files**: Finalized vector files forming the API knowledge base.
 - **`think/`**: This directory contains code and resources for the two-phase strategy discussed in the research:
-    - `react`: Scripts and resources aimed at implementing the pre-execution phase.
-    - `rag`: Scripts and resources aimed at implementing the post-execution phase.
+    - `pre_module`: Scripts and resources aimed at implementing the pre-execution phase.
+    - `post_module`: Scripts and resources aimed at implementing the post-execution phase.
