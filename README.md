@@ -2,7 +2,7 @@
 
 **Tackling the API Hallucination via Injecting Knowledge**
 
-This project addresses API hallucination by leveraging a structured approach to knowledge injection. The following sections guide you through the installation process and provide an overview of the project's directory structure.
+This project addresses API hallucination by leveraging knowledge injection with two phases. The following sections guide you through the installation process and provide an overview of the project's directory structure.
 
 ## Installation
 
@@ -27,26 +27,28 @@ cd src/think
 pip install -r requirements.txt
 ```
 4. Test
-- the baseline method:
+- For baseline method:
 ```
 python process_libs.py
 ```
-- Test the pre_execution component:
+- For the pre_execution component:
 ```
 cd src/think/pre_module/
 python rag.py
 ```
-- Test the post_execution component, this may need rely on the framework **langchain**:
+- For the post_execution component (this may need rely on the framework **langchain**):
 ```
 cd src/think/post_module/
 python error_template.py
 ```
-if it cannot run successfully, please try:
+If it cannot run successfully, please try:
 ```
 cd think/langchain/agents/react/
 python error_template.py
 ```
-**Note**: Ensure you configure the OpenAI API key within the scripts where needed and adjust file paths according to your local setup. Additionally, download the related jar file if you need.
+**Note**: Ensure you configure the OpenAI API key within the scripts where needed and adjust file paths according to your local setup. Additionally, download the required jar to `lib` for verify the correctness of program generated.
+Due to file size limitations, the runnable compilation validator could not be uploaded. We've included the compilation scripts in the `lib` directory—please package them into an executable JAR file if needed.
+
 
 
 ## Project Directory Structure
