@@ -26,6 +26,29 @@ cd src/think
 ```
 pip install -r requirements.txt
 ```
+4. Test
+- the baseline method:
+```
+python process_libs.py
+```
+- Test the pre_execution component:
+```
+cd src/think/pre_module/
+python rag.py
+```
+- Test the post_execution component, this may need rely on the framework **langchain**:
+```
+cd src/think/post_module/
+python error_template.py
+```
+if it cannot run successfully, please try:
+```
+cd think/langchain/agents/react/
+python error_template.py
+```
+**Note**: Ensure you configure the OpenAI API key within the scripts where needed and adjust file paths according to your local setup. Additionally, download the related jar file if you need.
+
+
 ## Project Directory Structure
 
 The project is organized into the following main directories, each serving a specific purpose essential to the setup, execution, and verification processes.
