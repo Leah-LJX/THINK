@@ -4,15 +4,15 @@
 
 This project addresses API hallucination by leveraging a structured approach to knowledge injection. The following sections guide you through the installation process and provide an overview of the project's directory structure.
 
-## A Installation
+## Installation
 
-### A.1 Environment
+### Environment
 
 Ensure the following requirements are met before proceeding with the installation:
 - **Python** 3.10+
 - **JDK** 1.8+
 
-### A.2 Steps
+### Steps
 
 1. Clone the repository:
 ```
@@ -26,13 +26,11 @@ cd src/think
 ```
 pip install -r requirements.txt
 ```
-## B Project Directory Structure
+## Project Directory Structure
 
 The project is organized into the following main directories, each serving a specific purpose essential to the setup, execution, and verification processes.
 
-### B.1 Directory Overview
-
-#### B.1.1 `benchmark`
+### `benchmark`
 
 The `benchmark` directory contains datasets utilized for experimental purposes, covering diverse domains:
 
@@ -45,7 +43,7 @@ The `benchmark` directory contains datasets utilized for experimental purposes, 
 
 Each benchmark category focuses on a distinct domain, including document processing, data visualization, image processing, PDF handling, date and time management, and NLP, providing a wide-ranging suite for testing and validation.
 
-#### B.1.2 `lib`
+### `lib`
 
 The `lib` directory contains:
 
@@ -54,7 +52,7 @@ The `lib` directory contains:
 
 These resources ensure the required dependencies are available for code validation and compilation during experimentation.
 
-#### B.1.3 `src`
+### `src`
 
 The `src` directory contains the core source code for the project, broken down as follows:
 
@@ -66,5 +64,38 @@ The `src` directory contains the core source code for the project, broken down a
     - **Vector Embedding Scripts**: Code to embed API knowledge into a vectorized knowledge base.
     - **Vector Knowledge Base Files**: Finalized vector files forming the API knowledge base.
 - **`think/`**: This directory contains code and resources for the two-phase strategy discussed in the research:
-    - `pre_module`: Scripts and resources aimed at implementing the pre-execution phase.
-    - `post_module`: Scripts and resources aimed at implementing the post-execution phase.
+    - `pre_module/`: Scripts and resources aimed at implementing the pre-execution phase.
+      #### Files
+    - **`rag.py`**
+      - **Description**: The main script for executing the retrieval strategy.
+      - **Functionality**: 
+        - Manages **task decomposition**, breaking down complex tasks into simpler, manageable sub-tasks.
+        - Constructs **code examples** to support the retrieval process, helping to ensure the relevance and context of the retrieved data.
+        - Acts as the central file for orchestrating the retrieval strategy, which is essential for collecting accurate and contextually appropriate information.
+    
+    - **`label_rag.py`**
+      - **Description**: A script dedicated to filtering the results retrieved by `rag.py`.
+      - **Functionality**: 
+        - Applies **filtering operations** to the retrieval outputs, aiming to enhance the precision of the results.
+        - Ensures that the retrieval strategy returns results that are **accurate** and **relevant** to the task requirements, reducing noise and improving data quality for subsequent processes.
+
+
+    - `post_module/`: Scripts and resources aimed at implementing the post-execution phase.
+       #### Files
+        - **`error_template.py`**
+          - **Description**: The main file responsible for executing the error correction workflow.
+          - **Functionality**:
+            - Implements a comprehensive error correction process that includes:
+              - **Inference and Behavior-Based Corrections**: Adapts and corrects errors based on inferred behavior and program logic.
+              - **Rule-Based Corrections**: Applies predefined rules to handle common or predictable errors systematically.
+              - **LLM-Based Corrections**: Utilizes large language models (LLMs) to suggest and apply corrections based on contextual understanding and semantic analysis.
+        
+        - **`base.py`**
+          - **Description**: Manages the detailed logic for inference and behavior-based strategies.
+          - **Functionality**:
+            - Defines core methods and strategies for error correction based on behavior patterns.
+            - Serves as the foundation for the error correction process by leveraging inference techniques.
+            - Integrates with **`methodcall_prompt.py`** and **`parafill_prompt.py`**, which provide templated prompt ideas to guide the inference and behavior-based corrections:
+              - **`methodcall_prompt.py`**: Supplies prompts focused on method calls and their behavior, assisting the error correction by contextualizing function usage.
+              - **`parafill_prompt.py`**: Offers template prompts for parameter filling, aiding in the accurate correction of parameter-related issues.
+ 
