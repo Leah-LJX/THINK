@@ -93,11 +93,16 @@ The `src` directory contains the core source code for the project, broken down a
 
     - `post_module/`: Scripts and resources aimed at implementing the post-execution phase.
         - **`error_template.py`**: The main file responsible for executing the error correction workflow. Implements a comprehensive error correction process that includes:
+        
         **Reasoning and Acting Corrections**: Adapts and corrects errors based on inferred cause of these errors.
+
         **Rule-Based Corrections**: Applies predefined rules to handle common or predictable errors systematically.
+
         **LLM-Based Corrections**: Utilizes large language models (LLMs) to suggest and apply corrections for simpler errors without API knowledge.
         
         - **`base.py`**: Manages the detailed logic for the react-based strategy based on Thought-Action-Observation model. Integrates with **`methodcall_prompt.py`** and **`parafill_prompt.py`**, which provide templated prompt ideas to guide the reasoning and acting corrections:
+        
         **`methodcall_prompt.py`**: Supplies template prompts focused on method calls.
+
         **`parafill_prompt.py`**: Offers template prompts for parameter filling.
  ### Contributors
