@@ -86,11 +86,11 @@ The `src` directory contains the core source code for the project, broken down a
     - **`embedding_javadoc.py`**: Code to embed API knowledge into a vectorized knowledge base.
     - **`javatext/`**: Extracted API knowledge based on Java documentation.
     - **`vector_store/`**: Finalized vector files forming the API knowledge base.
+      
 - **`think/`**: This directory contains code and resources for the two-phase strategy discussed in the paper:
     - **`pre_module/`**: Scripts and resources aimed at implementing the pre-execution phase.
         - **`rag.py`**: The main script for executing the retrieval strategy. Manages **task decomposition**, breaking down complex tasks into simpler sub-tasks. Constructs **code examples** to support the generation of retrieval enhancement.
         - **`label_rag.py`**: A script dedicated to filtering the results retrieved. Applies **labeling** to the retrieval outputs, aiming to enhance the precision of the results.
-
     - **`post_module/`**: Scripts and resources aimed at implementing the post-execution phase.
         - **`error_template.py`**: The main file responsible for executing the error correction workflow. Implements a comprehensive error correction process that includes:
             - **Reasoning and Acting Corrections**: Adapts and corrects errors based on inferred cause of these errors.
@@ -99,4 +99,5 @@ The `src` directory contains the core source code for the project, broken down a
         - **`base.py`**: Manages the detailed logic for the react-based strategy based on Thought-Action-Observation model. Integrates with **`methodcall_prompt.py`** and **`parafill_prompt.py`**, which provide templated prompt ideas to guide the reasoning and acting corrections:
             - **`methodcall_prompt.py`**: Supplies template prompts focused on method calls.
             - **`parafill_prompt.py`**: Offers template prompts for parameter filling.
+
  ### Contributors
