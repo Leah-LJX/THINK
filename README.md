@@ -18,15 +18,11 @@ Ensure the following requirements are met before proceeding with the installatio
 ```
 git clone [https://github.com/your-username/your-repo-name.git]
 ```
-2. Navigate to the **THINK** directory:
-```
-cd src/think
-```
-3. Install the required dependencies:
+2. Install the required dependencies:
 ```
 pip install -r requirements.txt
 ```
-4. Test
+3. Run
 - For baseline method:
 ```
 python process_libs.py
@@ -41,12 +37,12 @@ python rag.py
 cd src/think/post_module/
 python error_template.py
 ```
-If it cannot run successfully, please try:
+Or try:
 ```
 cd think/langchain/agents/react/
 python error_template.py
 ```
-**Note**: Ensure you configure the OpenAI API key within the scripts where needed and adjust file paths according to your local setup. Additionally, download the required jar to `lib` for verify the correctness of program generated.
+**Note**: Ensure you configure the OpenAI API key within the code where needed and adjust file paths according to your local setup. Additionally, download the required jar to `lib` for verify the correctness of program generated.
 Due to file size limitations, the runnable compilation validator could not be uploaded. We've included the compilation scripts in the `lib` directory—please package them into an executable JAR file if needed.
 
 
