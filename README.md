@@ -65,8 +65,8 @@ The `benchmark` directory stores data in JSONL format, with each line representi
 
 The `lib` directory contains:
 
-- **Syntax Verification Scripts**: Compilation scripts to validate code syntax and ensure correctness.
-- **Jar Files**: This put both the third-party libraries (DOM, Chart, Imaging, Joda, PDFBox, OpenNLP) and any other relevant supporting libraries.
+- Syntax Verification Scripts: Compilation scripts to validate code syntax and ensure correctness.
+- Jar Files: This put both the third-party libraries (DOM, Chart, Imaging, Joda, PDFBox, OpenNLP) and any other relevant supporting libraries.
 
 These resources ensure the required dependencies are available for code validation and compilation during experimentation.
 
