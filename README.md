@@ -13,16 +13,11 @@ Ensure the following requirements are met before proceeding with the installatio
 - **JDK** 1.8+
 
 ### Steps
-
-1. Clone the repository:
-```
-git clone https://github.com/xxxx/my-repo-name.git
-```
-2. Install the required dependencies:
+1. Install the required dependencies:
 ```
 pip install -r requirements.txt
 ```
-3. Run
+2. Run
 - For baseline method:
 ```
 python process_libs.py
