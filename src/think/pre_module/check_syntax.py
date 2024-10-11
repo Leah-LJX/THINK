@@ -1,18 +1,14 @@
-# 将大语言模型的结果进行语法解析: 调用java compiler
 import os
 
 import jpype
 import re
-from react_test.extract_code import save_code
+from extract_code import save_code
 
 def init_jvm():
     if jpype.isJVMStarted():
         return
     rootPath = "D:\\BaiduSyncdisk\\LangChain\\GPT-Test\\lib\\"
     jpype.startJVM(classpath=[rootPath + "../lib/check-syntax.jar"])
-    # 设置调用Java运行
-    # jarpath = os.path.join(os.path.abspath('.'), 'apiminer.jar')
-    # jpype.startJVM(jpype.getDefaultJVMPath(), "-ea", "-Djava.class.path=%s" % jarpath)
 
 def stop_jvm():
     jpype.shutdownJVM()
@@ -25,12 +21,6 @@ def check_compileAPI(generate_code_path):
     check_res = check_object.getMessage(generate_code_path)  # java.util.ArrayList 类型
 
     py_check_res = [str(item) for item in check_res]
-
-    # for error in check_res:
-    #     error_code = error.split(":")[0]
-    #     error_message = error.split(":")[1]
-    #     print(error_code)
-    #     print(error_message.split("\n")[0])
 
     return py_check_res
 
