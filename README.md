@@ -63,6 +63,7 @@ The `benchmark` directory contains datasets utilized for experimental purposes, 
 - **OpenNLP**: For natural language processing tasks.
 
 Each benchmark category focuses on a distinct domain, including document processing, data visualization, image processing, PDF handling, date and time management, and NLP, providing a wide-ranging suite for testing and validation.
+The `benchmark` directory stores data in JSONL format, with each line representing a single record structured as `<task description, signature, package>`
 
 ### `lib`
 
