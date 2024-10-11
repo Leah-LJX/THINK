@@ -82,16 +82,16 @@ The `src` directory contains the core source code for the project, broken down a
 - **`process_libs.py`**: This script is responsible for generating baseline results from the experiments.
 - **`check_syntax.py`**: A verification script used to validate experimental results for syntactic correctness.
 - **`construct/`**: A directory dedicated to building and managing the API knowledge base. It includes:
-    - **API knowledge Data**: Extracted API knowledge based on Java documentation.
-    - **Code Extraction Scripts**: Scripts to extract API-relevant knowledge from the raw Java documentation.
-    - **Vector Embedding Scripts**: Code to embed API knowledge into a vectorized knowledge base.
-    - **Vector Knowledge Base Files**: Finalized vector files forming the API knowledge base.
+    - **`extract_to_txt.py`**: Scripts to extract API-relevant knowledge from the raw Java documentation.
+    - **`embedding_javadoc.py`**: Code to embed API knowledge into a vectorized knowledge base.
+    - **`javatext/`**: Extracted API knowledge based on Java documentation.
+    - **`vector_store/`**: Finalized vector files forming the API knowledge base.
 - **`think/`**: This directory contains code and resources for the two-phase strategy discussed in the paper:
-    - `pre_module/`: Scripts and resources aimed at implementing the pre-execution phase.
+    - **`pre_module/`**: Scripts and resources aimed at implementing the pre-execution phase.
         - **`rag.py`**: The main script for executing the retrieval strategy. Manages **task decomposition**, breaking down complex tasks into simpler sub-tasks. Constructs **code examples** to support the generation of retrieval enhancement.
         - **`label_rag.py`**: A script dedicated to filtering the results retrieved. Applies **labeling** to the retrieval outputs, aiming to enhance the precision of the results.
 
-    - `post_module/`: Scripts and resources aimed at implementing the post-execution phase.
+    - **`post_module/`**: Scripts and resources aimed at implementing the post-execution phase.
         - **`error_template.py`**: The main file responsible for executing the error correction workflow. Implements a comprehensive error correction process that includes:
             - **Reasoning and Acting Corrections**: Adapts and corrects errors based on inferred cause of these errors.
             - **Rule-Based Corrections**: Applies predefined rules to handle common or predictable errors systematically.
