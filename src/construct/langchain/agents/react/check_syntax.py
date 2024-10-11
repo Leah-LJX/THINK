@@ -126,7 +126,7 @@ if __name__ == '__main__':
     check_res = check_withEclipse(generate_code_path)
     without_warning_res = ignore_warnings(check_res)
     if not without_warning_res:
-        print("ljx no compile errors")
+        print("no compile errors")
     else:
         print(without_warning_res)
     stop_jvm()
