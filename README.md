@@ -71,7 +71,7 @@ The `benchmark` directory stores data in JSONL format, with each line representi
 The `lib` directory contains:
 
 - **Syntax Verification Scripts**: Compilation scripts to validate code syntax and ensure correctness.
-- **Jar Files**: This includes both the third-party libraries (DOM, Chart, Imaging, Joda, PDFBox, OpenNLP) and any other relevant supporting libraries.
+- **Jar Files**: This put both the third-party libraries (DOM, Chart, Imaging, Joda, PDFBox, OpenNLP) and any other relevant supporting libraries.
 
 These resources ensure the required dependencies are available for code validation and compilation during experimentation.
 
@@ -80,8 +80,8 @@ These resources ensure the required dependencies are available for code validati
 The `src` directory contains the core source code for the project, broken down as follows:
 
 - **`process_libs.py`**: This script is responsible for generating baseline results from the experiments.
-- **`check_syntax.py`**: A verification script used to validate experimental results for syntactic correctness.
-- **`construct/`**: A directory dedicated to building and managing the API knowledge base. It includes:
+- **`check_syntax.py`**: Verification script used to validate experimental results for syntactic correctness.
+- **`construct/`**: Directory dedicated to building and managing the API knowledge base. It includes:
     - **`extract_to_txt.py`**: Scripts to extract API-relevant knowledge from the raw Java documentation.
     - **`embedding_javadoc.py`**: Code to embed API knowledge into a vectorized knowledge base.
     - **`javatext/`**: Extracted API knowledge based on Java documentation.
