@@ -2,13 +2,13 @@ import os
 
 import jpype
 import re
-from ljx_extract_code import save_code
+from extract_code import save_code
 from utils import check_words_exist
 
 def init_jvm():
     if jpype.isJVMStarted():
         return
-    rootPath = "D:\\BaiduSyncdisk\\LangChain\\GPT-Test\\lib\\"
+    rootPath = "lib\\"
     jpype.startJVM(classpath=[rootPath + "../lib/check-syntax.jar"])
 
 def stop_jvm():
@@ -126,7 +126,7 @@ if __name__ == '__main__':
     check_res = check_withEclipse(generate_code_path)
     without_warning_res = ignore_warnings(check_res)
     if not without_warning_res:
-        print("ljx no compile errors")
+        print("no compile errors")
     else:
         print(without_warning_res)
     stop_jvm()
