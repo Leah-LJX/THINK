@@ -3,6 +3,7 @@
 **Tackling the API Hallucination via Injecting Knowledge**
 
 This project addresses API hallucination by leveraging knowledge injection with two phases. The following sections guide you through the installation process and provide an overview of the project's directory structure.
+![overview_v3_00](https://github.com/user-attachments/assets/7fdfeefc-fef6-4e04-9d64-a0b91e746c17)
 
 ## Installation
 
