@@ -67,7 +67,7 @@ def construct_code_example(path, api_description):
             if check:
                 # 判断对错
                 print('-------- Checking API Code Example --------')
-                temp_example_path = 'llmgen_code_example/temp_code/'
+                temp_example_path = 'code_example/temp_code/'
                 file_path, signal = parse_generate_code(response, temp_example_path)
                 check_res = check_withEclipse(file_path)
                 error = ignore_warnings(check_res)

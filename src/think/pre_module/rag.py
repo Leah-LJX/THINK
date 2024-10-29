@@ -150,7 +150,7 @@ def diff_error_type(error_msg):
         return Error.VARDEF_ERROR
 
 def case_example_path(file_name):
-    base_path = 'llmgen_code_example/'
+    base_path = 'code_example/'
     if 'chart' in file_name:
         return base_path + 'code_example_chart.jsonl'
     if 'joda' in file_name:
